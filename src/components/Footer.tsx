@@ -54,7 +54,7 @@ export default function Footer() {
                         <h3 className="text-sm font-semibold uppercase tracking-wider text-grey-400">Connect</h3>
                         <ul className="mt-4 space-y-2 flex gap-4">
                             <li>
-                                <Link href="https://linkedin.com" target="_blank" className="text-grey-400 hover:text-white transition-colors">
+                                <Link href="https://www.linkedin.com/in/cybersecuritysalesrecruiterchris-stinson/" target="_blank" className="text-grey-400 hover:text-white transition-colors">
                                     <span className="sr-only">LinkedIn</span>
                                     <Linkedin className="h-6 w-6" />
                                 </Link>
