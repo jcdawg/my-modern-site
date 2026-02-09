@@ -66,7 +66,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="mailto:contact@thekasgroup.com" className="text-grey-400 hover:text-white transition-colors">
+                                <Link href="mailto:chris@thekasgroup.com" className="text-grey-400 hover:text-white transition-colors">
                                     <span className="sr-only">Email</span>
                                     <Mail className="h-6 w-6" />
                                 </Link>

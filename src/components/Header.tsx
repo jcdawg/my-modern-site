@@ -67,7 +67,7 @@ export default function Header() {
                 {/* CTA Button */}
                 <div className="hidden md:flex">
                     <Link
-                        href="mailto:contact@thekasgroup.com"
+                        href="mailto:chris@thekasgroup.com"
                         className="rounded-full bg-navy-900 px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-accent"
                     >
                         Get in Touch
@@ -124,7 +124,7 @@ export default function Header() {
 
                         <div className="mt-4 pt-4 border-t border-grey-100">
                             <Link
-                                href="mailto:contact@thekasgroup.com"
+                                href="mailto:chris@thekasgroup.com"
                                 className="block w-full rounded-md bg-navy-900 px-5 py-3 text-center text-base font-medium text-white hover:bg-blue-accent"
                             >
                                 Get in Touch
