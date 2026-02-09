@@ -75,8 +75,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 text-center">
           <h2 className="text-3xl font-bold tracking-tight mb-8">Trusted by Industry Leaders</h2>
           <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 opacity-60 grayscale transition-all">
-            <div className="text-xl font-bold tracking-tight text-white/80">Charter Communications</div>
-            <div className="text-xl font-bold tracking-tight text-white/80">Cox Communications</div>
+            <div className="text-xl font-bold tracking-tight text-white/80">Charter</div>
+            <div className="text-xl font-bold tracking-tight text-white/80">Cox</div>
+            <div className="text-xl font-bold tracking-tight text-white/80">Cisco</div>
+            <div className="text-xl font-bold tracking-tight text-white/80">Fortify Data</div>
             <div className="text-xl font-bold tracking-tight text-white/80">Ciber</div>
             <div className="text-xl font-bold tracking-tight text-white/80">Hoxhunt</div>
             <div className="text-xl font-bold tracking-tight text-white/80">Worldwide Express</div>
