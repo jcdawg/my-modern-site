@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, TrendingUp, Users } from "lucide-react";
 
@@ -70,18 +71,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Social Proof / Trust Section (Placeholder) */}
-      <section className="py-20 bg-navy-900 text-white">
+      {/* Social Proof / Trust Section */}
+      <section className="py-20 bg-navy-900 text-white overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 text-center">
-          <h2 className="text-3xl font-bold tracking-tight mb-8">Trusted by Industry Leaders</h2>
-          <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 opacity-60 grayscale transition-all">
-            <div className="text-xl font-bold tracking-tight text-white/80">Charter</div>
-            <div className="text-xl font-bold tracking-tight text-white/80">Cox</div>
-            <div className="text-xl font-bold tracking-tight text-white/80">Cisco</div>
-            <div className="text-xl font-bold tracking-tight text-white/80">Fortify Data</div>
-            <div className="text-xl font-bold tracking-tight text-white/80">Ciber</div>
-            <div className="text-xl font-bold tracking-tight text-white/80">Hoxhunt</div>
-            <div className="text-xl font-bold tracking-tight text-white/80">Worldwide Express</div>
+          <h2 className="text-2xl font-bold tracking-tight mb-12 text-white/90">Trusted by Industry Leaders</h2>
+          <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-10 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+            <Image src="/logos/charter.png" alt="Charter" width={160} height={40} className="h-8 w-auto object-contain" />
+            <Image src="/logos/cisco.png" alt="Cisco" width={120} height={40} className="h-10 w-auto object-contain" />
+            <Image src="/logos/fortifydata.png" alt="FortifyData" width={180} height={40} className="h-8 w-auto object-contain" />
+            <Image src="/logos/hoxhunt.png" alt="Hoxhunt" width={160} height={40} className="h-8 w-auto object-contain" />
+            <Image src="/logos/ciber.png" alt="Ciber" width={140} height={40} className="h-8 w-auto object-contain" />
+            {/* Placeholder for missing logos to maintain the list */}
+            <Image src="/logos/worldwide_express.png" alt="Worldwide Express" width={160} height={40} className="h-8 w-auto object-contain" />
+            {/* Placeholder for missing logos to maintain the list */}
+            <div className="text-lg font-bold tracking-tight text-white/50">Cox</div>
           </div>
         </div>
       </section>
