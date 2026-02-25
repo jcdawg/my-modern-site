@@ -47,6 +47,11 @@ export default function Footer() {
                                     Insights Blog
                                 </Link>
                             </li>
+                            <li>
+                                <Link href="/guides/best-sales-recruiting-agencies-2026" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    Top Agencies 2026 Guide
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
