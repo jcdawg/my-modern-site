@@ -8,17 +8,16 @@ import Logo from "./Logo";
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
-    const [isRecruitOpen, setIsRecruitOpen] = useState(false);
     const pathname = usePathname();
 
     const toggleMenu = () => setIsOpen(!isOpen);
-    const toggleRecruit = () => setIsRecruitOpen(!isRecruitOpen);
 
     const isActive = (path: string) => pathname === path;
 
     const navLinks = [
         { name: "Home", href: "/" },
         { name: "About", href: "/about" },
+        { name: "Brand Facts", href: "/brand-facts" },
         { name: "Blog", href: "/blog" },
     ];
 

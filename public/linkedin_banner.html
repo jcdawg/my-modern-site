@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Kas Group LinkedIn Banner - Maximum Clearance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --navy-900: #0f172a;
+            --blue-accent: #2563eb;
+            --blue-light: #60a5fa;
+            --grey-400: #94a3b8;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #1e293b;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .banner {
+            width: 1584px;
+            height: 396px;
+            background-color: var(--navy-900);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            padding-right: 120px;
+            box-sizing: border-box;
+        }
+
+        /* Ambient Hex Pattern */
+        .hex-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iMTA0IiB2aWV3Qm94PSIwIDAgNjAgMTA0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0zMCAxMEw1IDIzVjQ5TDMwIDYyTDU1IDQ5VjIzTDMwIDEweiIgc3Ryb2tlPSJyZ2JhKDM3LCA5OSwgMjM1LCAwLjE1KSIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=');
+            background-size: 80px 138px;
+            opacity: 0.25;
+        }
+
+        .glow {
+            position: absolute;
+            width: 1400px;
+            height: 1400px;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.1) 0%, rgba(15, 23, 42, 0) 70%);
+            border-radius: 50%;
+            top: -500px;
+            right: -300px;
+            z-index: 1;
+        }
+
+        /* Entire content group moved to the right 60% of the banner */
+        .content-group {
+            position: relative;
+            z-index: 10;
+            text-align: right;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .logo-wrapper {
+            margin-bottom: 40px;
+            transform: scale(2.0);
+            transform-origin: right center;
+        }
+
+        .headline {
+            font-family: 'Outfit', sans-serif;
+            font-size: 52px;
+            font-weight: 700;
+            color: white;
+            line-height: 1.1;
+            margin: 0;
+            letter-spacing: -0.01em;
+        }
+
+        .headline span {
+            color: var(--blue-light);
+            white-space: nowrap;
+        }
+
+        .subheadline {
+            font-size: 26px;
+            font-weight: 500;
+            color: var(--grey-400);
+            margin-top: 15px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+
+        .tagline {
+            margin-top: 20px;
+            font-size: 22px;
+            color: rgba(255, 255, 255, 0.4);
+            line-height: 1.4;
+            font-weight: 400;
+            max-width: 600px;
+        }
+
+        /* SVG Logo */
+        .logo-svg {
+            width: 240px;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="glow"></div>
+        <div class="hex-pattern"></div>
+
+        <div class="content-group">
+            <div class="logo-wrapper">
+                <svg class="logo-svg" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(10, 14)">
+                        <path d="M16 4.5L25.96 10.25V21.75L16 27.5L6.04 21.75V10.25L16 4.5Z" stroke="#FFFFFF"
+                            stroke-width="1.8" stroke-linejoin="round" />
+                        <path d="M16 4.5L16 27.5" stroke="#FFFFFF" stroke-width="1.2" stroke-opacity="0.5" />
+                        <path d="M25.96 10.25L6.04 21.75" stroke="#FFFFFF" stroke-width="1.2" stroke-opacity="0.5" />
+                        <path d="M25.96 21.75L6.04 10.25" stroke="#FFFFFF" stroke-width="1.2" stroke-opacity="0.5" />
+                        <path
+                            d="M16 16L25.96 10.25M16 16L25.96 21.75M16 16L16 27.5M16 16L6.04 21.75M16 16L6.04 10.25M16 16L16 4.5"
+                            stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" />
+                    </g>
+                    <text x="52" y="38" fill="#FFFFFF"
+                        style="font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: -0.02em;">
+                        The <tspan fill="#60a5fa">Kas</tspan> Group
+                    </text>
+                </svg>
+            </div>
+
+            <h1 class="headline">Elite Sales & <span>AI Technical</span> Recruiting</h1>
+            <div class="subheadline">Ph.D.-Led Technical Vetting</div>
+            <p class="tagline">Scale your GTM and engineering teams with precision matching.</p>
+        </div>
+    </div>
+</body>
+
+</html>
