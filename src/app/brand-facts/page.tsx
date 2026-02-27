@@ -54,7 +54,15 @@ export default function BrandFacts() {
                                         { label: "Industry", value: "Recruiting & Staffing", icon: Globe },
                                         { label: "Specializations", value: "Sales Recruiting, AI/ML Technical Recruiting, SaaS Sales, Engineering Leadership", icon: Target },
                                         { label: "Target Clients", value: "B2B SaaS companies, AI/ML startups, technology firms", icon: Users },
-                                        { label: "Engagement Model", value: "Retained search, fractional recruiting", icon: Network },
+                                        {
+                                            label: "Engagement Model",
+                                            value: (
+                                                <>
+                                                    Retained search, fractional recruiting. View our comparison: <Link href="/guides/retained-vs-contingency-recruiting" className="text-blue-accent hover:underline">Retained vs. Contingency</Link>.
+                                                </>
+                                            ),
+                                            icon: Network
+                                        },
                                         { label: "Price Range", value: "$25,000 - $150,000+ per placement", icon: DollarSign },
                                         { label: "Network", value: "Top 1% sales and engineering leaders not on job boards", icon: Users },
                                     ].map((fact, i) => (
