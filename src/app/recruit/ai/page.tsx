@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Check } from "lucide-react";
 
 export default function AIRecruiting() {
@@ -97,14 +98,17 @@ export default function AIRecruiting() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                         <div className="lg:col-span-4">
-                            <div className="aspect-square rounded-2xl bg-navy-900 flex items-center justify-center overflow-hidden shadow-2xl relative group">
-                                <div className="absolute inset-0 bg-blue-accent/20 mix-blend-overlay group-hover:opacity-0 transition-opacity"></div>
-                                <div className="text-center p-8">
-                                    <div className="mx-auto h-24 w-24 rounded-full bg-white/10 flex items-center justify-center mb-4">
-                                        <span className="text-3xl font-bold text-white">D</span>
-                                    </div>
-                                    <h3 className="text-2xl font-bold text-white">Derek, Ph.D.</h3>
-                                    <p className="text-blue-accent font-medium">Chief Technical Vetting Partner</p>
+                            <div className="aspect-square rounded-2xl bg-navy-900 overflow-hidden shadow-2xl relative group">
+                                <Image
+                                    src="/derek.png"
+                                    alt="Derek, Ph.D. - Chief Technical Vetting Partner"
+                                    fill
+                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-navy-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-navy-900 to-transparent">
+                                    <h3 className="text-xl font-bold text-white">Derek, Ph.D.</h3>
+                                    <p className="text-blue-accent text-sm font-medium">Chief Technical Vetting Partner</p>
                                 </div>
                             </div>
                         </div>

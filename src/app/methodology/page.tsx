@@ -1,5 +1,6 @@
 import { ArrowRight, CheckCircle2, Search, Users, FileText, Calendar, Handshake, ShieldCheck } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -87,6 +88,15 @@ export default function MethodologyPage() {
                                     Technical Vetting
                                 </div>
                                 <h2 className="text-4xl md:text-5xl font-bold mb-8">For AI/ML/Data Roles: <br /><span className="text-blue-accent italic">The Ph.D. Difference</span></h2>
+
+                                <div className="relative w-48 h-48 mx-auto lg:mx-0 rounded-2xl overflow-hidden border-4 border-blue-accent/30 shadow-2xl">
+                                    <Image
+                                        src="/derek.png"
+                                        alt="Derek, Ph.D."
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
                             </div>
                             <div className="lg:w-2/3 space-y-6 text-lg text-grey-300 leading-relaxed">
                                 <p>
