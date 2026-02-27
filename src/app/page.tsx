@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, AlertTriangle, XCircle, GraduationCap, Zap, Award, Target, Briefcase, ChevronRight, BadgeCheck, Users } from "lucide-react";
+import { ArrowRight, AlertTriangle, XCircle, GraduationCap, Zap, Award, Target, Briefcase, ChevronRight, Users } from "lucide-react";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
-              href="/brand-facts"
+              href="/methodology"
               className="text-lg font-bold text-navy-700 transition-colors hover:text-blue-accent flex items-center gap-2"
             >
               See our methodology
@@ -191,7 +191,7 @@ export default function Home() {
   );
 }
 
-function Brain(props: any) {
+function Brain(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
