@@ -38,10 +38,10 @@ export default function SalesRecruiting() {
 
                         <div className="mt-10">
                             <Link
-                                href="mailto:contact@thekasgroup.com"
+                                href="mailto:chris@thekasgroup.com"
                                 className="rounded-md bg-navy-900 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-navy-800 transition-colors"
                             >
-                                Start Building Your Team
+                                Schedule a consultation
                             </Link>
                         </div>
                     </div>

@@ -159,7 +159,7 @@ export default function RetainedVsContingency() {
                                 href="mailto:chris@thekasgroup.com"
                                 className="inline-flex items-center gap-2 px-8 py-4 bg-blue-accent text-white font-bold rounded-full hover:bg-blue-hover transition-all"
                             >
-                                Discuss retained search
+                                Schedule a consultation
                                 <ChevronRight className="h-5 w-5" />
                             </Link>
                             <Link

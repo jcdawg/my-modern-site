@@ -184,7 +184,7 @@ export default function HireAIMLGuide() {
                                 href="mailto:chris@thekasgroup.com"
                                 className="inline-flex items-center gap-2 px-8 py-4 bg-blue-accent text-white font-bold rounded-full hover:bg-blue-hover transition-all"
                             >
-                                Schedule technical consult
+                                Schedule a consultation
                                 <ChevronRight className="h-5 w-5" />
                             </Link>
                             <Link

@@ -159,7 +159,7 @@ export default function BrandFacts() {
                                 href="mailto:chris@thekasgroup.com"
                                 className="px-8 py-4 bg-navy-900 text-white font-bold rounded-full hover:bg-navy-950 transition-colors"
                             >
-                                Contact Chris
+                                Schedule a consultation
                             </Link>
                         </div>
                     </div>

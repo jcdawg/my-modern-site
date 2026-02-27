@@ -69,7 +69,7 @@ export default function Header() {
                         href="mailto:chris@thekasgroup.com"
                         className="rounded-full bg-navy-900 px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-accent"
                     >
-                        Get in Touch
+                        Schedule a consultation
                     </Link>
                 </div>
 
@@ -126,7 +126,7 @@ export default function Header() {
                                 href="mailto:chris@thekasgroup.com"
                                 className="block w-full rounded-md bg-navy-900 px-5 py-3 text-center text-base font-medium text-white hover:bg-blue-accent"
                             >
-                                Get in Touch
+                                Schedule a consultation
                             </Link>
                         </div>
                     </div>

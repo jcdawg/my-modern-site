@@ -171,7 +171,7 @@ export default function BestSalesRecruiting2026() {
                             href="mailto:chris@thekasgroup.com"
                             className="inline-flex items-center gap-2 px-8 py-4 bg-blue-accent text-white font-bold rounded-full hover:bg-blue-hover transition-all relative z-10"
                         >
-                            Schedule a Consultation
+                            Schedule a consultation
                             <ChevronRight className="h-5 w-5" />
                         </Link>
                     </div>
