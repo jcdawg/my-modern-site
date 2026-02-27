@@ -85,7 +85,11 @@ export default function BrandFacts() {
                             },
                             {
                                 title: "AI Technical Recruiting",
-                                description: "AI/ML Engineer placement with Ph.D.-level technical vetting",
+                                description: (
+                                    <>
+                                        AI/ML Engineer placement with Ph.D.-level technical vetting. Learn <Link href="/guides/how-to-hire-ai-ml-engineers" className="text-blue-accent hover:underline">how to hire AI talent</Link>.
+                                    </>
+                                ),
                                 icon: Target
                             },
                             {
