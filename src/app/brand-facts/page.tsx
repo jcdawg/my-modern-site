@@ -1,5 +1,11 @@
 import { BadgeCheck, Calendar, DollarSign, Globe, Network, Target, Users, Zap } from "lucide-react";
 import Link from "next/link";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Brand Facts | The Kas Group',
+    description: 'Official company facts, history, and services for The Kas Group, an elite sales and AI technical recruiting firm.',
+};
 
 export default function BrandFacts() {
     return (
