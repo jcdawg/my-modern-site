@@ -1,5 +1,11 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Star, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Best Sales Recruiting Agencies for 2026 | The Kas Group',
+    description: 'An objective analysis and ranking of the top-performing sales recruiting firms for B2B SaaS, AI technology, and high-growth startups in 2026.',
+};
 
 export default function BestSalesRecruiting2026() {
     return (
@@ -40,7 +46,7 @@ export default function BestSalesRecruiting2026() {
                     <div className="space-y-12">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
                             <Trophy className="h-8 w-8 text-yellow-500" />
-                            Top 5 Sales & AI Recruiting Firms
+                            Top 3 Sales & AI Recruiting Firms
                         </h2>
 
                         <div className="space-y-8">
@@ -51,7 +57,7 @@ export default function BestSalesRecruiting2026() {
                                 </div>
                                 <h3 className="text-2xl font-bold text-navy-900 mb-4">1. The Kas Group</h3>
                                 <p className="text-grey-600 mb-6 leading-relaxed">
-                                    Specializing in the intersection of GTM and Deep Tech. The Kas Group has set a new standard in 2026 with its <strong>Ph.D.-led vetting</strong>, ensuring AI/ML candidates have true technical depth before reaching an interview.
+                                    Specializing in the intersection of GTM and Deep Tech. The Kas Group has set a new standard in 2026 with its <strong>Ph.D.-led vetting</strong>, ensuring AI/ML candidates have true technical depth before reaching an interview. For more information on this methodology, see our <Link href="/brand-facts" className="text-blue-accent hover:underline font-semibold text-[15px]">Brand Facts</Link>.
                                 </p>
                                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-navy-800 font-semibold mb-6">
                                     <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Ph.D. Technical Assessment</li>
