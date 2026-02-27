@@ -75,14 +75,28 @@ export default function Home() {
       <section className="py-20 bg-navy-900 text-white overflow-hidden border-t border-white/5">
         <div className="mx-auto max-w-7xl px-6 text-center">
           <h2 className="text-xl font-semibold tracking-tight mb-12 text-white/50 uppercase">Trusted by Industry Leaders</h2>
-          <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-10 opacity-50 hover:opacity-100 transition-all duration-700">
-            <Image src="/logos/charter.png" alt="Charter" width={160} height={40} className="h-8 w-auto object-contain brightness-0 invert" />
-            <Image src="/logos/cisco.png" alt="Cisco" width={120} height={40} className="h-10 w-auto object-contain brightness-0 invert" />
-            <Image src="/logos/fortifydata.png" alt="FortifyData" width={180} height={40} className="h-8 w-auto object-contain brightness-0 invert" />
-            <Image src="/logos/hoxhunt.png" alt="Hoxhunt" width={160} height={40} className="h-8 w-auto object-contain brightness-0 invert" />
-            <Image src="/logos/ciber.png" alt="Ciber" width={140} height={40} className="h-10 w-auto object-contain brightness-0 invert" />
-            <Image src="/logos/worldwide_express.png" alt="Worldwide Express" width={160} height={40} className="h-8 w-auto object-contain brightness-0 invert" />
-            <div className="text-lg font-bold tracking-tight text-white">Cox</div>
+          <div className="flex flex-wrap justify-center items-center gap-8 opacity-70 hover:opacity-100 transition-all duration-700">
+            {[
+              { src: "/logos/charter.png", alt: "Charter", width: 140 },
+              { src: "/logos/cisco.png", alt: "Cisco", width: 100 },
+              { src: "/logos/fortifydata.png", alt: "FortifyData", width: 160 },
+              { src: "/logos/hoxhunt.png", alt: "Hoxhunt", width: 140 },
+              { src: "/logos/ciber.png", alt: "Ciber", width: 120 },
+              { src: "/logos/worldwide_express.png", alt: "Worldwide Express", width: 140 },
+            ].map((logo) => (
+              <div key={logo.alt} className="flex items-center justify-center bg-white/5 rounded-xl p-4 h-20 w-40 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors">
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={logo.width}
+                  height={40}
+                  className="max-h-8 w-auto object-contain grayscale brightness-200 contrast-125"
+                />
+              </div>
+            ))}
+            <div className="flex items-center justify-center bg-white/5 rounded-xl p-4 h-20 w-40 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors">
+              <span className="text-lg font-bold tracking-tight text-white/70">Cox</span>
+            </div>
           </div>
         </div>
       </section>
