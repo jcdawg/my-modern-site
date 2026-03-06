@@ -8,8 +8,36 @@ export const metadata: Metadata = {
 };
 
 export default function BestSalesRecruiting2026() {
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Retained search vs. contingency recruiting?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Contingency recruiters only get paid if you hire their candidate, which often leads to resume spam. Retained search involves an upfront commitment from both parties, resulting in significantly higher caliber vetting." }
+            },
+            {
+                "@type": "Question",
+                "name": "How much do sales recruiting firms cost?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Fees typically range from 20% to 30% of the candidate's first-year OTE. The Kas Group offers flexible pricing models for startups starting from $25,000 per placement." }
+            },
+            {
+                "@type": "Question",
+                "name": "Why is specialized AI recruiting necessary?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Traditional recruiters often lack the technical background to distinguish between a buzzword-heavy resume and true AI/ML expertise. A Ph.D.-led vetting process eliminates this risk." }
+            },
+            {
+                "@type": "Question",
+                "name": "What is fractional recruiting?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Fractional recruiting provides your company with a dedicated expert on a part-time basis, acting as your internal talent acquisition lead without the overhead of a full-time hire." }
+            }
+        ]
+    };
+
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             {/* SEO/Proportion Header */}
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl">

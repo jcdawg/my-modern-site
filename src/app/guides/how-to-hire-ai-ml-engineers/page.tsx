@@ -8,8 +8,36 @@ export const metadata: Metadata = {
 };
 
 export default function HireAIMLGuide() {
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I spot a buzzword researcher vs. a real AI engineer?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Ask them to explain the specific trade-offs of architecture choices they made in a past project. If they can't articulate why they didn't use a particular alternative, they likely lack depth." }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a competitive salary for an AI engineer in 2026?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Top-tier senior AI engineers now command base salaries between $250k-$450k, with significant equity components. For specialized research roles, total compensation often exceeds $600k." }
+            },
+            {
+                "@type": "Question",
+                "name": "Remote vs. in-office for AI teams?",
+                "acceptedAnswer": { "@type": "Answer", "text": "The market remains highly flexible. However, the most successful AI startups are trending toward high-bandwidth, in-office collaboration for core research phases, while remaining remote-first for implementation." }
+            },
+            {
+                "@type": "Question",
+                "name": "Internal vs. external recruiting for AI roles?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Internal teams are great for culture fitting, but often lack the specialized technical network required to find stealth AI talent. Partnering with a specialized firm bridges that technical gap." }
+            }
+        ]
+    };
+
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             {/* Header Section */}
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl">

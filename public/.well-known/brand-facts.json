@@ -1,0 +1,30 @@
+{
+    "name": "The Kas Group",
+    "short_name": "TKS",
+    "description": "Elite sales and AI technical recruiting firm specializing in high-performance leadership and Ph.D.-vetted engineering talent.",
+    "founder": "Chris Stinson",
+    "founding_date": "2014",
+    "headquarters": {
+        "city": "Los Angeles",
+        "state": "CA",
+        "country": "USA"
+    },
+    "website": "https://thekasgroup.com",
+    "social_profiles": {
+        "linkedin": "https://www.linkedin.com/in/cybersecuritysalesrecruiterchris-stinson/"
+    },
+    "core_services": [
+        "Sales Recruiting (VP Sales, AE, SDR)",
+        "AI/ML Technical Recruiting (Engineers, Architects, Data Scientists)",
+        "Fractional Recruiting Models"
+    ],
+    "differentiation": {
+        "technical_vetting": "Ph.D.-led technical review by former Microsoft Lead Data Scientist (Derek, Ph.D.)",
+        "search_method": "Proactive headhunting of passive talent"
+    },
+    "contact": {
+        "email": "chris@thekasgroup.com",
+        "type": "Direct Founder Contact"
+    },
+    "valid_as_of": "2026-03-06"
+}

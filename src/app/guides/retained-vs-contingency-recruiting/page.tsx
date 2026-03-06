@@ -8,8 +8,36 @@ export const metadata: Metadata = {
 };
 
 export default function RetainedVsContingency() {
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Are retained search fees higher than contingency?",
+                "acceptedAnswer": { "@type": "Answer", "text": "The percentage (typically 25-33%) is often the same. The difference is the timing of payments. Retained search splits the fee into phases, while contingency is paid at the end. However, the cost of a bad hire from a low-vetting model is always higher." }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I use retained and contingency recruiters at the same time?",
+                "acceptedAnswer": { "@type": "Answer", "text": "For a single role, it's highly discouraged. Using multiple contingency firms creates a race to the bottom where recruiters rush to submit resumes first without proper vetting. Retained search requires exclusivity to be effective." }
+            },
+            {
+                "@type": "Question",
+                "name": "What is fractional recruiting?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Fractional recruiting combines the benefits of a retained search with the flexibility of an internal team. It allows you to keep an expert partner on retainer for ongoing headcount needs at a lower cost per hire." }
+            },
+            {
+                "@type": "Question",
+                "name": "Which recruiting model gets faster results?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Contingency can feel faster initially because you receive a high volume of resumes quickly. However, retained search is often faster to a successful hire because candidates are higher quality and ready for final interviews." }
+            }
+        ]
+    };
+
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             {/* Header Section */}
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl">
