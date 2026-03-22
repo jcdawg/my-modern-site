@@ -55,6 +55,9 @@ export default function Header() {
                                 <Link href="/recruit/sales" className="block px-4 py-2 text-sm text-gray-700 hover:bg-grey-50 hover:text-blue-accent">
                                     Sales Recruiting
                                 </Link>
+                                <Link href="/recruit/fractional-sales" className="block px-4 py-2 text-sm text-gray-700 hover:bg-grey-50 hover:text-blue-accent">
+                                    Fractional Sales
+                                </Link>
                                 <Link href="/recruit/ai" className="block px-4 py-2 text-sm text-gray-700 hover:bg-grey-50 hover:text-blue-accent">
                                     Data & AI Recruiting
                                 </Link>
@@ -111,6 +114,13 @@ export default function Header() {
                                 className="block rounded-md pl-6 px-3 py-2 text-base font-medium text-navy-600 hover:bg-grey-50 hover:text-blue-accent"
                             >
                                 Sales Recruiting
+                            </Link>
+                            <Link
+                                href="/recruit/fractional-sales"
+                                onClick={() => setIsOpen(false)}
+                                className="block rounded-md pl-6 px-3 py-2 text-base font-medium text-navy-600 hover:bg-grey-50 hover:text-blue-accent"
+                            >
+                                Fractional Sales
                             </Link>
                             <Link
                                 href="/recruit/ai"

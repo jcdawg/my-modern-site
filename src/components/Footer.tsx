@@ -27,6 +27,11 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
+                                <Link href="/recruit/fractional-sales" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    Fractional Sales
+                                </Link>
+                            </li>
+                            <li>
                                 <Link href="/recruit/ai" className="text-base text-grey-200 hover:text-white transition-colors">
                                     Data & AI Recruiting
                                 </Link>
