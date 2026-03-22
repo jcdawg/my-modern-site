@@ -5,33 +5,6 @@ export default function Blog() {
     const posts = [
         {
             id: 1,
-            title: "The Rise of the &apos;Full-Stack&apos; Sales Leader",
-            excerpt: "Why modern sales VPs need to understand data, revenue operations, and product strategy to survive in 2024.",
-            date: "Oct 12, 2023",
-            author: "Kas Group Team",
-            category: "Sales Leadership",
-            slug: "full-stack-sales-leader",
-        },
-        {
-            id: 2,
-            title: "Hiring for AI: Beyond the Buzzwords",
-            excerpt: "How to distinguish between true ML expertise and resume padding. Key interview questions for Data Scientists.",
-            date: "Nov 05, 2023",
-            author: "Kas Group Team",
-            category: "AI Recruiting",
-            slug: "hiring-for-ai",
-        },
-        {
-            id: 3,
-            title: "Zero Onboarding: The New Standard",
-            excerpt: "In a downturn, companies can&apos;t afford a 6-month ramp up. How to find talent that delivers ROI in week one.",
-            date: "Dec 01, 2023",
-            author: "Kas Group Team",
-            category: "Market Trends",
-            slug: "zero-onboarding",
-        },
-        {
-            id: 4,
             title: "Why More SaaS Startups Are Turning to Fractional Sales Recruiting",
             excerpt: "Fractional SaaS sales recruiting lets early-stage companies bring in experienced closers and revenue leaders without the overhead of a full-time hire.",
             date: "Mar 22, 2026",
