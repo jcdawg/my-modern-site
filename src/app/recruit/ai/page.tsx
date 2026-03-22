@@ -45,9 +45,9 @@ export default function AIRecruiting() {
                             </div>
 
                             <div>
-                                <h3 className="text-lg font-bold text-navy-900 border-b-2 border-blue-accent w-fit mb-4">Our Solution: A Two-Step Vetting Process</h3>
+                                <h3 className="text-lg font-bold text-navy-900 border-b-2 border-blue-accent w-fit mb-4">Our Solution: Expert AI Technical Screening</h3>
                                 <p className="text-grey-600 leading-relaxed mb-4">
-                                    At The Kas Group, we believe technical expertise deserves to be evaluated by a technical expert. Our process is simple and transparent:
+                                    At The Kas Group, we believe technical expertise deserves to be evaluated by a technical expert. Our process for AI candidate vetting is simple and transparent:
                                 </p>
                                 <ul className="space-y-4">
                                     <li className="flex gap-4">
@@ -56,7 +56,7 @@ export default function AIRecruiting() {
                                     </li>
                                     <li className="flex gap-4">
                                         <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-navy-900 text-[10px] font-bold text-white mt-1">2</span>
-                                        <p className="text-sm text-grey-600"><strong>Technical Validation:</strong> Our technical partner conducts an in-depth interview to validate skills, knowledge, and real-world problem-solving abilities.</p>
+                                        <p className="text-sm text-grey-600"><strong>Technical Validation:</strong> Our technical partner conducts an in-depth interview to validate skills, knowledge, and real-world problem-solving abilities, ensuring we deliver highly capable, pre-vetted AI engineers.</p>
                                     </li>
                                 </ul>
                             </div>

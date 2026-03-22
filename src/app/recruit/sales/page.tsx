@@ -33,7 +33,7 @@ export default function SalesRecruiting() {
                             With over 10 years of specialized experience in sales recruiting, we understand exactly what it takes to build a thriving sales organization. We speak the language of sales—from GTM strategy to quota attainment—and know how to identify the drive, skills, and experience necessary to exceed revenue goals.
                         </p>
                         <p className="mt-4 text-grey-600 leading-relaxed italic">
-                            Whether you need to build a new sales team from the ground up or add a single high-impact producer, we have the industry expertise to help you succeed.
+                            Whether you need to build a new sales team from the ground up, add a single high-impact producer, or explore fractional sale recruiting services for your growing startup, we have the industry expertise to help you succeed.
                         </p>
 
                         <div className="mt-10">
@@ -76,7 +76,7 @@ export default function SalesRecruiting() {
                         <div className="p-8 rounded-2xl bg-grey-50 border border-grey-100 hover:border-blue-accent/50 transition-colors">
                             <h3 className="text-lg font-bold text-navy-900 mb-4">Understanding Your Needs</h3>
                             <p className="text-sm text-grey-600 leading-relaxed">
-                                We take the time to deeply understand your sales model, company culture, and specific role requirements to find candidates who are built for your environment.
+                                We take the time to deeply understand your sales model, company culture, and specific role requirements to find candidates who are built for your environment. We handle standard placements, as well as specialized models like fractional cybersecurity sales recruiting and fractional SaaS sales recruiting.
                             </p>
                         </div>
                         {/* Pillar 2 */}
