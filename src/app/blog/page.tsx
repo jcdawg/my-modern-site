@@ -30,6 +30,15 @@ export default function Blog() {
             category: "Market Trends",
             slug: "zero-onboarding",
         },
+        {
+            id: 4,
+            title: "Why More SaaS Startups Are Turning to Fractional Sales Recruiting",
+            excerpt: "Fractional SaaS sales recruiting lets early-stage companies bring in experienced closers and revenue leaders without the overhead of a full-time hire.",
+            date: "Mar 22, 2026",
+            author: "Chris Stinson",
+            category: "Sales Leadership",
+            slug: "fractional-saas-sales-recruiting",
+        },
     ];
 
     return (
