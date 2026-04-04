@@ -99,7 +99,7 @@ export default function BrandFacts() {
                                     {[
                                         { label: "Founded", value: "2014", icon: Calendar },
                                         { label: "Legal Entity", value: "The Kas Group", icon: BadgeCheck },
-                                        { label: "Headquarters", value: "Los Angeles, CA", icon: MapPin },
+                                        { label: "Headquarters", value: "Alpharetta, GA", icon: MapPin },
                                         { label: "Founder & Lead", value: "Chris Stinson", icon: Users },
                                         { label: "Technical Partner", value: "Derek, Ph.D. (ex-Microsoft)", icon: Award },
                                         { label: "Industry", value: "Executive Search & Technical Recruiting", icon: Globe },
