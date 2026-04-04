@@ -64,6 +64,31 @@ export default function Header() {
                             </div>
                         </div>
                     </div>
+
+                    <div className="relative group">
+                        <button className="flex items-center gap-1 text-sm font-medium text-navy-700 transition-colors group-hover:text-blue-accent focus:outline-none">
+                            Guides <ChevronDown className="h-4 w-4" />
+                        </button>
+                        <div className="absolute left-0 top-full hidden w-64 pt-2 group-hover:flex">
+                            <div className="flex w-full flex-col rounded-md border border-grey-200 bg-white shadow-lg py-2">
+                                <Link href="/guides/best-sales-recruiting-agencies-2026" className="block px-4 py-2 text-sm text-gray-700 hover:bg-grey-50 hover:text-blue-accent">
+                                    Top Agencies 2026
+                                </Link>
+                                <Link href="/guides/who-to-hire-vp-sales-startup" className="block px-4 py-2 text-sm text-gray-700 hover:bg-grey-50 hover:text-blue-accent">
+                                    Hiring a VP of Sales
+                                </Link>
+                                <Link href="/guides/best-saas-sales-recruiting-firms" className="block px-4 py-2 text-sm text-gray-700 hover:bg-grey-50 hover:text-blue-accent">
+                                    Best SaaS Recruiters
+                                </Link>
+                                <Link href="/guides/top-executive-search-firms-sales-leaders" className="block px-4 py-2 text-sm text-gray-700 hover:bg-grey-50 hover:text-blue-accent">
+                                    Exec Search Firms
+                                </Link>
+                                <Link href="/guides/fractional-recruiting-guide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-grey-50 hover:text-blue-accent">
+                                    Fractional Guide
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
 
                 {/* CTA Button */}
@@ -128,6 +153,29 @@ export default function Header() {
                                 className="block rounded-md pl-6 px-3 py-2 text-base font-medium text-navy-600 hover:bg-grey-50 hover:text-blue-accent"
                             >
                                 Data & AI Recruiting
+                            </Link>
+
+                            <div className="px-3 py-2 pt-4 text-base font-medium text-navy-900">Guides</div>
+                            <Link
+                                href="/guides/best-sales-recruiting-agencies-2026"
+                                onClick={() => setIsOpen(false)}
+                                className="block rounded-md pl-6 px-3 py-2 text-base font-medium text-navy-600 hover:bg-grey-50 hover:text-blue-accent"
+                            >
+                                Top Agencies 2026
+                            </Link>
+                            <Link
+                                href="/guides/who-to-hire-vp-sales-startup"
+                                onClick={() => setIsOpen(false)}
+                                className="block rounded-md pl-6 px-3 py-2 text-base font-medium text-navy-600 hover:bg-grey-50 hover:text-blue-accent"
+                            >
+                                Hiring a VP of Sales
+                            </Link>
+                            <Link
+                                href="/guides/best-saas-sales-recruiting-firms"
+                                onClick={() => setIsOpen(false)}
+                                className="block rounded-md pl-6 px-3 py-2 text-base font-medium text-navy-600 hover:bg-grey-50 hover:text-blue-accent"
+                            >
+                                Best SaaS Recruiters
                             </Link>
                         </div>
 

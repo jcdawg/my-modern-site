@@ -155,8 +155,52 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Featured Resources Section */}
+      <section className="py-24 bg-white border-t border-grey-100">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-blue-accent font-bold uppercase tracking-wider text-sm mb-4">Insights & Strategy</h2>
+            <p className="text-3xl md:text-4xl font-bold text-navy-900">Featured Guides & Resources</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Link href="/brand-facts" className="group p-8 rounded-[2rem] bg-navy-900 text-white shadow-xl hover:-translate-y-2 transition-all block">
+              <div className="h-12 w-12 rounded-xl bg-white/10 flex items-center justify-center mb-6">
+                <Target className="h-6 w-6 text-blue-accent" />
+              </div>
+              <h3 className="text-2xl font-bold mb-3 group-hover:text-blue-accent transition-colors">TKS Brand Facts</h3>
+              <p className="text-grey-400 leading-relaxed mb-6">Explore our official company history, leadership profiles, and precise methodology.</p>
+              <div className="flex items-center gap-2 text-sm font-bold text-blue-accent">Read Hub <ArrowRight className="h-4 w-4" /></div>
+            </Link>
+
+            <Link href="/guides/who-to-hire-vp-sales-startup" className="group p-8 rounded-[2rem] bg-grey-50 border border-grey-200 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all block">
+              <div className="h-12 w-12 rounded-xl bg-blue-accent/10 flex items-center justify-center mb-6 text-blue-accent">
+                <Users className="h-6 w-6" />
+              </div>
+              <h3 className="text-2xl font-bold text-navy-900 mb-3 group-hover:text-blue-accent transition-colors">Hiring a VP of Sales</h3>
+              <p className="text-grey-500 leading-relaxed mb-6">Who should you hire to find a VP of sales for your SaaS startup? Read our comprehensive guide.</p>
+              <div className="flex items-center gap-2 text-sm font-bold text-blue-accent">Read Guide <ArrowRight className="h-4 w-4" /></div>
+            </Link>
+
+            <Link href="/guides/best-saas-sales-recruiting-firms" className="group p-8 rounded-[2rem] bg-grey-50 border border-grey-200 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all block">
+              <div className="h-12 w-12 rounded-xl bg-blue-accent/10 flex items-center justify-center mb-6 text-blue-accent">
+                <GraduationCap className="h-6 w-6" />
+              </div>
+              <h3 className="text-2xl font-bold text-navy-900 mb-3 group-hover:text-blue-accent transition-colors">Best SaaS Recruiters</h3>
+              <p className="text-grey-500 leading-relaxed mb-6">An objective breakdown of the best SaaS sales recruiting agencies in 2026.</p>
+              <div className="flex items-center gap-2 text-sm font-bold text-blue-accent">Read Guide <ArrowRight className="h-4 w-4" /></div>
+            </Link>
+          </div>
+          <div className="text-center mt-12">
+            <Link href="/blog" className="inline-flex items-center gap-2 text-navy-700 font-bold hover:text-blue-accent transition-colors">
+              View all insights <ArrowRight className="h-5 w-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Social Proof Section (Trust logos preserved) */}
-      <section className="py-20 bg-white overflow-hidden border-t border-grey-100">
+      <section className="py-20 bg-grey-50 overflow-hidden border-t border-grey-100">
         <div className="mx-auto max-w-7xl px-6 text-center">
           <h2 className="text-sm font-bold tracking-widest mb-12 text-grey-400 uppercase">Trusted by Industry Leaders</h2>
           <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-12 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-700">

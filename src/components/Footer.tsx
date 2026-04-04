@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <footer className="bg-navy-950 text-white">
             <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
                     <div className="col-span-1 md:col-span-1">
                         <Link href="/" className="mb-4 block">
                             <Logo textClass="text-white" />
@@ -53,8 +53,39 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
+                                <Link href="/brand-facts" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    Brand Facts
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 className="text-sm font-semibold uppercase tracking-wider text-grey-400">Guides</h3>
+                        <ul className="mt-4 space-y-2">
+                            <li>
                                 <Link href="/guides/best-sales-recruiting-agencies-2026" className="text-base text-grey-200 hover:text-white transition-colors">
-                                    Top Agencies 2026 Guide
+                                    Top Agencies 2026
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/guides/who-to-hire-vp-sales-startup" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    Hiring a VP of Sales
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/guides/best-saas-sales-recruiting-firms" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    Best SaaS Recruiters
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/guides/top-executive-search-firms-sales-leaders" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    Exec Search Firms
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/guides/fractional-recruiting-guide" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    Fractional Guide
                                 </Link>
                             </li>
                         </ul>
