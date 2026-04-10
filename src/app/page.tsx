@@ -204,13 +204,13 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 text-center">
           <h2 className="text-sm font-bold tracking-widest mb-14 text-navy-700 uppercase">Trusted by Industry Leaders</h2>
           <div className="flex flex-wrap justify-center items-center gap-x-14 gap-y-10">
-            <Image src="/logos/charter.png" alt="Charter" width={160} height={48} className="h-10 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
-            <Image src="/logos/cisco.png" alt="Cisco" width={140} height={48} className="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
-            <Image src="/logos/fortifydata.png" alt="FortifyData" width={180} height={48} className="h-10 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
-            <Image src="/logos/hoxhunt.png" alt="Hoxhunt" width={160} height={48} className="h-10 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
-            <Image src="/logos/ciber.png" alt="Ciber" width={140} height={48} className="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
-            <Image src="/logos/worldwide_express.png" alt="Worldwide Express" width={180} height={48} className="h-10 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
-            <span className="text-2xl font-extrabold tracking-tight text-grey-400 hover:text-navy-900 transition-all duration-300">Cox</span>
+            <Image src="/logos/charter.png" alt="Charter" width={160} height={48} className="h-10 w-auto object-contain opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-300" />
+            <Image src="/logos/cisco.png" alt="Cisco" width={140} height={48} className="h-12 w-auto object-contain opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-300" />
+            <Image src="/logos/fortifydata.png" alt="FortifyData" width={180} height={48} className="h-10 w-auto object-contain opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-300" />
+            <Image src="/logos/hoxhunt.png" alt="Hoxhunt" width={160} height={48} className="h-10 w-auto object-contain opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-300" />
+            <Image src="/logos/ciber.png" alt="Ciber" width={140} height={48} className="h-12 w-auto object-contain opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-300" />
+            <Image src="/logos/worldwide_express.png" alt="Worldwide Express" width={180} height={48} className="h-10 w-auto object-contain opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-300" />
+            <span className="text-2xl font-extrabold tracking-tight text-navy-900 opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-300">Cox</span>
           </div>
         </div>
       </section>
