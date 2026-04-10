@@ -199,18 +199,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Social Proof Section (Trust logos preserved) */}
-      <section className="py-20 bg-grey-50 overflow-hidden border-t border-grey-100">
+      {/* Social Proof Section */}
+      <section className="py-20 bg-white overflow-hidden border-t border-b border-grey-200">
         <div className="mx-auto max-w-7xl px-6 text-center">
-          <h2 className="text-sm font-bold tracking-widest mb-12 text-grey-400 uppercase">Trusted by Industry Leaders</h2>
-          <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-12 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-700">
-            <Image src="/logos/charter.png" alt="Charter" width={160} height={40} className="h-8 w-auto object-contain" />
-            <Image src="/logos/cisco.png" alt="Cisco" width={120} height={40} className="h-10 w-auto object-contain" />
-            <Image src="/logos/fortifydata.png" alt="FortifyData" width={180} height={40} className="h-8 w-auto object-contain" />
-            <Image src="/logos/hoxhunt.png" alt="Hoxhunt" width={160} height={40} className="h-8 w-auto object-contain" />
-            <Image src="/logos/ciber.png" alt="Ciber" width={140} height={40} className="h-10 w-auto object-contain" />
-            <Image src="/logos/worldwide_express.png" alt="Worldwide Express" width={160} height={40} className="h-8 w-auto object-contain" />
-            <div className="text-2xl font-extrabold tracking-tight text-navy-900 border-l-4 border-blue-accent pl-4">Cox</div>
+          <h2 className="text-sm font-bold tracking-widest mb-14 text-navy-700 uppercase">Trusted by Industry Leaders</h2>
+          <div className="flex flex-wrap justify-center items-center gap-x-14 gap-y-10">
+            <Image src="/logos/charter.png" alt="Charter" width={160} height={48} className="h-10 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
+            <Image src="/logos/cisco.png" alt="Cisco" width={140} height={48} className="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
+            <Image src="/logos/fortifydata.png" alt="FortifyData" width={180} height={48} className="h-10 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
+            <Image src="/logos/hoxhunt.png" alt="Hoxhunt" width={160} height={48} className="h-10 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
+            <Image src="/logos/ciber.png" alt="Ciber" width={140} height={48} className="h-12 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
+            <Image src="/logos/worldwide_express.png" alt="Worldwide Express" width={180} height={48} className="h-10 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
+            <span className="text-2xl font-extrabold tracking-tight text-grey-400 hover:text-navy-900 transition-all duration-300">Cox</span>
           </div>
         </div>
       </section>
