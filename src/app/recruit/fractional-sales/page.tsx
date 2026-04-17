@@ -107,7 +107,7 @@ export default function FractionalSalesRecruiting() {
                             <div className="space-y-6">
                                 <div>
                                     <p className="text-sm font-semibold text-blue-accent uppercase tracking-wider mb-1">Fees</p>
-                                    <p className="text-lg font-medium text-white">Flat Rate / Hourly <span className="text-green-400 font-bold ml-2">(40–60% Savings)</span></p>
+                                    <p className="text-lg font-medium text-white">Flat Rate <span className="text-green-400 font-bold ml-2">(40–60% Savings)</span></p>
                                 </div>
                                 <div>
                                     <p className="text-sm font-semibold text-blue-accent uppercase tracking-wider mb-1">Incentives</p>
