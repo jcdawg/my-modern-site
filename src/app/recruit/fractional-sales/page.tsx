@@ -67,20 +67,7 @@ export default function FractionalSalesRecruiting() {
                 </div>
             </div>
 
-            {/* Trusted By Banner */}
-            <div className="bg-white py-10 border-b border-grey-100">
-                <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <p className="text-center text-sm font-semibold text-grey-500 uppercase tracking-widest mb-6">Trusted by Industry Leaders</p>
-                    <div className="flex flex-wrap justify-center gap-x-12 gap-y-8 opacity-60 grayscale">
-                        {/* Placeholder typographic logos */}
-                        <div className="flex items-center justify-center h-8 text-xl font-bold font-sans text-grey-900">ACME Corp</div>
-                        <div className="flex items-center justify-center h-8 text-xl font-extrabold tracking-tighter text-grey-900">Globex</div>
-                        <div className="flex items-center justify-center h-8 text-xl font-mono text-grey-900">TechFlow</div>
-                        <div className="flex items-center justify-center h-8 text-xl italic font-serif text-grey-900">Vanguard</div>
-                        <div className="flex items-center justify-center h-8 text-xl font-black uppercase text-grey-900">Synergy</div>
-                    </div>
-                </div>
-            </div>
+
 
             {/* B. The Problem Section ("The Agency Tax") */}
             <div className="py-24 sm:py-32 bg-grey-50">
@@ -195,22 +182,7 @@ export default function FractionalSalesRecruiting() {
             {/* E. Results / Trust Section */}
             <div className="py-24 sm:py-32 bg-grey-50">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="mx-auto max-w-2xl lg:text-center mb-16">
-                        <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">Results That Matter.</h2>
-                    </div>
 
-                    <div className="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
-                        <div className="bg-white p-8 rounded-2xl shadow-sm border border-grey-100 relative">
-                            <div className="text-5xl font-extrabold text-blue-accent mb-4">12 Days</div>
-                            <h3 className="text-xl font-bold text-navy-900 mb-2">Average Time-to-Fill</h3>
-                            <p className="text-grey-600">Cut standard hiring timelines in half while maintaining uncompromising talent standards.</p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm border border-grey-100 relative">
-                            <div className="text-5xl font-extrabold text-blue-accent mb-4">$500k+</div>
-                            <h3 className="text-xl font-bold text-navy-900 mb-2">Pipeline Generated in 60 Days</h3>
-                            <p className="text-grey-600">Our placements don&apos;t just ramp; they deliver measurable ROI within the first quarter.</p>
-                        </div>
-                    </div>
 
                     {/* How It Works */}
                     <div className="mx-auto max-w-2xl lg:text-center mb-16">
