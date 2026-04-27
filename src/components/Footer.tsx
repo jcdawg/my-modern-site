@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Linkedin, Twitter, Mail, ArrowRight } from "lucide-react";
+import { Linkedin, Twitter, Mail, ArrowRight, Github } from "lucide-react";
 import Logo from "./Logo";
 
 export default function Footer() {
@@ -62,6 +62,11 @@ export default function Footer() {
                                     Brand Facts
                                 </Link>
                             </li>
+                            <li>
+                                <Link href="https://github.com/jcdawg/technical-hiring-resources" target="_blank" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    Technical Resources
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
@@ -120,6 +125,12 @@ export default function Footer() {
                                 <Link href="https://twitter.com" target="_blank" className="text-grey-400 hover:text-white transition-colors">
                                     <span className="sr-only">Twitter</span>
                                     <Twitter className="h-6 w-6" />
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="https://github.com/jcdawg/technical-hiring-resources" target="_blank" className="text-grey-400 hover:text-white transition-colors">
+                                    <span className="sr-only">GitHub</span>
+                                    <Github className="h-6 w-6" />
                                 </Link>
                             </li>
                             <li>
