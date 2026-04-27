@@ -1,14 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { Linkedin, Twitter, Mail } from "lucide-react";
+import { Linkedin, Twitter, Mail, ArrowRight } from "lucide-react";
 import Logo from "./Logo";
 
 export default function Footer() {
     return (
         <footer className="bg-navy-950 text-white">
             <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
                     <div className="col-span-1 md:col-span-1">
                         <Link href="/" className="mb-4 block">
                             <Logo textClass="text-white" />
@@ -66,7 +66,7 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h3 className="text-sm font-semibold uppercase tracking-wider text-grey-400">Guides</h3>
+                        <h3 className="text-sm font-semibold uppercase tracking-wider text-grey-400">Sales Guides</h3>
                         <ul className="mt-4 space-y-2">
                             <li>
                                 <Link href="/guides/best-sales-recruiting-agencies-2026" className="text-base text-grey-200 hover:text-white transition-colors">
@@ -79,18 +79,29 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/guides/best-saas-sales-recruiting-firms" className="text-base text-grey-200 hover:text-white transition-colors">
-                                    Best SaaS Recruiters
+                                <Link href="/guides" className="text-sm font-bold text-blue-accent hover:text-blue-hover transition-colors inline-flex items-center gap-1">
+                                    View All <ArrowRight className="h-3 w-3" />
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 className="text-sm font-semibold uppercase tracking-wider text-grey-400">Data Guides</h3>
+                        <ul className="mt-4 space-y-2">
+                            <li>
+                                <Link href="/guides/best-data-engineering-recruiting-agencies" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    DE Agencies
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/guides/top-executive-search-firms-sales-leaders" className="text-base text-grey-200 hover:text-white transition-colors">
-                                    Exec Search Firms
+                                <Link href="/guides/how-to-hire-senior-data-engineers-ai-startups" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    Hiring for AI
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/guides/fractional-recruiting-guide" className="text-base text-grey-200 hover:text-white transition-colors">
-                                    Fractional Guide
+                                <Link href="/guides" className="text-sm font-bold text-blue-accent hover:text-blue-hover transition-colors inline-flex items-center gap-1">
+                                    Resource Hub <ArrowRight className="h-3 w-3" />
                                 </Link>
                             </li>
                         </ul>
