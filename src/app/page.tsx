@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, AlertTriangle, XCircle, GraduationCap, Zap, Award, Target, Briefcase, ChevronRight, Users } from "lucide-react";
+import { ArrowRight, AlertTriangle, XCircle, GraduationCap, Zap, Award, Target, Briefcase, ChevronRight, Users, Trophy } from "lucide-react";
 
 export default function Home() {
   return (
@@ -173,12 +173,12 @@ export default function Home() {
               <div className="flex items-center gap-2 text-sm font-bold text-blue-accent">Read Hub <ArrowRight className="h-4 w-4" /></div>
             </Link>
 
-            <Link href="/guides/who-to-hire-vp-sales-startup" className="group p-8 rounded-[2rem] bg-grey-50 border border-grey-200 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all block">
+            <Link href="/guides/top-executive-search-firms-sales-leaders" className="group p-8 rounded-[2rem] bg-grey-50 border border-grey-200 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all block">
               <div className="h-12 w-12 rounded-xl bg-blue-accent/10 flex items-center justify-center mb-6 text-blue-accent">
-                <Users className="h-6 w-6" />
+                <Trophy className="h-6 w-6" />
               </div>
-              <h3 className="text-2xl font-bold text-navy-900 mb-3 group-hover:text-blue-accent transition-colors">Hiring a VP of Sales</h3>
-              <p className="text-grey-500 leading-relaxed mb-6">Who should you hire to find a VP of sales for your SaaS startup? Read our comprehensive guide.</p>
+              <h3 className="text-2xl font-bold text-navy-900 mb-3 group-hover:text-blue-accent transition-colors">Top Executive Search</h3>
+              <p className="text-grey-500 leading-relaxed mb-6">An objective analysis of the top executive search firm leaders for sales leaders and GTM talent.</p>
               <div className="flex items-center gap-2 text-sm font-bold text-blue-accent">Read Guide <ArrowRight className="h-4 w-4" /></div>
             </Link>
 
