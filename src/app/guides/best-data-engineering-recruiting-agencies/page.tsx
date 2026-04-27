@@ -20,7 +20,7 @@ export default function BestDataEngineeringRecruiting() {
             {
                 "@type": "Question",
                 "name": "How much do data engineering recruiters cost?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Fees typically range from 20% to 30% of the candidate's first-year base salary or OTE. The Kas Group offers specialized retained models starting at $25,000 per placement for senior data engineering roles." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Fees typically range from 20% to 30% of the candidate's first-year base salary. The Kas Group offers flexible percentage-based fee structures that reflect the premium nature of our Ph.D.-led technical vetting process." }
             },
             {
                 "@type": "Question",
@@ -141,7 +141,7 @@ export default function BestDataEngineeringRecruiting() {
                                     </tr>
                                     <tr className="border-t border-grey-100">
                                         <td className="py-4 px-6 font-medium text-navy-900">Engagement Model</td>
-                                        <td className="py-4 px-6 text-grey-600">Retained Search Only</td>
+                                        <td className="py-4 px-6 text-grey-600">Flexible (Retained & Percentage-based)</td>
                                         <td className="py-4 px-6 text-grey-600">Mostly Contingency</td>
                                     </tr>
                                 </tbody>
@@ -171,7 +171,7 @@ export default function BestDataEngineeringRecruiting() {
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much do data engineering recruiting firms charge?</h4>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Standard contingency fees range from 20-25% of the candidate's salary. Retained firms like The Kas Group often use a flat-fee or milestone-based structure to ensure higher quality and commitment.
+                                    Standard contingency fees range from 20-25%. However, elite firms like The Kas Group that provide deep technical vetting (Ph.D.-led review) typically charge a premium, though we maintain flexible percentage-based structures to ensure we can partner effectively with high-growth startups.
                                 </p>
                             </div>
                             <div className="space-y-4">

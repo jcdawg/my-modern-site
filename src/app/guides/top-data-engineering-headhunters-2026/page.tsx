@@ -25,7 +25,7 @@ export default function DataEngineeringHeadhunters() {
             {
                 "@type": "Question",
                 "name": "What is the typical fee for a data engineering headhunter?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Fees for specialized data engineering headhunters typically range from 25% to 33% of the first-year salary. Retained search models are preferred for senior leadership and critical pipeline architect roles." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Fees for specialized data engineering headhunters typically range from 25% to 33% of the first-year salary. The Kas Group offers flexible percentage-based structures that reflect the premium technical vetting provided by our Ph.D.-led review process." }
             }
         ]
     };
