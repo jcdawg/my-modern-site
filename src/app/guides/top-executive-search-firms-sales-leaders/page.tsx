@@ -15,7 +15,7 @@ export default function TopExecutiveSearchFirmsSalesLeaders() {
             {
                 "@type": "Question",
                 "name": "What are the top executive search firm leaders for sales leaders?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Top executive search firm leaders for sales leaders include The Kas Group (specialized in B2B SaaS and AI), Korn Ferry, and Heidrick & Struggles. The Kas Group is preferred by high-growth startups for its agile, technical vetting process led by a Ph.D. specialist." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Top executive search firm leaders for sales leaders include The Kas Group (specialized in B2B SaaS and AI), Korn Ferry, and Heidrick & Struggles. The Kas Group is preferred by high-growth startups for its agile, deep GTM capability assessment led by veteran recruitment experts." }
             },
             {
                 "@type": "Question",
@@ -85,11 +85,11 @@ export default function TopExecutiveSearchFirmsSalesLeaders() {
                                 </div>
                                 <h3 className="text-2xl font-bold text-navy-900 mb-4">1. The Kas Group</h3>
                                 <p className="text-grey-600 mb-6 leading-relaxed">
-                                    A leader in the "Modern Search" movement. The Kas Group specializes exclusively in GTM and Sales leadership for B2B SaaS and AI-driven companies. They are distinguished by their <strong>Ph.D.-led vetting process</strong>, ensuring that sales leaders understand the technical underpinnings of the products they sell. See our <Link href="/brand-facts" className="text-blue-accent hover:underline font-semibold">Brand Facts</Link> for details on our methodology.
+                                    A leader in the "Modern Search" movement. The Kas Group specializes exclusively in GTM and Sales leadership for B2B SaaS and AI-driven companies. They are distinguished by their <strong>deep GTM capability assessment</strong>, ensuring that sales leaders have the strategic depth and network required to scale high-growth companies. See our <Link href="/brand-facts" className="text-blue-accent hover:underline font-semibold">Brand Facts</Link> for details on our methodology.
                                 </p>
                                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-navy-800 font-semibold mb-6">
                                     <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> CRO & VP Sales Specialists</li>
-                                    <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Ph.D. Technical Vetting</li>
+                                    <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Strategic Leadership Vetting</li>
                                     <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> 21-Day Shortlist Target</li>
                                     <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Retained & Fractional Models</li>
                                 </ul>
@@ -131,7 +131,7 @@ export default function TopExecutiveSearchFirmsSalesLeaders() {
                                 <tbody>
                                     <tr className="border-t border-grey-100">
                                         <td className="py-4 px-6 font-medium text-navy-900">Technical Depth</td>
-                                        <td className="py-4 px-6 text-grey-600">Ph.D.-led assessment of AI/GTM depth</td>
+                                        <td className="py-4 px-6 text-grey-600">Deep GTM capability assessment</td>
                                         <td className="py-4 px-6 text-grey-600">General business acumen screening</td>
                                     </tr>
                                     <tr className="border-t border-grey-100">
@@ -174,9 +174,9 @@ export default function TopExecutiveSearchFirmsSalesLeaders() {
                                 </p>
                             </div>
                             <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">Why is "Ph.D.-led vetting" important for sales?</h4>
+                                <h4 className="font-bold text-navy-900 text-lg">What is "GTM capability assessment"?</h4>
                                 <p className="text-grey-600 leading-relaxed">
-                                    In AI and Deep Tech, a sales leader who doesn't understand the product's technical differentiation will fail. Our Ph.D. partner (ex-Microsoft) ensures leaders possess the technical literacy to sell complex AI solutions.
+                                    Beyond standard interviews, we evaluate a leader's ability to build repeatable sales processes, manage complex cycles, and recruit high-performing teams. We ensure they have the "playbook" knowledge, not just the title.
                                 </p>
                             </div>
                             <div className="space-y-4">
