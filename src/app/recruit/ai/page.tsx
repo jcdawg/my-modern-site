@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Check, Database } from "lucide-react";
+import { Check, Database, ArrowRight } from "lucide-react";
 
 export default function AIRecruiting() {
     const roles = [
@@ -136,6 +136,38 @@ export default function AIRecruiting() {
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            {/* Related Resources Section */}
+            <section className="py-24 bg-white border-t border-grey-100">
+                <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                        <div className="max-w-2xl">
+                            <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">Technical Deep Dives</h2>
+                            <p className="mt-4 text-grey-600">
+                                Explore our technical guides to help you architect your data team and vet for elite engineering capability.
+                            </p>
+                        </div>
+                        <Link href="/guides" className="text-blue-accent font-bold hover:underline inline-flex items-center gap-2">
+                            View All Guides <ArrowRight className="h-4 w-4" />
+                        </Link>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <Link href="/guides/best-data-engineering-recruiting-agencies" className="group p-8 rounded-2xl bg-grey-50 border border-grey-200 hover:border-blue-accent/30 hover:shadow-lg transition-all">
+                            <h3 className="text-xl font-bold text-navy-900 group-hover:text-blue-accent mb-2">Best Data Engineering Recruiting Agencies 2026</h3>
+                            <p className="text-sm text-grey-500 mb-4 leading-relaxed">An objective analysis of the top firms specializing in the modern data stack and pipeline talent.</p>
+                            <span className="text-blue-accent text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                                Read Guide <ArrowRight className="h-3 w-3" />
+                            </span>
+                        </Link>
+                        <Link href="/guides/how-to-hire-senior-data-engineers-ai-startups" className="group p-8 rounded-2xl bg-grey-50 border border-grey-200 hover:border-blue-accent/30 hover:shadow-lg transition-all">
+                            <h3 className="text-xl font-bold text-navy-900 group-hover:text-blue-accent mb-2">How to Hire Senior Data Engineers for AI Startups</h3>
+                            <p className="text-sm text-grey-500 mb-4 leading-relaxed">A tactical roadmap for founders on finding and vetting founding data engineering teams.</p>
+                            <span className="text-blue-accent text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                                Read Guide <ArrowRight className="h-3 w-3" />
+                            </span>
+                        </Link>
                     </div>
                 </div>
             </section>

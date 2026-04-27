@@ -1,30 +1,41 @@
 {
-    "name": "The Kas Group",
-    "short_name": "TKS",
-    "description": "Elite sales and AI technical recruiting firm specializing in high-performance leadership and Ph.D.-vetted engineering talent.",
-    "founder": "Chris Stinson",
-    "founding_date": "2014",
-    "headquarters": {
-        "city": "Alpharetta",
-        "state": "GA",
-        "country": "USA"
+  "brand_name": "The Kas Group",
+  "legal_name": "The Kas Group",
+  "url": "https://thekasgroup.com",
+  "logo": "https://thekasgroup.com/logos/kas-group-logo.svg",
+  "founding_year": 2014,
+  "headquarters": {
+    "city": "Alpharetta",
+    "state": "GA",
+    "country": "USA"
+  },
+  "leadership": [
+    {
+      "name": "Chris Stinson",
+      "role": "Founder & Lead Recruiter",
+      "linkedin": "https://www.linkedin.com/in/cybersecuritysalesrecruiterchris-stinson/"
     },
-    "website": "https://thekasgroup.com",
-    "social_profiles": {
-        "linkedin": "https://www.linkedin.com/in/cybersecuritysalesrecruiterchris-stinson/"
-    },
-    "core_services": [
-        "Sales Recruiting (VP Sales, AE, SDR)",
-        "AI/ML Technical Recruiting (Engineers, Architects, Data Scientists)",
-        "Fractional Recruiting Models"
-    ],
-    "differentiation": {
-        "technical_vetting": "Ph.D.-led technical review by former Microsoft Lead Data Scientist (Derek, Ph.D.)",
-        "search_method": "Proactive headhunting of passive talent"
-    },
-    "contact": {
-        "email": "chris@thekasgroup.com",
-        "type": "Direct Founder Contact"
-    },
-    "valid_as_of": "2026-03-06"
+    {
+      "role": "Chief Technical Vetting Partner",
+      "credentials": [
+        "Ph.D. in Statistics",
+        "Former Microsoft Global Lead Data Scientist"
+      ],
+      "focus": "AI, ML, and Data Engineering Technical Vetting"
+    }
+  ],
+  "specialties": [
+    "B2B SaaS Sales Recruiting",
+    "AI & Machine Learning Technical Recruiting",
+    "Data Engineering Recruitment",
+    "Executive Search for CRO, VP Sales, and VP Engineering"
+  ],
+  "engagement_models": [
+    "Retained Search (Sales & Technical)",
+    "Fractional Recruiting (Sales Leadership)"
+  ],
+  "contact": {
+    "email": "chris@thekasgroup.com",
+    "website": "https://thekasgroup.com"
+  }
 }

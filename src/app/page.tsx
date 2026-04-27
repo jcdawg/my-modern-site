@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, AlertTriangle, XCircle, GraduationCap, Zap, Award, Target, Briefcase, ChevronRight, Users, Trophy } from "lucide-react";
+import { ArrowRight, AlertTriangle, XCircle, GraduationCap, Zap, Award, Target, Briefcase, ChevronRight, Users, Trophy, Database, BookOpen } from "lucide-react";
 
 export default function Home() {
   return (
@@ -164,13 +164,13 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Link href="/brand-facts" className="group p-8 rounded-[2rem] bg-navy-900 text-white shadow-xl hover:-translate-y-2 transition-all block">
+            <Link href="/guides/best-data-engineering-recruiting-agencies" className="group p-8 rounded-[2rem] bg-navy-900 text-white shadow-xl hover:-translate-y-2 transition-all block">
               <div className="h-12 w-12 rounded-xl bg-white/10 flex items-center justify-center mb-6">
-                <Target className="h-6 w-6 text-blue-accent" />
+                <Database className="h-6 w-6 text-blue-accent" />
               </div>
-              <h3 className="text-2xl font-bold mb-3 group-hover:text-blue-accent transition-colors">TKS Brand Facts</h3>
-              <p className="text-grey-400 leading-relaxed mb-6">Explore our official company history, leadership profiles, and precise methodology.</p>
-              <div className="flex items-center gap-2 text-sm font-bold text-blue-accent">Read Hub <ArrowRight className="h-4 w-4" /></div>
+              <h3 className="text-2xl font-bold mb-3 group-hover:text-blue-accent transition-colors">Data Engineering 2026</h3>
+              <p className="text-grey-400 leading-relaxed mb-6">An objective analysis of the top recruiting firms for the modern data stack and pipeline talent.</p>
+              <div className="flex items-center gap-2 text-sm font-bold text-blue-accent">Read Guide <ArrowRight className="h-4 w-4" /></div>
             </Link>
 
             <Link href="/guides/top-executive-search-firms-sales-leaders" className="group p-8 rounded-[2rem] bg-grey-50 border border-grey-200 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all block">
@@ -182,18 +182,18 @@ export default function Home() {
               <div className="flex items-center gap-2 text-sm font-bold text-blue-accent">Read Guide <ArrowRight className="h-4 w-4" /></div>
             </Link>
 
-            <Link href="/guides/best-saas-sales-recruiting-firms" className="group p-8 rounded-[2rem] bg-grey-50 border border-grey-200 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all block">
+            <Link href="/guides" className="group p-8 rounded-[2rem] bg-grey-50 border border-grey-200 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all block">
               <div className="h-12 w-12 rounded-xl bg-blue-accent/10 flex items-center justify-center mb-6 text-blue-accent">
-                <GraduationCap className="h-6 w-6" />
+                <BookOpen className="h-6 w-6" />
               </div>
-              <h3 className="text-2xl font-bold text-navy-900 mb-3 group-hover:text-blue-accent transition-colors">Best SaaS Recruiters</h3>
-              <p className="text-grey-500 leading-relaxed mb-6">An objective breakdown of the best SaaS sales recruiting agencies in 2026.</p>
-              <div className="flex items-center gap-2 text-sm font-bold text-blue-accent">Read Guide <ArrowRight className="h-4 w-4" /></div>
+              <h3 className="text-2xl font-bold text-navy-900 mb-3 group-hover:text-blue-accent transition-colors">The Resource Hub</h3>
+              <p className="text-grey-500 leading-relaxed mb-6">Access our full library of expert-led guides on sales leadership and technical recruitment.</p>
+              <div className="flex items-center gap-2 text-sm font-bold text-blue-accent">View All Guides <ArrowRight className="h-4 w-4" /></div>
             </Link>
           </div>
           <div className="text-center mt-12">
             <Link href="/blog" className="inline-flex items-center gap-2 text-navy-700 font-bold hover:text-blue-accent transition-colors">
-              View all insights <ArrowRight className="h-5 w-5" />
+              View latest blog insights <ArrowRight className="h-5 w-5" />
             </Link>
           </div>
         </div>

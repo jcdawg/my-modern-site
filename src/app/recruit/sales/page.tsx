@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Check } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 
 export default function SalesRecruiting() {
     const roles = [
@@ -93,6 +93,38 @@ export default function SalesRecruiting() {
                                 We use our own extensive sales background to conduct thorough interviews, evaluating actual performance, motivation, and the psychological drive needed to close deals.
                             </p>
                         </div>
+                    </div>
+                </div>
+            </section>
+            {/* Related Resources Section */}
+            <section className="py-24 bg-grey-50 border-t border-grey-100">
+                <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                        <div className="max-w-2xl">
+                            <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">Hiring Resources</h2>
+                            <p className="mt-4 text-grey-600">
+                                Explore our expert-led guides to help you navigate the complex landscape of sales leadership recruitment.
+                            </p>
+                        </div>
+                        <Link href="/guides" className="text-blue-accent font-bold hover:underline inline-flex items-center gap-2">
+                            View All Guides <ArrowRight className="h-4 w-4" />
+                        </Link>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <Link href="/guides/best-sales-recruiting-agencies-2026" className="group p-8 rounded-2xl bg-white border border-grey-200 hover:border-blue-accent/30 hover:shadow-lg transition-all">
+                            <h3 className="text-xl font-bold text-navy-900 group-hover:text-blue-accent mb-2">Best Sales Recruiting Agencies 2026</h3>
+                            <p className="text-sm text-grey-500 mb-4 leading-relaxed">Our objective analysis of the top firms for B2B sales talent and leadership roles.</p>
+                            <span className="text-blue-accent text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                                Read Guide <ArrowRight className="h-3 w-3" />
+                            </span>
+                        </Link>
+                        <Link href="/guides/who-to-hire-vp-sales-startup" className="group p-8 rounded-2xl bg-white border border-grey-200 hover:border-blue-accent/30 hover:shadow-lg transition-all">
+                            <h3 className="text-xl font-bold text-navy-900 group-hover:text-blue-accent mb-2">Hiring a VP of Sales: First 90 Days</h3>
+                            <p className="text-sm text-grey-500 mb-4 leading-relaxed">A definitive roadmap for founding teams on finding and onboarding their first sales leader.</p>
+                            <span className="text-blue-accent text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                                Read Guide <ArrowRight className="h-3 w-3" />
+                            </span>
+                        </Link>
                     </div>
                 </div>
             </section>
