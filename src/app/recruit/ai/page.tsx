@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Check } from "lucide-react";
+import { Check, Database } from "lucide-react";
 
 export default function AIRecruiting() {
     const roles = [
@@ -93,46 +93,40 @@ export default function AIRecruiting() {
                 </div>
             </div>
 
-            {/* Meet Derek Section */}
+            {/* Technical Vetting Section */}
             <section className="bg-grey-50 py-24 sm:py-32 border-t border-grey-200">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                         <div className="lg:col-span-4">
-                            <div className="aspect-square rounded-2xl bg-navy-900 overflow-hidden shadow-2xl relative group">
-                                <Image
-                                    src="/derek.png"
-                                    alt="Derek, Ph.D. - Chief Technical Vetting Partner"
-                                    fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                                />
-                                <div className="absolute inset-0 bg-navy-900/20 group-hover:bg-transparent transition-colors duration-500"></div>
-                                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-navy-900 to-transparent">
-                                    <h3 className="text-xl font-bold text-white">Derek, Ph.D.</h3>
-                                    <p className="text-blue-accent text-sm font-medium">Chief Technical Vetting Partner</p>
+                            <div className="aspect-square rounded-2xl bg-navy-900 flex flex-col items-center justify-center p-8 text-center shadow-2xl relative group">
+                                <div className="h-24 w-24 rounded-full bg-blue-accent/20 flex items-center justify-center text-blue-accent mb-6 group-hover:scale-110 transition-transform">
+                                    <Database className="h-12 w-12" />
                                 </div>
+                                <h3 className="text-xl font-bold text-white">Chief Technical Advisor, Ph.D.</h3>
+                                <p className="text-blue-accent text-sm font-medium">Global Technical Vetting Lead</p>
                             </div>
                         </div>
                         <div className="lg:col-span-8">
                             <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl mb-6">Expert-Led Technical Vetting</h2>
                             <div className="prose prose-blue text-grey-600 space-y-4 max-w-none">
                                 <p>
-                                    Meet Derek, our lead technical vetting partner. He trained as a Statistician, and his work experience has had a strong consulting focus, ranging from developing advanced analytics and machine learning models to leading clients in the &quot;Art of Possible&quot;.
+                                    Our lead technical vetting partner trained as a Statistician, and his work experience has had a strong consulting focus, ranging from developing advanced analytics and machine learning models to leading clients in the &quot;Art of Possible&quot;.
                                 </p>
                                 <p>
-                                    Currently the <strong>Chief Technology Officer at Life2, inc.</strong>, Derek is designing and putting advanced analytics and machine learning into production for healthcare clients. He is also the founder of the Atlanta R Users Group.
+                                    Currently the <strong>Chief Technology Officer at Life2, inc.</strong>, our advisor is designing and putting advanced analytics and machine learning into production for healthcare clients. He is also the founder of the Atlanta R Users Group.
                                 </p>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                                    <div className="p-4 rounded-lg bg-white border border-grey-200">
+                                    <div className="p-4 rounded-lg bg-white border border-grey-200 shadow-sm">
                                         <h4 className="font-bold text-navy-900 text-sm mb-2 uppercase tracking-wider">Education</h4>
-                                        <p className="text-sm">Bachelors, Masters, and PhD (ABD) in Statistics with a focus in Financial Econometrics and Applied Computational Statistics (Data Mining).</p>
+                                        <p className="text-sm text-grey-500 font-medium">Bachelors, Masters, and PhD (ABD) in Statistics with a focus in Financial Econometrics and Applied Computational Statistics (Data Mining).</p>
                                     </div>
-                                    <div className="p-4 rounded-lg bg-white border border-grey-200">
+                                    <div className="p-4 rounded-lg bg-white border border-grey-200 shadow-sm">
                                         <h4 className="font-bold text-navy-900 text-sm mb-2 uppercase tracking-wider">Microsoft Background</h4>
-                                        <p className="text-sm">5 years as Global Lead Data Scientist, Architect, and Industry Digital Strategist in Microsoft Engineering and Consulting Services.</p>
+                                        <p className="text-sm text-grey-500 font-medium">5 years as Global Lead Data Scientist, Architect, and Industry Digital Strategist in Microsoft Engineering and Consulting Services.</p>
                                     </div>
                                 </div>
                                 <p className="pt-4 text-sm font-medium text-navy-700 italic border-l-4 border-blue-accent pl-4">
-                                    &quot;Derek’s experience began with a focus in Financial Econometrics and Applied Computational Statistics. He has developed models for predicting fraud, lifetime value, and market share across hospitality, telco, credit risk, and healthcare domains.&quot;
+                                    &quot;Our partner’s experience began with a focus in Financial Econometrics and Applied Computational Statistics. He has developed models for predicting fraud, lifetime value, and market share across hospitality, telco, credit risk, and healthcare domains.&quot;
                                 </p>
                             </div>
                         </div>

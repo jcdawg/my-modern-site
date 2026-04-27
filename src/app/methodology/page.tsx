@@ -89,18 +89,19 @@ export default function MethodologyPage() {
                                 </div>
                                 <h2 className="text-4xl md:text-5xl font-bold mb-8">For AI/ML/Data Roles: <br /><span className="text-blue-accent italic">The Ph.D. Difference</span></h2>
 
-                                <div className="relative w-48 h-48 mx-auto lg:mx-0 rounded-2xl overflow-hidden border-4 border-blue-accent/30 shadow-2xl">
-                                    <Image
-                                        src="/derek.png"
-                                        alt="Derek, Ph.D."
-                                        fill
-                                        className="object-cover"
-                                    />
+                                <div className="relative w-48 h-48 mx-auto lg:mx-0 rounded-2xl overflow-hidden border-4 border-blue-accent/30 shadow-2xl flex flex-col items-center justify-center bg-white p-6 gap-4">
+                                    <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-grey-100 shadow-sm flex items-center justify-center bg-grey-100">
+                                        <Users className="h-8 w-8 text-grey-400" />
+                                    </div>
+                                    <div className="text-center">
+                                        <h4 className="text-lg font-bold text-navy-900">Technical Advisor, Ph.D.</h4>
+                                        <p className="text-blue-accent font-semibold text-xs">Ex-Microsoft Global Lead Data Scientist</p>
+                                    </div>
                                 </div>
                             </div>
                             <div className="lg:w-2/3 space-y-6 text-lg text-grey-300 leading-relaxed">
-                                <p>
-                                    Every technical candidate goes through our proprietary Ph.D.-led vetting. Derek, our technical advisor with a PhD in Statistics and former Global Lead Data Scientist at Microsoft, conducts a 45 to 60 minute technical interview covering real-world scenarios.
+                                <p className="text-white italic">
+                                    Every technical candidate goes through our proprietary Ph.D.-led vetting. Our technical advisor, a Ph.D. in Statistics and former Global Lead Data Scientist at Microsoft, conducts a 45 to 60 minute technical interview covering real-world scenarios.
                                 </p>
                                 <p>
                                     Most recruiters can&apos;t evaluate AI/ML expertise. <span className="text-white font-bold underline decoration-blue-accent decoration-2">We can.</span> We separate buzzwords from capability, ensuring you only spend time with candidates who can actually perform at an elite level.

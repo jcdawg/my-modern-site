@@ -42,7 +42,7 @@ export default function BrandFacts() {
         },
         {
             question: "What is the Ph.D.-led vetting process?",
-            answer: "Our unique vetting process involves a technical interview conducted by a Ph.D. statistician and former Microsoft Lead Data Scientist (Derek, Ph.D.). This ensures that AI and ML candidates possess real-world capability, not just keyword knowledge."
+            answer: "Our unique vetting process involves a technical interview conducted by a Ph.D. statistician and former Microsoft Lead Data Scientist. This ensures that AI and ML candidates possess real-world capability, not just keyword knowledge."
         },
         {
             question: "What industries does The Kas Group serve?",
@@ -101,7 +101,7 @@ export default function BrandFacts() {
                                         { label: "Legal Entity", value: "The Kas Group", icon: BadgeCheck },
                                         { label: "Headquarters", value: "Alpharetta, GA", icon: MapPin },
                                         { label: "Founder & Lead", value: "Chris Stinson", icon: Users },
-                                        { label: "Technical Partner", value: "Derek, Ph.D. (ex-Microsoft)", icon: Award },
+                                        { label: "Technical Partner", value: "Ph.D. Statistician (ex-Microsoft)", icon: Award },
                                         { label: "Industry", value: "Executive Search & Technical Recruiting", icon: Globe },
                                         { label: "Core Focus", value: "B2B Sales Leadership & AI/ML Engineering", icon: Target },
                                         {
@@ -152,15 +152,17 @@ export default function BrandFacts() {
                             <div className="p-8 rounded-2xl bg-white border border-grey-200 shadow-sm hover:shadow-md transition-shadow">
                                 <div className="flex items-start justify-between mb-2">
                                     <div>
-                                        <h3 className="text-xl font-bold text-navy-900">Derek, Ph.D.</h3>
+                                        <h3 className="text-xl font-bold text-navy-900">Technical Advisor, Ph.D.</h3>
                                         <p className="text-blue-accent font-semibold text-sm">Chief Technical Vetting Partner</p>
                                     </div>
                                     <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-grey-100 shadow-sm">
-                                        <Image src="/derek.png" alt="Derek Ph.D." fill className="object-cover" />
+                                        <div className="w-full h-full bg-grey-100 flex items-center justify-center text-grey-400">
+                                            <Users className="h-6 w-6" />
+                                        </div>
                                     </div>
                                 </div>
                                 <p className="text-grey-600 text-sm leading-relaxed mb-6">
-                                    Former Microsoft Global Lead Data Scientist and Ph.D. in Statistics. Derek personally vets every technical candidate for AI/ML and Data roles, ensuring elite capability beyond the resume keywords.
+                                    Former Microsoft Global Lead Data Scientist and Ph.D. in Statistics. Our partner personally vets every technical candidate for AI/ML and Data roles, ensuring elite capability beyond the resume keywords.
                                 </p>
                                 <Link href="/recruit/ai" className="text-blue-600 hover:text-blue-800 text-xs font-bold uppercase tracking-wider flex items-center gap-1">
                                     View AI Methodology <Target className="h-3 w-3" />
