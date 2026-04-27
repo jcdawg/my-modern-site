@@ -108,7 +108,7 @@ export default function BrandFacts() {
                                             label: "Engagement",
                                             value: (
                                                 <>
-                                                    Retained & Fractional. See <Link href="/guides/retained-vs-contingency-recruiting" className="text-blue-accent hover:underline">Comparison</Link>.
+                                                    Retained (All Roles) & Fractional (Sales Only). See <Link href="/guides/retained-vs-contingency-recruiting" className="text-blue-accent hover:underline">Comparison</Link>.
                                                 </>
                                             ),
                                             icon: Network

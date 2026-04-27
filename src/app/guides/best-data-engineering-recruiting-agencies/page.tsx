@@ -20,7 +20,7 @@ export default function BestDataEngineeringRecruiting() {
             {
                 "@type": "Question",
                 "name": "How much do data engineering recruiters cost?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Fees typically range from 20% to 30% of the candidate's first-year base salary or OTE. The Kas Group offers specialized retained and fractional models starting at $25,000 per placement for senior data engineering roles." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Fees typically range from 20% to 30% of the candidate's first-year base salary or OTE. The Kas Group offers specialized retained models starting at $25,000 per placement for senior data engineering roles." }
             },
             {
                 "@type": "Question",
@@ -85,7 +85,7 @@ export default function BestDataEngineeringRecruiting() {
                                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-navy-800 font-semibold mb-6">
                                     <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Ph.D.-Led Technical Review</li>
                                     <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Modern Data Stack Experts</li>
-                                    <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Fractional Sourcing Models</li>
+                                    <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Retained Search Focus</li>
                                     <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Zero-Ramp Talent Network</li>
                                 </ul>
                             </div>
@@ -141,7 +141,7 @@ export default function BestDataEngineeringRecruiting() {
                                     </tr>
                                     <tr className="border-t border-grey-100">
                                         <td className="py-4 px-6 font-medium text-navy-900">Engagement Model</td>
-                                        <td className="py-4 px-6 text-grey-600">Retained & Fractional Only</td>
+                                        <td className="py-4 px-6 text-grey-600">Retained Search Only</td>
                                         <td className="py-4 px-6 text-grey-600">Mostly Contingency</td>
                                     </tr>
                                 </tbody>
