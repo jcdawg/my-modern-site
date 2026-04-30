@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, Search, Users, FileText, Calendar, Handshake, ShieldCheck } from "lucide-react";
+import { ArrowRight, CheckCircle2, Search, Users, FileText, Calendar, Handshake, ShieldCheck, Target } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from 'next';
@@ -90,11 +90,11 @@ export default function MethodologyPage() {
                                 <h2 className="text-4xl md:text-5xl font-bold mb-8">For AI/ML/Data Roles: <br /><span className="text-blue-accent italic">The Ph.D. Difference</span></h2>
 
                                 <div className="relative w-48 h-48 mx-auto lg:mx-0 rounded-2xl overflow-hidden border-4 border-blue-accent/30 shadow-2xl flex flex-col items-center justify-center bg-white p-6 gap-4">
-                                    <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-grey-100 shadow-sm flex items-center justify-center bg-grey-100">
-                                        <Users className="h-8 w-8 text-grey-400" />
+                                    <div className="relative w-20 h-20 rounded-full overflow-hidden border-2 border-grey-100 shadow-sm flex items-center justify-center bg-grey-100">
+                                        <Image src="/derek.png" alt="Derek, Ph.D." fill className="object-cover" />
                                     </div>
                                     <div className="text-center">
-                                        <h4 className="text-lg font-bold text-navy-900">Technical Advisor, Ph.D.</h4>
+                                        <h4 className="text-lg font-bold text-navy-900">Derek, Ph.D.</h4>
                                         <p className="text-blue-accent font-semibold text-xs">Ex-Microsoft Global Lead Data Scientist</p>
                                     </div>
                                 </div>
@@ -105,6 +105,41 @@ export default function MethodologyPage() {
                                 </p>
                                 <p>
                                     Most recruiters can&apos;t evaluate AI/ML expertise. <span className="text-white font-bold underline decoration-blue-accent decoration-2">We can.</span> We separate buzzwords from capability, ensuring you only spend time with candidates who can actually perform at an elite level.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Sales Vetting Difference Section */}
+            <section className="py-24 bg-white border-y border-grey-100 relative overflow-hidden">
+                <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+                    <div className="bg-grey-50 border border-grey-200 rounded-[3rem] p-10 md:p-20 text-navy-900 shadow-xl">
+                        <div className="flex flex-col lg:flex-row-reverse gap-16 items-center">
+                            <div className="lg:w-1/3 text-center lg:text-left">
+                                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-accent/10 text-blue-accent font-bold text-sm uppercase tracking-widest mb-6">
+                                    <Target className="h-4 w-4" />
+                                    Sales Vetting
+                                </div>
+                                <h2 className="text-4xl md:text-5xl font-bold mb-8">For Sales Talent: <br /><span className="text-blue-accent italic">The Founder&apos;s Difference</span></h2>
+
+                                <div className="relative w-48 h-48 mx-auto lg:mx-0 rounded-2xl overflow-hidden border-4 border-blue-accent/30 shadow-2xl flex flex-col items-center justify-center bg-white p-6 gap-4">
+                                    <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-grey-100 shadow-sm flex items-center justify-center bg-grey-100">
+                                        <Target className="h-8 w-8 text-blue-accent" />
+                                    </div>
+                                    <div className="text-center">
+                                        <h4 className="text-lg font-bold text-navy-900">Chris Stinson</h4>
+                                        <p className="text-blue-accent font-semibold text-xs">Founder & Lead Recruiter</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="lg:w-2/3 space-y-6 text-lg text-grey-600 leading-relaxed">
+                                <p className="font-bold italic text-navy-900">
+                                    With a proven track record in B2B SaaS Sales recruiting since 2014, I personally lead the vetting for every sales search. 
+                                </p>
+                                <p>
+                                    I don&apos;t just look at quotas—I dig into the math behind the numbers. I evaluate candidates on their territory strategy, closing mechanics, ramp time, and how they handle adverse market conditions. We ensure the sales talent we present are true revenue drivers, not just compelling talkers.
                                 </p>
                             </div>
                         </div>
