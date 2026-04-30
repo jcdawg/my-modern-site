@@ -91,7 +91,7 @@ export default function MethodologyPage() {
 
                                 <div className="relative w-48 h-48 mx-auto lg:mx-0 rounded-2xl overflow-hidden border-4 border-blue-accent/30 shadow-2xl flex flex-col items-center justify-center bg-white p-6 gap-4">
                                     <div className="relative w-20 h-20 rounded-full overflow-hidden border-2 border-grey-100 shadow-sm flex items-center justify-center bg-grey-100">
-                                        <Image src="/derek.png" alt="Derek, Ph.D." fill className="object-cover" />
+                                        <Image src="/derek.png" alt="Derek, Ph.D." fill className="object-cover object-top" />
                                     </div>
                                     <div className="text-center">
                                         <h4 className="text-lg font-bold text-navy-900">Derek, Ph.D.</h4>
@@ -125,8 +125,8 @@ export default function MethodologyPage() {
                                 <h2 className="text-4xl md:text-5xl font-bold mb-8">For Sales Talent: <br /><span className="text-blue-accent italic">The Founder&apos;s Difference</span></h2>
 
                                 <div className="relative w-48 h-48 mx-auto lg:mx-0 rounded-2xl overflow-hidden border-4 border-blue-accent/30 shadow-2xl flex flex-col items-center justify-center bg-white p-6 gap-4">
-                                    <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-grey-100 shadow-sm flex items-center justify-center bg-grey-100">
-                                        <Target className="h-8 w-8 text-blue-accent" />
+                                    <div className="relative w-20 h-20 rounded-full overflow-hidden border-2 border-grey-100 shadow-sm flex items-center justify-center bg-grey-100">
+                                        <Image src="/chris.jpeg" alt="Chris Stinson" fill className="object-cover object-top" />
                                     </div>
                                     <div className="text-center">
                                         <h4 className="text-lg font-bold text-navy-900">Chris Stinson</h4>
