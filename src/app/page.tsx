@@ -14,7 +14,7 @@ export default function Home() {
             <span className="text-blue-accent">Vetted by Experts.</span>
           </h1>
           <p className="mt-8 text-xl font-medium text-grey-500 md:text-2xl max-w-3xl mx-auto leading-relaxed">
-            We don&apos;t just send resumes. We place top 1% sales leaders and AI/ML engineers who are ready to perform on day one — because every candidate passes our Ph.D.-led technical review.
+            We don&apos;t just send resumes. We place top 1% sales leaders and AI/ML engineers who are ready to perform on day one because every candidate passes our Ph.D.-led technical review.
           </p>
           <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
             <Link
@@ -51,7 +51,7 @@ export default function Home() {
               <div className="h-14 w-14 rounded-2xl bg-red-50 flex items-center justify-center text-red-500 mb-6">
                 <AlertTriangle className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold text-navy-900 mb-4">77% of technical hires fail within 18 months</h3>
+              <h3 className="text-xl font-bold text-navy-900 mb-4">46% of new hires fail within 18 months</h3>
               <p className="text-grey-500 leading-relaxed">Lack of deep technical vetting leads to expensive turnover and stalls your product roadmap.</p>
             </div>
 
