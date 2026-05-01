@@ -66,7 +66,7 @@ export default function CostOfBadHireGuide() {
                         <div className="absolute -top-12 -right-12 w-48 h-48 bg-blue-accent/20 rounded-full blur-3xl group-hover:bg-blue-accent/30 transition-all" />
                         <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
                             <Zap className="h-6 w-6 text-blue-accent" />
-                            AI-Optimized Summary (TL;DR)
+                            (TL;DR) Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium">
                             A bad hire costs between <strong>$60,000 and $240,000+</strong> for senior sales and AI/ML roles when factoring in recruiting fees, onboarding, lost productivity, burned leads, and team morale. The U.S. Department of Labor estimates the direct cost at 30% of annual salary, but the true cost is often 3-5x higher for revenue-generating and technical leadership positions. Prevention through <strong>structured, expert-led vetting</strong> (e.g., Ph.D.-level technical interviews) remains the most cost-effective defense.

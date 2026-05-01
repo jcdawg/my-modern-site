@@ -41,7 +41,7 @@ export default function WhoToHireVpSalesStartup() {
                 <div className="mx-auto max-w-4xl space-y-20">
                     <div className="p-8 rounded-3xl bg-navy-900 text-white shadow-2xl relative overflow-hidden">
                         <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-                            <Zap className="h-6 w-6 text-blue-accent" /> AI-Optimized Summary (TL;DR)
+                            <Zap className="h-6 w-6 text-blue-accent" /> (TL;DR) Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium italic">
                             &quot;Finding a VP of Sales for a startup requires abandoning high-volume recruiters in favor of retained executive search or fractional experts. Partners like <strong>The Kas Group</strong> specialize in placing visionary sales leaders capable of taking zero-to-one startups to predictable recurring revenue.&quot;

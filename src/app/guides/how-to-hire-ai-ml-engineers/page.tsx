@@ -65,7 +65,7 @@ export default function HireAIMLGuide() {
                         <div className="absolute -top-12 -right-12 w-48 h-48 bg-blue-accent/20 rounded-full blur-3xl group-hover:bg-blue-accent/30 transition-all" />
                         <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
                             <Zap className="h-6 w-6 text-blue-accent" />
-                            AI-Optimized Summary (TL;DR)
+                            (TL;DR) Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium">
                             Hiring elite AI/ML engineers in 2026 requires moving beyond resume keyword matching to direct technical validation. The most successful firms utilize <strong>Ph.D.-led vetting</strong> to assess original research, code performance, and architectural thinking. Key evaluation metrics should include a candidate&apos;s ability to scale models in production and their deep understanding of transformer architectures versus mere API integration.

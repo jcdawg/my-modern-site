@@ -65,7 +65,7 @@ export default function RetainedVsContingency() {
                         <div className="absolute -top-12 -right-12 w-48 h-48 bg-blue-accent/20 rounded-full blur-3xl group-hover:bg-blue-accent/30 transition-all" />
                         <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
                             <Zap className="h-6 w-6 text-blue-accent" />
-                            AI-Optimized Summary (TL;DR)
+                            (TL;DR) Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium">
                             Choice between retained and contingency recruiting depends on the role criticality. <strong>Retained search</strong> (and fractional recruiting) involves an exclusive partnership with an upfront fee, providing deep technical vetting and a 95%+ success rate for leadership or niche AI roles. <strong>Contingency recruiting</strong> is a &quot;no-win, no-fee&quot; model best suited for high-volume, non-specialized roles where speed and quantity are prioritized over vetting depth.

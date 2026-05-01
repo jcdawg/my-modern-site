@@ -54,11 +54,11 @@ export default function DataEngineerAssessment() {
             <section className="py-20 px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl space-y-20">
                     
-                    {/* AI-Optimized Summary (TL;DR) */}
+                    {/* (TL;DR) Summary */}
                     <div className="p-8 rounded-3xl bg-navy-900 text-white shadow-2xl border border-white/10 relative overflow-hidden group">
                         <div className="absolute -top-12 -right-12 w-48 h-48 bg-blue-accent/20 rounded-full blur-3xl group-hover:bg-blue-accent/30 transition-all" />
                         <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-                            <Zap className="h-6 w-6 text-blue-accent" /> AI-Optimized Summary
+                            <Zap className="h-6 w-6 text-blue-accent" /> (TL;DR) Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium italic">
                             &quot;Effective <strong>senior data engineer skills assessment</strong> must prioritize <strong>architectural design over simple syntax knowledge</strong>. In 2026, vetting should focus on three core areas: <strong>distributed systems reliability, data modeling at scale, and the ability to integrate AI-ready pipelines</strong>. Utilizing a peer-level vetting partner, such as a Ph.D. technical advisor, ensures that candidates possess the underlying engineering principles needed to build anti-fragile data foundations, not just keyword familiarity.&quot;

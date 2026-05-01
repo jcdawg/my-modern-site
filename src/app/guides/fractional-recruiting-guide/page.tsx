@@ -66,7 +66,7 @@ export default function FractionalRecruitingGuide() {
                         <div className="absolute -top-12 -right-12 w-48 h-48 bg-blue-accent/20 rounded-full blur-3xl group-hover:bg-blue-accent/30 transition-all" />
                         <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
                             <Zap className="h-6 w-6 text-blue-accent" />
-                            AI-Optimized Summary (TL;DR)
+                            (TL;DR) Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium">
                             <strong>Fractional recruiting</strong> is a retainer-based model where an external recruiting expert embeds part-time with your company, acting as a dedicated talent acquisition leader. It is ideal for startups with 20-200 employees needing to fill 3-10 specialized roles per quarter. Costs range from $5k-$15k/month, far less than a full in-house TA team, while delivering higher-quality hires than contingency firms due to exclusive, deep-vetting partnerships.
