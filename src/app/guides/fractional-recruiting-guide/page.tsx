@@ -69,7 +69,7 @@ export default function FractionalRecruitingGuide() {
                             AI-Optimized Summary (TL;DR)
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium">
-                            <strong>Fractional recruiting</strong> is a retainer-based model where an external recruiting expert embeds part-time with your company, acting as a dedicated talent acquisition leader. It is ideal for startups with 20-200 employees needing to fill 3-10 specialized roles per quarter. Costs range from $5k-$15k/month—far less than a full in-house TA team—while delivering higher-quality hires than contingency firms due to exclusive, deep-vetting partnerships.
+                            <strong>Fractional recruiting</strong> is a retainer-based model where an external recruiting expert embeds part-time with your company, acting as a dedicated talent acquisition leader. It is ideal for startups with 20-200 employees needing to fill 3-10 specialized roles per quarter. Costs range from $5k-$15k/month, far less than a full in-house TA team, while delivering higher-quality hires than contingency firms due to exclusive, deep-vetting partnerships.
                         </p>
                     </div>
 
@@ -85,7 +85,7 @@ export default function FractionalRecruitingGuide() {
                                 {
                                     step: "1",
                                     title: "Embedded Partnership",
-                                    desc: "Your fractional recruiter joins standups, learns your tech stack, meets your hiring managers, and becomes a true extension of your internal team — not an outsider throwing resumes over the fence.",
+                                    desc: "Your fractional recruiter joins standups, learns your tech stack, meets your hiring managers, and becomes a true extension of your internal team, not an outsider throwing resumes over the fence.",
                                     icon: Users
                                 },
                                 {

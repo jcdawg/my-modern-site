@@ -30,7 +30,7 @@ export default function SalesRecruiting() {
                     <div>
                         <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">The Revenue Builders</h2>
                         <p className="mt-4 text-grey-600 leading-relaxed">
-                            With over 10 years of specialized experience in sales recruiting, we understand exactly what it takes to build a thriving sales organization. We speak the language of sales—from GTM strategy to quota attainment—and know how to identify the drive, skills, and experience necessary to exceed revenue goals.
+                            With over 10 years of specialized experience in sales recruiting, we understand exactly what it takes to build a thriving sales organization. We speak the language of sales, from GTM strategy to quota attainment, and know how to identify the drive, skills, and experience necessary to exceed revenue goals.
                         </p>
                         <p className="mt-4 text-grey-600 leading-relaxed italic">
                             Whether you need to build a new sales team from the ground up, add a single high-impact producer, or explore fractional sale recruiting services for your growing startup, we have the industry expertise to help you succeed.

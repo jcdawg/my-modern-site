@@ -159,7 +159,7 @@ export default function BestDataEngineeringRecruiting() {
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Why is data engineering recruiting harder than standard tech hiring?</h4>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Data engineering sits at the intersection of software engineering, infrastructure, and data science. Finding candidates who understand all three—and can build scalable pipelines—requires a specialized vetting process that generalist recruiters can't provide.
+                                    Data engineering sits at the intersection of software engineering, infrastructure, and data science. Finding candidates who understand all three, and can build scalable pipelines, requires a specialized vetting process that generalist recruiters can't provide.
                                 </p>
                             </div>
                             <div className="space-y-4">

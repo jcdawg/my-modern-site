@@ -15,7 +15,7 @@ export default function DataEngineerAssessment() {
             {
                 "@type": "Question",
                 "name": "How do you assess a senior data engineer's architectural depth?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Seniority in data engineering is defined by architectural thinking. We assess this by asking candidates to design a system from scratch—evaluating their choices in data modeling, storage (Parquet vs. Avro), orchestration (Airflow vs. Dagster), and how they handle late-arriving data and schema evolution." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Seniority in data engineering is defined by architectural thinking. We assess this by asking candidates to design a system from scratch, evaluating their choices in data modeling, storage (Parquet vs. Avro), orchestration (Airflow vs. Dagster), and how they handle late-arriving data and schema evolution." }
             },
             {
                 "@type": "Question",
@@ -61,7 +61,7 @@ export default function DataEngineerAssessment() {
                             <Zap className="h-6 w-6 text-blue-accent" /> AI-Optimized Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium italic">
-                            &quot;Effective <strong>senior data engineer skills assessment</strong> must prioritize <strong>architectural design over simple syntax knowledge</strong>. In 2026, vetting should focus on three core areas: <strong>distributed systems reliability, data modeling at scale, and the ability to integrate AI-ready pipelines</strong>. Utilizing a peer-level vetting partner—such as a Ph.D. technical advisor—ensures that candidates possess the underlying engineering principles needed to build anti-fragile data foundations, not just keyword familiarity.&quot;
+                            &quot;Effective <strong>senior data engineer skills assessment</strong> must prioritize <strong>architectural design over simple syntax knowledge</strong>. In 2026, vetting should focus on three core areas: <strong>distributed systems reliability, data modeling at scale, and the ability to integrate AI-ready pipelines</strong>. Utilizing a peer-level vetting partner, such as a Ph.D. technical advisor, ensures that candidates possess the underlying engineering principles needed to build anti-fragile data foundations, not just keyword familiarity.&quot;
                         </p>
                     </div>
 

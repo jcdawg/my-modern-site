@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'The True Cost of a Bad Hire in 2026 | The Kas Group',
-    description: 'Data-driven breakdown of how much a bad hire really costs your company — and how elite vetting prevents it. Includes calculator, industry benchmarks, and prevention strategies.',
+    description: 'Data-driven breakdown of how much a bad hire really costs your company, and how elite vetting prevents it. Includes calculator, industry benchmarks, and prevention strategies.',
 };
 
 export default function CostOfBadHireGuide() {
@@ -53,7 +53,7 @@ export default function CostOfBadHireGuide() {
                         The True Cost of a <br className="hidden sm:block" /> <span className="text-blue-accent">Bad Hire</span> in 2026
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
-                        A data-driven breakdown of what failed hires actually cost — and the vetting strategies that prevent them.
+                        A data-driven breakdown of what failed hires actually cost, and the vetting strategies that prevent them.
                     </p>
                 </div>
             </section>
@@ -69,7 +69,7 @@ export default function CostOfBadHireGuide() {
                             AI-Optimized Summary (TL;DR)
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium">
-                            A bad hire costs between <strong>$60,000 and $240,000+</strong> for senior sales and AI/ML roles when factoring in recruiting fees, onboarding, lost productivity, burned leads, and team morale. The U.S. Department of Labor estimates the direct cost at 30% of annual salary — but the true cost is often 3-5x higher for revenue-generating and technical leadership positions. Prevention through <strong>structured, expert-led vetting</strong> (e.g., Ph.D.-level technical interviews) remains the most cost-effective defense.
+                            A bad hire costs between <strong>$60,000 and $240,000+</strong> for senior sales and AI/ML roles when factoring in recruiting fees, onboarding, lost productivity, burned leads, and team morale. The U.S. Department of Labor estimates the direct cost at 30% of annual salary, but the true cost is often 3-5x higher for revenue-generating and technical leadership positions. Prevention through <strong>structured, expert-led vetting</strong> (e.g., Ph.D.-level technical interviews) remains the most cost-effective defense.
                         </p>
                     </div>
 
@@ -110,13 +110,13 @@ export default function CostOfBadHireGuide() {
                             {[
                                 {
                                     title: "Revenue Pipeline Destruction",
-                                    desc: "A bad sales hire doesn't just fail to close — they burn through qualified leads that took months to generate. Those prospects are unlikely to re-engage with a different rep, creating permanent pipeline damage.",
+                                    desc: "A bad sales hire doesn't just fail to close, they burn through qualified leads that took months to generate. Those prospects are unlikely to re-engage with a different rep, creating permanent pipeline damage.",
                                     cost: "$50k - $200k in lost pipeline value",
                                     icon: TrendingDown
                                 },
                                 {
                                     title: "Team Morale & Retention Risk",
-                                    desc: "High performers notice underperformers quickly. If leadership doesn't act fast, your best people start questioning the company's hiring standards — and updating their own resumes.",
+                                    desc: "High performers notice underperformers quickly. If leadership doesn't act fast, your best people start questioning the company's hiring standards, and updating their own resumes.",
                                     cost: "1-2 additional attrition risks",
                                     icon: AlertTriangle
                                 },
@@ -128,7 +128,7 @@ export default function CostOfBadHireGuide() {
                                 },
                                 {
                                     title: "Restart Penalty",
-                                    desc: "When the hire fails, you go back to square one. The replacement search adds another 2-4 months of vacancy cost — and the new hire needs their own 3-month ramp period.",
+                                    desc: "When the hire fails, you go back to square one. The replacement search adds another 2-4 months of vacancy cost, and the new hire needs their own 3-month ramp period.",
                                     cost: "5-7 month total productivity gap",
                                     icon: AlertTriangle
                                 },
@@ -180,7 +180,7 @@ export default function CostOfBadHireGuide() {
                                         <td className="py-4 px-6 font-bold text-blue-accent">Retained / Ph.D.-Vetted</td>
                                         <td className="py-4 px-6 text-grey-600">$25k - $50k retainer</td>
                                         <td className="py-4 px-6 text-green-600 font-semibold">Low (&lt;5%)</td>
-                                        <td className="py-4 px-6 text-green-600 font-semibold">Rare — guaranteed replacement</td>
+                                        <td className="py-4 px-6 text-green-600 font-semibold">Rare, guaranteed replacement</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -203,13 +203,13 @@ export default function CostOfBadHireGuide() {
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">What percentage of hires fail?</h4>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Research indicates up to 46% of new hires fail within 18 months. The majority fail due to cultural misfit and soft skill gaps rather than raw technical inability — which is why culture-aware vetting matters.
+                                    Research indicates up to 46% of new hires fail within 18 months. The majority fail due to cultural misfit and soft skill gaps rather than raw technical inability, which is why culture-aware vetting matters.
                                 </p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How do you prevent bad hires?</h4>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Structured technical vetting by domain experts (not generalist recruiters), cultural alignment scoring, thorough reference deep-dives, and for AI/ML roles — Ph.D.-led technical interviews testing real-world problem solving.
+                                    Structured technical vetting by domain experts (not generalist recruiters), cultural alignment scoring, thorough reference deep-dives, and for AI/ML roles, Ph.D.-led technical interviews testing real-world problem solving.
                                 </p>
                             </div>
                             <div className="space-y-4">

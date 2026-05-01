@@ -86,7 +86,7 @@ export default function AIRecruiting() {
                         </ul>
                         <div className="mt-8 pt-8 border-t border-grey-200">
                             <p className="text-sm text-grey-500 italic">
-                                &quot;Finding an ML Architect who understood our specific constraints seemed impossible until we worked with The Kas Group.&quot; — CTO, FinTech
+                                &quot;Finding an ML Architect who understood our specific constraints seemed impossible until we worked with The Kas Group.&quot; - CTO, FinTech
                             </p>
                         </div>
                     </div>

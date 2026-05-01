@@ -20,7 +20,7 @@ export default function About() {
                         <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl mb-6">Specialized Recruiting Solutions</h2>
                         <div className="text-base leading-7 text-grey-600 space-y-4 text-justify">
                             <p>
-                                For over a decade, we have been dedicated to building high-performing teams for our clients. In today&apos;s competitive market, this means having a deep understanding of the talent landscape—from closing top sales professionals to securing cutting-edge AI engineers.
+                                For over a decade, we have been dedicated to building high-performing teams for our clients. In today&apos;s competitive market, this means having a deep understanding of the talent landscape, from closing top sales professionals to securing cutting-edge AI engineers.
                             </p>
                             <p>
                                 Traditional recruiting methods often rely on broad-stroke algorithms. We offer a specialized, expert-led approach that delivers exceptional results by speaking the language of the roles we fill. Whether it&apos;s GTM strategy or LLM architecture, we prioritize technical depth and cultural resilience.

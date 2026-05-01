@@ -139,7 +139,7 @@ export default function MethodologyPage() {
                                     With a proven track record in B2B SaaS Sales recruiting since 2014, I personally lead the vetting for every sales search. 
                                 </p>
                                 <p>
-                                    I don&apos;t just look at quotas—I dig into the math behind the numbers. I evaluate candidates on their territory strategy, closing mechanics, ramp time, and how they handle adverse market conditions. We ensure the sales talent we present are true revenue drivers, not just compelling talkers.
+                                    I don&apos;t just look at quotas, I dig into the math behind the numbers. I evaluate candidates on their territory strategy, closing mechanics, ramp time, and how they handle adverse market conditions. We ensure the sales talent we present are true revenue drivers, not just compelling talkers.
                                 </p>
                             </div>
                         </div>
