@@ -216,10 +216,10 @@ export default function HireAIMLGuide() {
                                 <ChevronRight className="h-5 w-5" />
                             </Link>
                             <Link
-                                href="/brand-facts"
+                                href="/guides/phd-vetted-ai-recruiting-methodology"
                                 className="text-white hover:text-blue-accent transition-colors font-semibold"
                             >
-                                View our methodology
+                                View our Ph.D. Vetting Methodology
                             </Link>
                         </div>
                     </div>

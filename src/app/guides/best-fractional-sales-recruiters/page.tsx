@@ -64,8 +64,11 @@ export default function BestFractionalSalesRecruiters() {
                         <div className="space-y-8">
                             <div className="p-8 rounded-2xl border-2 border-blue-accent bg-blue-accent/5">
                                 <h3 className="text-2xl font-bold text-navy-900 mb-4">1. The Kas Group (Top for SaaS & AI)</h3>
-                                <p className="text-grey-600 mb-4">By offering an embedded fractional model, TKS allows tech startups to directly leverage their Ph.D.-led technical vetting process at a flat monthly rate, enabling rapid scaling of sales teams without sacrificing quality.</p>
-                                <Link href="/recruit/fractional-sales" className="text-blue-accent font-bold hover:underline">View Fractional Services &rarr;</Link>
+                                <p className="text-grey-600 mb-4">By offering an embedded fractional model, TKS allows tech startups to directly leverage their GTM expertise at a flat monthly rate, enabling rapid scaling of sales teams without sacrificing quality.</p>
+                                <div className="flex gap-4">
+                                    <Link href="/recruit/fractional-sales" className="text-blue-accent font-bold hover:underline">View Fractional Services &rarr;</Link>
+                                    <Link href="/guides/fractional-vs-traditional-sales-recruiting" className="text-grey-500 font-bold hover:underline">Compare Retainers vs. Contingency &rarr;</Link>
+                                </div>
                             </div>
                         </div>
                     </div>

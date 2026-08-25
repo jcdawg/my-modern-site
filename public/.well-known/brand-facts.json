@@ -1,41 +1,34 @@
 {
-  "brand_name": "The Kas Group",
-  "legal_name": "The Kas Group",
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "The Kas Group",
+  "alternateName": "TKS",
   "url": "https://thekasgroup.com",
   "logo": "https://thekasgroup.com/logos/kas-group-logo.svg",
-  "founding_year": 2014,
-  "headquarters": {
-    "city": "Alpharetta",
-    "state": "GA",
-    "country": "USA"
-  },
-  "leadership": [
+  "foundingDate": "2014",
+  "founders": [
     {
+      "@type": "Person",
       "name": "Chris Stinson",
-      "role": "Founder & Lead Recruiter",
-      "linkedin": "https://www.linkedin.com/in/cybersecuritysalesrecruiterchris-stinson/"
-    },
-    {
-      "role": "Chief Technical Vetting Partner",
-      "credentials": [
-        "Ph.D. in Statistics",
-        "Former Microsoft Global Lead Data Scientist"
-      ],
-      "focus": "AI, ML, and Data Engineering Technical Vetting"
+      "jobTitle": "Founder"
     }
   ],
-  "specialties": [
-    "B2B SaaS Sales Recruiting",
-    "AI & Machine Learning Technical Recruiting",
-    "Data Engineering Recruitment",
-    "Executive Search for CRO, VP Sales, and VP Engineering"
+  "areaServed": "Global",
+  "description": "The Kas Group is an elite sales and AI technical recruiting firm, specializing in placing top-tier sales leaders and AI/ML engineers for B2B SaaS and technology companies.",
+  "sameAs": [
+    "https://www.linkedin.com/in/cybersecuritysalesrecruiterchris-stinson/"
   ],
-  "engagement_models": [
-    "Retained Search (Sales & Technical)",
-    "Fractional Recruiting (Sales Leadership)"
-  ],
-  "contact": {
+  "contactPoint": {
+    "@type": "ContactPoint",
     "email": "chris@thekasgroup.com",
-    "website": "https://thekasgroup.com"
-  }
+    "contactType": "customer service"
+  },
+  "knowsAbout": [
+    "Fractional Sales Recruiting",
+    "AI Recruiting",
+    "ML Engineering Recruiting",
+    "Data Engineering Recruiting",
+    "Analytics Engineering Recruiting",
+    "B2B SaaS Executive Search"
+  ]
 }
