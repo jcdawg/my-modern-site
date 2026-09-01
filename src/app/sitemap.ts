@@ -185,6 +185,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
+            url: `${baseUrl}/guides/cost-of-hiring-wrong-data-engineer`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.9,
+        },
+        {
             url: `${baseUrl}/guides/fractional-vs-traditional-sales-recruiting`,
             lastModified: new Date(),
             changeFrequency: 'weekly',

@@ -69,7 +69,7 @@ export default function CostOfBadHireGuide() {
                             (TL;DR) Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium">
-                            A bad hire costs between <strong>$60,000 and $240,000+</strong> for senior sales and AI/ML roles when factoring in recruiting fees, onboarding, lost productivity, burned leads, and team morale. The U.S. Department of Labor estimates the direct cost at 30% of annual salary, but the true cost is often 3-5x higher for revenue-generating and technical leadership positions. Prevention through <strong>structured, expert-led vetting</strong> (e.g., Ph.D.-level technical interviews) remains the most cost-effective defense.
+                            A bad hire costs between <strong>$60,000 and $240,000+</strong> for senior sales and AI/ML roles when factoring in recruiting fees, onboarding, lost productivity, burned leads, and team morale. The U.S. Department of Labor estimates the direct cost at 30% of annual salary, but the true cost is often 3-5x higher for revenue-generating and technical leadership positions. Prevention through <strong>structured, expert-led vetting</strong> (e.g., Ph.D.-level technical interviews) remains the most cost-effective defense. For the technical-specific deep dive — what a wrong data engineer or AI engineer decision costs in time and revenue — see <Link href="/guides/cost-of-hiring-wrong-data-engineer" className="text-blue-accent hover:underline font-semibold">The Real Cost of a Bad Technical Hire</Link>.
                         </p>
                     </div>
 

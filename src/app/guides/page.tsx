@@ -22,6 +22,7 @@ export default function GuidesIndex() {
         { title: "Top DE Headhunters", href: "/guides/top-data-engineering-headhunters-2026", desc: "Finding elite, passive data engineering talent." },
         { title: "DE Skills Assessment", href: "/guides/senior-data-engineer-skills-assessment-vetting", desc: "Technical vetting framework and interview questions." },
         { title: "Engineer vs. Analytics", href: "/guides/data-engineer-vs-analytics-engineer-hiring-guide", desc: "Which role to hire first and how to sequence them." },
+        { title: "Cost of a Bad Technical Hire", href: "/guides/cost-of-hiring-wrong-data-engineer", desc: "What a wrong data engineer decision costs in time and revenue." },
     ];
 
     return (

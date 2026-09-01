@@ -139,7 +139,7 @@ export default function HireDataEngineersAI() {
                             </table>
                         </div>
                         <p className="text-center text-grey-500 italic text-sm">
-                            Tip: Most AI startups fail because they hire a Data Scientist who spends 8 months building pipelines because there is no engineer.
+                            Tip: Most AI startups fail because they hire a Data Scientist who spends 8 months building pipelines because there is no engineer. And when the wrong data engineer slips through, the setback runs $150k-$300k and up to a year — see <Link href="/guides/cost-of-hiring-wrong-data-engineer" className="text-blue-accent hover:underline font-semibold not-italic">The Real Cost of a Bad Technical Hire</Link>.
                         </p>
                     </div>
 
