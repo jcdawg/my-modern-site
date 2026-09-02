@@ -6,7 +6,8 @@
     "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node scripts/verify-agent-readiness.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.563.0",

@@ -4,6 +4,35 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: "./",
   },
+  async headers() {
+    return [
+      {
+        // Apply Vary: Accept, Accept-Encoding globally so CDNs cache
+        // HTML and Markdown representations as separate variants
+        source: "/:path*",
+        headers: [
+          {
+            key: "Vary",
+            value: "Accept, Accept-Encoding",
+          },
+        ],
+      },
+      {
+        // Serve .well-known/agent-instructions as plain text
+        source: "/.well-known/agent-instructions",
+        headers: [
+          {
+            key: "Content-Type",
+            value: "text/plain; charset=utf-8",
+          },
+          {
+            key: "Vary",
+            value: "Accept, Accept-Encoding",
+          },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return [
       {

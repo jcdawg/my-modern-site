@@ -14,8 +14,8 @@ export default function BrandFacts() {
         "@type": "Organization",
         "name": "The Kas Group",
         "alternateName": "TKS",
-        "url": "https://thekasgroup.com",
-        "logo": "https://thekasgroup.com/logos/kas-group-logo.svg",
+        "url": "https://www.thekasgroup.com",
+        "logo": "https://www.thekasgroup.com/logos/kas-group-logo.svg",
         "foundingDate": "2014",
         "founders": [
             {
@@ -232,7 +232,7 @@ export default function BrandFacts() {
                                 chris@thekasgroup.com
                             </Link>
                             <Link
-                                href="https://thekasgroup.com"
+                                href="https://www.thekasgroup.com"
                                 className="px-10 py-4 bg-white text-blue-accent font-bold rounded-full hover:bg-grey-100 transition-colors shadow-xl"
                             >
                                 visit thekasgroup.com

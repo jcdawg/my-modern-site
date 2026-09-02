@@ -2,9 +2,100 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, AlertTriangle, XCircle, GraduationCap, Zap, Award, Target, Briefcase, ChevronRight, Users, Trophy, Database, BookOpen } from "lucide-react";
 
+const homepageJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "EmploymentAgency"],
+      "@id": "https://www.thekasgroup.com/#organization",
+      "name": "The Kas Group",
+      "alternateName": ["TKS", "The Kas Group Recruiting", "The Kas Group Executive Search"],
+      "url": "https://www.thekasgroup.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.thekasgroup.com/logos/kas-group-logo.svg",
+        "width": 200,
+        "height": 60,
+      },
+      "foundingDate": "2014",
+      "description": "The Kas Group is an elite sales and AI technical recruiting firm specializing in placing B2B SaaS sales leaders (VP of Sales, CRO, AEs) and Ph.D.-vetted AI/ML engineers for high-growth tech companies.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Alpharetta",
+        "addressRegion": "GA",
+        "addressCountry": "US",
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "chris@thekasgroup.com",
+        "contactType": "customer service",
+        "areaServed": "US",
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Chris Stinson",
+        "jobTitle": "Founder & Lead Recruiter",
+        "sameAs": "https://www.linkedin.com/in/cybersecuritysalesrecruiterchris-stinson/",
+      },
+      "knowsAbout": [
+        "B2B SaaS Sales Recruiting",
+        "VP of Sales Executive Search",
+        "AI Technical Recruiting",
+        "Machine Learning Engineer Recruiting",
+        "Data Engineering Recruiting",
+        "Fractional Sales Recruiting",
+        "CRO Search",
+        "Account Executive Recruiting",
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Recruiting Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Sales Leadership Recruiting",
+            "description": "Placement of VP of Sales, CRO, and enterprise Account Executives for B2B SaaS companies.",
+            "url": "https://www.thekasgroup.com/recruit/sales",
+          },
+          {
+            "@type": "Offer",
+            "name": "Fractional Sales Recruiting",
+            "description": "Embedded, scalable recruiting support for growth-stage technology startups.",
+            "url": "https://www.thekasgroup.com/recruit/fractional-sales",
+          },
+          {
+            "@type": "Offer",
+            "name": "AI & Data Engineering Recruiting",
+            "description": "Ph.D.-vetted placement of ML Engineers, AI Architects, and Senior Data Engineers.",
+            "url": "https://www.thekasgroup.com/recruit/ai",
+          },
+        ],
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/cybersecuritysalesrecruiterchris-stinson/",
+        "https://github.com/jcdawg/technical-hiring-resources",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.thekasgroup.com/#website",
+      "url": "https://www.thekasgroup.com",
+      "name": "The Kas Group",
+      "description": "Elite Sales & AI Technical Recruiting — Vetted by Experts since 2014.",
+      "publisher": {
+        "@id": "https://www.thekasgroup.com/#organization",
+      },
+    },
+  ],
+};
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageJsonLd) }}
+      />
       {/* Hero Section */}
       <section className="relative px-6 pt-24 pb-20 md:pt-32 md:pb-32 lg:px-8 bg-gradient-to-br from-grey-50 to-white overflow-hidden">
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-accent/5 rounded-full blur-3xl" />
