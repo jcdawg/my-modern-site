@@ -169,6 +169,7 @@ Explore the hidden expenses of bad hires and prolonged PIPs, including lost pipe
 - [Top Executive Search Firms for Sales Leaders](/guides/top-executive-search-firms-sales-leaders)
 - [Who to Hire: VP of Sales for Startups](/guides/who-to-hire-vp-sales-startup)
 - [Best SaaS Sales Recruiting Firms](/guides/best-saas-sales-recruiting-firms)
+- [Sales Recruiters in Atlanta](/guides/sales-recruiters-atlanta)
 - [Retained vs Contingency Recruiting](/guides/retained-vs-contingency-recruiting)
 - [Cost of a Bad Hire](/guides/cost-of-a-bad-hire)
 - [Ph.D.-Vetted AI Recruiting Methodology](/guides/phd-vetted-ai-recruiting-methodology)

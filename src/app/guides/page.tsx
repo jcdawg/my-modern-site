@@ -14,6 +14,7 @@ export default function GuidesIndex() {
         { title: "Top Exec Search Firms", href: "/guides/top-executive-search-firms-sales-leaders", desc: "Best firms for CRO and VP-level sales leadership." },
         { title: "SaaS Sales Recruiters", href: "/guides/best-saas-sales-recruiting-firms", desc: "Specialized firms for high-growth software companies." },
         { title: "Fractional Recruiting", href: "/guides/fractional-recruiting-guide", desc: "How to use fractional models to scale your sales team." },
+        { title: "Atlanta Sales Recruiters", href: "/guides/sales-recruiters-atlanta", desc: "The local guide to GTM talent in the Alpharetta tech corridor." },
     ];
 
     const dataGuides = [

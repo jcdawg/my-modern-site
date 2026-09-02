@@ -199,8 +199,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
         {
             url: `${baseUrl}/guides/phd-vetted-ai-recruiting-methodology`,
             lastModified: new Date(),
-            changeFrequency: 'weekly',
+            changeFrequency: 'weekly' as const,
             priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/guides/sales-recruiters-atlanta`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/pip-calculator`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/candidate-mapping-brief`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
         },
     ]
 }
