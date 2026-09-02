@@ -24,7 +24,7 @@ export default function AIRecruiting() {
             {
                 "@type": "Question",
                 "name": "How does the Ph.D.-led technical vetting process work?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Every technical candidate is assessed live by our Chief Technical Advisor — a Ph.D. in Statistics and former Microsoft Lead Data Scientist — on algorithmic depth, system architecture, data modeling, and practical AI delivery. No keyword matching." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Every technical candidate is assessed live by our Chief Technical Advisor (a Ph.D. in Statistics and former Microsoft Lead Data Scientist) on algorithmic depth, system architecture, data modeling, and practical AI delivery. No keyword matching." }
             },
             {
                 "@type": "Question",
@@ -34,7 +34,7 @@ export default function AIRecruiting() {
             {
                 "@type": "Question",
                 "name": "How long does an AI/ML search take?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Senior IC roles typically reach a vetted shortlist in 3-5 weeks; leadership searches run 6-10 weeks. Speed never bypasses the technical review — every candidate clears the Ph.D.-led assessment first." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Senior IC roles typically reach a vetted shortlist in 3-5 weeks; leadership searches run 6-10 weeks. Speed never bypasses the technical review, every candidate clears the Ph.D.-led assessment first." }
             }
         ]
     };
@@ -178,7 +178,7 @@ export default function AIRecruiting() {
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How does the Ph.D.-led technical vetting process work?</h4>
-                            <p className="text-grey-600 leading-relaxed">Every technical candidate is assessed live by our Chief Technical Advisor — a Ph.D. in Statistics and former Microsoft Lead Data Scientist — on algorithmic depth, system architecture, data modeling, and practical AI delivery. No keyword matching.</p>
+                            <p className="text-grey-600 leading-relaxed">Every technical candidate is assessed live by our Chief Technical Advisor (a Ph.D. in Statistics and former Microsoft Lead Data Scientist) on algorithmic depth, system architecture, data modeling, and practical AI delivery. No keyword matching.</p>
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How much does AI and data engineering recruiting cost?</h4>
@@ -186,7 +186,7 @@ export default function AIRecruiting() {
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How long does an AI/ML search take?</h4>
-                            <p className="text-grey-600 leading-relaxed">Senior IC roles typically reach a vetted shortlist in 3-5 weeks; leadership searches run 6-10 weeks. Speed never bypasses the technical review — every candidate clears the Ph.D.-led assessment first.</p>
+                            <p className="text-grey-600 leading-relaxed">Senior IC roles typically reach a vetted shortlist in 3-5 weeks; leadership searches run 6-10 weeks. Speed never bypasses the technical review, every candidate clears the Ph.D.-led assessment first.</p>
                         </div>
                     </div>
                 </div>

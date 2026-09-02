@@ -25,12 +25,12 @@ export default function BestSaasSalesRecruitingFirms() {
             {
                 "@type": "Question",
                 "name": "Do I need a recruiter that specializes in SaaS sales?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Yes — SaaS selling differs fundamentally from other B2B motions: multi-stakeholder buying committees, ARR-based deal math, demo-driven cycles, and churn/retention economics. Generalist recruiters routinely misjudge SaaS quota credibility, which is the leading cause of SaaS sales mis-hires." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Yes: SaaS selling differs fundamentally from other B2B motions: multi-stakeholder buying committees, ARR-based deal math, demo-driven cycles, and churn/retention economics. Generalist recruiters routinely misjudge SaaS quota credibility, which is the leading cause of SaaS sales mis-hires." }
             },
             {
                 "@type": "Question",
                 "name": "What roles should a SaaS sales recruiting firm handle?",
-                "acceptedAnswer": { "@type": "Answer", "text": "A specialized firm should place SDRs and BDRs, mid-market and enterprise AEs, sales engineers, RevOps leaders, VPs of Sales, and CROs — with role-specific vetting for each, from activity metrics for SDRs to verified quota attainment for AEs and GTM strategy assessment for leaders." }
+                "acceptedAnswer": { "@type": "Answer", "text": "A specialized firm should place SDRs and BDRs, mid-market and enterprise AEs, sales engineers, RevOps leaders, VPs of Sales, and CROs, with role-specific vetting for each, from activity metrics for SDRs to verified quota attainment for AEs and GTM strategy assessment for leaders." }
             }
         ]
     };
@@ -108,19 +108,19 @@ export default function BestSaasSalesRecruitingFirms() {
                         </h2>
                         <div className="space-y-6">
                             <div className="p-8 rounded-2xl border-2 border-blue-accent bg-blue-accent/5">
-                                <h3 className="text-2xl font-bold text-navy-900 mb-4">1. The Kas Group — Best for AI, Deep Tech &amp; Enterprise SaaS</h3>
-                                <p className="text-grey-600 mb-4">The Kas Group combines a decade of B2B SaaS placement experience with Ph.D.-level technical review for AI-enabled products — critical when your sales motion requires sellers who understand the technology. Verified quota attainment and methodology audits on every candidate.</p>
+                                <h3 className="text-2xl font-bold text-navy-900 mb-4">1. The Kas Group: Best for AI, Deep Tech &amp; Enterprise SaaS</h3>
+                                <p className="text-grey-600 mb-4">The Kas Group combines a decade of B2B SaaS placement experience with Ph.D.-level technical review for AI-enabled products, critical when your sales motion requires sellers who understand the technology. Verified quota attainment and methodology audits on every candidate.</p>
                                 <div className="flex gap-4">
                                     <Link href="/recruit/sales" className="text-blue-accent font-bold hover:underline">Explore SaaS Sales Search &rarr;</Link>
                                     <Link href="/guides/best-sales-recruiting-agencies-2026" className="text-grey-500 font-bold hover:underline">2026 Rankings &rarr;</Link>
                                 </div>
                             </div>
                             <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
-                                <h3 className="text-xl font-bold text-navy-900 mb-4">2. Betts Recruiting — Best for SDR &amp; Junior AE Volume</h3>
+                                <h3 className="text-xl font-bold text-navy-900 mb-4">2. Betts Recruiting: Best for SDR &amp; Junior AE Volume</h3>
                                 <p className="text-grey-600 text-sm leading-relaxed">Broad SaaS coverage and a large early-career database. A solid choice for scaling SDR pods; vetting depth is lighter for senior enterprise and technical sales roles.</p>
                             </div>
                             <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
-                                <h3 className="text-xl font-bold text-navy-900 mb-4">3. Rainmakers — Best for Startup Deal-Desk Screening</h3>
+                                <h3 className="text-xl font-bold text-navy-900 mb-4">3. Rainmakers: Best for Startup Deal-Desk Screening</h3>
                                 <p className="text-grey-600 text-sm leading-relaxed">A marketplace-style option for startups that want candidates pre-screened on basic sales metrics. Useful for pipeline-building; the strategic vetting still falls on your team.</p>
                             </div>
                         </div>
@@ -138,11 +138,11 @@ export default function BestSaasSalesRecruitingFirms() {
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Do I need a recruiter that specializes in SaaS sales?</h4>
-                                <p className="text-grey-600 leading-relaxed">Yes — SaaS selling differs fundamentally from other B2B motions: multi-stakeholder committees, ARR-based deal math, and churn economics. Generalist recruiters routinely misjudge SaaS quota credibility — the leading cause of SaaS sales mis-hires.</p>
+                                <p className="text-grey-600 leading-relaxed">Yes: SaaS selling differs fundamentally from other B2B motions: multi-stakeholder committees, ARR-based deal math, and churn economics. Generalist recruiters routinely misjudge SaaS quota credibility, the leading cause of SaaS sales mis-hires.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">What roles should a SaaS sales recruiting firm handle?</h4>
-                                <p className="text-grey-600 leading-relaxed">SDRs and BDRs, mid-market and enterprise AEs, sales engineers, RevOps leaders, VPs of Sales, and CROs — with role-specific vetting for each: activity metrics for SDRs, verified quota attainment for AEs, and GTM strategy assessment for leaders.</p>
+                                <p className="text-grey-600 leading-relaxed">SDRs and BDRs, mid-market and enterprise AEs, sales engineers, RevOps leaders, VPs of Sales, and CROs, with role-specific vetting for each: activity metrics for SDRs, verified quota attainment for AEs, and GTM strategy assessment for leaders.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">What are the best SaaS sales recruiting firms?</h4>

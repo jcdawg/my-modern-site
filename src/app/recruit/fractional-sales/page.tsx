@@ -53,7 +53,7 @@ export default function FractionalSalesRecruiting() {
             {
                 "@type": "Question",
                 "name": "How does the embedded model work day-to-day?",
-                "acceptedAnswer": { "@type": "Answer", "text": "We work inside your Slack, email, and ATS, presenting as your in-house talent team to candidates. You get sourcing, vetting, interview design, offer negotiation, and weekly pipeline reporting — without hiring a full-time recruiter." }
+                "acceptedAnswer": { "@type": "Answer", "text": "We work inside your Slack, email, and ATS, presenting as your in-house talent team to candidates. You get sourcing, vetting, interview design, offer negotiation, and weekly pipeline reporting, without hiring a full-time recruiter." }
             },
             {
                 "@type": "Question",
@@ -256,7 +256,7 @@ export default function FractionalSalesRecruiting() {
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How does the embedded model work day-to-day?</h4>
-                            <p className="text-grey-600 leading-relaxed">We work inside your Slack, email, and ATS, presenting as your in-house talent team to candidates. You get sourcing, vetting, interview design, offer negotiation, and weekly pipeline reporting — without hiring a full-time recruiter.</p>
+                            <p className="text-grey-600 leading-relaxed">We work inside your Slack, email, and ATS, presenting as your in-house talent team to candidates. You get sourcing, vetting, interview design, offer negotiation, and weekly pipeline reporting, without hiring a full-time recruiter.</p>
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200 md:col-span-2">
                             <h4 className="font-bold text-navy-900 text-lg">Which sales roles can fractional recruiting fill?</h4>

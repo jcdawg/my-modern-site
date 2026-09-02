@@ -23,7 +23,7 @@ export default function SalesRecruiting() {
             {
                 "@type": "Question",
                 "name": "How are sales candidates vetted?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Every candidate goes through quota-attainment verification, deal-size and sales-cycle analysis, sales methodology audits, and behavioral interviewing. You receive a written assessment per candidate — not a forwarded resume." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Every candidate goes through quota-attainment verification, deal-size and sales-cycle analysis, sales methodology audits, and behavioral interviewing. You receive a written assessment per candidate, not a forwarded resume." }
             },
             {
                 "@type": "Question",
@@ -135,7 +135,7 @@ export default function SalesRecruiting() {
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How are sales candidates vetted?</h4>
-                            <p className="text-grey-600 leading-relaxed">Every candidate goes through quota-attainment verification, deal-size and sales-cycle analysis, sales methodology audits, and behavioral interviewing. You receive a written assessment per candidate — not a forwarded resume.</p>
+                            <p className="text-grey-600 leading-relaxed">Every candidate goes through quota-attainment verification, deal-size and sales-cycle analysis, sales methodology audits, and behavioral interviewing. You receive a written assessment per candidate, not a forwarded resume.</p>
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How fast can we get a vetted shortlist?</h4>
@@ -180,7 +180,7 @@ export default function SalesRecruiting() {
                         </Link>
                         <Link href="/blog/ai-resume-boom-old-school-recruiting" className="group p-8 rounded-2xl bg-white border border-grey-200 hover:border-blue-accent/30 hover:shadow-lg transition-all">
                             <h3 className="text-xl font-bold text-navy-900 group-hover:text-blue-accent mb-2">400 Applications and Not One of Them Means Anything</h3>
-                            <p className="text-sm text-grey-500 mb-4 leading-relaxed">Why AI-generated resumes broke inbound hiring — and how top employers source outside sales reps instead.</p>
+                            <p className="text-sm text-grey-500 mb-4 leading-relaxed">Why AI-generated resumes broke inbound hiring, and how top employers source outside sales reps instead.</p>
                             <span className="text-blue-accent text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                                 Read Article <ArrowRight className="h-3 w-3" />
                             </span>

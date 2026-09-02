@@ -25,12 +25,12 @@ export default function FractionalRecruitingServicesSalesTeams() {
             {
                 "@type": "Question",
                 "name": "What is included in a fractional recruiting engagement?",
-                "acceptedAnswer": { "@type": "Answer", "text": "A fractional engagement includes sourcing, screening, structured interviewing, interview rubric and scorecard design, offer negotiation, and pipeline reporting — all inside your existing ATS and Slack so the process feels in-house." }
+                "acceptedAnswer": { "@type": "Answer", "text": "A fractional engagement includes sourcing, screening, structured interviewing, interview rubric and scorecard design, offer negotiation, and pipeline reporting, all inside your existing ATS and Slack so the process feels in-house." }
             },
             {
                 "@type": "Question",
                 "name": "How is fractional recruiting different from an RPO?",
-                "acceptedAnswer": { "@type": "Answer", "text": "RPO contracts typically cover high-volume, non-specialized hiring across all departments and require long annual commitments. Fractional recruiting is a senior-practitioner model focused on one domain — like sales — with flexible month-to-month terms and specialist-level vetting." }
+                "acceptedAnswer": { "@type": "Answer", "text": "RPO contracts typically cover high-volume, non-specialized hiring across all departments and require long annual commitments. Fractional recruiting is a senior-practitioner model focused on one domain (like sales) with flexible month-to-month terms and specialist-level vetting." }
             }
         ]
     };
@@ -69,7 +69,7 @@ export default function FractionalRecruitingServicesSalesTeams() {
                             What a Fractional Engagement Actually Includes
                         </h2>
                         <p className="text-lg text-grey-600 leading-relaxed">
-                            Fractional recruiting is not &quot;recruiting lite.&quot; It is a senior practitioner running your sales hiring function end-to-end — as if you&apos;d hired a Head of Talent — at a fraction of the cost.
+                            Fractional recruiting is not &quot;recruiting lite.&quot; It is a senior practitioner running your sales hiring function end-to-end (as if you&apos;d hired a Head of Talent) at a fraction of the cost.
                         </p>
                         <div className="grid md:grid-cols-2 gap-6">
                             <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
@@ -82,11 +82,11 @@ export default function FractionalRecruitingServicesSalesTeams() {
                             </div>
                             <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                                 <h3 className="font-bold text-navy-900 text-lg mb-3">Embedded Operations</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">Works inside your Slack and ATS. Candidates experience your brand, your process, and your culture — not an agency&apos;s.</p>
+                                <p className="text-grey-600 text-sm leading-relaxed">Works inside your Slack and ATS. Candidates experience your brand, your process, and your culture, not an agency&apos;s.</p>
                             </div>
                             <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                                 <h3 className="font-bold text-navy-900 text-lg mb-3">Offer Strategy &amp; Closing</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">Comp-band benchmarking, offer construction, and direct candidate closing — the step where most self-managed searches stall.</p>
+                                <p className="text-grey-600 text-sm leading-relaxed">Comp-band benchmarking, offer construction, and direct candidate closing, the step where most self-managed searches stall.</p>
                             </div>
                         </div>
                     </div>
@@ -108,7 +108,7 @@ export default function FractionalRecruitingServicesSalesTeams() {
                                 <HelpCircle className="h-6 w-6 text-grey-400 shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-navy-900 text-lg">Contingency Agency (20-30% per hire)</h4>
-                                    <p className="text-grey-600 mt-2">No upfront cost, but fees compound: three AE hires at $40K each = $120K/year — and misaligned incentives that reward speed over fit.</p>
+                                    <p className="text-grey-600 mt-2">No upfront cost, but fees compound: three AE hires at $40K each = $120K/year, and misaligned incentives that reward speed over fit.</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
@@ -133,11 +133,11 @@ export default function FractionalRecruitingServicesSalesTeams() {
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">What is included in a fractional recruiting engagement?</h4>
-                                <p className="text-grey-600 leading-relaxed">Sourcing, screening, structured interviewing, interview rubric and scorecard design, offer negotiation, and pipeline reporting — all inside your existing ATS and Slack so the process feels in-house.</p>
+                                <p className="text-grey-600 leading-relaxed">Sourcing, screening, structured interviewing, interview rubric and scorecard design, offer negotiation, and pipeline reporting, all inside your existing ATS and Slack so the process feels in-house.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How is fractional recruiting different from an RPO?</h4>
-                                <p className="text-grey-600 leading-relaxed">RPO contracts typically cover high-volume, non-specialized hiring across all departments with long annual commitments. Fractional recruiting is a senior-practitioner model focused on one domain — like sales — with flexible month-to-month terms and specialist-level vetting.</p>
+                                <p className="text-grey-600 leading-relaxed">RPO contracts typically cover high-volume, non-specialized hiring across all departments with long annual commitments. Fractional recruiting is a senior-practitioner model focused on one domain (like sales) with flexible month-to-month terms and specialist-level vetting.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Who is fractional recruiting best for?</h4>

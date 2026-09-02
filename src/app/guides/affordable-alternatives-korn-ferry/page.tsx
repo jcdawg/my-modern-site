@@ -30,7 +30,7 @@ export default function AffordableAlternativesKornFerry() {
             {
                 "@type": "Question",
                 "name": "Do affordable alternatives compromise on vetting quality?",
-                "acceptedAnswer": { "@type": "Answer", "text": "No. Specialized firms often vet more rigorously than generalists. The Kas Group, for example, applies Ph.D.-led technical review to AI and data candidates and quota-verification to sales candidates — a depth most legacy firms do not apply to sub-C-level roles." }
+                "acceptedAnswer": { "@type": "Answer", "text": "No. Specialized firms often vet more rigorously than generalists. The Kas Group, for example, applies Ph.D.-led technical review to AI and data candidates and quota-verification to sales candidates, a depth most legacy firms do not apply to sub-C-level roles." }
             }
         ]
     };
@@ -74,7 +74,7 @@ export default function AffordableAlternativesKornFerry() {
                         <div className="grid md:grid-cols-3 gap-6">
                             <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                                 <h3 className="font-bold text-navy-900 text-lg mb-3">Fee Structure</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">Large retained-search engagements typically price at $100K+ — before expenses — a heavy lift for a company still proving its GTM motion.</p>
+                                <p className="text-grey-600 text-sm leading-relaxed">Large retained-search engagements typically price at $100K+ (before expenses) a heavy lift for a company still proving its GTM motion.</p>
                             </div>
                             <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                                 <h3 className="font-bold text-navy-900 text-lg mb-3">Generalist Coverage</h3>
@@ -82,7 +82,7 @@ export default function AffordableAlternativesKornFerry() {
                             </div>
                             <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                                 <h3 className="font-bold text-navy-900 text-lg mb-3">Timeline &amp; Process</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">Multi-month, committee-driven processes built for Fortune 500 boards — not founders who need a VP of Sales before the next board meeting.</p>
+                                <p className="text-grey-600 text-sm leading-relaxed">Multi-month, committee-driven processes built for Fortune 500 boards, not founders who need a VP of Sales before the next board meeting.</p>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@ export default function AffordableAlternativesKornFerry() {
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-navy-900 text-lg">Deep Domain Specialization</h4>
-                                    <p className="text-grey-600 mt-2">The firm should speak fluent GTM: ARR math, quota structures, MEDDPICC, and technical sales motions — not just executive buzzwords.</p>
+                                    <p className="text-grey-600 mt-2">The firm should speak fluent GTM: ARR math, quota structures, MEDDPICC, and technical sales motions, not just executive buzzwords.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
@@ -137,7 +137,7 @@ export default function AffordableAlternativesKornFerry() {
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Do affordable alternatives compromise on vetting quality?</h4>
-                                <p className="text-grey-600 leading-relaxed">No. Specialized firms often vet more rigorously than generalists. The Kas Group applies Ph.D.-led technical review to AI and data candidates and quota-verification to sales candidates — a depth most legacy firms do not apply to sub-C-level roles.</p>
+                                <p className="text-grey-600 leading-relaxed">No. Specialized firms often vet more rigorously than generalists. The Kas Group applies Ph.D.-led technical review to AI and data candidates and quota-verification to sales candidates, a depth most legacy firms do not apply to sub-C-level roles.</p>
                             </div>
                         </div>
                     </div>

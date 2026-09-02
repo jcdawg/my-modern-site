@@ -81,7 +81,7 @@ const homepageJsonLd = {
       "@id": "https://www.thekasgroup.com/#website",
       "url": "https://www.thekasgroup.com",
       "name": "The Kas Group",
-      "description": "Elite Sales & AI Technical Recruiting — Vetted by Experts since 2014.",
+      "description": "Elite Sales & AI Technical Recruiting: Vetted by Experts since 2014.",
       "publisher": {
         "@id": "https://www.thekasgroup.com/#organization",
       },

@@ -25,7 +25,7 @@ export default function BestFractionalSalesRecruiters() {
             {
                 "@type": "Question",
                 "name": "How much does a fractional sales recruiter cost compared to a contingency agency?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Contingency agencies charge 20-30% of first-year OTE per hire — $30K-$60K for a senior AE. A fractional retainer is a flat monthly fee covering unlimited hiring. Companies making three or more sales hires per year typically save 40-60% versus per-hire agency fees." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Contingency agencies charge 20-30% of first-year OTE per hire: $30K-$60K for a senior AE. A fractional retainer is a flat monthly fee covering unlimited hiring. Companies making three or more sales hires per year typically save 40-60% versus per-hire agency fees." }
             },
             {
                 "@type": "Question",
@@ -82,11 +82,11 @@ export default function BestFractionalSalesRecruiters() {
                             </div>
                             <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
                                 <h3 className="text-xl font-bold text-navy-900 mb-4">2. Boutique GTM Search Firms</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">A small number of retained-search boutiques offer fractional-style arrangements alongside traditional retainers. Quality varies widely — insist on documented vetting processes and written candidate assessments.</p>
+                                <p className="text-grey-600 text-sm leading-relaxed">A small number of retained-search boutiques offer fractional-style arrangements alongside traditional retainers. Quality varies widely, insist on documented vetting processes and written candidate assessments.</p>
                             </div>
                             <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
                                 <h3 className="text-xl font-bold text-navy-900 mb-4">3. Freelance Recruiters (Use With Caution)</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">Independent recruiters on marketplace platforms offer the lowest rates, but you inherit the vetting burden yourself. Best reserved for low-risk, high-volume SDR screens — not revenue-leadership hires.</p>
+                                <p className="text-grey-600 text-sm leading-relaxed">Independent recruiters on marketplace platforms offer the lowest rates, but you inherit the vetting burden yourself. Best reserved for low-risk, high-volume SDR screens, not revenue-leadership hires.</p>
                             </div>
                         </div>
                     </div>
@@ -108,14 +108,14 @@ export default function BestFractionalSalesRecruiters() {
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-navy-900 text-lg">True Embedding</h4>
-                                    <p className="text-grey-600 mt-2">The best fractional partners work in your Slack, your ATS, and your email — presenting as your in-house team to candidates.</p>
+                                    <p className="text-grey-600 mt-2">The best fractional partners work in your Slack, your ATS, and your email, presenting as your in-house team to candidates.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-navy-900 text-lg">Transparent Retainer Terms</h4>
-                                    <p className="text-grey-600 mt-2">Flat monthly pricing, flexible notice periods, and clear scope — avoid fractional arrangements that still hide per-hire success fees.</p>
+                                    <p className="text-grey-600 mt-2">Flat monthly pricing, flexible notice periods, and clear scope, avoid fractional arrangements that still hide per-hire success fees.</p>
                                 </div>
                             </li>
                         </ul>
@@ -129,11 +129,11 @@ export default function BestFractionalSalesRecruiters() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much does a fractional sales recruiter cost?</h4>
-                                <p className="text-grey-600 leading-relaxed">Contingency agencies charge 20-30% of first-year OTE per hire — $30K-$60K for a senior AE. A fractional retainer is a flat monthly fee covering unlimited hiring. Companies making three or more sales hires per year typically save 40-60% versus per-hire fees.</p>
+                                <p className="text-grey-600 leading-relaxed">Contingency agencies charge 20-30% of first-year OTE per hire: $30K-$60K for a senior AE. A fractional retainer is a flat monthly fee covering unlimited hiring. Companies making three or more sales hires per year typically save 40-60% versus per-hire fees.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">When should we switch from contingency to fractional?</h4>
-                                <p className="text-grey-600 leading-relaxed">Switch when you are hiring two or more salespeople per quarter, when per-hire fees compound past $100K per year, or when you need a consistent hiring process — rubrics, scorecards, pipeline reporting — rather than transactional resume sends.</p>
+                                <p className="text-grey-600 leading-relaxed">Switch when you are hiring two or more salespeople per quarter, when per-hire fees compound past $100K per year, or when you need a consistent hiring process (rubrics, scorecards, pipeline reporting) rather than transactional resume sends.</p>
                             </div>
                         </div>
                     </div>

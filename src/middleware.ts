@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { getMarkdownForPath, getAgentFriendly404Markdown } from "@/lib/markdown-content";
 
-// Paths that Next.js handles internally — never intercept these
+// Paths that Next.js handles internally, never intercept these
 const INTERNAL_PREFIXES = ["/_next", "/api", "/__next"];
 // Static file extensions served directly from /public
 const STATIC_EXTENSIONS = /\.(ico|png|jpg|jpeg|gif|svg|webp|pdf|html|xml|txt|json|css|js|woff|woff2|ttf|eot|map)$/i;
@@ -32,7 +32,7 @@ export function middleware(request: NextRequest) {
         const markdown = getMarkdownForPath(pathname);
 
         if (markdown) {
-            // Known route — return markdown representation
+            // Known route, return markdown representation
             return new NextResponse(markdown, {
                 status: 200,
                 headers: {
@@ -43,7 +43,7 @@ export function middleware(request: NextRequest) {
                 },
             });
         } else {
-            // Unknown route — return agent-friendly 404 in markdown
+            // Unknown route, return agent-friendly 404 in markdown
             const body = getAgentFriendly404Markdown(pathname);
             return new NextResponse(body, {
                 status: 404,

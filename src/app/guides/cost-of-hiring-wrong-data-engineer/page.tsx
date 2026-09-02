@@ -266,7 +266,7 @@ export default function CostOfHiringWrongDataEngineer() {
                                 },
                                 {
                                     title: "Blame drift",
-                                    desc: "Every miss is the legacy system, the upstream team, or \"the data\" — never a decision they made."
+                                    desc: "Every miss is the legacy system, the upstream team, or \"the data\", never a decision they made."
                                 },
                                 {
                                     title: "Quiet exits around them",
@@ -321,7 +321,7 @@ export default function CostOfHiringWrongDataEngineer() {
                             </li>
                             <li className="flex gap-4 p-5 rounded-2xl border border-grey-100 bg-grey-50/30">
                                 <ShieldCheck className="shrink-0 h-6 w-6 text-blue-accent" />
-                                <p className="text-grey-600 leading-relaxed"><strong className="text-navy-900">Reference verification of delivery claims</strong> — shipped systems and owned decisions, not proximity to successful teams.</p>
+                                <p className="text-grey-600 leading-relaxed"><strong className="text-navy-900">Reference verification of delivery claims</strong>, shipped systems and owned decisions, not proximity to successful teams.</p>
                             </li>
                         </ul>
                         <p className="text-grey-600 leading-relaxed">

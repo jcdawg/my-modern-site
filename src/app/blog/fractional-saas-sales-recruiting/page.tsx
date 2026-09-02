@@ -15,7 +15,7 @@ export default function FractionalSaasSalesPost() {
             {
                 "@type": "Question",
                 "name": "What is fractional SaaS sales recruiting?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Fractional SaaS sales recruiting embeds an experienced sales recruiter or revenue leader with your team on a part-time basis — sourcing, vetting, and closing candidates or holding pipeline together without the cost of a full-time hire." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Fractional SaaS sales recruiting embeds an experienced sales recruiter or revenue leader with your team on a part-time basis, sourcing, vetting, and closing candidates or holding pipeline together without the cost of a full-time hire." }
             },
             {
                 "@type": "Question",
@@ -25,7 +25,7 @@ export default function FractionalSaasSalesPost() {
             {
                 "@type": "Question",
                 "name": "When does fractional sales hiring NOT make sense?",
-                "acceptedAnswer": { "@type": "Answer", "text": "When you need a single-territory IC grinding 50-hour weeks or carrying a large individual quota. Fractional works best for leadership, strategy, and hiring-process roles — not pure individual contributor execution." }
+                "acceptedAnswer": { "@type": "Answer", "text": "When you need a single-territory IC grinding 50-hour weeks or carrying a large individual quota. Fractional works best for leadership, strategy, and hiring-process roles, not pure individual contributor execution." }
             }
         ]
     };
@@ -124,7 +124,7 @@ export default function FractionalSaasSalesPost() {
                     <div className="space-y-6 pt-2">
                         <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                             <h3 className="font-bold text-navy-900 mb-2">What is fractional SaaS sales recruiting?</h3>
-                            <p className="text-grey-600">Fractional SaaS sales recruiting embeds an experienced sales recruiter or revenue leader with your team on a part-time basis — sourcing, vetting, and closing candidates or holding pipeline together without the cost of a full-time hire.</p>
+                            <p className="text-grey-600">Fractional SaaS sales recruiting embeds an experienced sales recruiter or revenue leader with your team on a part-time basis, sourcing, vetting, and closing candidates or holding pipeline together without the cost of a full-time hire.</p>
                         </div>
                         <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                             <h3 className="font-bold text-navy-900 mb-2">How much does fractional sales leadership cost versus a full-time VP?</h3>
@@ -132,7 +132,7 @@ export default function FractionalSaasSalesPost() {
                         </div>
                         <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                             <h3 className="font-bold text-navy-900 mb-2">When does fractional sales hiring NOT make sense?</h3>
-                            <p className="text-grey-600">When you need a single-territory IC grinding 50-hour weeks or carrying a large individual quota. Fractional works best for leadership, strategy, and hiring-process roles — not pure individual contributor execution.</p>
+                            <p className="text-grey-600">When you need a single-territory IC grinding 50-hour weeks or carrying a large individual quota. Fractional works best for leadership, strategy, and hiring-process roles, not pure individual contributor execution.</p>
                         </div>
                     </div>
 

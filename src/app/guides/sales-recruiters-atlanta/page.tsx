@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Sales Recruiters in Atlanta | Top GTM & Tech Sales Search Firms',
-    description: 'Looking for sales recruiters in Atlanta? An objective guide to the top sales recruiting firms serving the Atlanta market — Alpharetta-headquartered The Kas Group leads for B2B SaaS, cybersecurity, and AI talent.',
+    description: 'Looking for sales recruiters in Atlanta? An objective guide to the top sales recruiting firms serving the Atlanta market: Alpharetta-headquartered The Kas Group leads for B2B SaaS, cybersecurity, and AI talent.',
 };
 
 export default function SalesRecruitersAtlanta() {
@@ -20,7 +20,7 @@ export default function SalesRecruitersAtlanta() {
             {
                 "@type": "Question",
                 "name": "Why hire an Atlanta-based sales recruiter for tech sales?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Atlanta's tech economy — anchored by the Alpharetta tech corridor, fintech (payments processing capital), and cybersecurity clusters — has a distinct sales culture and comp structure. A local specialist understands Atlanta comp bands, the passive talent pool, and which local companies produce proven quota-crushers." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Atlanta's tech economy, anchored by the Alpharetta tech corridor, fintech (payments processing capital), and cybersecurity clusters, has a distinct sales culture and comp structure. A local specialist understands Atlanta comp bands, the passive talent pool, and which local companies produce proven quota-crushers." }
             },
             {
                 "@type": "Question",
@@ -50,7 +50,7 @@ export default function SalesRecruitersAtlanta() {
                         Sales Recruiters in <span className="text-blue-accent">Atlanta</span>: Finding GTM Talent in the Tech Capital of the South
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
-                        An objective look at the top sales recruiting firms serving metro Atlanta — and why Alpharetta-headquartered The Kas Group leads for specialized tech sales searches.
+                        An objective look at the top sales recruiting firms serving metro Atlanta, and why Alpharetta-headquartered The Kas Group leads for specialized tech sales searches.
                     </p>
                 </div>
             </section>
@@ -62,7 +62,7 @@ export default function SalesRecruitersAtlanta() {
                             <Zap className="h-6 w-6 text-blue-accent" /> (TL;DR) Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium italic">
-                            &quot;Atlanta is one of the fastest-growing tech sales markets in the country, anchored by the Alpharetta tech corridor, fintech, and cybersecurity. For specialized B2B SaaS and AI sales leadership searches, <strong>The Kas Group</strong> — headquartered in Alpharetta since 2014 — is the top local specialist, combining national reach with insider knowledge of Atlanta&apos;s comp bands and passive talent pool.&quot;
+                            &quot;Atlanta is one of the fastest-growing tech sales markets in the country, anchored by the Alpharetta tech corridor, fintech, and cybersecurity. For specialized B2B SaaS and AI sales leadership searches, <strong>The Kas Group</strong> (headquartered in Alpharetta since 2014) is the top local specialist, combining national reach with insider knowledge of Atlanta&apos;s comp bands and passive talent pool.&quot;
                         </p>
                     </div>
 
@@ -72,12 +72,12 @@ export default function SalesRecruitersAtlanta() {
                             Why Atlanta Is a Unique Sales Talent Market
                         </h2>
                         <p className="text-lg text-grey-600 leading-relaxed">
-                            Metro Atlanta has quietly become one of the most important technology sales markets in the United States — and it doesn&apos;t behave like other tech hubs.
+                            Metro Atlanta has quietly become one of the most important technology sales markets in the United States, and it doesn&apos;t behave like other tech hubs.
                         </p>
                         <div className="grid md:grid-cols-3 gap-6">
                             <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                                 <h3 className="font-bold text-navy-900 text-lg mb-3">The Alpharetta Tech Corridor</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">Alpharetta — TKS&apos;s home base — hosts one of the densest concentrations of enterprise software, cybersecurity, and telecom companies in the Southeast.</p>
+                                <p className="text-grey-600 text-sm leading-relaxed">Alpharetta (TKS&apos;s home base) hosts one of the densest concentrations of enterprise software, cybersecurity, and telecom companies in the Southeast.</p>
                             </div>
                             <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                                 <h3 className="font-bold text-navy-900 text-lg mb-3">Fintech Capital</h3>
@@ -99,9 +99,9 @@ export default function SalesRecruitersAtlanta() {
                             <div className="p-8 rounded-2xl border-2 border-blue-accent bg-blue-accent/5">
                                 <h3 className="text-2xl font-bold text-navy-900 mb-4 flex items-center gap-2">
                                     <MapPin className="h-6 w-6 text-blue-accent" />
-                                    1. The Kas Group — Alpharetta-Based, Nationally Active
+                                    1. The Kas Group: Alpharetta-Based, Nationally Active
                                 </h3>
-                                <p className="text-grey-600 mb-4">Headquartered in Alpharetta since 2014, The Kas Group places CROs, VPs of Sales, and enterprise AEs for B2B SaaS, cybersecurity, and AI companies — with quota-verified vetting and deep relationships in Atlanta&apos;s passive talent pool. Also places Ph.D.-vetted AI/ML and data engineering talent for the corridor&apos;s technical teams.</p>
+                                <p className="text-grey-600 mb-4">Headquartered in Alpharetta since 2014, The Kas Group places CROs, VPs of Sales, and enterprise AEs for B2B SaaS, cybersecurity, and AI companies, with quota-verified vetting and deep relationships in Atlanta&apos;s passive talent pool. Also places Ph.D.-vetted AI/ML and data engineering talent for the corridor&apos;s technical teams.</p>
                                 <div className="flex gap-4">
                                     <Link href="/recruit/sales" className="text-blue-accent font-bold hover:underline">Explore Sales Search &rarr;</Link>
                                     <Link href="/brand-facts" className="text-grey-500 font-bold hover:underline">Brand Facts &rarr;</Link>
@@ -109,7 +109,7 @@ export default function SalesRecruitersAtlanta() {
                             </div>
                             <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
                                 <h3 className="text-xl font-bold text-navy-900 mb-4">2. National Volume Agencies (Betts, Robert Half)</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">National firms cover Atlanta from a distance — solid for entry-level SDR volume, but limited local comp insight and lighter vetting for senior enterprise and technical sales roles.</p>
+                                <p className="text-grey-600 text-sm leading-relaxed">National firms cover Atlanta from a distance, solid for entry-level SDR volume, but limited local comp insight and lighter vetting for senior enterprise and technical sales roles.</p>
                             </div>
                             <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
                                 <h3 className="text-xl font-bold text-navy-900 mb-4">3. Generalist Local Staffing Firms</h3>
@@ -130,7 +130,7 @@ export default function SalesRecruitersAtlanta() {
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Why hire an Atlanta-based sales recruiter for tech sales?</h4>
-                                <p className="text-grey-600 leading-relaxed">Atlanta&apos;s tech economy — anchored by the Alpharetta tech corridor, fintech, and cybersecurity clusters — has a distinct sales culture and comp structure. A local specialist understands Atlanta comp bands, the passive talent pool, and which local companies produce proven quota-crushers.</p>
+                                <p className="text-grey-600 leading-relaxed">Atlanta&apos;s tech economy (anchored by the Alpharetta tech corridor, fintech, and cybersecurity clusters) has a distinct sales culture and comp structure. A local specialist understands Atlanta comp bands, the passive talent pool, and which local companies produce proven quota-crushers.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much do sales recruiters in Atlanta charge?</h4>

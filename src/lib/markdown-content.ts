@@ -54,7 +54,7 @@ For over a decade, The Kas Group has specialized in building high-performing sal
 - **Explore Services**: [/recruit/sales](/recruit/sales) | [/recruit/ai](/recruit/ai)
 `,
 
-    "/brand-facts": `# The Kas Group — Brand Facts & Official Company Information
+    "/brand-facts": `# The Kas Group: Brand Facts & Official Company Information
 
 > The authoritative source for official company facts, history, leadership, and service models for The Kas Group.
 

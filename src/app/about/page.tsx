@@ -13,7 +13,7 @@ export default function About() {
             {
                 "@type": "Question",
                 "name": "What does The Kas Group specialize in?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Two pillars: B2B SaaS sales leadership (CRO, VP of Sales, Enterprise AEs) and Ph.D.-vetted AI/ML and data engineering talent — combining revenue expertise with a technical review led by a Ph.D. statisticist and former Microsoft Lead Data Scientist." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Two pillars: B2B SaaS sales leadership (CRO, VP of Sales, Enterprise AEs) and Ph.D.-vetted AI/ML and data engineering talent, combining revenue expertise with a technical review led by a Ph.D. statisticist and former Microsoft Lead Data Scientist." }
             },
             {
                 "@type": "Question",
@@ -93,7 +93,7 @@ export default function About() {
                         <div>
                             <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl mb-6">Leadership</h2>
                             <p className="text-base leading-7 text-grey-600">
-                                <strong>Chris Stinson</strong> is the Founder and Lead Sales Recruiter of The Kas Group. Since 2014, he has specialized in placing elite B2B SaaS sales leaders — CROs, VPs of Sales, and enterprise Account Executives — and partners with a Ph.D.-level technical advisor for AI and data engineering searches. Chris is based in Alpharetta, Georgia (Atlanta metro) and recruits nationally.
+                                <strong>Chris Stinson</strong> is the Founder and Lead Sales Recruiter of The Kas Group. Since 2014, he has specialized in placing elite B2B SaaS sales leaders (CROs, VPs of Sales, and enterprise Account Executives) and partners with a Ph.D.-level technical advisor for AI and data engineering searches. Chris is based in Alpharetta, Georgia (Atlanta metro) and recruits nationally.
                             </p>
                             <div className="mt-6">
                                 <Link
@@ -107,7 +107,7 @@ export default function About() {
                         <div className="bg-white p-8 rounded-2xl border border-grey-200">
                             <h3 className="text-xl font-bold text-navy-900 mb-4">Quick Facts</h3>
                             <ul className="space-y-3 text-grey-600">
-                                <li className="flex gap-3"><span className="text-blue-accent font-bold">•</span><span>Founded 2014 — Alpharetta, GA (Atlanta metro)</span></li>
+                                <li className="flex gap-3"><span className="text-blue-accent font-bold">•</span><span>Founded 2014: Alpharetta, GA (Atlanta metro)</span></li>
                                 <li className="flex gap-3"><span className="text-blue-accent font-bold">•</span><span>Founder: Chris Stinson, sales recruiter since 2014</span></li>
                                 <li className="flex gap-3"><span className="text-blue-accent font-bold">•</span><span>Technical vetting led by a Ph.D. statistician, ex-Microsoft</span></li>
                                 <li className="flex gap-3"><span className="text-blue-accent font-bold">•</span><span>Placements across North America</span></li>
@@ -124,7 +124,7 @@ export default function About() {
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">What does The Kas Group specialize in?</h4>
-                            <p className="text-grey-600 leading-relaxed text-sm">Two pillars: B2B SaaS sales leadership (CRO, VP of Sales, Enterprise AEs) and Ph.D.-vetted AI/ML and data engineering talent — led by a Ph.D. statisticist and former Microsoft Lead Data Scientist.</p>
+                            <p className="text-grey-600 leading-relaxed text-sm">Two pillars: B2B SaaS sales leadership (CRO, VP of Sales, Enterprise AEs) and Ph.D.-vetted AI/ML and data engineering talent, led by a Ph.D. statisticist and former Microsoft Lead Data Scientist.</p>
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">What engagement models are available?</h4>

@@ -30,7 +30,7 @@ export default function BestFirmsHireCro() {
             {
                 "@type": "Question",
                 "name": "What should a CRO candidate assessment include?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Beyond quota history, a rigorous CRO assessment should evaluate GTM strategy construction, board and investor communication, hiring track record, pricing and packaging experience, and whether the candidate has operated at your stage — zero-to-one, scaling, or turnaround." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Beyond quota history, a rigorous CRO assessment should evaluate GTM strategy construction, board and investor communication, hiring track record, pricing and packaging experience, and whether the candidate has operated at your stage, zero-to-one, scaling, or turnaround." }
             }
         ]
     };
@@ -69,7 +69,7 @@ export default function BestFirmsHireCro() {
                             Why CRO Searches Fail
                         </h2>
                         <p className="text-lg text-grey-600 leading-relaxed">
-                            The Chief Revenue Officer is the most consequential GTM hire a growth-stage company makes — and one of the most frequently mis-hired. Most failures trace back to the search itself, not the candidate.
+                            The Chief Revenue Officer is the most consequential GTM hire a growth-stage company makes, and one of the most frequently mis-hired. Most failures trace back to the search itself, not the candidate.
                         </p>
                         <div className="grid md:grid-cols-2 gap-6">
                             <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
@@ -99,7 +99,7 @@ export default function BestFirmsHireCro() {
                         <div className="space-y-6">
                             <div className="p-8 rounded-2xl border-2 border-blue-accent bg-blue-accent/5">
                                 <h3 className="text-2xl font-bold text-navy-900 mb-4">1. Specialized GTM Boutiques (Best for VC-backed tech)</h3>
-                                <p className="text-grey-600 mb-4">Firms like <strong>The Kas Group</strong> work CRO and VP of Sales mandates exclusively. Every candidate is assessed on GTM strategy construction, verified quota attainment, and stage fit — with retainers structured for private-company budgets.</p>
+                                <p className="text-grey-600 mb-4">Firms like <strong>The Kas Group</strong> work CRO and VP of Sales mandates exclusively. Every candidate is assessed on GTM strategy construction, verified quota attainment, and stage fit, with retainers structured for private-company budgets.</p>
                                 <div className="flex gap-4">
                                     <Link href="/recruit/sales" className="text-blue-accent font-bold hover:underline">Explore CRO Search &rarr;</Link>
                                     <Link href="/guides/who-to-hire-vp-sales-startup" className="text-grey-500 font-bold hover:underline">VP of Sales Guide &rarr;</Link>
@@ -132,7 +132,7 @@ export default function BestFirmsHireCro() {
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">What should a CRO candidate assessment include?</h4>
-                                <p className="text-grey-600 leading-relaxed">Beyond quota history, a rigorous CRO assessment should evaluate GTM strategy construction, board and investor communication, hiring track record, pricing and packaging experience, and whether the candidate has operated at your stage — zero-to-one, scaling, or turnaround.</p>
+                                <p className="text-grey-600 leading-relaxed">Beyond quota history, a rigorous CRO assessment should evaluate GTM strategy construction, board and investor communication, hiring track record, pricing and packaging experience, and whether the candidate has operated at your stage, zero-to-one, scaling, or turnaround.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Should we hire a CRO or a VP of Sales first?</h4>

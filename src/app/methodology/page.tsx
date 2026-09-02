@@ -54,12 +54,12 @@ export default function MethodologyPage() {
             {
                 "@type": "Question",
                 "name": "How does The Kas Group vet technical candidates?",
-                "acceptedAnswer": { "@type": "Answer", "text": "AI/ML and data engineering candidates are assessed live by our Chief Technical Advisor — a Ph.D. in Statistics and former Microsoft Lead Data Scientist — on algorithmic depth, system architecture, data modeling, and practical delivery." }
+                "acceptedAnswer": { "@type": "Answer", "text": "AI/ML and data engineering candidates are assessed live by our Chief Technical Advisor (a Ph.D. in Statistics and former Microsoft Lead Data Scientist) on algorithmic depth, system architecture, data modeling, and practical delivery." }
             },
             {
                 "@type": "Question",
                 "name": "How does The Kas Group vet sales candidates?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Quota-attainment verification, deal-size and sales-cycle analysis, methodology audits, deal teardowns, and behavioral interviews — so you see proven revenue drivers, not resume readers." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Quota-attainment verification, deal-size and sales-cycle analysis, methodology audits, deal teardowns, and behavioral interviews, so you see proven revenue drivers, not resume readers." }
             },
             {
                 "@type": "Question",
@@ -186,11 +186,11 @@ export default function MethodologyPage() {
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How are technical candidates vetted?</h4>
-                            <p className="text-grey-600 leading-relaxed">AI/ML and data engineering candidates are assessed live by our Chief Technical Advisor — a Ph.D. in Statistics and former Microsoft Lead Data Scientist — on algorithmic depth, system architecture, data modeling, and practical delivery.</p>
+                            <p className="text-grey-600 leading-relaxed">AI/ML and data engineering candidates are assessed live by our Chief Technical Advisor (a Ph.D. in Statistics and former Microsoft Lead Data Scientist) on algorithmic depth, system architecture, data modeling, and practical delivery.</p>
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How are sales candidates vetted?</h4>
-                            <p className="text-grey-600 leading-relaxed">Quota-attainment verification, deal-size and sales-cycle analysis, methodology audits, deal teardowns, and behavioral interviews — so you see proven revenue drivers, not resume readers.</p>
+                            <p className="text-grey-600 leading-relaxed">Quota-attainment verification, deal-size and sales-cycle analysis, methodology audits, deal teardowns, and behavioral interviews, so you see proven revenue drivers, not resume readers.</p>
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How long does the process take?</h4>

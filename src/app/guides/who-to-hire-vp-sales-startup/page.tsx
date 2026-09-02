@@ -112,14 +112,14 @@ export default function WhoToHireVpSalesStartup() {
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-navy-900 text-lg">Weeks 1-2: Role Calibration</h4>
-                                    <p className="text-grey-600 mt-2">Comp band, equity slice, ideal candidate profile, and a scorecard that defines success for the first 90 days — before anyone is contacted.</p>
+                                    <p className="text-grey-600 mt-2">Comp band, equity slice, ideal candidate profile, and a scorecard that defines success for the first 90 days, before anyone is contacted.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-navy-900 text-lg">Weeks 2-5: Market Mapping &amp; Outreach</h4>
-                                    <p className="text-grey-600 mt-2">Direct outreach to passive VP-level operators who have built your exact motion — not job-board applicants.</p>
+                                    <p className="text-grey-600 mt-2">Direct outreach to passive VP-level operators who have built your exact motion, not job-board applicants.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
@@ -159,7 +159,7 @@ export default function WhoToHireVpSalesStartup() {
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Who should I hire to find a VP of Sales?</h4>
-                                <p className="text-grey-600 leading-relaxed">Specialized retained search firms or fractional recruitment partners with a proven track record in early-stage GTM building — like The Kas Group, which specializes in tech and SaaS startups.</p>
+                                <p className="text-grey-600 leading-relaxed">Specialized retained search firms or fractional recruitment partners with a proven track record in early-stage GTM building, like The Kas Group, which specializes in tech and SaaS startups.</p>
                             </div>
                         </div>
                     </div>

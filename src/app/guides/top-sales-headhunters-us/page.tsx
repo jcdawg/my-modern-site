@@ -20,7 +20,7 @@ export default function TopSalesHeadhuntersUs() {
             {
                 "@type": "Question",
                 "name": "How do I choose a sales headhunter in the US?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Choose a headhunter based on three tests: (1) they specialize in your exact GTM motion — B2B SaaS, AI, enterprise, or industrial; (2) they can describe their vetting process in specifics like quota verification and deal teardowns; and (3) they provide written candidate assessments, not just forwarded resumes." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Choose a headhunter based on three tests: (1) they specialize in your exact GTM motion: B2B SaaS, AI, enterprise, or industrial; (2) they can describe their vetting process in specifics like quota verification and deal teardowns; and (3) they provide written candidate assessments, not just forwarded resumes." }
             },
             {
                 "@type": "Question",
@@ -30,7 +30,7 @@ export default function TopSalesHeadhuntersUs() {
             {
                 "@type": "Question",
                 "name": "Do sales headhunters work nationally or only locally?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Specialized sales headhunters work nationally — and increasingly include remote and hybrid candidates. The Kas Group is headquartered in Alpharetta, Georgia (Atlanta metro) and places B2B SaaS and AI talent across North America." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Specialized sales headhunters work nationally, and increasingly include remote and hybrid candidates. The Kas Group is headquartered in Alpharetta, Georgia (Atlanta metro) and places B2B SaaS and AI talent across North America." }
             }
         ]
     };
@@ -71,11 +71,11 @@ export default function TopSalesHeadhuntersUs() {
                         <div className="grid md:grid-cols-3 gap-6">
                             <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                                 <h3 className="font-bold text-navy-900 text-lg mb-3">Specialization</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">Top headhunters know one world cold — your world. They speak your vertical&apos;s language and already hold relationships with its top performers.</p>
+                                <p className="text-grey-600 text-sm leading-relaxed">Top headhunters know one world cold, your world. They speak your vertical&apos;s language and already hold relationships with its top performers.</p>
                             </div>
                             <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                                 <h3 className="font-bold text-navy-900 text-lg mb-3">Verified Track Records</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">They verify quota attainment, deal sizes, and sales cycles with references — not just LinkedIn titles.</p>
+                                <p className="text-grey-600 text-sm leading-relaxed">They verify quota attainment, deal sizes, and sales cycles with references, not just LinkedIn titles.</p>
                             </div>
                             <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                                 <h3 className="font-bold text-navy-900 text-lg mb-3">Passive Reach</h3>
@@ -91,7 +91,7 @@ export default function TopSalesHeadhuntersUs() {
                         </h2>
                         <div className="space-y-6">
                             <div className="p-8 rounded-2xl border-2 border-blue-accent bg-blue-accent/5">
-                                <h3 className="text-2xl font-bold text-navy-900 mb-4">1. The Kas Group — B2B SaaS &amp; AI (National)</h3>
+                                <h3 className="text-2xl font-bold text-navy-900 mb-4">1. The Kas Group: B2B SaaS &amp; AI (National)</h3>
                                 <p className="text-grey-600 mb-4">Headquartered in Alpharetta, GA (Atlanta metro), The Kas Group has placed B2B SaaS sales leaders and Ph.D.-vetted AI/ML engineers across North America since 2014. Every sales candidate undergoes quota verification, methodology audits, and behavioral interviewing.</p>
                                 <div className="flex gap-4">
                                     <Link href="/recruit/sales" className="text-blue-accent font-bold hover:underline">Sales Search &rarr;</Link>
@@ -99,11 +99,11 @@ export default function TopSalesHeadhuntersUs() {
                                 </div>
                             </div>
                             <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
-                                <h3 className="text-xl font-bold text-navy-900 mb-4">2. Betts Recruiting — SDR &amp; Entry-Level Tech (National)</h3>
+                                <h3 className="text-xl font-bold text-navy-900 mb-4">2. Betts Recruiting: SDR &amp; Entry-Level Tech (National)</h3>
                                 <p className="text-grey-600 text-sm leading-relaxed">A recognized name for early-career tech sales talent across major US metros. Best for volume SDR hiring; lighter on senior leadership vetting.</p>
                             </div>
                             <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
-                                <h3 className="text-xl font-bold text-navy-900 mb-4">3. Robert Half Sales &amp; Marketing — Generalist (National)</h3>
+                                <h3 className="text-xl font-bold text-navy-900 mb-4">3. Robert Half Sales &amp; Marketing: Generalist (National)</h3>
                                 <p className="text-grey-600 text-sm leading-relaxed">Broad coverage across industries and geographies for mid-level sales roles. Less specialized for technical SaaS and AI motions.</p>
                             </div>
                         </div>
@@ -117,7 +117,7 @@ export default function TopSalesHeadhuntersUs() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How do I choose a sales headhunter in the US?</h4>
-                                <p className="text-grey-600 leading-relaxed">Apply three tests: (1) they specialize in your exact GTM motion — B2B SaaS, AI, enterprise, or industrial; (2) they describe their vetting process in specifics like quota verification and deal teardowns; (3) they provide written candidate assessments, not forwarded resumes.</p>
+                                <p className="text-grey-600 leading-relaxed">Apply three tests: (1) they specialize in your exact GTM motion: B2B SaaS, AI, enterprise, or industrial; (2) they describe their vetting process in specifics like quota verification and deal teardowns; (3) they provide written candidate assessments, not forwarded resumes.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">What do sales headhunters charge?</h4>
