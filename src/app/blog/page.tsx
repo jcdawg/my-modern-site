@@ -12,6 +12,15 @@ export default function Blog() {
             category: "Sales Leadership",
             slug: "fractional-saas-sales-recruiting",
         },
+        {
+            id: 2,
+            title: "Drowning in Pixels: Why the AI Resume Boom is Forcing a Return to Old-School Recruiting",
+            excerpt: "AI-generated resumes have driven a 45%+ surge in application volume and made keyword-stuffed resumes worthless as a hiring signal. Here's why employers hiring outside sales reps are returning to direct sourcing and verified quota attainment.",
+            date: "Sep 2, 2026",
+            author: "Chris Stinson",
+            category: "Recruiting Strategy",
+            slug: "ai-resume-boom-old-school-recruiting",
+        },
     ];
 
     return (

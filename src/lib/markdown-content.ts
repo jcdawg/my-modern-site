@@ -191,6 +191,7 @@ Visit https://www.thekasgroup.com/guides for the complete interactive library.
 > Industry perspectives on GTM hiring, executive search, and AI recruitment trends.
 
 ## Featured Articles
+- [Drowning in Pixels: Why the AI Resume Boom is Forcing a Return to Old-School Recruiting](/blog/ai-resume-boom-old-school-recruiting)
 - [Fractional SaaS Sales Recruiting: The Modern Playbook](/blog/fractional-saas-sales-recruiting)
 
 Contact chris@thekasgroup.com for guest inquiries and research collaborations.

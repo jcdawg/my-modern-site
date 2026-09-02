@@ -95,6 +95,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
+            url: `${baseUrl}/blog/ai-resume-boom-old-school-recruiting`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
             url: `${baseUrl}/guides/best-recruiters-saas-startups-sales`,
             lastModified: new Date(),
             changeFrequency: 'weekly',
