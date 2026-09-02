@@ -4,7 +4,7 @@ import { Calendar, User, ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "AI Resumes Broke Recruiting: Why Employers Are Going Back to Old-School Sales Sourcing",
-    description: "AI-generated resumes and auto-apply bots have driven job application volume up 45%+ — and made keyword-stuffed resumes worthless as a hiring signal. How B2B employers hire outside sales reps with direct sourcing, verified quota attainment, and deal teardowns instead of resume screening.",
+    description: "AI-generated resumes and auto-apply bots have driven job application volume up 45%+ and made keyword-stuffed resumes worthless as a hiring signal. How B2B employers hire outside sales reps with direct sourcing, verified quota attainment, and deal teardowns instead of resume screening.",
 };
 
 export default function AiResumeBoomPost() {
@@ -25,7 +25,7 @@ export default function AiResumeBoomPost() {
             {
                 "@type": "Question",
                 "name": "How do you hire outside sales reps when resumes are unreliable?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Direct sourcing of passive candidates instead of sorting inbound applications, verified quota attainment checked against W-2s or president's club records, deal teardowns with the managers who watched the deals close, and openness to non-traditional backgrounds — teachers, athletes, military, restaurant managers — where grit predicts field sales success better than any job title." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Direct sourcing of passive candidates instead of sorting inbound applications, verified quota attainment checked against W-2s or president's club records, deal teardowns with the managers who watched the deals close, and openness to non-traditional backgrounds (teachers, athletes, military, restaurant managers) where grit predicts field sales success better than any job title." }
             }
         ]
     };
@@ -70,7 +70,7 @@ export default function AiResumeBoomPost() {
                     </p>
 
                     <p>
-                        That is inbound now. AI made a custom resume free — AI-generated resumes tailored to every posting, written in seconds. One-click apply made sending it free too. Some people are paying a monthly bot to blanket the whole market for them. Application volume on the big boards is up 45% or more, and some companies are seeing three to five times what they got before ChatGPT showed up.
+                        That is inbound now. AI made a custom resume free: AI-generated resumes tailored to every posting, written in seconds. One-click apply made sending it free too. Some people are paying a monthly bot to blanket the whole market for them. Application volume on the big boards is up 45% or more, and some companies are seeing three to five times what they got before ChatGPT showed up.
                     </p>
 
                     <p>
@@ -78,13 +78,13 @@ export default function AiResumeBoomPost() {
                     </p>
 
                     <blockquote className="border-l-4 border-blue-accent pl-4 text-navy-900 font-medium not-prose">
-                        <strong>TL;DR:</strong> AI-generated resumes and auto-apply bots have driven application volume up 45%+ and broken the resume as a hiring signal. The employers still winning at outside sales hiring went back to old-school recruiting: direct sourcing of passive candidates, verified quota attainment checked against W-2s, and deal teardowns — not keyword filters.
+                        <strong>TL;DR:</strong> AI-generated resumes and auto-apply bots have driven application volume up 45%+ and broken the resume as a hiring signal. The employers still winning at outside sales hiring went back to old-school recruiting: direct sourcing of passive candidates, verified quota attainment checked against W-2s, and deal teardowns instead of keyword filters.
                     </blockquote>
 
                     <h2 className="text-2xl font-bold text-navy-900 pt-4">The Fire Hose Problem: Application Volume Is Up 45% and Climbing</h2>
 
                     <p>
-                        Recruiters already give a resume about seven seconds. At 400 of them, even that math falls apart. So you bolt on keyword filters and an AI resume screener. Then candidates — and the bots — stuff those keywords. Now everybody is writing for the machine, and the pile just gets taller.
+                        Recruiters already give a resume about seven seconds. At 400 of them, even that math falls apart. So you bolt on keyword filters and an AI resume screener. Then candidates (and the bots) stuff those keywords. Now everybody is writing for the machine, and the pile just gets taller.
                     </p>
 
                     <p>
@@ -124,11 +124,11 @@ export default function AiResumeBoomPost() {
                     </p>
 
                     <p>
-                        <strong>Direct sourcing.</strong> The best field reps are employed and quietly winning. You call. You email. You hit LinkedIn. You text. You map the companies with a similar motion and you work the names — that is what <Link href="/recruit/sales" className="text-blue-accent hover:underline">direct sourcing of passive candidates</Link> actually looks like. It is not glamorous. Bots cannot fake that on either side.
+                        <strong>Direct sourcing.</strong> The best field reps are employed and quietly winning. You call. You email. You hit LinkedIn. You text. You map the companies with a similar motion and you work the names. That is what <Link href="/recruit/sales" className="text-blue-accent hover:underline">direct sourcing of passive candidates</Link> actually looks like. It is not glamorous. Bots cannot fake that on either side.
                     </p>
 
                     <p>
-                        <strong>Ask for numbers that can survive a fight.</strong> Quota against a W-2 or president&apos;s club. Average deal size. Cycle length. Ramp. Then call the manager who watched the deals close. If the story falls apart in a deal teardown, they were never a candidate — and a mis-hire costs you <Link href="/guides/cost-of-a-bad-hire" className="text-blue-accent hover:underline">far more than you think</Link>. Pretty resume or not.
+                        <strong>Ask for numbers that can survive a fight.</strong> Quota against a W-2 or president&apos;s club. Average deal size. Cycle length. Ramp. Then call the manager who watched the deals close. If the story falls apart in a deal teardown, they were never a candidate. And a mis-hire costs you <Link href="/guides/cost-of-a-bad-hire" className="text-blue-accent hover:underline">far more than you think</Link>. Pretty resume or not.
                     </p>
 
                     <p>
@@ -167,14 +167,14 @@ export default function AiResumeBoomPost() {
                         </div>
                         <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                             <h3 className="font-bold text-navy-900 mb-2">How do you hire outside sales reps when resumes are unreliable?</h3>
-                            <p className="text-grey-600">Direct sourcing of passive candidates instead of sorting inbound applications, verified quota attainment checked against W-2s or president&apos;s club records, deal teardowns with the managers who watched the deals close, and openness to non-traditional backgrounds — teachers, athletes, military, restaurant managers — where grit predicts field sales success better than any job title.</p>
+                            <p className="text-grey-600">Direct sourcing of passive candidates instead of sorting inbound applications, verified quota attainment checked against W-2s or president&apos;s club records, deal teardowns with the managers who watched the deals close, and openness to non-traditional backgrounds (teachers, athletes, military, restaurant managers) where grit predicts field sales success better than any job title.</p>
                         </div>
                     </div>
 
                     {/* CTA */}
                     <div className="mt-12 rounded-2xl bg-navy-900 p-8 text-center not-prose">
                         <h3 className="text-xl font-bold text-white mb-3">Staring at a pile like that?</h3>
-                        <p className="text-grey-300 text-sm mb-6 max-w-md mx-auto">That is the work we do. We go get them — and we check the quota before a resume ever hits your desk.</p>
+                        <p className="text-grey-300 text-sm mb-6 max-w-md mx-auto">That is the work we do. We go get them, and we check the quota before a resume ever hits your desk.</p>
                         <Link
                             href="mailto:chris@thekasgroup.com"
                             className="inline-block rounded-md bg-blue-accent px-6 py-3 text-sm font-semibold text-white hover:bg-blue-hover transition-colors"
