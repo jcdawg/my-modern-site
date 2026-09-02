@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { Calendar, User, ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Drowning in Pixels: Why the AI Resume Boom is Forcing a Return to Old-School Recruiting",
-    description: "AI-generated resumes have driven a 45%+ surge in application volume and made keyword-stuffed resumes worthless as a hiring signal. Here's why B2B employers hiring outside sales reps are returning to direct sourcing, verified quota attainment, and old-school vetting.",
+    title: "AI Resumes Broke Recruiting: Why Employers Are Going Back to Old-School Sales Sourcing",
+    description: "AI-generated resumes and auto-apply bots have driven job application volume up 45%+ — and made keyword-stuffed resumes worthless as a hiring signal. How B2B employers hire outside sales reps with direct sourcing, verified quota attainment, and deal teardowns instead of resume screening.",
 };
 
 export default function AiResumeBoomPost() {
@@ -14,18 +14,18 @@ export default function AiResumeBoomPost() {
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "How much has application volume increased because of AI resumes?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Major job platforms have reported application volume surges of 45% or more, driven by one-click apply features, ChatGPT-written resumes, and automated application bots that submit hundreds of tailored applications per candidate. Employers now receive dramatically more applications per posting while recruiter time per resume keeps shrinking." }
+                "name": "How much has AI increased job application volume?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Major job platforms report application volume up 45% or more since AI resume tools went mainstream, with some employers seeing three to five times their pre-ChatGPT volume. AI-generated resumes, one-click apply, and auto-apply bot subscriptions all push the number higher." }
             },
             {
                 "@type": "Question",
-                "name": "Can AI resume screening tools still identify good candidates?",
-                "acceptedAnswer": { "@type": "Answer", "text": "AI screening can triage obvious mismatches, but it cannot verify performance. When candidates use AI to optimize resumes for the same algorithms doing the screening, both sides converge on keyword matching rather than actual ability. Structured interviews, reference-checked metrics, and work samples remain the only reliable performance signals." }
+                "name": "Can AI resume screening tools still find good candidates?",
+                "acceptedAnswer": { "@type": "Answer", "text": "They can triage obvious mismatches, but they cannot verify performance. When candidates use AI to beat the same algorithms screening them, everyone converges on keyword matching instead of ability. Structured interviews, reference-checked quota attainment, and deal teardowns remain the only reliable signals." }
             },
             {
                 "@type": "Question",
-                "name": "How do you vet outside sales reps when resumes are unreliable?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Vet verifiable metrics instead of job titles: quota attainment percentage, average deal size, sales cycle length, and territory growth — confirmed through references and deal teardowns. The best field reps often come from non-traditional backgrounds, so direct sourcing into the passive talent market beats sorting inbound applications." }
+                "name": "How do you hire outside sales reps when resumes are unreliable?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Direct sourcing of passive candidates instead of sorting inbound applications, verified quota attainment checked against W-2s or president's club records, deal teardowns with the managers who watched the deals close, and openness to non-traditional backgrounds — teachers, athletes, military, restaurant managers — where grit predicts field sales success better than any job title." }
             }
         ]
     };
@@ -47,7 +47,7 @@ export default function AiResumeBoomPost() {
                 <div className="mb-10">
                     <span className="inline-block rounded-full bg-grey-100 px-3 py-1 text-xs font-semibold text-navy-700 mb-4">Recruiting Strategy</span>
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-5xl leading-tight mb-6">
-                        Drowning in Pixels: Why the AI Resume Boom is Forcing a Return to Old-School Recruiting
+                        400 Applications and Not One of Them Means Anything
                     </h1>
                     <div className="flex items-center gap-6 text-sm text-grey-500">
                         <span className="flex items-center gap-1.5"><Calendar className="h-4 w-4" /> September 2, 2026</span>
@@ -62,102 +62,110 @@ export default function AiResumeBoomPost() {
                 <div className="prose prose-lg max-w-none text-grey-700 leading-relaxed space-y-6">
 
                     <p>
-                        Every recruiter knows the feeling. You post a mid-level B2B sales role on a Monday morning, and by Wednesday there are four hundred applications in the queue — every one of them polished, keyword-optimized, and eerily similar. None of them tell you anything.
+                        You post a mid-level B2B sales job on Monday. Wednesday morning you have four hundred applications sitting there. Every resume is polished. Every one of them crushed quota. Every one of them is &quot;proficient in MEDDPICC, Challenger, and consultative selling.&quot;
                     </p>
 
                     <p>
-                        This is the new reality of talent acquisition. Generative AI has made it free and effortless for candidates to produce a &quot;perfect&quot; resume for every single job they apply to — and to apply to hundreds of jobs at once. The result is an application flood that has broken the economics of inbound recruiting and pushed smart employers back toward something older and more reliable: direct sourcing, human vetting, and verified performance.
+                        None of them tell you a thing.
+                    </p>
+
+                    <p>
+                        That is inbound now. AI made a custom resume free — AI-generated resumes tailored to every posting, written in seconds. One-click apply made sending it free too. Some people are paying a monthly bot to blanket the whole market for them. Application volume on the big boards is up 45% or more, and some companies are seeing three to five times what they got before ChatGPT showed up.
+                    </p>
+
+                    <p>
+                        More great salespeople did not suddenly hit the market. Applying got too easy.
                     </p>
 
                     <blockquote className="border-l-4 border-blue-accent pl-4 text-navy-900 font-medium not-prose">
-                        <strong>TL;DR:</strong> AI-generated resumes have driven application volume up 45%+ and destroyed the resume as a hiring signal. B2B employers — especially those hiring outside sales reps — are responding with direct sourcing of passive candidates, verification of hard metrics (quota attainment, deal size, sales cycles) instead of job titles, and a return to old-school reference-checked vetting.
+                        <strong>TL;DR:</strong> AI-generated resumes and auto-apply bots have driven application volume up 45%+ and broken the resume as a hiring signal. The employers still winning at outside sales hiring went back to old-school recruiting: direct sourcing of passive candidates, verified quota attainment checked against W-2s, and deal teardowns — not keyword filters.
                     </blockquote>
 
-                    <h2 className="text-2xl font-bold text-navy-900 pt-4">Section 1: The Fire Hose Problem</h2>
+                    <h2 className="text-2xl font-bold text-navy-900 pt-4">The Fire Hose Problem: Application Volume Is Up 45% and Climbing</h2>
 
                     <p>
-                        The raw numbers are staggering. Major job platforms and enterprise ATS systems have reported application volume surges of <strong>45% or more</strong> over the past two years, with some employers seeing three to five times as many applicants per posting as they did pre-AI. The cause isn&apos;t a sudden talent boom — it&apos;s friction collapsing to zero.
+                        Recruiters already give a resume about seven seconds. At 400 of them, even that math falls apart. So you bolt on keyword filters and an AI resume screener. Then candidates — and the bots — stuff those keywords. Now everybody is writing for the machine, and the pile just gets taller.
                     </p>
 
                     <p>
-                        Three forces are feeding the fire hose. First, one-click apply removed the last bit of effort required to submit. Second, generative AI now produces a tailored, ATS-optimized resume for every posting in seconds — so candidates rationally apply to everything, qualified or not. Third, automated application bots (services that auto-apply to hundreds of roles on a candidate&apos;s behalf, for as little as a monthly subscription) industrialized the process entirely. A single job seeker can quietly blanket an entire market overnight.
+                        The people you actually want already have a job. They are hitting their number. They look at that wall and they do not apply. Your inbound is filling up with people who are good at applying.
+                    </p>
+
+                    <h2 className="text-2xl font-bold text-navy-900 pt-4">The Resume Is Toast: Why Keyword-Stuffed Resumes Prove Nothing</h2>
+
+                    <p>
+                        AI is writing the resume and AI is screening the resume, so both sides are playing the same game. Mirror the job description. Sprinkle in the magic words. Drop in a metric nobody can check from a PDF.
                     </p>
 
                     <p>
-                        The economics on the employer side have inverted. Recruiters were already spending roughly seven seconds on an initial resume screen; at 400 applications per posting, even that becomes impossible. So companies install keyword filters and AI screeners to cope — which teaches candidates (and their bots) to stuff those exact keywords. Everyone is now optimizing for the machine instead of the job, and the volume keeps climbing.
+                        In 2026, a &quot;quota-crushing AE&quot; resume looks like a photocopier. 120% plus. Built pipeline from zero. MEDDPICC, Challenger, consultative selling. When everybody is above average, above average is a joke.
                     </p>
 
                     <p>
-                        The quiet casualty is the great candidate. The strongest performers — the ones already employed and winning — see these walls of noise and simply opt out of applying altogether. Your inbound pipeline is increasingly full of people who are good at applying, not people who are good at the job.
-                    </p>
-
-                    <h2 className="text-2xl font-bold text-navy-900 pt-4">Section 2: The Death of the Resume</h2>
-
-                    <p>
-                        The resume didn&apos;t die of volume alone. It died of <em>symmetry</em>. When candidates use AI to beat the same AI that screens them, both sides converge on the same playbook: mirror the job description&apos;s language, stuff the trending keywords, and decorate every bullet point with impressive-sounding metrics that no one can verify from a PDF.
+                        Sales hiring was already a weak use of a resume. Quota, deal size, territory growth. Easy to puff. Almost impossible to prove on paper. A keyword-matched resume now tells you one thing: this person knows how to use ChatGPT. It does not tell you if they can run a discovery call. Or hold the line on price. Or live in a nine-month enterprise cycle without disappearing.
                     </p>
 
                     <p>
-                        Consider what a &quot;quota-crushing Account Executive&quot; resume looks like in 2026. Every candidate claims 120%+ attainment. Every candidate &quot;built pipeline from zero.&quot; Every candidate is &quot;proficient in MEDDPICC, Challenger, and consultative selling&quot; — because the language model that wrote the resume scanned the posting and knew those were the magic words. When every resume is above average, above average stops meaning anything. The resume has become a writing sample produced by someone else&apos;s software.
+                        More AI screening will not save you. That is just pouring gas on it. Stop treating the application pile as your talent pool.
                     </p>
 
                     <p>
-                        This is particularly corrosive for sales hiring, where the resume was already a weak signal. Quota attainment, deal sizes, and territory growth are trivially easy to inflate and nearly impossible to verify on paper. A keyword-matched resume today tells you exactly one thing: the candidate knows how to use AI. It tells you nothing about whether they can run a discovery call, hold margin in a negotiation, or grind through a nine-month enterprise cycle.
+                        Go get the people who are not applying.
+                    </p>
+
+                    <h2 className="text-2xl font-bold text-navy-900 pt-4">If You Need an Outside Rep: Sourcing Sales Talent That Is Not Applying</h2>
+
+                    <p>
+                        This bites hardest in outside sales. Territory reps. Enterprise AEs. People who carry a number and live in a market. Titles are a mess. Account Executive at one shop is knocking on doors for $40K deals. At the next one it is a closer running $500K cycles. The title is noise.
                     </p>
 
                     <p>
-                        The predictable corporate response — harder keyword filters, more AI screening layers — just accelerates the arms race. The only escape is to stop treating the application pile as your talent pool at all, and go where the noise can&apos;t reach: the passive market, sourced directly and vetted the old-fashioned way.
-                    </p>
-
-                    <h2 className="text-2xl font-bold text-navy-900 pt-4">Section 3: Sourcing Outside Sales in the Noise</h2>
-
-                    <p>
-                        Nowhere is this shift more urgent than in <strong>outside sales</strong> — field reps, territory sellers, and enterprise AEs who carry quota and live in the market. These roles have always been hard to hire, because field sales performance hides inside companies with wildly inconsistent titles, comp plans, and CRM hygiene. &quot;Account Executive&quot; at one company is a door-opener doing $40K deals; at another it&apos;s an enterprise closer running $500K ACV cycles. Job titles are noise.
+                        What still works is not fancy.
                     </p>
 
                     <p>
-                        That&apos;s why serious outside sales sourcing now runs on three old-school principles.
+                        <strong>Direct sourcing.</strong> The best field reps are employed and quietly winning. You call. You email. You hit LinkedIn. You text. You map the companies with a similar motion and you work the names — that is what direct sourcing of passive candidates actually looks like. It is not glamorous. Bots cannot fake that on either side.
                     </p>
 
                     <p>
-                        <strong>1. Direct sourcing of passive talent.</strong> The best field reps are almost never in your applicant pool — they&apos;re currently employed and quietly winning. Reaching them requires proactive, multi-channel outreach (phone, email, LinkedIn, text) into companies with comparable motions, deal sizes, and sales cycles. This is unglamorous work — market mapping, name-by-name research, dozens of touchpoints — and it is precisely the work that application bots cannot fake on either side of the table.
+                        <strong>Ask for numbers that can survive a fight.</strong> Quota against a W-2 or president&apos;s club. Average deal size. Cycle length. Ramp. Then call the manager who watched the deals close. If the story falls apart in a deal teardown, they were never a candidate. Pretty resume or not.
                     </p>
 
                     <p>
-                        <strong>2. Verifiable metrics instead of titles.</strong> When you do engage a candidate, the screen isn&apos;t keywords — it&apos;s numbers that survive scrutiny: quota attainment percentage confirmed against W-2s or president&apos;s club records, average deal size and sales cycle length matched to your motion, territory growth, ramp time. Every claim gets reference-checked with the managers who saw the deals close. A rep whose numbers can&apos;t survive a deal teardown was never a real candidate — no matter how good the resume looked.
+                        <strong>Do not worship the pedigree.</strong> Some of the best outside sellers I have seen were teachers, college athletes, military, restaurant managers, door-to-door people. Keyword filters eat those resumes for lunch. What you are actually hiring for is grit, and being okay with hearing no. You get that from a real conversation and a track record. Not a PDF.
+                    </p>
+
+                    <h2 className="text-2xl font-bold text-navy-900 pt-4">What to Do Monday</h2>
+
+                    <p>
+                        Inbound is a side channel now. It is not the strategy. Source the people who are not looking. Check the numbers with humans who were in the room. Interview like you mean it. And take a look at the backgrounds your filter would have thrown out.
                     </p>
 
                     <p>
-                        <strong>3. Non-traditional backgrounds.</strong> Some of the best outside salespeople in the country have titles that would never survive a keyword filter: former teachers, college athletes, military officers, restaurant managers, door-to-door sellers. What predicts field sales success isn&apos;t a pedigree — it&apos;s grit, competitiveness, coachability, and comfort with rejection. Resumes don&apos;t capture any of that. Behavioral interviews and track-record forensics do.
-                    </p>
-
-                    <h2 className="text-2xl font-bold text-navy-900 pt-4">What This Means for Hiring Teams</h2>
-
-                    <p>
-                        The AI resume boom doesn&apos;t mean technology is the enemy — it means <em>inbound sorting</em> is the enemy. The playbook that still works in 2026 looks like this: treat inbound applications as a minor channel, not the strategy; source directly into the passive market; verify hard metrics with references and deal teardowns; interview against structured behavioral scorecards; and look for performance traits in backgrounds the filters would reject. It&apos;s harder than sorting pixels. It&apos;s also the only version of recruiting that still selects for people who can actually sell.
+                        It is more work than scrolling 400 clones. It is also the only version of this job that still finds people who can sell.
                     </p>
 
                     <h2 className="text-2xl font-bold text-navy-900 pt-4">Frequently Asked Questions</h2>
 
                     <div className="space-y-6 pt-2">
                         <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
-                            <h3 className="font-bold text-navy-900 mb-2">How much has application volume increased because of AI resumes?</h3>
-                            <p className="text-grey-600">Major job platforms have reported surges of 45% or more, driven by one-click apply, ChatGPT-written resumes, and auto-apply bots submitting hundreds of tailored applications per candidate — while recruiter time per resume keeps shrinking.</p>
+                            <h3 className="font-bold text-navy-900 mb-2">How much has AI increased job application volume?</h3>
+                            <p className="text-grey-600">Major job platforms report application volume up 45% or more since AI resume tools went mainstream, with some employers seeing three to five times their pre-ChatGPT volume. AI-generated resumes, one-click apply, and auto-apply bot subscriptions all push the number higher.</p>
                         </div>
                         <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
-                            <h3 className="font-bold text-navy-900 mb-2">Can AI resume screening tools still identify good candidates?</h3>
-                            <p className="text-grey-600">They can triage obvious mismatches, but they can&apos;t verify performance. When candidates use AI to beat the same algorithms screening them, both sides converge on keyword matching — not ability. Structured interviews, reference-checked metrics, and work samples remain the only reliable signals.</p>
+                            <h3 className="font-bold text-navy-900 mb-2">Can AI resume screening tools still find good candidates?</h3>
+                            <p className="text-grey-600">They can triage obvious mismatches, but they cannot verify performance. When candidates use AI to beat the same algorithms screening them, everyone converges on keyword matching instead of ability. Structured interviews, reference-checked quota attainment, and deal teardowns remain the only reliable signals.</p>
                         </div>
                         <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
-                            <h3 className="font-bold text-navy-900 mb-2">How do you vet outside sales reps when resumes are unreliable?</h3>
-                            <p className="text-grey-600">Vet verifiable metrics — quota attainment, average deal size, sales cycle length, territory growth — confirmed through references and deal teardowns. And source from non-traditional backgrounds: grit, competitiveness, and coachability predict field sales success better than any job title.</p>
+                            <h3 className="font-bold text-navy-900 mb-2">How do you hire outside sales reps when resumes are unreliable?</h3>
+                            <p className="text-grey-600">Direct sourcing of passive candidates instead of sorting inbound applications, verified quota attainment checked against W-2s or president&apos;s club records, deal teardowns with the managers who watched the deals close, and openness to non-traditional backgrounds — teachers, athletes, military, restaurant managers — where grit predicts field sales success better than any job title.</p>
                         </div>
                     </div>
 
                     {/* CTA */}
                     <div className="mt-12 rounded-2xl bg-navy-900 p-8 text-center not-prose">
-                        <h3 className="text-xl font-bold text-white mb-3">Sorting through 400 AI-written resumes?</h3>
-                        <p className="text-grey-300 text-sm mb-6 max-w-md mx-auto">We source directly into the passive market and verify every quota claim before a resume ever reaches your desk.</p>
+                        <h3 className="text-xl font-bold text-white mb-3">Staring at a pile like that?</h3>
+                        <p className="text-grey-300 text-sm mb-6 max-w-md mx-auto">That is the work we do. We go get them — and we check the quota before a resume ever hits your desk.</p>
                         <Link
                             href="mailto:chris@thekasgroup.com"
                             className="inline-block rounded-md bg-blue-accent px-6 py-3 text-sm font-semibold text-white hover:bg-blue-hover transition-colors"

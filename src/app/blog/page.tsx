@@ -14,8 +14,8 @@ export default function Blog() {
         },
         {
             id: 2,
-            title: "Drowning in Pixels: Why the AI Resume Boom is Forcing a Return to Old-School Recruiting",
-            excerpt: "AI-generated resumes have driven a 45%+ surge in application volume and made keyword-stuffed resumes worthless as a hiring signal. Here's why employers hiring outside sales reps are returning to direct sourcing and verified quota attainment.",
+            title: "400 Applications and Not One of Them Means Anything",
+            excerpt: "AI-generated resumes and auto-apply bots have driven application volume up 45%+ — and made keyword-stuffed resumes worthless as a hiring signal. Why employers hiring outside sales reps went back to old-school sourcing.",
             date: "Sep 2, 2026",
             author: "Chris Stinson",
             category: "Recruiting Strategy",
