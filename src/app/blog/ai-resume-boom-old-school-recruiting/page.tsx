@@ -124,11 +124,11 @@ export default function AiResumeBoomPost() {
                     </p>
 
                     <p>
-                        <strong>Direct sourcing.</strong> The best field reps are employed and quietly winning. You call. You email. You hit LinkedIn. You text. You map the companies with a similar motion and you work the names — that is what direct sourcing of passive candidates actually looks like. It is not glamorous. Bots cannot fake that on either side.
+                        <strong>Direct sourcing.</strong> The best field reps are employed and quietly winning. You call. You email. You hit LinkedIn. You text. You map the companies with a similar motion and you work the names — that is what <Link href="/recruit/sales" className="text-blue-accent hover:underline">direct sourcing of passive candidates</Link> actually looks like. It is not glamorous. Bots cannot fake that on either side.
                     </p>
 
                     <p>
-                        <strong>Ask for numbers that can survive a fight.</strong> Quota against a W-2 or president&apos;s club. Average deal size. Cycle length. Ramp. Then call the manager who watched the deals close. If the story falls apart in a deal teardown, they were never a candidate. Pretty resume or not.
+                        <strong>Ask for numbers that can survive a fight.</strong> Quota against a W-2 or president&apos;s club. Average deal size. Cycle length. Ramp. Then call the manager who watched the deals close. If the story falls apart in a deal teardown, they were never a candidate — and a mis-hire costs you <Link href="/guides/cost-of-a-bad-hire" className="text-blue-accent hover:underline">far more than you think</Link>. Pretty resume or not.
                     </p>
 
                     <p>
@@ -143,6 +143,15 @@ export default function AiResumeBoomPost() {
 
                     <p>
                         It is more work than scrolling 400 clones. It is also the only version of this job that still finds people who can sell.
+                    </p>
+
+                    <p className="text-grey-600">
+                        <strong>Further reading:</strong>{" "}
+                        <Link href="/guides/cost-of-a-bad-hire" className="text-blue-accent hover:underline">The True Cost of a Bad Hire in 2026</Link>
+                        {" · "}
+                        <Link href="/guides/who-to-hire-vp-sales-startup" className="text-blue-accent hover:underline">Who to Hire to Find a VP of Sales</Link>
+                        {" · "}
+                        <Link href="/guides/best-sales-recruiting-agencies-2026" className="text-blue-accent hover:underline">Best Sales Recruiting Agencies 2026</Link>
                     </p>
 
                     <h2 className="text-2xl font-bold text-navy-900 pt-4">Frequently Asked Questions</h2>

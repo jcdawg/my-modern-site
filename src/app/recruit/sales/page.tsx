@@ -178,6 +178,13 @@ export default function SalesRecruiting() {
                                 Read Guide <ArrowRight className="h-3 w-3" />
                             </span>
                         </Link>
+                        <Link href="/blog/ai-resume-boom-old-school-recruiting" className="group p-8 rounded-2xl bg-white border border-grey-200 hover:border-blue-accent/30 hover:shadow-lg transition-all">
+                            <h3 className="text-xl font-bold text-navy-900 group-hover:text-blue-accent mb-2">400 Applications and Not One of Them Means Anything</h3>
+                            <p className="text-sm text-grey-500 mb-4 leading-relaxed">Why AI-generated resumes broke inbound hiring — and how top employers source outside sales reps instead.</p>
+                            <span className="text-blue-accent text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                                Read Article <ArrowRight className="h-3 w-3" />
+                            </span>
+                        </Link>
                     </div>
                 </div>
             </section>
