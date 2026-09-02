@@ -25,6 +25,8 @@ const QUERIES = [
     { id: 11, q: "retained vs contingency recruiting for AI startups" },
     // Comparison
     { id: 12, q: "The Kas Group vs Korn Ferry vs Betts Recruiting", brand: true },
+    // Local SEO
+    { id: 13, q: "sales recruiters Atlanta", brand: false },
 ];
 
 const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36";
