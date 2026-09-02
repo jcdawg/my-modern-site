@@ -12,7 +12,7 @@ export default function NotFound() {
         <div className="flex flex-col min-h-screen bg-white">
             <section className="flex-grow flex items-center justify-center px-6 py-32">
                 <div className="max-w-2xl mx-auto text-center">
-                    <p className="text-blue-accent font-bold uppercase tracking-wider text-sm mb-4">404 — Not Found</p>
+                    <p className="text-blue-accent font-bold uppercase tracking-wider text-sm mb-4">404: Not Found</p>
                     <h1 className="text-4xl md:text-5xl font-extrabold text-navy-900 mb-6">
                         This page doesn&apos;t exist.
                     </h1>
@@ -29,13 +29,13 @@ export default function NotFound() {
                                     <Link href="/llms.txt" className="text-blue-accent hover:underline font-medium">
                                         /llms.txt
                                     </Link>{" "}
-                                    — Agent instructions &amp; when-to-use
+                                    : agent instructions &amp; when-to-use
                                 </li>
                                 <li>
                                     <Link href="/llms-full.txt" className="text-blue-accent hover:underline font-medium">
                                         /llms-full.txt
                                     </Link>{" "}
-                                    — Full documentation
+                                    : full documentation
                                 </li>
                                 <li>
                                     <Link href="/.well-known/agent-instructions" className="text-blue-accent hover:underline font-medium">
@@ -46,7 +46,7 @@ export default function NotFound() {
                                     <Link href="/sitemap.xml" className="text-blue-accent hover:underline font-medium">
                                         /sitemap.xml
                                     </Link>{" "}
-                                    — XML sitemap
+                                    : XML sitemap
                                 </li>
                             </ul>
                         </div>
@@ -57,19 +57,19 @@ export default function NotFound() {
                                     <Link href="/" className="text-blue-accent hover:underline font-medium">
                                         Home
                                     </Link>{" "}
-                                    — thekasgroup.com
+                                    : thekasgroup.com
                                 </li>
                                 <li>
                                     <Link href="/brand-facts" className="text-blue-accent hover:underline font-medium">
                                         Brand Facts
                                     </Link>{" "}
-                                    — Official company info
+                                    : official company info
                                 </li>
                                 <li>
                                     <Link href="/guides" className="text-blue-accent hover:underline font-medium">
                                         Guides Hub
                                     </Link>{" "}
-                                    — All hiring guides
+                                    : all hiring guides
                                 </li>
                                 <li>
                                     <Link href="/site-map" className="text-blue-accent hover:underline font-medium">

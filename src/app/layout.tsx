@@ -56,7 +56,7 @@ export const metadata: Metadata = {
         url: "/logos/kas-group-logo.svg",
         width: 1200,
         height: 630,
-        alt: "The Kas Group — Elite Sales & AI Technical Recruiting",
+        alt: "The Kas Group: Elite Sales & AI Technical Recruiting",
       },
     ],
   },
