@@ -8,8 +8,31 @@ export const metadata: Metadata = {
 };
 
 export default function FractionalSaasSalesPost() {
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is fractional SaaS sales recruiting?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Fractional SaaS sales recruiting embeds an experienced sales recruiter or revenue leader with your team on a part-time basis — sourcing, vetting, and closing candidates or holding pipeline together without the cost of a full-time hire." }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does fractional sales leadership cost versus a full-time VP?",
+                "acceptedAnswer": { "@type": "Answer", "text": "A full-time VP of Sales with a SaaS background can clear $250K+ in total compensation. A fractional arrangement delivers the same strategic capacity at a fraction of the cost, with flexible monthly terms and no long-term lock-in." }
+            },
+            {
+                "@type": "Question",
+                "name": "When does fractional sales hiring NOT make sense?",
+                "acceptedAnswer": { "@type": "Answer", "text": "When you need a single-territory IC grinding 50-hour weeks or carrying a large individual quota. Fractional works best for leadership, strategy, and hiring-process roles — not pure individual contributor execution." }
+            }
+        ]
+    };
+
     return (
         <div className="bg-white py-16 sm:py-24">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <div className="mx-auto max-w-3xl px-6 lg:px-8">
 
                 {/* Back link */}
@@ -95,6 +118,23 @@ export default function FractionalSaasSalesPost() {
                     <p>
                         This is exactly the kind of conversation we have with clients before we ever start a fractional search. Getting the fit right matters just as much as getting the speed right.
                     </p>
+
+                    <h2 className="text-2xl font-bold text-navy-900 pt-4">Frequently Asked Questions</h2>
+
+                    <div className="space-y-6 pt-2">
+                        <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
+                            <h3 className="font-bold text-navy-900 mb-2">What is fractional SaaS sales recruiting?</h3>
+                            <p className="text-grey-600">Fractional SaaS sales recruiting embeds an experienced sales recruiter or revenue leader with your team on a part-time basis — sourcing, vetting, and closing candidates or holding pipeline together without the cost of a full-time hire.</p>
+                        </div>
+                        <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
+                            <h3 className="font-bold text-navy-900 mb-2">How much does fractional sales leadership cost versus a full-time VP?</h3>
+                            <p className="text-grey-600">A full-time VP of Sales with a SaaS background can clear $250K+ in total compensation. A fractional arrangement delivers the same strategic capacity at a fraction of the cost, with flexible monthly terms and no long-term lock-in.</p>
+                        </div>
+                        <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
+                            <h3 className="font-bold text-navy-900 mb-2">When does fractional sales hiring NOT make sense?</h3>
+                            <p className="text-grey-600">When you need a single-territory IC grinding 50-hour weeks or carrying a large individual quota. Fractional works best for leadership, strategy, and hiring-process roles — not pure individual contributor execution.</p>
+                        </div>
+                    </div>
 
                     {/* CTA */}
                     <div className="mt-12 rounded-2xl bg-navy-900 p-8 text-center not-prose">

@@ -41,8 +41,31 @@ const valueProps = [
 ];
 
 export default function FractionalSalesRecruiting() {
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How does fractional sales recruiting pricing work?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Fractional sales recruiting runs on a flat monthly retainer instead of per-hire contingency fees of 20-30% of first-year OTE. Companies hiring two or more salespeople per quarter typically save 40-60% compared to agency placement fees." }
+            },
+            {
+                "@type": "Question",
+                "name": "How does the embedded model work day-to-day?",
+                "acceptedAnswer": { "@type": "Answer", "text": "We work inside your Slack, email, and ATS, presenting as your in-house talent team to candidates. You get sourcing, vetting, interview design, offer negotiation, and weekly pipeline reporting — without hiring a full-time recruiter." }
+            },
+            {
+                "@type": "Question",
+                "name": "Which sales roles can fractional recruiting fill?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Senior enterprise and regional Account Executives, Sales Managers, SDR/BDR Managers, Technical Sales Engineers, Customer Success Managers, and Channel/Alliance Managers." }
+            }
+        ]
+    };
+
     return (
         <div className="bg-white">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             {/* A. Hero Section */}
             <div className="relative bg-navy-900 py-24 sm:py-32 lg:pb-40">
                 <div className="absolute inset-0 overflow-hidden">
@@ -217,6 +240,27 @@ export default function FractionalSalesRecruiting() {
                             </div>
                             <h3 className="text-xl font-bold text-navy-900 mb-2">You Hire (Fast)</h3>
                             <p className="text-grey-600">You interview only the top 1% and make your selection with confidence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* FAQ Section */}
+            <div className="py-24 bg-grey-50 border-t border-grey-100">
+                <div className="mx-auto max-w-4xl px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl mb-12 text-center">Frequently Asked Questions</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">How does fractional sales recruiting pricing work?</h4>
+                            <p className="text-grey-600 leading-relaxed">A flat monthly retainer replaces per-hire contingency fees of 20-30% of first-year OTE. Companies hiring two or more salespeople per quarter typically save 40-60% compared to agency placement fees.</p>
+                        </div>
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">How does the embedded model work day-to-day?</h4>
+                            <p className="text-grey-600 leading-relaxed">We work inside your Slack, email, and ATS, presenting as your in-house talent team to candidates. You get sourcing, vetting, interview design, offer negotiation, and weekly pipeline reporting — without hiring a full-time recruiter.</p>
+                        </div>
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200 md:col-span-2">
+                            <h4 className="font-bold text-navy-900 text-lg">Which sales roles can fractional recruiting fill?</h4>
+                            <p className="text-grey-600 leading-relaxed">Senior enterprise and regional Account Executives, Sales Managers, SDR/BDR Managers, Technical Sales Engineers, Customer Success Managers, and Channel/Alliance Managers.</p>
                         </div>
                     </div>
                 </div>

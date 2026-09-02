@@ -21,6 +21,16 @@ export default function BestFractionalSalesRecruiters() {
                 "@type": "Question",
                 "name": "What does a fractional sales recruiter do?",
                 "acceptedAnswer": { "@type": "Answer", "text": "A fractional sales recruiter handles end-to-end talent acquisition (sourcing, vetting, interviewing, and closing) on a part-time retainer basis. They utilize your internal email and ATS systems." }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does a fractional sales recruiter cost compared to a contingency agency?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Contingency agencies charge 20-30% of first-year OTE per hire — $30K-$60K for a senior AE. A fractional retainer is a flat monthly fee covering unlimited hiring. Companies making three or more sales hires per year typically save 40-60% versus per-hire agency fees." }
+            },
+            {
+                "@type": "Question",
+                "name": "When should a company switch from contingency to fractional sales recruiting?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Switch when you are hiring two or more salespeople per quarter, when per-hire fees are compounding past $100K per year, or when you need a consistent hiring process (rubrics, scorecards, pipeline reporting) rather than transactional resume sends." }
             }
         ]
     };
@@ -70,7 +80,76 @@ export default function BestFractionalSalesRecruiters() {
                                     <Link href="/guides/fractional-vs-traditional-sales-recruiting" className="text-grey-500 font-bold hover:underline">Compare Retainers vs. Contingency &rarr;</Link>
                                 </div>
                             </div>
+                            <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
+                                <h3 className="text-xl font-bold text-navy-900 mb-4">2. Boutique GTM Search Firms</h3>
+                                <p className="text-grey-600 text-sm leading-relaxed">A small number of retained-search boutiques offer fractional-style arrangements alongside traditional retainers. Quality varies widely — insist on documented vetting processes and written candidate assessments.</p>
+                            </div>
+                            <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
+                                <h3 className="text-xl font-bold text-navy-900 mb-4">3. Freelance Recruiters (Use With Caution)</h3>
+                                <p className="text-grey-600 text-sm leading-relaxed">Independent recruiters on marketplace platforms offer the lowest rates, but you inherit the vetting burden yourself. Best reserved for low-risk, high-volume SDR screens — not revenue-leadership hires.</p>
+                            </div>
                         </div>
+                    </div>
+
+                    <div className="space-y-8">
+                        <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
+                            <BadgeCheck className="h-8 w-8 text-blue-accent" />
+                            How to Evaluate a Fractional Recruiter
+                        </h2>
+                        <ul className="space-y-4">
+                            <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
+                                <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
+                                <div>
+                                    <h4 className="font-bold text-navy-900 text-lg">Sales-Specific Vetting Depth</h4>
+                                    <p className="text-grey-600 mt-2">Ask them to walk through their last placement&apos;s vetting file: quota verification, deal teardowns, behavioral assessment. If they can&apos;t, they&apos;re forwarding resumes.</p>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
+                                <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
+                                <div>
+                                    <h4 className="font-bold text-navy-900 text-lg">True Embedding</h4>
+                                    <p className="text-grey-600 mt-2">The best fractional partners work in your Slack, your ATS, and your email — presenting as your in-house team to candidates.</p>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
+                                <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
+                                <div>
+                                    <h4 className="font-bold text-navy-900 text-lg">Transparent Retainer Terms</h4>
+                                    <p className="text-grey-600 mt-2">Flat monthly pricing, flexible notice periods, and clear scope — avoid fractional arrangements that still hide per-hire success fees.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className="space-y-8">
+                        <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
+                            <HelpCircle className="h-8 w-8 text-blue-accent" />
+                            Frequently Asked Questions
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div className="space-y-4">
+                                <h4 className="font-bold text-navy-900 text-lg">How much does a fractional sales recruiter cost?</h4>
+                                <p className="text-grey-600 leading-relaxed">Contingency agencies charge 20-30% of first-year OTE per hire — $30K-$60K for a senior AE. A fractional retainer is a flat monthly fee covering unlimited hiring. Companies making three or more sales hires per year typically save 40-60% versus per-hire fees.</p>
+                            </div>
+                            <div className="space-y-4">
+                                <h4 className="font-bold text-navy-900 text-lg">When should we switch from contingency to fractional?</h4>
+                                <p className="text-grey-600 leading-relaxed">Switch when you are hiring two or more salespeople per quarter, when per-hire fees compound past $100K per year, or when you need a consistent hiring process — rubrics, scorecards, pipeline reporting — rather than transactional resume sends.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="p-12 rounded-[2rem] bg-navy-900 text-white text-center shadow-2xl relative overflow-hidden">
+                        <h2 className="text-3xl font-bold mb-4 relative z-10">Scale Your Sales Team Without Agency Fees</h2>
+                        <p className="text-grey-400 mb-8 max-w-lg mx-auto relative z-10">
+                            One flat retainer. Unlimited vetted candidates.
+                        </p>
+                        <Link
+                            href="mailto:chris@thekasgroup.com"
+                            className="inline-flex items-center gap-2 px-8 py-4 bg-blue-accent text-white font-bold rounded-full hover:bg-blue-hover transition-all relative z-10"
+                        >
+                            Schedule a consultation
+                            <ChevronRight className="h-5 w-5" />
+                        </Link>
                     </div>
                 </div>
             </section>

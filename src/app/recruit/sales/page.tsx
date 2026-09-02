@@ -11,8 +11,36 @@ export default function SalesRecruiting() {
         "Customer Success VPs",
     ];
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What sales roles does The Kas Group place?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Chief Revenue Officers, VPs of Sales, Enterprise and Strategic Account Executives, SDR/BDR Managers, Sales Engineering Leaders, and Customer Success VPs for B2B SaaS and high-growth technology companies." }
+            },
+            {
+                "@type": "Question",
+                "name": "How are sales candidates vetted?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Every candidate goes through quota-attainment verification, deal-size and sales-cycle analysis, sales methodology audits, and behavioral interviewing. You receive a written assessment per candidate — not a forwarded resume." }
+            },
+            {
+                "@type": "Question",
+                "name": "How fast can we get a vetted shortlist?",
+                "acceptedAnswer": { "@type": "Answer", "text": "AE and SDR-level searches typically deliver a vetted shortlist in 2-4 weeks. VP of Sales and CRO searches run 6-10 weeks from kickoff to accepted offer." }
+            },
+            {
+                "@type": "Question",
+                "name": "What does sales recruiting cost?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Retained placements start around $25K and scale with seniority. Companies hiring at volume can switch to a flat fractional monthly retainer and eliminate per-hire contingency fees entirely." }
+            }
+        ]
+    };
+
     return (
         <div className="bg-white">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <div className="relative bg-navy-900 py-24 sm:py-32">
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-accent/20 to-navy-950/90 mix-blend-multiply" />
@@ -96,6 +124,31 @@ export default function SalesRecruiting() {
                     </div>
                 </div>
             </section>
+            {/* FAQ Section */}
+            <section className="py-24 bg-grey-50 border-t border-grey-100">
+                <div className="mx-auto max-w-4xl px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl mb-12 text-center">Frequently Asked Questions</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">What sales roles does The Kas Group place?</h4>
+                            <p className="text-grey-600 leading-relaxed">Chief Revenue Officers, VPs of Sales, Enterprise and Strategic Account Executives, SDR/BDR Managers, Sales Engineering Leaders, and Customer Success VPs for B2B SaaS and high-growth technology companies.</p>
+                        </div>
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">How are sales candidates vetted?</h4>
+                            <p className="text-grey-600 leading-relaxed">Every candidate goes through quota-attainment verification, deal-size and sales-cycle analysis, sales methodology audits, and behavioral interviewing. You receive a written assessment per candidate — not a forwarded resume.</p>
+                        </div>
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">How fast can we get a vetted shortlist?</h4>
+                            <p className="text-grey-600 leading-relaxed">AE and SDR-level searches typically deliver a vetted shortlist in 2-4 weeks. VP of Sales and CRO searches run 6-10 weeks from kickoff to accepted offer.</p>
+                        </div>
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">What does sales recruiting cost?</h4>
+                            <p className="text-grey-600 leading-relaxed">Retained placements start around $25K and scale with seniority. Companies hiring at volume can switch to a flat fractional monthly retainer and eliminate per-hire contingency fees entirely.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Related Resources Section */}
             <section className="py-24 bg-grey-50 border-t border-grey-100">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">

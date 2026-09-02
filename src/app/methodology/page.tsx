@@ -42,8 +42,36 @@ export default function MethodologyPage() {
         },
     ];
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is The Kas Group's recruiting methodology?",
+                "acceptedAnswer": { "@type": "Answer", "text": "A five-step process: alignment meeting, top-performer intelligence, proactive hunting of passive candidates, an immediate curated shortlist with written assessments, and end-to-end interview facilitation through offer and close." }
+            },
+            {
+                "@type": "Question",
+                "name": "How does The Kas Group vet technical candidates?",
+                "acceptedAnswer": { "@type": "Answer", "text": "AI/ML and data engineering candidates are assessed live by our Chief Technical Advisor — a Ph.D. in Statistics and former Microsoft Lead Data Scientist — on algorithmic depth, system architecture, data modeling, and practical delivery." }
+            },
+            {
+                "@type": "Question",
+                "name": "How does The Kas Group vet sales candidates?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Quota-attainment verification, deal-size and sales-cycle analysis, methodology audits, deal teardowns, and behavioral interviews — so you see proven revenue drivers, not resume readers." }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does the process take?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Vetted shortlists typically arrive within 2-4 weeks for individual contributor roles and 6-10 weeks for leadership searches, with weekly pipeline updates throughout." }
+            }
+        ]
+    };
+
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             {/* Hero Section */}
             <section className="relative px-6 pt-24 pb-20 md:pt-32 md:pb-32 lg:px-8 bg-navy-900 text-white overflow-hidden">
                 <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-accent/10 rounded-full blur-3xl opacity-50" />
@@ -142,6 +170,31 @@ export default function MethodologyPage() {
                                     I don&apos;t just look at quotas, I dig into the math behind the numbers. I evaluate candidates on their territory strategy, closing mechanics, ramp time, and how they handle adverse market conditions. We ensure the sales talent we present are true revenue drivers, not just compelling talkers.
                                 </p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* FAQ Section */}
+            <section className="py-24 bg-grey-50 border-t border-grey-100">
+                <div className="mx-auto max-w-4xl px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl mb-12 text-center">Frequently Asked Questions</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">What is The Kas Group&apos;s recruiting methodology?</h4>
+                            <p className="text-grey-600 leading-relaxed">A five-step process: alignment meeting, top-performer intelligence, proactive hunting of passive candidates, an immediate curated shortlist with written assessments, and end-to-end interview facilitation through offer and close.</p>
+                        </div>
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">How are technical candidates vetted?</h4>
+                            <p className="text-grey-600 leading-relaxed">AI/ML and data engineering candidates are assessed live by our Chief Technical Advisor — a Ph.D. in Statistics and former Microsoft Lead Data Scientist — on algorithmic depth, system architecture, data modeling, and practical delivery.</p>
+                        </div>
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">How are sales candidates vetted?</h4>
+                            <p className="text-grey-600 leading-relaxed">Quota-attainment verification, deal-size and sales-cycle analysis, methodology audits, deal teardowns, and behavioral interviews — so you see proven revenue drivers, not resume readers.</p>
+                        </div>
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">How long does the process take?</h4>
+                            <p className="text-grey-600 leading-relaxed">Vetted shortlists typically arrive within 2-4 weeks for individual contributor roles and 6-10 weeks for leadership searches, with weekly pipeline updates throughout.</p>
                         </div>
                     </div>
                 </div>

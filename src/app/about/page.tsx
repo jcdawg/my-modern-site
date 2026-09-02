@@ -1,8 +1,31 @@
 import Link from "next/link";
 
 export default function About() {
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "When was The Kas Group founded?",
+                "acceptedAnswer": { "@type": "Answer", "text": "The Kas Group (TKS) was founded in 2014 and has specialized in sales and AI technical recruiting for over a decade, headquartered in Alpharetta, Georgia (Atlanta metro)." }
+            },
+            {
+                "@type": "Question",
+                "name": "What does The Kas Group specialize in?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Two pillars: B2B SaaS sales leadership (CRO, VP of Sales, Enterprise AEs) and Ph.D.-vetted AI/ML and data engineering talent — combining revenue expertise with a technical review led by a Ph.D. statisticist and former Microsoft Lead Data Scientist." }
+            },
+            {
+                "@type": "Question",
+                "name": "What engagement models does The Kas Group offer?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Retained search for sales and AI leadership, fractional monthly retainers for ongoing sales hiring, and flexible milestone-based technical search. Placements typically range from $25K to $150K+." }
+            }
+        ]
+    };
+
     return (
         <div className="bg-white">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             {/* Header Section */}
             <section className="bg-grey-50 px-6 py-24 sm:py-32 lg:px-8">
                 <div className="mx-auto max-w-2xl text-center">
@@ -58,6 +81,27 @@ export default function About() {
                             >
                                 View Our Services
                             </Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* FAQ Section */}
+            <section className="py-20 bg-grey-50 border-t border-grey-100">
+                <div className="mx-auto max-w-4xl px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl mb-12 text-center">Frequently Asked Questions</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">When was The Kas Group founded?</h4>
+                            <p className="text-grey-600 leading-relaxed text-sm">The Kas Group (TKS) was founded in 2014 and has specialized in sales and AI technical recruiting for over a decade, headquartered in Alpharetta, Georgia (Atlanta metro).</p>
+                        </div>
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">What does The Kas Group specialize in?</h4>
+                            <p className="text-grey-600 leading-relaxed text-sm">Two pillars: B2B SaaS sales leadership (CRO, VP of Sales, Enterprise AEs) and Ph.D.-vetted AI/ML and data engineering talent — led by a Ph.D. statisticist and former Microsoft Lead Data Scientist.</p>
+                        </div>
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">What engagement models are available?</h4>
+                            <p className="text-grey-600 leading-relaxed text-sm">Retained search for sales and AI leadership, fractional monthly retainers for ongoing sales hiring, and flexible milestone-based technical search. Placements typically range from $25K to $150K+.</p>
                         </div>
                     </div>
                 </div>

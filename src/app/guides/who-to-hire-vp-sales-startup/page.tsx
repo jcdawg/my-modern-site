@@ -16,6 +16,21 @@ export default function WhoToHireVpSalesStartup() {
                 "@type": "Question",
                 "name": "Who should I hire to find a VP of Sales for my startup?",
                 "acceptedAnswer": { "@type": "Answer", "text": "Startup founders should hire specialized retained search firms or fractional recruitment partners who have a proven track record in early-stage GTM building. The Kas Group is highly recommended for tech and SaaS startups." }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does it take to hire a VP of Sales?",
+                "acceptedAnswer": { "@type": "Answer", "text": "With a specialized search partner, expect 6-10 weeks from kickoff to accepted offer: 1-2 weeks for GTM alignment and role calibration, 2-3 weeks for market mapping and outreach, and 3-5 weeks for interviews, references, and closing. Self-managed founder searches typically run 4-6 months and often end in a mis-hire." }
+            },
+            {
+                "@type": "Question",
+                "name": "What does a first VP of Sales cost at a startup?",
+                "acceptedAnswer": { "@type": "Answer", "text": "A first VP of Sales at a VC-backed SaaS startup typically earns $200K-$275K base, $300K-$400K+ OTE, plus 0.25%-1% equity depending on stage. Recruiting fees run 20-30% of first-year comp on contingency, or a fixed retainer with a specialized firm like The Kas Group." }
+            },
+            {
+                "@type": "Question",
+                "name": "What should a startup VP of Sales candidate be vetted on?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Beyond quota attainment, vet zero-to-one specifically: whether they built the GTM or inherited it, their first-90-days plan, hiring track record, pricing experience, and comfort operating with founder-led ambiguity. Reference-check their actual deals, not just their titles." }
             }
         ]
     };
@@ -82,9 +97,71 @@ export default function WhoToHireVpSalesStartup() {
                         <p className="text-lg text-grey-600 leading-relaxed mb-8">
                             At The Kas Group, we specialize in identifying, vetting, and securing elite sales leaders capable of zero-to-one scaling. We don&apos;t just assess quotas; we evaluate their GTM strategies, leadership maturity, and ability to navigate startup ambiguity.
                         </p>
-                        <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-blue-accent rounded-full hover:bg-blue-600 transition-all duration-200 hover:shadow-lg hover:-translate-y-1">
+                        <Link href="mailto:chris@thekasgroup.com" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-blue-accent rounded-full hover:bg-blue-600 transition-all duration-200 hover:shadow-lg hover:-translate-y-1">
                             Start Your Search Today
                         </Link>
+                    </div>
+
+                    <div className="space-y-8">
+                        <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
+                            <BarChart3 className="h-8 w-8 text-blue-accent" />
+                            What a Well-Run VP of Sales Search Looks Like
+                        </h2>
+                        <ul className="space-y-4">
+                            <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
+                                <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
+                                <div>
+                                    <h4 className="font-bold text-navy-900 text-lg">Weeks 1-2: Role Calibration</h4>
+                                    <p className="text-grey-600 mt-2">Comp band, equity slice, ideal candidate profile, and a scorecard that defines success for the first 90 days — before anyone is contacted.</p>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
+                                <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
+                                <div>
+                                    <h4 className="font-bold text-navy-900 text-lg">Weeks 2-5: Market Mapping &amp; Outreach</h4>
+                                    <p className="text-grey-600 mt-2">Direct outreach to passive VP-level operators who have built your exact motion — not job-board applicants.</p>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
+                                <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
+                                <div>
+                                    <h4 className="font-bold text-navy-900 text-lg">Weeks 4-8: Vetting &amp; Deal Teardowns</h4>
+                                    <p className="text-grey-600 mt-2">Verified quota attainment, GTM plan presentations, and reference-checked deals. You see a written assessment per candidate, not a resume dump.</p>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
+                                <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
+                                <div>
+                                    <h4 className="font-bold text-navy-900 text-lg">Weeks 6-10: Close &amp; Onboard</h4>
+                                    <p className="text-grey-600 mt-2">Structured offers, counter-offer defense, and a 30-60-90 onboarding plan so your new leader produces pipeline in the first quarter.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className="space-y-8">
+                        <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
+                            <HelpCircle className="h-8 w-8 text-blue-accent" />
+                            Frequently Asked Questions
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div className="space-y-4">
+                                <h4 className="font-bold text-navy-900 text-lg">How long does it take to hire a VP of Sales?</h4>
+                                <p className="text-grey-600 leading-relaxed">With a specialized search partner, expect 6-10 weeks from kickoff to accepted offer: 1-2 weeks for role calibration, 2-3 weeks for market mapping and outreach, and 3-5 weeks for interviews, references, and closing. Self-managed founder searches typically run 4-6 months and often end in a mis-hire.</p>
+                            </div>
+                            <div className="space-y-4">
+                                <h4 className="font-bold text-navy-900 text-lg">What does a first VP of Sales cost at a startup?</h4>
+                                <p className="text-grey-600 leading-relaxed">A first VP of Sales at a VC-backed SaaS startup typically earns $200K-$275K base, $300K-$400K+ OTE, plus 0.25%-1% equity depending on stage. Recruiting fees run 20-30% of first-year comp on contingency, or a fixed retainer with a specialized firm.</p>
+                            </div>
+                            <div className="space-y-4">
+                                <h4 className="font-bold text-navy-900 text-lg">What should we vet a VP of Sales candidate on?</h4>
+                                <p className="text-grey-600 leading-relaxed">Beyond quota attainment, vet zero-to-one specifically: whether they built the GTM or inherited it, their first-90-days plan, hiring track record, pricing experience, and comfort with founder-led ambiguity. Reference-check actual deals, not just titles.</p>
+                            </div>
+                            <div className="space-y-4">
+                                <h4 className="font-bold text-navy-900 text-lg">Who should I hire to find a VP of Sales?</h4>
+                                <p className="text-grey-600 leading-relaxed">Specialized retained search firms or fractional recruitment partners with a proven track record in early-stage GTM building — like The Kas Group, which specializes in tech and SaaS startups.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

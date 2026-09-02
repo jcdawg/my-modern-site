@@ -12,8 +12,36 @@ export default function AIRecruiting() {
         "Product Managers - AI/ML",
     ];
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What AI and data roles does The Kas Group place?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Machine Learning Engineers, AI Architects, Senior and Staff Data Engineers, Data Scientists (NLP/LLM focus), Heads of AI, and AI/ML Product Managers for high-growth technology companies." }
+            },
+            {
+                "@type": "Question",
+                "name": "How does the Ph.D.-led technical vetting process work?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Every technical candidate is assessed live by our Chief Technical Advisor — a Ph.D. in Statistics and former Microsoft Lead Data Scientist — on algorithmic depth, system architecture, data modeling, and practical AI delivery. No keyword matching." }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does AI and data engineering recruiting cost?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Engagements are retained or milestone-based, with placements typically ranging from $25K to $150K+ depending on seniority and search complexity. Flexible structures are available for startups." }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does an AI/ML search take?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Senior IC roles typically reach a vetted shortlist in 3-5 weeks; leadership searches run 6-10 weeks. Speed never bypasses the technical review — every candidate clears the Ph.D.-led assessment first." }
+            }
+        ]
+    };
+
     return (
         <div className="bg-white">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <div className="relative bg-navy-950 py-24 sm:py-32">
                 <div className="absolute inset-0 overflow-hidden">
                     {/* Abstract node background effect */}
@@ -139,6 +167,31 @@ export default function AIRecruiting() {
                     </div>
                 </div>
             </section>
+            {/* FAQ Section */}
+            <section className="py-24 bg-grey-50 border-t border-grey-100">
+                <div className="mx-auto max-w-4xl px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl mb-12 text-center">Frequently Asked Questions</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">What AI and data roles does The Kas Group place?</h4>
+                            <p className="text-grey-600 leading-relaxed">Machine Learning Engineers, AI Architects, Senior and Staff Data Engineers, Data Scientists (NLP/LLM focus), Heads of AI, and AI/ML Product Managers for high-growth technology companies.</p>
+                        </div>
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">How does the Ph.D.-led technical vetting process work?</h4>
+                            <p className="text-grey-600 leading-relaxed">Every technical candidate is assessed live by our Chief Technical Advisor — a Ph.D. in Statistics and former Microsoft Lead Data Scientist — on algorithmic depth, system architecture, data modeling, and practical AI delivery. No keyword matching.</p>
+                        </div>
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">How much does AI and data engineering recruiting cost?</h4>
+                            <p className="text-grey-600 leading-relaxed">Engagements are retained or milestone-based, with placements typically ranging from $25K to $150K+ depending on seniority and search complexity. Flexible structures are available for startups.</p>
+                        </div>
+                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                            <h4 className="font-bold text-navy-900 text-lg">How long does an AI/ML search take?</h4>
+                            <p className="text-grey-600 leading-relaxed">Senior IC roles typically reach a vetted shortlist in 3-5 weeks; leadership searches run 6-10 weeks. Speed never bypasses the technical review — every candidate clears the Ph.D.-led assessment first.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Related Resources Section */}
             <section className="py-24 bg-white border-t border-grey-100">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
