@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'The True Cost of a Bad Hire in 2026 | The Kas Group',
+    title: 'The True Cost of a Bad Hire in 2026',
     description: 'Data-driven breakdown of how much a bad hire really costs your company, and how elite vetting prevents it. Includes calculator, industry benchmarks, and prevention strategies.',
 };
 

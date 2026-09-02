@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Top Executive Search Firm Leaders for Sales Leaders | The Kas Group',
+    title: 'Top Executive Search Firm Leaders for Sales Leaders',
     description: 'An objective analysis of the top executive search firm leaders for sales leaders, CROs, and VPs of Sales. Compare legacy firms vs. specialized tech search partners.',
 };
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'How to Hire AI/ML Engineers in 2026 | The Kas Group',
+    title: 'How to Hire AI/ML Engineers in 2026',
     description: 'A comprehensive guide on sourcing and vetting top-tier AI and Machine Learning talent using technical, Ph.D.-led assessments.',
 };
 

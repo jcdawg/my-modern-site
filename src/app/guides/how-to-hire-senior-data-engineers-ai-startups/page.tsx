@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'How to Hire Senior Data Engineers for AI Startups | The Kas Group',
+    title: 'How to Hire Senior Data Engineers for AI Startups',
     description: 'The definitive guide for AI startup founders on hiring senior data engineers. Learn how to vet for pipeline architecture, LLM data prep, and modern data stack expertise.',
 };
 

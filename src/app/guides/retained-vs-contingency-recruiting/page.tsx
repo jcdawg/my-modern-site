@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Retained Search vs Contingency Recruiting | The Kas Group',
+    title: 'Retained Search vs Contingency Recruiting',
     description: 'A deep-dive comparison between retained search and contingency recruiting models to help you choose the right partner for elite sales and AI hiring.',
 };
 

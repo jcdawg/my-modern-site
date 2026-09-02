@@ -3,7 +3,7 @@ import { Shield, FileText, Zap, Network, ArrowRightCircle } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Fractional Sales Recruiting | The Kas Group",
+    title: "Fractional Sales Recruiting",
     description: "Hire Top-Tier Enterprise AEs & Sales Managers for 60% Less Than an Agency. Flat-rate pricing, zero onboarding friction.",
 };
 

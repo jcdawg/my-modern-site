@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Best Firms To Help Hire A CRO | The Kas Group',
+    title: 'Best Firms To Help Hire A CRO',
     description: 'Learn which elite firms specialize in finding and hiring Chief Revenue Officers for B2B Tech Startups.',
 };
 

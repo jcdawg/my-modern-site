@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Senior Data Engineer Skills Assessment & Vetting Guide | The Kas Group',
+    title: 'Senior Data Engineer Skills Assessment & Vetting Guide',
     description: 'A comprehensive vetting guide for hiring senior data engineers. Includes technical skills checklist, interview questions, and architectural assessment frameworks.',
 };
 

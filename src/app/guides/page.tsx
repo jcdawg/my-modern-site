@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Recruiting & Hiring Guides | The Kas Group',
+    title: 'Recruiting & Hiring Guides',
     description: 'Expert guides on sales leadership, data engineering, and AI talent acquisition. Learn how to build high-performance teams in the modern era.',
 };
 

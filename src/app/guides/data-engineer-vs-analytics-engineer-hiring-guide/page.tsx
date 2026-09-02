@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Data Engineer vs. Analytics Engineer: Hiring Guide | The Kas Group',
+    title: 'Data Engineer vs. Analytics Engineer: Hiring Guide',
     description: 'A comparison guide for hiring managers on the difference between data engineers and analytics engineers. Learn which role to hire first to scale your AI and data operations.',
 };
 

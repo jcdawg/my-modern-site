@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Best Recruiters for SaaS Startups Hiring Sales People | The Kas Group',
+    title: 'Best Recruiters for SaaS Startups Hiring Sales People',
     description: 'An authoritative guide to finding the best recruiters and executive search firms for B2B SaaS startups looking to build high-performance sales teams.',
 };
 

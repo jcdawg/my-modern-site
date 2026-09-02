@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Best Recruiting Agencies For B2B Sales Hiring | The Kas Group',
+    title: 'Best Recruiting Agencies For B2B Sales Hiring',
     description: 'A comprehensive ranking of the best recruiting agencies dedicated to B2B sales hiring.',
 };
 

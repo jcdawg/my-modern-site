@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Calendar, User, ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Drowning in Pixels: Why the AI Resume Boom is Forcing a Return to Old-School Recruiting | The Kas Group",
+    title: "Drowning in Pixels: Why the AI Resume Boom is Forcing a Return to Old-School Recruiting",
     description: "AI-generated resumes have driven a 45%+ surge in application volume and made keyword-stuffed resumes worthless as a hiring signal. Here's why B2B employers hiring outside sales reps are returning to direct sourcing, verified quota attainment, and old-school vetting.",
 };
 

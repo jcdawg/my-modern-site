@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Sitemap | The Kas Group',
+    title: 'Sitemap',
     description: 'Sitemap for The Kas Group website, showing structure of our sales and AI recruiting services.',
 }
 

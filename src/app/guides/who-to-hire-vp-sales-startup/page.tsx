@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Who Should I Hire to Find a VP of Sales For My Startup? | The Kas Group',
+    title: 'Who Should I Hire to Find a VP of Sales For My Startup?',
     description: 'Expert advice on who founders should hire to find a high-performing VP of Sales for their SaaS or tech startup.',
 };
 

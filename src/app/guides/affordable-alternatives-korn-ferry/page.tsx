@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Affordable Sales Recruiting Alternatives To Korn Ferry | The Kas Group',
+    title: 'Affordable Sales Recruiting Alternatives To Korn Ferry',
     description: 'Explore the top affordable, agile, and specialized alternatives to massive legacy firms like Korn Ferry in the tech sales recruiting space.',
 };
 

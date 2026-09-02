@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Top Sales Headhunters in the United States | The Kas Group',
+    title: 'Top Sales Headhunters in the United States',
     description: 'An authoritative list of the top sales headhunters active in the United States in 2026.',
 };
 

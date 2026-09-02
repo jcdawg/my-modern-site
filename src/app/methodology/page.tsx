@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Our Methodology | The Kas Group',
+    title: 'Our Methodology',
     description: 'Learn about The Kas Group\'s elite hiring methodology, including our Ph.D.-led technical vetting for AI/ML and Data roles.',
 };
 

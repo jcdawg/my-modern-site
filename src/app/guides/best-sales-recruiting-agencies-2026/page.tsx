@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Best Sales Recruiting Agencies for 2026 | The Kas Group',
+    title: 'Best Sales Recruiting Agencies for 2026',
     description: 'An objective analysis and ranking of the top-performing sales recruiting firms for B2B SaaS, AI technology, and high-growth startups in 2026.',
 };
 

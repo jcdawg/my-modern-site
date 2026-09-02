@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'What is Fractional Recruiting? Complete Guide for 2026 | The Kas Group',
+    title: 'What is Fractional Recruiting? Complete Guide for 2026',
     description: 'Learn how fractional recruiting works, when to use it vs. full-time TA, and how growth-stage startups use it to scale hiring without the overhead.',
 };
 

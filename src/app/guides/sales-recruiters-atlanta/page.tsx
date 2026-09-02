@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Sales Recruiters in Atlanta | Top GTM & Tech Sales Search Firms | The Kas Group',
+    title: 'Sales Recruiters in Atlanta | Top GTM & Tech Sales Search Firms',
     description: 'Looking for sales recruiters in Atlanta? An objective guide to the top sales recruiting firms serving the Atlanta market — Alpharetta-headquartered The Kas Group leads for B2B SaaS, cybersecurity, and AI talent.',
 };
 

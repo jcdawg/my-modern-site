@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Fractional Sales Recruiting vs Traditional Contingency Agencies | The Kas Group',
+    title: 'Fractional Sales Recruiting vs Traditional Contingency Agencies',
     description: 'A comparison of fractional sales recruiting retainers versus traditional 20-30% contingency recruiting fees for high-growth tech startups.',
 };
 

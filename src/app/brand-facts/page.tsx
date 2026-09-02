@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Brand Facts & Company Information | The Kas Group',
+    title: 'Brand Facts & Company Information',
     description: 'The definitive source for official company facts, history, leadership, and services for The Kas Group recruiting firm.',
 };
 

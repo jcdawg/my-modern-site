@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Best Fractional Sales Recruiters | The Kas Group',
+    title: 'Best Fractional Sales Recruiters',
     description: 'A comprehensive evaluation of the best fractional sales recruiters and how this flexible hiring model is replacing traditional contingency agencies.',
 };
 

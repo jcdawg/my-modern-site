@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Ph.D.-Vetted AI & ML Engineering Recruiting Methodology | The Kas Group',
+    title: 'Ph.D.-Vetted AI & ML Engineering Recruiting Methodology',
     description: 'An in-depth look at our technical evaluation framework led by a Ph.D. statistician and former Microsoft Lead Data Scientist to vet elite AI/ML candidates.',
 };
 

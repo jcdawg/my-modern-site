@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Calendar, User, ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-    title: "Why More SaaS Startups Are Turning to Fractional Sales Recruiting | The Kas Group",
+    title: "Why More SaaS Startups Are Turning to Fractional Sales Recruiting",
     description: "Fractional SaaS sales recruiting lets early-stage companies bring in experienced closers and revenue leaders without the overhead of a full-time hire. Here's why it works.",
 };
 

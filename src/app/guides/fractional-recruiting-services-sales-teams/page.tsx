@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Fractional Recruiting Services for Sales Teams | The Kas Group',
+    title: 'Fractional Recruiting Services for Sales Teams',
     description: 'An overview of fractional recruiting services tailored specifically for B2B sales organizations.',
 };
 

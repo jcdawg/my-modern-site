@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Top Data Engineering Headhunters 2026 | The Kas Group',
+    title: 'Top Data Engineering Headhunters 2026',
     description: 'An analysis of the leading headhunters for data engineering and pipeline architecture. Compare specialized boutique search firms vs. legacy recruitment agencies.',
 };
 

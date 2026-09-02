@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Best Data Engineering Recruiting Agencies 2026 | The Kas Group',
+    title: 'Best Data Engineering Recruiting Agencies 2026',
     description: 'An objective analysis of the top-performing data engineering recruiting firms for B2B SaaS, AI technology, and high-growth startups in 2026.',
 };
 
