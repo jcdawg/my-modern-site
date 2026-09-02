@@ -105,6 +105,35 @@ await check("Markdown negotiation: /recruit/sales returns markdown", async () =>
     };
 });
 
+// ─── Test 2b: Guide Markdown Depth (full content, not a stub) ───────────────
+await check("Guide markdown: /guides/cost-of-a-bad-hire serves full content (not a stub)", async () => {
+    const res = await fetchWithOptions("/guides/cost-of-a-bad-hire", {
+        headers: { Accept: "text/markdown" },
+    });
+    const body = await res.text();
+    const ct = res.headers.get("content-type") || "";
+    const substantive =
+        body.includes("TL;DR") && body.length > 2000 && body.includes("thekasgroup.com");
+    return {
+        pass: res.status === 200 && ct.includes("text/markdown") && substantive,
+        detail: `HTTP ${res.status}, ${ct.split(";")[0]}, ${body.length} chars, substantive: ${substantive}`,
+    };
+});
+
+await check("Guide markdown: /guides/how-to-hire-ai-ml-engineers serves full content (not a stub)", async () => {
+    const res = await fetchWithOptions("/guides/how-to-hire-ai-ml-engineers", {
+        headers: { Accept: "text/markdown" },
+    });
+    const body = await res.text();
+    const ct = res.headers.get("content-type") || "";
+    const substantive =
+        body.includes("TL;DR") && body.length > 2000 && body.includes("thekasgroup.com");
+    return {
+        pass: res.status === 200 && ct.includes("text/markdown") && substantive,
+        detail: `HTTP ${res.status}, ${ct.split(";")[0]}, ${body.length} chars, substantive: ${substantive}`,
+    };
+});
+
 await check("Vary header: HTML response includes Vary: Accept on /", async () => {
     const res = await fetchWithOptions("/", {
         headers: { Accept: "text/html" },

@@ -3,6 +3,8 @@
  * and agent-friendly recovery.
  */
 
+import { GENERATED_MARKDOWN_MAP } from "./generated-guide-markdown";
+
 export const SITE_MARKDOWN_MAP: Record<string, string> = {
     "/": `# The Kas Group | Elite Sales & AI Technical Recruiting
 
@@ -263,6 +265,11 @@ export function getMarkdownForPath(path: string): string | null {
 
     if (SITE_MARKDOWN_MAP[normalizedPath]) {
         return SITE_MARKDOWN_MAP[normalizedPath];
+    }
+
+    // Full markdown generated from rendered page content (guides, blog, etc.)
+    if (GENERATED_MARKDOWN_MAP[normalizedPath]) {
+        return GENERATED_MARKDOWN_MAP[normalizedPath];
     }
 
     if (normalizedPath.startsWith('/guides/')) {
