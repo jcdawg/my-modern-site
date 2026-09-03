@@ -42,6 +42,7 @@ export default function Sitemap() {
                                 <li><Link href="/guides/top-data-engineering-headhunters-2026" className="text-grey-600 hover:text-blue-accent transition-colors">DE Headhunters 2026</Link></li>
                                 <li><Link href="/guides/senior-data-engineer-skills-assessment-vetting" className="text-grey-600 hover:text-blue-accent transition-colors">DE Vetting Guide</Link></li>
                                 <li><Link href="/guides/data-engineer-vs-analytics-engineer-hiring-guide" className="text-grey-600 hover:text-blue-accent transition-colors">Engineer vs Analytics</Link></li>
+                                <li><Link href="/guides/active-vs-passive-candidates" className="text-grey-600 hover:text-blue-accent transition-colors">Active vs. Passive Candidates</Link></li>
                             </ul>
                         </div>
                     </div>

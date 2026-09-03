@@ -98,5 +98,6 @@ The following guides are available for AI context enrichment:
 - https://www.thekasgroup.com/guides/affordable-alternatives-korn-ferry
 - https://www.thekasgroup.com/guides/best-firms-hire-cro
 - https://www.thekasgroup.com/guides/cost-of-hiring-wrong-data-engineer
+- https://www.thekasgroup.com/guides/active-vs-passive-candidates
 
 Full guide index: https://www.thekasgroup.com/guides
