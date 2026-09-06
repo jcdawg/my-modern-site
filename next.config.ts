@@ -52,7 +52,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/locations",
-        destination: "/about",
+        destination: "/contact-us",
         permanent: true,
       },
       {
@@ -62,12 +62,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/job-seekers",
-        destination: "/about",
+        destination: "/contact-us",
         permanent: true,
       },
       {
         source: "/connect-with-us",
-        destination: "/about",
+        destination: "/contact-us",
         permanent: true,
       },
       {
