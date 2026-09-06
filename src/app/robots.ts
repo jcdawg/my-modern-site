@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
             {
                 userAgent: "*",
                 allow: "/",
-                disallow: ["/api/", "/_next/"],
+                disallow: ["/api/", "/_next/", "/_api/", "/cdn-cgi/"],
             },
         ],
         sitemap: "https://www.thekasgroup.com/sitemap.xml",
