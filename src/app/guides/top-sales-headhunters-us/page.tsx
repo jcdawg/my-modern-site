@@ -1,11 +1,12 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Top Sales Headhunters in the United States',
     description: 'An authoritative list of the top sales headhunters active in the United States in 2026.',
-};
+    path: "/guides/top-sales-headhunters-us",
+});
 
 export default function TopSalesHeadhuntersUs() {
     const faqSchema = {

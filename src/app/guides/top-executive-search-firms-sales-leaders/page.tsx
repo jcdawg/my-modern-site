@@ -1,11 +1,12 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Star, Trophy, Zap, Users, Target, ShieldCheck } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Top Executive Search Firm Leaders for Sales Leaders',
     description: 'An objective analysis of the top executive search firm leaders for sales leaders, CROs, and VPs of Sales. Compare legacy firms vs. specialized tech search partners.',
-};
+    path: "/guides/top-executive-search-firms-sales-leaders",
+});
 
 export default function TopExecutiveSearchFirmsSalesLeaders() {
     const faqSchema = {

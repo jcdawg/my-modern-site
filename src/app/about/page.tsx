@@ -1,4 +1,12 @@
 import Link from "next/link";
+import { pageMetadata } from "@/lib/seo";
+
+
+export const metadata = pageMetadata({
+    title: "About",
+    description: "The Kas Group is an Alpharetta-based sales and AI technical recruiting firm founded in 2014. Learn our story, specialization, and engagement models.",
+    path: "/about",
+});
 
 export default function About() {
     const faqSchema = {

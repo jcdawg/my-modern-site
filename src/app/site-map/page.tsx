@@ -1,10 +1,11 @@
 import Link from 'next/link'
-import { Metadata } from 'next'
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Sitemap',
     description: 'Sitemap for The Kas Group website, showing structure of our sales and AI recruiting services.',
-}
+    path: "/site-map",
+});
 
 export default function Sitemap() {
     return (

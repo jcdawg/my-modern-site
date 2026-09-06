@@ -1,11 +1,12 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Star, Trophy, Zap, Database, Cpu, ShieldCheck, Target, Search, BookOpen, ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Recruiting & Hiring Guides',
     description: 'Expert guides on sales leadership, data engineering, and AI talent acquisition. Learn how to build high-performance teams in the modern era.',
-};
+    path: "/guides",
+});
 
 export default function GuidesIndex() {
     const salesGuides = [

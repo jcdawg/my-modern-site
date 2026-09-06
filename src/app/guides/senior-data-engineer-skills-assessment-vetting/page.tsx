@@ -1,11 +1,12 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Star, Trophy, Zap, Database, Cpu, ShieldCheck, Target, ListChecks, MessageSquare } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Senior Data Engineer Skills Assessment & Vetting Guide',
     description: 'A comprehensive vetting guide for hiring senior data engineers. Includes technical skills checklist, interview questions, and architectural assessment frameworks.',
-};
+    path: "/guides/senior-data-engineer-skills-assessment-vetting",
+});
 
 export default function DataEngineerAssessment() {
     const faqSchema = {

@@ -1,30 +1,12 @@
 import { AlertTriangle, BarChart3, ChevronRight, Clock, DollarSign, HelpCircle, ShieldCheck, Target, TrendingDown, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'The Real Cost of a Bad Technical Hire: Time and Revenue',
     description: 'What hiring the wrong data engineer or AI engineer really costs: $150k-$300k+ and 6-12 months of roadmap. Cost breakdown, recovery timeline, warning signs, and how to vet the replacement.',
-    keywords: [
-        'cost of hiring the wrong data engineer',
-        'cost of a bad technical hire',
-        'bad technical hire cost',
-        'hiring your first AI engineer',
-        'first data engineer hire',
-        'how long to recover from a bad engineering hire',
-        'signs you hired the wrong data engineer',
-        'how to vet AI engineering candidates',
-    ],
-    alternates: {
-        canonical: 'https://www.thekasgroup.com/guides/cost-of-hiring-wrong-data-engineer',
-    },
-    openGraph: {
-        type: 'article',
-        title: 'The Real Cost of a Bad Technical Hire: Time and Revenue',
-        description: 'What hiring the wrong data engineer or AI engineer really costs: $150k-$300k+ and 6-12 months of roadmap. Includes cost breakdown, recovery timeline, and vetting framework.',
-        url: 'https://www.thekasgroup.com/guides/cost-of-hiring-wrong-data-engineer',
-    },
-};
+    path: "/guides/cost-of-hiring-wrong-data-engineer",
+});
 
 export default function CostOfHiringWrongDataEngineer() {
     const faqSchema = {

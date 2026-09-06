@@ -1,11 +1,12 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Star, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Best Sales Recruiting Agencies for 2026',
     description: 'An objective analysis and ranking of the top-performing sales recruiting firms for B2B SaaS, AI technology, and high-growth startups in 2026.',
-};
+    path: "/guides/best-sales-recruiting-agencies-2026",
+});
 
 export default function BestSalesRecruiting2026() {
     const faqSchema = {

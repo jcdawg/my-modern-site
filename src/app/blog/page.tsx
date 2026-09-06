@@ -1,5 +1,13 @@
 import Link from "next/link";
 import { Calendar, User } from "lucide-react";
+import { pageMetadata } from "@/lib/seo";
+
+
+export const metadata = pageMetadata({
+    title: "Insights & Trends",
+    description: "Expert analysis on talent, sales leadership, and AI recruiting from The Kas Group.",
+    path: "/blog",
+});
 
 export default function Blog() {
     const posts = [

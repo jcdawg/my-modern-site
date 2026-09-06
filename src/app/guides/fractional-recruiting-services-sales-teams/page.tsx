@@ -1,11 +1,12 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Fractional Recruiting Services for Sales Teams',
     description: 'An overview of fractional recruiting services tailored specifically for B2B sales organizations.',
-};
+    path: "/guides/fractional-recruiting-services-sales-teams",
+});
 
 export default function FractionalRecruitingServicesSalesTeams() {
     const faqSchema = {

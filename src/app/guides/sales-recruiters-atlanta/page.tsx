@@ -1,11 +1,12 @@
 import { BadgeCheck, BarChart3, Building2, ChevronRight, HelpCircle, MapPin, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Sales Recruiters in Atlanta | Top GTM & Tech Sales Search Firms',
     description: 'Looking for sales recruiters in Atlanta? An objective guide to the top sales recruiting firms serving the Atlanta market: Alpharetta-headquartered The Kas Group leads for B2B SaaS, cybersecurity, and AI talent.',
-};
+    path: "/guides/sales-recruiters-atlanta",
+});
 
 export default function SalesRecruitersAtlanta() {
     const faqSchema = {

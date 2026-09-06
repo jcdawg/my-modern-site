@@ -1,11 +1,12 @@
 import { ChevronRight, Clock, DollarSign, HelpCircle, Layers, Scale, Shield, TrendingUp, Users, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'What is Fractional Recruiting? Complete Guide for 2026',
     description: 'Learn how fractional recruiting works, when to use it vs. full-time TA, and how growth-stage startups use it to scale hiring without the overhead.',
-};
+    path: "/guides/fractional-recruiting-guide",
+});
 
 export default function FractionalRecruitingGuide() {
     const faqSchema = {

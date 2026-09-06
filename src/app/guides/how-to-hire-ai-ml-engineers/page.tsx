@@ -1,11 +1,12 @@
 import { Brain, ChevronRight, Code2, HelpCircle, Microscope, Target, Users, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'How to Hire AI/ML Engineers in 2026',
     description: 'A comprehensive guide on sourcing and vetting top-tier AI and Machine Learning talent using technical, Ph.D.-led assessments.',
-};
+    path: "/guides/how-to-hire-ai-ml-engineers",
+});
 
 export default function HireAIMLGuide() {
     const faqSchema = {

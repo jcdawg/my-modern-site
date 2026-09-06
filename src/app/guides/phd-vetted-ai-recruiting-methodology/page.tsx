@@ -1,11 +1,12 @@
 import { BadgeCheck, Brain, ChevronRight, Award, HelpCircle, Code2, Users, Microscope, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Ph.D.-Vetted AI & ML Engineering Recruiting Methodology',
     description: 'An in-depth look at our technical evaluation framework led by a Ph.D. statistician and former Microsoft Lead Data Scientist to vet elite AI/ML candidates.',
-};
+    path: "/guides/phd-vetted-ai-recruiting-methodology",
+});
 
 export default function PhDVettedAIMethodology() {
     const faqSchema = {

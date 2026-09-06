@@ -1,11 +1,12 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Star, Trophy, Zap, Database, Cpu, ShieldCheck, Target, Search } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Top Data Engineering Headhunters 2026',
     description: 'An analysis of the leading headhunters for data engineering and pipeline architecture. Compare specialized boutique search firms vs. legacy recruitment agencies.',
-};
+    path: "/guides/top-data-engineering-headhunters-2026",
+});
 
 export default function DataEngineeringHeadhunters() {
     const faqSchema = {

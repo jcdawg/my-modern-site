@@ -38,7 +38,6 @@ export const metadata: Metadata = {
     "thekasgroup.com",
   ],
   alternates: {
-    canonical: "https://www.thekasgroup.com",
     types: {
       "text/markdown": "https://www.thekasgroup.com/llms.txt",
     },
@@ -46,11 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.thekasgroup.com",
     siteName: "The Kas Group",
-    title: "The Kas Group | Elite Sales & AI Technical Recruiting",
-    description:
-      "Elite Sales & AI Talent. Vetted by Experts. Placing B2B SaaS sales leaders and Ph.D.-vetted AI/ML engineers since 2014.",
     images: [
       {
         url: "/logos/kas-group-logo.svg",
@@ -62,9 +57,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Kas Group | Elite Sales & AI Technical Recruiting",
-    description:
-      "Elite Sales & AI Talent. Vetted by Experts. Placing B2B SaaS sales leaders and Ph.D.-vetted AI/ML engineers since 2014.",
   },
   robots: {
     index: true,

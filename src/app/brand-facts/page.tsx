@@ -1,12 +1,13 @@
 import { BadgeCheck, Calendar, DollarSign, Globe, Network, Target, Users, Zap, MapPin, Award, ShieldCheck, Mail, Info } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Brand Facts & Company Information',
     description: 'The definitive source for official company facts, history, leadership, and services for The Kas Group recruiting firm.',
-};
+    path: "/brand-facts",
+});
 
 export default function BrandFacts() {
     const organizationSchema = {

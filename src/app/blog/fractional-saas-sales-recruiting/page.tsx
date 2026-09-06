@@ -1,11 +1,12 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 import { Calendar, User, ArrowLeft } from "lucide-react";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: "Why More SaaS Startups Are Turning to Fractional Sales Recruiting",
     description: "Fractional SaaS sales recruiting lets early-stage companies bring in experienced closers and revenue leaders without the overhead of a full-time hire. Here's why it works.",
-};
+    path: "/blog/fractional-saas-sales-recruiting",
+});
 
 export default function FractionalSaasSalesPost() {
     const faqSchema = {
