@@ -1,6 +1,20 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, AlertTriangle, XCircle, GraduationCap, Zap, Award, Target, Briefcase, ChevronRight, Users, Trophy, Database, BookOpen } from "lucide-react";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  ...pageMetadata({
+    title: "The Kas Group | Elite Sales & AI Technical Recruiting",
+    description:
+      "The Kas Group is an elite sales and AI technical recruiting firm. We specialize in placing B2B SaaS sales leaders (VP of Sales, CRO, AEs) and Ph.D.-vetted AI/ML engineers for high-growth tech companies. Founded 2014.",
+    path: "/",
+  }),
+  title: {
+    absolute: "The Kas Group | Elite Sales & AI Technical Recruiting",
+  },
+};
 
 const homepageJsonLd = {
   "@context": "https://schema.org",

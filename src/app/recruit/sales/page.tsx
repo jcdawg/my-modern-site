@@ -1,5 +1,13 @@
 import Link from "next/link";
 import { Check, ArrowRight } from "lucide-react";
+import { pageMetadata } from "@/lib/seo";
+
+
+export const metadata = pageMetadata({
+    title: "Sales Recruiting",
+    description: "B2B SaaS sales recruiting for VP of Sales, CRO, Enterprise AEs, and SDR leaders. Quota-verified shortlists from The Kas Group.",
+    path: "/recruit/sales",
+});
 
 export default function SalesRecruiting() {
     const roles = [

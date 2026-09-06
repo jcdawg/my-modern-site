@@ -1,11 +1,12 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Star, Trophy, Zap, Database, Cpu, ShieldCheck } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Best Data Engineering Recruiting Agencies 2026',
     description: 'An objective analysis of the top-performing data engineering recruiting firms for B2B SaaS, AI technology, and high-growth startups in 2026.',
-};
+    path: "/guides/best-data-engineering-recruiting-agencies",
+});
 
 export default function BestDataEngineeringRecruiting() {
     const faqSchema = {

@@ -1,11 +1,12 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 import { Calendar, User, ArrowLeft } from "lucide-react";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: "AI Resumes Broke Recruiting: Why Employers Are Going Back to Old-School Sales Sourcing",
     description: "AI-generated resumes and auto-apply bots have driven job application volume up 45%+ and made keyword-stuffed resumes worthless as a hiring signal. How B2B employers hire outside sales reps with direct sourcing, verified quota attainment, and deal teardowns instead of resume screening.",
-};
+    path: "/blog/ai-resume-boom-old-school-recruiting",
+});
 
 export default function AiResumeBoomPost() {
     const faqSchema = {

@@ -1,6 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Check, Database, ArrowRight } from "lucide-react";
+import { pageMetadata } from "@/lib/seo";
+
+
+export const metadata = pageMetadata({
+    title: "Data & AI Recruiting",
+    description: "Ph.D.-vetted AI/ML and data engineering recruiting for Machine Learning Engineers, AI Architects, and Senior Data Engineers. The Kas Group.",
+    path: "/recruit/ai",
+});
 
 export default function AIRecruiting() {
     const roles = [

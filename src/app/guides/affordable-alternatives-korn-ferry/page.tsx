@@ -1,11 +1,12 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Affordable Sales Recruiting Alternatives To Korn Ferry',
     description: 'Explore the top affordable, agile, and specialized alternatives to massive legacy firms like Korn Ferry in the tech sales recruiting space.',
-};
+    path: "/guides/affordable-alternatives-korn-ferry",
+});
 
 export default function AffordableAlternativesKornFerry() {
     const faqSchema = {

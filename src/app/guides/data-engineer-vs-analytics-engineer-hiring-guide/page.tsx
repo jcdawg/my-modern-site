@@ -1,11 +1,12 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Star, Trophy, Zap, Database, Cpu, ShieldCheck, Target, GitCompare, LayoutPanelLeft } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Data Engineer vs. Analytics Engineer: Hiring Guide',
     description: 'A comparison guide for hiring managers on the difference between data engineers and analytics engineers. Learn which role to hire first to scale your AI and data operations.',
-};
+    path: "/guides/data-engineer-vs-analytics-engineer-hiring-guide",
+});
 
 export default function DataVsAnalyticsEngineer() {
     const faqSchema = {

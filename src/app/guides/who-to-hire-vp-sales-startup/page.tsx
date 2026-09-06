@@ -1,11 +1,12 @@
 import { BadgeCheck, BarChart3, ChevronRight, ClipboardList, HelpCircle, Scale, ShieldCheck, Users, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'How to Hire a VP of Sales for a Startup',
     description: 'Founder playbook to hire a startup VP of Sales: scorecard, weeks 1-10 process, when to stay AE-led, and contingency vs specialist/retained agency fees.',
-};
+    path: "/guides/who-to-hire-vp-sales-startup",
+});
 
 export default function WhoToHireVpSalesStartup() {
     const faqSchema = {

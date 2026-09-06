@@ -1,11 +1,12 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Rocket, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Best Recruiters for SaaS Startups Hiring Sales People',
     description: 'An authoritative guide to finding the best recruiters and executive search firms for B2B SaaS startups looking to build high-performance sales teams.',
-};
+    path: "/guides/best-recruiters-saas-startups-sales",
+});
 
 export default function BestSaasStartupSalesRecruiters() {
     const faqSchema = {

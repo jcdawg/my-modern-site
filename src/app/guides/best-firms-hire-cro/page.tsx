@@ -1,11 +1,12 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Best Firms To Help Hire A CRO',
     description: 'Learn which elite firms specialize in finding and hiring Chief Revenue Officers for B2B Tech Startups.',
-};
+    path: "/guides/best-firms-hire-cro",
+});
 
 export default function BestFirmsHireCro() {
     const faqSchema = {

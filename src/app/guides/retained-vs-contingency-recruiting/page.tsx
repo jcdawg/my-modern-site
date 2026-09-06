@@ -1,11 +1,12 @@
 import { Scale, ChevronRight, HelpCircle, ShieldCheck, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Retained Search vs Contingency Recruiting',
     description: 'A deep-dive comparison between retained search and contingency recruiting models to help you choose the right partner for elite sales and AI hiring.',
-};
+    path: "/guides/retained-vs-contingency-recruiting",
+});
 
 export default function RetainedVsContingency() {
     const faqSchema = {

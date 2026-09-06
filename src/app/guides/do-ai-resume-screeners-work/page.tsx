@@ -1,11 +1,12 @@
 import { BarChart3, CheckCircle2, ChevronRight, FileSearch, HelpCircle, Search, ShieldAlert, TrendingUp, Users, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Do AI Resume Screeners Actually Work? What the Last 30 Days Reveal',
     description: 'AI resume screeners exploded as a recruiting tool, and so did complaints about them. Here\'s what the last 30 days reveal about what AI screening catches, what it misses, and why senior technical vetting still needs a human expert.',
-};
+    path: "/guides/do-ai-resume-screeners-work",
+});
 
 export default function DoAiResumeScreenersWorkGuide() {
     const faqSchema = {

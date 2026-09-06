@@ -1,11 +1,12 @@
 import { BadgeCheck, BarChart3, ChevronRight, DollarSign, HelpCircle, Scale, ShieldCheck, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Fractional Sales Recruiting vs Traditional Contingency Agencies',
     description: 'A comparison of fractional sales recruiting retainers versus traditional 20-30% contingency recruiting fees for high-growth tech startups.',
-};
+    path: "/guides/fractional-vs-traditional-sales-recruiting",
+});
 
 export default function FractionalVsTraditionalSalesRecruiting() {
     const faqSchema = {

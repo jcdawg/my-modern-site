@@ -1,12 +1,13 @@
 import { ArrowRight, CheckCircle2, Search, Users, FileText, Calendar, Handshake, ShieldCheck, Target } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Our Methodology',
     description: 'Learn about The Kas Group\'s elite hiring methodology, including our Ph.D.-led technical vetting for AI/ML and Data roles.',
-};
+    path: "/methodology",
+});
 
 export default function MethodologyPage() {
     const steps = [

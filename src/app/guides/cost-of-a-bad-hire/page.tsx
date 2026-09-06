@@ -1,11 +1,12 @@
 import { AlertTriangle, BarChart3, ChevronRight, DollarSign, HelpCircle, TrendingDown, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'The True Cost of a Bad Hire in 2026',
     description: 'Data-driven breakdown of how much a bad hire really costs your company, and how elite vetting prevents it. Includes calculator, industry benchmarks, and prevention strategies.',
-};
+    path: "/guides/cost-of-a-bad-hire",
+});
 
 export default function CostOfBadHireGuide() {
     const faqSchema = {

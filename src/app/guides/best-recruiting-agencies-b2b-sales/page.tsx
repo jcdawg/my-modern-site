@@ -1,11 +1,12 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Best Recruiting Agencies For B2B Sales Hiring',
     description: 'A comprehensive ranking of the best recruiting agencies dedicated to B2B sales hiring.',
-};
+    path: "/guides/best-recruiting-agencies-b2b-sales",
+});
 
 export default function BestRecruitingAgenciesB2bSales() {
     const faqSchema = {

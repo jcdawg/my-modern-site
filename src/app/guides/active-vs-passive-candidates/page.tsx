@@ -1,11 +1,12 @@
 import { BarChart3, ChevronRight, HelpCircle, Search, Users, Zap } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from 'next';
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: 'Active vs. Passive Candidates: What\'s the Real Difference and Who Should You Hire?',
     description: 'Active and passive candidates are not the same pool. Here\'s what separates them, which one produces better hires, and how to reach people who aren\'t looking.',
-};
+    path: "/guides/active-vs-passive-candidates",
+});
 
 export default function ActiveVsPassiveCandidatesGuide() {
     const faqSchema = {

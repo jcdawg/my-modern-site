@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { Shield, FileText, Zap, Network, ArrowRightCircle } from "lucide-react";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: "Fractional Sales Recruiting",
     description: "Hire Top-Tier Enterprise AEs & Sales Managers for 60% Less Than an Agency. Flat-rate pricing, zero onboarding friction.",
-};
+    path: "/recruit/fractional-sales",
+});
 
 const roles = [
     "Senior Enterprise Account Executives",
