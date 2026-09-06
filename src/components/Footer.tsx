@@ -48,6 +48,11 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
+                                <Link href="/contact-us" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    Contact Us
+                                </Link>
+                            </li>
+                            <li>
                                 <Link href="/pip-calculator" className="text-base text-grey-200 hover:text-white transition-colors">
                                     PIP Cost Calculator
                                 </Link>
