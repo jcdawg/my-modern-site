@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function GuidesIndex() {
     const salesGuides = [
         { title: "Top Sales Agencies 2026", href: "/guides/best-sales-recruiting-agencies-2026", desc: "Our annual review of the top firms for B2B sales talent." },
-        { title: "Hiring a VP of Sales", href: "/guides/who-to-hire-vp-sales-startup", desc: "The definitive framework for finding your first sales leader." },
+        { title: "How to Hire a VP of Sales", href: "/guides/who-to-hire-vp-sales-startup", desc: "Founder playbook: scorecard, weeks 1–10 process, when to stay AE-led, and fractional vs contingency fees." },
         { title: "Top Exec Search Firms", href: "/guides/top-executive-search-firms-sales-leaders", desc: "Best firms for CRO and VP-level sales leadership." },
         { title: "SaaS Sales Recruiters", href: "/guides/best-saas-sales-recruiting-firms", desc: "Specialized firms for high-growth software companies." },
         { title: "Fractional Recruiting", href: "/guides/fractional-recruiting-guide", desc: "How to use fractional models to scale your sales team." },
