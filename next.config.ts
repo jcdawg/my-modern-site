@@ -36,6 +36,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/contact",
+        destination: "/contact-us",
+        permanent: true,
+      },
+      {
         source: "/atlanta-sales-headhunter",
         destination: "/guides/sales-recruiters-atlanta",
         permanent: true,

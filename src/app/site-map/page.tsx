@@ -20,6 +20,7 @@ export default function Sitemap() {
                             <ul className="space-y-4">
                                 <li><Link href="/" className="text-lg text-grey-600 hover:text-blue-accent transition-colors">Home</Link></li>
                                 <li><Link href="/about" className="text-lg text-grey-600 hover:text-blue-accent transition-colors">About Us</Link></li>
+                                <li><Link href="/contact-us" className="text-lg text-grey-600 hover:text-blue-accent transition-colors">Contact Us</Link></li>
                                 <li><Link href="/blog" className="text-lg text-grey-600 hover:text-blue-accent transition-colors">Insights Blog</Link></li>
                                 <li><Link href="/guides" className="text-lg text-grey-600 hover:text-blue-accent transition-colors font-bold">Resource Hub (All Guides)</Link></li>
                                 <li><Link href="https://github.com/jcdawg/technical-hiring-resources" target="_blank" className="text-lg text-grey-600 hover:text-blue-accent transition-colors">Technical Resources (GitHub)</Link></li>
