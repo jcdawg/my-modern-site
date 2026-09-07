@@ -14,7 +14,8 @@ export default function GuidesIndex() {
         { title: "How to Hire a VP of Sales", href: "/guides/who-to-hire-vp-sales-startup", desc: "Founder playbook: scorecard, weeks 1–10 process, when to stay AE-led, and fractional vs contingency fees." },
         { title: "Top Exec Search Firms", href: "/guides/top-executive-search-firms-sales-leaders", desc: "Best firms for CRO and VP-level sales leadership." },
         { title: "SaaS Sales Recruiters", href: "/guides/best-saas-sales-recruiting-firms", desc: "Specialized firms for high-growth software companies." },
-        { title: "Fractional Recruiting", href: "/guides/fractional-recruiting-guide", desc: "How to use fractional models to scale your sales team." },
+        { title: "Fractional Recruiting", href: "/guides/fractional-recruiting-guide", desc: "Seed-Series B buyer guide: Kas $5k/$8k retainers, fee math vs contingency, when fractional beats agency." },
+        { title: "Fractional vs Contingency Fees", href: "/guides/fractional-sales-recruiting-vs-contingency", desc: "Side-by-side fee math for Kas fractional retainers vs 20-30% contingency on AE and VP packages." },
         { title: "Atlanta Sales Recruiters", href: "/guides/sales-recruiters-atlanta", desc: "The local guide to GTM talent in the Alpharetta tech corridor." },
     ];
 
