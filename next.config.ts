@@ -36,8 +36,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: "/contact",
-        destination: "/contact-us",
+        source: "/contact-us",
+        destination: "/contact",
         permanent: true,
       },
       {
@@ -52,7 +52,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/locations",
-        destination: "/contact-us",
+        destination: "/contact",
         permanent: true,
       },
       {
@@ -62,12 +62,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/job-seekers",
-        destination: "/contact-us",
+        destination: "/contact",
         permanent: true,
       },
       {
         source: "/connect-with-us",
-        destination: "/contact-us",
+        destination: "/contact",
         permanent: true,
       },
       {

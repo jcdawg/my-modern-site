@@ -48,8 +48,8 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/contact-us" className="text-base text-grey-200 hover:text-white transition-colors">
-                                    Contact Us
+<Link href="/contact" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    Contact
                                 </Link>
                             </li>
                             <li>
@@ -152,8 +152,8 @@ export default function Footer() {
                         &copy; {new Date().getFullYear()} The Kas Group. All rights reserved.
                     </p>
                     <div className="flex gap-4 mt-4 md:mt-0">
-                        <Link href="#" className="text-xs text-grey-500 hover:text-grey-400">Privacy Policy</Link>
-                        <Link href="#" className="text-xs text-grey-500 hover:text-grey-400">Terms of Service</Link>
+                        <Link href="/privacy-policy" className="text-xs text-grey-500 hover:text-grey-400">Privacy Policy</Link>
+                        <Link href="/terms-of-service" className="text-xs text-grey-500 hover:text-grey-400">Terms of Service</Link>
                         <Link href="/brand-facts" className="text-xs text-grey-500 hover:text-grey-400">Brand Facts</Link>
                         <Link href="/site-map" className="text-xs text-grey-500 hover:text-grey-400">Sitemap</Link>
                     </div>
