@@ -177,7 +177,7 @@ export default function AiResumeBoomPost() {
                         <h3 className="text-xl font-bold text-white mb-3">Staring at a pile like that?</h3>
                         <p className="text-grey-300 text-sm mb-6 max-w-md mx-auto">That is the work we do. We go get them, and we check the quota before a resume ever hits your desk.</p>
                         <Link
-                            href="mailto:chris@thekasgroup.com"
+                            href="/contact"
                             className="inline-block rounded-md bg-blue-accent px-6 py-3 text-sm font-semibold text-white hover:bg-blue-hover transition-colors"
                         >
                             Schedule a consultation

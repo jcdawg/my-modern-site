@@ -146,7 +146,7 @@ export default function PhDVettedAIMethodology() {
                             Hire machine learning and data engineering candidates with guaranteed technical proficiency.
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10 font-bold">
-                            <Link href="mailto:chris@thekasgroup.com" className="px-8 py-4 bg-navy-900 text-white rounded-full hover:bg-navy-950 transition-colors">
+                            <Link href="/contact" className="px-8 py-4 bg-navy-900 text-white rounded-full hover:bg-navy-950 transition-colors">
                                 Talk with an Expert
                             </Link>
                             <Link href="/recruit/ai" className="px-8 py-4 bg-white text-blue-accent rounded-full hover:bg-grey-100 transition-colors">

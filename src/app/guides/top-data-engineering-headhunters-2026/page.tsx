@@ -101,7 +101,7 @@ export default function DataEngineeringHeadhunters() {
                                 Our data engineering search is supported by a <strong>Ph.D. Statistician and former Microsoft Global Lead Data Scientist</strong>. We don't just find names; we validate the architectural depth of every candidate, ensuring they can deliver on day one.
                             </p>
                             <Link
-                                href="mailto:chris@thekasgroup.com"
+                                href="/contact"
                                 className="inline-flex items-center gap-2 text-white font-bold hover:text-blue-accent transition-colors group"
                             >
                                 Learn more about our vetting process
@@ -141,7 +141,7 @@ export default function DataEngineeringHeadhunters() {
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
                             <Link
-                                href="mailto:chris@thekasgroup.com"
+                                href="/contact"
                                 className="px-10 py-4 bg-blue-accent text-white font-bold rounded-full hover:bg-blue-hover transition-all flex items-center gap-2"
                             >
                                 Contact Chris Stinson

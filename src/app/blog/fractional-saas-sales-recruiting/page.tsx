@@ -142,7 +142,7 @@ export default function FractionalSaasSalesPost() {
                         <h3 className="text-xl font-bold text-white mb-3">Thinking about a fractional sales hire?</h3>
                         <p className="text-grey-300 text-sm mb-6 max-w-md mx-auto">We can help you figure out whether fractional is the right model and find the right person for your stage.</p>
                         <Link
-                            href="mailto:chris@thekasgroup.com"
+                            href="/contact"
                             className="inline-block rounded-md bg-blue-accent px-6 py-3 text-sm font-semibold text-white hover:bg-blue-hover transition-colors"
                         >
                             Schedule a consultation

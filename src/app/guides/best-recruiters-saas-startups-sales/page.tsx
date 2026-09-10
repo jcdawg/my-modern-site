@@ -197,7 +197,7 @@ export default function BestSaasStartupSalesRecruiters() {
                             Partner with experts who understand ARR, consultative selling, and complex technical vetting.
                         </p>
                         <Link
-                            href="mailto:chris@thekasgroup.com"
+                            href="/contact"
                             className="inline-flex items-center gap-2 px-8 py-4 bg-blue-accent text-white font-bold rounded-full hover:bg-blue-hover transition-all relative z-10"
                         >
                             Schedule a startup consultation

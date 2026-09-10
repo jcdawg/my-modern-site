@@ -153,7 +153,7 @@ export default function FractionalRecruitingServicesSalesTeams() {
                             Flat monthly retainer. Senior-level vetting. Embedded in your stack.
                         </p>
                         <Link
-                            href="mailto:chris@thekasgroup.com"
+                            href="/contact"
                             className="inline-flex items-center gap-2 px-8 py-4 bg-blue-accent text-white font-bold rounded-full hover:bg-blue-hover transition-all relative z-10"
                         >
                             Schedule a consultation

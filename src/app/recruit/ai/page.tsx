@@ -100,7 +100,7 @@ export default function AIRecruiting() {
 
                         <div className="mt-12">
                             <Link
-                                href="mailto:chris@thekasgroup.com"
+                                href="/contact"
                                 className="rounded-md bg-navy-900 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-navy-800 transition-colors"
                             >
                                 Schedule a consultation

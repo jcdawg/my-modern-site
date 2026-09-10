@@ -175,7 +175,7 @@ export default function HireDataEngineersAI() {
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
                             <Link
-                                href="mailto:chris@thekasgroup.com"
+                                href="/contact"
                                 className="px-10 py-4 bg-blue-accent text-white font-bold rounded-full hover:bg-blue-hover transition-all flex items-center gap-2"
                             >
                                 Contact Chris Stinson

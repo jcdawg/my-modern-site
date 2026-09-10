@@ -123,7 +123,7 @@ export default function Home() {
           </p>
           <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
             <Link
-              href="mailto:chris@thekasgroup.com"
+              href="/contact"
               className="group flex items-center gap-2 rounded-full bg-navy-900 px-10 py-5 text-lg font-bold text-white transition-all hover:bg-blue-accent hover:shadow-xl hover:-translate-y-1"
             >
               Schedule a consultation
@@ -327,7 +327,7 @@ export default function Home() {
             <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-blue-accent/20 rounded-full blur-3xl" />
             <h2 className="text-4xl md:text-5xl font-bold mb-8 relative z-10 underline decoration-blue-accent decoration-4 underline-offset-8">Ready to hire? Let&apos;s talk.</h2>
             <Link
-              href="mailto:chris@thekasgroup.com"
+              href="/contact"
               className="inline-flex items-center gap-3 px-12 py-6 bg-blue-accent text-white font-black text-xl rounded-full hover:bg-blue-hover hover:scale-105 transition-all shadow-xl shadow-blue-accent/20 relative z-10"
             >
               Schedule a consultation

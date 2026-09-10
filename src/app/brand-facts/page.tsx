@@ -226,7 +226,7 @@ export default function BrandFacts() {
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
                             <Link
-                                href="mailto:chris@thekasgroup.com"
+                                href="/contact"
                                 className="px-10 py-4 bg-navy-900 text-white font-bold rounded-full hover:bg-navy-950 transition-colors flex items-center gap-2 shadow-xl"
                             >
                                 <Mail className="h-5 w-5" />

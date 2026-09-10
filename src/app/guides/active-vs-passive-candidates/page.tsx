@@ -228,7 +228,7 @@ export default function ActiveVsPassiveCandidatesGuide() {
                             That&apos;s the math companies run too late. An open VP of Sales seat costs missed quota every quarter it sits empty; an open staff engineer seat costs architecture decisions made by default. <Link href="/guides/best-data-engineering-recruiting-agencies" className="text-blue-accent hover:underline font-semibold">A firm that already knows the passive market</Link> keeps warm relationships with people who aren&apos;t looking and can put a specific opportunity in front of them this week.
                         </p>
                         <p className="text-grey-600 leading-relaxed">
-                            Vetting still decides the outcome. Every AI and data engineering candidate at The Kas Group, passive or active, passes a Ph.D.-led technical review before reaching your calendar, so you choose between verified options instead of resumes. <Link href="/methodology" className="text-blue-accent hover:underline font-semibold">See our methodology</Link>, or <Link href="mailto:chris@thekasgroup.com" className="text-blue-accent hover:underline font-semibold">schedule a consultation</Link> to talk through a role you&apos;ve been struggling to fill.
+                            Vetting still decides the outcome. Every AI and data engineering candidate at The Kas Group, passive or active, passes a Ph.D.-led technical review before reaching your calendar, so you choose between verified options instead of resumes. <Link href="/methodology" className="text-blue-accent hover:underline font-semibold">See our methodology</Link>, or <Link href="/contact" className="text-blue-accent hover:underline font-semibold">schedule a consultation</Link> to talk through a role you&apos;ve been struggling to fill.
                         </p>
                     </div>
 
@@ -275,7 +275,7 @@ export default function ActiveVsPassiveCandidatesGuide() {
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
                             <Link
-                                href="mailto:chris@thekasgroup.com"
+                                href="/contact"
                                 className="inline-flex items-center gap-2 px-8 py-4 bg-blue-accent text-white font-bold rounded-full hover:bg-blue-hover transition-all"
                             >
                                 Schedule a consultation

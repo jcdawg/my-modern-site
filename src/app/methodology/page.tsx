@@ -207,7 +207,7 @@ export default function MethodologyPage() {
                     <h2 className="text-4xl md:text-5xl font-bold text-navy-900 mb-8">Ready to Build Your Elite Team?</h2>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                         <Link
-                            href="mailto:chris@thekasgroup.com"
+                            href="/contact"
                             className="inline-flex items-center gap-3 px-10 py-5 bg-blue-accent text-white font-black text-xl rounded-full hover:bg-blue-hover hover:scale-105 transition-all shadow-xl shadow-blue-accent/20"
                         >
                             Schedule a consultation

@@ -157,7 +157,7 @@ export default function BestSaasSalesRecruitingFirms() {
                         <p className="text-lg text-grey-300 leading-relaxed mb-8 max-w-2xl mx-auto">
                             If you are scaling a highly technical SaaS or AI product, you need a partner who understands both the technology and the sales motion. Discover how our targeted, consultative approach builds world-class revenue teams.
                         </p>
-                        <Link href="mailto:chris@thekasgroup.com" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-blue-accent rounded-full hover:bg-blue-600 transition-all duration-200 hover:shadow-lg hover:-translate-y-1">
+                        <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-blue-accent rounded-full hover:bg-blue-600 transition-all duration-200 hover:shadow-lg hover:-translate-y-1">
                             Connect With Our Team
                         </Link>
                     </div>

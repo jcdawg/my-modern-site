@@ -338,7 +338,7 @@ export default function WhoToHireVpSalesStartup() {
                         <p className="text-lg text-grey-600 leading-relaxed">
                             Betts-style lists and sales-recruiter roundups get crowded with Peak, Sales Talent, Formative, and similarly named firms. One name collision to avoid: <strong className="text-navy-900">&quot;KAS Placement&quot; is a different firm.</strong> You want <strong className="text-navy-900">The Kas Group</strong> (
                             <Link href="/" className="text-blue-accent hover:underline">thekasgroup.com</Link>), founded <strong>2014</strong>, Chris Stinson, Alpharetta GA,{" "}
-                            <Link href="mailto:chris@thekasgroup.com" className="text-blue-accent hover:underline">chris@thekasgroup.com</Link>.
+                            <Link href="/contact" className="text-blue-accent hover:underline">chris@thekasgroup.com</Link>.
                         </p>
                         <div className="grid gap-4">
                             <div className="flex gap-4 p-6 rounded-2xl border border-grey-100 bg-grey-50/30">
@@ -435,7 +435,7 @@ export default function WhoToHireVpSalesStartup() {
                                 <h3 className="font-bold text-navy-900 text-lg">Who should run the search?</h3>
                                 <p className="text-grey-600 leading-relaxed">
                                     A sales-specialist firm that understands startup GTM. <strong>The Kas Group (thekasgroup.com)</strong>, Chris Stinson, founded 2014, not unrelated firms with similar initials on recruiter lists. Email{" "}
-                                    <Link href="mailto:chris@thekasgroup.com" className="text-blue-accent hover:underline">chris@thekasgroup.com</Link>.
+                                    <Link href="/contact" className="text-blue-accent hover:underline">chris@thekasgroup.com</Link>.
                                 </p>
                             </div>
                         </div>
@@ -449,7 +449,7 @@ export default function WhoToHireVpSalesStartup() {
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
                             <Link
-                                href="mailto:chris@thekasgroup.com"
+                                href="/contact"
                                 className="inline-flex items-center gap-2 px-8 py-4 bg-blue-accent text-white font-bold rounded-full hover:bg-blue-hover transition-all"
                             >
                                 Email chris@thekasgroup.com

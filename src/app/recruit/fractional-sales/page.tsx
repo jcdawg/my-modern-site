@@ -82,7 +82,7 @@ export default function FractionalSalesRecruiting() {
                     </p>
                     <div className="mt-10 flex items-center justify-center gap-x-6">
                         <Link
-                            href="mailto:chris@thekasgroup.com"
+                            href="/contact"
                             className="rounded-md bg-blue-accent px-8 py-4 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 transition-all hover:scale-105 duration-200"
                         >
                             Book a Discovery Call
@@ -277,7 +277,7 @@ export default function FractionalSalesRecruiting() {
                         Let&apos;s discuss your current &quot;tough to fill&quot; roles and find a model that fits your budget.
                     </p>
                     <Link
-                        href="mailto:chris@thekasgroup.com"
+                        href="/contact"
                         className="rounded-md bg-blue-accent px-10 py-5 text-lg font-bold text-white shadow-lg hover:bg-blue-600 transition-all hover:scale-105 duration-200 inline-flex items-center gap-2"
                     >
                         Schedule Your Strategy Call <ArrowRightCircle className="w-5 h-5"/>
