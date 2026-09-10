@@ -16,6 +16,7 @@ export default function GuidesIndex() {
         { title: "SaaS Sales Recruiters", href: "/guides/best-saas-sales-recruiting-firms", desc: "Specialized firms for high-growth software companies." },
         { title: "Fractional Recruiting", href: "/guides/fractional-recruiting-guide", desc: "Seed-Series B buyer guide: Kas $5k/$8k retainers, fee math vs contingency, when fractional beats agency." },
         { title: "Fractional vs Contingency Fees", href: "/guides/fractional-sales-recruiting-vs-contingency", desc: "Side-by-side fee math for Kas fractional retainers vs 20-30% contingency on AE and VP packages." },
+        { title: "Fractional vs In-House Recruiter", href: "/guides/fractional-recruiting-vs-in-house-recruiter", desc: "Fully loaded TA salary math vs Kas $5k/$8k retainers, and when Seed-B teams should hire internal TA." },
         { title: "Atlanta Sales Recruiters", href: "/guides/sales-recruiters-atlanta", desc: "The local guide to GTM talent in the Alpharetta tech corridor." },
     ];
 
