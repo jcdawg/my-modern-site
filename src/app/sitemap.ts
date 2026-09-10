@@ -101,6 +101,18 @@ url: `${baseUrl}/contact`,
             priority: 0.9,
         },
         {
+            url: `${baseUrl}/guides/fractional-recruiting-vs-in-house-recruiter`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/guides/fractional-sales-recruiting-vs-contingency`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.9,
+        },
+        {
             url: `${baseUrl}/guides/cost-of-a-bad-hire`,
             lastModified: new Date(),
             changeFrequency: 'weekly',
