@@ -12,6 +12,7 @@ export default function GuidesIndex() {
     const salesGuides = [
         { title: "Top Sales Agencies 2026", href: "/guides/best-sales-recruiting-agencies-2026", desc: "Our annual review of the top firms for B2B sales talent." },
         { title: "How to Hire a VP of Sales", href: "/guides/who-to-hire-vp-sales-startup", desc: "Founder playbook: scorecard, weeks 1–10 process, when to stay AE-led, and fractional vs contingency fees." },
+        { title: "Hire SDRs & AEs Fast", href: "/guides/how-to-hire-saas-sdrs-fast-ramp", desc: "Zero-ramp hiring: motion-match traits, quota-verified numbers, a 4-week scorecard, and comp math." },
         { title: "Top Exec Search Firms", href: "/guides/top-executive-search-firms-sales-leaders", desc: "Best firms for CRO and VP-level sales leadership." },
         { title: "SaaS Sales Recruiters", href: "/guides/best-saas-sales-recruiting-firms", desc: "Specialized firms for high-growth software companies." },
         { title: "Fractional Recruiting", href: "/guides/fractional-recruiting-guide", desc: "Seed-Series B buyer guide: Kas $5k/$8k retainers, fee math vs contingency, when fractional beats agency." },

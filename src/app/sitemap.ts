@@ -113,6 +113,12 @@ url: `${baseUrl}/contact`,
             priority: 0.9,
         },
         {
+            url: `${baseUrl}/guides/how-to-hire-saas-sdrs-fast-ramp`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.9,
+        },
+        {
             url: `${baseUrl}/guides/cost-of-a-bad-hire`,
             lastModified: new Date(),
             changeFrequency: 'weekly',
