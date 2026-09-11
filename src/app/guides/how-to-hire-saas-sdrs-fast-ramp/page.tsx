@@ -395,13 +395,13 @@ export default function HowToHireSaasSdrsFastRamp() {
 
                     <div className="p-10 rounded-3xl bg-navy-900 text-white relative overflow-hidden">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.25),transparent)]" />
-                        <h2 className="text-2xl font-bold mb-4">Need SDR/AE seats filled now?</h2>
+                        <h2 className="text-2xl font-bold mb-4 relative z-10">Need SDR/AE seats filled now?</h2>
                         <p className="text-grey-400 mb-6 max-w-xl leading-relaxed relative z-10">
                             Email chris@thekasgroup.com with your open SDR/AE roles, ACV band, and timeline. You get a motion-matched shortlist and a clear recommendation: fractional, flat success fee, or build in-house.
                         </p>
                         <Link
                             href="/contact"
-                            className="inline-flex items-center gap-2 px-8 py-4 bg-blue-accent text-white font-bold rounded-full hover:bg-blue-hover transition-all"
+                            className="relative z-10 inline-flex items-center gap-2 px-8 py-4 bg-blue-accent text-white font-bold rounded-full hover:bg-blue-hover transition-all"
                         >
                             Contact The Kas Group
                             <ChevronRight className="h-5 w-5" />
