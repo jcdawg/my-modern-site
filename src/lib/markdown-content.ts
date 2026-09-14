@@ -249,7 +249,6 @@ Best when: you will tell us who is worth hunting.
 1. You tell us the seats, the motion, and the timing.
 2. We recommend Seat, Milestone, or Directed Pursuit.
 3. Search runs. You own the data from day one.
-4. AI/ML candidates still pass Ph.D.-led technical review before they reach your team.
 
 - [Book a program conversation](/contact)
 `,

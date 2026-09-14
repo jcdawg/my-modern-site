@@ -65,7 +65,6 @@ export default function Programs() {
         "You tell us the seats, the motion, and the timing.",
         "We recommend Seat, Milestone, or Directed Pursuit.",
         "Search runs. You own the data from day one.",
-        "AI/ML candidates still pass Ph.D.-led technical review before they reach your team.",
     ];
     return (
         <div className="flex flex-col min-h-screen bg-white">
