@@ -18,7 +18,7 @@ export default function Programs() {
             desc: [
                 "Flat monthly fee based on how many roles are open.",
                 "Hire as many people as the search produces that month. The monthly price does not jump per hire.",
-                "Chris works inside your process. You own every name.",
+                "The Kas Group works inside your process. You own every name.",
             ],
             best: "you need capacity, not a one-off req.",
         },
@@ -37,7 +37,7 @@ export default function Programs() {
             blurb: "For teams that want speed and control.",
             desc: [
                 "AI runs the search and returns a list.",
-                "Chris reviews it for fit. You mark who to pursue. Chris goes after those people.",
+                "The Kas Group reviews it for fit. You mark who to pursue. The Kas Group goes after those people.",
                 "You own the list.",
             ],
             best: "you will tell us who is worth hunting.",
@@ -69,10 +69,10 @@ export default function Programs() {
                 <div className="absolute top-0 right-0 -mb-10 -mr-10 w-96 h-96 bg-blue-accent/5 rounded-full blur-3xl" />
                 <div className="mx-auto max-w-4xl text-center relative z-10">
                     <h1 className="font-heading text-3xl font-extrabold tracking-tight text-navy-900 sm:text-5xl mb-6 leading-[1.15]">
-                        Three ways to hire sales leaders.
+                        Three ways to hire sales leaders and AI/ML talent.
                     </h1>
                     <p className="mt-4 text-xl font-medium text-grey-500 md:text-2xl max-w-3xl mx-auto leading-relaxed">
-                        Programs, not contingency. Your company owns the candidate data. Built for tech and SaaS teams in the Southeast and Texas.
+                        Programs, not contingency. Your company owns the candidate data. Built for tech and SaaS teams.
                     </p>
                 </div>
             </section>

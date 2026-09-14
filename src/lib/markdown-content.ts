@@ -201,7 +201,7 @@ Contact chris@thekasgroup.com for guest inquiries and research collaborations.
 
 > Three ways to hire with The Kas Group: monthly hiring capacity, milestone search, or an AI-sourced list. Programs, not contingency. You own the candidate data.
 
-Programs, not contingency. Your company owns the candidate data. Built for tech and SaaS teams in the Southeast and Texas.
+Programs, not contingency. Your company owns the candidate data. Built for tech and SaaS teams.
 
 Most firms rent you a recruiter and keep the database. The Kas Group runs a search inside your process and leaves you with the names. Pick the model that matches how many seats you need to fill.
 
@@ -209,7 +209,7 @@ Most firms rent you a recruiter and keep the database. The Kas Group runs a sear
 
 For teams with more than one open role in sales or AI/ML/data.
 
-Flat monthly fee based on how many roles are open. Hire as many people as the search produces that month. The monthly price does not jump per hire. Chris works inside your process. You own every name.
+Flat monthly fee based on how many roles are open. Hire as many people as the search produces that month. The monthly price does not jump per hire. The Kas Group works inside your process. You own every name.
 
 Best when: you need capacity, not a one-off req.
 
@@ -225,7 +225,7 @@ Best when: you are not ready for a monthly seat and you have one role that canno
 
 For teams that want speed and control.
 
-AI runs the search and returns a list. Chris reviews it for fit. You mark who to pursue. Chris goes after those people. You own the list.
+AI runs the search and returns a list. The Kas Group reviews it for fit. You mark who to pursue. The Kas Group goes after those people. You own the list.
 
 Best when: you will tell us who is worth hunting.
 
