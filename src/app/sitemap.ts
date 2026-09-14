@@ -274,5 +274,11 @@ url: `${baseUrl}/contact`,
             changeFrequency: 'monthly' as const,
             priority: 0.7,
         },
+        {
+            url: `${baseUrl}/programs`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.9,
+        },
     ]
 }

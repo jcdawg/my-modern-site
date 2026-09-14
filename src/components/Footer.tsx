@@ -22,6 +22,11 @@ export default function Footer() {
                         <h3 className="text-sm font-semibold uppercase tracking-wider text-grey-400">Services</h3>
                         <ul className="mt-4 space-y-2">
                             <li>
+                                <Link href="/programs" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    Programs
+                                </Link>
+                            </li>
+                            <li>
                                 <Link href="/recruit/sales" className="text-base text-grey-200 hover:text-white transition-colors">
                                     Sales Recruiting
                                 </Link>

@@ -197,12 +197,67 @@ Visit https://www.thekasgroup.com/guides for the complete interactive library.
 Contact chris@thekasgroup.com for guest inquiries and research collaborations.
 `,
 
+    "/programs": `# Programs | The Kas Group
+
+> Three ways to hire with The Kas Group: monthly hiring capacity, milestone search, or an AI-sourced list. Programs, not contingency. You own the candidate data.
+
+Programs, not contingency. Your company owns the candidate data. Built for tech and SaaS teams in the Southeast and Texas.
+
+Most firms rent you a recruiter and keep the database. The Kas Group runs a search inside your process and leaves you with the names. Pick the model that matches how many seats you need to fill.
+
+## Kas Seat
+
+For teams with more than one open role in sales or AI/ML/data.
+
+Flat monthly fee based on how many roles are open. Hire as many people as the search produces that month. The monthly price does not jump per hire. Chris works inside your process. You own every name.
+
+Best when: you need capacity, not a one-off req.
+
+## Kas Milestone Search
+
+For one critical seat.
+
+Three payments: start the search, hit the agreed number of qualified candidates, the person is hired.
+
+Best when: you are not ready for a monthly seat and you have one role that cannot slip.
+
+## Kas Directed Pursuit
+
+For teams that want speed and control.
+
+AI runs the search and returns a list. Chris reviews it for fit. You mark who to pursue. Chris goes after those people. You own the list.
+
+Best when: you will tell us who is worth hunting.
+
+## Who this is for
+
+- Tech and SaaS companies
+- Founders, CROs, Heads of People
+- Two practices only: sales professionals, and AI/ML/data/analytics
+
+## Who this is not for
+
+- Volume staffing
+- Ten agencies on the same req
+- Anyone who expects The Kas Group to keep the candidate database
+
+## How a program starts
+
+1. You tell us the seats, the motion, and the timing.
+2. We recommend Seat, Milestone, or Directed Pursuit.
+3. Search runs. You own the data from day one.
+4. AI/ML candidates still pass Ph.D.-led technical review before they reach your team.
+
+- [Book a program conversation](/contact)
+`,
+
     "/site-map": `# Sitemap | The Kas Group
 
 > Index of all public pages, services, and hiring guides.
 
 ## Main Pages
 - [Home](/)
+- [Programs](/programs)
 - [About Us](/about)
 - [Brand Facts](/brand-facts)
 - [Resource Hub](/guides)

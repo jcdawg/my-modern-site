@@ -131,7 +131,7 @@ export default function Home() {
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
-              href="/recruit/sales"
+              href="/programs"
               className="text-lg font-bold text-navy-700 transition-colors hover:text-blue-accent flex items-center gap-2"
             >
               See the three programs
