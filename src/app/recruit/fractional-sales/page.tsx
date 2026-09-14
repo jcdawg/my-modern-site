@@ -3,7 +3,7 @@ import { Shield, FileText, Zap, Network, ArrowRightCircle } from "lucide-react";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-    title: "Fractional Sales Recruiting",
+    title: "Kas Seat (Sales): Flat Monthly Sales Hiring",
     description: "Flat monthly hiring capacity for sales teams. Embedded sales hiring on a flat monthly fee, and you own the candidate data.",
     path: "/recruit/fractional-sales",
 });
@@ -31,7 +31,7 @@ const valueProps = [
     },
     {
         name: "Speed & Execution",
-        description: "We cut through internal friction to close roles 2x faster, allowing your leadership to focus on strategy, not sourcing.",
+        description: "We cut through internal friction to close roles faster, allowing your leadership to focus on strategy, not sourcing.",
         icon: Zap,
     },
     {
@@ -49,7 +49,7 @@ export default function FractionalSalesRecruiting() {
             {
                 "@type": "Question",
                 "name": "How does fractional sales recruiting pricing work?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Fractional sales recruiting runs on a flat monthly retainer instead of per-hire contingency fees of 20-30% of first-year OTE. Companies hiring two or more salespeople per quarter typically save 40-60% compared to agency placement fees." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Fractional sales recruiting runs on a flat monthly retainer instead of per-hire contingency fees of 20-30% of first-year OTE." }
             },
             {
                 "@type": "Question",
@@ -141,7 +141,7 @@ export default function FractionalSalesRecruiting() {
                             <div className="space-y-6">
                                 <div>
                                     <p className="text-sm font-semibold text-blue-accent uppercase tracking-wider mb-1">Fees</p>
-                                    <p className="text-lg font-medium text-white">Flat Rate <span className="text-green-400 font-bold ml-2">(40–60% Savings)</span></p>
+                                    <p className="text-lg font-medium text-white">Flat Rate</p>
                                 </div>
                                 <div>
                                     <p className="text-sm font-semibold text-blue-accent uppercase tracking-wider mb-1">Incentives</p>
@@ -153,7 +153,7 @@ export default function FractionalSalesRecruiting() {
                                 </div>
                                 <div>
                                     <p className="text-sm font-semibold text-blue-accent uppercase tracking-wider mb-1">Speed</p>
-                                    <p className="text-lg font-medium text-white text-blue-50">2x Faster Time-to-Hire</p>
+                                    <p className="text-lg font-medium text-white text-blue-50">Faster Time-to-Hire</p>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +250,7 @@ export default function FractionalSalesRecruiting() {
                                 <div className="absolute inset-0 border-4 border-navy-800 rounded-full"></div>
                             </div>
                             <h3 className="text-xl font-bold text-navy-900 mb-2">You Hire (Fast)</h3>
-                            <p className="text-grey-600">You interview only the top 1% and make your selection with confidence.</p>
+                            <p className="text-grey-600">You interview only the top candidates and make your selection with confidence.</p>
                         </div>
                     </div>
                 </div>
@@ -263,7 +263,7 @@ export default function FractionalSalesRecruiting() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How does fractional sales recruiting pricing work?</h4>
-                            <p className="text-grey-600 leading-relaxed">A flat monthly retainer replaces per-hire contingency fees of 20-30% of first-year OTE. Companies hiring two or more salespeople per quarter typically save 40-60% compared to agency placement fees.</p>
+                            <p className="text-grey-600 leading-relaxed">A flat monthly retainer replaces per-hire contingency fees of 20-30% of first-year OTE.</p>
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How does the embedded model work day-to-day?</h4>

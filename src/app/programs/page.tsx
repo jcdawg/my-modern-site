@@ -21,6 +21,7 @@ export default function Programs() {
                 "The Kas Group works inside your process. You own every name.",
             ],
             best: "you need capacity, not a one-off req.",
+            more: { label: "For sales teams, see how the embedded month works", href: "/recruit/fractional-sales" },
         },
         {
             icon: Target,
@@ -33,6 +34,7 @@ export default function Programs() {
                 "Payment three is due when the person is hired.",
             ],
             best: "you are not ready for a monthly seat and you have one role that cannot slip.",
+            more: null,
         },
         {
             icon: Search,
@@ -44,6 +46,7 @@ export default function Programs() {
                 "You own the list.",
             ],
             best: "you will tell us who is worth hunting.",
+            more: null,
         },
     ];
 
@@ -129,6 +132,12 @@ export default function Programs() {
                                 <p className="mt-auto pt-4 border-t border-grey-100 text-grey-500 text-sm leading-relaxed">
                                     <strong className="text-navy-700">Best when:</strong> {program.best}
                                 </p>
+                                {program.more && (
+                                    <Link href={program.more.href} className="mt-3 text-sm font-semibold text-blue-accent hover:underline inline-flex items-center gap-1">
+                                        {program.more.label}
+                                        <ArrowRight className="h-4 w-4" />
+                                    </Link>
+                                )}
                             </div>
                         ))}
                     </div>

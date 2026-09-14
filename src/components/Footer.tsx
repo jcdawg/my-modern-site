@@ -33,7 +33,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link href="/recruit/fractional-sales" className="text-base text-grey-200 hover:text-white transition-colors">
-                                    Fractional Sales
+                                    Kas Seat (Sales)
                                 </Link>
                             </li>
                             <li>
