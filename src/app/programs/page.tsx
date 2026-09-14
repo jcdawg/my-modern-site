@@ -1,6 +1,7 @@
 import { ArrowRight, CheckCircle2, Search, Target, Users, XCircle } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ProgramFitWidget from "@/components/ProgramFitWidget";
 
 export const metadata = pageMetadata({
     title: "Programs | Sales & Technical Recruiting",
@@ -99,6 +100,11 @@ export default function Programs() {
                             Book a program conversation
                             <ArrowRight className="h-5 w-5" />
                         </Link>
+                        <div className="mt-4">
+                            <Link href="#fit" className="text-sm font-semibold text-blue-accent hover:underline">
+                                See which program fits →
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -143,7 +149,11 @@ export default function Programs() {
                     </div>
                 </div>
             </section>
-                        {/* Who this is for / not for */}
+
+            {/* Program Fit widget */}
+            <ProgramFitWidget />
+
+            {/* Who this is for / not for */}
             <section className="py-16 px-6 lg:px-8">
                 <div className="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="p-8 rounded-3xl border border-grey-200 bg-white">
