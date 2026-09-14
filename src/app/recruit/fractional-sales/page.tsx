@@ -4,7 +4,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
     title: "Fractional Sales Recruiting",
-    description: "Hire Top-Tier Enterprise AEs & Sales Managers for 60% Less Than an Agency. Flat-rate pricing, zero onboarding friction.",
+    description: "Flat monthly hiring capacity for sales teams. Embedded sales hiring on a flat monthly fee, and you own the candidate data.",
     path: "/recruit/fractional-sales",
 });
 
@@ -75,10 +75,10 @@ export default function FractionalSalesRecruiting() {
                 </div>
                 <div className="relative mx-auto max-w-7xl px-6 lg:px-8 text-center pt-10">
                     <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl max-w-4xl mx-auto leading-tight">
-                        Hire Top-Tier Enterprise AEs & Sales Managers for <span className="text-blue-accent">60% Less Than an Agency.</span>
+                        Flat monthly hiring capacity for <span className="text-blue-accent">sales teams.</span>
                     </h1>
                     <p className="mt-8 text-xl leading-8 text-grey-200 font-medium max-w-2xl mx-auto">
-                        Deep integration, no onboarding friction, and flat-rate pricing.
+                        Embedded sales hiring on a flat monthly fee, and you own the candidate data.
                     </p>
                     <div className="mt-10 flex items-center justify-center gap-x-6">
                         <Link
@@ -91,7 +91,17 @@ export default function FractionalSalesRecruiting() {
                 </div>
             </div>
 
-
+            {/* Kas Seat mapping banner */}
+            <div className="bg-white border-b border-grey-100 py-6">
+                <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+                    <p className="text-grey-600">
+                        This is <strong className="text-navy-900">Kas Seat</strong> for sales teams.{" "}
+                        <Link href="/programs" className="text-blue-accent font-semibold hover:underline">
+                            See all three programs →
+                        </Link>
+                    </p>
+                </div>
+            </div>
 
             {/* B. The Problem Section ("The Agency Tax") */}
             <div className="py-24 sm:py-32 bg-grey-50">

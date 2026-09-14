@@ -57,7 +57,7 @@ export default function Header() {
                                     Sales Recruiting
                                 </Link>
                                 <Link href="/recruit/fractional-sales" className="block px-4 py-2 text-sm text-gray-700 hover:bg-grey-50 hover:text-blue-accent">
-                                    Fractional Sales
+                                    Kas Seat (Sales)
                                 </Link>
                                 <Link href="/recruit/ai" className="block px-4 py-2 text-sm text-gray-700 hover:bg-grey-50 hover:text-blue-accent">
                                     Data & AI Recruiting
@@ -146,7 +146,7 @@ export default function Header() {
                                 onClick={() => setIsOpen(false)}
                                 className="block rounded-md pl-6 px-3 py-2 text-base font-medium text-navy-600 hover:bg-grey-50 hover:text-blue-accent"
                             >
-                                Fractional Sales
+                                Kas Seat (Sales)
                             </Link>
                             <Link
                                 href="/recruit/ai"
