@@ -41,8 +41,9 @@ export default function Programs() {
             title: "Kas Directed Pursuit",
             blurb: "For teams that want speed and control.",
             desc: [
-                "A search runs and returns a list.",
-                "The Kas Group reviews it for fit. You mark who to pursue. The Kas Group goes after those people.",
+                "A search returns a list.",
+                "The Kas Group reviews it.",
+                "You mark who we hunt.",
                 "You own the list.",
             ],
             best: "you will tell us who is worth hunting.",

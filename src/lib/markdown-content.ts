@@ -229,7 +229,7 @@ Best when: you are not ready for a monthly seat and you have one role that canno
 
 For teams that want speed and control.
 
-A search runs and returns a list. The Kas Group reviews it for fit. You mark who to pursue. The Kas Group goes after those people. You own the list.
+A search returns a list. The Kas Group reviews it. You mark who we hunt. You own the list.
 
 Best when: you will tell us who is worth hunting.
 
