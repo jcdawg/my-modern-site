@@ -14,7 +14,7 @@ export default function Programs() {
         {
             icon: Users,
             title: "Kas Seat",
-            blurb: "For teams with more than one open role in sales or AI/ML/data.",
+            blurb: "For teams with more than one open sales role.",
             desc: [
                 "Flat monthly fee based on how many roles are open.",
                 "Hire as many people as the search produces that month. The monthly price does not jump per hire.",
@@ -27,7 +27,10 @@ export default function Programs() {
             title: "Kas Milestone Search",
             blurb: "For one critical seat.",
             desc: [
-                "Three payments: start the search, hit the agreed number of qualified candidates, the person is hired.",
+                "Three payments tied to milestones, not a monthly retainer.",
+                "Payment one starts the search.",
+                "Payment two unlocks once you receive the agreed number of qualified candidates.",
+                "Payment three is due when the person is hired.",
             ],
             best: "you are not ready for a monthly seat and you have one role that cannot slip.",
         },
@@ -47,7 +50,6 @@ export default function Programs() {
     const forYou = [
         "Tech and SaaS companies",
         "Founders, CROs, Heads of People",
-        "Two practices only: sales professionals, and AI/ML/data/analytics",
     ];
 
     const notForYou = [
@@ -100,11 +102,19 @@ export default function Programs() {
                         {/* Three programs */}
             <section className="py-16 px-6 lg:px-8 bg-grey-50">
                 <div className="mx-auto max-w-6xl">
+                    <div className="text-center mb-12">
+                        <p className="text-blue-accent font-bold uppercase tracking-wider text-sm mb-2">Three programs</p>
+                        <h2 className="text-3xl font-bold text-navy-900">Choose the model that fits your hiring</h2>
+                    </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {programs.map((program) => (
-                            <div key={program.title} className="bg-white p-8 rounded-3xl border border-grey-200 shadow-sm flex flex-col">
-                                <div className="h-14 w-14 rounded-2xl bg-blue-accent/10 flex items-center justify-center text-blue-accent mb-6">
-                                    <program.icon className="h-7 w-7" />
+                        {programs.map((program, i) => (
+                            <div key={program.title} className="relative bg-white p-8 rounded-3xl border border-grey-200 shadow-sm flex flex-col overflow-hidden">
+                                <div className="absolute top-0 left-0 right-0 h-1 bg-blue-accent" />
+                                <div className="flex items-center justify-between mb-6">
+                                    <div className="h-14 w-14 rounded-2xl bg-blue-accent/10 flex items-center justify-center text-blue-accent">
+                                        <program.icon className="h-7 w-7" />
+                                    </div>
+                                    <span className="text-4xl font-extrabold text-grey-200">{String(i + 1).padStart(2, "0")}</span>
                                 </div>
                                 <h2 className="text-2xl font-bold text-navy-900 mb-3">{program.title}</h2>
                                 <p className="text-grey-500 font-semibold leading-relaxed mb-4">{program.blurb}</p>

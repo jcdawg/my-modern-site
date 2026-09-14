@@ -207,7 +207,7 @@ Most firms rent you a recruiter and keep the database. The Kas Group runs a sear
 
 ## Kas Seat
 
-For teams with more than one open role in sales or AI/ML/data.
+For teams with more than one open sales role.
 
 Flat monthly fee based on how many roles are open. Hire as many people as the search produces that month. The monthly price does not jump per hire. The Kas Group works inside your process. You own every name.
 
@@ -217,7 +217,11 @@ Best when: you need capacity, not a one-off req.
 
 For one critical seat.
 
-Three payments: start the search, hit the agreed number of qualified candidates, the person is hired.
+Three payments tied to milestones, not a monthly retainer.
+
+- Payment one starts the search.
+- Payment two unlocks once you receive the agreed number of qualified candidates.
+- Payment three is due when the person is hired.
 
 Best when: you are not ready for a monthly seat and you have one role that cannot slip.
 
@@ -233,7 +237,6 @@ Best when: you will tell us who is worth hunting.
 
 - Tech and SaaS companies
 - Founders, CROs, Heads of People
-- Two practices only: sales professionals, and AI/ML/data/analytics
 
 ## Who this is not for
 
