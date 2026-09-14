@@ -114,7 +114,7 @@ export default function Home() {
       <section className="relative px-6 pt-24 pb-20 md:pt-32 md:pb-32 lg:px-8 bg-gradient-to-br from-grey-50 to-white overflow-hidden">
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-accent/5 rounded-full blur-3xl" />
         <div className="mx-auto max-w-5xl text-center relative z-10">
-          <h1 className="font-heading text-4xl font-extrabold tracking-tight text-navy-900 sm:text-6xl mb-8 leading-[1.15]">
+          <h1 className="font-heading text-3xl font-extrabold tracking-tight text-navy-900 sm:text-4xl mb-6 leading-[1.15]">
             Sales leaders and Ph.D.-vetted AI/ML talent. <br className="hidden md:block" />
             Programs, not contingency. Your company owns the candidate data. <br className="hidden md:block" />
             <span className="text-blue-accent">Built for tech and SaaS teams</span>
@@ -326,12 +326,12 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-6 relative z-10">
           <div className="bg-navy-900 rounded-[3rem] p-12 md:p-20 text-center text-white shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-blue-accent/20 rounded-full blur-3xl" />
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 relative z-10 underline decoration-blue-accent decoration-4 underline-offset-8">Ready to hire? Let&apos;s talk.</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 relative z-10 underline decoration-blue-accent decoration-4 underline-offset-8">Ready to build your hiring program?</h2>
             <Link
               href="/contact"
               className="inline-flex items-center gap-3 px-12 py-6 bg-blue-accent text-white font-black text-xl rounded-full hover:bg-blue-hover hover:scale-105 transition-all shadow-xl shadow-blue-accent/20 relative z-10"
             >
-              Schedule a consultation
+              Book a program conversation
               <ArrowRight className="h-6 w-6" />
             </Link>
           </div>
