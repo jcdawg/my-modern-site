@@ -114,26 +114,27 @@ export default function Home() {
       <section className="relative px-6 pt-24 pb-20 md:pt-32 md:pb-32 lg:px-8 bg-gradient-to-br from-grey-50 to-white overflow-hidden">
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-accent/5 rounded-full blur-3xl" />
         <div className="mx-auto max-w-5xl text-center relative z-10">
-          <h1 className="font-heading text-5xl font-extrabold tracking-tight text-navy-900 sm:text-7xl mb-8 leading-[1.1]">
-            Elite Sales & AI Talent. <br className="hidden md:block" />
-            <span className="text-blue-accent">Vetted by Experts.</span>
+          <h1 className="font-heading text-4xl font-extrabold tracking-tight text-navy-900 sm:text-6xl mb-8 leading-[1.15]">
+            Sales leaders and Ph.D.-vetted AI/ML talent. <br className="hidden md:block" />
+            Programs, not contingency. Your company owns the candidate data. <br className="hidden md:block" />
+            <span className="text-blue-accent">Built for tech and SaaS teams</span>
           </h1>
           <p className="mt-8 text-xl font-medium text-grey-500 md:text-2xl max-w-3xl mx-auto leading-relaxed">
-            We don&apos;t just send resumes. We specialize in two distinct pillars: elite sales talent and highly-vetted AI/Data Engineering. Our sales candidates are proven revenue drivers, while our technical candidates must pass a rigorous Ph.D.-led technical review.
+            Monthly hiring capacity, milestone search, or an AI-sourced list. The Kas Group vets and you direct. You keep the data either way.
           </p>
           <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
             <Link
               href="/contact"
               className="group flex items-center gap-2 rounded-full bg-navy-900 px-10 py-5 text-lg font-bold text-white transition-all hover:bg-blue-accent hover:shadow-xl hover:-translate-y-1"
             >
-              Schedule a consultation
+              Book a program conversation
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
-              href="/methodology"
+              href="/recruit/sales"
               className="text-lg font-bold text-navy-700 transition-colors hover:text-blue-accent flex items-center gap-2"
             >
-              See our methodology
+              See the three programs
               <ChevronRight className="h-5 w-5" />
             </Link>
           </div>
