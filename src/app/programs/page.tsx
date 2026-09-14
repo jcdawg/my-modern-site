@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
     title: "Programs | Sales & Technical Recruiting",
     description:
-        "Three ways to hire with The Kas Group: monthly hiring capacity, milestone search, or an AI-sourced list. Programs, not contingency. You own the candidate data.",
+        "Three ways to hire with The Kas Group: monthly hiring capacity, milestone search, or a list you direct. Programs, not contingency. You own the candidate data.",
     path: "/programs",
 });
 
@@ -41,7 +41,7 @@ export default function Programs() {
             title: "Kas Directed Pursuit",
             blurb: "For teams that want speed and control.",
             desc: [
-                "AI runs the search and returns a list.",
+                "A search runs and returns a list.",
                 "The Kas Group reviews it for fit. You mark who to pursue. The Kas Group goes after those people.",
                 "You own the list.",
             ],
@@ -73,7 +73,7 @@ export default function Programs() {
                 <div className="absolute top-0 right-0 -mb-10 -mr-10 w-96 h-96 bg-blue-accent/5 rounded-full blur-3xl" />
                 <div className="mx-auto max-w-4xl text-center relative z-10">
                     <h1 className="font-heading text-3xl font-extrabold tracking-tight text-navy-900 sm:text-5xl mb-6 leading-[1.15]">
-                        Three ways to hire sales and AI/ML talent.
+                        Three ways to hire sales talent.
                     </h1>
                     <p className="mt-4 text-xl font-medium text-grey-500 md:text-2xl max-w-3xl mx-auto leading-relaxed">
                         Programs, not contingency. Your company owns the candidate data.

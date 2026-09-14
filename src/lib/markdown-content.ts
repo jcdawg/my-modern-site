@@ -199,7 +199,7 @@ Contact chris@thekasgroup.com for guest inquiries and research collaborations.
 
     "/programs": `# Programs | The Kas Group
 
-> Three ways to hire with The Kas Group: monthly hiring capacity, milestone search, or an AI-sourced list. Programs, not contingency. You own the candidate data.
+> Three ways to hire with The Kas Group: monthly hiring capacity, milestone search, or a list you direct. Programs, not contingency. You own the candidate data.
 
 Programs, not contingency. Your company owns the candidate data.
 
@@ -229,7 +229,7 @@ Best when: you are not ready for a monthly seat and you have one role that canno
 
 For teams that want speed and control.
 
-AI runs the search and returns a list. The Kas Group reviews it for fit. You mark who to pursue. The Kas Group goes after those people. You own the list.
+A search runs and returns a list. The Kas Group reviews it for fit. You mark who to pursue. The Kas Group goes after those people. You own the list.
 
 Best when: you will tell us who is worth hunting.
 
