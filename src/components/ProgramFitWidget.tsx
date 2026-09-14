@@ -54,6 +54,7 @@ const RUN_OPTIONS = [
     { id: "monthly", label: "Embedded capacity on a monthly fee (hire as many as the search produces)" },
     { id: "milestone", label: "One search, paid at start / qualified slate / hire" },
     { id: "list", label: "Send us a list. We mark who to hunt." },
+    { id: "not-sure", label: "Not sure" },
 ];
 
 const BARS: { key: ProgramKey; label: string }[] = [
@@ -63,6 +64,9 @@ const BARS: { key: ProgramKey; label: string }[] = [
 ];
 
 function route(seats: string, run: string): ProgramKey {
+    if (run === "not-sure") {
+        return seats === "one" ? "milestone" : "seat";
+    }
     if (seats === "four-plus") return "seat";
     if (run === "monthly") return "seat";
     if (run === "list") return "directed";
@@ -75,7 +79,7 @@ export default function ProgramFitWidget() {
     const [hiring, setHiring] = useState<string | null>(null);
     const [run, setRun] = useState<string | null>(null);
 
-    const answered = Boolean(seats && hiring && run);
+    const answered = Boolean(seats && run);
     const program: ProgramKey = seats && run ? route(seats, run) : "seat";
     const result = RESULTS[program];
 
