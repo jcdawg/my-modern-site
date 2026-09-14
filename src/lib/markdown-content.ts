@@ -201,7 +201,7 @@ Contact chris@thekasgroup.com for guest inquiries and research collaborations.
 
 > Three ways to hire with The Kas Group: monthly hiring capacity, milestone search, or an AI-sourced list. Programs, not contingency. You own the candidate data.
 
-Programs, not contingency. Your company owns the candidate data. Built for tech and SaaS teams.
+Programs, not contingency. Your company owns the candidate data.
 
 Most firms rent you a recruiter and keep the database. The Kas Group runs a search inside your process and leaves you with the names. Pick the model that matches how many seats you need to fill.
 

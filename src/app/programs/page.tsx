@@ -72,7 +72,7 @@ export default function Programs() {
                         Three ways to hire sales leaders and AI/ML talent.
                     </h1>
                     <p className="mt-4 text-xl font-medium text-grey-500 md:text-2xl max-w-3xl mx-auto leading-relaxed">
-                        Programs, not contingency. Your company owns the candidate data. Built for tech and SaaS teams.
+                        Programs, not contingency. Your company owns the candidate data.
                     </p>
                 </div>
             </section>
