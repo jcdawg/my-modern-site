@@ -101,6 +101,12 @@ url: `${baseUrl}/contact`,
             priority: 0.9,
         },
         {
+            url: `${baseUrl}/guides/fractional-sales-recruiting-cost`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.9,
+        },
+        {
             url: `${baseUrl}/guides/fractional-recruiting-vs-in-house-recruiter`,
             lastModified: new Date(),
             changeFrequency: 'weekly',

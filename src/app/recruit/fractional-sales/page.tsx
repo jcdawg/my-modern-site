@@ -277,6 +277,38 @@ export default function FractionalSalesRecruiting() {
                 </div>
             </div>
 
+
+            {/* Read next */}
+            <div className="py-16 bg-white border-t border-grey-100">
+                <div className="mx-auto max-w-4xl px-6 lg:px-8">
+                    <h2 className="text-2xl font-bold tracking-tight text-navy-900 sm:text-3xl mb-6">Read next</h2>
+                    <p className="text-grey-600 leading-relaxed mb-6">
+                        Building the buy case for fractional sales recruiting? Start with pricing, then pick your comparison:
+                    </p>
+                    <ul className="space-y-3 text-grey-600 leading-relaxed">
+                        <li>
+                            <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting cost</Link>
+                            {" "}- Tier 1 $5k/mo, Tier 2 $8k/mo, flat success fees
+                        </li>
+                        <li>
+                            <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting vs contingency</Link>
+                            {" "}- fee math vs 20-30% agencies
+                        </li>
+                        <li>
+                            <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline font-semibold">Fractional recruiting vs in-house recruiter</Link>
+                            {" "}- retainer vs headcount
+                        </li>
+                        <li>
+                            <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">Fractional recruiting guide</Link>
+                            {" "}- what it is and when Seed-B startups use it
+                        </li>
+                    </ul>
+                    <p className="text-grey-600 mt-6">
+                        Full menu: <Link href="/programs" className="text-blue-accent hover:underline font-semibold">Programs</Link>.
+                    </p>
+                </div>
+            </div>
+
             {/* F. CTA Section */}
             <div className="bg-white py-24 sm:py-32">
                 <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center text-navy-900">
