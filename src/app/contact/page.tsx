@@ -1,13 +1,14 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { Mail, MapPin, Clock, ChevronRight, CalendarClock } from "lucide-react";
 import ContactForm from "./ContactForm";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: "Contact",
     description:
         "Contact The Kas Group to hire elite B2B SaaS sales leaders or Ph.D.-vetted AI/ML and data engineering talent. Reach Chris Stinson directly.",
-};
+    path: "/contact",
+});
 
 const contactMethods = [
     {

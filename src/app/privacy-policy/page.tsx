@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: "Privacy Policy",
     description:
         "The Kas Group's privacy policy explains what information we collect (including via Google Analytics), how we use it, and the choices you have about your data.",
-};
+    path: "/privacy-policy",
+});
 
 const sections = [
     {

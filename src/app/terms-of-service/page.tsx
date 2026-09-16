@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
     title: "Terms of Service",
     description:
         "The Kas Group's terms of service govern the use of our website and the recruiting services we provide.",
-};
+    path: "/terms-of-service",
+});
 
 const sections = [
     {

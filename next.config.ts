@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Prefer non-trailing-slash URLs sitewide (matches sitemap canonicals).
+  // Note: the homepage root path is always "/" at the HTTP layer, so
+  // https://www.thekasgroup.com and https://www.thekasgroup.com/ both 200
+  // on Vercel; non-root paths get slash → no-slash permanent redirects.
+  trailingSlash: false,
   turbopack: {
     root: "./",
   },
@@ -38,6 +43,11 @@ const nextConfig: NextConfig = {
       {
         source: "/contact-us",
         destination: "/contact",
+        permanent: true,
+      },
+      {
+        source: "/unbundled",
+        destination: "/programs",
         permanent: true,
       },
       {
