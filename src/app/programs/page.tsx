@@ -181,6 +181,38 @@ export default function Programs() {
                 </div>
             </section>
 
+
+            {/* Read next: fractional sales */}
+            <section className="py-16 px-6 lg:px-8 bg-grey-50 border-t border-grey-100">
+                <div className="mx-auto max-w-4xl">
+                    <h2 className="text-2xl font-bold text-navy-900 mb-6">Read next: fractional sales recruiting</h2>
+                    <p className="text-grey-600 leading-relaxed mb-6">
+                        If you are weighing Kas Seat / fractional GTM against agencies or a first recruiter hire:
+                    </p>
+                    <ul className="space-y-3 text-grey-600 leading-relaxed">
+                        <li>
+                            <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting cost</Link>
+                            {" "}- exact Tier 1 / Tier 2 and flat fees
+                        </li>
+                        <li>
+                            <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting vs contingency</Link>
+                            {" "}- 20-30% fee math on AE and VP packages
+                        </li>
+                        <li>
+                            <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline font-semibold">Fractional recruiting vs in-house recruiter</Link>
+                            {" "}- $100k-$160k fully loaded vs retainer
+                        </li>
+                        <li>
+                            <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">Fractional recruiting guide</Link>
+                            {" "}- when fractional fits Seed through Series B
+                        </li>
+                    </ul>
+                    <p className="text-grey-600 mt-6">
+                        Product deep link: <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting</Link>.
+                    </p>
+                </div>
+            </section>
+
             {/* How a program starts */}
             <section className="py-16 px-6 lg:px-8 bg-navy-900 text-white">
                 <div className="mx-auto max-w-4xl">
