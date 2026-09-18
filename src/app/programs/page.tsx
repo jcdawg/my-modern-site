@@ -15,24 +15,23 @@ export default function Programs() {
         {
             icon: Users,
             title: "Kas Seat",
-            blurb: "For teams with more than one open sales role.",
+            blurb: "Monthly sales-fractional capacity. Tech roles are never monthly.",
             desc: [
-                "Flat monthly fee based on how many roles are open.",
-                "Hire as many people as the search produces that month. The monthly price does not jump per hire.",
+                "Normally $5,000–$8,000/mo based on how many sales roles are open; up to $5,000–$10,000/mo when the seat covers senior AE+ capacity.",
+                "Hire as many people as the search produces that month. The monthly price does not jump per hire. Zero success fees on Seat.",
                 "The Kas Group works inside your process. You own every name.",
             ],
-            best: "you need capacity, not a one-off req.",
+            best: "you need sales hiring capacity, not a one-off req.",
             more: { label: "For sales teams, see how the embedded month works", href: "/recruit/fractional-sales" },
         },
         {
             icon: Target,
             title: "Kas Milestone Search",
-            blurb: "For one critical seat.",
+            blurb: "Sales success or retained search for one critical seat. Not monthly.",
             desc: [
                 "Three payments tied to milestones, not a monthly retainer.",
-                "Payment one starts the search.",
-                "Payment two unlocks once you receive the agreed number of qualified candidates.",
-                "Payment three is due when the person is hired.",
+                "Example fees (not a % of OTE): SDR/BDR $5,000; AE $7,500; Senior AE / Sales Manager $10,000. Leadership / VP / CRO = quote.",
+                "Payment one starts the search. Payment two unlocks once you receive the agreed number of qualified candidates. Payment three is due when the person is hired.",
             ],
             best: "you are not ready for a monthly seat and you have one role that cannot slip.",
             more: null,
@@ -40,12 +39,12 @@ export default function Programs() {
         {
             icon: Search,
             title: "Kas Directed Pursuit",
-            blurb: "For teams that want speed and control.",
+            blurb: "List-driven / outbound search. Pricing on request.",
             desc: [
                 "A search returns a list.",
                 "The Kas Group reviews it.",
                 "You mark who we hunt.",
-                "You own the list.",
+                "You own the list. No published price list for Directed Pursuit.",
             ],
             best: "you will tell us who is worth hunting.",
             more: null,
@@ -192,7 +191,7 @@ export default function Programs() {
                     <ul className="space-y-3 text-grey-600 leading-relaxed">
                         <li>
                             <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting cost</Link>
-                            {" "}- exact Tier 1 / Tier 2 and flat fees
+                            {" "}- Kas Seat $5k–$8k/mo and Milestone example fees
                         </li>
                         <li>
                             <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting vs contingency</Link>

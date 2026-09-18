@@ -16,7 +16,7 @@ export default function GuidesIndex() {
         { title: "Top Exec Search Firms", href: "/guides/top-executive-search-firms-sales-leaders", desc: "Best firms for CRO and VP-level sales leadership." },
         { title: "SaaS Sales Recruiters", href: "/guides/best-saas-sales-recruiting-firms", desc: "Specialized firms for high-growth software companies." },
         { title: "Fractional Recruiting", href: "/guides/fractional-recruiting-guide", desc: "What fractional recruiting is for Seed-Series B GTM, when it fits, and how Kas engagements run week to week." },
-        { title: "Fractional Sales Recruiting Cost", href: "/guides/fractional-sales-recruiting-cost", desc: "Exact Kas pricing: Tier 1 $5k/mo, Tier 2 $8k/mo, flat SDR $5k / AE $7.5k / Sr AE-SM $10k." },
+        { title: "Fractional Sales Recruiting Cost", href: "/guides/fractional-sales-recruiting-cost", desc: "Exact Kas pricing: Kas Seat at $5,000/mo $5k/mo, Kas Seat at $8,000/mo $8k/mo, flat SDR $5k / AE $7.5k / Sr AE-SM $10k." },
         { title: "Fractional vs Contingency Fees", href: "/guides/fractional-sales-recruiting-vs-contingency", desc: "Side-by-side fee math for Kas fractional retainers vs 20-30% contingency on AE and VP packages." },
         { title: "Fractional vs In-House Recruiter", href: "/guides/fractional-recruiting-vs-in-house-recruiter", desc: "Fully loaded TA salary math vs Kas $5k/$8k retainers, and when Seed-B teams should hire internal TA." },
         { title: "Atlanta Sales Recruiters", href: "/guides/sales-recruiters-atlanta", desc: "The local guide to GTM talent in the Alpharetta tech corridor." },

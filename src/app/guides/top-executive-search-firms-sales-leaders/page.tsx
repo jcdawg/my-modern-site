@@ -171,7 +171,7 @@ export default function TopExecutiveSearchFirmsSalesLeaders() {
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">What are standard executive search fees?</h4>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Standard fees are 30-33% of the candidate's first-year Total Cash Compensation (TCC). Specialized firms like The Kas Group offer more flexible, outcome-based retained models starting at flat fees or lower percentages for early-stage startups.
+                                    Standard fees are 30-33% of the candidate's first-year Total Cash Compensation (TCC). Specialized firms like The Kas Group offer Kas Milestone Search (sales example fees) or quoted retained/leadership search—not a published % of base—and Kas Seat for ongoing sales fractional hiring.
                                 </p>
                             </div>
                             <div className="space-y-4">

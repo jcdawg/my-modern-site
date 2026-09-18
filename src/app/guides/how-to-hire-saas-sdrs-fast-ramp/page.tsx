@@ -59,7 +59,7 @@ export default function HowToHireSaasSdrsFastRamp() {
                 name: "Should a Seed-Series B team use fractional hiring to fill SDR/AE seats?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "For bursty, quota-driven SDR/AE volume, fractional sales hiring covers it without paying for a full-time desk. The Kas Group fractional retainers have zero success fees (Tier 1 $5,000/mo up to 2 Seed/A roles; Tier 2 $8,000/mo up to 5 GTM roles), with flat success fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) as a separate per-hire option.",
+                    text: "For bursty, quota-driven SDR/AE volume, fractional sales hiring covers it without paying for a full-time desk. The Kas Group fractional retainers have zero success fees (Kas Seat at $5,000/mo up to 2 Seed/A roles; Kas Seat at $8,000/mo up to 5 GTM roles), with Milestone Search example fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) as a separate per-hire option.",
                 },
             },
         ],
@@ -99,7 +99,7 @@ export default function HowToHireSaasSdrsFastRamp() {
         { q: "Is this a bursty sprint or a permanent desk?", lean: "Sprint = fractional, permanent = in-house" },
         { q: "Does our comp make month 1-3 winnable for a new hire?", lean: "Ramp quotas" },
         { q: "Do we have a written 30-day ramp plan and a named owner?", lean: "Onboarding sprint" },
-        { q: "Are we paying for a full desk to fill 2-5 seats?", lean: "Fractional or flat success fee" },
+        { q: "Are we paying for a full desk to fill 2-5 seats?", lean: "Fractional or Milestone Search example fee" },
     ];
     return (
         <div className="flex flex-col min-h-screen bg-white">
@@ -141,7 +141,7 @@ export default function HowToHireSaasSdrsFastRamp() {
                             <strong className="text-white">the motion you already run</strong>, not for generic sales talent. A zero-ramp candidate has three markers: a matching activity pattern (same call volume and pipeline stage),{" "}
                             <strong className="text-white">quota-verified numbers</strong> (not just &quot;I hit 110%&quot;), and a playbook that fits your offer and ACV band. Budget a realistic ramp (SDRs handle volume in{" "}
                             <strong className="text-white">2-4 weeks</strong>, AEs reach full quota in{" "}
-                            <strong className="text-white">60-90 days</strong>) and protect it with a written 30-day sprint and ramp-friendly comp. For Seed through Series B with bursty volume, fractional sales hiring covers SDR/AE seats at flat success fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) or a fractional retainer with zero success fees, instead of paying for a full-time desk.
+                            <strong className="text-white">60-90 days</strong>) and protect it with a written 30-day sprint and ramp-friendly comp. For Seed through Series B with bursty volume, fractional sales hiring covers SDR/AE seats at Milestone Search example fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) or a fractional retainer with zero success fees, instead of paying for a full-time desk.
                         </p>
                     </div>
                     <div className="space-y-8">
@@ -323,9 +323,9 @@ export default function HowToHireSaasSdrsFastRamp() {
                         </h2>
                         <p className="text-grey-600 leading-relaxed">
                             For Seed through Series B with bursty, quota-driven SDR/AE volume, fractional sales hiring covers the seats without a full-time headcount. The Kas Group fractional retainers are{" "}
-                            <strong>$5,000/mo</strong> (Tier 1, up to 2 Seed/A roles) or{" "}
-                            <strong>$8,000/mo</strong> (Tier 2, up to 5 GTM roles) with{" "}
-                            <strong>zero success fees</strong>, and pause month to month. Separate per-hire flat success fees are SDR $5k, AE $7.5k, Sr AE/SM $10k. For the full model, see the{" "}
+                            <strong>$5,000/mo</strong> (Kas Seat at $5,000/mo, up to 2 Seed/A roles) or{" "}
+                            <strong>$8,000/mo</strong> (Kas Seat at $8,000/mo, up to 5 GTM roles) with{" "}
+                            <strong>zero success fees</strong>, and pause month to month. Separate per-hire Milestone Search example fees are SDR $5k, AE $7.5k, Sr AE/SM $10k. For the full model, see the{" "}
                             <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline">
                                 fractional recruiting guide
                             </Link>
@@ -387,7 +387,7 @@ export default function HowToHireSaasSdrsFastRamp() {
                             <div className="space-y-4">
                                 <h3 className="font-bold text-navy-900 text-lg">Should a Seed-Series B team use fractional hiring for SDR/AE seats?</h3>
                                 <p className="text-grey-600 leading-relaxed">
-                                    For bursty, quota-driven volume, fractional sales hiring covers it without paying for a full-time desk. Kas fractional retainers have zero success fees (Tier 1 $5,000/mo up to 2 Seed/A roles; Tier 2 $8,000/mo up to 5 GTM roles), with flat success fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) as a separate option.
+                                    For bursty, quota-driven volume, fractional sales hiring covers it without paying for a full-time desk. Kas fractional retainers have zero success fees (Kas Seat at $5,000/mo up to 2 Seed/A roles; Kas Seat at $8,000/mo up to 5 GTM roles), with Milestone Search example fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) as a separate option.
                                 </p>
                             </div>
                         </div>
@@ -397,7 +397,7 @@ export default function HowToHireSaasSdrsFastRamp() {
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.25),transparent)]" />
                         <h2 className="text-2xl font-bold mb-4 relative z-10">Need SDR/AE seats filled now?</h2>
                         <p className="text-grey-400 mb-6 max-w-xl leading-relaxed relative z-10">
-                            Email chris@thekasgroup.com with your open SDR/AE roles, ACV band, and timeline. You get a motion-matched shortlist and a clear recommendation: fractional, flat success fee, or build in-house.
+                            Email chris@thekasgroup.com with your open SDR/AE roles, ACV band, and timeline. You get a motion-matched shortlist and a clear recommendation: fractional, Milestone Search example fee, or build in-house.
                         </p>
                         <Link
                             href="/contact"

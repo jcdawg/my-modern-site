@@ -26,7 +26,7 @@ export default function SalesRecruitersAtlanta() {
             {
                 "@type": "Question",
                 "name": "How much do sales recruiters in Atlanta charge?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Most charge contingency fees of 20-30% of first-year OTE. The Kas Group offers retained placements starting around $25K and fractional monthly retainers for Atlanta companies hiring multiple salespeople per year." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Most charge contingency fees of 20-30% of first-year OTE. The Kas Group offers Kas Seat (monthly sales fractional) and Milestone Search for Atlanta companies hiring salespeople; industry retained floors around $25K are market context, not our published Seat/Milestone list." }
             },
             {
                 "@type": "Question",
@@ -135,7 +135,7 @@ export default function SalesRecruitersAtlanta() {
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much do sales recruiters in Atlanta charge?</h4>
-                                <p className="text-grey-600 leading-relaxed">Most charge contingency fees of 20-30% of first-year OTE. The Kas Group offers retained placements starting around $25K and fractional monthly retainers for Atlanta companies hiring multiple salespeople per year.</p>
+                                <p className="text-grey-600 leading-relaxed">Most charge contingency fees of 20-30% of first-year OTE. The Kas Group offers Kas Seat (monthly sales fractional) and Milestone Search for Atlanta companies hiring salespeople; industry retained floors around $25K are market context, not our published Seat/Milestone list.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Does The Kas Group place sales talent outside Atlanta?</h4>

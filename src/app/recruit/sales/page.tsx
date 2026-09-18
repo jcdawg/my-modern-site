@@ -41,7 +41,7 @@ export default function SalesRecruiting() {
             {
                 "@type": "Question",
                 "name": "What does sales recruiting cost?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Retained placements start around $25K and scale with seniority. Companies hiring at volume can switch to a flat fractional monthly retainer and eliminate per-hire contingency fees entirely." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Sales hiring runs on Kas programs: Seat (monthly fractional, normally $5k–$8k/mo), Milestone Search (example fees SDR $5k / AE $7.5k / Sr AE·SM $10k; leadership quote), or Directed Pursuit. Contingency remains an option. Industry retained search often starts around $25k—that is market context, not a Kas Seat/Milestone list price." }
             }
         ]
     };
@@ -151,7 +151,7 @@ export default function SalesRecruiting() {
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">What does sales recruiting cost?</h4>
-                            <p className="text-grey-600 leading-relaxed">Retained placements start around $25K and scale with seniority. Companies hiring at volume can switch to a flat fractional monthly retainer and eliminate per-hire contingency fees entirely.</p>
+                            <p className="text-grey-600 leading-relaxed">Sales hiring runs on Kas programs: Seat (monthly fractional, normally $5k–$8k/mo), Milestone Search (example fees SDR $5k / AE $7.5k / Sr AE·SM $10k; leadership quote), or Directed Pursuit. Contingency remains an option. Industry retained search often starts around $25k—that is market context, not a Kas Seat/Milestone list price.</p>
                         </div>
                     </div>
                 </div>

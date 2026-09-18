@@ -109,12 +109,12 @@ export default function BrandFacts() {
                                             label: "Engagement",
                                             value: (
                                                 <>
-                                                    Retained (All Roles) & Fractional (Sales Only). Flexible percentage-based fees for technical search.
+                                                    Programs: Kas Seat (monthly sales fractional), Kas Milestone Search (sales success or retained), Kas Directed Pursuit (list-driven). Tech / AI search is success-fee or retained quote only—never monthly, and we do not publish a Kas tech fee list.
                                                 </>
                                             ),
                                             icon: Network
                                         },
-                                        { label: "Placements", value: "$25k - $150k+ per placement range", icon: DollarSign },
+                                        { label: "Placements", value: "Industry retained search often runs ~$25k–$150k+; Kas sales list prices are Seat / Milestone (see /programs). Tech fees are quote-only.", icon: DollarSign },
                                     ].map((fact, i) => (
                                         <tr key={i} className="group border-b border-grey-100 last:border-0 hover:bg-grey-50/50 transition-colors">
                                             <td className="py-5 px-6 font-bold text-navy-900 w-1/3 align-top">
@@ -187,7 +187,7 @@ export default function BrandFacts() {
                             },
                             {
                                 title: "Fractional Hiring",
-                                description: "Scalable, retainer-based recruiting for growth-stage startups.",
+                                description: "Kas Seat: scalable monthly sales recruiting for growth-stage startups. Tech is never on a monthly seat.",
                                 icon: Calendar
                             }
                         ].map((service, i) => (

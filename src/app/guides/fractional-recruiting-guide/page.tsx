@@ -34,7 +34,7 @@ export default function FractionalRecruitingGuide() {
                 name: "When should a Seed startup use fractional recruiting?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "When you are hiring your first AE/SDR pair, or any specialized seat where a 25% fee on OTE hurts and you want a partner who understands SaaS GTM. Tier 1 ($5,000/mo, up to 2 roles) is built for that stage.",
+                    text: "When you are hiring your first AE/SDR pair, or any specialized seat where a 25% fee on OTE hurts and you want a partner who understands SaaS GTM. Kas Seat at $5,000/mo ($5,000/mo, up to 2 roles) is built for that stage.",
                 },
             },
             {
@@ -47,10 +47,10 @@ export default function FractionalRecruitingGuide() {
             },
             {
                 "@type": "Question",
-                name: "Fractional or flat success fee, which should I pick?",
+                name: "Fractional or Milestone Search example fee, which should I pick?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Flat success fee (SDR $5,000 / AE $7,500 / Senior AE or Sales Manager $10,000) for a single clear seat through Sales Manager. Director, VP, and CRO are specialist/retained quote only. Fractional when you have multiple GTM seats or need ongoing embedded search.",
+                    text: "Milestone Search example fee (SDR $5,000 / AE $7,500 / Senior AE or Sales Manager $10,000) for a single clear seat through Sales Manager. Director, VP, and CRO are specialist/retained quote only. Fractional when you have multiple GTM seats or need ongoing embedded search.",
                 },
             },
             {
@@ -96,7 +96,7 @@ export default function FractionalRecruitingGuide() {
                             TL;DR
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium relative z-10">
-                            Fractional recruiting is a month-to-month retainer. An external recruiting partner embeds as your TA lead without a full-time hire. For Seed-Series B GTM, Kas prices fractional sales recruiting at <strong>$5,000/mo</strong> (up to 2 Seed/Series A roles) or <strong>$8,000/mo</strong> (up to 5 scaling GTM roles) with <strong>zero success fees</strong>. Use fractional when you have specialized seats ahead and want dedicated bandwidth. Use a flat success fee for one clear SDR/AE/SM seat. Use specialist quote for Director/VP/CRO.
+                            Fractional recruiting is a month-to-month retainer. An external recruiting partner embeds as your TA lead without a full-time hire. For Seed-Series B GTM, Kas prices fractional sales recruiting at <strong>$5,000/mo</strong> (up to 2 Seed/Series A roles) or <strong>$8,000/mo</strong> (up to 5 scaling GTM roles) with <strong>zero success fees</strong>. Use fractional when you have specialized seats ahead and want dedicated bandwidth. Use a Milestone Search example fee for one clear SDR/AE/SM seat. Use specialist quote for Director/VP/CRO.
                         </p>
                         <p className="text-grey-300 leading-relaxed mt-4 relative z-10">
                             Full price list: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales recruiting cost</Link>. Product: <Link href="/recruit/fractional-sales" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales</Link>.
@@ -168,12 +168,12 @@ export default function FractionalRecruitingGuide() {
                                     <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">Seed</td>
                                             <td className="py-4 px-6 text-grey-600">First AE, maybe SDR; founder still closes</td>
-                                            <td className="py-4 px-6 text-grey-600">Strong. Tier 1 beats paying 25% on your first AE.</td>
+                                            <td className="py-4 px-6 text-grey-600">Strong. Kas Seat at $5,000/mo beats paying 25% on your first AE.</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">Series A</td>
                                             <td className="py-4 px-6 text-grey-600">AE pod + SDR; first Sales Manager questions</td>
-                                            <td className="py-4 px-6 text-grey-600">Strong. Tier 1 to Tier 2 as volume rises.</td>
+                                            <td className="py-4 px-6 text-grey-600">Strong. Seat $5k to Seat $8k as volume rises.</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">Series B</td>
@@ -197,13 +197,13 @@ export default function FractionalRecruitingGuide() {
                             <li>You refuse OTE-percentage invoices on $150k-$350k packages</li>
                         </ul>
 
-                        <h3 className="text-xl font-bold text-navy-900">Stay on flat success fee (or contingency) when</h3>
+                        <h3 className="text-xl font-bold text-navy-900">Stay on Milestone Search example fee (or contingency) when</h3>
                         <ul className="space-y-2 text-grey-600 leading-relaxed list-disc pl-6">
                             <li>Exactly one clear backfill and no follow-on seats</li>
                             <li>The JD is stable and the market is liquid</li>
                             <li>Seat is SDR/AE/Sales Manager and a flat sticker fits better than a retainer</li>
                         </ul>
-                        <p className="text-grey-600 leading-relaxed">Flat fees at Kas: SDR <strong>$5,000</strong>, AE <strong>$7,500</strong>, Senior AE / Sales Manager <strong>$10,000</strong>. Director / VP / CRO: quote only. Details: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">cost guide</Link>.</p>
+                        <p className="text-grey-600 leading-relaxed">Milestone example fees at Kas: SDR <strong>$5,000</strong>, AE <strong>$7,500</strong>, Senior AE / Sales Manager <strong>$10,000</strong>. Director / VP / CRO: quote only. Details: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">cost guide</Link>.</p>
                     </div>
 
                     <div className="space-y-8">
@@ -237,7 +237,7 @@ export default function FractionalRecruitingGuide() {
                                 <span className="shrink-0 h-10 w-10 rounded-full bg-blue-accent text-white font-bold flex items-center justify-center">4</span>
                                 <div>
                                     <h3 className="text-lg font-bold text-navy-900">Month boundary: Keep or pause</h3>
-                                    <p className="text-grey-600 leading-relaxed">Month-to-month. Scale to Tier 2 when you add seats. Pause when the pod is full.</p>
+                                    <p className="text-grey-600 leading-relaxed">Month-to-month. Scale Seat capacity when you add seats. Pause when the pod is full.</p>
                                 </div>
                             </li>
                         </ol>
@@ -252,7 +252,7 @@ export default function FractionalRecruitingGuide() {
                         <p className="text-grey-600 leading-relaxed">Most &quot;fractional recruiting for startups&quot; content is written for generic TA. Fine for ops. Thin for seats that move ARR.</p>
                         <ol className="space-y-4 list-decimal pl-6 text-grey-600 leading-relaxed">
                             <li><strong className="text-navy-900">Elite B2B SaaS sales / GTM recruiting.</strong> SDRs through VP Sales. Scorecards built on quota, ACV, and motion fit. Product: <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline">fractional sales</Link>.</li>
-                            <li><strong className="text-navy-900">Transparent GTM pricing.</strong> $5k / $8k retainers or $5k-$10k flat success fees through Sales Manager. Not 20-30% surprise math. Director/VP/CRO: quote only. List: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">cost</Link>.</li>
+                            <li><strong className="text-navy-900">Transparent GTM pricing.</strong> $5k / $8k retainers or $5k-$10k Milestone Search example fees through Sales Manager. Not 20-30% surprise math. Director/VP/CRO: quote only. List: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">cost</Link>.</li>
                             <li><strong className="text-navy-900">Founded 2014.</strong> Chris Stinson. Alpharetta, GA. chris@thekasgroup.com.</li>
                         </ol>
                         <p className="text-grey-600 leading-relaxed">Programs menu: <Link href="/programs" className="text-blue-accent hover:underline">/programs</Link>.</p>
@@ -276,7 +276,7 @@ export default function FractionalRecruitingGuide() {
 
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">When should a Seed startup use fractional recruiting?</h3>
-                            <p className="text-grey-600 leading-relaxed">When you are hiring your first AE/SDR pair, or any specialized seat where a 25% fee on OTE hurts and you want a partner who understands SaaS GTM. Tier 1 ($5,000/mo, up to 2 roles) is built for that stage.</p>
+                            <p className="text-grey-600 leading-relaxed">When you are hiring your first AE/SDR pair, or any specialized seat where a 25% fee on OTE hurts and you want a partner who understands SaaS GTM. Kas Seat at $5,000/mo ($5,000/mo, up to 2 roles) is built for that stage.</p>
                         </div>
 
                         <div className="space-y-3">
@@ -285,8 +285,8 @@ export default function FractionalRecruitingGuide() {
                         </div>
 
                         <div className="space-y-3">
-                            <h3 className="text-xl font-bold text-navy-900">Fractional or flat success fee, which should I pick?</h3>
-                            <p className="text-grey-600 leading-relaxed">Flat success fee (SDR $5,000 / AE $7,500 / Senior AE or Sales Manager $10,000) for a single clear seat through Sales Manager. Director, VP, and CRO are specialist/retained quote only. Fractional when you have multiple GTM seats or need ongoing embedded search. Price list: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">cost</Link>.</p>
+                            <h3 className="text-xl font-bold text-navy-900">Fractional or Milestone Search example fee, which should I pick?</h3>
+                            <p className="text-grey-600 leading-relaxed">Milestone Search example fee (SDR $5,000 / AE $7,500 / Senior AE or Sales Manager $10,000) for a single clear seat through Sales Manager. Director, VP, and CRO are specialist/retained quote only. Fractional when you have multiple GTM seats or need ongoing embedded search. Price list: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">cost</Link>.</p>
                         </div>
 
                         <div className="space-y-3">
@@ -319,7 +319,7 @@ export default function FractionalRecruitingGuide() {
 
                     <div className="p-10 rounded-[2rem] bg-navy-900 text-white text-center space-y-6 shadow-2xl">
                         <h2 className="text-3xl font-bold">Ready to map fractional to your open seats?</h2>
-                        <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">Email chris@thekasgroup.com. Send stage, open roles, and target packages. For AE/SDR/SM under fractional you get a free market scan in 48-72 hours and a clear recommend: Tier 1, Tier 2, flat success fee, or specialist/retained quote for leadership.</p>
+                        <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">Email chris@thekasgroup.com. Send stage, open roles, and target packages. For AE/SDR/SM under fractional you get a free market scan in 48-72 hours and a clear recommend: Kas Seat at $5,000/mo, Kas Seat at $8,000/mo, Milestone Search example fee, or specialist/retained quote for leadership.</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/contact" className="inline-flex items-center justify-center rounded-full bg-blue-accent px-8 py-4 font-bold text-white hover:bg-blue-hover transition-all">
                                 Email chris@thekasgroup.com
