@@ -17,7 +17,7 @@ type ResultCopy = {
 const RESULTS: Record<ProgramKey, ResultCopy> = {
     seat: {
         programName: "Kas Seat",
-        line: "Flat monthly capacity. Price is set by how many roles are open, not by each hire. You own every name.",
+        line: "Monthly Seat capacity. Price is set by how many roles are open, not by each hire. You own every name.",
         best: "Best when you have more than one seat and want someone inside the process.",
         cta: "Book a Seat conversation",
         ctaHref: "/contact?program=seat",

@@ -209,7 +209,7 @@ Most firms rent you a recruiter and keep the database. The Kas Group runs a sear
 
 For teams with more than one open sales role.
 
-Flat monthly fee based on how many roles are open. Hire as many people as the search produces that month. The monthly price does not jump per hire. The Kas Group works inside your process. You own every name.
+Monthly retainer based on how many roles are open. Hire as many people as the search produces that month. The monthly price does not jump per hire. The Kas Group works inside your process. You own every name.
 
 Best when: you need capacity, not a one-off req.
 

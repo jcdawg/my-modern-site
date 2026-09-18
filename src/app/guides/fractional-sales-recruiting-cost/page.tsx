@@ -264,7 +264,7 @@ export default function FractionalSalesRecruitingCost() {
                                             <td className="py-4 px-6 font-bold text-navy-900">AE</td>
                                             <td className="py-4 px-6 text-grey-600">$150k OTE</td>
                                             <td className="py-4 px-6 text-grey-600">$37,500</td>
-                                            <td className="py-4 px-6 text-grey-600">$7,500 flat, or covered inside fractional</td>
+                                            <td className="py-4 px-6 text-grey-600">$7,500 Milestone example, or covered inside fractional</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">VP Sales</td>
