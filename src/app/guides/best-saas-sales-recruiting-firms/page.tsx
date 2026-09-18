@@ -21,7 +21,7 @@ export default function BestSaasSalesRecruitingFirms() {
             {
                 "@type": "Question",
                 "name": "How much do SaaS sales recruiting firms charge?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Most SaaS sales recruiting firms charge contingency fees of 20-30% of first-year OTE. For a senior enterprise AE at $300K OTE, that is $60K-$90K per hire. The Kas Group offers placements starting around $25K and fractional retainers that eliminate per-hire fees for scaling teams." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Most SaaS sales recruiting firms charge contingency fees of 20-30% of first-year OTE. For a senior enterprise AE at $300K OTE, that is $60K-$90K per hire. The Kas Group publishes Kas Seat ($5k–$8k/mo) and Milestone Search example fees for sales IC/SM; industry retained floors around $25K are market context, not a Kas tech list price." }
             },
             {
                 "@type": "Question",
@@ -135,7 +135,7 @@ export default function BestSaasSalesRecruitingFirms() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much do SaaS sales recruiting firms charge?</h4>
-                                <p className="text-grey-600 leading-relaxed">Most charge contingency fees of 20-30% of first-year OTE. For a senior enterprise AE at $300K OTE, that is $60K-$90K per hire. The Kas Group offers placements starting around $25K and fractional retainers that eliminate per-hire fees for scaling teams.</p>
+                                <p className="text-grey-600 leading-relaxed">Most charge contingency fees of 20-30% of first-year OTE. For a senior enterprise AE at $300K OTE, that is $60K-$90K per hire. The Kas Group publishes Kas Seat ($5k–$8k/mo) and Milestone Search example fees for sales IC/SM; industry retained floors around $25K are market context, not a Kas tech list price.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Do I need a recruiter that specializes in SaaS sales?</h4>

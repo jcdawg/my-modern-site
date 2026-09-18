@@ -18,7 +18,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                 name: "Is fractional recruiting cheaper than hiring an in-house recruiter?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Usually yes for Seed-B GTM sprints. Kas Tier 1 is $5,000/mo and Tier 2 is $8,000/mo with zero success fees. A mid fully loaded in-house seat often lands around $100k-$160k per year (~$8k-$13k+/mo). Fractional also pauses. Payroll does not.",
+                    text: "Usually yes for Seed-B GTM sprints. Kas Seat is $5,000/mo and Kas Seat is $8,000/mo with zero success fees. A mid fully loaded in-house seat often lands around $100k-$160k per year (~$8k-$13k+/mo). Fractional also pauses. Payroll does not.",
                 },
             },
             {
@@ -50,7 +50,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                 name: "Does Kas fractional include success fees?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "No. Tier 1 ($5,000/mo, up to 2 Seed/A roles) and Tier 2 ($8,000/mo, up to 5 GTM roles) have zero success fees. Flat success fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) are a separate per-hire option. Director/VP/CRO is quote only.",
+                    text: "No. Kas Seat at $5,000/mo ($5,000/mo, up to 2 Seed/A roles) and Kas Seat at $8,000/mo ($8,000/mo, up to 5 GTM roles) have zero success fees. Milestone Search example fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) are a separate per-hire option. Director/VP/CRO is quote only.",
                 },
             },
             {
@@ -220,13 +220,13 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                                 </thead>
                                 <tbody>
                                     <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Tier 1</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $5,000/mo</td>
                                             <td className="py-4 px-6 text-grey-600 font-semibold">$5,000/mo</td>
                                             <td className="py-4 px-6 text-grey-600">Up to 2 Seed / Series A roles</td>
                                             <td className="py-4 px-6 text-grey-600">Zero</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Tier 2</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $8,000/mo</td>
                                             <td className="py-4 px-6 text-grey-600 font-semibold">$8,000/mo</td>
                                             <td className="py-4 px-6 text-grey-600">Up to 5 GTM roles</td>
                                             <td className="py-4 px-6 text-grey-600">Zero</td>
@@ -234,7 +234,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-grey-600 leading-relaxed">Flat success-fee alternative: SDR $5,000 / AE $7,500 / Senior AE / Sales Manager $10,000. Director / VP / CRO: quote only. Full list: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">cost</Link>.</p>
+                        <p className="text-grey-600 leading-relaxed">Kas Milestone Search (example fees): SDR $5,000 / AE $7,500 / Senior AE / Sales Manager $10,000. Director / VP / CRO: quote only. Full list: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">cost</Link>.</p>
                     </div>
 
                     <div className="space-y-8">
@@ -259,12 +259,12 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                                             <td className="py-4 px-6 text-grey-600">~$159,000 / year</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Tier 1 x 6 months</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $5,000/mo x 6 months</td>
                                             <td className="py-4 px-6 text-grey-600">$5,000 x 6</td>
                                             <td className="py-4 px-6 text-grey-600">$30,000</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Tier 2 x 6 months</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $8,000/mo x 6 months</td>
                                             <td className="py-4 px-6 text-grey-600">$8,000 x 6</td>
                                             <td className="py-4 px-6 text-grey-600">$48,000</td>
                                         </tr>
@@ -290,19 +290,19 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                                             <td className="py-4 px-6 text-grey-600">~$159,000</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Tier 1 x 12</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $5,000/mo x 12</td>
                                             <td className="py-4 px-6 text-grey-600">$5,000 x 12 (up to 2 Seed/A roles)</td>
                                             <td className="py-4 px-6 text-grey-600">$60,000</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Tier 2 x 12</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $8,000/mo x 12</td>
                                             <td className="py-4 px-6 text-grey-600">$8,000 x 12 (up to 5 GTM roles)</td>
                                             <td className="py-4 px-6 text-grey-600">$96,000</td>
                                         </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-grey-600 leading-relaxed">Even at full-year Tier 2, Kas fractional is usually well below a mid fully loaded in-house seat. The tradeoff is ownership and cross-function coverage, not just cash.</p>
+                        <p className="text-grey-600 leading-relaxed">Even at full-year Kas Seat at $8,000/mo, Kas fractional is usually well below a mid fully loaded in-house seat. The tradeoff is ownership and cross-function coverage, not just cash.</p>
 
                         <h3 className="text-xl font-bold text-navy-900">Scenario C: High volume across functions</h3>
                         <p className="text-grey-600 leading-relaxed">If you need 10+ hires per quarter across eng, GTM, and ops, one fractional GTM retainer will not replace a full TA function. That is when in-house (or in-house plus specialist) wins.</p>
@@ -412,7 +412,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                         <div className="space-y-8">
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">Is fractional recruiting cheaper than hiring an in-house recruiter?</h3>
-                            <p className="text-grey-600 leading-relaxed">Usually yes for Seed-B GTM sprints. Kas Tier 1 is $5,000/mo and Tier 2 is $8,000/mo with zero success fees. A mid fully loaded in-house seat often lands around $100k-$160k per year (~$8k-$13k+/mo). Fractional also pauses. Payroll does not.</p>
+                            <p className="text-grey-600 leading-relaxed">Usually yes for Seed-B GTM sprints. Kas Seat is $5,000/mo and Kas Seat is $8,000/mo with zero success fees. A mid fully loaded in-house seat often lands around $100k-$160k per year (~$8k-$13k+/mo). Fractional also pauses. Payroll does not.</p>
                         </div>
 
                         <div className="space-y-3">
@@ -432,7 +432,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
 
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">Does Kas fractional include success fees?</h3>
-                            <p className="text-grey-600 leading-relaxed">No. Tier 1 ($5,000/mo, up to 2 Seed/A roles) and Tier 2 ($8,000/mo, up to 5 GTM roles) have zero success fees. Flat success fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) are a separate per-hire option. Director/VP/CRO is quote only.</p>
+                            <p className="text-grey-600 leading-relaxed">No. Kas Seat at $5,000/mo ($5,000/mo, up to 2 Seed/A roles) and Kas Seat at $8,000/mo ($8,000/mo, up to 5 GTM roles) have zero success fees. Milestone Search example fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) are a separate per-hire option. Director/VP/CRO is quote only.</p>
                         </div>
 
                         <div className="space-y-3">
@@ -465,7 +465,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
 
                     <div className="p-10 rounded-[2rem] bg-navy-900 text-white text-center space-y-6 shadow-2xl">
                         <h2 className="text-3xl font-bold">Ready to pick fractional, in-house, or hybrid?</h2>
-                        <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">Email chris@thekasgroup.com with stage, open GTM roles, and target packages. You get a clear recommend: Tier 1, Tier 2, flat success fee, or wait-and-hire-in-house.</p>
+                        <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">Email chris@thekasgroup.com with stage, open GTM roles, and target packages. You get a clear recommend: Kas Seat at $5,000/mo, Kas Seat at $8,000/mo, Milestone Search example fee, or wait-and-hire-in-house.</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/contact" className="inline-flex items-center justify-center rounded-full bg-blue-accent px-8 py-4 font-bold text-white hover:bg-blue-hover transition-all">
                                 Email chris@thekasgroup.com

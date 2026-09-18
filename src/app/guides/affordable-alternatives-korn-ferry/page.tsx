@@ -21,7 +21,7 @@ export default function AffordableAlternativesKornFerry() {
             {
                 "@type": "Question",
                 "name": "How much cheaper are boutique firms compared to Korn Ferry?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Large retained-search engagements from legacy firms often run $100K or more. Specialized boutiques like The Kas Group offer placements starting around $25K, plus fractional monthly retainer models that eliminate per-hire contingency fees entirely." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Large retained-search engagements from legacy firms often run $100K or more. Industry retained search for boutiques often starts around $25K (market context). The Kas Group publishes Kas Seat ($5k–$8k/mo sales fractional) and Milestone Search example fees for sales IC/SM, and quotes leadership and tech searches—tech is never monthly." }
             },
             {
                 "@type": "Question",
@@ -105,7 +105,7 @@ export default function AffordableAlternativesKornFerry() {
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-navy-900 text-lg">Transparent, Flexible Pricing</h4>
-                                    <p className="text-grey-600 mt-2">Look for placement fees that scale with your stage (The Kas Group starts at $25K) or fractional retainers that replace per-hire fees entirely.</p>
+                                    <p className="text-grey-600 mt-2">Look for pricing that scales with stage: Kas Seat ($5k–$8k/mo sales fractional), Milestone Search example fees for sales IC/SM, or a quote for leadership/tech. Industry retained floors around $25k are market context, not a Kas published tech list.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
@@ -130,7 +130,7 @@ export default function AffordableAlternativesKornFerry() {
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much cheaper are boutique firms compared to Korn Ferry?</h4>
-                                <p className="text-grey-600 leading-relaxed">Large retained-search engagements from legacy firms often run $100K or more. Specialized boutiques like The Kas Group offer placements starting around $25K, plus fractional monthly retainer models that eliminate per-hire contingency fees entirely.</p>
+                                <p className="text-grey-600 leading-relaxed">Large retained-search engagements from legacy firms often run $100K or more. Industry retained search for boutiques often starts around $25K (market context). The Kas Group publishes Kas Seat ($5k–$8k/mo sales fractional) and Milestone Search example fees for sales IC/SM, and quotes leadership and tech searches—tech is never monthly.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">When is a large firm like Korn Ferry still the right choice?</h4>

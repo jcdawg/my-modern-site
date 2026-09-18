@@ -18,7 +18,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                 name: "Is fractional sales recruiting cheaper than contingency?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Usually yes once you hire more than one GTM seat, or any senior seat with a large OTE. A $150k AE at 25% contingency is $37,500. Kas AE success fee is $7,500. Kas Tier 1 fractional is $5,000/mo for up to 2 Seed/Series A roles with zero success fees.",
+                    text: "Usually yes once you hire more than one GTM seat, or any senior seat with a large OTE. A $150k AE at 25% contingency is $37,500. Kas AE success fee is $7,500. Kas Seat at $5,000/mo fractional is $5,000/mo for up to 2 Seed/Series A roles with zero success fees.",
                 },
             },
             {
@@ -39,10 +39,10 @@ export default function FractionalSalesRecruitingVsContingency() {
             },
             {
                 "@type": "Question",
-                name: "When should I use a flat success fee instead of fractional?",
+                name: "When should I use a Milestone Search example fee instead of fractional?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Use flat success fees (SDR $5,000 / AE $7,500 / Senior AE or Sales Manager $10,000) when you have a single clear seat through Sales Manager. Director, VP, and CRO are quote only. Use fractional when you are staffing a motion, not a req.",
+                    text: "Use Milestone Search example fees (SDR $5,000 / AE $7,500 / Senior AE or Sales Manager $10,000) when you have a single clear seat through Sales Manager. Director, VP, and CRO are quote only. Use fractional when you are staffing a motion, not a req.",
                 },
             },
             {
@@ -96,7 +96,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                             TL;DR
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium relative z-10">
-                            Contingency sales recruiting usually bills <strong>20-30%</strong> of first-year cash (or OTE). On a $150k AE that is <strong>$30k-$45k</strong>. On a $350k VP Sales that is <strong>$70k-$105k</strong>. Kas fractional is a month-to-month retainer (<strong>$5,000</strong> or <strong>$8,000</strong>) with <strong>zero success fees</strong>. Prefer per-hire? Flat fees: SDR <strong>$5,000</strong>, AE <strong>$7,500</strong>, Sr AE/SM <strong>$10,000</strong>. Director/VP/CRO: specialist/retained <strong>quote only</strong>. Choose contingency for a one-off backfill. Choose fractional when you are filling multiple GTM seats and want dedicated bandwidth without percent-of-OTE sticker shock.
+                            Contingency sales recruiting usually bills <strong>20-30%</strong> of first-year cash (or OTE). On a $150k AE that is <strong>$30k-$45k</strong>. On a $350k VP Sales that is <strong>$70k-$105k</strong>. Kas fractional is a month-to-month retainer (<strong>$5,000</strong> or <strong>$8,000</strong>) with <strong>zero success fees</strong>. Prefer per-hire? Milestone example fees: SDR <strong>$5,000</strong>, AE <strong>$7,500</strong>, Sr AE/SM <strong>$10,000</strong>. Director/VP/CRO: specialist/retained <strong>quote only</strong>. Choose contingency for a one-off backfill. Choose fractional when you are filling multiple GTM seats and want dedicated bandwidth without percent-of-OTE sticker shock.
                         </p>
                         <p className="text-grey-300 leading-relaxed mt-4 relative z-10">
                             List prices: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales recruiting cost</Link>.
@@ -118,7 +118,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                                 <p className="text-grey-600 leading-relaxed">You pay a fixed monthly retainer. A sales-specialist recruiter embeds with your GTM team, runs the pipeline, and fills open seats. No percent-of-comp success fee on the Kas fractional model. Turn on or off month to month. Model primer: <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline">fractional recruiting guide</Link>.</p>
                             </div>
                         </div>
-                        <p className="text-grey-600 leading-relaxed">Kas also offers <strong>flat success fees</strong> (not contingency %): SDR/BDR $5,000 / AE $7,500 / Senior AE / Sales Manager $10,000. Director, VP, and CRO: quote only.</p>
+                        <p className="text-grey-600 leading-relaxed">Kas also offers <strong>Milestone Search example fees</strong> (not contingency %): SDR/BDR $5,000 / AE $7,500 / Senior AE / Sales Manager $10,000. Director, VP, and CRO: quote only.</p>
                     </div>
 
                     <div className="space-y-8">
@@ -149,18 +149,18 @@ export default function FractionalSalesRecruitingVsContingency() {
                                             <td className="py-4 px-6 font-bold text-navy-900">Kas success-fee search</td>
                                             <td className="py-4 px-6 text-grey-600">Flat per placement</td>
                                             <td className="py-4 px-6 text-grey-600">SDR $5k / AE $7.5k / Sr AE/SM $10k</td>
-                                            <td className="py-4 px-6 text-grey-600">Flat fee only (through Sales Manager)</td>
+                                            <td className="py-4 px-6 text-grey-600">Milestone example fee only (through Sales Manager)</td>
                                             <td className="py-4 px-6 text-grey-600">Single GTM IC/manager seat</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Fractional Tier 1</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $5,000/mo</td>
                                             <td className="py-4 px-6 text-grey-600">Month-to-month retainer</td>
                                             <td className="py-4 px-6 text-grey-600">$5,000/mo / up to 2 Seed/Series A roles</td>
                                             <td className="py-4 px-6 text-grey-600">Zero</td>
                                             <td className="py-4 px-6 text-grey-600">Seed-A, 1-2 GTM seats</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Fractional Tier 2</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $8,000/mo</td>
                                             <td className="py-4 px-6 text-grey-600">Month-to-month retainer</td>
                                             <td className="py-4 px-6 text-grey-600">$8,000/mo / up to 5 scaling GTM roles</td>
                                             <td className="py-4 px-6 text-grey-600">Zero</td>
@@ -169,7 +169,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">Director / VP / CRO search</td>
                                             <td className="py-4 px-6 text-grey-600">Specialist / retained quote</td>
-                                            <td className="py-4 px-6 text-grey-600">Project or retainer quote (not flat fee)</td>
+                                            <td className="py-4 px-6 text-grey-600">Project or retainer quote (not Milestone example fee)</td>
                                             <td className="py-4 px-6 text-grey-600">Quote-based</td>
                                             <td className="py-4 px-6 text-grey-600">Leadership seats</td>
                                         </tr>
@@ -227,19 +227,19 @@ export default function FractionalSalesRecruitingVsContingency() {
                                             <td className="py-4 px-6 text-grey-600">$7,500</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Fractional Tier 1 (2 months to fill)</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $5,000/mo (2 months to fill)</td>
                                             <td className="py-4 px-6 text-grey-600">$5,000 x 2</td>
                                             <td className="py-4 px-6 text-grey-600">$10,000 (covers up to 2 Seed/A roles)</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Fractional Tier 2 (2 months)</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $8,000/mo (2 months)</td>
                                             <td className="py-4 px-6 text-grey-600">$8,000 x 2</td>
                                             <td className="py-4 px-6 text-grey-600">$16,000 (covers up to 5 GTM roles)</td>
                                         </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-grey-600 leading-relaxed">On a single AE, Kas flat success fee is about 5x cheaper than mid-range contingency. Fractional wins harder when that same retainer also fills an SDR and a second AE in the same window.</p>
+                        <p className="text-grey-600 leading-relaxed">On a single AE, Kas Milestone Search example fee is about 5x cheaper than mid-range contingency. Fractional wins harder when that same retainer also fills an SDR and a second AE in the same window.</p>
 
                         <h3 className="text-xl font-bold text-navy-900">Example B: VP of Sales, $350,000 OTE</h3>
                         <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
@@ -268,20 +268,20 @@ export default function FractionalSalesRecruitingVsContingency() {
                                             <td className="py-4 px-6 text-grey-600">$105,000</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Fractional Tier 2 (3 months GTM bandwidth)</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $8,000/mo (3 months GTM bandwidth)</td>
                                             <td className="py-4 px-6 text-grey-600">$8,000 x 3</td>
                                             <td className="py-4 px-6 text-grey-600">$24,000 (bandwidth; leadership still calibrated as specialist work)</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">Kas Director/VP/CRO search</td>
                                             <td className="py-4 px-6 text-grey-600">Specialist / retained quote</td>
-                                            <td className="py-4 px-6 text-grey-600">Quote only (no flat success fee)</td>
+                                            <td className="py-4 px-6 text-grey-600">Quote only (no Milestone Search example fee)</td>
                                         </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-grey-600 leading-relaxed">VP / CRO searches are specialist/retained bandwidth, not a commodity contingency race and not a flat success fee.</p>
-                        <p className="text-grey-600 leading-relaxed">Takeaway: Contingency on leadership OTE is where founders get surprised. A $350k VP at 25% is an $87.5k invoice. Three months of Kas Tier 2 is $24k with zero success fee, and that bandwidth can keep an AE/SDR pipeline warm while leadership runs on a specialist quote.</p>
+                        <p className="text-grey-600 leading-relaxed">VP / CRO searches are specialist/retained bandwidth, not a commodity contingency race and not a Milestone Search example fee.</p>
+                        <p className="text-grey-600 leading-relaxed">Takeaway: Contingency on leadership OTE is where founders get surprised. A $350k VP at 25% is an $87.5k invoice. Three months of Kas Seat at $8,000/mo is $24k with zero success fee, and that bandwidth can keep an AE/SDR pipeline warm while leadership runs on a specialist quote.</p>
                     </div>
 
                     <div className="space-y-8">
@@ -311,7 +311,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                                             <td className="py-4 px-6 text-grey-600">$12,500</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Fractional Tier 1 x 3 months</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $5,000/mo x 3 months</td>
                                             <td className="py-4 px-6 text-grey-600">$5,000 x 3 / up to 2 roles</td>
                                             <td className="py-4 px-6 text-grey-600">$15,000</td>
                                         </tr>
@@ -337,7 +337,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                                             <td className="py-4 px-6 text-grey-600">$32,500</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Fractional Tier 2 x 4 months ($8k x4, up to 5 roles)</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $8,000/mo x 4 months ($8k x4, up to 5 roles)</td>
                                             <td className="py-4 px-6 text-grey-600">$32,000</td>
                                         </tr>
                                 </tbody>
@@ -389,19 +389,19 @@ export default function FractionalSalesRecruitingVsContingency() {
                                 <tbody>
                                     <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">1 seat, low urgency, clear JD</td>
-                                            <td className="py-4 px-6 text-grey-600">Contingency or Kas flat success fee ($5k-$10k through Sales Manager)</td>
+                                            <td className="py-4 px-6 text-grey-600">Contingency or Kas Milestone Search example fee ($5k-$10k through Sales Manager)</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">1 senior IC/manager seat (Sr AE, SM), high urgency</td>
-                                            <td className="py-4 px-6 text-grey-600">Kas fractional or flat success fee</td>
+                                            <td className="py-4 px-6 text-grey-600">Kas fractional or Milestone Search example fee</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">2 seats, Seed / Series A</td>
-                                            <td className="py-4 px-6 text-grey-600">Fractional Tier 1 ($5,000/mo)</td>
+                                            <td className="py-4 px-6 text-grey-600">Kas Seat at $5,000/mo</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">3-5 scaling GTM seats</td>
-                                            <td className="py-4 px-6 text-grey-600">Fractional Tier 2 ($8,000/mo)</td>
+                                            <td className="py-4 px-6 text-grey-600">Kas Seat at $8,000/mo</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">First VP Sales / sales leader</td>
@@ -425,7 +425,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                         <div className="space-y-8">
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">Is fractional sales recruiting cheaper than contingency?</h3>
-                            <p className="text-grey-600 leading-relaxed">Usually yes once you hire more than one GTM seat, or any senior seat with a large OTE. A $150k AE at 25% contingency is $37,500. Kas AE success fee is $7,500. Kas Tier 1 fractional is $5,000/mo for up to 2 Seed/Series A roles with zero success fees.</p>
+                            <p className="text-grey-600 leading-relaxed">Usually yes once you hire more than one GTM seat, or any senior seat with a large OTE. A $150k AE at 25% contingency is $37,500. Kas AE success fee is $7,500. Kas Seat at $5,000/mo fractional is $5,000/mo for up to 2 Seed/Series A roles with zero success fees.</p>
                         </div>
 
                         <div className="space-y-3">
@@ -439,8 +439,8 @@ export default function FractionalSalesRecruitingVsContingency() {
                         </div>
 
                         <div className="space-y-3">
-                            <h3 className="text-xl font-bold text-navy-900">When should I use a flat success fee instead of fractional?</h3>
-                            <p className="text-grey-600 leading-relaxed">Use flat success fees (SDR $5,000 / AE $7,500 / Senior AE or Sales Manager $10,000) when you have a single clear seat through Sales Manager. Director, VP, and CRO are quote only. Use fractional when you are staffing a motion, not a req.</p>
+                            <h3 className="text-xl font-bold text-navy-900">When should I use a Milestone Search example fee instead of fractional?</h3>
+                            <p className="text-grey-600 leading-relaxed">Use Milestone Search example fees (SDR $5,000 / AE $7,500 / Senior AE or Sales Manager $10,000) when you have a single clear seat through Sales Manager. Director, VP, and CRO are quote only. Use fractional when you are staffing a motion, not a req.</p>
                         </div>
 
                         <div className="space-y-3">

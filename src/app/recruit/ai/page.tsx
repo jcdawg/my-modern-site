@@ -37,7 +37,7 @@ export default function AIRecruiting() {
             {
                 "@type": "Question",
                 "name": "How much does AI and data engineering recruiting cost?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Engagements are retained or milestone-based, with placements typically ranging from $25K to $150K+ depending on seniority and search complexity. Flexible structures are available for startups." }
+                "acceptedAnswer": { "@type": "Answer", "text": "AI / ML / data engineering search is success-fee or retained quote only—never a monthly Kas Seat. Industry retained placements often range from about $25k to $150k+ depending on seniority; that band is market context, not a published Kas tech list price. We quote each search." }
             },
             {
                 "@type": "Question",
@@ -190,7 +190,7 @@ export default function AIRecruiting() {
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How much does AI and data engineering recruiting cost?</h4>
-                            <p className="text-grey-600 leading-relaxed">Engagements are retained or milestone-based, with placements typically ranging from $25K to $150K+ depending on seniority and search complexity. Flexible structures are available for startups.</p>
+                            <p className="text-grey-600 leading-relaxed">AI / ML / data engineering search is success-fee or retained quote only—never a monthly Kas Seat. Industry retained placements often range from about $25k to $150k+ depending on seniority; that band is market context, not a published Kas tech list price. We quote each search.</p>
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How long does an AI/ML search take?</h4>

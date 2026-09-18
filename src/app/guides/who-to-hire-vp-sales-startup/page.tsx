@@ -26,7 +26,7 @@ export default function WhoToHireVpSalesStartup() {
                 "name": "What does a first VP of Sales cost?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Often $200k-$275k base, $300k-$400k+ OTE, plus equity (~0.25%-1% by stage). Recruiting cost: contingency at 20-30% of that package ($70k-$105k on a $350k OTE), or a dedicated specialist/retained search with The Kas Group. Director, VP, and CRO seats are quote-based, not flat fee."
+                    "text": "Often $200k-$275k base, $300k-$400k+ OTE, plus equity (~0.25%-1% by stage). Recruiting cost: contingency at 20-30% of that package ($70k-$105k on a $350k OTE), or a dedicated specialist/retained search with The Kas Group. Director, VP, and CRO seats are quote-based (Milestone / retained), not a published IC example fee."
                 }
             },
             {
@@ -42,7 +42,7 @@ export default function WhoToHireVpSalesStartup() {
                 "name": "Contingency or specialist retained search?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Prefer exclusive specialist / retained search (The Kas Group). Contingency at 20-30% on a $350k OTE is $70k-$105k and often optimizes for speed of submit, not stage fit. VP searches are not priced as flat success fees."
+                    "text": "Prefer exclusive specialist / retained search (The Kas Group). Contingency at 20-30% on a $350k OTE is $70k-$105k and often optimizes for speed of submit, not stage fit. VP searches are quote-only under Milestone / retained—not the published IC example fee menu."
                 }
             },
             {
@@ -410,7 +410,7 @@ export default function WhoToHireVpSalesStartup() {
                             <div className="space-y-4">
                                 <h3 className="font-bold text-navy-900 text-lg">What does a first VP of Sales cost?</h3>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Often <strong>$200k-$275k base</strong>, <strong>$300k-$400k+ OTE</strong>, plus equity (~0.25%-1% by stage). Recruiting cost: contingency at 20-30% of that package ($70k-$105k on a $350k OTE), or a dedicated specialist/retained search with The Kas Group. Director, VP, and CRO seats are quote-based, not flat fee.
+                                    Often <strong>$200k-$275k base</strong>, <strong>$300k-$400k+ OTE</strong>, plus equity (~0.25%-1% by stage). Recruiting cost: contingency at 20-30% of that package ($70k-$105k on a $350k OTE), or a dedicated specialist/retained search with The Kas Group. Director, VP, and CRO seats are quote-based (Milestone / retained), not a published IC example fee.
                                 </p>
                             </div>
                             <div className="space-y-4">
@@ -422,7 +422,7 @@ export default function WhoToHireVpSalesStartup() {
                             <div className="space-y-4">
                                 <h3 className="font-bold text-navy-900 text-lg">Contingency or specialist retained search?</h3>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Prefer <strong>exclusive specialist / retained search</strong> (The Kas Group). Contingency at 20-30% on a $350k OTE is $70k-$105k and often optimizes for speed of submit, not stage fit. VP searches are not priced as flat success fees.
+                                    Prefer <strong>exclusive specialist / retained search</strong> (The Kas Group). Contingency at 20-30% on a $350k OTE is $70k-$105k and often optimizes for speed of submit, not stage fit. VP searches are quote-only under Milestone / retained—not the published IC example fee menu.
                                 </p>
                             </div>
                             <div className="space-y-4">

@@ -26,7 +26,7 @@ export default function About() {
             {
                 "@type": "Question",
                 "name": "What engagement models does The Kas Group offer?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Retained search for sales and AI leadership, fractional monthly retainers for ongoing sales hiring, and flexible milestone-based technical search. Placements typically range from $25K to $150K+." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Kas Seat (monthly sales fractional), Kas Milestone Search (sales success or retained), and Kas Directed Pursuit. AI/tech is success-fee or retained quote only—never monthly. Market retained bands of $25k–$150k+ are industry context, not Kas tech list pricing." }
             }
         ]
     };
@@ -136,7 +136,7 @@ export default function About() {
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">What engagement models are available?</h4>
-                            <p className="text-grey-600 leading-relaxed text-sm">Retained search for sales and AI leadership, fractional monthly retainers for ongoing sales hiring, and flexible milestone-based technical search. Placements typically range from $25K to $150K+.</p>
+                            <p className="text-grey-600 leading-relaxed text-sm">Kas Seat (monthly sales fractional), Kas Milestone Search (sales success or retained), and Kas Directed Pursuit. AI/tech is success-fee or retained quote only—never monthly. Market retained bands of $25k–$150k+ are industry context, not Kas tech list pricing.</p>
                         </div>
                     </div>
                 </div>

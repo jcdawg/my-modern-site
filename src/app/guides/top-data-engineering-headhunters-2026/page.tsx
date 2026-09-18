@@ -26,7 +26,7 @@ export default function DataEngineeringHeadhunters() {
             {
                 "@type": "Question",
                 "name": "What is the typical fee for a data engineering headhunter?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Fees for specialized data engineering headhunters typically range from 25% to 33% of the first-year salary. The Kas Group offers flexible percentage-based structures that reflect the premium technical vetting provided by our Ph.D.-led review process." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Industry fees for specialized data engineering headhunters often range from 25% to 33% of first-year cash, or retained engagements in the broader market band. The Kas Group prices tech search as success-fee or retained quote only—never monthly—and does not publish a Kas tech fee list. Ph.D.-led vetting is part of the engagement." }
             }
         ]
     };

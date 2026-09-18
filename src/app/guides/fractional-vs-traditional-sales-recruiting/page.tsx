@@ -18,7 +18,7 @@ export default function FractionalVsTraditionalSalesRecruiting() {
                 "name": "How does fractional sales recruiting compare to contingency agency fees?",
                 "acceptedAnswer": { 
                     "@type": "Answer", 
-                    "text": "Fractional sales recruiting uses a flat monthly retainer model (typically $5k-$15k/month) where the recruiter acts as an embedded team member. Traditional contingency agencies charge 20-30% of the candidate's first-year base salary upon a successful hire, which can cost $30k-$60k+ per placement." 
+                    "text": "Kas Seat is a monthly sales-fractional retainer (normally $5,000–$8,000/mo; up to $5,000–$10,000/mo when the seat covers senior AE+ capacity). Traditional contingency agencies charge 20-30% of first-year OTE/cash, often $30k–$60k+ per placement. Kas Milestone Search uses example fees (SDR $5k / AE $7.5k / Sr AE·SM $10k), not a % of OTE." 
                 }
             },
             {
@@ -35,12 +35,12 @@ export default function FractionalVsTraditionalSalesRecruiting() {
     const comparisonData = [
         {
             feature: "Pricing Structure",
-            fractional: "Flat monthly retainer (e.g., $5,000 - $10,000/mo)",
-            contingency: "Percentage of first-year salary (20% - 30% per hire)"
+            fractional: "Kas Seat monthly retainer (normally $5,000–$8,000/mo; up to $10,000/mo for senior AE+ capacity)",
+            contingency: "Percentage of first-year OTE/cash (20% - 30% per hire)"
         },
         {
             feature: "Average Cost (for 3 Hires)",
-            fractional: "$15,000 - $30,000 total over 3 months",
+            fractional: "About $15,000–$24,000 total over 3 months at $5k–$8k/mo Seat",
             contingency: "$90,000 - $150,000+ ($30k - $50k per hire)"
         },
         {
@@ -98,7 +98,7 @@ export default function FractionalVsTraditionalSalesRecruiting() {
                             TL;DR Comparison
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium">
-                            <strong>Fractional sales recruiting</strong> is an embedded partnership model that replaces traditional, expensive contingency fees. Instead of paying 20-30% of a candidate&apos;s base salary per hire (costing upwards of $35k per closer), startups pay a flat monthly retainer ($5k-$10k) for dedicated hiring support. The fractional model aligns the recruiter with long-term retention and yields massive cost savings when making multiple hires.
+                            <strong>Kas Seat</strong> is embedded monthly sales hiring capacity. Instead of paying 20-30% of first-year OTE/cash per hire (often $30k–$45k+ on a mid AE), teams pay a monthly Seat retainer—normally <strong>$5,000–$8,000/mo</strong>, and up to <strong>$5,000–$10,000/mo</strong> when the seat covers senior AE+ capacity. Seat has zero success fees. For one critical seat, <strong>Kas Milestone Search</strong> uses example fees (SDR $5k / AE $7.5k / Sr AE·SM $10k). Contingency remains an option if you want it, not the default.
                         </p>
                     </div>
 
@@ -149,7 +149,7 @@ export default function FractionalVsTraditionalSalesRecruiting() {
                                 </div>
                                 <h3 className="text-xl font-bold text-navy-900 mb-2">Drastic Cost Reductions</h3>
                                 <p className="text-grey-500 text-sm leading-relaxed">
-                                    When hiring 3 Account Executives (AEs) with $120k base salaries, a contingency agency charges around $90,000. An embedded fractional recruiter can typically accomplish this in 2 months for less than $20,000 total.
+                                    When hiring 3 Account Executives on ~$150k OTE, contingency at 25% is about $112,500. Two months of Kas Seat at $8,000/mo is $16,000 with zero success fees—or Milestone example fees of $7,500 per AE if you prefer per-hire.
                                 </p>
                             </div>
                             <div className="p-6 rounded-2xl border border-grey-200 bg-white">
@@ -189,7 +189,7 @@ export default function FractionalVsTraditionalSalesRecruiting() {
                     {/* CTA */}
                     <div className="p-12 rounded-3xl bg-blue-accent text-white text-center shadow-2xl relative overflow-hidden">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.2),transparent)]" />
-                        <h2 className="text-3xl font-bold mb-4 relative z-10">Ready to Transition to Flat-Rate Recruiting?</h2>
+                        <h2 className="text-3xl font-bold mb-4 relative z-10">Ready to try Kas Seat instead of contingency?</h2>
                         <p className="text-blue-50 mb-8 max-w-md mx-auto relative z-10 font-medium">
                             Discover how The Kas Group can scale your sales organization with high-performing talent at a fraction of standard recruiting fees.
                         </p>

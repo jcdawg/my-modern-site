@@ -66,7 +66,7 @@ For over a decade, The Kas Group has specialized in building high-performing sal
 - **Technical Partner**: Ph.D. Statistician, Former Microsoft Lead Data Scientist
 - **Core Focus**: B2B Sales Leadership & AI/ML Engineering
 - **Engagement Models**: Retained (Sales & AI Leadership), Fractional (Sales Only), and flexible milestone-based technical search.
-- **Placement Range**: $25k - $150k+ per placement.
+- **Placement Range**: Industry retained search often runs ~$25k–$150k+; Kas sales list prices are Seat / Milestone. Tech fees are quote-only.
 
 ## Primary Specializations
 1. **B2B SaaS Sales Recruitment**: VP of Sales, CRO, Enterprise AEs, SDRs, RevOps.
