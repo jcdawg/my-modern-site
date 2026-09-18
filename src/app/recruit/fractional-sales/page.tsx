@@ -3,8 +3,8 @@ import { Shield, FileText, Zap, Network, ArrowRightCircle } from "lucide-react";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-    title: "Kas Seat (Sales): Flat Monthly Sales Hiring",
-    description: "Flat monthly hiring capacity for sales teams. Embedded sales hiring on a flat monthly fee, and you own the candidate data.",
+    title: "Kas Seat (Sales): Monthly Sales Hiring Capacity",
+    description: "Monthly Seat hiring capacity for sales teams. Embedded sales hiring on a monthly retainer, and you own the candidate data.",
     path: "/recruit/fractional-sales",
 });
 
@@ -75,10 +75,10 @@ export default function FractionalSalesRecruiting() {
                 </div>
                 <div className="relative mx-auto max-w-7xl px-6 lg:px-8 text-center pt-10">
                     <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl max-w-4xl mx-auto leading-tight">
-                        Flat monthly hiring capacity for <span className="text-blue-accent">sales teams.</span>
+                        Monthly Seat hiring capacity for <span className="text-blue-accent">sales teams.</span>
                     </h1>
                     <p className="mt-8 text-xl leading-8 text-grey-200 font-medium max-w-2xl mx-auto">
-                        Embedded sales hiring on a flat monthly fee, and you own the candidate data.
+                        Embedded sales hiring on a monthly retainer, and you own the candidate data.
                     </p>
                     <div className="mt-10 flex items-center justify-center gap-x-6">
                         <Link

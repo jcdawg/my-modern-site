@@ -147,7 +147,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">Kas success-fee search</td>
-                                            <td className="py-4 px-6 text-grey-600">Flat per placement</td>
+                                            <td className="py-4 px-6 text-grey-600">Fixed success fee</td>
                                             <td className="py-4 px-6 text-grey-600">SDR $5k / AE $7.5k / Sr AE/SM $10k</td>
                                             <td className="py-4 px-6 text-grey-600">Milestone example fee only (through Sales Manager)</td>
                                             <td className="py-4 px-6 text-grey-600">Single GTM IC/manager seat</td>
@@ -223,7 +223,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">Kas AE success fee</td>
-                                            <td className="py-4 px-6 text-grey-600">Flat</td>
+                                            <td className="py-4 px-6 text-grey-600">Milestone example</td>
                                             <td className="py-4 px-6 text-grey-600">$7,500</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
