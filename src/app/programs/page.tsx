@@ -8,6 +8,7 @@ export const metadata = pageMetadata({
     description:
         "Three ways to hire with The Kas Group: monthly hiring capacity, milestone search, or a list you direct. Programs, not contingency. You own the candidate data.",
     path: "/programs",
+    image: "/og/programs.png",
 });
 
 export default function Programs() {
