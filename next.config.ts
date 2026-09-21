@@ -41,6 +41,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/guides/how-to-hire-vp-sales-startup",
+        destination: "/guides/who-to-hire-vp-sales-startup",
+        permanent: true,
+      },
+      {
         source: "/contact-us",
         destination: "/contact",
         permanent: true,
