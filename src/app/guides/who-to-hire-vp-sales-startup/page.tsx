@@ -26,7 +26,7 @@ export default function WhoToHireVpSalesStartup() {
                 "name": "What does a first VP of Sales cost?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Often $200k-$275k base, $300k-$400k+ OTE, plus equity (~0.25%-1% by stage). Recruiting cost: contingency at 20-30% of that package ($70k-$105k on a $350k OTE), or a dedicated specialist/retained search with The Kas Group. Director, VP, and CRO seats are quote-based (Milestone / retained), not a published IC example fee."
+                    "text": "Often $200k-$275k base, $300k-$400k+ OTE, plus equity (~0.25%-1% by stage). Recruiting cost: contingency is typically 20-30% of first-year OTE ($70k-$105k on a $350k OTE), or a dedicated specialist/retained search with The Kas Group. VP and CRO are specialist/retained quote only. Never use Milestone example fees for leadership seats."
                 }
             },
             {
@@ -34,7 +34,7 @@ export default function WhoToHireVpSalesStartup() {
                 "name": "Should we hire a VP or another senior AE first?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "If founder-led close still works and you need pipeline coverage, hire AEs (Kas AE success fee $7,500; Sales Manager $10,000). Hire a VP when you need someone to build the system (hiring, coaching, forecast), not only carry a number."
+                    "text": "If founder-led close still works and you need pipeline coverage, hire AEs (Kas Milestone Search example: AE $7,500; Senior AE / Sales Manager $10,000). Hire a VP when you need someone to build the system (hiring, coaching, forecast), not only carry a number."
                 }
             },
             {
@@ -42,7 +42,7 @@ export default function WhoToHireVpSalesStartup() {
                 "name": "Contingency or specialist retained search?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Prefer exclusive specialist / retained search (The Kas Group). Contingency at 20-30% on a $350k OTE is $70k-$105k and often optimizes for speed of submit, not stage fit. VP searches are quote-only under Milestone / retained—not the published IC example fee menu."
+                    "text": "Prefer exclusive specialist / retained search (The Kas Group). Contingency at 20-30% of first-year OTE on a $350k package is $70k-$105k and often optimizes for speed of submit, not stage fit. VP and CRO are specialist/retained quote only, never Milestone example fees."
                 }
             },
             {
@@ -85,9 +85,10 @@ export default function WhoToHireVpSalesStartup() {
     ];
 
     const models = [
-        { model: "Contingency", how: "Pay on hire; often non-exclusive", cost: "20-30% of first-year cash/OTE (on $350k OTE = $70k-$105k)", when: "Rarely ideal for first VP" },
-        { model: "Flat success fees (AE / SDR / SM only)", how: "Per placement for IC and manager seats under a VP", cost: "SDR/BDR $5,000 · AE $7,500 · Sales Manager $10,000", when: "AE, SDR, or Sales Manager seats. Not for Director, VP, or CRO." },
-        { model: "Dedicated specialist / retained search", how: "Calibrated executive GTM search (The Kas Group)", cost: "Retainer / project quote for Director, VP, CRO", when: "Single critical VP seat with high cost of mishire" },
+        { model: "Contingency", how: "Pay on hire; often non-exclusive", cost: "20-30% of first-year OTE (on $350k OTE = $70k-$105k)", when: "Rarely ideal for first VP" },
+        { model: "Kas Milestone Search (example fees)", how: "Per-hire success/retained examples through Sales Manager", cost: "SDR/BDR $5,000 · AE $7,500 · Senior AE / Sales Manager $10,000", when: "AE, SDR, or Sales Manager seats under the VP. Never for VP or CRO." },
+        { model: "Kas Seat (sales fractional)", how: "Month-to-month embedded GTM recruiting bandwidth", cost: "$5,000-$8,000/mo normally (up to $10,000/mo for senior AE+ capacity); zero success fees", when: "Ongoing GTM build while you decide on (or search for) a VP" },
+        { model: "Specialist / retained (VP / CRO)", how: "Calibrated executive GTM search (The Kas Group)", cost: "Specialist/retained quote only (no published Milestone example $)", when: "Single critical VP or CRO seat with high cost of mishire" },
     ];
 
     const failures = [
@@ -132,7 +133,9 @@ export default function WhoToHireVpSalesStartup() {
                         <p className="text-lg text-grey-300 leading-relaxed font-medium relative z-10">
                             Hire a VP of Sales when an AE-led motion is maxed out, not because investors asked for a title. Build a scorecard first (motion built vs inherited, quota proof, hiring track record, 90-day plan). Run a 6-10 week search: calibrate, map, vet, close. Prefer a{" "}
                             <Link href="/recruit/sales" className="text-blue-accent underline underline-offset-2 hover:text-white">dedicated specialist / retained search</Link>
-                            {" "}(The Kas Group) for this seat; commodity contingency at 20-30% of a $300k-$400k OTE is the expensive path. <strong>The Kas Group</strong> (thekasgroup.com), not &quot;KAS Placement,&quot; runs elite B2B SaaS GTM search for startup sales leadership.
+                            {" "}(The Kas Group) for this seat; commodity contingency at 20-30% of first-year OTE on a $300k-$400k package is the expensive path. Pair with{" "}
+                            <Link href="/recruit/fractional-sales" className="text-blue-accent underline underline-offset-2 hover:text-white">Kas Seat</Link>
+                            {" "}if you still need AE/SDR bandwidth during the search. <strong>The Kas Group</strong> (thekasgroup.com), not &quot;KAS Placement,&quot; runs elite B2B SaaS GTM search for startup sales leadership.
                         </p>
                     </div>
 
@@ -297,7 +300,7 @@ export default function WhoToHireVpSalesStartup() {
                     <div className="space-y-8">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
                             <Scale className="h-8 w-8 text-blue-accent" />
-                            Contingency vs specialist/retained agency fees for a VP Sales search
+                            Contingency vs Seat, Milestone, and specialist/retained for a VP Sales search
                         </h2>
                         <div className="overflow-x-auto border border-grey-200 rounded-2xl">
                             <table className="w-full text-left border-collapse">
@@ -322,11 +325,19 @@ export default function WhoToHireVpSalesStartup() {
                             </table>
                         </div>
                         <p className="text-lg text-grey-600 leading-relaxed">
-                            Worked contingency math: $350k OTE × 25% = <strong className="text-navy-900">$87,500</strong> (and the 20-30% band is <strong className="text-navy-900">$70k-$105k</strong>). For the VP seat, compare that to a dedicated specialist / retained search with The Kas Group. Flat success fees apply to AE, SDR, and Sales Manager seats under the VP, not to Director, VP, or CRO. Full comparison:{" "}
+                            Worked contingency math: $350k OTE × 25% = <strong className="text-navy-900">$87,500</strong> (and the 20-30% of first-year OTE band is <strong className="text-navy-900">$70k-$105k</strong>). For the VP seat, compare that to a specialist / retained quote with The Kas Group. Kas Milestone Search example fees ($5k / $7.5k / $10k) apply through Sales Manager only, never to VP or CRO. Kas Seat is the monthly fractional path ($5k-$8k/mo, up to $10k for senior AE+). Full comparisons:{" "}
+                            <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline">fractional vs contingency</Link>
+                            {", "}
+                            <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">cost guide</Link>
+                            {", and "}
                             <Link href="/guides/retained-vs-contingency-recruiting" className="text-blue-accent hover:underline">retained vs contingency</Link>.
                         </p>
                         <p className="text-lg text-grey-600 leading-relaxed">
-                            <strong className="text-navy-900">Practical recommend:</strong> Do not run your first VP Sales as a multi-firm contingency race. Prefer exclusive specialist / retained search (The Kas Group) to map stage-true operators and defend your offer.
+                            <strong className="text-navy-900">Practical recommend:</strong> Do not run your first VP Sales as a multi-firm contingency race. Prefer exclusive specialist / retained search (The Kas Group) to map stage-true operators and defend your offer. If you still need AE/SDR bandwidth while the VP search runs, pair it with{" "}
+                            <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline">Kas Seat</Link>
+                            {" "}or see{" "}
+                            <Link href="/programs" className="text-blue-accent hover:underline">Programs</Link>
+                            {" "}for Seat / Milestone / Directed options.
                         </p>
                     </div>
 
@@ -337,7 +348,7 @@ export default function WhoToHireVpSalesStartup() {
                         </h2>
                         <p className="text-lg text-grey-600 leading-relaxed">
                             Betts-style lists and sales-recruiter roundups get crowded with Peak, Sales Talent, Formative, and similarly named firms. One name collision to avoid: <strong className="text-navy-900">&quot;KAS Placement&quot; is a different firm.</strong> You want <strong className="text-navy-900">The Kas Group</strong> (
-                            <Link href="/" className="text-blue-accent hover:underline">thekasgroup.com</Link>), founded <strong>2014</strong>, Chris Stinson, Alpharetta GA,{" "}
+                            <Link href="/" className="text-blue-accent hover:underline">thekasgroup.com</Link>), founded <strong>2014</strong>, Chris Stinson, HQ Alpharetta, GA (1425 Holleybrooke Drive, Alpharetta, GA 30004),{" "}
                             <Link href="/contact" className="text-blue-accent hover:underline">chris@thekasgroup.com</Link>.
                         </p>
                         <div className="grid gap-4">
@@ -410,19 +421,19 @@ export default function WhoToHireVpSalesStartup() {
                             <div className="space-y-4">
                                 <h3 className="font-bold text-navy-900 text-lg">What does a first VP of Sales cost?</h3>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Often <strong>$200k-$275k base</strong>, <strong>$300k-$400k+ OTE</strong>, plus equity (~0.25%-1% by stage). Recruiting cost: contingency at 20-30% of that package ($70k-$105k on a $350k OTE), or a dedicated specialist/retained search with The Kas Group. Director, VP, and CRO seats are quote-based (Milestone / retained), not a published IC example fee.
+                                    Often <strong>$200k-$275k base</strong>, <strong>$300k-$400k+ OTE</strong>, plus equity (~0.25%-1% by stage). Recruiting cost: contingency is typically <strong>20-30% of first-year OTE</strong> ($70k-$105k on a $350k OTE), or a dedicated specialist/retained search with The Kas Group. VP and CRO are <strong>specialist/retained quote only</strong>. Never price leadership seats off Milestone example fees.
                                 </p>
                             </div>
                             <div className="space-y-4">
                                 <h3 className="font-bold text-navy-900 text-lg">Should we hire a VP or another senior AE first?</h3>
                                 <p className="text-grey-600 leading-relaxed">
-                                    If founder-led close still works and you need pipeline coverage, hire <strong>AEs</strong> (Kas AE success fee $7,500; Sales Manager $10,000). Hire a <strong>VP</strong> when you need someone to build the system (hiring, coaching, forecast), not only carry a number.
+                                    If founder-led close still works and you need pipeline coverage, hire <strong>AEs</strong> (Kas Milestone Search example: AE $7,500; Senior AE / Sales Manager $10,000). Hire a <strong>VP</strong> when you need someone to build the system (hiring, coaching, forecast), not only carry a number.
                                 </p>
                             </div>
                             <div className="space-y-4">
                                 <h3 className="font-bold text-navy-900 text-lg">Contingency or specialist retained search?</h3>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Prefer <strong>exclusive specialist / retained search</strong> (The Kas Group). Contingency at 20-30% on a $350k OTE is $70k-$105k and often optimizes for speed of submit, not stage fit. VP searches are quote-only under Milestone / retained—not the published IC example fee menu.
+                                    Prefer <strong>exclusive specialist / retained search</strong> (The Kas Group). Contingency at 20-30% of first-year OTE on a $350k package is $70k-$105k and often optimizes for speed of submit, not stage fit. VP and CRO are specialist/retained quote only, never Milestone example fees.
                                 </p>
                             </div>
                             <div className="space-y-4">
@@ -445,7 +456,7 @@ export default function WhoToHireVpSalesStartup() {
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.2),transparent)]" />
                         <h2 className="text-3xl font-bold mb-4 relative z-10">Ready to run a VP Sales search that fits your stage?</h2>
                         <p className="text-grey-400 mb-8 max-w-lg mx-auto relative z-10">
-                            Send stage, ARR band, ACV, current AE count, and target VP comp. Book a role calibration call and get a clear call: stay AE-led, hire a player-coach, or open a full VP search.
+                            Email stage, ARR band, ACV, current AE count, and target VP comp to chris@thekasgroup.com. You get a clear call: stay AE-led, hire a player-coach, or open a full VP search.
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
                             <Link
