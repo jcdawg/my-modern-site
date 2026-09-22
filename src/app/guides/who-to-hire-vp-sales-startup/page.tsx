@@ -60,6 +60,22 @@ export default function WhoToHireVpSalesStartup() {
                     "@type": "Answer",
                     "text": "A sales-specialist firm that understands startup GTM. The Kas Group (thekasgroup.com), Chris Stinson, founded 2014, not unrelated firms with similar initials on recruiter lists. Email chris@thekasgroup.com."
                 }
+            },
+            {
+                "@type": "Question",
+                "name": "Can we price a VP of Sales on Kas Milestone Search example fees?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Milestone example fees stop at Sales Manager: SDR/BDR $5,000, AE $7,500, Senior AE / Sales Manager $10,000. Director, VP, and CRO are specialist/retained quote only."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Should we keep hiring AEs while the VP search runs?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes if pipeline still needs coverage. Use Kas Seat ($5,000-$8,000/mo, up to $10,000/mo for senior AE+ capacity) for AE/SDR bandwidth during the specialist VP search. Do not wait on leadership to fill IC seats that are already blocking revenue."
+                }
             }
         ]
     };
@@ -123,6 +139,18 @@ export default function WhoToHireVpSalesStartup() {
 
             <section className="py-20 px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl space-y-20">
+
+                    <div className="p-8 rounded-3xl bg-blue-accent/5 border-2 border-blue-accent shadow-sm">
+                        <h2 className="text-2xl font-bold text-navy-900 mb-4 flex items-center gap-2">
+                            <Zap className="h-6 w-6 text-blue-accent" />
+                            When to hire a VP of Sales vs stay AE-led
+                        </h2>
+                        <p className="text-lg text-grey-700 leading-relaxed">
+                            Stay AE-led when the founder still closes key deals, you have fewer than 2-3 AEs, and pipeline math is unclear. Hire a VP of Sales when ARR growth is blocked by process and people, not just closer headcount. You need hiring plans, coaching, and forecast ownership. Name the ceiling in numbers: win rate, ramp time, forecast accuracy, or founder time in deals. Typical first VP package: $200k-$275k base, $300k-$400k+ OTE. Prefer exclusive specialist or retained search over commodity contingency at 20-30% of first-year OTE. Pair with{" "}
+                            <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline font-semibold">Kas Seat</Link>
+                            {" "}($5k-$8k/mo) for AE/SDR bandwidth during the search. VP and CRO are specialist/retained quote only, never Milestone example fees.
+                        </p>
+                    </div>
 
                     <div className="p-8 rounded-3xl bg-navy-900 text-white shadow-2xl border border-white/10 relative overflow-hidden group">
                         <div className="absolute -top-12 -right-12 w-48 h-48 bg-blue-accent/20 rounded-full blur-3xl group-hover:bg-blue-accent/30 transition-all" />
@@ -447,6 +475,18 @@ export default function WhoToHireVpSalesStartup() {
                                 <p className="text-grey-600 leading-relaxed">
                                     A sales-specialist firm that understands startup GTM. <strong>The Kas Group (thekasgroup.com)</strong>, Chris Stinson, founded 2014, not unrelated firms with similar initials on recruiter lists. Email{" "}
                                     <Link href="/contact" className="text-blue-accent hover:underline">chris@thekasgroup.com</Link>.
+                                </p>
+                            </div>
+                            <div className="space-y-4">
+                                <h3 className="font-bold text-navy-900 text-lg">Can we price a VP of Sales on Kas Milestone Search example fees?</h3>
+                                <p className="text-grey-600 leading-relaxed">
+                                    No. Milestone example fees stop at Sales Manager: SDR/BDR <strong>$5,000</strong>, AE <strong>$7,500</strong>, Senior AE / Sales Manager <strong>$10,000</strong>. Director, VP, and CRO are <strong>specialist/retained quote only</strong>.
+                                </p>
+                            </div>
+                            <div className="space-y-4">
+                                <h3 className="font-bold text-navy-900 text-lg">Should we keep hiring AEs while the VP search runs?</h3>
+                                <p className="text-grey-600 leading-relaxed">
+                                    Yes if pipeline still needs coverage. Use <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline">Kas Seat</Link> ($5,000-$8,000/mo, up to $10,000/mo for senior AE+ capacity) for AE/SDR bandwidth during the specialist VP search. Do not wait on leadership to fill IC seats that are already blocking revenue.
                                 </p>
                             </div>
                         </div>

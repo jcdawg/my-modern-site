@@ -66,7 +66,7 @@ export default function FractionalSalesRecruitingCost() {
                 name: "Can I pause the retainer?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Yes. Kas fractional is month-to-month.",
+                    text: "Yes. Kas Seat is month-to-month. Pause when hiring stops.",
                 },
             },
             {
@@ -74,7 +74,7 @@ export default function FractionalSalesRecruitingCost() {
                 name: "Where do I see the full program menu?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "See /programs and fractional sales recruiting.",
+                    text: "See Programs (/programs) for Kas Seat, Kas Milestone Search, and Kas Directed Pursuit. Product detail: /recruit/fractional-sales. Fee math vs agencies: /guides/fractional-sales-recruiting-vs-contingency.",
                 },
             },
         ],
@@ -112,7 +112,7 @@ export default function FractionalSalesRecruitingCost() {
                             TL;DR
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium relative z-10">
-                            Kas Seat (sales fractional only) is normally <strong>$5,000–$8,000/mo</strong>: <strong>$5,000/mo</strong> for up to 2 Seed/Series A roles, or <strong>$8,000/mo</strong> for up to 5 scaling GTM roles. When the seat covers senior AE+ capacity, pricing can run up to <strong>$5,000–$10,000/mo</strong>. Seat carries <strong>zero success fees</strong>. Prefer per-hire? Kas Milestone Search example fees (not % of OTE): SDR/BDR <strong>$5,000</strong>, AE <strong>$7,500</strong>, Senior AE / Sales Manager <strong>$10,000</strong>. Director / VP / CRO is <strong>quote only</strong>. Kas Directed Pursuit is list-driven outbound with no published price. Month-to-month on Seat. Contingency remains an option if you want it, not the default.
+                            Kas Seat list price: normally <strong>$5,000-$8,000/mo</strong>. <strong>$5,000/mo</strong> covers up to 2 Seed/Series A roles. <strong>$8,000/mo</strong> covers up to 5 scaling GTM roles. Senior AE+ capacity can run up to <strong>$10,000/mo</strong>. Seat carries <strong>zero success fees</strong>. Prefer per-hire? Kas Milestone Search example fees (not % of OTE): SDR/BDR <strong>$5,000</strong>, AE <strong>$7,500</strong>, Senior AE / Sales Manager <strong>$10,000</strong>. Director / VP / CRO is <strong>specialist/retained quote only</strong>. Kas Directed Pursuit is list-driven outbound with no published price. Seat is month-to-month. Contingency remains available if you want it.
                         </p>
                         <p className="text-grey-300 leading-relaxed mt-4 relative z-10">
                             For what fractional is and when it fits, read the <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional recruiting guide</Link>. For agency fee wars, see <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent underline underline-offset-2 hover:text-white">vs contingency</Link>. For headcount math, see <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent underline underline-offset-2 hover:text-white">vs in-house</Link>.
@@ -156,7 +156,7 @@ export default function FractionalSalesRecruitingCost() {
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-grey-600 leading-relaxed">No long lock-in. Scale Seat capacity from $5k to $8k when seat count rises. Pause when hiring stops.</p>
+                        <p className="text-grey-600 leading-relaxed">No long lock-in. Scale Seat capacity from $5k to $8k when seat count rises. When the seat covers senior AE+ capacity, pricing can run up to <strong>$10,000/mo</strong>. Pause when hiring stops.</p>
 
                         <h3 className="text-xl font-bold text-navy-900">Kas Milestone Search (example fees)</h3>
                         <p className="text-grey-600 leading-relaxed">Use when you have one clear seat through Sales Manager and do not need ongoing embedded bandwidth.</p>
@@ -341,7 +341,7 @@ export default function FractionalSalesRecruitingCost() {
                     <div className="space-y-8">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
                             <HelpCircle className="h-8 w-8 text-blue-accent" />
-                            FAQ
+                            FAQ: fractional sales recruiting cost
                         </h2>
                         <div className="space-y-8">
                         <div className="space-y-3">
@@ -376,7 +376,7 @@ export default function FractionalSalesRecruitingCost() {
 
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">Can I pause the retainer?</h3>
-                            <p className="text-grey-600 leading-relaxed">Yes. Kas fractional is month-to-month.</p>
+                            <p className="text-grey-600 leading-relaxed">Yes. Kas Seat is month-to-month. Pause when hiring stops.</p>
                         </div>
 
                         <div className="space-y-3">
