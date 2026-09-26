@@ -1,6 +1,6 @@
 import { ArrowRight, CheckCircle2, Search, Target, Users, XCircle } from "lucide-react";
 import Link from "next/link";
-import { pageMetadata } from "@/lib/seo";
+import { ORGANIZATION_ID, SITE_URL, pageMetadata } from "@/lib/seo";
 import ProgramFitWidget from "@/components/ProgramFitWidget";
 
 export const metadata = pageMetadata({
@@ -10,6 +10,126 @@ export const metadata = pageMetadata({
     path: "/programs",
     image: "/og/programs.png",
 });
+
+// Service/Offer JSON-LD for /programs. Matches the locked product map and the
+// visible program cards below. Provider references the site-wide Organization
+// node in the root layout. Leadership, Directed Pursuit and contingency carry
+// no numeric price on purpose.
+const PROGRAMS_URL = `${SITE_URL}/programs`;
+const provider = { "@id": ORGANIZATION_ID };
+const areaServed = { "@type": "Country", name: "United States" };
+
+const milestoneExample = (id: string, role: string, price: number) => ({
+    "@type": "Offer",
+    "@id": `${PROGRAMS_URL}#offer-milestone-${id}`,
+    name: `Kas Milestone Search: ${role} (example fee)`,
+    description: `Example fee for a ${role} search. Quoted per role. Paid in three milestone payments.`,
+    price,
+    priceCurrency: "USD",
+    url: PROGRAMS_URL,
+});
+
+const programsJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Service",
+            "@id": `${PROGRAMS_URL}#kas-seat`,
+            name: "Kas Seat",
+            serviceType: "Sales fractional recruiting retainer",
+            description:
+                "Monthly sales fractional recruiting retainer from The Kas Group. Hire as many people as the search produces that month. Zero success fees. Sales roles only; tech roles are never monthly.",
+            provider,
+            areaServed,
+            url: PROGRAMS_URL,
+            offers: [
+                {
+                    "@type": "Offer",
+                    "@id": `${PROGRAMS_URL}#offer-kas-seat`,
+                    name: "Kas Seat monthly retainer",
+                    description:
+                        "Normally $5,000 to $8,000 per month based on how many sales roles are open. Up to $10,000 per month when the seat covers senior AE and above. Zero success fees.",
+                    url: PROGRAMS_URL,
+                    priceSpecification: {
+                        "@type": "UnitPriceSpecification",
+                        priceCurrency: "USD",
+                        minPrice: 5000,
+                        maxPrice: 8000,
+                        unitCode: "MON",
+                        unitText: "MONTH",
+                        referenceQuantity: { "@type": "QuantitativeValue", value: 1, unitCode: "MON" },
+                    },
+                },
+                {
+                    "@type": "Offer",
+                    "@id": `${PROGRAMS_URL}#offer-kas-seat-senior-ae`,
+                    name: "Kas Seat monthly retainer: senior AE and above",
+                    description:
+                        "When the seat covers senior AE and above, up to $10,000 per month. Zero success fees.",
+                    url: PROGRAMS_URL,
+                    priceSpecification: {
+                        "@type": "UnitPriceSpecification",
+                        priceCurrency: "USD",
+                        minPrice: 5000,
+                        maxPrice: 10000,
+                        unitCode: "MON",
+                        unitText: "MONTH",
+                        referenceQuantity: { "@type": "QuantitativeValue", value: 1, unitCode: "MON" },
+                    },
+                },
+            ],
+        },
+        {
+            "@type": "Service",
+            "@id": `${PROGRAMS_URL}#kas-milestone-search`,
+            name: "Kas Milestone Search",
+            serviceType: "Sales success or retained search",
+            description:
+                "Success or retained search from The Kas Group for one critical sales seat, quoted per role. Three payments tied to milestones, not a monthly retainer. Example fees are not a percentage of OTE.",
+            provider,
+            areaServed,
+            url: PROGRAMS_URL,
+            offers: [
+                milestoneExample("sdr-bdr", "SDR/BDR", 5000),
+                milestoneExample("ae", "AE", 7500),
+                milestoneExample("senior-ae-sales-manager", "Senior AE / Sales Manager", 10000),
+            ],
+        },
+        {
+            "@type": "Service",
+            "@id": `${PROGRAMS_URL}#leadership-search`,
+            name: "Leadership search (Director, VP of Sales, CRO)",
+            serviceType: "Specialist or retained sales leadership search",
+            description:
+                "Specialist or retained search from The Kas Group for Director, VP of Sales, and CRO roles. Quoted per role.",
+            provider,
+            areaServed,
+            url: PROGRAMS_URL,
+        },
+        {
+            "@type": "Service",
+            "@id": `${PROGRAMS_URL}#kas-directed-pursuit`,
+            name: "Kas Directed Pursuit",
+            serviceType: "List-driven outbound search",
+            description:
+                "List-driven outbound search. A search returns a list, The Kas Group reviews it, and you mark who we hunt. You own the list. Pricing on request.",
+            provider,
+            areaServed,
+            url: PROGRAMS_URL,
+        },
+        {
+            "@type": "Service",
+            "@id": `${PROGRAMS_URL}#contingency-search`,
+            name: "Contingency search",
+            serviceType: "Contingency recruiting",
+            description:
+                "Contingency search is available from The Kas Group, priced as a percentage of first-year OTE.",
+            provider,
+            areaServed,
+            url: PROGRAMS_URL,
+        },
+    ],
+};
 
 export default function Programs() {
     const programs = [
@@ -70,6 +190,10 @@ export default function Programs() {
     ];
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(programsJsonLd) }}
+            />
             {/* Hero */}
             <section className="relative py-20 px-6 lg:px-8 bg-gradient-to-b from-grey-50 to-white overflow-hidden">
                 <div className="absolute top-0 right-0 -mb-10 -mr-10 w-96 h-96 bg-blue-accent/5 rounded-full blur-3xl" />
