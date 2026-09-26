@@ -205,7 +205,7 @@ export default function FractionalRecruitingGuide() {
                         <ul className="space-y-2 text-grey-600 leading-relaxed list-disc pl-6">
                             <li>Exactly one clear backfill and no follow-on seats</li>
                             <li>The JD is stable and the market is liquid</li>
-                            <li>Seat is SDR/AE/Sales Manager and a flat sticker fits better than a retainer</li>
+                            <li>Seat is SDR/AE/Sales Manager and a per-role quote fits better than a monthly retainer</li>
                         </ul>
                         <p className="text-grey-600 leading-relaxed">Milestone example fees at Kas: SDR <strong>$5,000</strong>, AE <strong>$7,500</strong>, Senior AE / Sales Manager <strong>$10,000</strong>. Director / VP / CRO: quote only. Details: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">cost guide</Link>.</p>
                     </div>
