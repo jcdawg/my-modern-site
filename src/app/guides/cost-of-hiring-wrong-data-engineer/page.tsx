@@ -1,12 +1,15 @@
 import { AlertTriangle, BarChart3, ChevronRight, Clock, DollarSign, HelpCircle, ShieldCheck, Target, TrendingDown, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'The Real Cost of a Bad Technical Hire: Time and Revenue',
     description: 'What hiring the wrong data engineer or AI engineer really costs: $150k-$300k+ and 6-12 months of roadmap. Cost breakdown, recovery timeline, warning signs, and how to vet the replacement.',
     path: "/guides/cost-of-hiring-wrong-data-engineer",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function CostOfHiringWrongDataEngineer() {
     const faqSchema = {
@@ -36,29 +39,10 @@ export default function CostOfHiringWrongDataEngineer() {
         ]
     };
 
-    const articleSchema = {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "The Real Cost of a Bad Technical Hire: What a Wrong Data Engineer Decision Costs You in Time and Revenue",
-        "description": "What hiring the wrong data engineer or AI engineer really costs: $150k-$300k+ and 6-12 months of roadmap. Cost breakdown, recovery timeline, warning signs, and how to vet the replacement.",
-        "author": {
-            "@type": "Organization",
-            "name": "The Kas Group",
-            "url": "https://www.thekasgroup.com"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "The Kas Group",
-            "url": "https://www.thekasgroup.com"
-        },
-        "mainEntityOfPage": "https://www.thekasgroup.com/guides/cost-of-hiring-wrong-data-engineer",
-        "about": ["cost of a bad technical hire", "hiring your first data engineer", "AI engineer hiring mistakes"]
-    };
-
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} headline="The Real Cost of a Bad Technical Hire: What a Wrong Data Engineer Decision Costs You in Time and Revenue" about={["cost of a bad technical hire", "hiring your first data engineer", "AI engineer hiring mistakes"]} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
             {/* Header Section */}
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
@@ -338,6 +322,7 @@ export default function CostOfHiringWrongDataEngineer() {
                                 { title: "Hiring Senior Data Engineers for AI Startups", href: "/guides/how-to-hire-senior-data-engineers-ai-startups", desc: "The tactical roadmap for getting the first technical hire right." },
                                 { title: "Senior Data Engineer Skills Assessment", href: "/guides/senior-data-engineer-skills-assessment-vetting", desc: "The full technical vetting framework and interview questions." },
                                 { title: "Best Data Engineering Recruiting Agencies", href: "/guides/best-data-engineering-recruiting-agencies", desc: "Our objective analysis of the top firms for the modern data stack." },
+                                { title: "Do AI Resume Screeners Work?", href: "/guides/do-ai-resume-screeners-work", desc: "What keyword and AI screening misses, and why capability checks catch it." },
                             ].map((guide) => (
                                 <Link key={guide.href} href={guide.href} className="group p-6 rounded-2xl border border-grey-100 hover:border-blue-accent/20 hover:bg-grey-50 transition-all shadow-sm">
                                     <h3 className="text-lg font-bold text-navy-900 mb-2 group-hover:text-blue-accent transition-colors">{guide.title}</h3>

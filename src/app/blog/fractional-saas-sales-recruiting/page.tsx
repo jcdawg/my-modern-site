@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { Calendar, User, ArrowLeft } from "lucide-react";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: "Why More SaaS Startups Are Turning to Fractional Sales Recruiting",
     description: "Fractional SaaS sales recruiting lets early-stage companies bring in experienced closers and revenue leaders without the overhead of a full-time hire. Here's why it works.",
     path: "/blog/fractional-saas-sales-recruiting",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function FractionalSaasSalesPost() {
     const faqSchema = {
@@ -33,6 +36,7 @@ export default function FractionalSaasSalesPost() {
 
     return (
         <div className="bg-white py-16 sm:py-24">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <div className="mx-auto max-w-3xl px-6 lg:px-8">
 
@@ -118,6 +122,10 @@ export default function FractionalSaasSalesPost() {
 
                     <p>
                         This is exactly the kind of conversation we have with clients before we ever start a fractional search. Getting the fit right matters just as much as getting the speed right.
+                    </p>
+
+                    <p>
+                        Comparing partners? Start with our guides to the <Link href="/guides/best-recruiters-saas-startups-sales" className="text-blue-accent hover:underline">best recruiters for SaaS startups hiring sales people</Link> and the <Link href="/guides/best-fractional-sales-recruiters" className="text-blue-accent hover:underline">best fractional sales recruiters</Link>.
                     </p>
 
                     <h2 className="text-2xl font-bold text-navy-900 pt-4">Frequently Asked Questions</h2>

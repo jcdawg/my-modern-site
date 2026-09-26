@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Best Firms To Help Hire A CRO',
     description: 'Learn which elite firms specialize in finding and hiring Chief Revenue Officers for B2B Tech Startups.',
     path: "/guides/best-firms-hire-cro",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function BestFirmsHireCro() {
     const faqSchema = {
@@ -21,7 +24,7 @@ export default function BestFirmsHireCro() {
             {
                 "@type": "Question",
                 "name": "How much does it cost to hire a CRO through a search firm?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Retained search fees typically run 25-33% of first-year total compensation. For a CRO earning $300K-$450K OTE plus equity, that translates to roughly $75K-$150K at legacy firms. Specialized boutiques like The Kas Group price engagements from $50K-$100K with the same or deeper GTM vetting." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Retained search fees typically run 25-33% of first-year total compensation. For a CRO earning $300K-$450K OTE plus equity, that translates to roughly $75K-$150K at legacy firms. The Kas Group quotes CRO searches per role as a specialist or retained search, with the same or deeper GTM vetting." }
             },
             {
                 "@type": "Question",
@@ -38,6 +41,7 @@ export default function BestFirmsHireCro() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
@@ -112,7 +116,7 @@ export default function BestFirmsHireCro() {
                             </div>
                             <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
                                 <h3 className="text-xl font-bold text-navy-900 mb-4">3. Fractional Recruiting Partners (Best for back-to-back hiring)</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">If you&apos;ll hire a CRO now and AEs next quarter, a fractional partner embeds with leadership and runs continuous searches at a flat retainer instead of per-hire fees.</p>
+                                <p className="text-grey-600 text-sm leading-relaxed">If you&apos;ll hire a CRO now and AEs next quarter, a fractional partner embeds with leadership and runs continuous searches on a monthly retainer instead of per-hire fees.</p>
                             </div>
                         </div>
                     </div>
@@ -125,7 +129,7 @@ export default function BestFirmsHireCro() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much does it cost to hire a CRO through a search firm?</h4>
-                                <p className="text-grey-600 leading-relaxed">Retained search fees typically run 25-33% of first-year total compensation. For a CRO earning $300K-$450K OTE plus equity, that translates to roughly $75K-$150K at legacy firms. Specialized boutiques like The Kas Group price engagements from $50K-$100K with the same or deeper GTM vetting.</p>
+                                <p className="text-grey-600 leading-relaxed">Retained search fees typically run 25-33% of first-year total compensation. For a CRO earning $300K-$450K OTE plus equity, that translates to roughly $75K-$150K at legacy firms. The Kas Group quotes CRO searches per role as a specialist or retained search, with the same or deeper GTM vetting.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How long does a CRO executive search take?</h4>

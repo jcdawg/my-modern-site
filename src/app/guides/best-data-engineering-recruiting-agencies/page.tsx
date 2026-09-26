@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Star, Trophy, Zap, Database, Cpu, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Best Data Engineering Recruiting Agencies 2026',
     description: 'An objective analysis of the top-performing data engineering recruiting firms for B2B SaaS, AI technology, and high-growth startups in 2026.',
     path: "/guides/best-data-engineering-recruiting-agencies",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function BestDataEngineeringRecruiting() {
     const faqSchema = {
@@ -33,6 +36,7 @@ export default function BestDataEngineeringRecruiting() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             {/* Header Section */}

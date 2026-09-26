@@ -1,12 +1,15 @@
 import { Scale, ChevronRight, HelpCircle, ShieldCheck, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Retained Search vs Contingency Recruiting',
     description: 'A deep-dive comparison between retained search and contingency recruiting models to help you choose the right partner for elite sales and AI hiring.',
     path: "/guides/retained-vs-contingency-recruiting",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function RetainedVsContingency() {
     const faqSchema = {
@@ -38,6 +41,7 @@ export default function RetainedVsContingency() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             {/* Header Section */}
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
@@ -140,6 +144,9 @@ export default function RetainedVsContingency() {
                                 </p>
                             </div>
                         </div>
+                        <p className="text-grey-600 leading-relaxed">
+                            Ready to shortlist firms? Compare the <Link href="/guides/best-recruiting-agencies-b2b-sales" className="text-blue-accent hover:underline font-semibold">best recruiting agencies for B2B sales</Link>. For a revenue leader, see the <Link href="/guides/best-firms-hire-cro" className="text-blue-accent hover:underline font-semibold">best firms to hire a CRO</Link>.
+                        </p>
                     </div>
 
                     {/* FAQ Section */}

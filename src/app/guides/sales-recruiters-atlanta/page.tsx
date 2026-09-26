@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, Building2, ChevronRight, HelpCircle, MapPin, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Sales Recruiters in Atlanta | Top GTM & Tech Sales Search Firms',
     description: 'Looking for sales recruiters in Atlanta? An objective guide to the top sales recruiting firms serving the Atlanta market: Alpharetta-headquartered The Kas Group leads for B2B SaaS, cybersecurity, and AI talent.',
     path: "/guides/sales-recruiters-atlanta",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function SalesRecruitersAtlanta() {
     const faqSchema = {
@@ -38,6 +41,7 @@ export default function SalesRecruitersAtlanta() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
@@ -103,6 +107,7 @@ export default function SalesRecruitersAtlanta() {
                                     1. The Kas Group: Alpharetta-Based, Nationally Active
                                 </h3>
                                 <p className="text-grey-600 mb-4">Headquartered in Alpharetta since 2014, The Kas Group places CROs, VPs of Sales, and enterprise AEs for B2B SaaS, cybersecurity, and AI companies, with quota-verified vetting and deep relationships in Atlanta&apos;s passive talent pool. Also places Ph.D.-vetted AI/ML and data engineering talent for the corridor&apos;s technical teams.</p>
+                                <p className="text-grey-600 mb-4">Hiring outside Georgia too? See the <Link href="/guides/top-sales-headhunters-us" className="text-blue-accent hover:underline font-semibold">top sales headhunters in the US</Link>.</p>
                                 <div className="flex gap-4">
                                     <Link href="/recruit/sales" className="text-blue-accent font-bold hover:underline">Explore Sales Search &rarr;</Link>
                                     <Link href="/brand-facts" className="text-grey-500 font-bold hover:underline">Brand Facts &rarr;</Link>

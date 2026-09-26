@@ -1,12 +1,15 @@
 import { ChevronRight, Clock, HelpCircle, Layers, Scale, Users, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
-    title: "Fractional Recruiting for Startups: When It Beats Agency and In-House",
+const PAGE = {
+    title: "Fractional Recruiting for Startups: When It Fits",
     description: "What fractional recruiting is for Seed-Series B startups, when it fits GTM hiring, and how Kas week-to-week engagements run. Pricing lives on the cost guide.",
     path: "/guides/fractional-recruiting-guide",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function FractionalRecruitingGuide() {
     const faqSchema = {
@@ -66,6 +69,7 @@ export default function FractionalRecruitingGuide() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
@@ -201,7 +205,7 @@ export default function FractionalRecruitingGuide() {
                         <ul className="space-y-2 text-grey-600 leading-relaxed list-disc pl-6">
                             <li>Exactly one clear backfill and no follow-on seats</li>
                             <li>The JD is stable and the market is liquid</li>
-                            <li>Seat is SDR/AE/Sales Manager and a flat sticker fits better than a retainer</li>
+                            <li>Seat is SDR/AE/Sales Manager and a per-role quote fits better than a monthly retainer</li>
                         </ul>
                         <p className="text-grey-600 leading-relaxed">Milestone example fees at Kas: SDR <strong>$5,000</strong>, AE <strong>$7,500</strong>, Senior AE / Sales Manager <strong>$10,000</strong>. Director / VP / CRO: quote only. Details: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">cost guide</Link>.</p>
                     </div>
@@ -307,6 +311,12 @@ export default function FractionalRecruitingGuide() {
                             </li>
                             <li>
                                 <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline font-semibold">Fractional recruiting vs in-house recruiter</Link>
+                            </li>
+                            <li>
+                                <Link href="/guides/best-fractional-sales-recruiters" className="text-blue-accent hover:underline font-semibold">Best fractional sales recruiters</Link>
+                            </li>
+                            <li>
+                                <Link href="/guides/fractional-recruiting-services-sales-teams" className="text-blue-accent hover:underline font-semibold">Fractional recruiting services for sales teams</Link>
                             </li>
                             <li>
                                 <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting</Link>

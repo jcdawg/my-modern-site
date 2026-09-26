@@ -46,6 +46,12 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        // Consolidated onto the stronger vs-contingency guide (cannibalization fix).
+        source: "/guides/fractional-vs-traditional-sales-recruiting",
+        destination: "/guides/fractional-sales-recruiting-vs-contingency",
+        permanent: true,
+      },
+      {
         source: "/contact-us",
         destination: "/contact",
         permanent: true,

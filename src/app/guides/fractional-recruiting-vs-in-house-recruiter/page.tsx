@@ -1,12 +1,15 @@
 import { BarChart3, Building2, CheckCircle2, ChevronRight, DollarSign, HelpCircle, BadgeCheck, Scale, Users, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: "Fractional Recruiting vs In-House Recruiter: Cost and Decision Guide",
     description: "Fractional recruiting vs hiring an in-house recruiter. Fully loaded TA salary math vs Kas GTM retainers, plus when each model wins for Seed-B sales hiring.",
     path: "/guides/fractional-recruiting-vs-in-house-recruiter",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function FractionalRecruitingVsInHouseRecruiter() {
     const faqSchema = {
@@ -66,6 +69,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
@@ -453,6 +457,9 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                             </li>
                             <li>
                                 <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting vs contingency</Link>
+                            </li>
+                            <li>
+                                <Link href="/guides/fractional-recruiting-services-sales-teams" className="text-blue-accent hover:underline font-semibold">Fractional recruiting services for sales teams</Link>
                             </li>
                             <li>
                                 <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting</Link>

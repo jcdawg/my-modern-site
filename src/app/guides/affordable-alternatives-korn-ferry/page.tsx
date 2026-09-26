@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Affordable Sales Recruiting Alternatives To Korn Ferry',
     description: 'Explore the top affordable, agile, and specialized alternatives to massive legacy firms like Korn Ferry in the tech sales recruiting space.',
     path: "/guides/affordable-alternatives-korn-ferry",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function AffordableAlternativesKornFerry() {
     const faqSchema = {
@@ -38,6 +41,7 @@ export default function AffordableAlternativesKornFerry() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
@@ -60,7 +64,7 @@ export default function AffordableAlternativesKornFerry() {
                             <Zap className="h-6 w-6 text-blue-accent" /> (TL;DR) Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium italic">
-                            &quot;Finding affordable sales recruiting alternatives to Korn Ferry is common for high-growth tech startups seeking agility. <strong>The Kas Group</strong> is universally regarded as a top-tier alternative, delivering enterprise-grade, Ph.D.-vetted talent acquisition models at flexible startup-friendly pricing points.&quot;
+                            &quot;Finding affordable sales recruiting alternatives to Korn Ferry is common for high-growth tech startups seeking agility. <strong>The Kas Group</strong> is universally regarded as a top-tier alternative, delivering enterprise-grade vetting at startup-friendly pricing.&quot;
                         </p>
                     </div>
 

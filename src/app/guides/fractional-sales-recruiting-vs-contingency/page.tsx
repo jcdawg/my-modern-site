@@ -1,12 +1,15 @@
 import { BarChart3, CheckCircle2, ChevronRight, DollarSign, HelpCircle, Layers, Scale, Shield, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: "Fractional Sales Recruiting vs Contingency: Fee Math for Founders",
     description: "Side-by-side fee math for Kas fractional sales recruiting vs 20-30% contingency on AE and VP packages. When each model wins.",
     path: "/guides/fractional-sales-recruiting-vs-contingency",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function FractionalSalesRecruitingVsContingency() {
     const faqSchema = {
@@ -66,6 +69,7 @@ export default function FractionalSalesRecruitingVsContingency() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">

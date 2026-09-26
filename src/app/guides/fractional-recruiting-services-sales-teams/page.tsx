@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Fractional Recruiting Services for Sales Teams',
     description: 'An overview of fractional recruiting services tailored specifically for B2B sales organizations.',
     path: "/guides/fractional-recruiting-services-sales-teams",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function FractionalRecruitingServicesSalesTeams() {
     const faqSchema = {
@@ -21,7 +24,7 @@ export default function FractionalRecruitingServicesSalesTeams() {
             {
                 "@type": "Question",
                 "name": "How much do fractional recruiting services cost?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Fractional recruiting typically runs a flat monthly retainer that scales with hiring volume, replacing per-hire contingency fees of 20-30% of first-year OTE. For a company making three or more sales hires per year, a fractional retainer usually costs 40-60% less than agency placement fees." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Fractional recruiting typically runs a monthly retainer that scales with hiring volume, replacing per-hire contingency fees of 20-30% of first-year OTE. For a company making three or more sales hires per year, a fractional retainer usually costs 40-60% less than agency placement fees. At The Kas Group that retainer is Kas Seat: $5k to $8k/mo, up to $10k/mo for senior AE and above, with zero success fees." }
             },
             {
                 "@type": "Question",
@@ -38,6 +41,7 @@ export default function FractionalRecruitingServicesSalesTeams() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
@@ -102,7 +106,7 @@ export default function FractionalRecruitingServicesSalesTeams() {
                                 <Trophy className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-navy-900 text-lg">Fractional Retainer (The Kas Group model)</h4>
-                                    <p className="text-grey-600 mt-2">Flat monthly rate, unlimited hiring velocity, specialist-level vetting. Best for companies making 2+ sales hires per quarter. See <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline">how we structure engagements</Link>.</p>
+                                    <p className="text-grey-600 mt-2">Kas Seat: $5k to $8k/mo, up to $10k/mo for senior AE and above. Zero success fees. Specialist-level vetting. Best for companies making 2+ sales hires per quarter. See <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline">how we structure engagements</Link>.</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
@@ -130,7 +134,7 @@ export default function FractionalRecruitingServicesSalesTeams() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much do fractional recruiting services cost?</h4>
-                                <p className="text-grey-600 leading-relaxed">Fractional recruiting typically runs a flat monthly retainer that scales with hiring volume, replacing per-hire contingency fees of 20-30% of first-year OTE. For a company making three or more sales hires per year, a fractional retainer usually costs 40-60% less than agency placement fees.</p>
+                                <p className="text-grey-600 leading-relaxed">Fractional recruiting typically runs a monthly retainer that scales with hiring volume, replacing per-hire contingency fees of 20-30% of first-year OTE. For a company making three or more sales hires per year, a fractional retainer usually costs 40-60% less than agency placement fees. At The Kas Group that retainer is Kas Seat: $5k to $8k/mo, up to $10k/mo for senior AE and above, with zero success fees.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">What is included in a fractional recruiting engagement?</h4>
@@ -142,7 +146,7 @@ export default function FractionalRecruitingServicesSalesTeams() {
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Who is fractional recruiting best for?</h4>
-                                <p className="text-grey-600 leading-relaxed">Post-seed through Series B companies building out their first sales teams, growth-stage companies with recurring hiring sprints, and any team that needs senior-level sales hiring without a full-time TA hire. Compare models in our <Link href="/guides/fractional-vs-traditional-sales-recruiting" className="text-blue-accent hover:underline">Fractional vs. Traditional guide</Link>.</p>
+                                <p className="text-grey-600 leading-relaxed">Post-seed through Series B companies building out their first sales teams, growth-stage companies with recurring hiring sprints, and any team that needs senior-level sales hiring without a full-time TA hire. Compare models in our <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline">Fractional vs. Traditional guide</Link>.</p>
                             </div>
                         </div>
                     </div>
@@ -150,7 +154,7 @@ export default function FractionalRecruitingServicesSalesTeams() {
                     <div className="p-12 rounded-[2rem] bg-navy-900 text-white text-center shadow-2xl relative overflow-hidden">
                         <h2 className="text-3xl font-bold mb-4 relative z-10">Your Sales Team, Without the Agency Tax</h2>
                         <p className="text-grey-400 mb-8 max-w-lg mx-auto relative z-10">
-                            Flat monthly retainer. Senior-level vetting. Embedded in your stack.
+                            Monthly retainer. Zero success fees. Embedded in your stack.
                         </p>
                         <Link
                             href="/contact"

@@ -1,12 +1,15 @@
 import { BarChart3, CheckCircle2, ChevronRight, FileSearch, HelpCircle, Search, ShieldAlert, TrendingUp, Users, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
-    title: 'Do AI Resume Screeners Actually Work? What the Last 30 Days Reveal',
-    description: 'AI resume screeners exploded as a recruiting tool, and so did complaints about them. Here\'s what the last 30 days reveal about what AI screening catches, what it misses, and why senior technical vetting still needs a human expert.',
+const PAGE = {
+    title: 'Do AI Resume Screeners Actually Work?',
+    description: 'What AI resume screeners catch, what they miss, and why senior technical hires still need a human expert to check real capability.',
     path: "/guides/do-ai-resume-screeners-work",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function DoAiResumeScreenersWorkGuide() {
     const faqSchema = {
@@ -41,19 +44,10 @@ export default function DoAiResumeScreenersWorkGuide() {
         ]
     };
 
-    const articleSchema = {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Do AI Resume Screeners Actually Work? What the Last 30 Days Reveal",
-        "description": "What AI resume screening catches, what it misses, why screening carries a real bias exposure, and how to vet senior AI/ML/data candidates by capability instead of keywords.",
-        "author": { "@type": "Organization", "name": "The Kas Group", "url": "https://www.thekasgroup.com" },
-        "publisher": { "@type": "Organization", "name": "The Kas Group" }
-    };
-
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} headline="Do AI Resume Screeners Actually Work? What the Last 30 Days Reveal" />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
             {/* Header Section */}
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">

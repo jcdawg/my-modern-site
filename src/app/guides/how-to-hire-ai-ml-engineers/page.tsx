@@ -1,12 +1,15 @@
 import { Brain, ChevronRight, Code2, HelpCircle, Microscope, Target, Users, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'How to Hire AI/ML Engineers in 2026',
     description: 'A comprehensive guide on sourcing and vetting top-tier AI and Machine Learning talent using technical, Ph.D.-led assessments.',
     path: "/guides/how-to-hire-ai-ml-engineers",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function HireAIMLGuide() {
     const faqSchema = {
@@ -38,6 +41,7 @@ export default function HireAIMLGuide() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             {/* Header Section */}
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">

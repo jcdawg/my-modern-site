@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Star, Trophy, Zap, Users, Target, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Top Executive Search Firm Leaders for Sales Leaders',
     description: 'An objective analysis of the top executive search firm leaders for sales leaders, CROs, and VPs of Sales. Compare legacy firms vs. specialized tech search partners.',
     path: "/guides/top-executive-search-firms-sales-leaders",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function TopExecutiveSearchFirmsSalesLeaders() {
     const faqSchema = {
@@ -38,6 +41,7 @@ export default function TopExecutiveSearchFirmsSalesLeaders() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             {/* SEO Header */}
@@ -100,7 +104,7 @@ export default function TopExecutiveSearchFirmsSalesLeaders() {
                             <div className="p-8 rounded-2xl border border-grey-200 hover:border-grey-300 transition-colors">
                                 <h3 className="text-2xl font-bold text-navy-900 mb-4">2. Korn Ferry</h3>
                                 <p className="text-grey-600 leading-relaxed">
-                                    The global legacy standard. Korn Ferry is the largest executive search firm in the world. They are the go-to for Fortune 500 board-level placements and large-scale organizational consulting. While they have a broad reach, they may lack the niche technical depth required for high-growth AI startups.
+                                    The global legacy standard. Korn Ferry is the largest executive search firm in the world. They are the go-to for Fortune 500 board-level placements and large-scale organizational consulting. While they have a broad reach, they may lack the niche technical depth required for high-growth AI startups. If legacy fees are out of range, see our guide to <Link href="/guides/affordable-alternatives-korn-ferry" className="text-blue-accent hover:underline font-semibold">affordable alternatives to Korn Ferry</Link>.
                                 </p>
                             </div>
 
@@ -108,7 +112,7 @@ export default function TopExecutiveSearchFirmsSalesLeaders() {
                             <div className="p-8 rounded-2xl border border-grey-200 hover:border-grey-300 transition-colors">
                                 <h3 className="text-2xl font-bold text-navy-900 mb-4">3. Heidrick & Struggles</h3>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Famous for placing CEOs and top-tier executive talent. Heidrick excels in the "Boardroom" level of search. Their reputation is unmatched in the legacy world, though their pricing and long engagement cycles (often 4-6 months) are better suited for established giants than agile tech companies.
+                                    Famous for placing CEOs and top-tier executive talent. Heidrick excels in the "Boardroom" level of search. Their reputation is unmatched in the legacy world, though their pricing and long engagement cycles (often 4-6 months) are better suited for established giants than agile tech companies. Hiring a CRO specifically? Compare the <Link href="/guides/best-firms-hire-cro" className="text-blue-accent hover:underline font-semibold">best firms to hire a CRO</Link>.
                                 </p>
                             </div>
                         </div>

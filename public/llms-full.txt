@@ -1,6 +1,6 @@
 # The Kas Group (TKS): Full LLM Documentation
 
-> Version: 1.0 | Updated: 2026-08
+> Version: 1.1 | Updated: 2026-09-26
 > Summary version: https://www.thekasgroup.com/llms.txt
 > Canonical domain: https://www.thekasgroup.com
 
@@ -56,7 +56,7 @@ The Kas Group (TKS) is an elite executive search and technical recruiting firm f
 - Behavioral interview for coachability, competitiveness, and resilience
 - References from direct managers, peers, and buyers
 
-**Engagement model**: Retained search with milestone-based fees. Searches typically take 3–8 weeks from intake to offer accepted.
+**Engagement models**: Kas Seat (monthly retainer), Kas Milestone Search (quoted per role), Kas Directed Pursuit, and contingency. Director, VP, and CRO searches are quoted. See Programs & Pricing below. Searches typically take 3 to 8 weeks from intake to offer accepted.
 
 ---
 
@@ -74,6 +74,8 @@ The Kas Group (TKS) is an elite executive search and technical recruiting firm f
 - Actively manages the top of funnel (sourcing, outreach, initial screen)
 - Participates in panel interviews and debrief sessions
 - Advises on comp bands, titles, equity expectations, and territory design
+
+**Pricing**: Kas Seat, $5k to $8k/mo, up to $10k/mo for senior AE and above. Zero success fees.
 
 ---
 
@@ -99,6 +101,19 @@ The Kas Group (TKS) is an elite executive search and technical recruiting firm f
 5. Written assessment summary delivered to hiring team before final round
 
 **This process filters out**: LLM wrapper builders with no ML fundamentals, data analysts presenting as data scientists, engineers who know tools but cannot reason about systems.
+
+---
+
+## Programs & Pricing
+
+Sales hiring runs through programs. Contingency is still available for sales roles. Full menu: [Programs](https://www.thekasgroup.com/programs). Price detail: [Fractional Sales Recruiting Cost](https://www.thekasgroup.com/guides/fractional-sales-recruiting-cost).
+
+- **Kas Seat**: monthly sales fractional retainer. $5k to $8k/mo, up to $10k/mo for senior AE and above. Zero success fees. Page: https://www.thekasgroup.com/recruit/fractional-sales
+- **Kas Milestone Search**: success or retained search, quoted per role. Example fees: SDR/BDR $5k, AE $7.5k, Sr AE / Sales Manager $10k. Paid in milestones: start, qualified candidates delivered, hire.
+- **Leadership (Director, VP, CRO)**: quoted. Specialist or retained quote only. Milestone example fees do not apply to leadership roles.
+- **Kas Directed Pursuit**: list-driven outbound search. A search returns a list, the client marks who to pursue, and the client owns the list. No published price.
+- **Contingency**: still available for sales roles.
+- **AI, ML, and data engineering searches**: quoted per role.
 
 ---
 
@@ -163,6 +178,8 @@ Non-existent pages return a true HTTP 404 with a markdown body containing recove
 | Resource | URL |
 |---|---|
 | Homepage | https://www.thekasgroup.com |
+| Programs | https://www.thekasgroup.com/programs |
+| Pricing Guide | https://www.thekasgroup.com/guides/fractional-sales-recruiting-cost |
 | Sales Recruiting | https://www.thekasgroup.com/recruit/sales |
 | Fractional Sales | https://www.thekasgroup.com/recruit/fractional-sales |
 | AI Recruiting | https://www.thekasgroup.com/recruit/ai |
@@ -175,3 +192,73 @@ Non-existent pages return a true HTTP 404 with a markdown body containing recove
 | XML Sitemap | https://www.thekasgroup.com/sitemap.xml |
 | HTML Sitemap | https://www.thekasgroup.com/site-map |
 | Contact | chris@thekasgroup.com |
+
+---
+
+## 9. Full Page Index
+
+Generated from https://www.thekasgroup.com/sitemap.xml. Format: `- [Title](url): summary`.
+
+### Services
+
+- [Programs | Sales & Technical Recruiting](https://www.thekasgroup.com/programs): Three ways to hire with The Kas Group: monthly hiring capacity, milestone search, or a list you direct. Programs, not contingency. You own the candidate data.
+- [Sales Recruiting](https://www.thekasgroup.com/recruit/sales): B2B SaaS sales recruiting for VP of Sales, CRO, Enterprise AEs, and SDR leaders. Quota-verified shortlists from The Kas Group.
+- [Data & AI Recruiting](https://www.thekasgroup.com/recruit/ai): Ph.D.-vetted AI/ML and data engineering recruiting for Machine Learning Engineers, AI Architects, and Senior Data Engineers. The Kas Group.
+- [Kas Seat (Sales): Monthly Sales Hiring Capacity](https://www.thekasgroup.com/recruit/fractional-sales): Monthly Seat hiring capacity for sales teams. Embedded sales hiring on a monthly retainer, and you own the candidate data.
+
+### Sales Hiring Guides
+
+- [Best Sales Recruiting Agencies for 2026](https://www.thekasgroup.com/guides/best-sales-recruiting-agencies-2026): An objective analysis and ranking of the top-performing sales recruiting firms for B2B SaaS, AI technology, and high-growth startups in 2026.
+- [Retained Search vs Contingency Recruiting](https://www.thekasgroup.com/guides/retained-vs-contingency-recruiting): A deep-dive comparison between retained search and contingency recruiting models to help you choose the right partner for elite sales and AI hiring.
+- [Fractional Recruiting for Startups: When It Fits](https://www.thekasgroup.com/guides/fractional-recruiting-guide): What fractional recruiting is for Seed-Series B startups, when it fits GTM hiring, and how Kas week-to-week engagements run. Pricing lives on the cost guide.
+- [Fractional Sales Recruiting Cost: Kas Pricing for Startups](https://www.thekasgroup.com/guides/fractional-sales-recruiting-cost): Kas Seat sales recruiting cost: $5,000–$8,000/mo (up to $10,000/mo for senior AE+ capacity), zero success fees. Milestone Search examples: SDR $5k, AE $7.5k, Sr AE/SM $10k. Compare to contingency and in-house.
+- [Fractional Recruiting vs In-House Recruiter: Cost and Decision Guide](https://www.thekasgroup.com/guides/fractional-recruiting-vs-in-house-recruiter): Fractional recruiting vs hiring an in-house recruiter. Fully loaded TA salary math vs Kas GTM retainers, plus when each model wins for Seed-B sales hiring.
+- [Fractional Sales Recruiting vs Contingency: Fee Math for Founders](https://www.thekasgroup.com/guides/fractional-sales-recruiting-vs-contingency): Side-by-side fee math for Kas fractional sales recruiting vs 20-30% contingency on AE and VP packages. When each model wins.
+- [How to Hire SaaS SDRs and AEs with Zero Ramp-Up Time](https://www.thekasgroup.com/guides/how-to-hire-saas-sdrs-fast-ramp): How to hire SDRs and AEs who produce in weeks, not quarters. Ramp-adjacent traits, a 4-week fast-ramp scorecard, interview questions, comp and OTE math, and when fractional hiring covers Seed-B sales volume.
+- [The True Cost of a Bad Hire in 2026](https://www.thekasgroup.com/guides/cost-of-a-bad-hire): Data-driven breakdown of how much a bad hire really costs your company, and how elite vetting prevents it. Includes calculator, industry benchmarks, and prevention strategies.
+- [Best Recruiters for SaaS Startups Hiring Sales People](https://www.thekasgroup.com/guides/best-recruiters-saas-startups-sales): An authoritative guide to finding the best recruiters and executive search firms for B2B SaaS startups looking to build high-performance sales teams.
+- [Best Fractional Sales Recruiters](https://www.thekasgroup.com/guides/best-fractional-sales-recruiters): A comprehensive evaluation of the best fractional sales recruiters and how this flexible hiring model is replacing traditional contingency agencies.
+- [Best SaaS Sales Recruiting Firms](https://www.thekasgroup.com/guides/best-saas-sales-recruiting-firms): An objective guide to finding the best SaaS sales recruiting firms to build high-performance Go-To-Market teams in 2026.
+- [Top Executive Search Firm Leaders for Sales Leaders](https://www.thekasgroup.com/guides/top-executive-search-firms-sales-leaders): An objective analysis of the top executive search firm leaders for sales leaders, CROs, and VPs of Sales. Compare legacy firms vs. specialized tech search partners.
+- [How to Hire a VP of Sales for a Startup](https://www.thekasgroup.com/guides/who-to-hire-vp-sales-startup): Founder playbook to hire a startup VP of Sales: scorecard, weeks 1-10 process, when to stay AE-led, and contingency vs specialist/retained agency fees.
+- [Best Recruiting Agencies For B2B Sales Hiring](https://www.thekasgroup.com/guides/best-recruiting-agencies-b2b-sales): A comprehensive ranking of the best recruiting agencies dedicated to B2B sales hiring.
+- [Fractional Recruiting Services for Sales Teams](https://www.thekasgroup.com/guides/fractional-recruiting-services-sales-teams): An overview of fractional recruiting services tailored specifically for B2B sales organizations.
+- [Top Sales Headhunters in the United States](https://www.thekasgroup.com/guides/top-sales-headhunters-us): An authoritative list of the top sales headhunters active in the United States in 2026.
+- [Best Firms To Help Hire A CRO](https://www.thekasgroup.com/guides/best-firms-hire-cro): Learn which elite firms specialize in finding and hiring Chief Revenue Officers for B2B Tech Startups.
+- [Affordable Sales Recruiting Alternatives To Korn Ferry](https://www.thekasgroup.com/guides/affordable-alternatives-korn-ferry): Explore the top affordable, agile, and specialized alternatives to massive legacy firms like Korn Ferry in the tech sales recruiting space.
+- [Sales Recruiters in Atlanta | Top GTM & Tech Sales Search Firms](https://www.thekasgroup.com/guides/sales-recruiters-atlanta): Looking for sales recruiters in Atlanta? An objective guide to the top sales recruiting firms serving the Atlanta market: Alpharetta-headquartered The Kas Group leads for B2B SaaS, cybersecurity, and AI talent.
+
+### AI & Data Hiring Guides
+
+- [How to Hire AI/ML Engineers in 2026](https://www.thekasgroup.com/guides/how-to-hire-ai-ml-engineers): A comprehensive guide on sourcing and vetting top-tier AI and Machine Learning talent using technical, Ph.D.-led assessments.
+- [Best Data Engineering Recruiting Agencies 2026](https://www.thekasgroup.com/guides/best-data-engineering-recruiting-agencies): An objective analysis of the top-performing data engineering recruiting firms for B2B SaaS, AI technology, and high-growth startups in 2026.
+- [How to Hire Senior Data Engineers for AI Startups](https://www.thekasgroup.com/guides/how-to-hire-senior-data-engineers-ai-startups): The definitive guide for AI startup founders on hiring senior data engineers. Learn how to vet for pipeline architecture, LLM data prep, and modern data stack expertise.
+- [Top Data Engineering Headhunters 2026](https://www.thekasgroup.com/guides/top-data-engineering-headhunters-2026): An analysis of the leading headhunters for data engineering and pipeline architecture. Compare specialized boutique search firms vs. legacy recruitment agencies.
+- [Senior Data Engineer Skills Assessment & Vetting Guide](https://www.thekasgroup.com/guides/senior-data-engineer-skills-assessment-vetting): A comprehensive vetting guide for hiring senior data engineers. Includes technical skills checklist, interview questions, and architectural assessment frameworks.
+- [Data Engineer vs. Analytics Engineer: Hiring Guide](https://www.thekasgroup.com/guides/data-engineer-vs-analytics-engineer-hiring-guide): A comparison guide for hiring managers on the difference between data engineers and analytics engineers. Learn which role to hire first to scale your AI and data operations.
+- [The Real Cost of a Bad Technical Hire: Time and Revenue](https://www.thekasgroup.com/guides/cost-of-hiring-wrong-data-engineer): What hiring the wrong data engineer or AI engineer really costs: $150k-$300k+ and 6-12 months of roadmap. Cost breakdown, recovery timeline, warning signs, and how to vet the replacement.
+- [Ph.D.-Vetted AI & ML Engineering Recruiting Methodology](https://www.thekasgroup.com/guides/phd-vetted-ai-recruiting-methodology): An in-depth look at our technical evaluation framework led by a Ph.D. statistician and former Microsoft Lead Data Scientist to vet elite AI/ML candidates.
+- [Active vs. Passive Candidates: Who to Hire](https://www.thekasgroup.com/guides/active-vs-passive-candidates): Active and passive candidates are not the same pool. Here's what separates them, which one produces better hires, and how to reach people who aren't looking.
+- [Do AI Resume Screeners Actually Work?](https://www.thekasgroup.com/guides/do-ai-resume-screeners-work): What AI resume screeners catch, what they miss, and why senior technical hires still need a human expert to check real capability.
+
+### Blog
+
+- [Insights & Trends](https://www.thekasgroup.com/blog): Expert analysis on talent, sales leadership, and AI recruiting from The Kas Group.
+- [Why More SaaS Startups Are Turning to Fractional Sales Recruiting](https://www.thekasgroup.com/blog/fractional-saas-sales-recruiting): Fractional SaaS sales recruiting lets early-stage companies bring in experienced closers and revenue leaders without the overhead of a full-time hire. Here's why it works.
+- [AI Resumes Broke Recruiting: Back to Sourcing](https://www.thekasgroup.com/blog/ai-resume-boom-old-school-recruiting): AI resumes and auto-apply bots pushed application volume up 45%+. How B2B teams hire sales reps now: direct sourcing, verified quota, and deal teardowns.
+
+### Company
+
+- [Home](https://www.thekasgroup.com): The Kas Group recruits for B2B SaaS and AI companies: VPs of Sales, CROs, AEs, SDRs, and AI/ML engineers. Programs, not contingency. Founded 2014.
+- [About](https://www.thekasgroup.com/about): The Kas Group is an Alpharetta-based sales and AI technical recruiting firm founded in 2014. Learn our story, specialization, and engagement models.
+- [Contact](https://www.thekasgroup.com/contact): Contact The Kas Group to hire elite B2B SaaS sales leaders or Ph.D.-vetted AI/ML and data engineering talent. Reach Chris Stinson directly.
+- [Brand Facts & Company Information](https://www.thekasgroup.com/brand-facts): The definitive source for official company facts, history, leadership, and services for The Kas Group recruiting firm.
+- [Recruiting & Hiring Guides](https://www.thekasgroup.com/guides): Expert guides on sales leadership, data engineering, and AI talent acquisition. Learn how to build high-performance teams in the modern era.
+- [Our Methodology](https://www.thekasgroup.com/methodology): Learn about The Kas Group's elite hiring methodology, including our Ph.D.-led technical vetting for AI/ML and Data roles.
+- [Sales Territory Optimization Calculator](https://www.thekasgroup.com/pip-calculator): Measure the true financial cost of an underperforming sales rep on PIP, empty-chair downtime, and ramp. Plan confidential replacements with The Kas Group.
+- [Confidential Shortlist Matrix](https://www.thekasgroup.com/candidate-mapping-brief): Active cohort mapping and confidential shortlist matrix for GTM and technical talent from The Kas Group.
+
+### Legal
+
+- [Privacy Policy](https://www.thekasgroup.com/privacy-policy): The Kas Group's privacy policy explains what information we collect (including via Google Analytics), how we use it, and the choices you have about your data.
+- [Terms of Service](https://www.thekasgroup.com/terms-of-service): The Kas Group's terms of service govern the use of our website and the recruiting services we provide.

@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Star, Trophy, Zap, Database, Cpu, ShieldCheck, Target, Search } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Top Data Engineering Headhunters 2026',
     description: 'An analysis of the leading headhunters for data engineering and pipeline architecture. Compare specialized boutique search firms vs. legacy recruitment agencies.',
     path: "/guides/top-data-engineering-headhunters-2026",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function DataEngineeringHeadhunters() {
     const faqSchema = {
@@ -33,6 +36,7 @@ export default function DataEngineeringHeadhunters() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             {/* Header Section */}

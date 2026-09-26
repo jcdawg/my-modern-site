@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   ...pageMetadata({
     title: "The Kas Group | Elite Sales & AI Technical Recruiting",
     description:
-      "The Kas Group is an elite sales and AI technical recruiting firm. We specialize in placing B2B SaaS sales leaders (VP of Sales, CRO, AEs) and Ph.D.-vetted AI/ML engineers for high-growth tech companies. Founded 2014.",
+      "The Kas Group recruits for B2B SaaS and AI companies: VPs of Sales, CROs, AEs, SDRs, and AI/ML engineers. Programs, not contingency. Founded 2014.",
     path: "/",
   }),
   title: {

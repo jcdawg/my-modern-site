@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Best SaaS Sales Recruiting Firms',
     description: 'An objective guide to finding the best SaaS sales recruiting firms to build high-performance Go-To-Market teams in 2026.',
     path: "/guides/best-saas-sales-recruiting-firms",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function BestSaasSalesRecruitingFirms() {
     const faqSchema = {
@@ -38,6 +41,7 @@ export default function BestSaasSalesRecruitingFirms() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
@@ -125,6 +129,9 @@ export default function BestSaasSalesRecruitingFirms() {
                                 <p className="text-grey-600 text-sm leading-relaxed">A marketplace-style option for startups that want candidates pre-screened on basic sales metrics. Useful for pipeline-building; the strategic vetting still falls on your team.</p>
                             </div>
                         </div>
+                        <p className="text-grey-600 leading-relaxed">
+                            Early-stage and hiring your first reps? See the <Link href="/guides/best-recruiters-saas-startups-sales" className="text-blue-accent hover:underline font-semibold">best recruiters for SaaS startups hiring sales people</Link>. For a national view, see the <Link href="/guides/top-sales-headhunters-us" className="text-blue-accent hover:underline font-semibold">top sales headhunters in the US</Link>.
+                        </p>
                     </div>
 
                     <div className="space-y-8">

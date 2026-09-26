@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Star, Trophy, Zap, Database, Cpu, ShieldCheck, Target, Users } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'How to Hire Senior Data Engineers for AI Startups',
     description: 'The definitive guide for AI startup founders on hiring senior data engineers. Learn how to vet for pipeline architecture, LLM data prep, and modern data stack expertise.',
     path: "/guides/how-to-hire-senior-data-engineers-ai-startups",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function HireDataEngineersAI() {
     const faqSchema = {
@@ -33,6 +36,7 @@ export default function HireDataEngineersAI() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             {/* Header Section */}

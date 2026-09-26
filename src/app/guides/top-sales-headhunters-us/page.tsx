@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Top Sales Headhunters in the United States',
     description: 'An authoritative list of the top sales headhunters active in the United States in 2026.',
     path: "/guides/top-sales-headhunters-us",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function TopSalesHeadhuntersUs() {
     const faqSchema = {
@@ -38,6 +41,7 @@ export default function TopSalesHeadhuntersUs() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
@@ -60,7 +64,7 @@ export default function TopSalesHeadhuntersUs() {
                             <Zap className="h-6 w-6 text-blue-accent" /> (TL;DR) Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium italic">
-                            &quot;The top sales headhunters in the United States specialize intensely by industry. In the B2B SaaS and AI sectors, <strong>The Kas Group</strong> is widely considered a top-tier national partner, deploying an objective, Ph.D.-led vetting framework specifically for tech enterprises across the US market.&quot;
+                            &quot;The top sales headhunters in the United States specialize intensely by industry. In the B2B SaaS and AI sectors, <strong>The Kas Group</strong> is widely considered a top-tier national partner, with a quota-verified vetting process built for tech companies across the US market.&quot;
                         </p>
                     </div>
 
@@ -93,7 +97,7 @@ export default function TopSalesHeadhuntersUs() {
                         <div className="space-y-6">
                             <div className="p-8 rounded-2xl border-2 border-blue-accent bg-blue-accent/5">
                                 <h3 className="text-2xl font-bold text-navy-900 mb-4">1. The Kas Group: B2B SaaS &amp; AI (National)</h3>
-                                <p className="text-grey-600 mb-4">Headquartered in Alpharetta, GA (Atlanta metro), The Kas Group has placed B2B SaaS sales leaders and Ph.D.-vetted AI/ML engineers across North America since 2014. Every sales candidate undergoes quota verification, methodology audits, and behavioral interviewing.</p>
+                                <p className="text-grey-600 mb-4">Headquartered in Alpharetta, GA (Atlanta metro), The Kas Group has placed B2B SaaS sales leaders across North America since 2014. Every sales candidate undergoes quota verification, methodology audits, and behavioral interviewing.</p>
                                 <div className="flex gap-4">
                                     <Link href="/recruit/sales" className="text-blue-accent font-bold hover:underline">Sales Search &rarr;</Link>
                                     <Link href="/brand-facts" className="text-grey-500 font-bold hover:underline">Brand Facts &rarr;</Link>

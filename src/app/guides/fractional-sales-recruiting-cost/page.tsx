@@ -1,12 +1,15 @@
 import { Building2, CheckCircle2, ChevronRight, DollarSign, HelpCircle, Layers, Scale, Shield, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: "Fractional Sales Recruiting Cost: Kas Pricing for Startups",
     description: "Kas Seat sales recruiting cost: $5,000–$8,000/mo (up to $10,000/mo for senior AE+ capacity), zero success fees. Milestone Search examples: SDR $5k, AE $7.5k, Sr AE/SM $10k. Compare to contingency and in-house.",
     path: "/guides/fractional-sales-recruiting-cost",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function FractionalSalesRecruitingCost() {
     const faqSchema = {
@@ -82,6 +85,7 @@ export default function FractionalSalesRecruitingCost() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
@@ -397,6 +401,9 @@ export default function FractionalSalesRecruitingCost() {
                             </li>
                             <li>
                                 <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline font-semibold">Fractional recruiting vs in-house recruiter</Link> - headcount vs retainer
+                            </li>
+                            <li>
+                                <Link href="/guides/best-fractional-sales-recruiters" className="text-blue-accent hover:underline font-semibold">Best fractional sales recruiters</Link> - how to compare providers before you sign
                             </li>
                             <li>
                                 <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting</Link> - product page

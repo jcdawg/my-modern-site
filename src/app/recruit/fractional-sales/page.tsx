@@ -302,6 +302,10 @@ export default function FractionalSalesRecruiting() {
                             <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">Fractional recruiting guide</Link>
                             {" "}- what it is and when Seed-B startups use it
                         </li>
+                        <li>
+                            <Link href="/guides/best-fractional-sales-recruiters" className="text-blue-accent hover:underline font-semibold">Best fractional sales recruiters</Link>
+                            {" "}- what to check before you pick a provider
+                        </li>
                     </ul>
                     <p className="text-grey-600 mt-6">
                         Full menu: <Link href="/programs" className="text-blue-accent hover:underline font-semibold">Programs</Link>.
