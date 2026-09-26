@@ -4,8 +4,8 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "Fractional Recruiting for Startups: When It Fits",
-    description: "What fractional recruiting is for Seed-Series B startups, when it fits GTM hiring, and how Kas week-to-week engagements run. Pricing lives on the cost guide.",
+    title: "What Is Fractional Recruiting? How It Works",
+    description: "What fractional recruiting is, how it differs from agencies and in-house TA, and how a Kas engagement runs week to week. Fees are on the cost guide.",
     path: "/guides/fractional-recruiting-guide",
 };
 
@@ -79,14 +79,14 @@ export default function FractionalRecruitingGuide() {
                         <ChevronRight className="h-4 w-4" />
                         <Link href="/guides" className="hover:text-blue-accent">Guides</Link>
                         <ChevronRight className="h-4 w-4" />
-                        <span className="text-grey-600">Fractional Recruiting</span>
+                        <span className="text-grey-600">What Is Fractional Recruiting?</span>
                     </nav>
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-6xl mb-6 leading-tight">
-                        Fractional Recruiting for Startups:{" "}
-                        <span className="text-blue-accent">When It Beats Agency and In-House</span>
+                        What Is Fractional Recruiting?{" "}
+                        <span className="text-blue-accent">How a Kas Engagement Runs</span>
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
-                        What fractional recruiting is for Seed-Series B startups, when it fits GTM hiring, and how a Kas engagement runs week to week. Exact fees live on the cost guide.
+                        What fractional recruiting is, how it compares with agency and in-house recruiting, where it fits Seed through Series B GTM hiring, and how a Kas engagement runs week to week. Exact fees live on the cost guide.
                     </p>
                 </div>
             </section>
@@ -253,7 +253,7 @@ export default function FractionalRecruitingGuide() {
                             <Users className="h-8 w-8 text-blue-accent" />
                             Why a sales-specialist fractional partner
                         </h2>
-                        <p className="text-grey-600 leading-relaxed">Most &quot;fractional recruiting for startups&quot; content is written for generic TA. Fine for ops. Thin for seats that move ARR.</p>
+                        <p className="text-grey-600 leading-relaxed">Most fractional recruiting content is written for generic TA. Fine for ops. Thin for seats that move ARR.</p>
                         <ol className="space-y-4 list-decimal pl-6 text-grey-600 leading-relaxed">
                             <li><strong className="text-navy-900">Elite B2B SaaS sales / GTM recruiting.</strong> SDRs through VP Sales. Scorecards built on quota, ACV, and motion fit. Product: <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline">fractional sales</Link>.</li>
                             <li><strong className="text-navy-900">Transparent GTM pricing.</strong> $5k / $8k retainers or $5k-$10k Milestone Search example fees through Sales Manager. Not 20-30% surprise math. Director/VP/CRO: quote only. List: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">cost</Link>.</li>
@@ -265,7 +265,7 @@ export default function FractionalRecruitingGuide() {
                     <div className="space-y-8">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
                             <HelpCircle className="h-8 w-8 text-blue-accent" />
-                            FAQ: fractional recruiting for startups
+                            FAQ: what fractional recruiting is and how it works
                         </h2>
                         <div className="space-y-8">
                         <div className="space-y-3">
