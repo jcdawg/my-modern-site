@@ -23,7 +23,7 @@ const milestoneExample = (id: string, role: string, price: number) => ({
     "@type": "Offer",
     "@id": `${PROGRAMS_URL}#offer-milestone-${id}`,
     name: `Kas Milestone Search: ${role} (example fee)`,
-    description: `Example fee for a ${role} search. Quoted per role. Paid in three milestone payments.`,
+    description: `Example ${role} search fee. Quoted per role. Paid in three milestone payments.`,
     price,
     priceCurrency: "USD",
     url: PROGRAMS_URL,
