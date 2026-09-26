@@ -329,7 +329,7 @@ export default function FractionalSalesRecruitingCost() {
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-grey-600 leading-relaxed">Still unsure what fractional <em>is</em>? Start with the <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline">fractional recruiting guide</Link>.</p>
+                        <p className="text-grey-600 leading-relaxed">Still unsure what fractional <em>is</em>? Start with the <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline">fractional recruiting guide</Link>. Planning a first AE or SDR hire: <Link href="/guides/fractional-recruiting-for-startups" className="text-blue-accent hover:underline">fractional recruiting for startups</Link>.</p>
                     </div>
 
                     <div className="space-y-6">
