@@ -13,7 +13,7 @@ export const metadata = pageMetadata({
 
 // Service/Offer JSON-LD for /programs. Matches the locked product map and the
 // visible program cards below. Provider references the site-wide Organization
-// node in the root layout. Leadership, Directed Pursuit and contingency carry
+// node in the root layout. Leadership / VP / CRO and Directed Pursuit carry
 // no numeric price on purpose.
 const PROGRAMS_URL = `${SITE_URL}/programs`;
 const provider = { "@id": ORGANIZATION_ID };
@@ -98,10 +98,10 @@ const programsJsonLd = {
         {
             "@type": "Service",
             "@id": `${PROGRAMS_URL}#leadership-search`,
-            name: "Leadership search (Director, VP of Sales, CRO)",
+            name: "Leadership / VP / CRO",
             serviceType: "Specialist or retained sales leadership search",
             description:
-                "Specialist or retained search from The Kas Group for Director, VP of Sales, and CRO roles. Quoted per role.",
+                "Specialist or retained search from The Kas Group for sales leadership, VP of Sales, and CRO roles. Quoted per role.",
             provider,
             areaServed,
             url: PROGRAMS_URL,
@@ -113,17 +113,6 @@ const programsJsonLd = {
             serviceType: "List-driven outbound search",
             description:
                 "List-driven outbound search. A search returns a list, The Kas Group reviews it, and you mark who we hunt. You own the list. Pricing on request.",
-            provider,
-            areaServed,
-            url: PROGRAMS_URL,
-        },
-        {
-            "@type": "Service",
-            "@id": `${PROGRAMS_URL}#contingency-search`,
-            name: "Contingency search",
-            serviceType: "Contingency recruiting",
-            description:
-                "Contingency search is available from The Kas Group, priced as a percentage of first-year OTE.",
             provider,
             areaServed,
             url: PROGRAMS_URL,
