@@ -103,7 +103,7 @@ export default function FractionalRecruitingGuide() {
                             Fractional recruiting is a month-to-month retainer. An external recruiting partner embeds as your TA lead without a full-time hire. For Seed-Series B GTM, Kas prices fractional sales recruiting at <strong>$5,000/mo</strong> (up to 2 Seed/Series A roles) or <strong>$8,000/mo</strong> (up to 5 scaling GTM roles) with <strong>zero success fees</strong>. Use fractional when you have specialized seats ahead and want dedicated bandwidth. Use a Milestone Search example fee for one clear SDR/AE/SM seat. Use specialist quote for Director/VP/CRO.
                         </p>
                         <p className="text-grey-300 leading-relaxed mt-4 relative z-10">
-                            Full price list: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales recruiting cost</Link>. Product: <Link href="/recruit/fractional-sales" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales</Link>.
+                            Full price list: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales recruiting cost</Link>. Product: <Link href="/recruit/fractional-sales" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales</Link>. First 1 to 5 sales hires: <Link href="/guides/fractional-recruiting-for-startups" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional recruiting for startups</Link>.
                         </p>
                     </div>
 
