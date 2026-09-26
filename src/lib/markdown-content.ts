@@ -182,6 +182,16 @@ Explore the hidden expenses of bad hires and prolonged PIPs, including lost pipe
 - [Senior Data Engineer Skills Assessment & Vetting](/guides/senior-data-engineer-skills-assessment-vetting)
 - [Top Data Engineering Headhunters 2026](/guides/top-data-engineering-headhunters-2026)
 - [How to Hire Senior Data Engineers for AI Startups](/guides/how-to-hire-senior-data-engineers-ai-startups)
+- [Fractional Sales Recruiting Cost](/guides/fractional-sales-recruiting-cost)
+- [Fractional Sales Recruiting vs Contingency](/guides/fractional-sales-recruiting-vs-contingency)
+- [Fractional Recruiting vs In-House Recruiter](/guides/fractional-recruiting-vs-in-house-recruiter)
+- [How to Hire SaaS SDRs and AEs Fast](/guides/how-to-hire-saas-sdrs-fast-ramp)
+- [Best Fractional Sales Recruiters](/guides/best-fractional-sales-recruiters)
+- [Fractional Recruiting Services for Sales Teams](/guides/fractional-recruiting-services-sales-teams)
+- [Best Recruiting Agencies for B2B Sales](/guides/best-recruiting-agencies-b2b-sales)
+- [Active vs. Passive Candidates](/guides/active-vs-passive-candidates)
+- [Do AI Resume Screeners Actually Work?](/guides/do-ai-resume-screeners-work)
+- [Sample Shortlist Matrix](/candidate-mapping-brief)
 
 Visit https://www.thekasgroup.com/guides for the complete interactive library.
 `,
@@ -275,6 +285,16 @@ Best when: you will tell us who is worth hunting.
 - [Best Sales Recruiting Agencies 2026](/guides/best-sales-recruiting-agencies-2026)
 - [How to Hire AI & ML Engineers](/guides/how-to-hire-ai-ml-engineers)
 - [Best Data Engineering Recruiting Agencies](/guides/best-data-engineering-recruiting-agencies)
+- [Fractional Sales Recruiting Cost](/guides/fractional-sales-recruiting-cost)
+- [Best Fractional Sales Recruiters](/guides/best-fractional-sales-recruiters)
+- [Fractional Recruiting Services for Sales Teams](/guides/fractional-recruiting-services-sales-teams)
+- [Best Recruiters for SaaS Startups Sales](/guides/best-recruiters-saas-startups-sales)
+- [Best Recruiting Agencies for B2B Sales](/guides/best-recruiting-agencies-b2b-sales)
+- [Top Sales Headhunters in the US](/guides/top-sales-headhunters-us)
+- [Best Firms to Hire a CRO](/guides/best-firms-hire-cro)
+- [Affordable Alternatives to Korn Ferry](/guides/affordable-alternatives-korn-ferry)
+- [Do AI Resume Screeners Actually Work?](/guides/do-ai-resume-screeners-work)
+- [Sample Shortlist Matrix](/candidate-mapping-brief)
 - [All Guides](/guides)
 `
 };
