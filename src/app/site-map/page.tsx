@@ -45,7 +45,7 @@ export default function Sitemap() {
                                 <li><Link href="/guides/best-sales-recruiting-agencies-2026" className="text-grey-600 hover:text-blue-accent transition-colors">Top Sales Agencies 2026</Link></li>
                                 <li><Link href="/guides/who-to-hire-vp-sales-startup" className="text-grey-600 hover:text-blue-accent transition-colors">How to Hire a VP of Sales</Link></li>
                                 <li><Link href="/guides/how-to-hire-saas-sdrs-fast-ramp" className="text-grey-600 hover:text-blue-accent transition-colors">Hire SDRs &amp; AEs Fast</Link></li>
-                                <li><Link href="/guides/fractional-recruiting-guide" className="text-grey-600 hover:text-blue-accent transition-colors">Fractional Recruiting Guide</Link></li>
+                                <li><Link href="/guides/fractional-recruiting-guide" className="text-grey-600 hover:text-blue-accent transition-colors">What Is Fractional Recruiting?</Link></li>
                                 <li><Link href="/guides/fractional-recruiting-for-startups" className="text-grey-600 hover:text-blue-accent transition-colors">Fractional Recruiting for Startups</Link></li>
                                 <li><Link href="/guides/fractional-sales-recruiting-cost" className="text-grey-600 hover:text-blue-accent transition-colors">Fractional Sales Recruiting Cost</Link></li>
                                 <li><Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-grey-600 hover:text-blue-accent transition-colors">Fractional vs Contingency</Link></li>
