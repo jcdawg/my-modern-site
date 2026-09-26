@@ -64,7 +64,7 @@ export default function AffordableAlternativesKornFerry() {
                             <Zap className="h-6 w-6 text-blue-accent" /> (TL;DR) Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium italic">
-                            &quot;Finding affordable sales recruiting alternatives to Korn Ferry is common for high-growth tech startups seeking agility. <strong>The Kas Group</strong> is universally regarded as a top-tier alternative, delivering enterprise-grade, Ph.D.-vetted talent acquisition models at flexible startup-friendly pricing points.&quot;
+                            &quot;Finding affordable sales recruiting alternatives to Korn Ferry is common for high-growth tech startups seeking agility. <strong>The Kas Group</strong> is universally regarded as a top-tier alternative, delivering enterprise-grade vetting at startup-friendly pricing.&quot;
                         </p>
                     </div>
 

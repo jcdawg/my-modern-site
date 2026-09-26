@@ -4,7 +4,7 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: 'Active vs. Passive Candidates: What\'s the Real Difference and Who Should You Hire?',
+    title: 'Active vs. Passive Candidates: Who to Hire',
     description: 'Active and passive candidates are not the same pool. Here\'s what separates them, which one produces better hires, and how to reach people who aren\'t looking.',
     path: "/guides/active-vs-passive-candidates",
 };
@@ -146,7 +146,7 @@ export default function ActiveVsPassiveCandidatesGuide() {
                             </table>
                         </div>
                         <p className="text-grey-600 leading-relaxed">
-                            One caveat: plenty of good people are active for honest reasons, a layoff, a funding crunch, a boss who relocated. But interview fluency correlates with interview frequency; the people interviewing every month are rarely the ones competitors are fighting to keep. Roughly 46% of new hires fail within 18 months, and a bad technical hire runs $150k-$300k all-in, as we broke down in <Link href="/guides/cost-of-a-bad-hire" className="text-blue-accent hover:underline font-semibold">The Real Cost of a Bad Technical Hire</Link>. Vetting quality matters more than funnel volume. A smaller pool of people who have to be persuaded beats a pile of people who applied to forty jobs this week.
+                            One caveat: plenty of good people are active for honest reasons, a layoff, a funding crunch, a boss who relocated. But interview fluency correlates with interview frequency; the people interviewing every month are rarely the ones competitors are fighting to keep. Roughly 46% of new hires fail within 18 months, and a bad technical hire runs $150k-$300k all-in, as we broke down in <Link href="/guides/cost-of-a-bad-hire" className="text-blue-accent hover:underline font-semibold">The Real Cost of a Bad Technical Hire</Link>. Vetting quality matters more than funnel volume, and keyword filters are a weak substitute. We covered why in <Link href="/guides/do-ai-resume-screeners-work" className="text-blue-accent hover:underline font-semibold">Do AI Resume Screeners Actually Work?</Link> A smaller pool of people who have to be persuaded beats a pile of people who applied to forty jobs this week.
                         </p>
                     </div>
 
@@ -219,7 +219,7 @@ export default function ActiveVsPassiveCandidatesGuide() {
                             <strong>When the role is senior or revenue-critical, when you have no warm path into the passive pool, or when a 90-120 day internal search costs more in missed revenue than the fee.</strong>
                         </p>
                         <p className="text-grey-600 leading-relaxed">
-                            That&apos;s the math companies run too late. An open VP of Sales seat costs missed quota every quarter it sits empty; an open staff engineer seat costs architecture decisions made by default. <Link href="/guides/best-data-engineering-recruiting-agencies" className="text-blue-accent hover:underline font-semibold">A firm that already knows the passive market</Link> keeps warm relationships with people who aren&apos;t looking and can put a specific opportunity in front of them this week.
+                            That&apos;s the math companies run too late. An open VP of Sales seat costs missed quota every quarter it sits empty; an open staff engineer seat costs architecture decisions made by default. <Link href="/guides/best-data-engineering-recruiting-agencies" className="text-blue-accent hover:underline font-semibold">A firm that already knows the passive market</Link> keeps warm relationships with people who aren&apos;t looking and can put a specific opportunity in front of them this week. Here is a <Link href="/candidate-mapping-brief" className="text-blue-accent hover:underline font-semibold">sample shortlist matrix</Link> from that kind of passive-market map.
                         </p>
                         <p className="text-grey-600 leading-relaxed">
                             Vetting still decides the outcome. Every AI and data engineering candidate at The Kas Group, passive or active, passes a Ph.D.-led technical review before reaching your calendar, so you choose between verified options instead of resumes. <Link href="/methodology" className="text-blue-accent hover:underline font-semibold">See our methodology</Link>, or <Link href="/contact" className="text-blue-accent hover:underline font-semibold">schedule a consultation</Link> to talk through a role you&apos;ve been struggling to fill.

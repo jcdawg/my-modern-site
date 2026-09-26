@@ -35,9 +35,9 @@ export default function Blog() {
         <div className="bg-white py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl text-center">
-                    <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">Insights & Trends</h2>
+                    <h1 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">Insights & Trends</h1>
                     <p className="mt-2 text-lg leading-8 text-grey-600">
-                        Expert analysis on the state of Talent, Sales, and Artificial Intelligence.
+                        Notes from live sales and GTM searches. What startups pay, what is working to find reps, and what is not.
                     </p>
                 </div>
                 <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">

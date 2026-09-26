@@ -345,6 +345,10 @@ export default function HowToHireSaasSdrsFastRamp() {
                                 <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline">
                                     fractional sales recruiting vs contingency
                                 </Link>
+                                . Comparing outside recruiters? See the{" "}
+                                <Link href="/guides/best-recruiters-saas-startups-sales" className="text-blue-accent hover:underline">
+                                    best recruiters for SaaS startups hiring sales people
+                                </Link>
                                 .
                             </p>
                         </div>

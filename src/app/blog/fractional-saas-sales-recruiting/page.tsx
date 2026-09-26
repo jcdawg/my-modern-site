@@ -124,6 +124,10 @@ export default function FractionalSaasSalesPost() {
                         This is exactly the kind of conversation we have with clients before we ever start a fractional search. Getting the fit right matters just as much as getting the speed right.
                     </p>
 
+                    <p>
+                        Comparing partners? Start with our guides to the <Link href="/guides/best-recruiters-saas-startups-sales" className="text-blue-accent hover:underline">best recruiters for SaaS startups hiring sales people</Link> and the <Link href="/guides/best-fractional-sales-recruiters" className="text-blue-accent hover:underline">best fractional sales recruiters</Link>.
+                    </p>
+
                     <h2 className="text-2xl font-bold text-navy-900 pt-4">Frequently Asked Questions</h2>
 
                     <div className="space-y-6 pt-2">

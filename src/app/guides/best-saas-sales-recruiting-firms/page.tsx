@@ -129,6 +129,9 @@ export default function BestSaasSalesRecruitingFirms() {
                                 <p className="text-grey-600 text-sm leading-relaxed">A marketplace-style option for startups that want candidates pre-screened on basic sales metrics. Useful for pipeline-building; the strategic vetting still falls on your team.</p>
                             </div>
                         </div>
+                        <p className="text-grey-600 leading-relaxed">
+                            Early-stage and hiring your first reps? See the <Link href="/guides/best-recruiters-saas-startups-sales" className="text-blue-accent hover:underline font-semibold">best recruiters for SaaS startups hiring sales people</Link>. For a national view, see the <Link href="/guides/top-sales-headhunters-us" className="text-blue-accent hover:underline font-semibold">top sales headhunters in the US</Link>.
+                        </p>
                     </div>
 
                     <div className="space-y-8">

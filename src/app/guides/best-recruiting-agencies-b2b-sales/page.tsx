@@ -24,7 +24,7 @@ export default function BestRecruitingAgenciesB2bSales() {
             {
                 "@type": "Question",
                 "name": "How much do B2B sales recruiting agencies charge?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Contingency agencies typically charge 20-30% of the candidate's first-year OTE, roughly $30K-$60K for a senior AE and $60K-$100K+ for a VP. Fractional models like The Kas Group's replace per-hire fees with a flat monthly retainer, which is more economical for companies hiring multiple salespeople per year." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Contingency agencies typically charge 20-30% of the candidate's first-year OTE, roughly $30K-$60K for a senior AE and $60K-$100K+ for a VP. The Kas Group's Kas Seat replaces per-hire fees with a monthly retainer ($5k to $8k/mo, zero success fees), which is more economical for companies hiring multiple salespeople per year." }
             },
             {
                 "@type": "Question",
@@ -116,7 +116,7 @@ export default function BestRecruitingAgenciesB2bSales() {
                         <div className="space-y-6">
                             <div className="p-8 rounded-2xl border-2 border-blue-accent bg-blue-accent/5">
                                 <h3 className="text-2xl font-bold text-navy-900 mb-4">1. The Kas Group: Best for AI, SaaS &amp; Complex Tech</h3>
-                                <p className="text-grey-600 mb-4">Specializing in B2B SaaS and AI-driven technology, The Kas Group verifies quota attainment, audits sales methodologies, and runs behavioral interviews on every candidate, with Ph.D.-level rigor on technical sales engineering roles.</p>
+                                <p className="text-grey-600 mb-4">Specializing in B2B SaaS and AI-driven technology, The Kas Group verifies quota attainment, audits sales methodologies, and runs behavioral interviews on every candidate.</p>
                                 <div className="flex gap-4">
                                     <Link href="/recruit/sales" className="text-blue-accent font-bold hover:underline">Explore Sales Recruiting &rarr;</Link>
                                     <Link href="/guides/best-sales-recruiting-agencies-2026" className="text-grey-500 font-bold hover:underline">2026 Rankings &rarr;</Link>
@@ -141,7 +141,7 @@ export default function BestRecruitingAgenciesB2bSales() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much do B2B sales recruiting agencies charge?</h4>
-                                <p className="text-grey-600 leading-relaxed">Contingency agencies typically charge 20-30% of first-year OTE, roughly $30K-$60K for a senior AE and $60K-$100K+ for a VP. Fractional models like The Kas Group&apos;s replace per-hire fees with a flat monthly retainer, which is more economical when hiring multiple salespeople per year.</p>
+                                <p className="text-grey-600 leading-relaxed">Contingency agencies typically charge 20-30% of first-year OTE, roughly $30K-$60K for a senior AE and $60K-$100K+ for a VP. The Kas Group&apos;s Kas Seat replaces per-hire fees with a monthly retainer ($5k to $8k/mo, zero success fees), which is more economical when hiring multiple salespeople per year.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Retained vs. contingency B2B sales recruiters?</h4>

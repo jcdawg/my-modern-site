@@ -322,6 +322,7 @@ export default function CostOfHiringWrongDataEngineer() {
                                 { title: "Hiring Senior Data Engineers for AI Startups", href: "/guides/how-to-hire-senior-data-engineers-ai-startups", desc: "The tactical roadmap for getting the first technical hire right." },
                                 { title: "Senior Data Engineer Skills Assessment", href: "/guides/senior-data-engineer-skills-assessment-vetting", desc: "The full technical vetting framework and interview questions." },
                                 { title: "Best Data Engineering Recruiting Agencies", href: "/guides/best-data-engineering-recruiting-agencies", desc: "Our objective analysis of the top firms for the modern data stack." },
+                                { title: "Do AI Resume Screeners Work?", href: "/guides/do-ai-resume-screeners-work", desc: "What keyword and AI screening misses, and why capability checks catch it." },
                             ].map((guide) => (
                                 <Link key={guide.href} href={guide.href} className="group p-6 rounded-2xl border border-grey-100 hover:border-blue-accent/20 hover:bg-grey-50 transition-all shadow-sm">
                                     <h3 className="text-lg font-bold text-navy-900 mb-2 group-hover:text-blue-accent transition-colors">{guide.title}</h3>

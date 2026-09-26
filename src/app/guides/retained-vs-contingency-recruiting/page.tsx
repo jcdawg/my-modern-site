@@ -144,6 +144,9 @@ export default function RetainedVsContingency() {
                                 </p>
                             </div>
                         </div>
+                        <p className="text-grey-600 leading-relaxed">
+                            Ready to shortlist firms? Compare the <Link href="/guides/best-recruiting-agencies-b2b-sales" className="text-blue-accent hover:underline font-semibold">best recruiting agencies for B2B sales</Link>. For a revenue leader, see the <Link href="/guides/best-firms-hire-cro" className="text-blue-accent hover:underline font-semibold">best firms to hire a CRO</Link>.
+                        </p>
                     </div>
 
                     {/* FAQ Section */}

@@ -198,6 +198,9 @@ export default function MethodologyPage() {
                             <p className="text-grey-600 leading-relaxed">Vetted shortlists typically arrive within 2-4 weeks for individual contributor roles and 6-10 weeks for leadership searches, with weekly pipeline updates throughout.</p>
                         </div>
                     </div>
+                    <p className="mt-10 text-center text-grey-600">
+                        Want to see what a shortlist looks like? Here is a <Link href="/candidate-mapping-brief" className="text-blue-accent hover:underline font-semibold">sample shortlist matrix</Link> with anonymized profiles.
+                    </p>
                 </div>
             </section>
 

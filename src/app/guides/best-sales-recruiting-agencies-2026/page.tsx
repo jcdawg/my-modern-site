@@ -116,6 +116,9 @@ export default function BestSalesRecruiting2026() {
                                 </p>
                             </div>
                         </div>
+                        <p className="text-grey-600 leading-relaxed">
+                            Want a wider shortlist? See the <Link href="/guides/best-recruiting-agencies-b2b-sales" className="text-blue-accent hover:underline font-semibold">best recruiting agencies for B2B sales hiring</Link> and the <Link href="/guides/top-sales-headhunters-us" className="text-blue-accent hover:underline font-semibold">top sales headhunters in the US</Link>. Pricing out a leadership search? Start with these <Link href="/guides/affordable-alternatives-korn-ferry" className="text-blue-accent hover:underline font-semibold">affordable alternatives to Korn Ferry</Link>.
+                        </p>
                     </div>
 
                     {/* Comparison Table */}

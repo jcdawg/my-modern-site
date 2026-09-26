@@ -16,10 +16,18 @@ export default function GuidesIndex() {
         { title: "Top Exec Search Firms", href: "/guides/top-executive-search-firms-sales-leaders", desc: "Best firms for CRO and VP-level sales leadership." },
         { title: "SaaS Sales Recruiters", href: "/guides/best-saas-sales-recruiting-firms", desc: "Specialized firms for high-growth software companies." },
         { title: "Fractional Recruiting", href: "/guides/fractional-recruiting-guide", desc: "What fractional recruiting is for Seed-Series B GTM, when it fits, and how Kas engagements run week to week." },
-        { title: "Fractional Sales Recruiting Cost", href: "/guides/fractional-sales-recruiting-cost", desc: "Exact Kas pricing: Kas Seat at $5,000/mo $5k/mo, Kas Seat at $8,000/mo $8k/mo, flat SDR $5k / AE $7.5k / Sr AE-SM $10k." },
+        { title: "Fractional Sales Recruiting Cost", href: "/guides/fractional-sales-recruiting-cost", desc: "Exact Kas pricing: Kas Seat at $5k to $8k/mo (up to $10k for senior AE+). Kas Milestone Search examples: SDR $5k, AE $7.5k, Sr AE / Sales Manager $10k." },
         { title: "Fractional vs Contingency Fees", href: "/guides/fractional-sales-recruiting-vs-contingency", desc: "Side-by-side fee math for Kas fractional retainers vs 20-30% contingency on AE and VP packages." },
         { title: "Fractional vs In-House Recruiter", href: "/guides/fractional-recruiting-vs-in-house-recruiter", desc: "Fully loaded TA salary math vs Kas $5k/$8k retainers, and when Seed-B teams should hire internal TA." },
         { title: "Atlanta Sales Recruiters", href: "/guides/sales-recruiters-atlanta", desc: "The local guide to GTM talent in the Alpharetta tech corridor." },
+        { title: "Best Fractional Sales Recruiters", href: "/guides/best-fractional-sales-recruiters", desc: "How to compare fractional sales recruiters, and what to ask before you sign a retainer." },
+        { title: "Fractional Recruiting for Sales Teams", href: "/guides/fractional-recruiting-services-sales-teams", desc: "What a fractional engagement covers, who it fits, and how it compares to agencies and in-house TA." },
+        { title: "Recruiters for SaaS Startups", href: "/guides/best-recruiters-saas-startups-sales", desc: "Specialist, fractional, and volume agencies compared for Seed to Series B sales hiring." },
+        { title: "B2B Sales Recruiting Agencies", href: "/guides/best-recruiting-agencies-b2b-sales", desc: "What separates good B2B sales agencies, with typical contingency fees by role." },
+        { title: "Top Sales Headhunters (US)", href: "/guides/top-sales-headhunters-us", desc: "Sales headhunters active across the US, and how to pick one for your market." },
+        { title: "Best Firms to Hire a CRO", href: "/guides/best-firms-hire-cro", desc: "Who runs CRO searches well, what they cost, and how to assess a CRO." },
+        { title: "Korn Ferry Alternatives", href: "/guides/affordable-alternatives-korn-ferry", desc: "Boutique and fractional options for leadership searches without legacy-firm fees." },
+        { title: "Sample Shortlist Matrix", href: "/candidate-mapping-brief", desc: "An anonymized example of the candidate map and shortlist you get from a Kas search." },
     ];
 
     const dataGuides = [
@@ -30,6 +38,7 @@ export default function GuidesIndex() {
         { title: "Engineer vs. Analytics", href: "/guides/data-engineer-vs-analytics-engineer-hiring-guide", desc: "Which role to hire first and how to sequence them." },
         { title: "Cost of a Bad Technical Hire", href: "/guides/cost-of-hiring-wrong-data-engineer", desc: "What a wrong data engineer decision costs in time and revenue." },
         { title: "Active vs. Passive Candidates", href: "/guides/active-vs-passive-candidates", desc: "Which pool produces better senior hires, and how to reach people who aren't looking." },
+        { title: "Do AI Resume Screeners Work?", href: "/guides/do-ai-resume-screeners-work", desc: "What AI screening catches, what it misses, and how to vet senior technical candidates by capability." },
     ];
 
     return (

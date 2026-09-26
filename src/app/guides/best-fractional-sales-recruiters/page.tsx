@@ -29,7 +29,7 @@ export default function BestFractionalSalesRecruiters() {
             {
                 "@type": "Question",
                 "name": "How much does a fractional sales recruiter cost compared to a contingency agency?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Contingency agencies charge 20-30% of first-year OTE per hire: $30K-$60K for a senior AE. A fractional retainer is a flat monthly fee covering unlimited hiring. Companies making three or more sales hires per year typically save 40-60% versus per-hire agency fees." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Contingency agencies charge 20-30% of first-year OTE per hire: $30K-$60K for a senior AE. Kas Seat is a monthly retainer: $5k to $8k/mo, up to $10k/mo for senior AE and above, with zero success fees. Companies making three or more sales hires per year typically save 40-60% versus per-hire agency fees." }
             },
             {
                 "@type": "Question",
@@ -79,10 +79,10 @@ export default function BestFractionalSalesRecruiters() {
                         <div className="space-y-8">
                             <div className="p-8 rounded-2xl border-2 border-blue-accent bg-blue-accent/5">
                                 <h3 className="text-2xl font-bold text-navy-900 mb-4">1. The Kas Group (Top for SaaS & AI)</h3>
-                                <p className="text-grey-600 mb-4">By offering an embedded fractional model, TKS allows tech startups to directly leverage their GTM expertise at a flat monthly rate, enabling rapid scaling of sales teams without sacrificing quality.</p>
+                                <p className="text-grey-600 mb-4">By offering an embedded fractional model, TKS allows tech startups to directly leverage their GTM expertise on a monthly retainer (Kas Seat, $5k to $8k/mo, zero success fees), enabling rapid scaling of sales teams without sacrificing quality.</p>
                                 <div className="flex gap-4">
                                     <Link href="/recruit/fractional-sales" className="text-blue-accent font-bold hover:underline">View Fractional Services &rarr;</Link>
-                                    <Link href="/guides/fractional-vs-traditional-sales-recruiting" className="text-grey-500 font-bold hover:underline">Compare Retainers vs. Contingency &rarr;</Link>
+                                    <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-grey-500 font-bold hover:underline">Compare Retainers vs. Contingency &rarr;</Link>
                                 </div>
                             </div>
                             <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
@@ -120,7 +120,7 @@ export default function BestFractionalSalesRecruiters() {
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-navy-900 text-lg">Transparent Retainer Terms</h4>
-                                    <p className="text-grey-600 mt-2">Flat monthly pricing, flexible notice periods, and clear scope, avoid fractional arrangements that still hide per-hire success fees.</p>
+                                    <p className="text-grey-600 mt-2">A published monthly price, flexible notice periods, and clear scope. Avoid fractional arrangements that still hide per-hire success fees.</p>
                                 </div>
                             </li>
                         </ul>
@@ -134,7 +134,7 @@ export default function BestFractionalSalesRecruiters() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much does a fractional sales recruiter cost?</h4>
-                                <p className="text-grey-600 leading-relaxed">Contingency agencies charge 20-30% of first-year OTE per hire: $30K-$60K for a senior AE. A fractional retainer is a flat monthly fee covering unlimited hiring. Companies making three or more sales hires per year typically save 40-60% versus per-hire fees.</p>
+                                <p className="text-grey-600 leading-relaxed">Contingency agencies charge 20-30% of first-year OTE per hire: $30K-$60K for a senior AE. Kas Seat is a monthly retainer: $5k to $8k/mo, up to $10k/mo for senior AE and above, with zero success fees. Companies making three or more sales hires per year typically save 40-60% versus per-hire fees.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">When should we switch from contingency to fractional?</h4>
@@ -146,7 +146,7 @@ export default function BestFractionalSalesRecruiters() {
                     <div className="p-12 rounded-[2rem] bg-navy-900 text-white text-center shadow-2xl relative overflow-hidden">
                         <h2 className="text-3xl font-bold mb-4 relative z-10">Scale Your Sales Team Without Agency Fees</h2>
                         <p className="text-grey-400 mb-8 max-w-lg mx-auto relative z-10">
-                            One flat retainer. Unlimited vetted candidates.
+                            Kas Seat: $5k to $8k/mo. Zero success fees.
                         </p>
                         <Link
                             href="/contact"

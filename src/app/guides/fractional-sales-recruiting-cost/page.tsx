@@ -403,6 +403,9 @@ export default function FractionalSalesRecruitingCost() {
                                 <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline font-semibold">Fractional recruiting vs in-house recruiter</Link> - headcount vs retainer
                             </li>
                             <li>
+                                <Link href="/guides/best-fractional-sales-recruiters" className="text-blue-accent hover:underline font-semibold">Best fractional sales recruiters</Link> - how to compare providers before you sign
+                            </li>
+                            <li>
                                 <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting</Link> - product page
                             </li>
                             <li>

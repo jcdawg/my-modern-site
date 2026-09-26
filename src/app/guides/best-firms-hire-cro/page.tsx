@@ -24,7 +24,7 @@ export default function BestFirmsHireCro() {
             {
                 "@type": "Question",
                 "name": "How much does it cost to hire a CRO through a search firm?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Retained search fees typically run 25-33% of first-year total compensation. For a CRO earning $300K-$450K OTE plus equity, that translates to roughly $75K-$150K at legacy firms. Specialized boutiques like The Kas Group price engagements from $50K-$100K with the same or deeper GTM vetting." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Retained search fees typically run 25-33% of first-year total compensation. For a CRO earning $300K-$450K OTE plus equity, that translates to roughly $75K-$150K at legacy firms. The Kas Group quotes CRO searches per role as a specialist or retained search, with the same or deeper GTM vetting." }
             },
             {
                 "@type": "Question",
@@ -116,7 +116,7 @@ export default function BestFirmsHireCro() {
                             </div>
                             <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
                                 <h3 className="text-xl font-bold text-navy-900 mb-4">3. Fractional Recruiting Partners (Best for back-to-back hiring)</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">If you&apos;ll hire a CRO now and AEs next quarter, a fractional partner embeds with leadership and runs continuous searches at a flat retainer instead of per-hire fees.</p>
+                                <p className="text-grey-600 text-sm leading-relaxed">If you&apos;ll hire a CRO now and AEs next quarter, a fractional partner embeds with leadership and runs continuous searches on a monthly retainer instead of per-hire fees.</p>
                             </div>
                         </div>
                     </div>
@@ -129,7 +129,7 @@ export default function BestFirmsHireCro() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much does it cost to hire a CRO through a search firm?</h4>
-                                <p className="text-grey-600 leading-relaxed">Retained search fees typically run 25-33% of first-year total compensation. For a CRO earning $300K-$450K OTE plus equity, that translates to roughly $75K-$150K at legacy firms. Specialized boutiques like The Kas Group price engagements from $50K-$100K with the same or deeper GTM vetting.</p>
+                                <p className="text-grey-600 leading-relaxed">Retained search fees typically run 25-33% of first-year total compensation. For a CRO earning $300K-$450K OTE plus equity, that translates to roughly $75K-$150K at legacy firms. The Kas Group quotes CRO searches per role as a specialist or retained search, with the same or deeper GTM vetting.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How long does a CRO executive search take?</h4>

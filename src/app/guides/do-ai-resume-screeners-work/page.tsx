@@ -4,8 +4,8 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: 'Do AI Resume Screeners Actually Work? What the Last 30 Days Reveal',
-    description: 'AI resume screeners exploded as a recruiting tool, and so did complaints about them. Here\'s what the last 30 days reveal about what AI screening catches, what it misses, and why senior technical vetting still needs a human expert.',
+    title: 'Do AI Resume Screeners Actually Work?',
+    description: 'What AI resume screeners catch, what they miss, and why senior technical hires still need a human expert to check real capability.',
     path: "/guides/do-ai-resume-screeners-work",
 };
 

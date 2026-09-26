@@ -4,8 +4,8 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "AI Resumes Broke Recruiting: Why Employers Are Going Back to Old-School Sales Sourcing",
-    description: "AI-generated resumes and auto-apply bots have driven job application volume up 45%+ and made keyword-stuffed resumes worthless as a hiring signal. How B2B employers hire outside sales reps with direct sourcing, verified quota attainment, and deal teardowns instead of resume screening.",
+    title: "AI Resumes Broke Recruiting: Back to Sourcing",
+    description: "AI resumes and auto-apply bots pushed application volume up 45%+. How B2B teams hire sales reps now: direct sourcing, verified quota, and deal teardowns.",
     path: "/blog/ai-resume-boom-old-school-recruiting",
 };
 
@@ -157,6 +157,8 @@ export default function AiResumeBoomPost() {
                         <Link href="/guides/who-to-hire-vp-sales-startup" className="text-blue-accent hover:underline">Who to Hire to Find a VP of Sales</Link>
                         {" · "}
                         <Link href="/guides/best-sales-recruiting-agencies-2026" className="text-blue-accent hover:underline">Best Sales Recruiting Agencies 2026</Link>
+                        {" · "}
+                        <Link href="/guides/do-ai-resume-screeners-work" className="text-blue-accent hover:underline">Do AI Resume Screeners Actually Work?</Link>
                     </p>
 
                     <h2 className="text-2xl font-bold text-navy-900 pt-4">Frequently Asked Questions</h2>

@@ -4,7 +4,7 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "Fractional Recruiting for Startups: When It Beats Agency and In-House",
+    title: "Fractional Recruiting for Startups: When It Fits",
     description: "What fractional recruiting is for Seed-Series B startups, when it fits GTM hiring, and how Kas week-to-week engagements run. Pricing lives on the cost guide.",
     path: "/guides/fractional-recruiting-guide",
 };
@@ -311,6 +311,12 @@ export default function FractionalRecruitingGuide() {
                             </li>
                             <li>
                                 <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline font-semibold">Fractional recruiting vs in-house recruiter</Link>
+                            </li>
+                            <li>
+                                <Link href="/guides/best-fractional-sales-recruiters" className="text-blue-accent hover:underline font-semibold">Best fractional sales recruiters</Link>
+                            </li>
+                            <li>
+                                <Link href="/guides/fractional-recruiting-services-sales-teams" className="text-blue-accent hover:underline font-semibold">Fractional recruiting services for sales teams</Link>
                             </li>
                             <li>
                                 <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting</Link>

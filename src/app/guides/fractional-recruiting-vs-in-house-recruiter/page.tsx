@@ -459,6 +459,9 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                                 <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting vs contingency</Link>
                             </li>
                             <li>
+                                <Link href="/guides/fractional-recruiting-services-sales-teams" className="text-blue-accent hover:underline font-semibold">Fractional recruiting services for sales teams</Link>
+                            </li>
+                            <li>
                                 <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting</Link>
                             </li>
                             <li>

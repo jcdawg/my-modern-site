@@ -107,6 +107,7 @@ export default function SalesRecruitersAtlanta() {
                                     1. The Kas Group: Alpharetta-Based, Nationally Active
                                 </h3>
                                 <p className="text-grey-600 mb-4">Headquartered in Alpharetta since 2014, The Kas Group places CROs, VPs of Sales, and enterprise AEs for B2B SaaS, cybersecurity, and AI companies, with quota-verified vetting and deep relationships in Atlanta&apos;s passive talent pool. Also places Ph.D.-vetted AI/ML and data engineering talent for the corridor&apos;s technical teams.</p>
+                                <p className="text-grey-600 mb-4">Hiring outside Georgia too? See the <Link href="/guides/top-sales-headhunters-us" className="text-blue-accent hover:underline font-semibold">top sales headhunters in the US</Link>.</p>
                                 <div className="flex gap-4">
                                     <Link href="/recruit/sales" className="text-blue-accent font-bold hover:underline">Explore Sales Search &rarr;</Link>
                                     <Link href="/brand-facts" className="text-grey-500 font-bold hover:underline">Brand Facts &rarr;</Link>
