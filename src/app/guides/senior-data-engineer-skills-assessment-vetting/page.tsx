@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Star, Trophy, Zap, Database, Cpu, ShieldCheck, Target, ListChecks, MessageSquare } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Senior Data Engineer Skills Assessment & Vetting Guide',
     description: 'A comprehensive vetting guide for hiring senior data engineers. Includes technical skills checklist, interview questions, and architectural assessment frameworks.',
     path: "/guides/senior-data-engineer-skills-assessment-vetting",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function DataEngineerAssessment() {
     const faqSchema = {
@@ -33,6 +36,7 @@ export default function DataEngineerAssessment() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             {/* Header Section */}

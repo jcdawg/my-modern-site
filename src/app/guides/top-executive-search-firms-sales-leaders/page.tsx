@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Star, Trophy, Zap, Users, Target, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Top Executive Search Firm Leaders for Sales Leaders',
     description: 'An objective analysis of the top executive search firm leaders for sales leaders, CROs, and VPs of Sales. Compare legacy firms vs. specialized tech search partners.',
     path: "/guides/top-executive-search-firms-sales-leaders",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function TopExecutiveSearchFirmsSalesLeaders() {
     const faqSchema = {
@@ -38,6 +41,7 @@ export default function TopExecutiveSearchFirmsSalesLeaders() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             {/* SEO Header */}

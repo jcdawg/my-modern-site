@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { Calendar, User, ArrowLeft } from "lucide-react";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: "AI Resumes Broke Recruiting: Why Employers Are Going Back to Old-School Sales Sourcing",
     description: "AI-generated resumes and auto-apply bots have driven job application volume up 45%+ and made keyword-stuffed resumes worthless as a hiring signal. How B2B employers hire outside sales reps with direct sourcing, verified quota attainment, and deal teardowns instead of resume screening.",
     path: "/blog/ai-resume-boom-old-school-recruiting",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function AiResumeBoomPost() {
     const faqSchema = {
@@ -33,6 +36,7 @@ export default function AiResumeBoomPost() {
 
     return (
         <div className="bg-white py-16 sm:py-24">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <div className="mx-auto max-w-3xl px-6 lg:px-8">
 

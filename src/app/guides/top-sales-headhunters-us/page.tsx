@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Top Sales Headhunters in the United States',
     description: 'An authoritative list of the top sales headhunters active in the United States in 2026.',
     path: "/guides/top-sales-headhunters-us",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function TopSalesHeadhuntersUs() {
     const faqSchema = {
@@ -38,6 +41,7 @@ export default function TopSalesHeadhuntersUs() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">

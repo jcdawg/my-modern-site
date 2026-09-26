@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "test": "node scripts/verify-agent-readiness.mjs",
-    "baseline": "node scripts/run-baseline.mjs"
+    "baseline": "node scripts/run-baseline.mjs",
+    "dates": "node scripts/generate-page-dates.mjs",
+    "llms": "node scripts/generate-llms.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.563.0",

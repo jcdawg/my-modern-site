@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactClickTracker from "@/components/ContactClickTracker";
 import Script from "next/script";
+import { DEFAULT_OG_IMAGE, ORGANIZATION_ID, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,17 +48,11 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "The Kas Group",
-    images: [
-      {
-        url: "/logos/kas-group-logo.svg",
-        width: 1200,
-        height: 630,
-        alt: "The Kas Group: Elite Sales & AI Technical Recruiting",
-      },
-    ],
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
+    images: [DEFAULT_OG_IMAGE.url],
   },
   robots: {
     index: true,
@@ -70,6 +65,22 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+};
+
+// Site-wide Organization node. Article JSON-LD on guides/blog references it
+// as publisher via @id. Values match the fuller Organization on the homepage.
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": ORGANIZATION_ID,
+  name: SITE_NAME,
+  url: SITE_URL,
+  logo: {
+    "@type": "ImageObject",
+    url: `${SITE_URL}/logos/kas-group-logo.svg`,
+  },
+  email: "chris@thekasgroup.com",
+  foundingDate: "2014",
 };
 
 export default function RootLayout({
@@ -98,6 +109,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
         suppressHydrationWarning
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <ContactClickTracker />
         <Header />
         <main className="flex-grow">

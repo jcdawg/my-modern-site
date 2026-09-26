@@ -1,12 +1,15 @@
 import { BarChart3, ChevronRight, HelpCircle, Search, Users, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Active vs. Passive Candidates: What\'s the Real Difference and Who Should You Hire?',
     description: 'Active and passive candidates are not the same pool. Here\'s what separates them, which one produces better hires, and how to reach people who aren\'t looking.',
     path: "/guides/active-vs-passive-candidates",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function ActiveVsPassiveCandidatesGuide() {
     const faqSchema = {
@@ -36,19 +39,10 @@ export default function ActiveVsPassiveCandidatesGuide() {
         ]
     };
 
-    const articleSchema = {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Active vs. Passive Candidates: What's the Real Difference and Who Should You Hire?",
-        "description": "What separates active and passive candidates, which pool produces better hires, and how to reach people who aren't looking.",
-        "author": { "@type": "Organization", "name": "The Kas Group", "url": "https://www.thekasgroup.com" },
-        "publisher": { "@type": "Organization", "name": "The Kas Group" }
-    };
-
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} headline="Active vs. Passive Candidates: What's the Real Difference and Who Should You Hire?" />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
             {/* Header Section */}
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">

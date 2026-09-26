@@ -1,12 +1,15 @@
 import { Scale, ChevronRight, HelpCircle, ShieldCheck, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Retained Search vs Contingency Recruiting',
     description: 'A deep-dive comparison between retained search and contingency recruiting models to help you choose the right partner for elite sales and AI hiring.',
     path: "/guides/retained-vs-contingency-recruiting",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function RetainedVsContingency() {
     const faqSchema = {
@@ -38,6 +41,7 @@ export default function RetainedVsContingency() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             {/* Header Section */}
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">

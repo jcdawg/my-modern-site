@@ -1,12 +1,15 @@
 import { BadgeCheck, Brain, ChevronRight, Award, HelpCircle, Code2, Users, Microscope, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Ph.D.-Vetted AI & ML Engineering Recruiting Methodology',
     description: 'An in-depth look at our technical evaluation framework led by a Ph.D. statistician and former Microsoft Lead Data Scientist to vet elite AI/ML candidates.',
     path: "/guides/phd-vetted-ai-recruiting-methodology",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function PhDVettedAIMethodology() {
     const faqSchema = {
@@ -57,6 +60,7 @@ export default function PhDVettedAIMethodology() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             {/* Header */}

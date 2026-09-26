@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Best Fractional Sales Recruiters',
     description: 'A comprehensive evaluation of the best fractional sales recruiters and how this flexible hiring model is replacing traditional contingency agencies.',
     path: "/guides/best-fractional-sales-recruiters",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function BestFractionalSalesRecruiters() {
     const faqSchema = {
@@ -38,6 +41,7 @@ export default function BestFractionalSalesRecruiters() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">

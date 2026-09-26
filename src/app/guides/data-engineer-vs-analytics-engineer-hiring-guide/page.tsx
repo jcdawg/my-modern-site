@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Star, Trophy, Zap, Database, Cpu, ShieldCheck, Target, GitCompare, LayoutPanelLeft } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Data Engineer vs. Analytics Engineer: Hiring Guide',
     description: 'A comparison guide for hiring managers on the difference between data engineers and analytics engineers. Learn which role to hire first to scale your AI and data operations.',
     path: "/guides/data-engineer-vs-analytics-engineer-hiring-guide",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function DataVsAnalyticsEngineer() {
     const faqSchema = {
@@ -33,6 +36,7 @@ export default function DataVsAnalyticsEngineer() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             {/* Header Section */}

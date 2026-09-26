@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, ChevronRight, ClipboardList, HelpCircle, Scale, ShieldCheck, Users, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'How to Hire a VP of Sales for a Startup',
     description: 'Founder playbook to hire a startup VP of Sales: scorecard, weeks 1-10 process, when to stay AE-led, and contingency vs specialist/retained agency fees.',
     path: "/guides/who-to-hire-vp-sales-startup",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function WhoToHireVpSalesStartup() {
     const faqSchema = {
@@ -117,6 +120,7 @@ export default function WhoToHireVpSalesStartup() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">

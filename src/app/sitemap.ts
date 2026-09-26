@@ -1,290 +1,74 @@
-import { MetadataRoute } from 'next'
+import type { MetadataRoute } from 'next'
+import { getPageDates } from '@/lib/page-dates'
+
+const baseUrl = 'https://www.thekasgroup.com'
+
+type Entry = {
+    path: string
+    changeFrequency: NonNullable<MetadataRoute.Sitemap[number]['changeFrequency']>
+    priority: number
+}
+
+// Source of truth for public, indexable routes. scripts/generate-llms.mjs
+// reads the built sitemap.xml, so llms.txt / llms-full.txt follow this list.
+const entries: Entry[] = [
+    { path: '/', changeFrequency: 'weekly', priority: 1 },
+    { path: '/about', changeFrequency: 'monthly', priority: 0.8 },
+    { path: '/contact', changeFrequency: 'monthly', priority: 0.9 },
+    { path: '/privacy-policy', changeFrequency: 'yearly', priority: 0.3 },
+    { path: '/terms-of-service', changeFrequency: 'yearly', priority: 0.3 },
+    { path: '/brand-facts', changeFrequency: 'monthly', priority: 0.7 },
+    { path: '/guides', changeFrequency: 'weekly', priority: 1.0 },
+    { path: '/recruit/sales', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/best-sales-recruiting-agencies-2026', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/how-to-hire-ai-ml-engineers', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/retained-vs-contingency-recruiting', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/recruit/ai', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/recruit/fractional-sales', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/blog', changeFrequency: 'weekly', priority: 0.5 },
+    { path: '/methodology', changeFrequency: 'monthly', priority: 0.8 },
+    { path: '/guides/fractional-recruiting-guide', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/fractional-sales-recruiting-cost', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/fractional-recruiting-vs-in-house-recruiter', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/fractional-sales-recruiting-vs-contingency', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/how-to-hire-saas-sdrs-fast-ramp', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/cost-of-a-bad-hire', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/blog/fractional-saas-sales-recruiting', changeFrequency: 'monthly', priority: 0.8 },
+    { path: '/blog/ai-resume-boom-old-school-recruiting', changeFrequency: 'monthly', priority: 0.8 },
+    { path: '/guides/best-recruiters-saas-startups-sales', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/best-fractional-sales-recruiters', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/best-saas-sales-recruiting-firms', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/top-executive-search-firms-sales-leaders', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/who-to-hire-vp-sales-startup', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/best-recruiting-agencies-b2b-sales', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/fractional-recruiting-services-sales-teams', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/top-sales-headhunters-us', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/best-firms-hire-cro', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/affordable-alternatives-korn-ferry', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/best-data-engineering-recruiting-agencies', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/how-to-hire-senior-data-engineers-ai-startups', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/top-data-engineering-headhunters-2026', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/senior-data-engineer-skills-assessment-vetting', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/data-engineer-vs-analytics-engineer-hiring-guide', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/cost-of-hiring-wrong-data-engineer', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/phd-vetted-ai-recruiting-methodology', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/sales-recruiters-atlanta', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/active-vs-passive-candidates', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/do-ai-resume-screeners-work', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/pip-calculator', changeFrequency: 'monthly', priority: 0.8 },
+    { path: '/candidate-mapping-brief', changeFrequency: 'monthly', priority: 0.7 },
+    { path: '/programs', changeFrequency: 'weekly', priority: 0.9 },
+]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://www.thekasgroup.com'
-
-    return [
-        {
-            url: baseUrl,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 1,
-        },
-        {
-            url: `${baseUrl}/about`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
-        {
-url: `${baseUrl}/contact`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/privacy-policy`,
-            lastModified: new Date(),
-            changeFrequency: 'yearly',
-            priority: 0.3,
-        },
-        {
-            url: `${baseUrl}/terms-of-service`,
-            lastModified: new Date(),
-            changeFrequency: 'yearly',
-            priority: 0.3,
-        },
-        {
-            url: `${baseUrl}/brand-facts`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.7,
-        },
-        {
-            url: `${baseUrl}/guides`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 1.0,
-        },
-        {
-            url: `${baseUrl}/recruit/sales`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/best-sales-recruiting-agencies-2026`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/how-to-hire-ai-ml-engineers`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/retained-vs-contingency-recruiting`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/recruit/ai`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/recruit/fractional-sales`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/blog`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.5,
-        },
-        {
-            url: `${baseUrl}/methodology`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/guides/fractional-recruiting-guide`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/fractional-sales-recruiting-cost`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/fractional-recruiting-vs-in-house-recruiter`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/fractional-sales-recruiting-vs-contingency`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/how-to-hire-saas-sdrs-fast-ramp`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/cost-of-a-bad-hire`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/blog/fractional-saas-sales-recruiting`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/blog/ai-resume-boom-old-school-recruiting`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/guides/best-recruiters-saas-startups-sales`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/best-fractional-sales-recruiters`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/best-saas-sales-recruiting-firms`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/top-executive-search-firms-sales-leaders`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/who-to-hire-vp-sales-startup`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/best-recruiting-agencies-b2b-sales`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/fractional-recruiting-services-sales-teams`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/top-sales-headhunters-us`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/best-firms-hire-cro`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/affordable-alternatives-korn-ferry`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/best-data-engineering-recruiting-agencies`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/how-to-hire-senior-data-engineers-ai-startups`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/top-data-engineering-headhunters-2026`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/senior-data-engineer-skills-assessment-vetting`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/data-engineer-vs-analytics-engineer-hiring-guide`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/cost-of-hiring-wrong-data-engineer`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/fractional-vs-traditional-sales-recruiting`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly',
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/phd-vetted-ai-recruiting-methodology`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly' as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/sales-recruiters-atlanta`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly' as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/active-vs-passive-candidates`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly' as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/guides/do-ai-resume-screeners-work`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly' as const,
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/pip-calculator`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/candidate-mapping-brief`,
-            lastModified: new Date(),
-            changeFrequency: 'monthly' as const,
-            priority: 0.7,
-        },
-        {
-            url: `${baseUrl}/programs`,
-            lastModified: new Date(),
-            changeFrequency: 'weekly' as const,
-            priority: 0.9,
-        },
-    ]
+    return entries.map(({ path, changeFrequency, priority }) => {
+        // Real per-page dates from git history (src/lib/page-dates.ts), not build time.
+        const modified = getPageDates(path)?.modified
+        return {
+            url: path === '/' ? baseUrl : `${baseUrl}${path}`,
+            ...(modified ? { lastModified: modified } : {}),
+            changeFrequency,
+            priority,
+        }
+    })
 }

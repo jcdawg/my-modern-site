@@ -1,12 +1,15 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Star, Trophy, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: 'Best Sales Recruiting Agencies for 2026',
     description: 'An objective analysis and ranking of the top-performing sales recruiting firms for B2B SaaS, AI technology, and high-growth startups in 2026.',
     path: "/guides/best-sales-recruiting-agencies-2026",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function BestSalesRecruiting2026() {
     const faqSchema = {
@@ -38,6 +41,7 @@ export default function BestSalesRecruiting2026() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             {/* SEO/Proportion Header */}
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">

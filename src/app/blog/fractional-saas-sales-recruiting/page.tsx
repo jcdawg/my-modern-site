@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { Calendar, User, ArrowLeft } from "lucide-react";
 import { pageMetadata } from "@/lib/seo";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
 
-export const metadata = pageMetadata({
+const PAGE = {
     title: "Why More SaaS Startups Are Turning to Fractional Sales Recruiting",
     description: "Fractional SaaS sales recruiting lets early-stage companies bring in experienced closers and revenue leaders without the overhead of a full-time hire. Here's why it works.",
     path: "/blog/fractional-saas-sales-recruiting",
-});
+};
+
+export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 export default function FractionalSaasSalesPost() {
     const faqSchema = {
@@ -33,6 +36,7 @@ export default function FractionalSaasSalesPost() {
 
     return (
         <div className="bg-white py-16 sm:py-24">
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <div className="mx-auto max-w-3xl px-6 lg:px-8">
 
