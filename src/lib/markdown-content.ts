@@ -204,6 +204,7 @@ Visit https://www.thekasgroup.com/guides for the complete interactive library.
 ## Featured Articles
 - [400 Applications and Not One of Them Means Anything](/blog/ai-resume-boom-old-school-recruiting)
 - [Fractional SaaS Sales Recruiting: The Modern Playbook](/blog/fractional-saas-sales-recruiting)
+- [Your First Sales Hire Needs a Playbook Before Day One](/blog/founder-led-sales-first-hire)
 
 Contact chris@thekasgroup.com for guest inquiries and research collaborations.
 `,

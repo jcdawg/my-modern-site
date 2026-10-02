@@ -371,6 +371,11 @@ export default function WhoToHireVpSalesStartup() {
                             <Link href="/programs" className="text-blue-accent hover:underline">Programs</Link>
                             {" "}for Seat / Milestone / Directed options.
                         </p>
+                        <p className="text-lg text-grey-600 leading-relaxed">
+                            Still making your first sales hire? Read{" "}
+                            <Link href="/blog/founder-led-sales-first-hire" className="text-blue-accent hover:underline">Your First Sales Hire Needs a Playbook</Link>
+                            {" "}on what founder-led sales has to prove before you hire anyone, a VP included.
+                        </p>
                     </div>
 
                     <div className="space-y-8">

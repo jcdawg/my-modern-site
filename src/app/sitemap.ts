@@ -36,6 +36,7 @@ const entries: Entry[] = [
     { path: '/guides/cost-of-a-bad-hire', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/blog/fractional-saas-sales-recruiting', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/blog/ai-resume-boom-old-school-recruiting', changeFrequency: 'monthly', priority: 0.8 },
+    { path: '/blog/founder-led-sales-first-hire', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/guides/best-recruiters-saas-startups-sales', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/best-fractional-sales-recruiters', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/best-saas-sales-recruiting-firms', changeFrequency: 'weekly', priority: 0.9 },
