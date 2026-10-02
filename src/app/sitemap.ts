@@ -28,6 +28,7 @@ const entries: Entry[] = [
     { path: '/blog', changeFrequency: 'weekly', priority: 0.5 },
     { path: '/methodology', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/guides/fractional-recruiting-guide', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/fractional-recruiting-for-startups', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/fractional-sales-recruiting-cost', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/fractional-recruiting-vs-in-house-recruiter', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/fractional-sales-recruiting-vs-contingency', changeFrequency: 'weekly', priority: 0.9 },

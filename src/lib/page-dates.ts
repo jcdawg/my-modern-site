@@ -31,6 +31,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/guides/cost-of-hiring-wrong-data-engineer": { published: "2026-09-01T14:58:37-04:00", modified: "2026-09-26T10:14:11-04:00" },
     "/guides/data-engineer-vs-analytics-engineer-hiring-guide": { published: "2026-04-27T15:25:34-04:00", modified: "2026-09-10T13:10:14-04:00" },
     "/guides/do-ai-resume-screeners-work": { published: "2026-09-04T15:41:05-04:00", modified: "2026-09-26T10:14:11-04:00" },
+    "/guides/fractional-recruiting-for-startups": { published: "2026-09-26T14:53:14-04:00", modified: "2026-09-26T14:53:14-04:00" },
     "/guides/fractional-recruiting-guide": { published: "2026-03-06T14:56:13-05:00", modified: "2026-09-26T15:04:31-04:00" },
     "/guides/fractional-recruiting-services-sales-teams": { published: "2026-04-04T12:52:48-04:00", modified: "2026-09-26T10:14:11-04:00" },
     "/guides/fractional-recruiting-vs-in-house-recruiter": { published: "2026-09-10T07:40:44-07:00", modified: "2026-09-26T15:04:31-04:00" },

@@ -286,7 +286,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                             <Layers className="h-8 w-8 text-blue-accent" />
                             Multiple hires: where the gap widens
                         </h2>
-                        <p className="text-grey-600 leading-relaxed">Seed/Series A plan: 1 AE + 1 SDR over ~3 months.</p>
+                        <p className="text-grey-600 leading-relaxed">Seed/Series A plan: 1 AE + 1 SDR over ~3 months. How to sequence those first hires: <Link href="/guides/fractional-recruiting-for-startups" className="text-blue-accent hover:underline">fractional recruiting for startups</Link>.</p>
                         <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
                             <table className="w-full text-left border-collapse">
                                 <thead className="bg-grey-50">

@@ -4,8 +4,8 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "Fractional Recruiting for Startups: When It Fits",
-    description: "What fractional recruiting is for Seed-Series B startups, when it fits GTM hiring, and how Kas week-to-week engagements run. Pricing lives on the cost guide.",
+    title: "What Is Fractional Recruiting? How It Works",
+    description: "What fractional recruiting is, how it differs from agencies and in-house TA, and how a Kas engagement runs week to week. Fees are on the cost guide.",
     path: "/guides/fractional-recruiting-guide",
 };
 
@@ -79,14 +79,14 @@ export default function FractionalRecruitingGuide() {
                         <ChevronRight className="h-4 w-4" />
                         <Link href="/guides" className="hover:text-blue-accent">Guides</Link>
                         <ChevronRight className="h-4 w-4" />
-                        <span className="text-grey-600">Fractional Recruiting</span>
+                        <span className="text-grey-600">What Is Fractional Recruiting?</span>
                     </nav>
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-6xl mb-6 leading-tight">
-                        Fractional Recruiting for Startups:{" "}
-                        <span className="text-blue-accent">When It Beats Agency and In-House</span>
+                        What Is Fractional Recruiting?{" "}
+                        <span className="text-blue-accent">How a Kas Engagement Runs</span>
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
-                        What fractional recruiting is for Seed-Series B startups, when it fits GTM hiring, and how a Kas engagement runs week to week. Exact fees live on the cost guide.
+                        What fractional recruiting is, how it compares with agency and in-house recruiting, where it fits Seed through Series B GTM hiring, and how a Kas engagement runs week to week. Exact fees live on the cost guide.
                     </p>
                 </div>
             </section>
@@ -103,7 +103,7 @@ export default function FractionalRecruitingGuide() {
                             Fractional recruiting is a month-to-month retainer. An external recruiting partner embeds as your TA lead without a full-time hire. For Seed-Series B GTM, Kas prices fractional sales recruiting (Kas Seat) at <strong>$5,000 to $8,000 a month, up to $10,000 for senior AE and above</strong>, with <strong>zero success fees</strong>. Use fractional when you have specialized seats ahead and want dedicated bandwidth. Use a Milestone Search example fee for one clear SDR/AE/SM seat. Use specialist quote for Director/VP/CRO.
                         </p>
                         <p className="text-grey-300 leading-relaxed mt-4 relative z-10">
-                            Full price list: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales recruiting cost</Link>. Product: <Link href="/recruit/fractional-sales" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales</Link>.
+                            Full price list: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales recruiting cost</Link>. Product: <Link href="/recruit/fractional-sales" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales</Link>. First 1 to 5 sales hires: <Link href="/guides/fractional-recruiting-for-startups" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional recruiting for startups</Link>.
                         </p>
                     </div>
 
@@ -253,7 +253,7 @@ export default function FractionalRecruitingGuide() {
                             <Users className="h-8 w-8 text-blue-accent" />
                             Why a sales-specialist fractional partner
                         </h2>
-                        <p className="text-grey-600 leading-relaxed">Most &quot;fractional recruiting for startups&quot; content is written for generic TA. Fine for ops. Thin for seats that move ARR.</p>
+                        <p className="text-grey-600 leading-relaxed">Most fractional recruiting content is written for generic TA. Fine for ops. Thin for seats that move ARR.</p>
                         <ol className="space-y-4 list-decimal pl-6 text-grey-600 leading-relaxed">
                             <li><strong className="text-navy-900">Elite B2B SaaS sales / GTM recruiting.</strong> SDRs through VP Sales. Scorecards built on quota, ACV, and motion fit. Product: <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline">fractional sales</Link>.</li>
                             <li><strong className="text-navy-900">Transparent GTM pricing.</strong> Kas Seat at $5,000 to $8,000 a month, up to $10,000 for senior AE and above, or $5k to $10k Milestone Search example fees through Sales Manager. Not 20-30% surprise math. Director/VP/CRO: quote only. List: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">cost</Link>.</li>
@@ -265,7 +265,7 @@ export default function FractionalRecruitingGuide() {
                     <div className="space-y-8">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
                             <HelpCircle className="h-8 w-8 text-blue-accent" />
-                            FAQ: fractional recruiting for startups
+                            FAQ: what fractional recruiting is and how it works
                         </h2>
                         <div className="space-y-8">
                         <div className="space-y-3">
