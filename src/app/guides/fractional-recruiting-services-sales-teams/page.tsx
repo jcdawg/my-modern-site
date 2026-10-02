@@ -146,7 +146,7 @@ export default function FractionalRecruitingServicesSalesTeams() {
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Who is fractional recruiting best for?</h4>
-                                <p className="text-grey-600 leading-relaxed">Post-seed through Series B companies building out their first sales teams, growth-stage companies with recurring hiring sprints, and any team that needs senior-level sales hiring without a full-time TA hire. Compare models in our <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline">Fractional vs. Traditional guide</Link>.</p>
+                                <p className="text-grey-600 leading-relaxed">Post-seed through Series B companies building out their first sales teams, growth-stage companies with recurring hiring sprints, and any team that needs senior-level sales hiring without a full-time TA hire. Compare models in our <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline">Fractional vs. Contingency guide</Link>.</p>
                             </div>
                         </div>
                     </div>
