@@ -77,7 +77,7 @@ export default function WhoToHireVpSalesStartup() {
                 "name": "Should we keep hiring AEs while the VP search runs?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes if pipeline still needs coverage. Use Kas Seat ($5,000-$8,000/mo, up to $10,000/mo for senior AE+ capacity) for AE/SDR bandwidth during the specialist VP search. Do not wait on leadership to fill IC seats that are already blocking revenue."
+                    "text": "Yes if pipeline still needs coverage. Use Kas Seat ($5,000 to $8,000 a month, up to $10,000 for senior AE and above) for AE/SDR bandwidth during the specialist VP search. Do not wait on leadership to fill IC seats that are already blocking revenue."
                 }
             }
         ]
@@ -106,7 +106,7 @@ export default function WhoToHireVpSalesStartup() {
     const models = [
         { model: "Contingency", how: "Pay on hire; often non-exclusive", cost: "20-30% of first-year OTE (on $350k OTE = $70k-$105k)", when: "Rarely ideal for first VP" },
         { model: "Kas Milestone Search (example fees)", how: "Per-hire success/retained examples through Sales Manager", cost: "SDR/BDR $5,000 · AE $7,500 · Senior AE / Sales Manager $10,000", when: "AE, SDR, or Sales Manager seats under the VP. Never for VP or CRO." },
-        { model: "Kas Seat (sales fractional)", how: "Month-to-month embedded GTM recruiting bandwidth", cost: "$5,000-$8,000/mo normally (up to $10,000/mo for senior AE+ capacity); zero success fees", when: "Ongoing GTM build while you decide on (or search for) a VP" },
+        { model: "Kas Seat (sales fractional)", how: "Month-to-month embedded GTM recruiting bandwidth", cost: "$5,000 to $8,000 a month normally (up to $10,000 for senior AE and above); zero success fees", when: "Ongoing GTM build while you decide on (or search for) a VP" },
         { model: "Specialist / retained (VP / CRO)", how: "Calibrated executive GTM search (The Kas Group)", cost: "Specialist/retained quote only (no published Milestone example $)", when: "Single critical VP or CRO seat with high cost of mishire" },
     ];
 
@@ -152,7 +152,7 @@ export default function WhoToHireVpSalesStartup() {
                         <p className="text-lg text-grey-700 leading-relaxed">
                             Stay AE-led when the founder still closes key deals, you have fewer than 2-3 AEs, and pipeline math is unclear. Hire a VP of Sales when ARR growth is blocked by process and people, not just closer headcount. You need hiring plans, coaching, and forecast ownership. Name the ceiling in numbers: win rate, ramp time, forecast accuracy, or founder time in deals. Typical first VP package: $200k-$275k base, $300k-$400k+ OTE. Prefer exclusive specialist or retained search over commodity contingency at 20-30% of first-year OTE. Pair with{" "}
                             <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline font-semibold">Kas Seat</Link>
-                            {" "}($5k-$8k/mo) for AE/SDR bandwidth during the search. VP and CRO are specialist/retained quote only, never Milestone example fees.
+                            {" "}($5k to $8k a month) for AE/SDR bandwidth during the search. VP and CRO are specialist/retained quote only, never Milestone example fees.
                         </p>
                     </div>
 
@@ -357,7 +357,7 @@ export default function WhoToHireVpSalesStartup() {
                             </table>
                         </div>
                         <p className="text-lg text-grey-600 leading-relaxed">
-                            Worked contingency math: $350k OTE × 25% = <strong className="text-navy-900">$87,500</strong> (and the 20-30% of first-year OTE band is <strong className="text-navy-900">$70k-$105k</strong>). For the VP seat, compare that to a specialist / retained quote with The Kas Group. Kas Milestone Search example fees ($5k / $7.5k / $10k) apply through Sales Manager only, never to VP or CRO. Kas Seat is the monthly fractional path ($5k-$8k/mo, up to $10k for senior AE+). Full comparisons:{" "}
+                            Worked contingency math: $350k OTE × 25% = <strong className="text-navy-900">$87,500</strong> (and the 20-30% of first-year OTE band is <strong className="text-navy-900">$70k-$105k</strong>). For the VP seat, compare that to a specialist / retained quote with The Kas Group. Kas Milestone Search example fees ($5k / $7.5k / $10k) apply through Sales Manager only, never to VP or CRO. Kas Seat is the monthly fractional path ($5k to $8k a month, up to $10k for senior AE and above). Full comparisons:{" "}
                             <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline">fractional vs contingency</Link>
                             {", "}
                             <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">cost guide</Link>
@@ -490,7 +490,7 @@ export default function WhoToHireVpSalesStartup() {
                             <div className="space-y-4">
                                 <h3 className="font-bold text-navy-900 text-lg">Should we keep hiring AEs while the VP search runs?</h3>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Yes if pipeline still needs coverage. Use <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline">Kas Seat</Link> ($5,000-$8,000/mo, up to $10,000/mo for senior AE+ capacity) for AE/SDR bandwidth during the specialist VP search. Do not wait on leadership to fill IC seats that are already blocking revenue.
+                                    Yes if pipeline still needs coverage. Use <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline">Kas Seat</Link> ($5,000 to $8,000 a month, up to $10,000 for senior AE and above) for AE/SDR bandwidth during the specialist VP search. Do not wait on leadership to fill IC seats that are already blocking revenue.
                                 </p>
                             </div>
                         </div>

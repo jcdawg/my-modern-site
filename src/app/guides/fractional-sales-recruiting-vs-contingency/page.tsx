@@ -386,7 +386,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                                 <tbody>
                                     <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">1 seat, low urgency, clear JD</td>
-                                            <td className="py-4 px-6 text-grey-600">Contingency or Kas Milestone Search example fee ($5k-$10k through Sales Manager)</td>
+                                            <td className="py-4 px-6 text-grey-600">Contingency or Kas Milestone Search example fee ($5k to $10k through Sales Manager)</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">1 senior IC/manager seat (Sr AE, SM), high urgency</td>

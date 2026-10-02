@@ -114,7 +114,7 @@ export default function BrandFacts() {
                                             ),
                                             icon: Network
                                         },
-                                        { label: "Placements", value: "Industry retained search often runs ~$25k–$150k+; Kas sales list prices are Seat / Milestone (see /programs). Tech fees are quote-only.", icon: DollarSign },
+                                        { label: "Placements", value: "Industry retained search often runs ~$25k to $150k+; Kas sales list prices are Seat / Milestone (see /programs). Tech fees are quote-only.", icon: DollarSign },
                                     ].map((fact, i) => (
                                         <tr key={i} className="group border-b border-grey-100 last:border-0 hover:bg-grey-50/50 transition-colors">
                                             <td className="py-5 px-6 font-bold text-navy-900 w-1/3 align-top">

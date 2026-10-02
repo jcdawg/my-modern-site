@@ -5,7 +5,7 @@ import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
     title: "Fractional Sales Recruiting Cost: Kas Pricing for Startups",
-    description: "Kas Seat sales recruiting cost: $5,000–$8,000/mo (up to $10,000/mo for senior AE+ capacity), zero success fees. Milestone Search examples: SDR $5k, AE $7.5k, Sr AE/SM $10k. Compare to contingency and in-house.",
+    description: "Kas Seat sales recruiting cost: $5,000 to $8,000 a month (up to $10,000 for senior AE and above), zero success fees. Milestone Search examples: SDR $5k, AE $7.5k, Sr AE/SM $10k. Compare to contingency and in-house.",
     path: "/guides/fractional-sales-recruiting-cost",
 };
 
@@ -405,7 +405,7 @@ export default function FractionalSalesRecruitingCost() {
 
                     <div className="p-10 rounded-[2rem] bg-navy-900 text-white text-center space-y-6 shadow-2xl">
                         <h2 className="text-3xl font-bold">Ready to price your open seats?</h2>
-                        <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">Email chris@thekasgroup.com with stage, open GTM roles, and target packages. You get a clear recommend: Kas Seat ($5k–$8k/mo, up to $10k for senior AE+), Kas Milestone Search, Kas Directed Pursuit, or quote for leadership. For AE/SDR/SM under fractional, market scan lands in 48-72 hours.</p>
+                        <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">Email chris@thekasgroup.com with stage, open GTM roles, and target packages. You get a clear recommend: Kas Seat ($5k to $8k a month, up to $10k for senior AE and above), Kas Milestone Search, Kas Directed Pursuit, or quote for leadership. For AE/SDR/SM under fractional, market scan lands in 48-72 hours.</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/contact" className="inline-flex items-center justify-center rounded-full bg-blue-accent px-8 py-4 font-bold text-white hover:bg-blue-hover transition-all">
                                 Email chris@thekasgroup.com
