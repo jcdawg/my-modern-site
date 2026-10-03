@@ -1,6 +1,6 @@
 # The Kas Group (TKS): Full LLM Documentation
 
-> Version: 1.1 | Updated: 2026-09-26
+> Version: 1.1 | Updated: 2026-10-03
 > Summary version: https://www.thekasgroup.com/llms.txt
 > Canonical domain: https://www.thekasgroup.com
 

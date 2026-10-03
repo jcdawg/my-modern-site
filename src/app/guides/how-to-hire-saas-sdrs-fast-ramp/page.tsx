@@ -59,6 +59,14 @@ export default function HowToHireSaasSdrsFastRamp() {
             },
             {
                 "@type": "Question",
+                name: "What should you pay an SDR or an AE in B2B SaaS?",
+                acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Typical US OTE for an SDR or BDR is about $65k to $100k, with a median near $80k to $85k (Bridge Group 2025 survey of 351 companies, RepVue 2026). SMB and mid-market AEs run about $120k to $200k, and enterprise AEs about $220k to $300k. First-AE ranges are recruiter estimates, not survey data. OTE is not take-home pay: only 38% to 48% of AEs hit quota.",
+                },
+            },
+            {
+                "@type": "Question",
                 name: "Should a Seed-Series B team use fractional hiring to fill SDR/AE seats?",
                 acceptedAnswer: {
                     "@type": "Answer",
@@ -91,9 +99,36 @@ export default function HowToHireSaasSdrsFastRamp() {
     ];
 
     const compRows = [
-        { line: "SDR OTE (Seed-B reminder)", low: "$70k-$85k", mid: "$85k-$95k", high: "$95k-$110k", note: "Higher base-to-variable ratio" },
-        { line: "AE OTE (Seed-B reminder)", low: "$110k-$130k", mid: "$130k-$160k", high: "$160k-$190k", note: "Base-variable split, ramp quotas months 1-3" },
-        { line: "Senior AE / Sales Manager", low: "$150k-$180k", mid: "$180k-$220k", high: "$220k+", note: "Larger variable, longer ramp" },
+        {
+            line: "SDR / BDR",
+            range: "$65k to $100k",
+            ref: "Median about $80k to $85k, roughly 70/30 base to variable. Growth-stage and enterprise-motion SDRs reach about $115k (recruiter and vendor estimates).",
+            src: "Bridge Group 2025 SDR study (median $80k, 351 companies); RepVue 2026 (median $85k, self-reported)",
+        },
+        {
+            line: "AE, SMB and mid-market",
+            range: "$120k to $200k",
+            ref: "RepVue medians: SMB about $135k, mid-market $180k. Roughly 50/50 base to variable.",
+            src: "RepVue 2026 sales salary guide; Bridge Group 2026 AE report (median $200k across all AEs, 158 companies)",
+        },
+        {
+            line: "AE, enterprise",
+            range: "$220k to $300k",
+            ref: "RepVue median for enterprise AEs is about $275k, across all company sizes. The range is a recruiter estimate.",
+            src: "RepVue 2026; recruiter estimates",
+        },
+        {
+            line: "Senior AE",
+            range: "$180k to $260k",
+            ref: "Sits between the RepVue mid-market ($180k) and enterprise ($275k) medians. No dedicated senior AE dataset exists, so this range is our own read.",
+            src: "Derived from RepVue 2026",
+        },
+        {
+            line: "Sales Manager",
+            range: "$200k to $300k or more",
+            ref: "RepVue median is about $275k OTE on a $150k base. A broad role that includes enterprise teams.",
+            src: "RepVue 2026 sales salary guide",
+        },
     ];
 
     const checklistRows = [
@@ -267,25 +302,32 @@ export default function HowToHireSaasSdrsFastRamp() {
                                 <thead className="bg-grey-50">
                                     <tr className="border-b border-grey-200">
                                         <th className="py-4 px-6 font-bold text-navy-900">Role</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">Low</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">Mid</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">High</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">Structure note</th>
+                                        <th className="py-4 px-6 font-bold text-navy-900">Typical OTE</th>
+                                        <th className="py-4 px-6 font-bold text-navy-900">Reference point</th>
+                                        <th className="py-4 px-6 font-bold text-navy-900">Source</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {compRows.map((row) => (
                                         <tr key={row.line} className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 text-navy-900 font-semibold">{row.line}</td>
-                                            <td className="py-4 px-6 text-grey-600">{row.low}</td>
-                                            <td className="py-4 px-6 text-grey-600">{row.mid}</td>
-                                            <td className="py-4 px-6 text-grey-600">{row.high}</td>
-                                            <td className="py-4 px-6 text-grey-600">{row.note}</td>
+                                            <td className="py-4 px-6 text-navy-900 font-semibold whitespace-nowrap">{row.range}</td>
+                                            <td className="py-4 px-6 text-grey-600 text-sm">{row.ref}</td>
+                                            <td className="py-4 px-6 text-grey-600 text-sm">{row.src}</td>
                                         </tr>
                                     ))}
                                 </tbody>
                             </table>
                         </div>
+                        <p className="text-grey-600 leading-relaxed">
+                            A first AE selling SMB or mid-market deals typically carries $140k to $220k OTE. A first AE with an enterprise motion runs roughly $220k to $300k, and higher at Series A and beyond with six-figure deals. These first-AE ranges are recruiter estimates from published recruiter benchmarks, not survey data. Early-stage plans usually lean toward more base and a ramp or guarantee, because quota is still a guess.
+                        </p>
+                        <p className="text-grey-600 leading-relaxed">
+                            <strong className="text-navy-900">OTE is not take-home pay.</strong> Only 38% to 48% of AEs hit quota: RepVue&apos;s 2026 data has 38% of enterprise AEs and 42% of SMB AEs at quota, and the Bridge Group&apos;s 2026 AE report has 48%. Ranges are typical US SaaS bands and move with deal size, geography (New York and San Francisco run higher) and experience. Sources:{" "}
+                            <a href="https://www.bridgegroupinc.com/research/2025-sdr-models-metrics-report-the-bridge-group" className="text-blue-accent hover:underline">Bridge Group SDR report 2025</a>,{" "}
+                            <a href="https://www.bridgegroupinc.com/research/2026-ae-models-motions-metrics" className="text-blue-accent hover:underline">Bridge Group AE report 2026</a> and{" "}
+                            <a href="https://www.repvue.com/blog/sales-salary-guide" className="text-blue-accent hover:underline">RepVue sales salary guide</a>.
+                        </p>
                     </div>
 
                     <div className="space-y-8">
@@ -373,30 +415,12 @@ export default function HowToHireSaasSdrsFastRamp() {
                             FAQ: Fast-ramp SDR and AE hiring
                         </h2>
                         <div className="space-y-6">
-                            <div className="space-y-4">
-                                <h3 className="font-bold text-navy-900 text-lg">What makes an SDR or AE a &apos;zero ramp-up&apos; hire?</h3>
-                                <p className="text-grey-600 leading-relaxed">
-                                    A candidate whose pattern matches the motion you already run: the same call or deal volume, the same pipeline stage, the same buyer, and the same ACV band. Proven in that exact motion, with quota-verified (not self-reported) numbers.
-                                </p>
-                            </div>
-                            <div className="space-y-4">
-                                <h3 className="font-bold text-navy-900 text-lg">How long does it take an SDR or AE to ramp up?</h3>
-                                <p className="text-grey-600 leading-relaxed">
-                                    Realistic bands: an SDR with a matching motion can handle volume in roughly 2-4 weeks, an AE commonly needs 60-90 days to reach full quota, and a senior revenue role can take a full quarter-plus.
-                                </p>
-                            </div>
-                            <div className="space-y-4">
-                                <h3 className="font-bold text-navy-900 text-lg">What does a quota-verified sales vetting process look like?</h3>
-                                <p className="text-grey-600 leading-relaxed">
-                                    It validates that numbers are real rather than taking &quot;I hit 110%&quot; at face value, by drilling into quota in dollars, attainment by quarter, deal size ranges, win rate, sales cycle length, and manager reference checks.
-                                </p>
-                            </div>
-                            <div className="space-y-4">
-                                <h3 className="font-bold text-navy-900 text-lg">Should a Seed-Series B team use fractional hiring to fill SDR/AE seats?</h3>
-                                <p className="text-grey-600 leading-relaxed">
-                                    For bursty, quota-driven SDR/AE volume, fractional sales hiring covers it without paying for a full-time desk. The Kas Group fractional retainers have zero success fees (Kas Seat at $5,000 to $8,000 a month, up to $10,000 for senior AE and above), with Milestone Search example fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) as a separate per-hire option.
-                                </p>
-                            </div>
+                            {faqSchema.mainEntity.map((item) => (
+                                <div key={item.name} className="space-y-4">
+                                    <h3 className="font-bold text-navy-900 text-lg">{item.name}</h3>
+                                    <p className="text-grey-600 leading-relaxed">{item.acceptedAnswer.text}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
 
