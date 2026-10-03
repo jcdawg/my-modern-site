@@ -33,7 +33,7 @@ export default function Blog() {
             id: 3,
             title: "Your First Sales Hire Needs a Playbook Before Day One",
             excerpt: "When to move off founder-led sales, why first sales hires end in restarts, and what to write down before day one. Five sources and what I see in live searches.",
-            date: "Oct 2, 2026",
+            date: "Oct 3, 2026",
             author: "Chris Stinson",
             category: "Sales Leadership",
             slug: "founder-led-sales-first-hire",

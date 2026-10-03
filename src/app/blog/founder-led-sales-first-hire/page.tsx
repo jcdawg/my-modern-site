@@ -69,7 +69,7 @@ export default function FounderLedSalesFirstHirePost() {
                         Your First Sales Hire Needs a Playbook Before Day One
                     </h1>
                     <div className="flex items-center gap-6 text-sm text-grey-500">
-                        <span className="flex items-center gap-1.5"><Calendar className="h-4 w-4" /> October 2, 2026</span>
+                        <span className="flex items-center gap-1.5"><Calendar className="h-4 w-4" /> October 3, 2026</span>
                         <span className="flex items-center gap-1.5"><User className="h-4 w-4" /> Chris Stinson, The Kas Group</span>
                     </div>
                 </div>
