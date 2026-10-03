@@ -127,7 +127,7 @@ export default function Programs() {
             title: "Kas Seat",
             blurb: "Monthly sales-fractional capacity. Tech roles are never monthly.",
             desc: [
-                "Normally $5,000–$8,000/mo based on how many sales roles are open; up to $5,000–$10,000/mo when the seat covers senior AE+ capacity.",
+                "Normally $5,000 to $8,000 a month based on how many sales roles are open; up to $10,000 for senior AE and above.",
                 "Hire as many people as the search produces that month. The monthly price does not jump per hire. Zero success fees on Seat.",
                 "The Kas Group works inside your process. You own every name.",
             ],
@@ -305,7 +305,7 @@ export default function Programs() {
                     <ul className="space-y-3 text-grey-600 leading-relaxed">
                         <li>
                             <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting cost</Link>
-                            {" "}- Kas Seat $5k–$8k/mo and Milestone example fees
+                            {" "}- Kas Seat $5k to $8k a month and Milestone example fees
                         </li>
                         <li>
                             <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting vs contingency</Link>

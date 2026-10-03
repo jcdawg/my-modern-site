@@ -85,7 +85,7 @@ export default function Header() {
                                     Exec Search Firms
                                 </Link>
                                 <Link href="/guides/fractional-recruiting-guide" className="block px-4 py-2 text-sm text-gray-700 hover:bg-grey-50 hover:text-blue-accent">
-                                    Fractional Guide
+                                    Fractional Recruiting Guide
                                 </Link>
                             </div>
                         </div>
