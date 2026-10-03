@@ -49,7 +49,7 @@ export default function FractionalSalesRecruiting() {
             {
                 "@type": "Question",
                 "name": "How does fractional sales recruiting pricing work?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Kas Seat is monthly sales-fractional capacity, normally $5,000–$8,000/mo (up to $5,000–$10,000/mo when the seat covers senior AE+ capacity), with zero success fees—instead of contingency at 20-30% of first-year OTE." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Kas Seat is monthly sales-fractional capacity, normally $5,000 to $8,000 a month (up to $10,000 for senior AE and above), with zero success fees, instead of contingency at 20-30% of first-year OTE." }
             },
             {
                 "@type": "Question",
@@ -117,7 +117,7 @@ export default function FractionalSalesRecruiting() {
                             <div className="space-y-6">
                                 <div>
                                     <p className="text-sm font-semibold text-grey-500 uppercase tracking-wider mb-1">Fees</p>
-                                    <p className="text-lg font-medium text-navy-900">20–30% of first-year OTE/cash (often $30k–$45k+ on a mid AE)</p>
+                                    <p className="text-lg font-medium text-navy-900">20% to 30% of first-year OTE/cash (often $30k to $45k+ on a mid AE)</p>
                                 </div>
                                 <div>
                                     <p className="text-sm font-semibold text-grey-500 uppercase tracking-wider mb-1">Incentives</p>
@@ -141,7 +141,7 @@ export default function FractionalSalesRecruiting() {
                             <div className="space-y-6">
                                 <div>
                                     <p className="text-sm font-semibold text-blue-accent uppercase tracking-wider mb-1">Fees</p>
-                                    <p className="text-lg font-medium text-white">Kas Seat $5k–$8k/mo (up to $10k senior AE+)</p>
+                                    <p className="text-lg font-medium text-white">Kas Seat $5k to $8k a month (up to $10k for senior AE and above)</p>
                                 </div>
                                 <div>
                                     <p className="text-sm font-semibold text-blue-accent uppercase tracking-wider mb-1">Incentives</p>
@@ -263,7 +263,7 @@ export default function FractionalSalesRecruiting() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How does fractional sales recruiting pricing work?</h4>
-                            <p className="text-grey-600 leading-relaxed">Kas Seat is normally $5,000–$8,000/mo (up to $5,000–$10,000/mo for senior AE+ capacity) with zero success fees, instead of contingency at 20–30% of first-year OTE. Exact bands: /guides/fractional-sales-recruiting-cost.</p>
+                            <p className="text-grey-600 leading-relaxed">Kas Seat is normally $5,000 to $8,000 a month (up to $10,000 for senior AE and above) with zero success fees, instead of contingency at 20% to 30% of first-year OTE. Exact bands: /guides/fractional-sales-recruiting-cost.</p>
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How does the embedded model work day-to-day?</h4>
@@ -288,7 +288,7 @@ export default function FractionalSalesRecruiting() {
                     <ul className="space-y-3 text-grey-600 leading-relaxed">
                         <li>
                             <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting cost</Link>
-                            {" "}- Kas Seat $5k–$8k/mo (up to $10k senior AE+), Milestone example fees
+                            {" "}- Kas Seat $5k to $8k a month (up to $10k for senior AE and above), Milestone example fees
                         </li>
                         <li>
                             <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting vs contingency</Link>

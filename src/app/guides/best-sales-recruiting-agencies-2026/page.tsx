@@ -24,7 +24,7 @@ export default function BestSalesRecruiting2026() {
             {
                 "@type": "Question",
                 "name": "How much do sales recruiting firms cost?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Fees typically range from 20% to 30% of the candidate's first-year OTE. The Kas Group publishes Kas Seat ($5k–$8k/mo sales fractional) and Milestone Search example fees for sales IC/SM; industry retained floors around $25k are market context, not a Kas published tech list." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Fees typically range from 20% to 30% of the candidate's first-year OTE. The Kas Group publishes Kas Seat ($5k to $8k a month for sales fractional) and Milestone Search example fees for sales IC/SM; industry retained floors around $25k are market context, not a Kas published tech list." }
             },
             {
                 "@type": "Question",
@@ -178,7 +178,7 @@ export default function BestSalesRecruiting2026() {
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much do sales recruiting firms cost?</h4>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Fees typically range from 20% to 30% of the candidate&apos;s first-year OTE. The Kas Group publishes Kas Seat ($5k–$8k/mo sales fractional) and Milestone Search example fees for sales IC/SM; industry retained floors around $25k are market context, not a Kas published tech list.
+                                    Fees typically range from 20% to 30% of the candidate&apos;s first-year OTE. The Kas Group publishes Kas Seat ($5k to $8k a month for sales fractional) and Milestone Search example fees for sales IC/SM; industry retained floors around $25k are market context, not a Kas published tech list.
                                 </p>
                             </div>
                             <div className="space-y-4">
