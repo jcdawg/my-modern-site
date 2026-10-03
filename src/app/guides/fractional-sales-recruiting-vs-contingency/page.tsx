@@ -464,6 +464,9 @@ export default function FractionalSalesRecruitingVsContingency() {
                                 <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting</Link>
                             </li>
                             <li>
+                                <Link href="/blog/founder-led-sales-first-hire" className="text-blue-accent hover:underline font-semibold">Your first sales hire needs a playbook</Link>
+                            </li>
+                            <li>
                                 <Link href="/programs" className="text-blue-accent hover:underline font-semibold">Programs</Link>
                             </li>
                         </ul>

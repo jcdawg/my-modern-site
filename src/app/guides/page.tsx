@@ -23,6 +23,7 @@ export default function GuidesIndex() {
         { title: "Atlanta Sales Recruiters", href: "/guides/sales-recruiters-atlanta", desc: "The local guide to GTM talent in the Alpharetta tech corridor." },
         { title: "Best Fractional Sales Recruiters", href: "/guides/best-fractional-sales-recruiters", desc: "How to compare fractional sales recruiters, and what to ask before you sign a retainer." },
         { title: "Fractional Recruiting for Sales Teams", href: "/guides/fractional-recruiting-services-sales-teams", desc: "What a fractional engagement covers, who it fits, and how it compares to agencies and in-house TA." },
+        { title: "Blog: Your First Sales Hire Needs a Playbook", href: "/blog/founder-led-sales-first-hire", desc: "When to move off founder-led sales, why first sales hires end in restarts, and what to write down before day one." },
         { title: "Recruiters for SaaS Startups", href: "/guides/best-recruiters-saas-startups-sales", desc: "Specialist, fractional, and volume agencies compared for Seed to Series B sales hiring." },
         { title: "B2B Sales Recruiting Agencies", href: "/guides/best-recruiting-agencies-b2b-sales", desc: "What separates good B2B sales agencies, with typical contingency fees by role." },
         { title: "Top Sales Headhunters (US)", href: "/guides/top-sales-headhunters-us", desc: "Sales headhunters active across the US, and how to pick one for your market." },

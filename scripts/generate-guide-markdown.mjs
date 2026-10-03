@@ -43,6 +43,7 @@ const paths = guideSlugs.map((slug) => `/guides/${slug}`);
 const extraPages = [
     { path: "/blog/fractional-saas-sales-recruiting", page: "src/app/blog/fractional-saas-sales-recruiting/page.tsx" },
     { path: "/blog/ai-resume-boom-old-school-recruiting", page: "src/app/blog/ai-resume-boom-old-school-recruiting/page.tsx" },
+    { path: "/blog/founder-led-sales-first-hire", page: "src/app/blog/founder-led-sales-first-hire/page.tsx" },
     { path: "/candidate-mapping-brief", page: "src/app/candidate-mapping-brief/page.tsx" },
 ];
 for (const extra of extraPages) {

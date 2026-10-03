@@ -314,6 +314,7 @@ export default function FractionalRecruitingForStartups() {
                             <li><Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting vs contingency</Link> - fee math on AE and VP packages</li>
                             <li><Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline font-semibold">Fractional recruiting vs in-house recruiter</Link> - retainer vs headcount</li>
                             <li><Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">Fractional recruiting guide</Link> - how an engagement runs</li>
+                            <li><Link href="/blog/founder-led-sales-first-hire" className="text-blue-accent hover:underline font-semibold">Your first sales hire needs a playbook</Link> - what founder-led sales has to prove first</li>
                             <li><Link href="/programs" className="text-blue-accent hover:underline font-semibold">Programs</Link> - Kas Seat, Kas Milestone Search, Kas Directed Pursuit</li>
                         </ul>
                     </div>
