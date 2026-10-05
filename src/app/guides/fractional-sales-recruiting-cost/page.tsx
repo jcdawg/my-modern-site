@@ -398,6 +398,9 @@ export default function FractionalSalesRecruitingCost() {
                                 <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting</Link> - product page
                             </li>
                             <li>
+                                <Link href="/blog/early-stage-sales-comp-first-ae-ote" className="text-blue-accent hover:underline font-semibold">What to pay your first AE</Link> - OTE ranges by segment
+                            </li>
+                            <li>
                                 <Link href="/programs" className="text-blue-accent hover:underline font-semibold">Programs</Link> - full menu
                             </li>
                         </ul>

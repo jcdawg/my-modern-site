@@ -467,6 +467,9 @@ export default function FractionalSalesRecruitingVsContingency() {
                                 <Link href="/blog/founder-led-sales-first-hire" className="text-blue-accent hover:underline font-semibold">Your first sales hire needs a playbook</Link>
                             </li>
                             <li>
+                                <Link href="/blog/early-stage-sales-comp-first-ae-ote" className="text-blue-accent hover:underline font-semibold">What to pay your first AE</Link>
+                            </li>
+                            <li>
                                 <Link href="/programs" className="text-blue-accent hover:underline font-semibold">Programs</Link>
                             </li>
                         </ul>
