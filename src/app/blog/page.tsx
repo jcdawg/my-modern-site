@@ -38,6 +38,15 @@ export default function Blog() {
             category: "Sales Leadership",
             slug: "founder-led-sales-first-hire",
         },
+        {
+            id: 4,
+            title: "What to Pay Your First AE: OTE Ranges That Hold Up",
+            excerpt: "First AE OTE for startups: SMB and mid-market $140K to $220K, enterprise $220K to $300K. Why ranges disagree, and how to pressure-test attainment before you hire.",
+            date: "Oct 5, 2026",
+            author: "Chris Stinson",
+            category: "Sales Leadership",
+            slug: "early-stage-sales-comp-first-ae-ote",
+        },
     ];
 
     return (

@@ -424,6 +424,24 @@ export default function HowToHireSaasSdrsFastRamp() {
                         </div>
                     </div>
 
+                    <div className="space-y-4">
+                        <h2 className="text-2xl font-bold text-navy-900">Related reading</h2>
+                        <ul className="space-y-2 text-grey-600">
+                            <li>
+                                <Link href="/blog/early-stage-sales-comp-first-ae-ote" className="text-blue-accent hover:underline font-semibold">What to pay your first AE</Link>
+                                {" "}- OTE ranges by segment and how to pressure-test attainment
+                            </li>
+                            <li>
+                                <Link href="/blog/founder-led-sales-first-hire" className="text-blue-accent hover:underline font-semibold">Your first sales hire needs a playbook</Link>
+                                {" "}- what founder-led sales has to prove first
+                            </li>
+                            <li>
+                                <Link href="/programs" className="text-blue-accent hover:underline font-semibold">Programs</Link>
+                                {" "}- Kas Seat, Kas Milestone Search, Kas Directed Pursuit
+                            </li>
+                        </ul>
+                    </div>
+
                     <div className="p-10 rounded-3xl bg-navy-900 text-white relative overflow-hidden">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.25),transparent)]" />
                         <h2 className="text-2xl font-bold mb-4 relative z-10">Need SDR/AE seats filled now?</h2>
