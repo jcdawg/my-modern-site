@@ -208,6 +208,8 @@ export default function FounderLedSalesFirstHirePost() {
                         <strong>Further reading:</strong>{" "}
                         <Link href="/guides/fractional-recruiting-for-startups" className={link}>Fractional Recruiting for Startups</Link>
                         {" · "}
+                        <Link href="/guides/best-fractional-sales-recruiters" className={link}>Top Fractional Recruiter</Link>
+                        {" · "}
                         <Link href="/blog/early-stage-sales-comp-first-ae-ote" className={link}>What to Pay Your First AE</Link>
                         {" · "}
                         <Link href="/guides/who-to-hire-vp-sales-startup" className={link}>How to Hire a VP of Sales</Link>

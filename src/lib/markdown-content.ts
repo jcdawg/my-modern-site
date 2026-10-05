@@ -80,9 +80,9 @@ For over a decade, The Kas Group has specialized in building high-performing sal
 - **Contact**: chris@thekasgroup.com
 `,
 
-    "/recruit/sales": `# Sales Recruiting | The Kas Group
+    "/recruit/sales": `# Sales Recruiter for B2B SaaS Teams | The Kas Group
 
-> Elite Sales Recruiting for B2B SaaS and High-Growth Tech Companies.
+> Sales recruiter for B2B SaaS: VP of Sales, CRO, AE and SDR leaders. Quota-verified shortlists from The Kas Group.
 
 ## Roles We Place
 - **Sales Leadership**: Chief Revenue Officer (CRO), VP of Sales, Head of Sales, Director of Sales.
@@ -94,8 +94,13 @@ For over a decade, The Kas Group has specialized in building high-performing sal
 - Verification of quota attainment, average deal size, sales cycles, and outbound methodologies.
 - Deep candidate network built since 2014 across North America.
 
+## Related
+- [Top Fractional Recruiter for Sales Teams](/guides/best-fractional-sales-recruiters)
+- [Best SaaS Sales Recruiters for Startups](/guides/best-recruiters-saas-startups-sales)
+- [Programs](/programs)
+
 ## Get Started
-Schedule a consultation with Chris Stinson: chris@thekasgroup.com
+Email chris@thekasgroup.com
 `,
 
     "/recruit/fractional-sales": `# Fractional Sales Recruiting | The Kas Group
@@ -174,7 +179,7 @@ Explore the hidden expenses of bad hires and prolonged PIPs, including lost pipe
 - [Cost of a Bad Hire](/guides/cost-of-a-bad-hire)
 - [Ph.D.-Vetted AI Recruiting Methodology](/guides/phd-vetted-ai-recruiting-methodology)
 - [What Is Fractional Recruiting? How It Works](/guides/fractional-recruiting-guide)
-- [Best Recruiters for SaaS Startups Sales](/guides/best-recruiters-saas-startups-sales)
+- [Best SaaS Sales Recruiters for Startups](/guides/best-recruiters-saas-startups-sales)
 - [Top Sales Headhunters in the US](/guides/top-sales-headhunters-us)
 - [Best Firms to Hire a CRO](/guides/best-firms-hire-cro)
 - [Affordable Alternatives to Korn Ferry](/guides/affordable-alternatives-korn-ferry)
@@ -187,7 +192,7 @@ Explore the hidden expenses of bad hires and prolonged PIPs, including lost pipe
 - [Fractional Sales Recruiting vs Contingency](/guides/fractional-sales-recruiting-vs-contingency)
 - [Fractional Recruiting vs In-House Recruiter](/guides/fractional-recruiting-vs-in-house-recruiter)
 - [How to Hire SaaS SDRs and AEs Fast](/guides/how-to-hire-saas-sdrs-fast-ramp)
-- [Best Fractional Sales Recruiters](/guides/best-fractional-sales-recruiters)
+- [Top Fractional Recruiter for Sales Teams](/guides/best-fractional-sales-recruiters)
 - [Fractional Recruiting Services for Sales Teams](/guides/fractional-recruiting-services-sales-teams)
 - [Best Recruiting Agencies for B2B Sales](/guides/best-recruiting-agencies-b2b-sales)
 - [Active vs. Passive Candidates](/guides/active-vs-passive-candidates)
@@ -290,9 +295,9 @@ Best when: you will tell us who is worth hunting.
 - [Best Data Engineering Recruiting Agencies](/guides/best-data-engineering-recruiting-agencies)
 - [Fractional Recruiting for Startups](/guides/fractional-recruiting-for-startups)
 - [Fractional Sales Recruiting Cost](/guides/fractional-sales-recruiting-cost)
-- [Best Fractional Sales Recruiters](/guides/best-fractional-sales-recruiters)
+- [Top Fractional Recruiter for Sales Teams](/guides/best-fractional-sales-recruiters)
 - [Fractional Recruiting Services for Sales Teams](/guides/fractional-recruiting-services-sales-teams)
-- [Best Recruiters for SaaS Startups Sales](/guides/best-recruiters-saas-startups-sales)
+- [Best SaaS Sales Recruiters for Startups](/guides/best-recruiters-saas-startups-sales)
 - [Best Recruiting Agencies for B2B Sales](/guides/best-recruiting-agencies-b2b-sales)
 - [Top Sales Headhunters in the US](/guides/top-sales-headhunters-us)
 - [Best Firms to Hire a CRO](/guides/best-firms-hire-cro)

@@ -316,6 +316,14 @@ export default function Programs() {
                             {" "}- $100k-$160k fully loaded vs retainer
                         </li>
                         <li>
+                            <Link href="/guides/best-fractional-sales-recruiters" className="text-blue-accent hover:underline font-semibold">Top fractional recruiter for sales teams</Link>
+                            {" "}- how to pick the best fractional sales recruiters
+                        </li>
+                        <li>
+                            <Link href="/guides/best-recruiters-saas-startups-sales" className="text-blue-accent hover:underline font-semibold">Best SaaS sales recruiters</Link>
+                            {" "}- specialists, fractional and agencies for startups
+                        </li>
+                        <li>
                             <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">Fractional recruiting guide</Link>
                             {" "}- when fractional fits Seed through Series B
                         </li>
