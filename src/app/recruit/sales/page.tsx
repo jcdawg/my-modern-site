@@ -4,8 +4,8 @@ import { pageMetadata } from "@/lib/seo";
 
 
 export const metadata = pageMetadata({
-    title: "Sales Recruiting",
-    description: "B2B SaaS sales recruiting for VP of Sales, CRO, Enterprise AEs, and SDR leaders. Quota-verified shortlists from The Kas Group.",
+    title: "Sales Recruiter for B2B SaaS Teams",
+    description: "Sales recruiter for B2B SaaS: VP of Sales, CRO, AE and SDR leaders. Quota-verified shortlists from The Kas Group. Kas Seat, Milestone Search and Directed Pursuit.",
     path: "/recruit/sales",
 });
 
@@ -19,31 +19,37 @@ export default function SalesRecruiting() {
         "Customer Success VPs",
     ];
 
+        const FAQS = [
+        {
+            q: "What does a sales recruiter at The Kas Group do?",
+            a: "A sales recruiter at The Kas Group sources and places B2B SaaS revenue talent: CRO, VP of Sales, enterprise AEs, SDR leaders and related seats. Every shortlist is quota-verified with a written assessment. Work runs through Kas Seat, Kas Milestone Search or Kas Directed Pursuit.",
+        },
+        {
+            q: "What sales roles does The Kas Group place?",
+            a: "Chief Revenue Officers, VPs of Sales, Enterprise and Strategic Account Executives, SDR/BDR Managers, Sales Engineering Leaders, and Customer Success VPs for B2B SaaS and high-growth technology companies.",
+        },
+        {
+            q: "How are sales candidates vetted?",
+            a: "Every candidate goes through quota-attainment verification, deal-size and sales-cycle analysis, sales methodology audits, and behavioral interviewing. You receive a written assessment per candidate, not a forwarded resume.",
+        },
+        {
+            q: "How fast can we get a vetted shortlist?",
+            a: "AE and SDR-level searches typically deliver a vetted shortlist in 2 to 4 weeks. VP of Sales and CRO searches run 6 to 10 weeks from kickoff to accepted offer.",
+        },
+        {
+            q: "What does sales recruiting cost?",
+            a: "Sales hiring runs on Kas programs: Seat (monthly fractional, normally $5,000 to $8,000 a month, up to $10,000 for senior AE and above), Milestone Search (example fees SDR $5k / AE $7.5k / Sr AE or Sales Manager $10k; leadership quote), or Directed Pursuit. Contingency remains an option. Industry retained search often starts around $25k, which is market context, not a Kas list price.",
+        },
+    ];
+
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What sales roles does The Kas Group place?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Chief Revenue Officers, VPs of Sales, Enterprise and Strategic Account Executives, SDR/BDR Managers, Sales Engineering Leaders, and Customer Success VPs for B2B SaaS and high-growth technology companies." }
-            },
-            {
-                "@type": "Question",
-                "name": "How are sales candidates vetted?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Every candidate goes through quota-attainment verification, deal-size and sales-cycle analysis, sales methodology audits, and behavioral interviewing. You receive a written assessment per candidate, not a forwarded resume." }
-            },
-            {
-                "@type": "Question",
-                "name": "How fast can we get a vetted shortlist?",
-                "acceptedAnswer": { "@type": "Answer", "text": "AE and SDR-level searches typically deliver a vetted shortlist in 2-4 weeks. VP of Sales and CRO searches run 6-10 weeks from kickoff to accepted offer." }
-            },
-            {
-                "@type": "Question",
-                "name": "What does sales recruiting cost?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Sales hiring runs on Kas programs: Seat (monthly fractional, normally $5k to $8k a month), Milestone Search (example fees SDR $5k / AE $7.5k / Sr AE·SM $10k; leadership quote), or Directed Pursuit. Contingency remains an option. Industry retained search often starts around $25k, which is market context, not a Kas Seat/Milestone list price." }
-            }
-        ]
+        "mainEntity": FAQS.map((f) => ({
+            "@type": "Question",
+            "name": f.q,
+            "acceptedAnswer": { "@type": "Answer", "text": f.a },
+        })),
     };
 
     return (
@@ -54,9 +60,9 @@ export default function SalesRecruiting() {
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-accent/20 to-navy-950/90 mix-blend-multiply" />
                 </div>
                 <div className="relative mx-auto max-w-7xl px-6 lg:px-8 text-center">
-                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Sales Recruiting</h1>
-                    <p className="mt-6 text-lg leading-8 text-grey-200 border-l-2 border-blue-accent pl-4 inline-block mx-auto max-w-2xl">
-                        A Decades-Long Legacy of Building High-Performing Sales Organizations.
+                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Sales Recruiter for VP, AE and SDR Hires</h1>
+                    <p className="mt-6 text-lg leading-8 text-grey-200 border-l-2 border-blue-accent pl-4 inline-block mx-auto max-w-2xl text-left">
+                        The Kas Group is a B2B SaaS sales recruiter for Seed through growth-stage teams. Quota-verified shortlists for CRO, VP of Sales, AE and SDR leaders.
                     </p>
                 </div>
             </div>
@@ -64,21 +70,26 @@ export default function SalesRecruiting() {
             <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
                 <div className="grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:max-w-none lg:grid-cols-2 lg:items-center">
                     <div>
-                        <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">The Revenue Builders</h2>
+                        <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">A sales recruiter who checks the number</h2>
                         <p className="mt-4 text-grey-600 leading-relaxed">
-                            With over 10 years of specialized experience in sales recruiting, we understand exactly what it takes to build a thriving sales organization. We speak the language of sales, from GTM strategy to quota attainment, and know how to identify the drive, skills, and experience necessary to exceed revenue goals.
+                            Since 2014, The Kas Group has placed B2B SaaS sales talent from SDR through VP of Sales and CRO. We speak GTM, quota and cycle length, and we do not send a shortlist without verifying attainment.
                         </p>
-                        <p className="mt-4 text-grey-600 leading-relaxed italic">
-                            Whether you need to build a new sales team from the ground up, add a single high-impact producer, or explore fractional sale recruiting services for your growing startup, we have the industry expertise to help you succeed.
+                        <p className="mt-4 text-grey-600 leading-relaxed">
+                            Build a team, add one producer, or use a{" "}
+                            <Link href="/guides/best-fractional-sales-recruiters" className="text-blue-accent hover:underline font-semibold">top fractional recruiter</Link>
+                            {" "}model for multi-hire quarters. Compare{" "}
+                            <Link href="/guides/best-recruiters-saas-startups-sales" className="text-blue-accent hover:underline font-semibold">SaaS sales recruiters</Link>
+                            {" "}and programs on{" "}
+                            <Link href="/programs" className="text-blue-accent hover:underline font-semibold">/programs</Link>.
                         </p>
 
                         <div className="mt-10">
-                            <Link
-                                href="/contact"
+                            <a
+                                href="mailto:chris@thekasgroup.com"
                                 className="rounded-md bg-navy-900 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-navy-800 transition-colors"
                             >
-                                Schedule a consultation
-                            </Link>
+                                Email chris@thekasgroup.com
+                            </a>
                         </div>
                     </div>
 
@@ -104,7 +115,7 @@ export default function SalesRecruiting() {
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">Our Approach to Sales Recruiting</h2>
                         <p className="mt-4 text-grey-600 max-w-2xl mx-auto">
-                            Built on a foundation of deep industry knowledge and a proven ability to connect with top-tier sales professionals.
+                            Built on a foundation of deep industry knowledge and a proven ability to connect with strong sales professionals.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -119,7 +130,7 @@ export default function SalesRecruiting() {
                         <div className="p-8 rounded-2xl bg-grey-50 border border-grey-100 hover:border-blue-accent/50 transition-colors">
                             <h3 className="text-lg font-bold text-navy-900 mb-4">Targeted Sourcing</h3>
                             <p className="text-sm text-grey-600 leading-relaxed">
-                                We go far beyond job boards. We leverage our network to find high-performing passive candidates who aren&apos;t actively looking but are open to the right strategic move.
+                                We go past job boards. We source high-performing passive candidates who are not actively looking but will move for the right seat.
                             </p>
                         </div>
                         {/* Pillar 3 */}
@@ -137,22 +148,12 @@ export default function SalesRecruiting() {
                 <div className="mx-auto max-w-4xl px-6 lg:px-8">
                     <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl mb-12 text-center">Frequently Asked Questions</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
-                            <h4 className="font-bold text-navy-900 text-lg">What sales roles does The Kas Group place?</h4>
-                            <p className="text-grey-600 leading-relaxed">Chief Revenue Officers, VPs of Sales, Enterprise and Strategic Account Executives, SDR/BDR Managers, Sales Engineering Leaders, and Customer Success VPs for B2B SaaS and high-growth technology companies.</p>
-                        </div>
-                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
-                            <h4 className="font-bold text-navy-900 text-lg">How are sales candidates vetted?</h4>
-                            <p className="text-grey-600 leading-relaxed">Every candidate goes through quota-attainment verification, deal-size and sales-cycle analysis, sales methodology audits, and behavioral interviewing. You receive a written assessment per candidate, not a forwarded resume.</p>
-                        </div>
-                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
-                            <h4 className="font-bold text-navy-900 text-lg">How fast can we get a vetted shortlist?</h4>
-                            <p className="text-grey-600 leading-relaxed">AE and SDR-level searches typically deliver a vetted shortlist in 2-4 weeks. VP of Sales and CRO searches run 6-10 weeks from kickoff to accepted offer.</p>
-                        </div>
-                        <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
-                            <h4 className="font-bold text-navy-900 text-lg">What does sales recruiting cost?</h4>
-                            <p className="text-grey-600 leading-relaxed">Sales hiring runs on Kas programs: Seat (monthly fractional, normally $5k to $8k a month), Milestone Search (example fees SDR $5k / AE $7.5k / Sr AE·SM $10k; leadership quote), or Directed Pursuit. Contingency remains an option. Industry retained search often starts around $25k, which is market context, not a Kas Seat/Milestone list price.</p>
-                        </div>
+                        {FAQS.map((f) => (
+                            <div key={f.q} className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
+                                <h4 className="font-bold text-navy-900 text-lg">{f.q}</h4>
+                                <p className="text-grey-600 leading-relaxed">{f.a}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
@@ -164,7 +165,7 @@ export default function SalesRecruiting() {
                         <div className="max-w-2xl">
                             <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">Hiring Resources</h2>
                             <p className="mt-4 text-grey-600">
-                                Explore our expert-led guides to help you navigate the complex landscape of sales leadership recruitment.
+                                Guides on SaaS sales recruiters, fractional hiring and VP of Sales searches.
                             </p>
                         </div>
                         <Link href="/guides" className="text-blue-accent font-bold hover:underline inline-flex items-center gap-2">
@@ -172,6 +173,20 @@ export default function SalesRecruiting() {
                         </Link>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <Link href="/guides/best-recruiters-saas-startups-sales" className="group p-8 rounded-2xl bg-white border border-grey-200 hover:border-blue-accent/30 hover:shadow-lg transition-all">
+                            <h3 className="text-xl font-bold text-navy-900 group-hover:text-blue-accent mb-2">Best SaaS Sales Recruiters for Startups</h3>
+                            <p className="text-sm text-grey-500 mb-4 leading-relaxed">Specialist, fractional and agency models for Seed to Series B sales hiring.</p>
+                            <span className="text-blue-accent text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                                Read Guide <ArrowRight className="h-3 w-3" />
+                            </span>
+                        </Link>
+                        <Link href="/guides/best-fractional-sales-recruiters" className="group p-8 rounded-2xl bg-white border border-grey-200 hover:border-blue-accent/30 hover:shadow-lg transition-all">
+                            <h3 className="text-xl font-bold text-navy-900 group-hover:text-blue-accent mb-2">Top Fractional Recruiter for Sales Teams</h3>
+                            <p className="text-sm text-grey-500 mb-4 leading-relaxed">How to pick the best fractional sales recruiters and when Kas Seat beats contingency.</p>
+                            <span className="text-blue-accent text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                                Read Guide <ArrowRight className="h-3 w-3" />
+                            </span>
+                        </Link>
                         <Link href="/guides/best-sales-recruiting-agencies-2026" className="group p-8 rounded-2xl bg-white border border-grey-200 hover:border-blue-accent/30 hover:shadow-lg transition-all">
                             <h3 className="text-xl font-bold text-navy-900 group-hover:text-blue-accent mb-2">Best Sales Recruiting Agencies 2026</h3>
                             <p className="text-sm text-grey-500 mb-4 leading-relaxed">Our objective analysis of the top firms for B2B sales talent and leadership roles.</p>
