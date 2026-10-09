@@ -101,6 +101,7 @@ Sales hiring runs through programs. Contingency is still available for sales rol
 - [AI Resumes Broke Recruiting: Back to Sourcing](https://www.thekasgroup.com/blog/ai-resume-boom-old-school-recruiting): AI resumes and auto-apply bots pushed application volume up 45%+. How B2B teams hire sales reps now: direct sourcing, verified quota, and deal teardowns.
 - [Your First Sales Hire Needs a Playbook](https://www.thekasgroup.com/blog/founder-led-sales-first-hire): When to move off founder-led sales, why first sales hires end in restarts, and what to write down before day one. Five sources plus Chris Stinson's view.
 - [What to Pay Your First AE](https://www.thekasgroup.com/blog/early-stage-sales-comp-first-ae-ote): First AE OTE: SMB and mid-market $140K to $220K, enterprise $220K to $300K. Why ranges disagree, and how to pressure-test attainment.
+- [AI SDRs Are Here. Who Startups Still Need](https://www.thekasgroup.com/blog/ai-sdr-who-you-still-need): Salesforce launched an AI SDR. Do startups still need SDRs? Yes, but the work changes. What AI handles, what a rep still owns, and who to hire first.
 
 ## Company
 

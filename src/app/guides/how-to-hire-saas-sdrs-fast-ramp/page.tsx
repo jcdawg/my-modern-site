@@ -432,6 +432,10 @@ export default function HowToHireSaasSdrsFastRamp() {
                                 {" "}- OTE ranges by segment and how to pressure-test attainment
                             </li>
                             <li>
+                                <Link href="/blog/ai-sdr-who-you-still-need" className="text-blue-accent hover:underline font-semibold">Who you still need with an AI SDR</Link>
+                                {" "}- what AI handles and what a rep still owns
+                            </li>
+                            <li>
                                 <Link href="/blog/founder-led-sales-first-hire" className="text-blue-accent hover:underline font-semibold">Your first sales hire needs a playbook</Link>
                                 {" "}- what founder-led sales has to prove first
                             </li>

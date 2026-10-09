@@ -211,6 +211,7 @@ Visit https://www.thekasgroup.com/guides for the complete interactive library.
 - [Fractional SaaS Sales Recruiting: The Modern Playbook](/blog/fractional-saas-sales-recruiting)
 - [Your First Sales Hire Needs a Playbook Before Day One](/blog/founder-led-sales-first-hire)
 - [What to Pay Your First AE: OTE Ranges That Hold Up](/blog/early-stage-sales-comp-first-ae-ote)
+- [Salesforce Just Shipped an AI SDR. Here's Who You Still Need.](/blog/ai-sdr-who-you-still-need)
 
 Contact chris@thekasgroup.com for guest inquiries and research collaborations.
 `,
