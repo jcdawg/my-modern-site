@@ -47,6 +47,15 @@ export default function Blog() {
             category: "Sales Leadership",
             slug: "early-stage-sales-comp-first-ae-ote",
         },
+        {
+            id: 5,
+            title: "Salesforce Just Shipped an AI SDR. Here's Who You Still Need.",
+            excerpt: "Do startups still need SDRs now that AI does outreach? Yes, but the work changes. What Salesforce shipped, what the vendor numbers say, and what a rep still owns.",
+            date: "Oct 9, 2026",
+            author: "Chris Stinson",
+            category: "Sales Leadership",
+            slug: "ai-sdr-who-you-still-need",
+        },
     ];
 
     return (
