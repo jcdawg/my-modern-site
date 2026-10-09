@@ -324,7 +324,7 @@ export default function Programs() {
                             {" "}- specialists, fractional and agencies for startups
                         </li>
                         <li>
-                            <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">Fractional recruiting guide</Link>
+                            <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">What is fractional recruiting</Link>
                             {" "}- when fractional fits Seed through Series B
                         </li>
                     </ul>

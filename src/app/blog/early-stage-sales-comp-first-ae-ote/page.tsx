@@ -201,6 +201,8 @@ export default function EarlyStageSalesCompFirstAeOtePost() {
                         {" · "}
                         <Link href="/guides/fractional-sales-recruiting-cost" className={link}>Fractional Sales Recruiting Cost</Link>
                         {" · "}
+                        <Link href="/guides/fractional-recruiting-guide" className={link}>What Is Fractional Recruiting?</Link>
+                        {" · "}
                         <Link href="/programs" className={link}>Programs</Link>
                     </p>
 

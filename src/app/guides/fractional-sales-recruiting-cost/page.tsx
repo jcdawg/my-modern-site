@@ -383,7 +383,7 @@ export default function FractionalSalesRecruitingCost() {
                         <h2 className="text-2xl font-bold text-navy-900">Related guides</h2>
                         <ul className="space-y-2 text-grey-600">
                             <li>
-                                <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">Fractional recruiting guide</Link> - what it is and when startups use it
+                                <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">What is fractional recruiting</Link> - what it is and when startups use it
                             </li>
                             <li>
                                 <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting vs contingency</Link> - fee model vs agencies

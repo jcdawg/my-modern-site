@@ -141,6 +141,10 @@ export default function BestFractionalSalesRecruiters() {
                             </li>
                         </ul>
                         <p className="text-grey-600 leading-relaxed">
+                            New to the model? Start with{" "}
+                            <Link href="/guides/fractional-recruiting-guide" className={link}>what is fractional recruiting</Link>.
+                        </p>
+                        <p className="text-grey-600 leading-relaxed">
                             Seed to Series B founders making their first one to five sales hires should also read{" "}
                             <Link href="/guides/fractional-recruiting-for-startups" className={link}>fractional recruiting for startups</Link>
                             {" "}and{" "}
