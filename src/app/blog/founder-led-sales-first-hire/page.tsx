@@ -206,6 +206,8 @@ export default function FounderLedSalesFirstHirePost() {
 
                     <p className="text-grey-600">
                         <strong>Further reading:</strong>{" "}
+                        <Link href="/guides/fractional-recruiting-guide" className={link}>What Is Fractional Recruiting?</Link>
+                        {" · "}
                         <Link href="/guides/fractional-recruiting-for-startups" className={link}>Fractional Recruiting for Startups</Link>
                         {" · "}
                         <Link href="/guides/best-fractional-sales-recruiters" className={link}>Top Fractional Recruiter</Link>

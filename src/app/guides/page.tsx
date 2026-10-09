@@ -15,7 +15,7 @@ export default function GuidesIndex() {
         { title: "Hire SDRs & AEs Fast", href: "/guides/how-to-hire-saas-sdrs-fast-ramp", desc: "Zero-ramp hiring: motion-match traits, quota-verified numbers, a 4-week scorecard, and comp math." },
         { title: "Top Exec Search Firms", href: "/guides/top-executive-search-firms-sales-leaders", desc: "Best firms for CRO and VP-level sales leadership." },
         { title: "SaaS Sales Recruiters", href: "/guides/best-saas-sales-recruiting-firms", desc: "Specialized firms for high-growth software companies." },
-        { title: "What Is Fractional Recruiting?", href: "/guides/fractional-recruiting-guide", desc: "What fractional recruiting is, how it compares with agency and in-house TA, and how a Kas engagement runs week to week." },
+        { title: "What Is Fractional Recruiting?", href: "/guides/fractional-recruiting-guide", desc: "What fractional recruiting is, how it differs from contingency and retained, who it fits, cost, and how a Kas engagement runs." },
         { title: "Fractional Recruiting for Startups", href: "/guides/fractional-recruiting-for-startups", desc: "Seed to Series B founders making their first 1 to 5 sales hires: when fractional fits, when it does not, cost, and the first 90 days." },
         { title: "Fractional Sales Recruiting Cost", href: "/guides/fractional-sales-recruiting-cost", desc: "Exact Kas pricing: Kas Seat at $5k to $8k a month (up to $10k for senior AE and above). Kas Milestone Search examples: SDR $5k, AE $7.5k, Sr AE / Sales Manager $10k." },
         { title: "Fractional vs Contingency Fees", href: "/guides/fractional-sales-recruiting-vs-contingency", desc: "Side-by-side fee math for Kas fractional retainers vs 20-30% contingency on AE and VP packages." },
