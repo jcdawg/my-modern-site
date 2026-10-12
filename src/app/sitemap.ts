@@ -39,6 +39,7 @@ const entries: Entry[] = [
     { path: '/blog/founder-led-sales-first-hire', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/blog/early-stage-sales-comp-first-ae-ote', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/blog/ai-sdr-who-you-still-need', changeFrequency: 'monthly', priority: 0.8 },
+    { path: '/blog/jobs-report-still-no-great-reps', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/guides/best-recruiters-saas-startups-sales', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/best-fractional-sales-recruiters', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/best-saas-sales-recruiting-firms', changeFrequency: 'weekly', priority: 0.9 },

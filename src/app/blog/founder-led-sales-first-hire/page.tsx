@@ -218,6 +218,7 @@ export default function FounderLedSalesFirstHirePost() {
                         {" · "}
                         <Link href="/blog/ai-resume-boom-old-school-recruiting" className={link}>400 Applications and Not One of Them Means Anything</Link>
                         {" · "}
+                        <Link href="/blog/jobs-report-still-no-great-reps" className={link}>29,000 Jobs Added and Still No Great Reps</Link>                        {" · "}
                         <Link href="/programs" className={link}>Programs</Link>
                     </p>
 
