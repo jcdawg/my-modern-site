@@ -46,6 +46,7 @@ const extraPages = [
     { path: "/blog/founder-led-sales-first-hire", page: "src/app/blog/founder-led-sales-first-hire/page.tsx" },
     { path: "/blog/early-stage-sales-comp-first-ae-ote", page: "src/app/blog/early-stage-sales-comp-first-ae-ote/page.tsx" },
     { path: "/blog/ai-sdr-who-you-still-need", page: "src/app/blog/ai-sdr-who-you-still-need/page.tsx" },
+    { path: "/blog/jobs-report-still-no-great-reps", page: "src/app/blog/jobs-report-still-no-great-reps/page.tsx" },
     { path: "/candidate-mapping-brief", page: "src/app/candidate-mapping-brief/page.tsx" },
 ];
 for (const extra of extraPages) {

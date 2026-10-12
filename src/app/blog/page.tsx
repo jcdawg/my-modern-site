@@ -56,6 +56,15 @@ export default function Blog() {
             category: "Sales Leadership",
             slug: "ai-sdr-who-you-still-need",
         },
+        {
+            id: 6,
+            title: "29,000 Jobs Added and Still No Great Reps",
+            excerpt: "A soft jobs report does not make sales hiring easy. What the September numbers say, why strong reps are staying put, and what it takes to move one.",
+            date: "Oct 12, 2026",
+            author: "Chris Stinson",
+            category: "Sales Leadership",
+            slug: "jobs-report-still-no-great-reps",
+        },
     ];
 
     return (
