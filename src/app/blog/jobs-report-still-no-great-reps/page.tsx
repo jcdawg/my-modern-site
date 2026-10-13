@@ -213,6 +213,7 @@ export default function JobsReportStillNoGreatRepsPost() {
                         {" · "}
                         <Link href="/guides/fractional-recruiting-guide" className={link}>What Is Fractional Recruiting?</Link>
                         {" · "}
+                        <Link href="/blog/sdr-team-cut-aes-prospect" className={link}>They Cut the SDRs. Now Every AE Prospects.</Link>                        {" · "}
                         <Link href="/programs" className={link}>Programs</Link>
                     </p>
 
