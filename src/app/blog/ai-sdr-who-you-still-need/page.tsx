@@ -233,6 +233,7 @@ export default function AiSdrWhoYouStillNeedPost() {
                         <Link href="/guides/fractional-recruiting-guide" className={link}>What Is Fractional Recruiting?</Link>
                         {" · "}
                         <Link href="/blog/jobs-report-still-no-great-reps" className={link}>29,000 Jobs Added and Still No Great Reps</Link>                        {" · "}
+                        <Link href="/blog/sdr-team-cut-aes-prospect" className={link}>They Cut the SDRs. Now Every AE Prospects.</Link>                        {" · "}
                         <Link href="/programs" className={link}>Programs</Link>
                     </p>
 

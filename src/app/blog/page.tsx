@@ -65,6 +65,15 @@ export default function Blog() {
             category: "Sales Leadership",
             slug: "jobs-report-still-no-great-reps",
         },
+        {
+            id: 7,
+            title: "They Cut the SDRs. Now Every AE Prospects.",
+            excerpt: "Companies are cutting SDR teams and handing prospecting to AEs with bigger quotas. Who thrives, who burns out, and how to test an AE before you hire.",
+            date: "Oct 13, 2026",
+            author: "Chris Stinson",
+            category: "Sales Leadership",
+            slug: "sdr-team-cut-aes-prospect",
+        },
     ];
 
     return (
