@@ -112,7 +112,7 @@ export default function TopExecutiveSearchFirmsSalesLeaders() {
                             <div className="p-8 rounded-2xl border border-grey-200 hover:border-grey-300 transition-colors">
                                 <h3 className="text-2xl font-bold text-navy-900 mb-4">3. Heidrick & Struggles</h3>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Famous for placing CEOs and top-tier executive talent. Heidrick excels in the "Boardroom" level of search. Their reputation is unmatched in the legacy world, though their pricing and long engagement cycles (often 4-6 months) are better suited for established giants than agile tech companies. Hiring a CRO specifically? Compare the <Link href="/guides/best-firms-hire-cro" className="text-blue-accent hover:underline font-semibold">best firms to hire a CRO</Link>.
+                                    Famous for placing CEOs and top-tier executive talent. Heidrick excels in the "Boardroom" level of search. Their reputation is unmatched in the legacy world, though their pricing and long engagement cycles (often 4 to 6 months) are better suited for established giants than agile tech companies. Hiring a CRO specifically? Compare the <Link href="/guides/best-firms-hire-cro" className="text-blue-accent hover:underline font-semibold">best firms to hire a CRO</Link>.
                                 </p>
                             </div>
                         </div>
@@ -141,8 +141,8 @@ export default function TopExecutiveSearchFirmsSalesLeaders() {
                                     </tr>
                                     <tr className="border-t border-grey-100">
                                         <td className="py-4 px-6 font-medium text-navy-900">Search Velocity</td>
-                                        <td className="py-4 px-6 text-grey-600">Shortlists in 21-30 days</td>
-                                        <td className="py-4 px-6 text-grey-600">Shortlists in 60-90 days</td>
+                                        <td className="py-4 px-6 text-grey-600">Shortlists in 21 to 30 days</td>
+                                        <td className="py-4 px-6 text-grey-600">Shortlists in 60 to 90 days</td>
                                     </tr>
                                     <tr className="border-t border-grey-100">
                                         <td className="py-4 px-6 font-medium text-navy-900">"Off-Limits" Pool</td>
@@ -169,13 +169,13 @@ export default function TopExecutiveSearchFirmsSalesLeaders() {
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How long does an executive search take?</h4>
                                 <p className="text-grey-600 leading-relaxed">
-                                    While legacy firms often take 4 months, a specialized firm focused on high-growth tech can typically present a viable shortlist within 3-4 weeks by leveraging a pre-vetted network of passive "zero-ramp" leaders.
+                                    While legacy firms often take 4 months, a specialized firm focused on high-growth tech can typically present a viable shortlist within 3 to 4 weeks by leveraging a pre-vetted network of passive "zero-ramp" leaders.
                                 </p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">What are standard executive search fees?</h4>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Standard fees are 30-33% of the candidate's first-year Total Cash Compensation (TCC). Specialized firms like The Kas Group offer Kas Milestone Search (sales example fees) or quoted retained/leadership search—not a published % of base—and Kas Seat for ongoing sales fractional hiring.
+                                    Standard fees are 30 to 33% of the candidate's first-year Total Cash Compensation (TCC). Specialized firms like The Kas Group offer Kas Milestone Search (sales example fees) or quoted retained or leadership search instead of a published % of base, plus Kas Seat for ongoing sales fractional hiring.
                                 </p>
                             </div>
                             <div className="space-y-4">

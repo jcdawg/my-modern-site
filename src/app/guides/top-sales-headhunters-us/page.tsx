@@ -29,7 +29,7 @@ export default function TopSalesHeadhuntersUs() {
             {
                 "@type": "Question",
                 "name": "What do sales headhunters charge?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Most US sales headhunters charge contingency fees of 20-30% of first-year OTE. Retained searches for VP and CRO roles run similar or higher with an upfront component. The Kas Group also offers fractional monthly retainers that remove per-hire fees for companies hiring at volume." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Most US sales headhunters charge contingency fees of 20 to 30% of first-year OTE. Retained searches for VP and CRO roles run similar or higher with an upfront component. The Kas Group also offers fractional monthly retainers that remove per-hire fees for companies hiring at volume." }
             },
             {
                 "@type": "Question",
@@ -126,7 +126,7 @@ export default function TopSalesHeadhuntersUs() {
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">What do sales headhunters charge?</h4>
-                                <p className="text-grey-600 leading-relaxed">Most US sales headhunters charge contingency fees of 20-30% of first-year OTE. Retained searches for VP and CRO roles run similar or higher with an upfront component. The Kas Group also offers fractional monthly retainers that remove per-hire fees for companies hiring at volume.</p>
+                                <p className="text-grey-600 leading-relaxed">Most US sales headhunters charge contingency fees of 20 to 30% of first-year OTE. Retained searches for VP and CRO roles run similar or higher with an upfront component. The Kas Group also offers fractional monthly retainers that remove per-hire fees for companies hiring at volume.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Do sales headhunters work nationally or only locally?</h4>

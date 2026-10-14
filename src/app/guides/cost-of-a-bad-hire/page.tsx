@@ -19,7 +19,7 @@ export default function CostOfBadHireGuide() {
             {
                 "@type": "Question",
                 "name": "How much does a bad hire cost a company?",
-                "acceptedAnswer": { "@type": "Answer", "text": "The U.S. Department of Labor estimates a bad hire costs 30% of the employee's annual salary. For senior sales or AI/ML roles with $200k-$400k total compensation, this translates to $60k-$120k per failed hire when accounting for recruiting fees, onboarding, lost productivity, and team morale impact." }
+                "acceptedAnswer": { "@type": "Answer", "text": "The U.S. Department of Labor estimates a bad hire costs 30% of the employee's annual salary. For senior sales or AI/ML roles with $200k to $400k total compensation, this translates to $60k to $120k per failed hire when accounting for recruiting fees, onboarding, lost productivity, and team morale impact." }
             },
             {
                 "@type": "Question",
@@ -34,7 +34,7 @@ export default function CostOfBadHireGuide() {
             {
                 "@type": "Question",
                 "name": "What is the hidden cost of a bad sales hire?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Beyond direct costs, a bad sales hire burns through qualified leads, damages client relationships, demoralizes the existing team, and creates a 3-6 month productivity gap during replacement. The total impact on pipeline and revenue can exceed 5x the direct hiring costs." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Beyond direct costs, a bad sales hire burns through qualified leads, damages client relationships, demoralizes the existing team, and creates a 3 to 6 month productivity gap during replacement. The total impact on pipeline and revenue can exceed 5x the direct hiring costs." }
             }
         ]
     };
@@ -87,17 +87,17 @@ export default function CostOfBadHireGuide() {
 
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                             <div className="p-8 rounded-2xl bg-red-50 border border-red-200 text-center">
-                                <p className="text-4xl font-black text-red-600 mb-2">$60k–$120k</p>
+                                <p className="text-4xl font-black text-red-600 mb-2">$60k to $120k</p>
                                 <p className="text-red-700 font-medium text-sm">Direct Cost</p>
                                 <p className="text-red-500 text-xs mt-2">Recruiting fees + onboarding + severance</p>
                             </div>
                             <div className="p-8 rounded-2xl bg-red-50 border border-red-200 text-center">
-                                <p className="text-4xl font-black text-red-600 mb-2">$80k–$150k</p>
+                                <p className="text-4xl font-black text-red-600 mb-2">$80k to $150k</p>
                                 <p className="text-red-700 font-medium text-sm">Indirect Cost</p>
                                 <p className="text-red-500 text-xs mt-2">Lost productivity + management hours + morale</p>
                             </div>
                             <div className="p-8 rounded-2xl bg-navy-900 border border-navy-800 text-center">
-                                <p className="text-4xl font-black text-blue-accent mb-2">$140k–$270k</p>
+                                <p className="text-4xl font-black text-blue-accent mb-2">$140k to $270k</p>
                                 <p className="text-white font-medium text-sm">Total Impact per Bad Hire</p>
                                 <p className="text-grey-400 text-xs mt-2">For roles with $200k+ OTE</p>
                             </div>
@@ -116,25 +116,25 @@ export default function CostOfBadHireGuide() {
                                 {
                                     title: "Revenue Pipeline Destruction",
                                     desc: "A bad sales hire doesn't just fail to close, they burn through qualified leads that took months to generate. Those prospects are unlikely to re-engage with a different rep, creating permanent pipeline damage.",
-                                    cost: "$50k - $200k in lost pipeline value",
+                                    cost: "$50k to $200k in lost pipeline value",
                                     icon: TrendingDown
                                 },
                                 {
                                     title: "Team Morale & Retention Risk",
                                     desc: "High performers notice underperformers quickly. If leadership doesn't act fast, your best people start questioning the company's hiring standards, and updating their own resumes.",
-                                    cost: "1-2 additional attrition risks",
+                                    cost: "1 to 2 additional attrition risks",
                                     icon: AlertTriangle
                                 },
                                 {
                                     title: "Management Time Drain",
-                                    desc: "Managers spend 15-20 hours per month coaching and documenting performance issues for a struggling hire. Over a 6-month period, that's 90-120 hours diverted from strategic leadership.",
-                                    cost: "90-120 hours of leadership time",
+                                    desc: "Managers spend 15 to 20 hours per month coaching and documenting performance issues for a struggling hire. Over a 6-month period, that's 90 to 120 hours diverted from strategic leadership.",
+                                    cost: "90 to 120 hours of leadership time",
                                     icon: AlertTriangle
                                 },
                                 {
                                     title: "Restart Penalty",
-                                    desc: "When the hire fails, you go back to square one. The replacement search adds another 2-4 months of vacancy cost, and the new hire needs their own 3-month ramp period.",
-                                    cost: "5-7 month total productivity gap",
+                                    desc: "When the hire fails, you go back to square one. The replacement search adds another 2 to 4 months of vacancy cost, and the new hire needs their own 3-month ramp period.",
+                                    cost: "5 to 7 month total productivity gap",
                                     icon: AlertTriangle
                                 },
                             ].map((item, i) => (
@@ -171,19 +171,19 @@ export default function CostOfBadHireGuide() {
                                 <tbody>
                                     <tr className="border-t border-grey-100">
                                         <td className="py-4 px-6 font-medium text-navy-900">Job Board / DIY</td>
-                                        <td className="py-4 px-6 text-grey-600">$500 - $2k</td>
-                                        <td className="py-4 px-6 text-red-600 font-semibold">High (40-50%)</td>
-                                        <td className="py-4 px-6 text-red-600 font-semibold">$140k - $270k</td>
+                                        <td className="py-4 px-6 text-grey-600">$500 to $2k</td>
+                                        <td className="py-4 px-6 text-red-600 font-semibold">High (40 to 50%)</td>
+                                        <td className="py-4 px-6 text-red-600 font-semibold">$140k to $270k</td>
                                     </tr>
                                     <tr className="border-t border-grey-100">
                                         <td className="py-4 px-6 font-medium text-navy-900">Contingency Agency</td>
-                                        <td className="py-4 px-6 text-grey-600">$0 until hire (20-30%)</td>
-                                        <td className="py-4 px-6 text-yellow-600 font-semibold">Medium (25-35%)</td>
-                                        <td className="py-4 px-6 text-yellow-600 font-semibold">$100k - $220k</td>
+                                        <td className="py-4 px-6 text-grey-600">$0 until hire (20 to 30%)</td>
+                                        <td className="py-4 px-6 text-yellow-600 font-semibold">Medium (25 to 35%)</td>
+                                        <td className="py-4 px-6 text-yellow-600 font-semibold">$100k to $220k</td>
                                     </tr>
                                     <tr className="border-t border-grey-100 bg-blue-accent/5">
                                         <td className="py-4 px-6 font-bold text-blue-accent">Retained / Ph.D.-Vetted</td>
-                                        <td className="py-4 px-6 text-grey-600">$25k - $50k retainer</td>
+                                        <td className="py-4 px-6 text-grey-600">$25k to $50k retainer</td>
                                         <td className="py-4 px-6 text-green-600 font-semibold">Low (&lt;5%)</td>
                                         <td className="py-4 px-6 text-green-600 font-semibold">Rare, guaranteed replacement</td>
                                     </tr>

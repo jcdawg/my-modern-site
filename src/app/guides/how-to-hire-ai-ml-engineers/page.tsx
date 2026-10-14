@@ -24,7 +24,7 @@ export default function HireAIMLGuide() {
             {
                 "@type": "Question",
                 "name": "What is a competitive salary for an AI engineer in 2026?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Top-tier senior AI engineers now command base salaries between $250k-$450k, with significant equity components. For specialized research roles, total compensation often exceeds $600k." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Top-tier senior AI engineers now command base salaries between $250k and $450k, with significant equity components. For specialized research roles, total compensation often exceeds $600k." }
             },
             {
                 "@type": "Question",
@@ -158,8 +158,8 @@ export default function HireAIMLGuide() {
                                     </tr>
                                     <tr className="border-t border-grey-100">
                                         <td className="py-4 px-6 font-medium text-navy-900">Vetting Duration</td>
-                                        <td className="py-4 px-6 text-grey-600">2-4 Hour Deep Dive</td>
-                                        <td className="py-4 px-6 text-grey-600">15-30 Minute Screening</td>
+                                        <td className="py-4 px-6 text-grey-600">2 to 4 Hour Deep Dive</td>
+                                        <td className="py-4 px-6 text-grey-600">15 to 30 Minute Screening</td>
                                     </tr>
                                     <tr className="border-t border-grey-100">
                                         <td className="py-4 px-6 font-medium text-navy-900">Candidate Network</td>
@@ -187,7 +187,7 @@ export default function HireAIMLGuide() {
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">What is a competitive salary for an AI engineer in 2026?</h4>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Top-tier senior AI engineers now command base salaries between $250k - $450k, with significant equity components. For specialized research roles, total compensation often exceeds $600k.
+                                    Top-tier senior AI engineers now command base salaries between $250k and $450k, with significant equity components. For specialized research roles, total compensation often exceeds $600k.
                                 </p>
                             </div>
                             <div className="space-y-4">

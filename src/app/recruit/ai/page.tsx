@@ -17,7 +17,7 @@ export default function AIRecruiting() {
         "Data Scientists (NLP/LLM focus)",
         "AI Architects",
         "Data Infrastructure Engineers",
-        "Product Managers - AI/ML",
+        "AI/ML Product Managers",
     ];
 
     const faqSchema = {
@@ -37,12 +37,12 @@ export default function AIRecruiting() {
             {
                 "@type": "Question",
                 "name": "How much does AI and data engineering recruiting cost?",
-                "acceptedAnswer": { "@type": "Answer", "text": "AI / ML / data engineering search is success-fee or retained quote only—never a monthly Kas Seat. Industry retained placements often range from about $25k to $150k+ depending on seniority; that band is market context, not a published Kas tech list price. We quote each search." }
+                "acceptedAnswer": { "@type": "Answer", "text": "AI / ML / data engineering search is success-fee or retained quote only. It is never a monthly Kas Seat. Industry retained placements often range from about $25k to $150k+ depending on seniority; that band is market context, not a published Kas tech list price. We quote each search." }
             },
             {
                 "@type": "Question",
                 "name": "How long does an AI/ML search take?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Senior IC roles typically reach a vetted shortlist in 3-5 weeks; leadership searches run 6-10 weeks. Speed never bypasses the technical review, every candidate clears the Ph.D.-led assessment first." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Senior IC roles typically reach a vetted shortlist in 3 to 5 weeks; leadership searches run 6 to 10 weeks. Speed never bypasses the technical review, every candidate clears the Ph.D.-led assessment first." }
             }
         ]
     };
@@ -137,7 +137,7 @@ export default function AIRecruiting() {
                             <div className="aspect-square rounded-2xl bg-navy-900 overflow-hidden shadow-2xl relative group">
                                 <Image
                                     src="/derek.png"
-                                    alt="Derek, Ph.D. - Chief Technical Vetting Partner"
+                                    alt="Derek, Ph.D., Chief Technical Vetting Partner"
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
@@ -190,11 +190,11 @@ export default function AIRecruiting() {
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How much does AI and data engineering recruiting cost?</h4>
-                            <p className="text-grey-600 leading-relaxed">AI / ML / data engineering search is success-fee or retained quote only—never a monthly Kas Seat. Industry retained placements often range from about $25k to $150k+ depending on seniority; that band is market context, not a published Kas tech list price. We quote each search.</p>
+                            <p className="text-grey-600 leading-relaxed">AI / ML / data engineering search is success-fee or retained quote only. It is never a monthly Kas Seat. Industry retained placements often range from about $25k to $150k+ depending on seniority; that band is market context, not a published Kas tech list price. We quote each search.</p>
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How long does an AI/ML search take?</h4>
-                            <p className="text-grey-600 leading-relaxed">Senior IC roles typically reach a vetted shortlist in 3-5 weeks; leadership searches run 6-10 weeks. Speed never bypasses the technical review, every candidate clears the Ph.D.-led assessment first.</p>
+                            <p className="text-grey-600 leading-relaxed">Senior IC roles typically reach a vetted shortlist in 3 to 5 weeks; leadership searches run 6 to 10 weeks. Speed never bypasses the technical review, every candidate clears the Ph.D.-led assessment first.</p>
                         </div>
                     </div>
                 </div>

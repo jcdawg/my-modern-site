@@ -305,27 +305,27 @@ export default function Programs() {
                     <ul className="space-y-3 text-grey-600 leading-relaxed">
                         <li>
                             <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting cost</Link>
-                            {" "}- Kas Seat $5k to $8k a month and Milestone example fees
+                            {": "}Kas Seat $5k to $8k a month and Milestone example fees
                         </li>
                         <li>
                             <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting vs contingency</Link>
-                            {" "}- 20-30% fee math on AE and VP packages
+                            {": "}20 to 30% fee math on AE and VP packages
                         </li>
                         <li>
                             <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline font-semibold">Fractional recruiting vs in-house recruiter</Link>
-                            {" "}- $100k-$160k fully loaded vs retainer
+                            {": "}$100k to $160k fully loaded vs retainer
                         </li>
                         <li>
                             <Link href="/guides/best-fractional-sales-recruiters" className="text-blue-accent hover:underline font-semibold">Top fractional recruiter for sales teams</Link>
-                            {" "}- how to pick the best fractional sales recruiters
+                            {": "}how to pick the best fractional sales recruiters
                         </li>
                         <li>
                             <Link href="/guides/best-recruiters-saas-startups-sales" className="text-blue-accent hover:underline font-semibold">Best SaaS sales recruiters</Link>
-                            {" "}- specialists, fractional and agencies for startups
+                            {": "}specialists, fractional and agencies for startups
                         </li>
                         <li>
                             <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">What is fractional recruiting</Link>
-                            {" "}- when fractional fits Seed through Series B
+                            {": "}when fractional fits Seed through Series B
                         </li>
                     </ul>
                     <p className="text-grey-600 mt-6">

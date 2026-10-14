@@ -5,7 +5,7 @@ import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
     title: 'The Real Cost of a Bad Technical Hire: Time and Revenue',
-    description: 'What hiring the wrong data engineer or AI engineer really costs: $150k-$300k+ and 6-12 months of roadmap. Cost breakdown, recovery timeline, warning signs, and how to vet the replacement.',
+    description: 'What hiring the wrong data engineer or AI engineer really costs: $150k to $300k+ and 6 to 12 months of roadmap. Cost breakdown, recovery timeline, warning signs, and how to vet the replacement.',
     path: "/guides/cost-of-hiring-wrong-data-engineer",
 };
 
@@ -24,7 +24,7 @@ export default function CostOfHiringWrongDataEngineer() {
             {
                 "@type": "Question",
                 "name": "How long does it take to recover from a bad engineering hire?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Six to twelve months from the first serious doubt to a fully productive replacement: decision and exit (1-3 months), replacement search (2-4 months), and new-hire ramp and system repair (3-6 months)." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Six to twelve months from the first serious doubt to a fully productive replacement: decision and exit (1 to 3 months), replacement search (2 to 4 months), and new-hire ramp and system repair (3 to 6 months)." }
             },
             {
                 "@type": "Question",
@@ -99,7 +99,7 @@ export default function CostOfHiringWrongDataEngineer() {
                         </h2>
                         <div className="bg-blue-accent/5 border-l-4 border-blue-accent p-6 rounded-r-2xl">
                             <p className="text-grey-700 leading-relaxed">
-                                <strong>Direct answer:</strong> A bad data or AI engineer hire costs <strong>$150k-$300k all-in</strong>: roughly 6 months of salary and benefits, recruiter fees, severance, and the replacement search, plus 30% or more in indirect costs from senior-team productivity drag and delayed releases.
+                                <strong>Direct answer:</strong> A bad data or AI engineer hire costs <strong>$150k to $300k all-in</strong>: roughly 6 months of salary and benefits, recruiter fees, severance, and the replacement search, plus 30% or more in indirect costs from senior-team productivity drag and delayed releases.
                             </p>
                         </div>
                         <p className="text-grey-600 leading-relaxed">
@@ -117,32 +117,32 @@ export default function CostOfHiringWrongDataEngineer() {
                                 <tbody>
                                     <tr className="border-t border-grey-100">
                                         <td className="py-4 px-6 font-medium text-navy-900">Salary + benefits paid before exit</td>
-                                        <td className="py-4 px-6 text-grey-600">$90k - $110k</td>
+                                        <td className="py-4 px-6 text-grey-600">$90k to $110k</td>
                                         <td className="py-4 px-6 text-grey-600">~6 months of underperformance</td>
                                     </tr>
                                     <tr className="border-t border-grey-100 bg-grey-50/50">
                                         <td className="py-4 px-6 font-medium text-navy-900">Recruiter fees (original + replacement)</td>
-                                        <td className="py-4 px-6 text-grey-600">$30k - $60k</td>
-                                        <td className="py-4 px-6 text-grey-600">20-30% of first-year comp, often twice</td>
+                                        <td className="py-4 px-6 text-grey-600">$30k to $60k</td>
+                                        <td className="py-4 px-6 text-grey-600">20 to 30% of first-year comp, often twice</td>
                                     </tr>
                                     <tr className="border-t border-grey-100">
                                         <td className="py-4 px-6 font-medium text-navy-900">Severance + offboarding</td>
-                                        <td className="py-4 px-6 text-grey-600">$15k - $40k</td>
+                                        <td className="py-4 px-6 text-grey-600">$15k to $40k</td>
                                         <td className="py-4 px-6 text-grey-600">Depends on stage and terms</td>
                                     </tr>
                                     <tr className="border-t border-grey-100 bg-grey-50/50">
                                         <td className="py-4 px-6 font-medium text-navy-900">Senior team productivity drag</td>
-                                        <td className="py-4 px-6 text-grey-600">$50k - $100k+</td>
+                                        <td className="py-4 px-6 text-grey-600">$50k to $100k+</td>
                                         <td className="py-4 px-6 text-grey-600">Your best engineers compensate instead of build</td>
                                     </tr>
                                     <tr className="border-t border-grey-100">
                                         <td className="py-4 px-6 font-medium text-navy-900">Replacement search time</td>
-                                        <td className="py-4 px-6 text-grey-600">2-4 months</td>
+                                        <td className="py-4 px-6 text-grey-600">2 to 4 months</td>
                                         <td className="py-4 px-6 text-grey-600">Market for vetted AI/data talent is tight</td>
                                     </tr>
                                     <tr className="border-t border-grey-100 bg-navy-900 text-white">
                                         <td className="py-4 px-6 font-bold">Total direct + indirect</td>
-                                        <td className="py-4 px-6 font-bold text-blue-accent">$150k - $300k+</td>
+                                        <td className="py-4 px-6 font-bold text-blue-accent">$150k to $300k+</td>
                                         <td className="py-4 px-6 text-grey-300">Excludes revenue delayed by slipped roadmap</td>
                                     </tr>
                                 </tbody>
@@ -180,22 +180,22 @@ export default function CostOfHiringWrongDataEngineer() {
                         </h2>
                         <div className="bg-blue-accent/5 border-l-4 border-blue-accent p-6 rounded-r-2xl">
                             <p className="text-grey-700 leading-relaxed">
-                                <strong>Direct answer:</strong> Expect <strong>6-12 months</strong> from the first serious doubt to a fully ramped replacement: 1-3 months to decide and exit, 2-4 months to search, and 3-6 months for the new hire to rebuild context, credibility, and the damaged systems.
+                                <strong>Direct answer:</strong> Expect <strong>6 to 12 months</strong> from the first serious doubt to a fully ramped replacement: 1 to 3 months to decide and exit, 2 to 4 months to search, and 3 to 6 months for the new hire to rebuild context, credibility, and the damaged systems.
                             </p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="p-6 rounded-2xl bg-grey-50 border border-grey-200 text-center">
-                                <p className="text-3xl font-black text-navy-900 mb-2">1-3 mo</p>
+                                <p className="text-3xl font-black text-navy-900 mb-2">1 to 3 mo</p>
                                 <p className="font-bold text-navy-900 text-sm mb-1">Decide &amp; Exit</p>
                                 <p className="text-grey-600 text-sm leading-relaxed">Underperformance hides behind complexity: &quot;the data is messy, the legacy system is hard.&quot;</p>
                             </div>
                             <div className="p-6 rounded-2xl bg-grey-50 border border-grey-200 text-center">
-                                <p className="text-3xl font-black text-navy-900 mb-2">2-4 mo</p>
+                                <p className="text-3xl font-black text-navy-900 mb-2">2 to 4 mo</p>
                                 <p className="font-bold text-navy-900 text-sm mb-1">Replacement Search</p>
                                 <p className="text-grey-600 text-sm leading-relaxed">The market for genuinely vetted AI/data talent is tight, and the best candidates are off the market in ~14 days.</p>
                             </div>
                             <div className="p-6 rounded-2xl bg-grey-50 border border-grey-200 text-center">
-                                <p className="text-3xl font-black text-navy-900 mb-2">3-6 mo</p>
+                                <p className="text-3xl font-black text-navy-900 mb-2">3 to 6 mo</p>
                                 <p className="font-bold text-navy-900 text-sm mb-1">Rebuild &amp; Ramp</p>
                                 <p className="text-grey-600 text-sm leading-relaxed">The replacement inherits the damaged systems and the trust deficit the failed hire left with stakeholders.</p>
                             </div>
@@ -348,7 +348,7 @@ export default function CostOfHiringWrongDataEngineer() {
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How long does it take to recover from a bad engineering hire?</h4>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Six to twelve months from the first serious doubt to a fully productive replacement: decision and exit (1-3 months), replacement search (2-4 months), and new-hire ramp and system repair (3-6 months).
+                                    Six to twelve months from the first serious doubt to a fully productive replacement: decision and exit (1 to 3 months), replacement search (2 to 4 months), and new-hire ramp and system repair (3 to 6 months).
                                 </p>
                             </div>
                             <div className="space-y-4">
@@ -371,7 +371,7 @@ export default function CostOfHiringWrongDataEngineer() {
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.2),transparent)]" />
                         <h2 className="text-3xl font-bold mb-4 relative z-10">Get the Next One Right</h2>
                         <p className="text-grey-400 mb-8 max-w-lg mx-auto relative z-10">
-                            A bad technical hire costs you $150k-$300k and up to a year you won&apos;t get back. Get access to AI and data engineering talent vetted by a Ph.D.-level technical review before they ever reach your calendar.
+                            A bad technical hire costs you $150k to $300k and up to a year you won&apos;t get back. Get access to AI and data engineering talent vetted by a Ph.D.-level technical review before they ever reach your calendar.
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
                             <Link

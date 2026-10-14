@@ -49,7 +49,7 @@ export default function FractionalSalesRecruiting() {
             {
                 "@type": "Question",
                 "name": "How does fractional sales recruiting pricing work?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Kas Seat is monthly sales-fractional capacity, normally $5,000 to $8,000 a month (up to $10,000 for senior AE and above), with zero success fees, instead of contingency at 20-30% of first-year OTE." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Kas Seat is monthly sales-fractional capacity, normally $5,000 to $8,000 a month (up to $10,000 for senior AE and above), with zero success fees, instead of contingency at 20 to 30% of first-year OTE." }
             },
             {
                 "@type": "Question",
@@ -288,23 +288,23 @@ export default function FractionalSalesRecruiting() {
                     <ul className="space-y-3 text-grey-600 leading-relaxed">
                         <li>
                             <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting cost</Link>
-                            {" "}- Kas Seat $5k to $8k a month (up to $10k for senior AE and above), Milestone example fees
+                            {": "}Kas Seat $5k to $8k a month (up to $10k for senior AE and above), Milestone example fees
                         </li>
                         <li>
                             <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting vs contingency</Link>
-                            {" "}- fee math vs 20-30% agencies
+                            {": "}fee math vs 20 to 30% agencies
                         </li>
                         <li>
                             <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline font-semibold">Fractional recruiting vs in-house recruiter</Link>
-                            {" "}- retainer vs headcount
+                            {": "}retainer vs headcount
                         </li>
                         <li>
                             <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">Fractional recruiting guide</Link>
-                            {" "}- what it is and when Seed-B startups use it
+                            {": "}what it is and when Seed to Series B startups use it
                         </li>
                         <li>
                             <Link href="/guides/best-fractional-sales-recruiters" className="text-blue-accent hover:underline font-semibold">Best fractional sales recruiters</Link>
-                            {" "}- what to check before you pick a provider
+                            {": "}what to check before you pick a provider
                         </li>
                     </ul>
                     <p className="text-grey-600 mt-6">

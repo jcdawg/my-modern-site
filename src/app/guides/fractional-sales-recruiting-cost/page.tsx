@@ -45,7 +45,7 @@ export default function FractionalSalesRecruitingCost() {
                 name: "How does Kas pricing compare to in-house?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "A mid fully loaded in-house recruiter often runs about $100k-$160k per year. Kas Seat is $5,000 to $8,000 a month, up to $10,000 for senior AE and above, and can pause. Full headcount decision guide: vs in-house.",
+                    text: "A mid fully loaded in-house recruiter often runs about $100k to $160k per year. Kas Seat is $5,000 to $8,000 a month, up to $10,000 for senior AE and above, and can pause. Full headcount decision guide: vs in-house.",
                 },
             },
             {
@@ -53,15 +53,15 @@ export default function FractionalSalesRecruitingCost() {
                 name: "How does Kas pricing compare to contingency?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Contingency is often 20-30% of first-year cash or OTE. A $150k AE at 25% is $37,500. Kas Milestone AE example fee is $7,500. Deep fee math: vs contingency.",
+                    text: "Contingency is often 20 to 30% of first-year cash or OTE. A $150k AE at 25% is $37,500. Kas Milestone AE example fee is $7,500. Deep fee math: vs contingency.",
                 },
             },
             {
                 "@type": "Question",
-                name: "Do the 48-72 hour and 3-in-3-weeks guarantees apply to leadership?",
+                name: "Do the 48 to 72 hour and 3-in-3-weeks guarantees apply to leadership?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "No. Free market scan in 48-72 hours and 3+ qualified candidates in 3 weeks apply to AE / SDR / Sales Manager under fractional. Director / VP / CRO is specialist or retained quote.",
+                    text: "No. Free market scan in 48 to 72 hours and 3+ qualified candidates in 3 weeks apply to AE / SDR / Sales Manager under fractional. Director / VP / CRO is specialist or retained quote.",
                 },
             },
             {
@@ -185,7 +185,7 @@ export default function FractionalSalesRecruitingCost() {
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-grey-600 leading-relaxed">Milestone example fees are not contingency percentages. You are not paying 20-30% of OTE.</p>
+                        <p className="text-grey-600 leading-relaxed">Milestone example fees are not contingency percentages. You are not paying 20 to 30% of OTE.</p>
 
                         <div className="p-6 rounded-2xl border border-grey-200 bg-grey-50">
                             <h3 className="text-lg font-bold text-navy-900 mb-3 flex items-center gap-2">
@@ -193,7 +193,7 @@ export default function FractionalSalesRecruitingCost() {
                                 What AE / SDR / Sales Manager searches include under fractional
                             </h3>
                             <ul className="space-y-2 text-grey-600 leading-relaxed">
-                                <li>Free market scan in <strong>48-72 hours</strong></li>
+                                <li>Free market scan in <strong>48 to 72 hours</strong></li>
                                 <li>Search target: <strong>3+ qualified candidates in 3 weeks</strong>, or we keep hunting free</li>
                                 <li>Placement guarantee: <strong>60-day re-hunt</strong> (not a refund)</li>
                             </ul>
@@ -207,7 +207,7 @@ export default function FractionalSalesRecruitingCost() {
                             <Building2 className="h-8 w-8 text-blue-accent" />
                             Cost vs in-house recruiter (quick table)
                         </h2>
-                        <p className="text-grey-600 leading-relaxed">Fully loaded first-recruiter seats for startups often land around <strong>$100k-$160k</strong> per year once you add salary, benefits load, LinkedIn Recruiter, and tools. That is roughly <strong>$8k-$13k+/mo</strong>, and you keep paying after the pod is full.</p>
+                        <p className="text-grey-600 leading-relaxed">Fully loaded first-recruiter seats for startups often land around <strong>$100k to $160k</strong> per year once you add salary, benefits load, LinkedIn Recruiter, and tools. That is roughly <strong>$8k to $13k+/mo</strong>, and you keep paying after the pod is full.</p>
                         <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
                             <table className="w-full text-left border-collapse">
                                 <thead className="bg-grey-50">
@@ -230,13 +230,13 @@ export default function FractionalSalesRecruitingCost() {
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">Mid in-house TA (fully loaded)</td>
-                                            <td className="py-4 px-6 text-grey-600">~$8,000-$13,000+</td>
+                                            <td className="py-4 px-6 text-grey-600">~$8,000 to $13,000+</td>
                                             <td className="py-4 px-6 text-grey-600">Headcount; hard to pause</td>
                                         </tr>
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-grey-600 leading-relaxed">Example: six months of Kas Seat at $5,000/mo = <strong>$30,000</strong>. Mid in-house for a full year is often still near <strong>$100k-$160k</strong> even if hiring paused mid-year.</p>
+                        <p className="text-grey-600 leading-relaxed">Example: six months of Kas Seat at $5,000/mo = <strong>$30,000</strong>. Mid in-house for a full year is often still near <strong>$100k to $160k</strong> even if hiring paused mid-year.</p>
                         <p className="text-grey-600 leading-relaxed">This page stops at the sticker. Decision tree, hybrid path, and full salary build: <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline">fractional recruiting vs in-house recruiter</Link>.</p>
                     </div>
 
@@ -245,7 +245,7 @@ export default function FractionalSalesRecruitingCost() {
                             <Scale className="h-8 w-8 text-blue-accent" />
                             Cost vs contingency agency (quick table)
                         </h2>
-                        <p className="text-grey-600 leading-relaxed">Industry contingency is usually <strong>20-30%</strong> of first-year cash (or OTE). On GTM packages that math gets loud fast.</p>
+                        <p className="text-grey-600 leading-relaxed">Industry contingency is usually <strong>20 to 30%</strong> of first-year cash (or OTE). On GTM packages that math gets loud fast.</p>
                         <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
                             <table className="w-full text-left border-collapse">
                                 <thead className="bg-grey-50">
@@ -354,17 +354,17 @@ export default function FractionalSalesRecruitingCost() {
 
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">How does Kas pricing compare to in-house?</h3>
-                            <p className="text-grey-600 leading-relaxed">A mid fully loaded in-house recruiter often runs about <strong>$100k-$160k</strong> per year. Kas Seat is <strong>$5,000 to $8,000 a month, up to $10,000 for senior AE and above</strong>, and can pause. Full headcount decision guide: <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline">vs in-house</Link>.</p>
+                            <p className="text-grey-600 leading-relaxed">A mid fully loaded in-house recruiter often runs about <strong>$100k to $160k</strong> per year. Kas Seat is <strong>$5,000 to $8,000 a month, up to $10,000 for senior AE and above</strong>, and can pause. Full headcount decision guide: <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline">vs in-house</Link>.</p>
                         </div>
 
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">How does Kas pricing compare to contingency?</h3>
-                            <p className="text-grey-600 leading-relaxed">Contingency is often <strong>20-30%</strong> of first-year cash or OTE. A $150k AE at 25% is <strong>$37,500</strong>. Kas Milestone AE example fee is <strong>$7,500</strong>. Deep fee math: <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline">vs contingency</Link>.</p>
+                            <p className="text-grey-600 leading-relaxed">Contingency is often <strong>20 to 30%</strong> of first-year cash or OTE. A $150k AE at 25% is <strong>$37,500</strong>. Kas Milestone AE example fee is <strong>$7,500</strong>. Deep fee math: <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline">vs contingency</Link>.</p>
                         </div>
 
                         <div className="space-y-3">
-                            <h3 className="text-xl font-bold text-navy-900">Do the 48-72 hour and 3-in-3-weeks guarantees apply to leadership?</h3>
-                            <p className="text-grey-600 leading-relaxed">No. Free market scan in 48-72 hours and 3+ qualified candidates in 3 weeks apply to <strong>AE / SDR / Sales Manager under fractional</strong>. Director / VP / CRO is specialist or retained quote.</p>
+                            <h3 className="text-xl font-bold text-navy-900">Do the 48 to 72 hour and 3-in-3-weeks guarantees apply to leadership?</h3>
+                            <p className="text-grey-600 leading-relaxed">No. Free market scan in 48 to 72 hours and 3+ qualified candidates in 3 weeks apply to <strong>AE / SDR / Sales Manager under fractional</strong>. Director / VP / CRO is specialist or retained quote.</p>
                         </div>
 
                         <div className="space-y-3">
@@ -383,32 +383,32 @@ export default function FractionalSalesRecruitingCost() {
                         <h2 className="text-2xl font-bold text-navy-900">Related guides</h2>
                         <ul className="space-y-2 text-grey-600">
                             <li>
-                                <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">What is fractional recruiting</Link> - what it is and when startups use it
+                                <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">What is fractional recruiting</Link>: what it is and when startups use it
                             </li>
                             <li>
-                                <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting vs contingency</Link> - fee model vs agencies
+                                <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting vs contingency</Link>: fee model vs agencies
                             </li>
                             <li>
-                                <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline font-semibold">Fractional recruiting vs in-house recruiter</Link> - headcount vs retainer
+                                <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline font-semibold">Fractional recruiting vs in-house recruiter</Link>: headcount vs retainer
                             </li>
                             <li>
-                                <Link href="/guides/best-fractional-sales-recruiters" className="text-blue-accent hover:underline font-semibold">Best fractional sales recruiters</Link> - how to compare providers before you sign
+                                <Link href="/guides/best-fractional-sales-recruiters" className="text-blue-accent hover:underline font-semibold">Best fractional sales recruiters</Link>: how to compare providers before you sign
                             </li>
                             <li>
-                                <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting</Link> - product page
+                                <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting</Link>: product page
                             </li>
                             <li>
-                                <Link href="/blog/early-stage-sales-comp-first-ae-ote" className="text-blue-accent hover:underline font-semibold">What to pay your first AE</Link> - OTE ranges by segment
+                                <Link href="/blog/early-stage-sales-comp-first-ae-ote" className="text-blue-accent hover:underline font-semibold">What to pay your first AE</Link>: OTE ranges by segment
                             </li>
                             <li>
-                                <Link href="/programs" className="text-blue-accent hover:underline font-semibold">Programs</Link> - full menu
+                                <Link href="/programs" className="text-blue-accent hover:underline font-semibold">Programs</Link>: full menu
                             </li>
                         </ul>
                     </div>
 
                     <div className="p-10 rounded-[2rem] bg-navy-900 text-white text-center space-y-6 shadow-2xl">
                         <h2 className="text-3xl font-bold">Ready to price your open seats?</h2>
-                        <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">Email chris@thekasgroup.com with stage, open GTM roles, and target packages. You get a clear recommend: Kas Seat ($5k to $8k a month, up to $10k for senior AE and above), Kas Milestone Search, Kas Directed Pursuit, or quote for leadership. For AE/SDR/SM under fractional, market scan lands in 48-72 hours.</p>
+                        <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">Email chris@thekasgroup.com with stage, open GTM roles, and target packages. You get a clear recommend: Kas Seat ($5k to $8k a month, up to $10k for senior AE and above), Kas Milestone Search, Kas Directed Pursuit, or quote for leadership. For AE/SDR/SM under fractional, market scan lands in 48 to 72 hours.</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/contact" className="inline-flex items-center justify-center rounded-full bg-blue-accent px-8 py-4 font-bold text-white hover:bg-blue-hover transition-all">
                                 Email chris@thekasgroup.com

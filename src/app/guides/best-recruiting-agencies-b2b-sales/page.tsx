@@ -24,7 +24,7 @@ export default function BestRecruitingAgenciesB2bSales() {
             {
                 "@type": "Question",
                 "name": "How much do B2B sales recruiting agencies charge?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Contingency agencies typically charge 20-30% of the candidate's first-year OTE, roughly $30K-$60K for a senior AE and $60K-$100K+ for a VP. The Kas Group's Kas Seat replaces per-hire fees with a monthly retainer ($5k to $8k/mo, zero success fees), which is more economical for companies hiring multiple salespeople per year." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Contingency agencies typically charge 20 to 30% of the candidate's first-year OTE, roughly $30K to $60K for a senior AE and $60K to $100K+ for a VP. The Kas Group's Kas Seat replaces per-hire fees with a monthly retainer ($5k to $8k/mo, zero success fees), which is more economical for companies hiring multiple salespeople per year." }
             },
             {
                 "@type": "Question",
@@ -34,7 +34,7 @@ export default function BestRecruitingAgenciesB2bSales() {
             {
                 "@type": "Question",
                 "name": "How long does it take an agency to fill a B2B sales role?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Well-run agencies deliver a vetted shortlist in 2-4 weeks for AE and SDR roles and 6-10 weeks for VP and CRO searches. Beware of agencies promising 48-hour shortlists, speed at that level usually means recycled candidate databases rather than fresh sourcing." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Well-run agencies deliver a vetted shortlist in 2 to 4 weeks for AE and SDR roles and 6 to 10 weeks for VP and CRO searches. Beware of agencies promising 48-hour shortlists, speed at that level usually means recycled candidate databases rather than fresh sourcing." }
             }
         ]
     };
@@ -95,7 +95,7 @@ export default function BestRecruitingAgenciesB2bSales() {
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-navy-900 text-lg">Placement Longevity</h4>
-                                    <p className="text-grey-600 mt-2">Candidates still hitting quota 12-24 months in. High churn is a vetting failure, not bad luck.</p>
+                                    <p className="text-grey-600 mt-2">Candidates still hitting quota 12 to 24 months in. High churn is a vetting failure, not bad luck.</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
@@ -141,7 +141,7 @@ export default function BestRecruitingAgenciesB2bSales() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much do B2B sales recruiting agencies charge?</h4>
-                                <p className="text-grey-600 leading-relaxed">Contingency agencies typically charge 20-30% of first-year OTE, roughly $30K-$60K for a senior AE and $60K-$100K+ for a VP. The Kas Group&apos;s Kas Seat replaces per-hire fees with a monthly retainer ($5k to $8k/mo, zero success fees), which is more economical when hiring multiple salespeople per year.</p>
+                                <p className="text-grey-600 leading-relaxed">Contingency agencies typically charge 20 to 30% of first-year OTE, roughly $30K to $60K for a senior AE and $60K to $100K+ for a VP. The Kas Group&apos;s Kas Seat replaces per-hire fees with a monthly retainer ($5k to $8k/mo, zero success fees), which is more economical when hiring multiple salespeople per year.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Retained vs. contingency B2B sales recruiters?</h4>
@@ -149,7 +149,7 @@ export default function BestRecruitingAgenciesB2bSales() {
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How long does it take an agency to fill a B2B sales role?</h4>
-                                <p className="text-grey-600 leading-relaxed">Well-run agencies deliver a vetted shortlist in 2-4 weeks for AE and SDR roles and 6-10 weeks for VP and CRO searches. Beware of 48-hour shortlists, that speed usually means recycled databases rather than fresh sourcing.</p>
+                                <p className="text-grey-600 leading-relaxed">Well-run agencies deliver a vetted shortlist in 2 to 4 weeks for AE and SDR roles and 6 to 10 weeks for VP and CRO searches. Beware of 48-hour shortlists, that speed usually means recycled databases rather than fresh sourcing.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">What are the best recruiting agencies for B2B sales hiring?</h4>

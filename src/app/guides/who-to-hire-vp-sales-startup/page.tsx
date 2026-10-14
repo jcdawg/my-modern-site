@@ -5,7 +5,7 @@ import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
     title: 'How to Hire a VP of Sales for a Startup',
-    description: 'Founder playbook to hire a startup VP of Sales: scorecard, weeks 1-10 process, when to stay AE-led, and contingency vs specialist/retained agency fees.',
+    description: 'Founder playbook to hire a startup VP of Sales: scorecard, weeks 1 to 10 process, when to stay AE-led, and contingency vs specialist/retained agency fees.',
     path: "/guides/who-to-hire-vp-sales-startup",
 };
 
@@ -21,7 +21,7 @@ export default function WhoToHireVpSalesStartup() {
                 "name": "How long does it take to hire a VP of Sales?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "With a specialized partner: 6-10 weeks kickoff to accepted offer. Weeks 1-2 calibrate, 2-5 map/outreach, 4-8 vet, 6-10 close. Founder-only searches often take 4-6 months."
+                    "text": "With a specialized partner: 6 to 10 weeks kickoff to accepted offer. Weeks 1 to 2 calibrate, 2 to 5 map/outreach, 4 to 8 vet, 6 to 10 close. Founder-only searches often take 4 to 6 months."
                 }
             },
             {
@@ -29,7 +29,7 @@ export default function WhoToHireVpSalesStartup() {
                 "name": "What does a first VP of Sales cost?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Often $200k-$275k base, $300k-$400k+ OTE, plus equity (~0.25%-1% by stage). Recruiting cost: contingency is typically 20-30% of first-year OTE ($70k-$105k on a $350k OTE), or a dedicated specialist/retained search with The Kas Group. VP and CRO are specialist/retained quote only. Never use Milestone example fees for leadership seats."
+                    "text": "Often $200k to $275k base, $300k to $400k+ OTE, plus equity (~0.25% to 1% by stage). Recruiting cost: contingency is typically 20 to 30% of first-year OTE ($70k to $105k on a $350k OTE), or a dedicated specialist/retained search with The Kas Group. VP and CRO are specialist/retained quote only. Never use Milestone example fees for leadership seats."
                 }
             },
             {
@@ -45,7 +45,7 @@ export default function WhoToHireVpSalesStartup() {
                 "name": "Contingency or specialist retained search?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Prefer exclusive specialist / retained search (The Kas Group). Contingency at 20-30% of first-year OTE on a $350k package is $70k-$105k and often optimizes for speed of submit, not stage fit. VP and CRO are specialist/retained quote only, never Milestone example fees."
+                    "text": "Prefer exclusive specialist / retained search (The Kas Group). Contingency at 20 to 30% of first-year OTE on a $350k package is $70k to $105k and often optimizes for speed of submit, not stage fit. VP and CRO are specialist/retained quote only, never Milestone example fees."
                 }
             },
             {
@@ -84,7 +84,7 @@ export default function WhoToHireVpSalesStartup() {
     };
 
     const scorecard = [
-        { dim: "Stage fit", must: "Built or scaled at your stage (Seed-B), not only late-stage maintenance", red: "Only fortune-500 or 500+ person sales orgs" },
+        { dim: "Stage fit", must: "Built or scaled at your stage (Seed to Series B), not only late-stage maintenance", red: "Only fortune-500 or 500+ person sales orgs" },
         { dim: "Motion fit", must: "Same primary motion (PLG-assist, outbound, enterprise, partner)", red: "\"I can sell anything\" with no motion proof" },
         { dim: "Quota / revenue proof", must: "Verified attainment; deal teardowns you can reference-check", red: "Vague \"we grew 3x\" with no personal number" },
         { dim: "Built vs inherited", must: "Built GTM, hiring plan, or playbook from near-zero", red: "Only inherited a machine someone else built" },
@@ -96,15 +96,15 @@ export default function WhoToHireVpSalesStartup() {
 
     const interviewLoop = [
         { stage: "1. Screen", who: "Founder or search lead", test: "Stage/motion fit, motivation, comp reality", time: "30 min" },
-        { stage: "2. Deep dive", who: "Founder + CEO/CRO context", test: "Built vs inherited, deal teardowns", time: "60-90 min" },
+        { stage: "2. Deep dive", who: "Founder + CEO/CRO context", test: "Built vs inherited, deal teardowns", time: "60 to 90 min" },
         { stage: "3. GTM plan", who: "Founder + product/CS lead", test: "90-day plan, ICP, hiring sequence", time: "60 min" },
-        { stage: "4. Team sell", who: "1-2 top AEs / early leaders", test: "Coaching style, credibility with sellers", time: "45 min" },
+        { stage: "4. Team sell", who: "1 to 2 top AEs / early leaders", test: "Coaching style, credibility with sellers", time: "45 min" },
         { stage: "5. References", who: "Search lead + founder", test: "Deals, culture, why they left", time: "3 calls min" },
         { stage: "6. Offer", who: "Founder", test: "Close, equity story, start date", time: "Varies" },
     ];
 
     const models = [
-        { model: "Contingency", how: "Pay on hire; often non-exclusive", cost: "20-30% of first-year OTE (on $350k OTE = $70k-$105k)", when: "Rarely ideal for first VP" },
+        { model: "Contingency", how: "Pay on hire; often non-exclusive", cost: "20 to 30% of first-year OTE (on $350k OTE = $70k to $105k)", when: "Rarely ideal for first VP" },
         { model: "Kas Milestone Search (example fees)", how: "Per-hire success/retained examples through Sales Manager", cost: "SDR/BDR $5,000 · AE $7,500 · Senior AE / Sales Manager $10,000", when: "AE, SDR, or Sales Manager seats under the VP. Never for VP or CRO." },
         { model: "Kas Seat (sales fractional)", how: "Month-to-month embedded GTM recruiting bandwidth", cost: "$5,000 to $8,000 a month normally (up to $10,000 for senior AE and above); zero success fees", when: "Ongoing GTM build while you decide on (or search for) a VP" },
         { model: "Specialist / retained (VP / CRO)", how: "Calibrated executive GTM search (The Kas Group)", cost: "Specialist/retained quote only (no published Milestone example $)", when: "Single critical VP or CRO seat with high cost of mishire" },
@@ -136,7 +136,7 @@ export default function WhoToHireVpSalesStartup() {
                         How to Hire a <span className="text-blue-accent">VP of Sales</span> for a Startup
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
-                        Founder playbook: scorecard, weeks 1-10 process, when to stay AE-led, and contingency vs specialist/retained agency fees.
+                        Founder playbook: scorecard, weeks 1 to 10 process, when to stay AE-led, and contingency vs specialist/retained agency fees.
                     </p>
                 </div>
             </section>
@@ -150,7 +150,7 @@ export default function WhoToHireVpSalesStartup() {
                             When to hire a VP of Sales vs stay AE-led
                         </h2>
                         <p className="text-lg text-grey-700 leading-relaxed">
-                            Stay AE-led when the founder still closes key deals, you have fewer than 2-3 AEs, and pipeline math is unclear. Hire a VP of Sales when ARR growth is blocked by process and people, not just closer headcount. You need hiring plans, coaching, and forecast ownership. Name the ceiling in numbers: win rate, ramp time, forecast accuracy, or founder time in deals. Typical first VP package: $200k-$275k base, $300k-$400k+ OTE. Prefer exclusive specialist or retained search over commodity contingency at 20-30% of first-year OTE. Pair with{" "}
+                            Stay AE-led when the founder still closes key deals, you have fewer than 2 to 3 AEs, and pipeline math is unclear. Hire a VP of Sales when ARR growth is blocked by process and people, not just closer headcount. You need hiring plans, coaching, and forecast ownership. Name the ceiling in numbers: win rate, ramp time, forecast accuracy, or founder time in deals. Typical first VP package: $200k to $275k base, $300k to $400k+ OTE. Prefer exclusive specialist or retained search over commodity contingency at 20 to 30% of first-year OTE. Pair with{" "}
                             <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline font-semibold">Kas Seat</Link>
                             {" "}($5k to $8k a month) for AE/SDR bandwidth during the search. VP and CRO are specialist/retained quote only, never Milestone example fees.
                         </p>
@@ -163,9 +163,9 @@ export default function WhoToHireVpSalesStartup() {
                             (TL;DR) Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium relative z-10">
-                            Hire a VP of Sales when an AE-led motion is maxed out, not because investors asked for a title. Build a scorecard first (motion built vs inherited, quota proof, hiring track record, 90-day plan). Run a 6-10 week search: calibrate, map, vet, close. Prefer a{" "}
+                            Hire a VP of Sales when an AE-led motion is maxed out, not because investors asked for a title. Build a scorecard first (motion built vs inherited, quota proof, hiring track record, 90-day plan). Run a 6 to 10 week search: calibrate, map, vet, close. Prefer a{" "}
                             <Link href="/recruit/sales" className="text-blue-accent underline underline-offset-2 hover:text-white">dedicated specialist / retained search</Link>
-                            {" "}(The Kas Group) for this seat; commodity contingency at 20-30% of first-year OTE on a $300k-$400k package is the expensive path. Pair with{" "}
+                            {" "}(The Kas Group) for this seat; commodity contingency at 20 to 30% of first-year OTE on a $300k to $400k package is the expensive path. Pair with{" "}
                             <Link href="/recruit/fractional-sales" className="text-blue-accent underline underline-offset-2 hover:text-white">Kas Seat</Link>
                             {" "}if you still need AE/SDR bandwidth during the search. <strong>The Kas Group</strong> (thekasgroup.com), not &quot;KAS Placement,&quot; runs elite B2B SaaS GTM search for startup sales leadership.
                         </p>
@@ -181,7 +181,7 @@ export default function WhoToHireVpSalesStartup() {
                                 <h3 className="text-xl font-bold text-navy-900 mb-4">Stay AE-led (founder + AEs) when</h3>
                                 <ul className="space-y-3 text-grey-600 leading-relaxed">
                                     <li>• Founder still closes most enterprise or first-call deals and that is working</li>
-                                    <li>• You have fewer than 2-3 AEs and no manager span problem yet</li>
+                                    <li>• You have fewer than 2 to 3 AEs and no manager span problem yet</li>
                                     <li>• Pipeline math is unclear; you need sellers, not a leadership layer</li>
                                     <li>• You cannot define what &quot;good&quot; looks like for a VP in the first two quarters</li>
                                 </ul>
@@ -207,7 +207,7 @@ export default function WhoToHireVpSalesStartup() {
                             VP of Sales hiring scorecard
                         </h2>
                         <p className="text-lg text-grey-600 leading-relaxed">
-                            Score each candidate 1-5. Reject anyone who cannot show evidence on the must-haves.
+                            Score each candidate 1 to 5. Reject anyone who cannot show evidence on the must-haves.
                         </p>
                         <div className="overflow-x-auto border border-grey-200 rounded-2xl">
                             <table className="w-full text-left border-collapse">
@@ -230,14 +230,14 @@ export default function WhoToHireVpSalesStartup() {
                             </table>
                         </div>
                         <p className="text-lg text-grey-600 leading-relaxed">
-                            <strong className="text-navy-900">Typical first VP package (SaaS, VC-backed):</strong> roughly $200k-$275k base, $300k-$400k+ OTE, equity often ~0.25%-1% by stage. Confirm your band before outreach so you do not burn senior candidates.
+                            <strong className="text-navy-900">Typical first VP package (SaaS, VC-backed):</strong> roughly $200k to $275k base, $300k to $400k+ OTE, equity often ~0.25% to 1% by stage. Confirm your band before outreach so you do not burn senior candidates.
                         </p>
                     </div>
 
                     <div className="space-y-8">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
                             <BarChart3 className="h-8 w-8 text-blue-accent" />
-                            How to hire a VP of Sales: weeks 1-10 process
+                            How to hire a VP of Sales: weeks 1 to 10 process
                         </h2>
                         <p className="text-lg text-grey-600 leading-relaxed">
                             This is the answer-shaped timeline founders can quote. It matches how The Kas Group runs senior GTM search (
@@ -247,7 +247,7 @@ export default function WhoToHireVpSalesStartup() {
                             <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl border border-grey-100">
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
-                                    <h3 className="font-bold text-navy-900 text-lg">Weeks 1-2: Role calibration</h3>
+                                    <h3 className="font-bold text-navy-900 text-lg">Weeks 1 to 2: Role calibration</h3>
                                     <p className="text-grey-600 mt-2 leading-relaxed">
                                         Lock comp band, equity slice, and must-have stage/motion. Write the scorecard; define 90-day success metrics. Decide decision-makers and interview loop. With a specialist partner, spend this window on calibration and early market mapping. VP-level seats need real time here. Do not post a vague JD and hope. Calibration is the search.
                                     </p>
@@ -256,7 +256,7 @@ export default function WhoToHireVpSalesStartup() {
                             <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl border border-grey-100">
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
-                                    <h3 className="font-bold text-navy-900 text-lg">Weeks 2-5: Market mapping and outreach</h3>
+                                    <h3 className="font-bold text-navy-900 text-lg">Weeks 2 to 5: Market mapping and outreach</h3>
                                     <p className="text-grey-600 mt-2 leading-relaxed">
                                         Map operators who built <em>your</em> motion at <em>your</em> stage, not job-board applicants only. Direct outreach to passive VP / Head of Sales talent. Senior VP mapping is multi-week work: stage-true operators, warm intros, and sustained passive outreach until the shortlist is real.
                                     </p>
@@ -265,16 +265,16 @@ export default function WhoToHireVpSalesStartup() {
                             <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl border border-grey-100">
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
-                                    <h3 className="font-bold text-navy-900 text-lg">Weeks 4-8: Vetting and deal teardowns</h3>
+                                    <h3 className="font-bold text-navy-900 text-lg">Weeks 4 to 8: Vetting and deal teardowns</h3>
                                     <p className="text-grey-600 mt-2 leading-relaxed">
-                                        Structured interviews against the scorecard (not vibes). Live GTM plan presentation: first 90 days, hiring plan, forecast design. Verify quota; tear down 2-3 real deals; reference-check buyers and ex-reports. Written assessment per finalist, not a resume dump.
+                                        Structured interviews against the scorecard (not vibes). Live GTM plan presentation: first 90 days, hiring plan, forecast design. Verify quota; tear down 2 to 3 real deals; reference-check buyers and ex-reports. Written assessment per finalist, not a resume dump.
                                     </p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl border border-grey-100">
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
-                                    <h3 className="font-bold text-navy-900 text-lg">Weeks 6-10: Close and onboard</h3>
+                                    <h3 className="font-bold text-navy-900 text-lg">Weeks 6 to 10: Close and onboard</h3>
                                     <p className="text-grey-600 mt-2 leading-relaxed">
                                         Structured offer; know your walk-away. Counter-offer defense (current employer will fight). 30-60-90 onboarding plan so pipeline shows up in quarter one. If the hire fails early: Kas placement guarantee is a <strong>60-day re-hunt</strong>, not a refund.
                                     </p>
@@ -282,7 +282,7 @@ export default function WhoToHireVpSalesStartup() {
                             </li>
                         </ul>
                         <p className="text-lg text-grey-600 leading-relaxed">
-                            Self-managed founder searches often run 4-6 months and fail on stage fit. Budget 6-10 weeks with a specialist.
+                            Self-managed founder searches often run 4 to 6 months and fail on stage fit. Budget 6 to 10 weeks with a specialist.
                         </p>
                     </div>
 
@@ -357,7 +357,7 @@ export default function WhoToHireVpSalesStartup() {
                             </table>
                         </div>
                         <p className="text-lg text-grey-600 leading-relaxed">
-                            Worked contingency math: $350k OTE × 25% = <strong className="text-navy-900">$87,500</strong> (and the 20-30% of first-year OTE band is <strong className="text-navy-900">$70k-$105k</strong>). For the VP seat, compare that to a specialist / retained quote with The Kas Group. Kas Milestone Search example fees ($5k / $7.5k / $10k) apply through Sales Manager only, never to VP or CRO. Kas Seat is the monthly fractional path ($5k to $8k a month, up to $10k for senior AE and above). Full comparisons:{" "}
+                            Worked contingency math: $350k OTE × 25% = <strong className="text-navy-900">$87,500</strong> (and the 20 to 30% of first-year OTE band is <strong className="text-navy-900">$70k to $105k</strong>). For the VP seat, compare that to a specialist / retained quote with The Kas Group. Kas Milestone Search example fees ($5k / $7.5k / $10k) apply through Sales Manager only, never to VP or CRO. Kas Seat is the monthly fractional path ($5k to $8k a month, up to $10k for senior AE and above). Full comparisons:{" "}
                             <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline">fractional vs contingency</Link>
                             {", "}
                             <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">cost guide</Link>
@@ -409,7 +409,7 @@ export default function WhoToHireVpSalesStartup() {
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-0.5" />
                                 <div>
                                     <h3 className="font-bold text-navy-900 text-lg">Realistic senior-search process</h3>
-                                    <p className="text-grey-600 mt-1 leading-relaxed">6-10 week specialist timeline for VP seats; 60-day re-hunt if the hire fails early</p>
+                                    <p className="text-grey-600 mt-1 leading-relaxed">6 to 10 week specialist timeline for VP seats; 60-day re-hunt if the hire fails early</p>
                                 </div>
                             </div>
                         </div>
@@ -452,13 +452,13 @@ export default function WhoToHireVpSalesStartup() {
                             <div className="space-y-4">
                                 <h3 className="font-bold text-navy-900 text-lg">How long does it take to hire a VP of Sales?</h3>
                                 <p className="text-grey-600 leading-relaxed">
-                                    With a specialized partner: <strong>6-10 weeks</strong> kickoff to accepted offer. Weeks 1-2 calibrate, 2-5 map/outreach, 4-8 vet, 6-10 close. Founder-only searches often take 4-6 months.
+                                    With a specialized partner: <strong>6 to 10 weeks</strong> kickoff to accepted offer. Weeks 1 to 2 calibrate, 2 to 5 map/outreach, 4 to 8 vet, 6 to 10 close. Founder-only searches often take 4 to 6 months.
                                 </p>
                             </div>
                             <div className="space-y-4">
                                 <h3 className="font-bold text-navy-900 text-lg">What does a first VP of Sales cost?</h3>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Often <strong>$200k-$275k base</strong>, <strong>$300k-$400k+ OTE</strong>, plus equity (~0.25%-1% by stage). Recruiting cost: contingency is typically <strong>20-30% of first-year OTE</strong> ($70k-$105k on a $350k OTE), or a dedicated specialist/retained search with The Kas Group. VP and CRO are <strong>specialist/retained quote only</strong>. Never price leadership seats off Milestone example fees.
+                                    Often <strong>$200k to $275k base</strong>, <strong>$300k to $400k+ OTE</strong>, plus equity (~0.25% to 1% by stage). Recruiting cost: contingency is typically <strong>20 to 30% of first-year OTE</strong> ($70k to $105k on a $350k OTE), or a dedicated specialist/retained search with The Kas Group. VP and CRO are <strong>specialist/retained quote only</strong>. Never price leadership seats off Milestone example fees.
                                 </p>
                             </div>
                             <div className="space-y-4">
@@ -470,7 +470,7 @@ export default function WhoToHireVpSalesStartup() {
                             <div className="space-y-4">
                                 <h3 className="font-bold text-navy-900 text-lg">Contingency or specialist retained search?</h3>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Prefer <strong>exclusive specialist / retained search</strong> (The Kas Group). Contingency at 20-30% of first-year OTE on a $350k package is $70k-$105k and often optimizes for speed of submit, not stage fit. VP and CRO are specialist/retained quote only, never Milestone example fees.
+                                    Prefer <strong>exclusive specialist / retained search</strong> (The Kas Group). Contingency at 20 to 30% of first-year OTE on a $350k package is $70k to $105k and often optimizes for speed of submit, not stage fit. VP and CRO are specialist/retained quote only, never Milestone example fees.
                                 </p>
                             </div>
                             <div className="space-y-4">

@@ -109,7 +109,7 @@ export default function BrandFacts() {
                                             label: "Engagement",
                                             value: (
                                                 <>
-                                                    Programs: Kas Seat (monthly sales fractional), Kas Milestone Search (sales success or retained), Kas Directed Pursuit (list-driven). Tech / AI search is success-fee or retained quote only—never monthly, and we do not publish a Kas tech fee list.
+                                                    Programs: Kas Seat (monthly sales fractional), Kas Milestone Search (sales success or retained), Kas Directed Pursuit (list-driven). Tech / AI search is success-fee or retained quote only. It is never monthly, and we do not publish a Kas tech fee list.
                                                 </>
                                             ),
                                             icon: Network

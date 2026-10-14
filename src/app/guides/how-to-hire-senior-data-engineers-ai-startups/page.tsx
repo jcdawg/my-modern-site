@@ -66,7 +66,7 @@ export default function HireDataEngineersAI() {
                             <Zap className="h-6 w-6 text-blue-accent" /> (TL;DR) Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium italic">
-                            &quot;Hiring <strong>senior data engineers for AI startups</strong> requires a shift from traditional ETL hiring to 'Data-for-AI' architecture. Founders must prioritize candidates who understand <strong>vector embeddings, real-time pipeline orchestration, and distributed systems</strong>. The most successful AI startups hire an engineer 3-6 months before their first data scientist to ensure the infrastructure is ready for modeling. Technical vetting by a peer-level expert is essential to differentiate between buzzword hunters and true pipeline architects.&quot;
+                            &quot;Hiring <strong>senior data engineers for AI startups</strong> requires a shift from traditional ETL hiring to 'Data-for-AI' architecture. Founders must prioritize candidates who understand <strong>vector embeddings, real-time pipeline orchestration, and distributed systems</strong>. The most successful AI startups hire an engineer 3 to 6 months before their first data scientist to ensure the infrastructure is ready for modeling. Technical vetting by a peer-level expert is essential to differentiate between buzzword hunters and true pipeline architects.&quot;
                         </p>
                     </div>
 
@@ -144,7 +144,7 @@ export default function HireDataEngineersAI() {
                             </table>
                         </div>
                         <p className="text-center text-grey-500 italic text-sm">
-                            Tip: Most AI startups fail because they hire a Data Scientist who spends 8 months building pipelines because there is no engineer. And when the wrong data engineer slips through, the setback runs $150k-$300k and up to a year, see <Link href="/guides/cost-of-hiring-wrong-data-engineer" className="text-blue-accent hover:underline font-semibold not-italic">The Real Cost of a Bad Technical Hire</Link>.
+                            Tip: Most AI startups fail because they hire a Data Scientist who spends 8 months building pipelines because there is no engineer. And when the wrong data engineer slips through, the setback runs $150k to $300k and up to a year, see <Link href="/guides/cost-of-hiring-wrong-data-engineer" className="text-blue-accent hover:underline font-semibold not-italic">The Real Cost of a Bad Technical Hire</Link>.
                         </p>
                     </div>
 
@@ -158,7 +158,7 @@ export default function HireDataEngineersAI() {
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">What is a fair salary for a Senior Data Engineer?</h4>
                                 <p className="text-grey-600 leading-relaxed">
-                                    In the 2026 AI market, senior engineers in the US command $180k - $240k base, plus significant equity. Remote-first startups can often find elite talent in the $160k - $200k range by targeting specialized global pools.
+                                    In the 2026 AI market, senior engineers in the US command $180k to $240k base, plus significant equity. Remote-first startups can often find elite talent in the $160k to $200k range by targeting specialized global pools.
                                 </p>
                             </div>
                             <div className="space-y-4">

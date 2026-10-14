@@ -65,7 +65,7 @@ export default function MethodologyPage() {
             {
                 "@type": "Question",
                 "name": "How long does the process take?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Vetted shortlists typically arrive within 2-4 weeks for individual contributor roles and 6-10 weeks for leadership searches, with weekly pipeline updates throughout." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Vetted shortlists typically arrive within 2 to 4 weeks for individual contributor roles and 6 to 10 weeks for leadership searches, with weekly pipeline updates throughout." }
             }
         ]
     };
@@ -195,7 +195,7 @@ export default function MethodologyPage() {
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">How long does the process take?</h4>
-                            <p className="text-grey-600 leading-relaxed">Vetted shortlists typically arrive within 2-4 weeks for individual contributor roles and 6-10 weeks for leadership searches, with weekly pipeline updates throughout.</p>
+                            <p className="text-grey-600 leading-relaxed">Vetted shortlists typically arrive within 2 to 4 weeks for individual contributor roles and 6 to 10 weeks for leadership searches, with weekly pipeline updates throughout.</p>
                         </div>
                     </div>
                     <p className="mt-10 text-center text-grey-600">

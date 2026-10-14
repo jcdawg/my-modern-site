@@ -79,7 +79,7 @@ export default function DoAiResumeScreenersWorkGuide() {
                             (TL;DR) Summary
                         </h2>
                         <div className="text-lg text-grey-300 leading-relaxed font-medium space-y-4">
-                            <p>AI resume screening is now standard, <strong>43% of HR professionals used AI in HR tasks in 2025</strong> (up from 26% in 2024, SHRM), and <strong>99% of hiring managers report using AI</strong> in hiring (Insight Global). But candidate distrust is just as real: Americans oppose AI making final hiring decisions by a <strong>71%–7% margin</strong>, and roughly two-thirds say they wouldn&apos;t apply to a job that uses AI in hiring (Pew).</p>
+                            <p>AI resume screening is now standard, <strong>43% of HR professionals used AI in HR tasks in 2025</strong> (up from 26% in 2024, SHRM), and <strong>99% of hiring managers report using AI</strong> in hiring (Insight Global). But candidate distrust is just as real: Americans oppose AI making final hiring decisions by a <strong>71% to 7% margin</strong>, and roughly two-thirds say they wouldn&apos;t apply to a job that uses AI in hiring (Pew).</p>
                             <p>The bias problem is now a legal one: a federal judge allowed the <strong>Mobley v. Workday</strong> class action to proceed in June 2026, and viral r/recruitinghell threads drew thousands of upvotes on age and protected-class discrimination.</p>
                             <p>A modern screener is better than keyword filters, but it still scores a <strong>resume against a spec</strong>. It tells you who <em>describes</em> the right experience, not who can <em>deliver</em> it. For senior AI/ML/data roles, the defensible stack is <strong>AI to narrow the pile, human expert to make the call.</strong></p>
                         </div>
@@ -109,7 +109,7 @@ export default function DoAiResumeScreenersWorkGuide() {
                                         ["Hiring managers reporting AI use", "99%", "Insight Global, 2025 AI in Hiring Report"],
                                         ["Hiring managers who saw efficiency gains", "98%", "Insight Global, 2025 AI in Hiring Report"],
                                         ["Hiring managers who say a human still matters", "93%", "Insight Global, 2025 AI in Hiring Report"],
-                                        ["Americans opposed to AI making final hiring calls", "71%–7% margin", "Pew Research Center, 2023"],
+                                        ["Americans opposed to AI making final hiring calls", "71% to 7% margin", "Pew Research Center, 2023"],
                                         ["Americans who wouldn't apply to a job using AI in hiring", "~two-thirds", "Pew Research Center, 2023"],
                                         ["Cost to recruit, hire & onboard a bad hire", "up to $240,000", "SHRM (2017), citing Link Humans"]
                                     ].map(([metric, figure, source], i) => (

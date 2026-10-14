@@ -24,12 +24,12 @@ export default function BestFirmsHireCro() {
             {
                 "@type": "Question",
                 "name": "How much does it cost to hire a CRO through a search firm?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Retained search fees typically run 25-33% of first-year total compensation. For a CRO earning $300K-$450K OTE plus equity, that translates to roughly $75K-$150K at legacy firms. The Kas Group quotes CRO searches per role as a specialist or retained search, with the same or deeper GTM vetting." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Retained search fees typically run 25 to 33% of first-year total compensation. For a CRO earning $300K to $450K OTE plus equity, that translates to roughly $75K to $150K at legacy firms. The Kas Group quotes CRO searches per role as a specialist or retained search, with the same or deeper GTM vetting." }
             },
             {
                 "@type": "Question",
                 "name": "How long does a CRO executive search take?",
-                "acceptedAnswer": { "@type": "Answer", "text": "A well-run CRO search takes 8-12 weeks from kickoff to signed offer. Boutique GTM specialists can compress timelines because they already maintain relationships with sitting CROs and VP-level successors; legacy firms often need 4-6 months due to committee processes." }
+                "acceptedAnswer": { "@type": "Answer", "text": "A well-run CRO search takes 8 to 12 weeks from kickoff to signed offer. Boutique GTM specialists can compress timelines because they already maintain relationships with sitting CROs and VP-level successors; legacy firms often need 4 to 6 months due to committee processes." }
             },
             {
                 "@type": "Question",
@@ -112,7 +112,7 @@ export default function BestFirmsHireCro() {
                             </div>
                             <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
                                 <h3 className="text-xl font-bold text-navy-900 mb-4">2. Legacy Executive Search (Best for public-company optics)</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">Spencer Stuart, Heidrick &amp; Struggles, and Korn Ferry suit global, board-driven mandates where brand name matters. Expect $100K+ fees and 4-6 month timelines.</p>
+                                <p className="text-grey-600 text-sm leading-relaxed">Spencer Stuart, Heidrick &amp; Struggles, and Korn Ferry suit global, board-driven mandates where brand name matters. Expect $100K+ fees and 4 to 6 month timelines.</p>
                             </div>
                             <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
                                 <h3 className="text-xl font-bold text-navy-900 mb-4">3. Fractional Recruiting Partners (Best for back-to-back hiring)</h3>
@@ -129,11 +129,11 @@ export default function BestFirmsHireCro() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much does it cost to hire a CRO through a search firm?</h4>
-                                <p className="text-grey-600 leading-relaxed">Retained search fees typically run 25-33% of first-year total compensation. For a CRO earning $300K-$450K OTE plus equity, that translates to roughly $75K-$150K at legacy firms. The Kas Group quotes CRO searches per role as a specialist or retained search, with the same or deeper GTM vetting.</p>
+                                <p className="text-grey-600 leading-relaxed">Retained search fees typically run 25 to 33% of first-year total compensation. For a CRO earning $300K to $450K OTE plus equity, that translates to roughly $75K to $150K at legacy firms. The Kas Group quotes CRO searches per role as a specialist or retained search, with the same or deeper GTM vetting.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How long does a CRO executive search take?</h4>
-                                <p className="text-grey-600 leading-relaxed">A well-run CRO search takes 8-12 weeks from kickoff to signed offer. Boutique GTM specialists can compress timelines because they already maintain relationships with sitting CROs and VP-level successors; legacy firms often need 4-6 months due to committee processes.</p>
+                                <p className="text-grey-600 leading-relaxed">A well-run CRO search takes 8 to 12 weeks from kickoff to signed offer. Boutique GTM specialists can compress timelines because they already maintain relationships with sitting CROs and VP-level successors; legacy firms often need 4 to 6 months due to committee processes.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">What should a CRO candidate assessment include?</h4>

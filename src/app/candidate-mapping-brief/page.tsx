@@ -29,7 +29,7 @@ const CANDIDATES = [
     summary: "Proven revenue leader with 10+ years of GTM execution at high-growth DevOps and Cloud Security platforms. Vetted track record building repeatable outbound frameworks and leading technical, multi-stakeholder sales motions.",
     metrics: [
       { label: "Tenure", value: "3+ Years at Tier-1 Competitor" },
-      { label: "ACV Range", value: "$150k - $500k+" },
+      { label: "ACV Range", value: "$150k to $500k+" },
       { label: "Competencies", value: "MEDDPICC, DevSecOps, C-Suite Outbound" }
     ]
   },
@@ -53,7 +53,7 @@ const CANDIDATES = [
     summary: "Top 5% GTM leader with 8+ years of SaaS execution in FinTech and Cyber Risk platforms. Expert in complex contract negotiations, champion building, and navigating multi-stakeholder procurement channels.",
     metrics: [
       { label: "Tenure", value: "3 Years (President's Club Leader)" },
-      { label: "ACV Range", value: "$200k - $450k+" },
+      { label: "ACV Range", value: "$200k to $450k+" },
       { label: "Competencies", value: "Enterprise PLG, Cyber Risk, Procurement" }
     ]
   }

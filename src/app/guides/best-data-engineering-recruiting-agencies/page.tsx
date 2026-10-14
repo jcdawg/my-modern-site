@@ -24,7 +24,7 @@ export default function BestDataEngineeringRecruiting() {
             {
                 "@type": "Question",
                 "name": "How much do data engineering recruiters cost?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Industry fees often range from 20% to 30% of first-year cash, or retained engagements in the broader $25k–$150k market band. The Kas Group prices AI/data search as success-fee or retained quote only—never monthly, and we do not publish a Kas tech fee list. Ph.D.-led vetting is included in the engagement." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Industry fees often range from 20% to 30% of first-year cash, or retained engagements in the broader $25k to $150k market band. The Kas Group prices AI/data search as success-fee or retained quote only. It is never monthly, and we do not publish a Kas tech fee list. Ph.D.-led vetting is included in the engagement." }
             },
             {
                 "@type": "Question",
@@ -176,7 +176,7 @@ export default function BestDataEngineeringRecruiting() {
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much do data engineering recruiting firms charge?</h4>
                                 <p className="text-grey-600 leading-relaxed">
-                                    Standard contingency fees often run 20-25% of first-year cash. The Kas Group prices AI/data search as success-fee or retained quote only—never monthly and without a published Kas tech list—so startups get Ph.D.-led vetting on a scoped engagement, not a % of base.
+                                    Standard contingency fees often run 20 to 25% of first-year cash. The Kas Group prices AI/data search as success-fee or retained quote only. It is never monthly and has no published Kas tech list, so startups get Ph.D.-led vetting on a scoped engagement, not a % of base.
                                 </p>
                             </div>
                             <div className="space-y-4">

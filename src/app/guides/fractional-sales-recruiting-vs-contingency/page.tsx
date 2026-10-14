@@ -5,7 +5,7 @@ import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
     title: "Fractional Sales Recruiting vs Contingency: Fee Math for Founders",
-    description: "Side-by-side fee math for Kas fractional sales recruiting vs 20-30% contingency on AE and VP packages. When each model wins.",
+    description: "Side-by-side fee math for Kas fractional sales recruiting vs 20 to 30% contingency on AE and VP packages. When each model wins.",
     path: "/guides/fractional-sales-recruiting-vs-contingency",
 };
 
@@ -29,7 +29,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                 name: "What is the industry-standard contingency fee for sales roles?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Most contingency firms charge about 20-30% of first-year cash (some use OTE). Always confirm whether the base is cash or OTE before you sign. OTE-based fees on AEs and VPs cost more.",
+                    text: "Most contingency firms charge about 20 to 30% of first-year cash (some use OTE). Always confirm whether the base is cash or OTE before you sign. OTE-based fees on AEs and VPs cost more.",
                 },
             },
             {
@@ -53,7 +53,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                 name: "Does contingency include a guarantee?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Varies by firm. Kas placement guarantee is a 60-day re-hunt, not a refund. For AE/SDR/Sales Manager under fractional: 3+ qualified candidates in 3 weeks or we keep hunting free. Free market scan in 48-72 hours. Those IC/manager guarantees are not promised for Director, VP, or CRO.",
+                    text: "Varies by firm. Kas placement guarantee is a 60-day re-hunt, not a refund. For AE/SDR/Sales Manager under fractional: 3+ qualified candidates in 3 weeks or we keep hunting free. Free market scan in 48 to 72 hours. Those IC/manager guarantees are not promised for Director, VP, or CRO.",
                 },
             },
             {
@@ -86,7 +86,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                         <span className="text-blue-accent">Fee Math for Founders</span>
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
-                        Side-by-side fee math for fractional sales recruiting vs 20-30% contingency. When each model wins for AE and VP hires.
+                        Side-by-side fee math for fractional sales recruiting vs 20 to 30% contingency. When each model wins for AE and VP hires.
                     </p>
                 </div>
             </section>
@@ -100,7 +100,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                             TL;DR
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium relative z-10">
-                            Contingency sales recruiting usually bills <strong>20-30%</strong> of first-year cash (or OTE). On a $150k AE that is <strong>$30k-$45k</strong>. On a $350k VP Sales that is <strong>$70k-$105k</strong>. Kas Seat is a month-to-month retainer (<strong>$5,000 to $8,000 a month, up to $10,000 for senior AE and above</strong>) with <strong>zero success fees</strong>. Prefer per-hire? Kas Milestone Search example fees: SDR <strong>$5,000</strong>, AE <strong>$7,500</strong>, Sr AE/SM <strong>$10,000</strong>. Director/VP/CRO: specialist/retained <strong>quote only</strong>. Choose contingency for a one-off backfill. Choose Kas Seat when you are filling multiple GTM seats and want dedicated bandwidth without percent-of-OTE sticker shock.
+                            Contingency sales recruiting usually bills <strong>20 to 30%</strong> of first-year cash (or OTE). On a $150k AE that is <strong>$30k to $45k</strong>. On a $350k VP Sales that is <strong>$70k to $105k</strong>. Kas Seat is a month-to-month retainer (<strong>$5,000 to $8,000 a month, up to $10,000 for senior AE and above</strong>) with <strong>zero success fees</strong>. Prefer per-hire? Kas Milestone Search example fees: SDR <strong>$5,000</strong>, AE <strong>$7,500</strong>, Sr AE/SM <strong>$10,000</strong>. Director/VP/CRO: specialist/retained <strong>quote only</strong>. Choose contingency for a one-off backfill. Choose Kas Seat when you are filling multiple GTM seats and want dedicated bandwidth without percent-of-OTE sticker shock.
                         </p>
                         <p className="text-grey-300 leading-relaxed mt-4 relative z-10">
                             List prices: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales recruiting cost</Link>.
@@ -115,7 +115,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                         <div className="grid md:grid-cols-2 gap-6">
                             <div className="p-6 rounded-2xl border border-grey-200 bg-grey-50">
                                 <h3 className="text-lg font-bold text-navy-900 mb-3">Contingency recruiting</h3>
-                                <p className="text-grey-600 leading-relaxed">You pay only if a hire is made. The fee is typically 20-30% of first-year cash compensation (some firms use OTE). Multiple firms can work the same role. Speed and submission volume often beat depth.</p>
+                                <p className="text-grey-600 leading-relaxed">You pay only if a hire is made. The fee is typically 20 to 30% of first-year cash compensation (some firms use OTE). Multiple firms can work the same role. Speed and submission volume often beat depth.</p>
                             </div>
                             <div className="p-6 rounded-2xl border border-grey-200 bg-grey-50">
                                 <h3 className="text-lg font-bold text-navy-900 mb-3">Fractional sales recruiting</h3>
@@ -145,7 +145,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                                     <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">Contingency (industry norm)</td>
                                             <td className="py-4 px-6 text-grey-600">% of first-year cash or OTE</td>
-                                            <td className="py-4 px-6 text-grey-600">20-30% per hire</td>
+                                            <td className="py-4 px-6 text-grey-600">20 to 30% per hire</td>
                                             <td className="py-4 px-6 text-grey-600">Yes (the whole fee)</td>
                                             <td className="py-4 px-6 text-grey-600">One-off, lower-urgency backfill</td>
                                         </tr>
@@ -179,7 +179,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                                 Guarantees on Kas AE/SDR/Sales Manager searches
                             </h3>
                             <ul className="space-y-2 text-grey-600 leading-relaxed">
-                                <li>Free market scan in 48-72 hours</li>
+                                <li>Free market scan in 48 to 72 hours</li>
                                 <li>3+ qualified candidates in 3 weeks or we keep hunting free</li>
                                 <li>60-day re-hunt on placement (not a refund)</li>
                                 <li>These IC/manager guarantees are <strong>not</strong> promised for Director, VP, or CRO searches</li>
@@ -315,7 +315,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-grey-600 leading-relaxed">Scaling plan (Series A-B): 3 AEs + 2 SDRs over 4 months.</p>
+                        <p className="text-grey-600 leading-relaxed">Scaling plan (Series A to B): 3 AEs + 2 SDRs over 4 months.</p>
                         <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
                             <table className="w-full text-left border-collapse">
                                 <thead className="bg-grey-50">
@@ -423,7 +423,7 @@ export default function FractionalSalesRecruitingVsContingency() {
 
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">What is the industry-standard contingency fee for sales roles?</h3>
-                            <p className="text-grey-600 leading-relaxed">Most contingency firms charge about 20-30% of first-year cash (some use OTE). Always confirm whether the base is cash or OTE before you sign. OTE-based fees on AEs and VPs cost more.</p>
+                            <p className="text-grey-600 leading-relaxed">Most contingency firms charge about 20 to 30% of first-year cash (some use OTE). Always confirm whether the base is cash or OTE before you sign. OTE-based fees on AEs and VPs cost more.</p>
                         </div>
 
                         <div className="space-y-3">
@@ -438,7 +438,7 @@ export default function FractionalSalesRecruitingVsContingency() {
 
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">Does contingency include a guarantee?</h3>
-                            <p className="text-grey-600 leading-relaxed">Varies by firm. Kas placement guarantee is a 60-day re-hunt, not a refund. For AE/SDR/Sales Manager under fractional: 3+ qualified candidates in 3 weeks or we keep hunting free. Free market scan in 48-72 hours. Those IC/manager guarantees are not promised for Director, VP, or CRO.</p>
+                            <p className="text-grey-600 leading-relaxed">Varies by firm. Kas placement guarantee is a 60-day re-hunt, not a refund. For AE/SDR/Sales Manager under fractional: 3+ qualified candidates in 3 weeks or we keep hunting free. Free market scan in 48 to 72 hours. Those IC/manager guarantees are not promised for Director, VP, or CRO.</p>
                         </div>
 
                         <div className="space-y-3">
@@ -477,7 +477,7 @@ export default function FractionalSalesRecruitingVsContingency() {
 
                     <div className="p-10 rounded-[2rem] bg-navy-900 text-white text-center space-y-6 shadow-2xl">
                         <h2 className="text-3xl font-bold">Want the fee math on your actual packages?</h2>
-                        <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">Email chris@thekasgroup.com. Bring open AE/SDR/VP seats and target OTEs. For AE/SDR/SM under fractional, market scan lands in 48-72 hours. We run the fee math on your package, not a generic table.</p>
+                        <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">Email chris@thekasgroup.com. Bring open AE/SDR/VP seats and target OTEs. For AE/SDR/SM under fractional, market scan lands in 48 to 72 hours. We run the fee math on your package, not a generic table.</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/contact" className="inline-flex items-center justify-center rounded-full bg-blue-accent px-8 py-4 font-bold text-white hover:bg-blue-hover transition-all">
                                 Email chris@thekasgroup.com
