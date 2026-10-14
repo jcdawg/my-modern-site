@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactClickTracker from "@/components/ContactClickTracker";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import { DEFAULT_OG_IMAGE, ORGANIZATION_ID, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 const geistSans = Geist({
@@ -119,6 +120,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
