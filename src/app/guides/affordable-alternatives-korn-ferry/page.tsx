@@ -24,7 +24,7 @@ export default function AffordableAlternativesKornFerry() {
             {
                 "@type": "Question",
                 "name": "How much cheaper are boutique firms compared to Korn Ferry?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Large retained-search engagements from legacy firms often run $100K or more. Industry retained search for boutiques often starts around $25K (market context). The Kas Group publishes Kas Seat ($5k to $8k a month for sales fractional) and Milestone Search example fees for sales IC/SM, and quotes leadership and tech searches—tech is never monthly." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Large retained-search engagements from legacy firms often run $100K or more. Industry retained search for boutiques often starts around $25K (market context). The Kas Group publishes Kas Seat ($5k to $8k a month for sales fractional) and Milestone Search example fees for sales IC/SM, and quotes leadership and tech searches. Tech is never monthly." }
             },
             {
                 "@type": "Question",
@@ -134,7 +134,7 @@ export default function AffordableAlternativesKornFerry() {
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much cheaper are boutique firms compared to Korn Ferry?</h4>
-                                <p className="text-grey-600 leading-relaxed">Large retained-search engagements from legacy firms often run $100K or more. Industry retained search for boutiques often starts around $25K (market context). The Kas Group publishes Kas Seat ($5k to $8k a month for sales fractional) and Milestone Search example fees for sales IC/SM, and quotes leadership and tech searches—tech is never monthly.</p>
+                                <p className="text-grey-600 leading-relaxed">Large retained-search engagements from legacy firms often run $100K or more. Industry retained search for boutiques often starts around $25K (market context). The Kas Group publishes Kas Seat ($5k to $8k a month for sales fractional) and Milestone Search example fees for sales IC/SM, and quotes leadership and tech searches. Tech is never monthly.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">When is a large firm like Korn Ferry still the right choice?</h4>

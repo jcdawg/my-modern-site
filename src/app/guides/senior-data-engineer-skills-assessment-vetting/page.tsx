@@ -29,7 +29,7 @@ export default function DataEngineerAssessment() {
             {
                 "@type": "Question",
                 "name": "How long should a technical interview for a data engineer take?",
-                "acceptedAnswer": { "@type": "Answer", "text": "An effective technical vetting session should last 60-90 minutes, ideally led by a peer-level expert. This time should be split between a coding challenge (SQL/Python) and a deep-dive architectural discussion." }
+                "acceptedAnswer": { "@type": "Answer", "text": "An effective technical vetting session should last 60 to 90 minutes, ideally led by a peer-level expert. This time should be split between a coding challenge (SQL/Python) and a deep-dive architectural discussion." }
             }
         ]
     };
@@ -66,7 +66,7 @@ export default function DataEngineerAssessment() {
                             <Zap className="h-6 w-6 text-blue-accent" /> (TL;DR) Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium italic">
-                            &quot;Effective <strong>senior data engineer skills assessment</strong> must prioritize <strong>architectural design over simple syntax knowledge</strong>. In 2026, vetting should focus on three core areas: <strong>distributed systems reliability, data modeling at scale, and the ability to integrate AI-ready pipelines</strong>. Utilizing a peer-level vetting partner, such as a Ph.D. technical advisor, ensures that candidates possess the underlying engineering principles needed to build anti-fragile data foundations, not just keyword familiarity. Skip rigorous vetting and you risk the $150k-$300k setback we break down in <Link href="/guides/cost-of-hiring-wrong-data-engineer" className="text-blue-accent hover:underline font-semibold">The Real Cost of a Bad Technical Hire</Link>.&quot;
+                            &quot;Effective <strong>senior data engineer skills assessment</strong> must prioritize <strong>architectural design over simple syntax knowledge</strong>. In 2026, vetting should focus on three core areas: <strong>distributed systems reliability, data modeling at scale, and the ability to integrate AI-ready pipelines</strong>. Utilizing a peer-level vetting partner, such as a Ph.D. technical advisor, ensures that candidates possess the underlying engineering principles needed to build anti-fragile data foundations, not just keyword familiarity. Skip rigorous vetting and you risk the $150k to $300k setback we break down in <Link href="/guides/cost-of-hiring-wrong-data-engineer" className="text-blue-accent hover:underline font-semibold">The Real Cost of a Bad Technical Hire</Link>.&quot;
                         </p>
                     </div>
 

@@ -75,7 +75,7 @@ export default function ActiveVsPassiveCandidatesGuide() {
                         </h2>
                         <div className="text-lg text-grey-300 leading-relaxed font-medium space-y-4">
                             <p>An <strong>active candidate</strong> is looking for work now; a <strong>passive candidate</strong> is employed, not searching, and only moves for a clearly better offer. LinkedIn&apos;s talent research puts roughly <strong>70% of the workforce</strong> in the passive camp, and it runs higher in senior roles.</p>
-                            <p>Passive candidates aren&apos;t automatically better, but for senior and revenue-critical roles the passive pool has a higher hit rate because top performers are almost always employed. You reach them through <strong>warm introductions and specific, personal outreach</strong>; job postings never touch them. A passive search runs <strong>60-120 days</strong> from first contact to start date; a retained firm with existing relationships compresses it.</p>
+                            <p>Passive candidates aren&apos;t automatically better, but for senior and revenue-critical roles the passive pool has a higher hit rate because top performers are almost always employed. You reach them through <strong>warm introductions and specific, personal outreach</strong>; job postings never touch them. A passive search runs <strong>60 to 120 days</strong> from first contact to start date; a retained firm with existing relationships compresses it.</p>
                         </div>
                     </div>
 
@@ -120,7 +120,7 @@ export default function ActiveVsPassiveCandidatesGuide() {
                                     <tr className="border-t border-grey-100 bg-grey-50">
                                         <td className="py-4 px-6 font-bold text-navy-900">Availability</td>
                                         <td className="py-4 px-6">Immediate</td>
-                                        <td className="py-4 px-6">60-120 day runway</td>
+                                        <td className="py-4 px-6">60 to 120 day runway</td>
                                     </tr>
                                     <tr className="border-t border-grey-100">
                                         <td className="py-4 px-6 font-bold text-navy-900">Competition for them</td>
@@ -146,7 +146,7 @@ export default function ActiveVsPassiveCandidatesGuide() {
                             </table>
                         </div>
                         <p className="text-grey-600 leading-relaxed">
-                            One caveat: plenty of good people are active for honest reasons, a layoff, a funding crunch, a boss who relocated. But interview fluency correlates with interview frequency; the people interviewing every month are rarely the ones competitors are fighting to keep. Roughly 46% of new hires fail within 18 months, and a bad technical hire runs $150k-$300k all-in, as we broke down in <Link href="/guides/cost-of-a-bad-hire" className="text-blue-accent hover:underline font-semibold">The Real Cost of a Bad Technical Hire</Link>. Vetting quality matters more than funnel volume, and keyword filters are a weak substitute. We covered why in <Link href="/guides/do-ai-resume-screeners-work" className="text-blue-accent hover:underline font-semibold">Do AI Resume Screeners Actually Work?</Link> A smaller pool of people who have to be persuaded beats a pile of people who applied to forty jobs this week.
+                            One caveat: plenty of good people are active for honest reasons, a layoff, a funding crunch, a boss who relocated. But interview fluency correlates with interview frequency; the people interviewing every month are rarely the ones competitors are fighting to keep. Roughly 46% of new hires fail within 18 months, and a bad technical hire runs $150k to $300k all-in, as we broke down in <Link href="/guides/cost-of-a-bad-hire" className="text-blue-accent hover:underline font-semibold">The Real Cost of a Bad Technical Hire</Link>. Vetting quality matters more than funnel volume, and keyword filters are a weak substitute. We covered why in <Link href="/guides/do-ai-resume-screeners-work" className="text-blue-accent hover:underline font-semibold">Do AI Resume Screeners Actually Work?</Link> A smaller pool of people who have to be persuaded beats a pile of people who applied to forty jobs this week.
                         </p>
                     </div>
 
@@ -181,7 +181,7 @@ export default function ActiveVsPassiveCandidatesGuide() {
                                 { title: "Warm introduction first.", desc: "A former colleague, an investor, or a board member will out-open any cold InMail. If nobody in your network reaches them, that's a signal about your market access." },
                                 { title: "Name the problem you're hiring them to solve.", desc: "\"We need someone to rebuild our ingestion layer for 10x volume\" reads as work worth doing. \"Exciting opportunity at a growing startup\" reads as spam." },
                                 { title: "Put the money on the table early.", desc: "Passive candidates are employed. If your range doesn't clear their current comp plus a real reason to move, the conversation ends politely and permanently." },
-                                { title: "Respect the runway.", desc: "Nobody senior resigns on the first call. Expect 60-120 days from first contact to start date." },
+                                { title: "Respect the runway.", desc: "Nobody senior resigns on the first call. Expect 60 to 120 days from first contact to start date." },
                                 { title: "Sell the gap they don't have today.", desc: "Bigger mandate, equity worth something, a team worth joining, a city they already wanted." }
                             ].map((item, i) => (
                                 <div key={i} className="flex gap-4 p-6 rounded-2xl bg-grey-50 border border-grey-100">
@@ -216,7 +216,7 @@ export default function ActiveVsPassiveCandidatesGuide() {
                             When should you bring in a firm to reach passive candidates?
                         </h2>
                         <p className="text-lg text-grey-600 leading-relaxed">
-                            <strong>When the role is senior or revenue-critical, when you have no warm path into the passive pool, or when a 90-120 day internal search costs more in missed revenue than the fee.</strong>
+                            <strong>When the role is senior or revenue-critical, when you have no warm path into the passive pool, or when a 90 to 120 day internal search costs more in missed revenue than the fee.</strong>
                         </p>
                         <p className="text-grey-600 leading-relaxed">
                             That&apos;s the math companies run too late. An open VP of Sales seat costs missed quota every quarter it sits empty; an open staff engineer seat costs architecture decisions made by default. <Link href="/guides/best-data-engineering-recruiting-agencies" className="text-blue-accent hover:underline font-semibold">A firm that already knows the passive market</Link> keeps warm relationships with people who aren&apos;t looking and can put a specific opportunity in front of them this week. Here is a <Link href="/candidate-mapping-brief" className="text-blue-accent hover:underline font-semibold">sample shortlist matrix</Link> from that kind of passive-market map.

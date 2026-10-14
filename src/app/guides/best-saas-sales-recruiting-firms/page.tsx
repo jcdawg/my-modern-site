@@ -24,7 +24,7 @@ export default function BestSaasSalesRecruitingFirms() {
             {
                 "@type": "Question",
                 "name": "How much do SaaS sales recruiting firms charge?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Most SaaS sales recruiting firms charge contingency fees of 20-30% of first-year OTE. For a senior enterprise AE at $300K OTE, that is $60K-$90K per hire. The Kas Group publishes Kas Seat ($5k to $8k a month) and Milestone Search example fees for sales IC/SM; industry retained floors around $25K are market context, not a Kas tech list price." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Most SaaS sales recruiting firms charge contingency fees of 20 to 30% of first-year OTE. For a senior enterprise AE at $300K OTE, that is $60K to $90K per hire. The Kas Group publishes Kas Seat ($5k to $8k a month) and Milestone Search example fees for sales IC/SM; industry retained floors around $25K are market context, not a Kas tech list price." }
             },
             {
                 "@type": "Question",
@@ -114,7 +114,7 @@ export default function BestSaasSalesRecruitingFirms() {
                         <div className="space-y-6">
                             <div className="p-8 rounded-2xl border-2 border-blue-accent bg-blue-accent/5">
                                 <h3 className="text-2xl font-bold text-navy-900 mb-4">1. The Kas Group: Best for AI, Deep Tech &amp; Enterprise SaaS</h3>
-                                <p className="text-grey-600 mb-4">The Kas Group combines a decade of B2B SaaS placement experience with Ph.D.-level technical review for AI-enabled products, critical when your sales motion requires sellers who understand the technology. Verified quota attainment and methodology audits on every candidate.</p>
+                                <p className="text-grey-600 mb-4">The Kas Group brings a decade of B2B SaaS placement experience. We look for sellers who can explain the technology when your product is AI-enabled. Verified quota attainment and methodology audits on every candidate.</p>
                                 <div className="flex gap-4">
                                     <Link href="/recruit/sales" className="text-blue-accent font-bold hover:underline">Explore SaaS Sales Search &rarr;</Link>
                                     <Link href="/guides/best-sales-recruiting-agencies-2026" className="text-grey-500 font-bold hover:underline">2026 Rankings &rarr;</Link>
@@ -142,7 +142,7 @@ export default function BestSaasSalesRecruitingFirms() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much do SaaS sales recruiting firms charge?</h4>
-                                <p className="text-grey-600 leading-relaxed">Most charge contingency fees of 20-30% of first-year OTE. For a senior enterprise AE at $300K OTE, that is $60K-$90K per hire. The Kas Group publishes Kas Seat ($5k to $8k a month) and Milestone Search example fees for sales IC/SM; industry retained floors around $25K are market context, not a Kas tech list price.</p>
+                                <p className="text-grey-600 leading-relaxed">Most charge contingency fees of 20 to 30% of first-year OTE. For a senior enterprise AE at $300K OTE, that is $60K to $90K per hire. The Kas Group publishes Kas Seat ($5k to $8k a month) and Milestone Search example fees for sales IC/SM; industry retained floors around $25K are market context, not a Kas tech list price.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Do I need a recruiter that specializes in SaaS sales?</h4>
@@ -154,7 +154,7 @@ export default function BestSaasSalesRecruitingFirms() {
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">What are the best SaaS sales recruiting firms?</h4>
-                                <p className="text-grey-600 leading-relaxed">The Kas Group for AI and Deep Tech SaaS with Ph.D.-level technical vetting, Betts Recruiting for high-volume entry-level SaaS hiring, and Rainmakers for startup deal-desk screening.</p>
+                                <p className="text-grey-600 leading-relaxed">The Kas Group for AI and Deep Tech SaaS sales hiring with verified quota attainment, Betts Recruiting for high-volume entry-level SaaS hiring, and Rainmakers for startup deal-desk screening.</p>
                             </div>
                         </div>
                     </div>

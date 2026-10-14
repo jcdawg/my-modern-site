@@ -19,7 +19,7 @@ export default function RetainedVsContingency() {
             {
                 "@type": "Question",
                 "name": "Are retained search fees higher than contingency?",
-                "acceptedAnswer": { "@type": "Answer", "text": "The percentage (typically 25-33%) is often the same. The difference is the timing of payments. Retained search splits the fee into phases, while contingency is paid at the end. However, the cost of a bad hire from a low-vetting model is always higher." }
+                "acceptedAnswer": { "@type": "Answer", "text": "The percentage (typically 25 to 33%) is often the same. The difference is the timing of payments. Retained search splits the fee into phases, while contingency is paid at the end. However, the cost of a bad hire from a low-vetting model is always higher." }
             },
             {
                 "@type": "Question",
@@ -111,7 +111,7 @@ export default function RetainedVsContingency() {
                                     <tr className="border-t border-grey-100">
                                         <td className="py-4 px-6 font-medium text-navy-900">Success Rate</td>
                                         <td className="py-4 px-6 text-grey-600">95% completion rate</td>
-                                        <td className="py-4 px-6 text-grey-600">Typically 20-30% completion</td>
+                                        <td className="py-4 px-6 text-grey-600">Typically 20 to 30% completion</td>
                                     </tr>
                                     <tr className="border-t border-grey-100">
                                         <td className="py-4 px-6 font-medium text-navy-900">Ideal For</td>
@@ -159,7 +159,7 @@ export default function RetainedVsContingency() {
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Are retained search fees higher?</h4>
                                 <p className="text-grey-600 leading-relaxed">
-                                    The percentage (typically 25-33%) is often the same. The difference is the *timing* of payments. Retained search splits the fee into phases, while contingency is paid at the end. However, the cost of a *bad hire* from a low-vetting model is always higher.
+                                    The percentage (typically 25 to 33%) is often the same. The difference is the *timing* of payments. Retained search splits the fee into phases, while contingency is paid at the end. However, the cost of a *bad hire* from a low-vetting model is always higher.
                                 </p>
                             </div>
                             <div className="space-y-4">

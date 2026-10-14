@@ -6,7 +6,7 @@ import ArticleJsonLd from "@/components/ArticleJsonLd";
 const PAGE = {
     title: "How to Hire SaaS SDRs and AEs with Zero Ramp-Up Time",
     description:
-        "How to hire SDRs and AEs who produce in weeks, not quarters. Ramp-adjacent traits, a 4-week fast-ramp scorecard, interview questions, comp and OTE math, and when fractional hiring covers Seed-B sales volume.",
+        "How to hire SDRs and AEs who produce in weeks, not quarters. Ramp-adjacent traits, a 4-week fast-ramp scorecard, interview questions, comp and OTE math, and when fractional hiring covers Seed to Series B sales volume.",
     path: "/guides/how-to-hire-saas-sdrs-fast-ramp",
 };
 
@@ -38,7 +38,7 @@ export default function HowToHireSaasSdrsFastRamp() {
                 name: "How long does it take an SDR or AE to ramp to full productivity?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Realistic bands: an SDR with a matching motion can handle volume in roughly 2-4 weeks, an AE commonly needs 60-90 days to reach full quota, and a senior revenue role can take a full quarter-plus. Budget for it and protect it; hiring 'fast' still requires a 30-day sprint plan.",
+                    text: "Realistic bands: an SDR with a matching motion can handle volume in roughly 2 to 4 weeks, an AE commonly needs 60 to 90 days to reach full quota, and a senior revenue role can take a full quarter-plus. Budget for it and protect it; hiring 'fast' still requires a 30-day sprint plan.",
                 },
             },
             {
@@ -54,7 +54,7 @@ export default function HowToHireSaasSdrsFastRamp() {
                 name: "What comp structure reduces SDR/AE ramp-up risk?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "A structure that rewards the activity you need now rather than only the close you hope for later. For SDRs, protect base pay for call volume early. For AEs, use a base-variable split with realistic ramp quotas (often 50-70% of full quota for months 1-3) so the first quarter isn't unwinnable.",
+                    text: "A structure that rewards the activity you need now rather than only the close you hope for later. For SDRs, protect base pay for call volume early. For AEs, use a base-variable split with realistic ramp quotas (often 50 to 70% of full quota for months 1 to 3) so the first quarter isn't unwinnable.",
                 },
             },
             {
@@ -85,8 +85,8 @@ export default function HowToHireSaasSdrsFastRamp() {
     ];
 
     const rampRows = [
-        { role: "SDR (motion-matched)", handleVolume: "2-4 weeks", fullQuota: "4-8 weeks", notes: "Fastest seat to productivity; wins on volume and repetition." },
-        { role: "AE (closed-won, motion-matched)", handleVolume: "30-60 days", fullQuota: "60-90 days", notes: "Needs pipeline runway to develop before closed revenue shows." },
+        { role: "SDR (motion-matched)", handleVolume: "2 to 4 weeks", fullQuota: "4 to 8 weeks", notes: "Fastest seat to productivity; wins on volume and repetition." },
+        { role: "AE (closed-won, motion-matched)", handleVolume: "30 to 60 days", fullQuota: "60 to 90 days", notes: "Needs pipeline runway to develop before closed revenue shows." },
         { role: "Senior AE / Sales Manager", handleVolume: "60+ days", fullQuota: "Quarter-plus", notes: "Transfers strategy and leadership, but quota proof takes a cycle." },
         { role: "New to the motion (high risk)", handleVolume: "90+ days", fullQuota: "2+ quarters", notes: "Hiring a motion mismatch is the most expensive shortcut you can take." },
     ];
@@ -95,7 +95,7 @@ export default function HowToHireSaasSdrsFastRamp() {
         { area: "What the candidate ran", loose: "Same title, referrals", tight: "Same title AND same motion, verified" },
         { area: "Numbers", loose: "'Hit 110%', no detail", tight: "Dollar quota, attainment by quarter, win rate" },
         { area: "ACV band", loose: "Any SaaS revenue", tight: "Comparable ACV to your offer" },
-        { area: "30-day plan", loose: "'I'll ramp on my own'", tight: "A written week-1-4 sprint against your script and sequence" },
+        { area: "30-day plan", loose: "'I'll ramp on my own'", tight: "A written sprint for weeks 1 to 4 against your script and sequence" },
     ];
 
     const compRows = [
@@ -135,9 +135,9 @@ export default function HowToHireSaasSdrsFastRamp() {
         { q: "Do we know our exact motion (volume, stage, buyer, ACV band)?", lean: "Define first" },
         { q: "Are we validating numbers, or taking 'I hit 110%' at face value?", lean: "Quota-verified" },
         { q: "Is this a bursty sprint or a permanent desk?", lean: "Sprint = fractional, permanent = in-house" },
-        { q: "Does our comp make month 1-3 winnable for a new hire?", lean: "Ramp quotas" },
+        { q: "Does our comp make months 1 to 3 winnable for a new hire?", lean: "Ramp quotas" },
         { q: "Do we have a written 30-day ramp plan and a named owner?", lean: "Onboarding sprint" },
-        { q: "Are we paying for a full desk to fill 2-5 seats?", lean: "Fractional or Milestone Search example fee" },
+        { q: "Are we paying for a full desk to fill 2 to 5 seats?", lean: "Fractional or Milestone Search example fee" },
     ];
     return (
         <div className="flex flex-col min-h-screen bg-white">
@@ -179,8 +179,8 @@ export default function HowToHireSaasSdrsFastRamp() {
                             Hiring SDRs and AEs who are productive in weeks instead of quarters is about hiring for{" "}
                             <strong className="text-white">the motion you already run</strong>, not for generic sales talent. A zero-ramp candidate has three markers: a matching activity pattern (same call volume and pipeline stage),{" "}
                             <strong className="text-white">quota-verified numbers</strong> (not just &quot;I hit 110%&quot;), and a playbook that fits your offer and ACV band. Budget a realistic ramp (SDRs handle volume in{" "}
-                            <strong className="text-white">2-4 weeks</strong>, AEs reach full quota in{" "}
-                            <strong className="text-white">60-90 days</strong>) and protect it with a written 30-day sprint and ramp-friendly comp. For Seed through Series B with bursty volume, fractional sales hiring covers SDR/AE seats at Milestone Search example fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) or a fractional retainer with zero success fees, instead of paying for a full-time desk.
+                            <strong className="text-white">2 to 4 weeks</strong>, AEs reach full quota in{" "}
+                            <strong className="text-white">60 to 90 days</strong>) and protect it with a written 30-day sprint and ramp-friendly comp. For Seed through Series B with bursty volume, fractional sales hiring covers SDR/AE seats at Milestone Search example fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) or a fractional retainer with zero success fees, instead of paying for a full-time desk.
                         </p>
                     </div>
                     <div className="space-y-8">
@@ -283,7 +283,7 @@ export default function HowToHireSaasSdrsFastRamp() {
                             <li className="p-4 rounded-xl border border-grey-200 bg-white flex gap-3">
                                 <CheckCircle2 className="h-5 w-5 text-blue-accent shrink-0" />
                                 <span className="text-grey-600 leading-relaxed">
-                                    <strong>30-day plan:</strong> &quot;Write me your weeks 1-4 sprint against our script and sequence.&quot; Motion-matched candidates can outline this on the spot; story-sellers stall.
+                                    <strong>30-day plan:</strong> &quot;Write me your weeks 1 to 4 sprint against our script and sequence.&quot; Motion-matched candidates can outline this on the spot; story-sellers stall.
                                 </span>
                             </li>
                         </ul>
@@ -295,7 +295,7 @@ export default function HowToHireSaasSdrsFastRamp() {
                             Comp that reduces ramp risk
                         </h2>
                         <p className="text-grey-600 leading-relaxed">
-                            The right structure protects the ramp. For SDRs, protect base pay in exchange for call volume early. For AEs, use realistic ramp quotas (often 50-70% of full quota in months 1-3) so the first quarter is actually winnable.
+                            The right structure protects the ramp. For SDRs, protect base pay in exchange for call volume early. For AEs, use realistic ramp quotas (often 50 to 70% of full quota in months 1 to 3) so the first quarter is actually winnable.
                         </p>
                         <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
                             <table className="w-full text-left border-collapse">
@@ -429,19 +429,19 @@ export default function HowToHireSaasSdrsFastRamp() {
                         <ul className="space-y-2 text-grey-600">
                             <li>
                                 <Link href="/blog/early-stage-sales-comp-first-ae-ote" className="text-blue-accent hover:underline font-semibold">What to pay your first AE</Link>
-                                {" "}- OTE ranges by segment and how to pressure-test attainment
+                                {": "}OTE ranges by segment and how to pressure-test attainment
                             </li>
                             <li>
                                 <Link href="/blog/ai-sdr-who-you-still-need" className="text-blue-accent hover:underline font-semibold">Who you still need with an AI SDR</Link>
-                                {" "}- what AI handles and what a rep still owns
+                                {": "}what AI handles and what a rep still owns
                             </li>
                             <li>
                                 <Link href="/blog/founder-led-sales-first-hire" className="text-blue-accent hover:underline font-semibold">Your first sales hire needs a playbook</Link>
-                                {" "}- what founder-led sales has to prove first
+                                {": "}what founder-led sales has to prove first
                             </li>
                             <li>
                                 <Link href="/programs" className="text-blue-accent hover:underline font-semibold">Programs</Link>
-                                {" "}- Kas Seat, Kas Milestone Search, Kas Directed Pursuit
+                                {": "}Kas Seat, Kas Milestone Search, Kas Directed Pursuit
                             </li>
                         </ul>
                     </div>

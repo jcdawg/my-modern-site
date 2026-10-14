@@ -38,7 +38,7 @@ const contactMethods = [
     {
         icon: Clock,
         title: "Hours",
-        value: "Mon \u2013 Fri, 9am \u2013 6pm ET",
+        value: "Mon to Fri, 9am to 6pm ET",
         detail: "Flexible to your schedule",
         href: null,
         cta: null,

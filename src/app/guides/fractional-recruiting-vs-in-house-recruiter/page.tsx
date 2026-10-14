@@ -5,7 +5,7 @@ import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
     title: "Fractional Recruiting vs In-House Recruiter: Cost and Decision Guide",
-    description: "Fractional recruiting vs hiring an in-house recruiter. Fully loaded TA salary math vs Kas GTM retainers, plus when each model wins for Seed-B sales hiring.",
+    description: "Fractional recruiting vs hiring an in-house recruiter. Fully loaded TA salary math vs Kas GTM retainers, plus when each model wins for Seed to Series B sales hiring.",
     path: "/guides/fractional-recruiting-vs-in-house-recruiter",
 };
 
@@ -21,7 +21,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                 name: "Is fractional recruiting cheaper than hiring an in-house recruiter?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Usually yes for Seed-B GTM sprints. Kas Seat is $5,000 to $8,000 a month, up to $10,000 for senior AE and above, with zero success fees. A mid fully loaded in-house seat often lands around $100k-$160k per year (~$8k-$13k+/mo). Fractional also pauses. Payroll does not.",
+                    text: "Usually yes for Seed to Series B GTM sprints. Kas Seat is $5,000 to $8,000 a month, up to $10,000 for senior AE and above, with zero success fees. A mid fully loaded in-house seat often lands around $100k to $160k per year (~$8k to $13k+/mo). Fractional also pauses. Payroll does not.",
                 },
             },
             {
@@ -29,7 +29,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                 name: "What is the fully loaded cost of an in-house recruiter?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Salary plus benefits load plus LinkedIn Recruiter plus ATS/tools. Many first-recruiter seats land near $100k-$160k fully loaded annually.",
+                    text: "Salary plus benefits load plus LinkedIn Recruiter plus ATS/tools. Many first-recruiter seats land near $100k to $160k fully loaded annually.",
                 },
             },
             {
@@ -61,7 +61,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                 name: "How fast does Kas fractional move on AE and SDR seats?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "For AE / SDR / Sales Manager under fractional: free market scan in 48-72 hours, and a target of 3+ qualified candidates in 3 weeks. Leadership (Director/VP/CRO) is quoted separately.",
+                    text: "For AE / SDR / Sales Manager under fractional: free market scan in 48 to 72 hours, and a target of 3+ qualified candidates in 3 weeks. Leadership (Director/VP/CRO) is quoted separately.",
                 },
             },
         ],
@@ -100,7 +100,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                             TL;DR
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium relative z-10">
-                            An in-house recruiter is a full-time employee on payroll. Fractional recruiting is an embedded external TA partner on a month-to-month retainer. For Seed through Series B GTM hiring, Kas fractional (Kas Seat) is <strong>$5,000 to $8,000 a month, up to $10,000 for senior AE and above</strong>, with <strong>zero success fees</strong>. A solid in-house TA seat often runs <strong>$100k-$160k+</strong> fully loaded once you add salary, benefits, LinkedIn Recruiter, and tools. Fractional wins when hiring is bursty and sales-specialist quality matters. In-house wins when you need sustained, cross-function volume (roughly 10+ hires per quarter) and full internal ownership.
+                            An in-house recruiter is a full-time employee on payroll. Fractional recruiting is an embedded external TA partner on a month-to-month retainer. For Seed through Series B GTM hiring, Kas fractional (Kas Seat) is <strong>$5,000 to $8,000 a month, up to $10,000 for senior AE and above</strong>, with <strong>zero success fees</strong>. A solid in-house TA seat often runs <strong>$100k to $160k+</strong> fully loaded once you add salary, benefits, LinkedIn Recruiter, and tools. Fractional wins when hiring is bursty and sales-specialist quality matters. In-house wins when you need sustained, cross-function volume (roughly 10+ hires per quarter) and full internal ownership.
                         </p>
                         <p className="text-grey-300 leading-relaxed mt-4 relative z-10">
                             List prices: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales recruiting cost</Link>. Product: <Link href="/recruit/fractional-sales" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales</Link>.
@@ -144,7 +144,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">Best fit</td>
-                                            <td className="py-4 px-6 text-grey-600">Bursty Seed-B GTM hiring</td>
+                                            <td className="py-4 px-6 text-grey-600">Bursty Seed to Series B GTM hiring</td>
                                             <td className="py-4 px-6 text-grey-600">Sustained, multi-function volume</td>
                                         </tr>
                                 </tbody>
@@ -177,7 +177,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                                             <td className="py-4 px-6 text-grey-600">$130,000</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Benefits / taxes / payroll load (~25-35%)</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Benefits / taxes / payroll load (~25 to 35%)</td>
                                             <td className="py-4 px-6 text-grey-600">$21,000</td>
                                             <td className="py-4 px-6 text-grey-600">$33,000</td>
                                             <td className="py-4 px-6 text-grey-600">$45,000</td>
@@ -209,7 +209,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-grey-600 leading-relaxed">So a mid-range in-house seat is about <strong>$100k-$160k</strong> fully loaded for many Seed-B teams. Add 60-90 days of ramp before the seat is fully productive on your motion.</p>
+                        <p className="text-grey-600 leading-relaxed">So a mid-range in-house seat is about <strong>$100k to $160k</strong> fully loaded for many Seed to Series B teams. Add 60 to 90 days of ramp before the seat is fully productive on your motion.</p>
 
                         <h3 className="text-xl font-bold text-navy-900">Kas fractional retainers (quick reference)</h3>
                         <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
@@ -271,7 +271,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                         </div>
                         <p className="text-grey-600 leading-relaxed">Fractional is built for the pause. In-house keeps burning after the pod is full.</p>
 
-                        <h3 className="text-xl font-bold text-navy-900">Scenario B: Steady GTM hiring for 12 months (2-5 seats in flight)</h3>
+                        <h3 className="text-xl font-bold text-navy-900">Scenario B: Steady GTM hiring for 12 months (2 to 5 seats in flight)</h3>
                         <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
                             <table className="w-full text-left border-collapse">
                                 <thead className="bg-grey-50">
@@ -316,9 +316,9 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                             <li>Hiring is bursty (raise, then fill a pod, then pause)</li>
                             <li>You need a sales-specialist bar (quota history, ACV, cycle length, outbound vs inbound)</li>
                             <li>You want predictable monthly spend you can turn off</li>
-                            <li>Cash matters and you refuse carrying a $100k-$160k seat through a quiet quarter</li>
+                            <li>Cash matters and you refuse carrying a $100k to $160k seat through a quiet quarter</li>
                         </ul>
-                        <p className="text-grey-600 leading-relaxed">On Kas AE / SDR / Sales Manager searches under fractional: free market scan in 48-72 hours and a search target of 3+ qualified candidates in 3 weeks (or we keep hunting). Those speed claims apply to AE/SDR/SM under fractional, <strong>not</strong> to Director/VP/CRO leadership searches.</p>
+                        <p className="text-grey-600 leading-relaxed">On Kas AE / SDR / Sales Manager searches under fractional: free market scan in 48 to 72 hours and a search target of 3+ qualified candidates in 3 weeks (or we keep hunting). Those speed claims apply to AE/SDR/SM under fractional, <strong>not</strong> to Director/VP/CRO leadership searches.</p>
                     </div>
 
                     <div className="space-y-8">
@@ -365,7 +365,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                                 </thead>
                                 <tbody>
                                     <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Are we Seed through early Series B with 1-5 GTM seats ahead?</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Are we Seed through early Series B with 1 to 5 GTM seats ahead?</td>
                                             <td className="py-4 px-6 text-grey-600">Fractional</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
@@ -410,12 +410,12 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                         <div className="space-y-8">
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">Is fractional recruiting cheaper than hiring an in-house recruiter?</h3>
-                            <p className="text-grey-600 leading-relaxed">Usually yes for Seed-B GTM sprints. Kas Seat is $5,000 to $8,000 a month, up to $10,000 for senior AE and above, with zero success fees. A mid fully loaded in-house seat often lands around $100k-$160k per year (~$8k-$13k+/mo). Fractional also pauses. Payroll does not.</p>
+                            <p className="text-grey-600 leading-relaxed">Usually yes for Seed to Series B GTM sprints. Kas Seat is $5,000 to $8,000 a month, up to $10,000 for senior AE and above, with zero success fees. A mid fully loaded in-house seat often lands around $100k to $160k per year (~$8k to $13k+/mo). Fractional also pauses. Payroll does not.</p>
                         </div>
 
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">What is the fully loaded cost of an in-house recruiter?</h3>
-                            <p className="text-grey-600 leading-relaxed">Salary plus benefits load plus LinkedIn Recruiter plus ATS/tools. Many first-recruiter seats land near $100k-$160k fully loaded annually.</p>
+                            <p className="text-grey-600 leading-relaxed">Salary plus benefits load plus LinkedIn Recruiter plus ATS/tools. Many first-recruiter seats land near $100k to $160k fully loaded annually.</p>
                         </div>
 
                         <div className="space-y-3">
@@ -435,7 +435,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
 
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">How fast does Kas fractional move on AE and SDR seats?</h3>
-                            <p className="text-grey-600 leading-relaxed">For AE / SDR / Sales Manager under fractional: free market scan in 48-72 hours, and a target of 3+ qualified candidates in 3 weeks. Leadership (Director/VP/CRO) is quoted separately.</p>
+                            <p className="text-grey-600 leading-relaxed">For AE / SDR / Sales Manager under fractional: free market scan in 48 to 72 hours, and a target of 3+ qualified candidates in 3 weeks. Leadership (Director/VP/CRO) is quoted separately.</p>
                         </div>
                         </div>
                     </div>
