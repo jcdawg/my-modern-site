@@ -428,6 +428,10 @@ export default function HowToHireSaasSdrsFastRamp() {
                         <h2 className="text-2xl font-bold text-navy-900">Related reading</h2>
                         <ul className="space-y-2 text-grey-600">
                             <li>
+                                <Link href="/guides/how-to-hire-enterprise-account-executive" className="text-blue-accent hover:underline font-semibold">How to hire an enterprise AE</Link>
+                                {": "}hunter or book of business, and how to check they built the deal
+                            </li>
+                            <li>
                                 <Link href="/blog/early-stage-sales-comp-first-ae-ote" className="text-blue-accent hover:underline font-semibold">What to pay your first AE</Link>
                                 {": "}OTE ranges by segment and how to pressure-test attainment
                             </li>

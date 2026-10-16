@@ -33,6 +33,7 @@ const entries: Entry[] = [
     { path: '/guides/fractional-recruiting-vs-in-house-recruiter', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/fractional-sales-recruiting-vs-contingency', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/how-to-hire-saas-sdrs-fast-ramp', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/how-to-hire-enterprise-account-executive', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/cost-of-a-bad-hire', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/blog/fractional-saas-sales-recruiting', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/blog/ai-resume-boom-old-school-recruiting', changeFrequency: 'monthly', priority: 0.8 },
