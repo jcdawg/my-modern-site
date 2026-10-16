@@ -192,6 +192,7 @@ Explore the hidden expenses of bad hires and prolonged PIPs, including lost pipe
 - [Fractional Sales Recruiting vs Contingency](/guides/fractional-sales-recruiting-vs-contingency)
 - [Fractional Recruiting vs In-House Recruiter](/guides/fractional-recruiting-vs-in-house-recruiter)
 - [How to Hire SaaS SDRs and AEs Fast](/guides/how-to-hire-saas-sdrs-fast-ramp)
+- [How to Hire an Enterprise Account Executive](/guides/how-to-hire-enterprise-account-executive)
 - [Top Fractional Recruiter for Sales Teams](/guides/best-fractional-sales-recruiters)
 - [Fractional Recruiting Services for Sales Teams](/guides/fractional-recruiting-services-sales-teams)
 - [Best Recruiting Agencies for B2B Sales](/guides/best-recruiting-agencies-b2b-sales)
