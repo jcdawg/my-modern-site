@@ -221,6 +221,8 @@ export default function SdrTeamCutAesProspectPost() {
                         {" · "}
                         <Link href="/guides/fractional-recruiting-guide" className={link}>What Is Fractional Recruiting?</Link>
                         {" · "}
+                        <Link href="/blog/sdr-or-gtm-engineer-pipeline-hire" className={link}>SDR or GTM Engineer? Your Next Pipeline Hire</Link>
+                        {" · "}
                         <Link href="/programs" className={link}>Programs</Link>
                     </p>
 

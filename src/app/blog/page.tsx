@@ -74,6 +74,15 @@ export default function Blog() {
             category: "Sales Leadership",
             slug: "sdr-team-cut-aes-prospect",
         },
+        {
+            id: 8,
+            title: "SDR or GTM Engineer? What Your Next Pipeline Hire Should Actually Be.",
+            excerpt: "Seed founder with one pipeline seat? The questions I ask before recommending an SDR or a GTM engineer, plus outside data on GTM engineer hiring and pay.",
+            date: "Oct 16, 2026",
+            author: "Chris Stinson",
+            category: "Sales Leadership",
+            slug: "sdr-or-gtm-engineer-pipeline-hire",
+        },
     ];
 
     return (

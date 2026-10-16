@@ -214,6 +214,7 @@ Visit https://www.thekasgroup.com/guides for the complete interactive library.
 - [Salesforce Just Shipped an AI SDR. Here's Who You Still Need.](/blog/ai-sdr-who-you-still-need)
 - [29,000 Jobs Added and Still No Great Reps](/blog/jobs-report-still-no-great-reps)
 - [They Cut the SDRs. Now Every AE Prospects.](/blog/sdr-team-cut-aes-prospect)
+- [SDR or GTM Engineer? What Your Next Pipeline Hire Should Actually Be.](/blog/sdr-or-gtm-engineer-pipeline-hire)
 
 Contact chris@thekasgroup.com for guest inquiries and research collaborations.
 `,

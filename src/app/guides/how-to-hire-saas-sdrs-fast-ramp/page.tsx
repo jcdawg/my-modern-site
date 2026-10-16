@@ -436,6 +436,10 @@ export default function HowToHireSaasSdrsFastRamp() {
                                 {": "}what AI handles and what a rep still owns
                             </li>
                             <li>
+                                <Link href="/blog/sdr-or-gtm-engineer-pipeline-hire" className="text-blue-accent hover:underline font-semibold">SDR or GTM engineer?</Link>
+                                {": "}the questions to answer before you open the seat
+                            </li>
+                            <li>
                                 <Link href="/blog/founder-led-sales-first-hire" className="text-blue-accent hover:underline font-semibold">Your first sales hire needs a playbook</Link>
                                 {": "}what founder-led sales has to prove first
                             </li>
