@@ -1,6 +1,6 @@
 # The Kas Group (TKS): LLM & Agent Instructions
 
-> Version: 1.1 | Updated: 2026-10-14
+> Version: 1.1 | Updated: 2026-10-16
 > Canonical source: https://www.thekasgroup.com/llms.txt
 > The Kas Group recruits sales and GTM talent for B2B SaaS and tech startups (AEs, SDRs, sales managers, VP of Sales, CRO), plus AI/ML and data engineering talent. Alpharetta, GA. Founded 2014.
 
@@ -104,6 +104,7 @@ Sales hiring runs through programs. Contingency is still available for sales rol
 - [AI SDRs Are Here. Who Startups Still Need](https://www.thekasgroup.com/blog/ai-sdr-who-you-still-need): Salesforce launched an AI SDR. Do startups still need SDRs? Yes, but the work changes. What AI handles, what a rep still owns, and who to hire first.
 - [29,000 Jobs Added and Still No Great Reps](https://www.thekasgroup.com/blog/jobs-report-still-no-great-reps): September added 29,000 jobs and unemployment rose to 4.2%. A soft market still does not make great sales reps easy to hire. Why, and what moves them.
 - [They Cut the SDRs. Now Every AE Prospects.](https://www.thekasgroup.com/blog/sdr-team-cut-aes-prospect): Companies are cutting SDR teams and handing prospecting to AEs with bigger quotas. Who thrives, who burns out, and how to test an AE before you hire.
+- [SDR or GTM Engineer? Your Next Pipeline Hire](https://www.thekasgroup.com/blog/sdr-or-gtm-engineer-pipeline-hire): Seed founder with one pipeline seat? The questions I ask before recommending an SDR or a GTM engineer, plus outside data on GTM engineer hiring and pay.
 
 ## Company
 
