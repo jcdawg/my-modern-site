@@ -38,7 +38,7 @@ export default function HowToHireSaasSdrsFastRamp() {
                 name: "How long does it take an SDR or AE to ramp to full productivity?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Realistic bands: an SDR with a matching motion can handle volume in roughly 2 to 4 weeks, an AE commonly needs 60 to 90 days to reach full quota, and a senior revenue role can take a full quarter-plus. Budget for it and protect it; hiring 'fast' still requires a 30-day sprint plan.",
+                    text: "Realistic bands: an SDR with a matching motion can handle volume in roughly 2 to 4 weeks, but the Bridge Group's 2025 SDR survey puts average SDR ramp at 3.0 months. An AE with a matching motion can handle volume in 30 to 60 days. Ramp to baseline quota runs 4.5 to 5 months for SMB and mid-market AEs and 7 to 9 months for enterprise AEs, per Sloane, a recruiter benchmark. The Bridge Group's 2026 survey puts the average for all AEs at 6.2 months. Budget for it and protect it; hiring 'fast' still requires a 30-day sprint plan.",
                 },
             },
             {
@@ -85,9 +85,10 @@ export default function HowToHireSaasSdrsFastRamp() {
     ];
 
     const rampRows = [
-        { role: "SDR (motion-matched)", handleVolume: "2 to 4 weeks", fullQuota: "4 to 8 weeks", notes: "Fastest seat to productivity; wins on volume and repetition." },
-        { role: "AE (closed-won, motion-matched)", handleVolume: "30 to 60 days", fullQuota: "60 to 90 days", notes: "Needs pipeline runway to develop before closed revenue shows." },
-        { role: "Senior AE / Sales Manager", handleVolume: "60+ days", fullQuota: "Quarter-plus", notes: "Transfers strategy and leadership, but quota proof takes a cycle." },
+        { role: "SDR (motion-matched)", handleVolume: "2 to 4 weeks", fullQuota: "About 3 months on average. Bridge Group 2025 SDR survey: 3.0 months. Sloane, a recruiter: 3.2 months.", notes: "Fastest seat to productivity; wins on volume and repetition. A motion match gets calls going in weeks, but full ramp still averages about three months." },
+        { role: "AE, SMB or mid-market (closed-won, motion-matched)", handleVolume: "30 to 60 days", fullQuota: "4.5 to 5 months to baseline quota (Sloane, a recruiter benchmark). Bridge Group 2026: 6.2 months average across all AEs, the longest on record.", notes: "Needs pipeline runway to develop before closed revenue shows." },
+        { role: "Enterprise AE", handleVolume: "Set by cycle length", fullQuota: "7 to 9 months to baseline quota (Sloane, a recruiter benchmark). No independent dataset isolates enterprise AEs.", notes: "Longer cycles and bigger buying committees push the first closed deal out. Judge the seat later." },
+        { role: "Senior AE / Sales Manager", handleVolume: "60+ days", fullQuota: "At least one full sales cycle. No published benchmark found.", notes: "Transfers strategy and leadership, but quota proof takes a cycle." },
         { role: "New to the motion (high risk)", handleVolume: "90+ days", fullQuota: "2+ quarters", notes: "Hiring a motion mismatch is the most expensive shortcut you can take." },
     ];
 
@@ -179,8 +180,8 @@ export default function HowToHireSaasSdrsFastRamp() {
                             Hiring SDRs and AEs who are productive in weeks instead of quarters is about hiring for{" "}
                             <strong className="text-white">the motion you already run</strong>, not for generic sales talent. A zero-ramp candidate has three markers: a matching activity pattern (same call volume and pipeline stage),{" "}
                             <strong className="text-white">quota-verified numbers</strong> (not just &quot;I hit 110%&quot;), and a playbook that fits your offer and ACV band. Budget a realistic ramp (SDRs handle volume in{" "}
-                            <strong className="text-white">2 to 4 weeks</strong>, AEs reach full quota in{" "}
-                            <strong className="text-white">60 to 90 days</strong>) and protect it with a written 30-day sprint and ramp-friendly comp. For Seed through Series B with bursty volume, fractional sales hiring covers SDR/AE seats at Milestone Search example fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) or a fractional retainer with zero success fees, instead of paying for a full-time desk.
+                            <strong className="text-white">2 to 4 weeks</strong> and average about <strong className="text-white">3 months</strong> to full ramp, AEs average{" "}
+                            <strong className="text-white">6.2 months</strong> per the Bridge Group, and enterprise AEs run <strong className="text-white">7 to 9 months</strong> by one recruiter benchmark) and protect it with a written 30-day sprint and ramp-friendly comp. For Seed through Series B with bursty volume, fractional sales hiring covers SDR/AE seats at Milestone Search example fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) or a fractional retainer with zero success fees, instead of paying for a full-time desk.
                         </p>
                     </div>
                     <div className="space-y-8">
@@ -192,7 +193,7 @@ export default function HowToHireSaasSdrsFastRamp() {
                             Most teams mis-hire salespeople by optimizing for the resume: the right title, the right industry, the right number of years. But ramp time is a function of <strong>motion match</strong>, not years. A seller who ran a $100k-ACV, meetings-or-die SDR motion will out-produce a &quot;senior AE&quot; who only ever sold $5k self-serve seats, in the same first 60 days, because the activity pattern transfers while the story does not.
                         </p>
                         <p className="text-grey-600 leading-relaxed">
-                            The hidden cost of getting this wrong is compounding: a 90-day ramp that becomes a 6-month stall, then a re-hire, then another ramp. For quota-driven SDR/AE seats, the cheapest lever is to hire for the motion you run and to verify the numbers before you start the clock.
+                            The hidden cost of getting this wrong is compounding: a ramp that runs past plan and becomes a 6-month stall, then a re-hire, then another ramp. For quota-driven SDR/AE seats, the cheapest lever is to hire for the motion you run and to verify the numbers before you start the clock.
                         </p>
                     </div>
 
@@ -341,7 +342,7 @@ export default function HowToHireSaasSdrsFastRamp() {
                                     <tr className="border-b border-grey-200">
                                         <th className="py-4 px-6 font-bold text-navy-900">Role</th>
                                         <th className="py-4 px-6 font-bold text-navy-900">Handle volume</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">Full quota</th>
+                                        <th className="py-4 px-6 font-bold text-navy-900">Baseline quota or full ramp (published benchmarks)</th>
                                         <th className="py-4 px-6 font-bold text-navy-900">Note</th>
                                     </tr>
                                 </thead>
@@ -357,6 +358,10 @@ export default function HowToHireSaasSdrsFastRamp() {
                                 </tbody>
                             </table>
                         </div>
+                        <p className="text-sm text-grey-500 leading-relaxed">
+                            Sources: The Bridge Group, SDR Models, Motions &amp; Metrics 2025 (351 B2B companies), https://www.bridgegroupinc.com/research/2025-sdr-models-metrics-report-the-bridge-group. The Bridge Group, AE Models, Motions &amp; Metrics 2026 (158 B2B companies), https://www.bridgegroupinc.com/research/2026-ae-models-motions-metrics. Sloane Staffing, 2026 GTM Hiring Benchmarks, a recruiter&apos;s figures, not audited, https://www.sloane-staffing.com/insights/2026-gtm-hiring-benchmarks/. These are averages. Your motion, deal size and sales cycle move them. For enterprise seats, see{" "}
+                            <Link href="/guides/how-to-hire-enterprise-account-executive" className="text-blue-accent hover:underline">how to hire an enterprise account executive</Link>.
+                        </p>
                         <p className="text-grey-600 leading-relaxed">
                             Even a perfect motion match needs a deliberate first 30 days. Assign an owner, a script, a sequence, and a check-in cadence. The candidates ramp fast; the process has to, too.
                         </p>
