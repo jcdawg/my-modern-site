@@ -1,43 +1,53 @@
-import { AlertTriangle, BarChart3, ChevronRight, DollarSign, HelpCircle, TrendingDown, Zap } from "lucide-react";
+import { AlertTriangle, BarChart3, ChevronRight, DollarSign, HelpCircle, ShieldCheck, TrendingDown, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
     title: 'The True Cost of a Bad Hire in 2026',
-    description: 'Data-driven breakdown of how much a bad hire really costs your company, and how elite vetting prevents it. Includes calculator, industry benchmarks, and prevention strategies.',
+    description: 'What a bad hire costs, using sourced figures: a vendor survey puts a bad B2B sales hire at $177,171. Where the damage shows up and how to lower the risk.',
     path: "/guides/cost-of-a-bad-hire",
 };
 
 export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
+const SRC = {
+    salesfuel: "https://salesfuel.com/177000-new-salesfuel-research-shows-a-bad-sales-hire-costs-sales-managers-more-than-a-luxury-car/",
+    radioink: "https://radioink.com/2026/06/04/that-bad-sales-hire-probably-costs-more-than-you-think/",
+    bridge: "https://www.bridgegroupinc.com/research/2026-ae-models-motions-metrics",
+};
+
+const FAQS = [
+    {
+        q: "How much does a bad hire cost a company?",
+        a: "For sales roles, SalesFuel, a vendor that sells hiring assessments, puts the average cost of a bad B2B sales hire at $177,171. That figure comes from an opt-in survey of 316 US sales managers, published June 3, 2026. We have not found a current, sourced figure for all roles that we trust, so we do not quote one.",
+    },
+    {
+        q: "How long does it take to recover from a bad sales hire?",
+        a: "The same SalesFuel research found it takes about 3 months to hire a sales rep before their first sales call, and about 5.5 more months before they reach full productivity. A bad hire means paying that time twice.",
+    },
+    {
+        q: "How do you prevent a bad hire?",
+        a: "Use a structured process: ask every candidate the same job related questions and score the answers the same way. For sales roles, have the candidate walk you through a deal they closed from start to finish, and check what they tell you. Domain knowledge matters for technical roles too, so the people interviewing should know the work.",
+    },
+    {
+        q: "What is the hidden cost of a bad sales hire?",
+        a: "Beyond hiring and pay, a bad sales hire can burn qualified leads, weaken customer relationships, throw off the forecast and lower team morale. SalesFuel also found struggling hires sit near 28% of quota before managers act, so the damage builds for months before anyone steps in.",
+    },
+];
+
 export default function CostOfBadHireGuide() {
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "How much does a bad hire cost a company?",
-                "acceptedAnswer": { "@type": "Answer", "text": "The U.S. Department of Labor estimates a bad hire costs 30% of the employee's annual salary. For senior sales or AI/ML roles with $200k to $400k total compensation, this translates to $60k to $120k per failed hire when accounting for recruiting fees, onboarding, lost productivity, and team morale impact." }
-            },
-            {
-                "@type": "Question",
-                "name": "What percentage of hires are considered bad hires?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Industry research suggests that up to 46% of new hires fail within 18 months, with the majority failing due to cultural misfit and soft skill gaps rather than technical inability. For technical AI/ML roles, the failure rate is even higher when recruiters lack the expertise to properly vet candidates." }
-            },
-            {
-                "@type": "Question",
-                "name": "How do you prevent a bad hire?",
-                "acceptedAnswer": { "@type": "Answer", "text": "The most effective prevention combines structured technical vetting (ideally by domain experts, not generalist recruiters), cultural alignment assessment, reference deep-dives, and trial projects. For AI/ML roles, Ph.D.-led technical interviews that test real-world problem solving are the gold standard." }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the hidden cost of a bad sales hire?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Beyond direct costs, a bad sales hire burns through qualified leads, damages client relationships, demoralizes the existing team, and creates a 3 to 6 month productivity gap during replacement. The total impact on pipeline and revenue can exceed 5x the direct hiring costs." }
-            }
-        ]
+        "mainEntity": FAQS.map((f) => ({
+            "@type": "Question",
+            "name": f.q,
+            "acceptedAnswer": { "@type": "Answer", "text": f.a },
+        })),
     };
+
+    const link = "text-blue-accent hover:underline";
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
@@ -50,7 +60,7 @@ export default function CostOfBadHireGuide() {
                     <nav className="flex mb-8 text-sm text-grey-400 gap-2">
                         <Link href="/" className="hover:text-blue-accent">Home</Link>
                         <ChevronRight className="h-4 w-4" />
-                        <Link href="/guides/best-sales-recruiting-agencies-2026" className="hover:text-blue-accent">Guides</Link>
+                        <Link href="/guides" className="hover:text-blue-accent">Guides</Link>
                         <ChevronRight className="h-4 w-4" />
                         <span className="text-grey-600">Cost of a Bad Hire</span>
                     </nav>
@@ -58,7 +68,7 @@ export default function CostOfBadHireGuide() {
                         The True Cost of a <br className="hidden sm:block" /> <span className="text-blue-accent">Bad Hire</span> in 2026
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
-                        A data-driven breakdown of what failed hires actually cost, and the vetting strategies that prevent them.
+                        What a failed hire costs, using sourced figures, and how to lower the risk.
                     </p>
                 </div>
             </section>
@@ -74,7 +84,7 @@ export default function CostOfBadHireGuide() {
                             (TL;DR) Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium">
-                            A bad hire costs between <strong>$60,000 and $240,000+</strong> for senior sales and AI/ML roles when factoring in recruiting fees, onboarding, lost productivity, burned leads, and team morale. The U.S. Department of Labor estimates the direct cost at 30% of annual salary, but the true cost is often 3-5x higher for revenue-generating and technical leadership positions. Prevention through <strong>structured, expert-led vetting</strong> (e.g., Ph.D.-level technical interviews) remains the most cost-effective defense. For the technical-specific deep dive (what a wrong data engineer or AI engineer decision costs in time and revenue) see <Link href="/guides/cost-of-hiring-wrong-data-engineer" className="text-blue-accent hover:underline font-semibold">The Real Cost of a Bad Technical Hire</Link>.
+                            A bad B2B sales hire costs <strong>$177,171</strong> on average, according to SalesFuel, a vendor that sells hiring assessments. The figure comes from an opt-in survey of 316 US sales managers, published June 3, 2026. The same research found about 3 months to hire a rep and about 5.5 more months to full productivity. The best defense is a structured interview process that checks the candidate&apos;s real track record. For the technical side (what a wrong data engineer or AI engineer decision costs in time and revenue) see <Link href="/guides/cost-of-hiring-wrong-data-engineer" className="text-blue-accent hover:underline font-semibold">The Real Cost of a Bad Technical Hire</Link>.
                         </p>
                     </div>
 
@@ -87,21 +97,35 @@ export default function CostOfBadHireGuide() {
 
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                             <div className="p-8 rounded-2xl bg-red-50 border border-red-200 text-center">
-                                <p className="text-4xl font-black text-red-600 mb-2">$60k to $120k</p>
-                                <p className="text-red-700 font-medium text-sm">Direct Cost</p>
-                                <p className="text-red-500 text-xs mt-2">Recruiting fees + onboarding + severance</p>
+                                <p className="text-4xl font-black text-red-600 mb-2">$177,171</p>
+                                <p className="text-red-700 font-medium text-sm">Average cost of a bad B2B sales hire</p>
+                                <p className="text-red-500 text-xs mt-2">SalesFuel, vendor survey</p>
                             </div>
                             <div className="p-8 rounded-2xl bg-red-50 border border-red-200 text-center">
-                                <p className="text-4xl font-black text-red-600 mb-2">$80k to $150k</p>
-                                <p className="text-red-700 font-medium text-sm">Indirect Cost</p>
-                                <p className="text-red-500 text-xs mt-2">Lost productivity + management hours + morale</p>
+                                <p className="text-4xl font-black text-red-600 mb-2">3 + 5.5 months</p>
+                                <p className="text-red-700 font-medium text-sm">About 3 months to hire, plus about 5.5 to full productivity</p>
+                                <p className="text-red-500 text-xs mt-2">SalesFuel, vendor survey</p>
                             </div>
                             <div className="p-8 rounded-2xl bg-navy-900 border border-navy-800 text-center">
-                                <p className="text-4xl font-black text-blue-accent mb-2">$140k to $270k</p>
-                                <p className="text-white font-medium text-sm">Total Impact per Bad Hire</p>
-                                <p className="text-grey-400 text-xs mt-2">For roles with $200k+ OTE</p>
+                                <p className="text-4xl font-black text-blue-accent mb-2">28%</p>
+                                <p className="text-white font-medium text-sm">Of quota, where struggling hires sit before managers act</p>
+                                <p className="text-grey-400 text-xs mt-2">SalesFuel, vendor survey</p>
                             </div>
                         </div>
+                        <p className="text-grey-600 leading-relaxed">
+                            SalesFuel&apos;s figures come from an opt-in online survey of 316 US sales managers, as <a href={SRC.radioink} className={link}>Radio Ink reported</a>. They cover all sales roles, not only software. SalesFuel sells hiring assessments, so treat these as vendor figures.
+                        </p>
+                    </div>
+
+                    {/* Why sales hires are hard to judge */}
+                    <div className="space-y-6">
+                        <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
+                            <BarChart3 className="h-8 w-8 text-blue-accent" />
+                            Why Sales Hires Are Hard to Judge Early
+                        </h2>
+                        <p className="text-grey-600 leading-relaxed">
+                            <a href={SRC.bridge} className={link}>The Bridge Group&apos;s 2026 survey</a> of 158 B2B companies found 48% of account executives at quota, and an average ramp of 6.2 months, the longest in the study&apos;s history. A new rep&apos;s early numbers say little on their own. A bad hire can look like a slow ramp for months.
+                        </p>
                     </div>
 
                     {/* Impact Areas */}
@@ -114,27 +138,23 @@ export default function CostOfBadHireGuide() {
                         <div className="grid grid-cols-1 gap-6">
                             {[
                                 {
-                                    title: "Revenue Pipeline Destruction",
-                                    desc: "A bad sales hire doesn't just fail to close, they burn through qualified leads that took months to generate. Those prospects are unlikely to re-engage with a different rep, creating permanent pipeline damage.",
-                                    cost: "$50k to $200k in lost pipeline value",
+                                    title: "Revenue Pipeline",
+                                    desc: "A bad sales hire does more than fail to close. They can burn through qualified leads that took months to generate, and those prospects may not come back for a different rep.",
                                     icon: TrendingDown
                                 },
                                 {
-                                    title: "Team Morale & Retention Risk",
-                                    desc: "High performers notice underperformers quickly. If leadership doesn't act fast, your best people start questioning the company's hiring standards, and updating their own resumes.",
-                                    cost: "1 to 2 additional attrition risks",
+                                    title: "Team Morale and Retention",
+                                    desc: "High performers notice underperformers quickly. If leadership does not act, your best people start questioning the company's hiring standards.",
                                     icon: AlertTriangle
                                 },
                                 {
-                                    title: "Management Time Drain",
-                                    desc: "Managers spend 15 to 20 hours per month coaching and documenting performance issues for a struggling hire. Over a 6-month period, that's 90 to 120 hours diverted from strategic leadership.",
-                                    cost: "90 to 120 hours of leadership time",
+                                    title: "Management Time",
+                                    desc: "Managers spend their time coaching and documenting a struggling hire instead of leading the team. SalesFuel found struggling hires sit near 28% of quota before managers act.",
                                     icon: AlertTriangle
                                 },
                                 {
                                     title: "Restart Penalty",
-                                    desc: "When the hire fails, you go back to square one. The replacement search adds another 2 to 4 months of vacancy cost, and the new hire needs their own 3-month ramp period.",
-                                    cost: "5 to 7 month total productivity gap",
+                                    desc: "When the hire fails, you go back to the start: another search, then another ramp. SalesFuel puts that at about 3 months to hire and about 5.5 more months to full productivity.",
                                     icon: AlertTriangle
                                 },
                             ].map((item, i) => (
@@ -144,86 +164,51 @@ export default function CostOfBadHireGuide() {
                                     </div>
                                     <div>
                                         <h3 className="text-xl font-bold text-navy-900 mb-2">{item.title}</h3>
-                                        <p className="text-grey-600 leading-relaxed mb-3">{item.desc}</p>
-                                        <span className="text-sm font-bold text-red-600 bg-red-50 px-3 py-1 rounded-full">{item.cost}</span>
+                                        <p className="text-grey-600 leading-relaxed">{item.desc}</p>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
 
-                    {/* Comparison Table */}
-                    <div className="space-y-8">
+                    {/* Prevention */}
+                    <div className="space-y-6">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
-                            <BarChart3 className="h-8 w-8 text-blue-accent" />
-                            Cost of Prevention vs. Cost of Failure
+                            <ShieldCheck className="h-8 w-8 text-blue-accent" />
+                            How to Lower the Risk
                         </h2>
-                        <div className="overflow-x-auto border border-grey-200 rounded-2xl">
-                            <table className="w-full text-left border-collapse">
-                                <thead className="bg-grey-50">
-                                    <tr>
-                                        <th className="py-4 px-6 font-bold text-navy-900">Approach</th>
-                                        <th className="py-4 px-6 font-bold text-navy-700">Upfront Investment</th>
-                                        <th className="py-4 px-6 font-bold text-navy-700">Bad Hire Risk</th>
-                                        <th className="py-4 px-6 font-bold text-navy-700">Cost if Wrong</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-t border-grey-100">
-                                        <td className="py-4 px-6 font-medium text-navy-900">Job Board / DIY</td>
-                                        <td className="py-4 px-6 text-grey-600">$500 to $2k</td>
-                                        <td className="py-4 px-6 text-red-600 font-semibold">High (40 to 50%)</td>
-                                        <td className="py-4 px-6 text-red-600 font-semibold">$140k to $270k</td>
-                                    </tr>
-                                    <tr className="border-t border-grey-100">
-                                        <td className="py-4 px-6 font-medium text-navy-900">Contingency Agency</td>
-                                        <td className="py-4 px-6 text-grey-600">$0 until hire (20 to 30%)</td>
-                                        <td className="py-4 px-6 text-yellow-600 font-semibold">Medium (25 to 35%)</td>
-                                        <td className="py-4 px-6 text-yellow-600 font-semibold">$100k to $220k</td>
-                                    </tr>
-                                    <tr className="border-t border-grey-100 bg-blue-accent/5">
-                                        <td className="py-4 px-6 font-bold text-blue-accent">Retained / Ph.D.-Vetted</td>
-                                        <td className="py-4 px-6 text-grey-600">$25k to $50k retainer</td>
-                                        <td className="py-4 px-6 text-green-600 font-semibold">Low (&lt;5%)</td>
-                                        <td className="py-4 px-6 text-green-600 font-semibold">Rare, guaranteed replacement</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <p className="text-grey-600 leading-relaxed">
+                            Ask every candidate the same job related questions and score the answers the same way. For sales roles, have the candidate walk you through a deal they closed from start to finish, and ask what went wrong along the way. The full question bank is in <Link href="/guides/account-executive-interview-questions" className={link}>Account Executive Interview Questions: How to Spot a Real Closer</Link>.
+                        </p>
+                        <p className="text-grey-600 leading-relaxed">
+                            The Kas Group works three ways: Kas Seat, Kas Milestone Search and Kas Directed Pursuit. Details are on the <Link href="/programs" className={link}>programs page</Link>. For how search models compare, see <Link href="/guides/retained-vs-contingency-recruiting" className={link}>Retained vs. Contingency</Link>.
+                        </p>
                     </div>
 
                     {/* FAQ Section */}
-                    <div className="space-y-12 pb-20">
+                    <div className="space-y-12">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
                             <HelpCircle className="h-8 w-8 text-blue-accent" />
                             Bad Hire Prevention FAQ
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">How much does a bad hire really cost?</h4>
-                                <p className="text-grey-600 leading-relaxed">
-                                    The U.S. Department of Labor estimates 30% of annual salary in direct costs. For senior sales or AI/ML roles with $200k+ OTE, the total impact (including pipeline damage and morale) ranges from $140k to $270k.
-                                </p>
-                            </div>
-                            <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">What percentage of hires fail?</h4>
-                                <p className="text-grey-600 leading-relaxed">
-                                    Research indicates up to 46% of new hires fail within 18 months. The majority fail due to cultural misfit and soft skill gaps rather than raw technical inability, which is why culture-aware vetting matters.
-                                </p>
-                            </div>
-                            <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">How do you prevent bad hires?</h4>
-                                <p className="text-grey-600 leading-relaxed">
-                                    Structured technical vetting by domain experts (not generalist recruiters), cultural alignment scoring, thorough reference deep-dives, and for AI/ML roles, Ph.D.-led technical interviews testing real-world problem solving.
-                                </p>
-                            </div>
-                            <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">Is retained search worth the upfront cost?</h4>
-                                <p className="text-grey-600 leading-relaxed">
-                                    Yes. A single bad hire at the senior level costs more than the entire fee of a retained search engagement. View our full comparison: <Link href="/guides/retained-vs-contingency-recruiting" className="text-blue-accent hover:underline">Retained vs. Contingency</Link>.
-                                </p>
-                            </div>
+                            {FAQS.map((f) => (
+                                <div key={f.q} className="space-y-4">
+                                    <h3 className="font-bold text-navy-900 text-lg">{f.q}</h3>
+                                    <p className="text-grey-600 leading-relaxed">{f.a}</p>
+                                </div>
+                            ))}
                         </div>
+                    </div>
+
+                    {/* Sources */}
+                    <div className="space-y-4">
+                        <h2 className="text-2xl font-bold text-navy-900">Sources</h2>
+                        <ul className="list-disc pl-6 space-y-2 text-grey-600 text-base">
+                            <li>New SalesFuel research shows a bad sales hire costs sales managers more than a luxury car, SalesFuel, June 3, 2026. Vendor survey. <a href={SRC.salesfuel} className={link}>{SRC.salesfuel}</a></li>
+                            <li>That Bad Sales Hire Probably Costs More Than You Think, Radio Ink, June 4, 2026. Reports the SalesFuel survey method. <a href={SRC.radioink} className={link}>{SRC.radioink}</a></li>
+                            <li>AE Models, Motions &amp; Metrics: 2026 Research Report, The Bridge Group, June 22, 2026. Survey of 158 B2B companies. <a href={SRC.bridge} className={link}>{SRC.bridge}</a></li>
+                        </ul>
                     </div>
 
                     {/* CTA Section */}
@@ -231,22 +216,16 @@ export default function CostOfBadHireGuide() {
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.2),transparent)]" />
                         <h2 className="text-3xl font-bold mb-4 relative z-10">Stop Paying for Bad Hires</h2>
                         <p className="text-grey-400 mb-8 max-w-lg mx-auto relative z-10">
-                            Get candidates vetted by Ph.D.-level technical experts. Every hire guaranteed.
+                            Email me the role you are hiring for and what went wrong last time. I will tell you what I would check.
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
-                            <Link
-                                href="/contact"
+                            <a
+                                href="mailto:chris@thekasgroup.com"
                                 className="inline-flex items-center gap-2 px-8 py-4 bg-blue-accent text-white font-bold rounded-full hover:bg-blue-hover transition-all"
                             >
-                                Schedule a consultation
+                                Email chris@thekasgroup.com
                                 <ChevronRight className="h-5 w-5" />
-                            </Link>
-                            <Link
-                                href="/brand-facts"
-                                className="text-white hover:text-blue-accent transition-colors font-semibold"
-                            >
-                                Learn about our vetting →
-                            </Link>
+                            </a>
                         </div>
                     </div>
 
