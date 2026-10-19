@@ -35,7 +35,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/guides/best-sales-recruiting-agencies-2026": { published: "2026-02-25T15:28:31-05:00", modified: "2026-10-02T13:49:53-04:00" },
     "/guides/account-executive-interview-questions": { published: "2026-10-19T10:00:00-04:00", modified: "2026-10-19T10:00:00-04:00" },
     "/guides/cost-of-a-bad-hire": { published: "2026-03-06T14:56:13-05:00", modified: "2026-10-19T10:30:00-04:00" },
-    "/guides/cost-of-hiring-wrong-data-engineer": { published: "2026-09-01T14:58:37-04:00", modified: "2026-10-14T09:40:00-04:00" },
+    "/guides/cost-of-hiring-wrong-data-engineer": { published: "2026-09-01T14:58:37-04:00", modified: "2026-10-19T10:45:00-04:00" },
     "/guides/data-engineer-vs-analytics-engineer-hiring-guide": { published: "2026-04-27T15:25:34-04:00", modified: "2026-09-10T13:10:14-04:00" },
     "/guides/do-ai-resume-screeners-work": { published: "2026-09-04T15:41:05-04:00", modified: "2026-10-14T09:40:00-04:00" },
     "/guides/fractional-recruiting-for-startups": { published: "2026-09-26T14:53:14-04:00", modified: "2026-10-14T09:40:00-04:00" },
