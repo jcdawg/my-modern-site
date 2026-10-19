@@ -437,6 +437,10 @@ export default function HowToHireSaasSdrsFastRamp() {
                                 {": "}hunter or book of business, and how to check they built the deal
                             </li>
                             <li>
+                                <Link href="/guides/account-executive-interview-questions" className="text-blue-accent hover:underline font-semibold">Account executive interview questions</Link>
+                                {": "}deal walkthrough red flags, the hiccups question and how to run a role play
+                            </li>
+                            <li>
                                 <Link href="/blog/early-stage-sales-comp-first-ae-ote" className="text-blue-accent hover:underline font-semibold">What to pay your first AE</Link>
                                 {": "}OTE ranges by segment and how to pressure-test attainment
                             </li>
