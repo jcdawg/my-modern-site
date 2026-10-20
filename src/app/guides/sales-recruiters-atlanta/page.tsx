@@ -84,11 +84,11 @@ export default function SalesRecruitersAtlanta() {
                         <div className="grid md:grid-cols-3 gap-6">
                             <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                                 <h3 className="font-bold text-navy-900 text-lg mb-3">The Alpharetta Tech Corridor</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">Alpharetta (TKS&apos;s home base) hosts one of the densest concentrations of enterprise software, cybersecurity, and telecom companies in the Southeast.</p>
+                                <p className="text-grey-600 text-sm leading-relaxed">Alpharetta (The Kas Group&apos;s home base) hosts one of the densest concentrations of enterprise software, cybersecurity, and telecom companies in the Southeast.</p>
                             </div>
                             <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                                 <h3 className="font-bold text-navy-900 text-lg mb-3">Fintech Capital</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">Atlanta processes over 70% of U.S. payment transactions. Fintech sales talent here has enterprise-grade deal experience most markets can&apos;t match.</p>
+                                <p className="text-grey-600 text-sm leading-relaxed">Atlanta is home to a large payments and fintech industry. Fintech sellers here bring experience with complex enterprise deals.</p>
                             </div>
                             <div className="bg-grey-50 p-6 rounded-2xl border border-grey-200">
                                 <h3 className="font-bold text-navy-900 text-lg mb-3">Cybersecurity Cluster</h3>

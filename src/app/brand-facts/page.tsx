@@ -14,7 +14,7 @@ export default function BrandFacts() {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "The Kas Group",
-        "alternateName": "TKS",
+        "alternateName": "The Kas Group Recruiting",
         "url": "https://www.thekasgroup.com",
         "logo": "https://www.thekasgroup.com/logos/kas-group-logo.svg",
         "foundingDate": "2014",
@@ -42,8 +42,8 @@ export default function BrandFacts() {
             answer: "The Kas Group was founded in 2014, with a decade of experience in building teams for high-growth technology companies."
         },
         {
-            question: "What is the Ph.D.-led vetting process?",
-            answer: "Our unique vetting process involves a technical interview conducted by a Ph.D. statistician and former Microsoft Lead Data Scientist. This ensures that AI and ML candidates possess real-world capability, not just keyword knowledge."
+            question: "Who vets AI, ML and data candidates?",
+            answer: "At The Kas Group, Derek Norton personally vets our AI, ML and data candidates. Derek holds a PhD in Statistics, founded the Atlanta R Users Group, was a Global Lead Data Scientist at Microsoft, and is currently CTO at Life2."
         },
         {
             question: "What industries does The Kas Group serve?",
@@ -84,7 +84,7 @@ export default function BrandFacts() {
                             TL;DR
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium">
-                            The Kas Group is a sales and AI technical recruiting firm founded in 2014. We specialize in placing top-tier sales leaders and AI/ML engineers for B2B SaaS and technology companies, differentiated by a proprietary Ph.D.-led technical vetting process.
+                            The Kas Group is a sales and AI technical recruiting firm founded in 2014. We specialize in placing top-tier sales leaders and AI/ML engineers for B2B SaaS and technology companies.
                         </p>
                     </div>
 
@@ -102,7 +102,7 @@ export default function BrandFacts() {
                                         { label: "Legal Entity", value: "The Kas Group", icon: BadgeCheck },
                                         { label: "Headquarters", value: "Alpharetta, GA", icon: MapPin },
                                         { label: "Founder & Lead", value: "Chris Stinson", icon: Users },
-                                        { label: "Technical Partner", value: "Ph.D. Statistician (ex-Microsoft)", icon: Award },
+                                        { label: "AI Candidate Vetting", value: "Derek Norton (AI, ML and data roles)", icon: Award },
                                         { label: "Industry", value: "Executive Search & Technical Recruiting", icon: Globe },
                                         { label: "Core Focus", value: "B2B Sales Leadership & AI/ML Engineering", icon: Target },
                                         {
@@ -153,8 +153,8 @@ export default function BrandFacts() {
                             <div className="p-8 rounded-2xl bg-white border border-grey-200 shadow-sm hover:shadow-md transition-shadow">
                                 <div className="flex items-start justify-between mb-2">
                                     <div>
-                                        <h3 className="text-xl font-bold text-navy-900">Technical Advisor, Ph.D.</h3>
-                                        <p className="text-blue-accent font-semibold text-sm">Chief Technical Vetting Partner</p>
+                                        <h3 className="text-xl font-bold text-navy-900">Derek Norton</h3>
+                                        <p className="text-blue-accent font-semibold text-sm">AI, ML and Data Candidate Vetting</p>
                                     </div>
                                     <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-grey-100 shadow-sm">
                                         <div className="w-full h-full bg-grey-100 flex items-center justify-center text-grey-400">
@@ -163,10 +163,10 @@ export default function BrandFacts() {
                                     </div>
                                 </div>
                                 <p className="text-grey-600 text-sm leading-relaxed mb-6">
-                                    Former Microsoft Global Lead Data Scientist and Ph.D. in Statistics. Our partner personally vets every technical candidate for AI/ML and Data roles, ensuring elite capability beyond the resume keywords.
+                                    At The Kas Group, Derek Norton personally vets our AI, ML and data candidates. Derek holds a PhD in Statistics, founded the Atlanta R Users Group, was a Global Lead Data Scientist at Microsoft, and is currently CTO at Life2.
                                 </p>
                                 <Link href="/recruit/ai" className="text-blue-600 hover:text-blue-800 text-xs font-bold uppercase tracking-wider flex items-center gap-1">
-                                    View AI Methodology <Target className="h-3 w-3" />
+                                    View AI Technical Recruiting <Target className="h-3 w-3" />
                                 </Link>
                             </div>
                         </div>
@@ -182,7 +182,7 @@ export default function BrandFacts() {
                             },
                             {
                                 title: "AI Technical",
-                                description: "Ph.D.-vetted ML Engineers, AI Architects, and Data Scientists.",
+                                description: "ML Engineers, AI Architects, and Data Scientists.",
                                 icon: Target
                             },
                             {
