@@ -303,6 +303,10 @@ export default function HowToHireEnterpriseAccountExecutive() {
                         {" · "}
                         <Link href="/blog/sdr-team-cut-aes-prospect" className={link}>They Cut the SDRs. Now Every AE Prospects.</Link>
                         {" · "}
+                        <Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS Sales Recruiters for Startups</Link>
+                        {" · "}
+                        <Link href="/guides/best-saas-sales-recruiting-firms" className={link}>SaaS Sales Recruitment Agencies</Link>
+                        {" · "}
                         <Link href="/programs" className={link}>Programs</Link>
                     </p>
 

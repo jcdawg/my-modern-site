@@ -309,6 +309,10 @@ export default function AccountExecutiveInterviewQuestions() {
                         {" · "}
                         <Link href="/guides/cost-of-a-bad-hire" className={link}>The Cost of a Bad Hire</Link>
                         {" · "}
+                        <Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS Sales Recruiters for Startups</Link>
+                        {" · "}
+                        <Link href="/guides/best-saas-sales-recruiting-firms" className={link}>SaaS Sales Recruitment Agencies</Link>
+                        {" · "}
                         <Link href="/programs" className={link}>Programs</Link>
                     </p>
 

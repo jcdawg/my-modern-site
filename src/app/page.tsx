@@ -6,13 +6,13 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = {
   ...pageMetadata({
-    title: "The Kas Group | Elite Sales & AI Technical Recruiting",
+    title: "The Kas Group | Sales Recruiting Firm for SaaS & AI",
     description:
-      "The Kas Group recruits for B2B SaaS and AI companies: VPs of Sales, CROs, AEs, SDRs, and AI/ML engineers. Programs, not contingency. Founded 2014.",
+      "The Kas Group is a sales recruiting firm for B2B SaaS and AI companies: VPs of Sales, CROs, AEs and SDRs, plus AI/ML engineers. Alpharetta, GA, since 2014.",
     path: "/",
   }),
   title: {
-    absolute: "The Kas Group | Elite Sales & AI Technical Recruiting",
+    absolute: "The Kas Group | Sales Recruiting Firm for SaaS & AI",
   },
 };
 
@@ -115,9 +115,9 @@ export default function Home() {
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-accent/5 rounded-full blur-3xl" />
         <div className="mx-auto max-w-5xl text-center relative z-10">
           <h1 className="font-heading text-3xl font-extrabold tracking-tight text-navy-900 sm:text-4xl mb-6 leading-[1.15]">
-            Sales leaders and Ph.D.-vetted AI/ML talent. <br className="hidden md:block" />
-            Programs, not contingency. Your company owns the candidate data. <br className="hidden md:block" />
-            <span className="text-blue-accent">Built for tech and SaaS teams</span>
+            The Kas Group: sales recruiting for tech and SaaS teams. <br className="hidden md:block" />
+            Sales leaders, AEs and SDRs, plus vetted AI/ML talent. <br className="hidden md:block" />
+            <span className="text-blue-accent">Your company owns the candidate data</span>
           </h1>
           <p className="mt-8 text-xl font-medium text-grey-500 md:text-2xl max-w-3xl mx-auto leading-relaxed">
             Monthly hiring capacity, milestone search, or an AI-sourced list. The Kas Group vets and you direct. You keep the data either way.
@@ -147,8 +147,8 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-blue-accent font-bold uppercase tracking-wider text-sm mb-4">The Problem</h2>
             <p className="text-3xl md:text-4xl font-bold text-navy-900">
-              Most recruiting firms screen by keyword. <br className="hidden md:block" />
-              We screen by <span className="italic">capability.</span>
+              The Kas Group screens sales and AI candidates <br className="hidden md:block" />
+              by <span className="italic">capability.</span>
             </p>
           </div>
 
@@ -165,8 +165,8 @@ export default function Home() {
               <div className="h-14 w-14 rounded-2xl bg-red-50 flex items-center justify-center text-red-500 mb-6">
                 <XCircle className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold text-navy-900 mb-4">Buzzword matching isn&apos;t vetting</h3>
-              <p className="text-grey-500 leading-relaxed">Generalist recruiters can&apos;t verify an enterprise closer&apos;s true win rate, nor can they differentiate a real AI architect from a hobbyist.</p>
+              <h3 className="text-xl font-bold text-navy-900 mb-4">Vetting that checks real results</h3>
+              <p className="text-grey-500 leading-relaxed">The Kas Group checks a sales candidate&apos;s quota history and deal stories, and AI candidates get a technical assessment.</p>
             </div>
 
             <div className="p-8 rounded-3xl bg-grey-50 border border-grey-100 flex flex-col items-center text-center">
