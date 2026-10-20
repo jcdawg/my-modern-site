@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, AlertTriangle, XCircle, GraduationCap, Zap, Award, Target, Briefcase, ChevronRight, Users, Trophy, Database, BookOpen } from "lucide-react";
+import { ArrowRight, AlertTriangle, XCircle, Zap, Award, Target, Briefcase, ChevronRight, Users, Trophy, Database, BookOpen } from "lucide-react";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ const homepageJsonLd = {
       "@type": ["Organization", "EmploymentAgency"],
       "@id": "https://www.thekasgroup.com/#organization",
       "name": "The Kas Group",
-      "alternateName": ["TKS", "The Kas Group Recruiting", "The Kas Group Executive Search"],
+      "alternateName": ["The Kas Group Recruiting", "The Kas Group Executive Search"],
       "url": "https://www.thekasgroup.com",
       "logo": {
         "@type": "ImageObject",
@@ -32,7 +32,7 @@ const homepageJsonLd = {
         "height": 60,
       },
       "foundingDate": "2014",
-      "description": "The Kas Group is an elite sales and AI technical recruiting firm specializing in placing B2B SaaS sales leaders (VP of Sales, CRO, AEs) and Ph.D.-vetted AI/ML engineers for high-growth tech companies.",
+      "description": "The Kas Group is a sales and AI technical recruiting firm specializing in placing B2B SaaS sales leaders (VP of Sales, CRO, AEs) and AI/ML engineers for high-growth tech companies.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Alpharetta",
@@ -80,7 +80,7 @@ const homepageJsonLd = {
           {
             "@type": "Offer",
             "name": "AI & Data Engineering Recruiting",
-            "description": "Ph.D.-vetted placement of ML Engineers, AI Architects, and Senior Data Engineers.",
+            "description": "Placement of ML Engineers, AI Architects, and Senior Data Engineers. At The Kas Group, Derek Norton personally vets our AI, ML and data candidates. Derek holds a PhD in Statistics, founded the Atlanta R Users Group, was a Global Lead Data Scientist at Microsoft, and is currently CTO at Life2.",
             "url": "https://www.thekasgroup.com/recruit/ai",
           },
         ],
@@ -158,7 +158,7 @@ export default function Home() {
                 <AlertTriangle className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold text-navy-900 mb-4">46% of new hires fail within 18 months</h3>
-              <p className="text-grey-500 leading-relaxed">Hiring the wrong sales leader burns your pipeline, while a poorly vetted engineer stalls your product roadmap.</p>
+              <p className="text-grey-500 leading-relaxed">Leadership IQ tracking, <a href="https://www.shrm.org/labs/resources/when-candidates-can-fake-skills-real-time-assessment-design" className="text-blue-accent hover:underline">cited by SHRM</a>, finds 46% of new hires fail within 18 months. A wrong sales hire burns pipeline, and a poorly vetted engineer stalls the roadmap.</p>
             </div>
 
             <div className="p-8 rounded-3xl bg-grey-50 border border-grey-100 flex flex-col items-center text-center">
@@ -192,11 +192,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="space-y-6">
               <div className="h-16 w-16 rounded-2xl bg-blue-accent flex items-center justify-center text-white shadow-lg shadow-blue-accent/20">
-                <GraduationCap className="h-9 w-9" />
+                <Trophy className="h-9 w-9" />
               </div>
-              <h3 className="text-2xl font-bold tracking-tight">Ph.D.-Led Technical Vetting</h3>
+              <h3 className="text-2xl font-bold tracking-tight">Quota Verified Sales Hiring</h3>
               <p className="text-grey-400 text-lg leading-relaxed">
-                Our technical advisor (PhD Statistics, ex-Microsoft Lead Data Scientist) personally assesses every AI/ML candidate.
+                The Kas Group checks each sales candidate&apos;s quota history and deal stories before you meet them.
               </p>
             </div>
 
@@ -220,6 +220,22 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* AI Technical Recruiting Section */}
+      <section className="py-20 bg-white">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
+          <div className="mx-auto h-14 w-14 rounded-2xl bg-blue-accent/10 flex items-center justify-center text-blue-accent mb-6">
+            <Database className="h-7 w-7" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mb-6">AI Technical Recruiting</h2>
+          <p className="text-lg text-grey-600 leading-relaxed mb-6">
+            At The Kas Group, Derek Norton personally vets our AI, ML and data candidates. Derek holds a PhD in Statistics, founded the Atlanta R Users Group, was a Global Lead Data Scientist at Microsoft, and is currently CTO at Life2.
+          </p>
+          <Link href="/recruit/ai" className="inline-flex items-center gap-2 text-navy-700 font-bold hover:text-blue-accent transition-colors">
+            See AI technical recruiting <ArrowRight className="h-5 w-5" />
+          </Link>
         </div>
       </section>
 

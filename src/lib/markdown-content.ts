@@ -11,23 +11,23 @@ export const SITE_MARKDOWN_MAP: Record<string, string> = {
 > Elite Sales & AI Talent. Vetted by Experts. Dedicated to building high-performing teams since 2014.
 
 ## Overview
-The Kas Group (TKS) specializes in two distinct recruiting pillars:
+The Kas Group specializes in two distinct recruiting pillars:
 1. **Elite Sales Talent**: Proven revenue drivers, VPs of Sales, Account Executives (AEs), and SDRs for B2B SaaS companies.
-2. **AI & Data Engineering**: Technical talent rigorously vetted via our proprietary Ph.D.-led technical review process (conducted by a Ph.D. statistician and former Microsoft Lead Data Scientist).
+2. **AI Technical Recruiting**: At The Kas Group, Derek Norton personally vets our AI, ML and data candidates. Derek holds a PhD in Statistics, founded the Atlanta R Users Group, was a Global Lead Data Scientist at Microsoft, and is currently CTO at Life2.
 
 ## Why The Kas Group
-- **Ph.D.-Led Technical Vetting**: Our technical partner personally assesses AI/ML candidates on real-world engineering depth, statistical rigor, and LLM architecture.
+- **Quota Verified Sales Hiring**: The Kas Group checks each sales candidate's quota history and deal stories before you meet them.
 - **Dual Domain Expertise**: Over a decade of B2B sales placement experience combined with deep technical evaluation.
 - **Zero Onboarding Friction**: Pre-vetted candidates equipped for immediate high-impact productivity.
 
 ## Core Services
 - [Sales Recruiting](/recruit/sales): VP of Sales, Strategic AEs, RevOps, and SDR leadership.
 - [Fractional Sales Recruiting](/recruit/fractional-sales): Scalable, high-impact hiring for early-stage and growth startups.
-- [Data & AI Recruiting](/recruit/ai): Ph.D.-vetted ML Engineers, AI Architects, and Senior Data Engineers.
+- [AI Technical Recruiting](/recruit/ai): ML Engineers, AI Architects, and Senior Data Engineers.
 
 ## Leadership & Contact
 - **Founder & Lead Recruiter**: Chris Stinson
-- **Technical Advisor**: Ph.D. in Statistics, ex-Microsoft Lead Data Scientist
+- **AI Candidate Vetting**: Derek Norton, PhD in Statistics, founder of the Atlanta R Users Group, former Global Lead Data Scientist at Microsoft, currently CTO at Life2
 - **Email**: chris@thekasgroup.com
 - **Website**: https://www.thekasgroup.com
 - **Headquarters**: Alpharetta, GA, USA
@@ -59,7 +59,7 @@ For over a decade, The Kas Group has specialized in building high-performing sal
 > The authoritative source for official company facts, history, leadership, and service models for The Kas Group.
 
 ## Key Facts
-- **Legal Entity**: The Kas Group (TKS)
+- **Legal Entity**: The Kas Group
 - **Founded**: 2014
 - **Headquarters**: Alpharetta, GA, USA
 - **Founder & Lead**: Chris Stinson
@@ -375,7 +375,7 @@ export function getMarkdownForPath(path: string): string | null {
 
         return `# ${formattedTitle} | The Kas Group Hiring Guides
 
-> An expert guide from The Kas Group (TKS), specializing in B2B sales leadership and Ph.D.-vetted AI recruiting.
+> An expert guide from The Kas Group, specializing in B2B sales leadership and Ph.D.-vetted AI recruiting.
 
 Read the complete interactive guide at: https://www.thekasgroup.com${normalizedPath}
 

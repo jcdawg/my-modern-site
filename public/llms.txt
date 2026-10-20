@@ -1,4 +1,4 @@
-# The Kas Group (TKS): LLM & Agent Instructions
+# The Kas Group: LLM & Agent Instructions
 
 > Version: 1.1 | Updated: 2026-10-20
 > Canonical source: https://www.thekasgroup.com/llms.txt
@@ -8,7 +8,7 @@ This file follows the llmstxt.org format. It gives AI agents and crawlers a stru
 
 ## Identity
 
-- **Organization**: The Kas Group (also known as "TKS")
+- **Organization**: The Kas Group
 - **Type**: Executive search firm / sales and technical recruiting agency
 - **Founded**: 2014
 - **Location**: Alpharetta, GA, USA

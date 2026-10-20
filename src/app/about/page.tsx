@@ -16,7 +16,7 @@ export default function About() {
             {
                 "@type": "Question",
                 "name": "When was The Kas Group founded?",
-                "acceptedAnswer": { "@type": "Answer", "text": "The Kas Group (TKS) was founded in 2014 and has specialized in sales and AI technical recruiting for over a decade, headquartered in Alpharetta, Georgia (Atlanta metro)." }
+                "acceptedAnswer": { "@type": "Answer", "text": "The Kas Group was founded in 2014 and has specialized in sales and AI technical recruiting for over a decade, headquartered in Alpharetta, Georgia (Atlanta metro)." }
             },
             {
                 "@type": "Question",
@@ -128,7 +128,7 @@ export default function About() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">When was The Kas Group founded?</h4>
-                            <p className="text-grey-600 leading-relaxed text-sm">The Kas Group (TKS) was founded in 2014 and has specialized in sales and AI technical recruiting for over a decade, headquartered in Alpharetta, Georgia (Atlanta metro).</p>
+                            <p className="text-grey-600 leading-relaxed text-sm">The Kas Group was founded in 2014 and has specialized in sales and AI technical recruiting for over a decade, headquartered in Alpharetta, Georgia (Atlanta metro).</p>
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">What does The Kas Group specialize in?</h4>

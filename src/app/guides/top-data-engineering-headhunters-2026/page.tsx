@@ -98,7 +98,7 @@ export default function DataEngineeringHeadhunters() {
                         <div className="relative z-10">
                             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-accent/20 text-blue-accent font-bold text-xs uppercase tracking-widest mb-6">
                                 <ShieldCheck className="h-4 w-4" />
-                                The TKS Standard
+                                The The Kas Group Standard
                             </div>
                             <h2 className="text-3xl font-bold mb-6">Ph.D.-Led Vetting: <br /><span className="text-blue-accent">Zero Buzzword Tolerance</span></h2>
                             <p className="text-grey-300 text-lg leading-relaxed mb-8 max-w-2xl">

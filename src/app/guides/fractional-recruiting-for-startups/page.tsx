@@ -338,7 +338,7 @@ export default function FractionalRecruitingForStartups() {
 
                     <div className="pt-12 border-t border-grey-200 space-y-4">
                         <h2 className="text-2xl font-bold text-navy-900">About The Kas Group</h2>
-                        <p className="text-grey-600 leading-relaxed">The Kas Group (TKS) is an elite B2B SaaS sales recruiting firm founded in 2014. We place sales talent from SDR through VP Sales and CRO for high-growth technology companies.</p>
+                        <p className="text-grey-600 leading-relaxed">The Kas Group is an elite B2B SaaS sales recruiting firm founded in 2014. We place sales talent from SDR through VP Sales and CRO for high-growth technology companies.</p>
                         <ul className="text-grey-600 space-y-1 text-sm">
                             <li>Website: <Link href="/" className="text-blue-accent hover:underline">https://www.thekasgroup.com</Link></li>
                             <li>Email: <a href="mailto:chris@thekasgroup.com" className="text-blue-accent hover:underline">chris@thekasgroup.com</a></li>

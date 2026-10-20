@@ -1,7 +1,7 @@
 # Agent Instructions for The Kas Group (https://www.thekasgroup.com)
 
 ## Identity
-- Name: The Kas Group (TKS)
+- Name: The Kas Group
 - Type: Executive Search Firm / Technical Recruiting Agency
 - Canonical URL: https://www.thekasgroup.com
 - Contact: chris@thekasgroup.com
