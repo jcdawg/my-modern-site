@@ -36,6 +36,7 @@ export default function Sitemap() {
                                 <li><Link href="/recruit/sales" className="text-lg text-grey-600 hover:text-blue-accent transition-colors">Sales Recruiting</Link></li>
                                 <li><Link href="/recruit/fractional-sales" className="text-lg text-grey-600 hover:text-blue-accent transition-colors">Fractional Sales</Link></li>
                                 <li><Link href="/recruit/ai" className="text-lg text-grey-600 hover:text-blue-accent transition-colors">Data & AI Recruiting</Link></li>
+                                <li><Link href="/insurance" className="text-lg text-grey-600 hover:text-blue-accent transition-colors">AI &amp; Data Hiring for Insurance</Link></li>
                             </ul>
                         </div>
 

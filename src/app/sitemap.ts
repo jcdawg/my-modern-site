@@ -24,6 +24,7 @@ const entries: Entry[] = [
     { path: '/guides/how-to-hire-ai-ml-engineers', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/retained-vs-contingency-recruiting', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/recruit/ai', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/insurance', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/recruit/fractional-sales', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/blog', changeFrequency: 'weekly', priority: 0.5 },
     { path: '/methodology', changeFrequency: 'monthly', priority: 0.8 },

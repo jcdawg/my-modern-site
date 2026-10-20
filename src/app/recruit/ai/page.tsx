@@ -160,7 +160,7 @@ export default function AIRecruiting() {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                                     <div className="p-4 rounded-lg bg-white border border-grey-200 shadow-sm">
                                         <h4 className="font-bold text-navy-900 text-sm mb-2 uppercase tracking-wider">Education</h4>
-                                        <p className="text-sm text-grey-500 font-medium">Bachelors, Masters, and PhD (ABD) in Statistics with a focus in Financial Econometrics and Applied Computational Statistics (Data Mining).</p>
+                                        <p className="text-sm text-grey-500 font-medium">Bachelors, Masters, and PhD in Statistics with a focus in Financial Econometrics and Applied Computational Statistics (Data Mining).</p>
                                     </div>
                                     <div className="p-4 rounded-lg bg-white border border-grey-200 shadow-sm">
                                         <h4 className="font-bold text-navy-900 text-sm mb-2 uppercase tracking-wider">Microsoft Background</h4>
