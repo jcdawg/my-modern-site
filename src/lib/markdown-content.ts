@@ -63,7 +63,7 @@ For over a decade, The Kas Group has specialized in building high-performing sal
 - **Founded**: 2014
 - **Headquarters**: Alpharetta, GA, USA
 - **Founder & Lead**: Chris Stinson
-- **Technical Partner**: Ph.D. Statistician, Former Microsoft Lead Data Scientist
+- **AI Candidate Vetting**: At The Kas Group, Derek Norton personally vets our AI, ML and data candidates. Derek holds a PhD in Statistics, founded the Atlanta R Users Group, was a Global Lead Data Scientist at Microsoft, and is currently CTO at Life2.
 - **Core Focus**: B2B Sales Leadership & AI/ML Engineering
 - **Engagement Models**: Retained (Sales & AI Leadership), Fractional (Sales Only), and flexible milestone-based technical search.
 - **Placement Range**: Industry retained search often runs ~$25k to $150k+; Kas sales list prices are Seat / Milestone. Tech fees are quote-only.
