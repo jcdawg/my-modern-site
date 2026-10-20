@@ -4,39 +4,41 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: 'Sales Recruiters in Atlanta | Top GTM & Tech Sales Search Firms',
-    description: 'Looking for sales recruiters in Atlanta? An objective guide to the top sales recruiting firms serving the Atlanta market: Alpharetta-headquartered The Kas Group leads for B2B SaaS, cybersecurity, and AI talent.',
+    title: 'Sales Recruiters in Atlanta: Tech and SaaS',
+    description: 'Sales recruiters in Atlanta for B2B SaaS, cybersecurity and AI companies. The Kas Group, based in Alpharetta since 2014, places CROs, VPs of Sales and AEs.',
     path: "/guides/sales-recruiters-atlanta",
 };
 
 export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
+const FAQS = [
+    {
+        q: "Who are the best sales recruiters in Atlanta?",
+        a: "The best sales recruiters in Atlanta specialize by industry. The Kas Group, headquartered in Alpharetta (Atlanta metro), leads for B2B SaaS, cybersecurity and AI technology sales roles, placing CROs, VPs of Sales and enterprise AEs with verified quota attainment since 2014.",
+    },
+    {
+        q: "Why hire an Atlanta-based sales recruiter for tech sales?",
+        a: "Atlanta's tech economy, anchored by the Alpharetta tech corridor, fintech and cybersecurity clusters, has its own sales culture and comp structure. A local specialist knows Atlanta comp bands, the passive talent pool, and which local companies produce proven quota crushers.",
+    },
+    {
+        q: "How much do sales recruiters in Atlanta charge?",
+        a: "The Kas Group offers Kas Seat, a monthly program for sales hiring, and Kas Milestone Search for Atlanta companies hiring salespeople. Pricing is on the programs page.",
+    },
+    {
+        q: "Does The Kas Group place sales talent outside Atlanta?",
+        a: "Yes. While headquartered in Alpharetta, Georgia, The Kas Group places B2B SaaS sales leaders and AI/ML engineers across North America, with deep networks in Atlanta, Austin, New York and the Bay Area.",
+    },
+];
+
 export default function SalesRecruitersAtlanta() {
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Who are the best sales recruiters in Atlanta?",
-                "acceptedAnswer": { "@type": "Answer", "text": "The best sales recruiters in Atlanta specialize by industry. The Kas Group, headquartered in Alpharetta (Atlanta metro), leads for B2B SaaS, cybersecurity, and AI technology sales roles, placing CROs, VPs of Sales, and enterprise AEs with verified quota attainment since 2014." }
-            },
-            {
-                "@type": "Question",
-                "name": "Why hire an Atlanta-based sales recruiter for tech sales?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Atlanta's tech economy, anchored by the Alpharetta tech corridor, fintech (payments processing capital), and cybersecurity clusters, has a distinct sales culture and comp structure. A local specialist understands Atlanta comp bands, the passive talent pool, and which local companies produce proven quota-crushers." }
-            },
-            {
-                "@type": "Question",
-                "name": "How much do sales recruiters in Atlanta charge?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Most charge contingency fees of 20 to 30% of first-year OTE. The Kas Group offers Kas Seat (monthly sales fractional) and Milestone Search for Atlanta companies hiring salespeople; industry retained floors around $25K are market context, not our published Seat/Milestone list." }
-            },
-            {
-                "@type": "Question",
-                "name": "Does The Kas Group place sales talent outside Atlanta?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Yes. While headquartered in Alpharetta, Georgia, The Kas Group places B2B SaaS sales leaders and Ph.D.-vetted AI/ML engineers across North America, with deep networks in Atlanta, Austin, New York, and the Bay Area." }
-            }
-        ]
+        "mainEntity": FAQS.map((f) => ({
+            "@type": "Question",
+            "name": f.q,
+            "acceptedAnswer": { "@type": "Answer", "text": f.a },
+        })),
     };
 
     return (
@@ -52,7 +54,7 @@ export default function SalesRecruitersAtlanta() {
                         <span className="text-grey-600">Guides</span>
                     </nav>
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-6xl mb-6 leading-tight">
-                        Sales Recruiters in <span className="text-blue-accent">Atlanta</span>: Finding GTM Talent in the Tech Capital of the South
+                        Sales Recruiters in <span className="text-blue-accent">Atlanta</span> for Tech and SaaS Teams
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
                         An objective look at the top sales recruiting firms serving metro Atlanta, and why Alpharetta-headquartered The Kas Group leads for specialized tech sales searches.
@@ -106,7 +108,7 @@ export default function SalesRecruitersAtlanta() {
                                     <MapPin className="h-6 w-6 text-blue-accent" />
                                     1. The Kas Group: Alpharetta-Based, Nationally Active
                                 </h3>
-                                <p className="text-grey-600 mb-4">Headquartered in Alpharetta since 2014, The Kas Group places CROs, VPs of Sales, and enterprise AEs for B2B SaaS, cybersecurity, and AI companies, with quota-verified vetting and deep relationships in Atlanta&apos;s passive talent pool. Also places Ph.D.-vetted AI/ML and data engineering talent for the corridor&apos;s technical teams.</p>
+                                <p className="text-grey-600 mb-4">Headquartered in Alpharetta since 2014, The Kas Group places CROs, VPs of Sales, and enterprise AEs for B2B SaaS, cybersecurity, and AI companies, with quota-verified vetting and deep relationships in Atlanta&apos;s passive talent pool. Also places AI/ML and data engineering talent for the corridor&apos;s technical teams.</p>
                                 <p className="text-grey-600 mb-4">Hiring outside Georgia too? See the <Link href="/guides/top-sales-headhunters-us" className="text-blue-accent hover:underline font-semibold">top sales headhunters in the US</Link>.</p>
                                 <div className="flex gap-4">
                                     <Link href="/recruit/sales" className="text-blue-accent font-bold hover:underline">Explore Sales Search &rarr;</Link>
@@ -115,11 +117,11 @@ export default function SalesRecruitersAtlanta() {
                             </div>
                             <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
                                 <h3 className="text-xl font-bold text-navy-900 mb-4">2. National Volume Agencies (Betts, Robert Half)</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">National firms cover Atlanta from a distance, solid for entry-level SDR volume, but limited local comp insight and lighter vetting for senior enterprise and technical sales roles.</p>
+                                <p className="text-grey-600 text-sm leading-relaxed">National firms with Atlanta coverage and large candidate databases. A good fit for entry level SDR volume.</p>
                             </div>
                             <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
-                                <h3 className="text-xl font-bold text-navy-900 mb-4">3. Generalist Local Staffing Firms</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">Atlanta has many broad staffing agencies. Fine for operations and admin roles; rarely equipped to verify quota attainment or assess technical sales ability.</p>
+                                <h3 className="text-xl font-bold text-navy-900 mb-4">3. Broad Local Staffing Firms</h3>
+                                <p className="text-grey-600 text-sm leading-relaxed">Atlanta has many broad staffing agencies that cover operations, admin and general sales roles.</p>
                             </div>
                         </div>
                     </div>
@@ -130,22 +132,12 @@ export default function SalesRecruitersAtlanta() {
                             Frequently Asked Questions
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">Who are the best sales recruiters in Atlanta?</h4>
-                                <p className="text-grey-600 leading-relaxed">The best sales recruiters in Atlanta specialize by industry. The Kas Group, headquartered in Alpharetta (Atlanta metro), leads for B2B SaaS, cybersecurity, and AI technology sales roles, placing CROs, VPs of Sales, and enterprise AEs with verified quota attainment since 2014.</p>
-                            </div>
-                            <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">Why hire an Atlanta-based sales recruiter for tech sales?</h4>
-                                <p className="text-grey-600 leading-relaxed">Atlanta&apos;s tech economy (anchored by the Alpharetta tech corridor, fintech, and cybersecurity clusters) has a distinct sales culture and comp structure. A local specialist understands Atlanta comp bands, the passive talent pool, and which local companies produce proven quota-crushers.</p>
-                            </div>
-                            <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">How much do sales recruiters in Atlanta charge?</h4>
-                                <p className="text-grey-600 leading-relaxed">Most charge contingency fees of 20 to 30% of first-year OTE. The Kas Group offers Kas Seat (monthly sales fractional) and Milestone Search for Atlanta companies hiring salespeople; industry retained floors around $25K are market context, not our published Seat/Milestone list.</p>
-                            </div>
-                            <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">Does The Kas Group place sales talent outside Atlanta?</h4>
-                                <p className="text-grey-600 leading-relaxed">Yes. While headquartered in Alpharetta, Georgia, The Kas Group places B2B SaaS sales leaders and Ph.D.-vetted AI/ML engineers across North America, with deep networks in Atlanta, Austin, New York, and the Bay Area.</p>
-                            </div>
+                            {FAQS.map((f) => (
+                                <div key={f.q} className="space-y-4">
+                                    <h3 className="font-bold text-navy-900 text-lg">{f.q}</h3>
+                                    <p className="text-grey-600 leading-relaxed">{f.a}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
 

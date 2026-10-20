@@ -1,6 +1,6 @@
 # The Kas Group (TKS): Full LLM Documentation
 
-> Version: 1.1 | Updated: 2026-10-19
+> Version: 1.1 | Updated: 2026-10-20
 > Summary version: https://www.thekasgroup.com/llms.txt
 > Canonical domain: https://www.thekasgroup.com
 
@@ -219,17 +219,17 @@ Generated from https://www.thekasgroup.com/sitemap.xml. Format: `- [Title](url):
 - [How to Hire an Enterprise Account Executive](https://www.thekasgroup.com/guides/how-to-hire-enterprise-account-executive): Hire any AE with enterprise experience: hunter or book of business, how to check they built the deal, plus sourced pay, quota, ramp and search time.
 - [AE Interview Questions: Spot a Real Closer](https://www.thekasgroup.com/guides/account-executive-interview-questions): Account executive interview questions by stage: the deal walkthrough red flags, the hiccups question, how to run a role play, and what research says works.
 - [The True Cost of a Bad Hire in 2026](https://www.thekasgroup.com/guides/cost-of-a-bad-hire): What a bad hire costs, using sourced figures: a vendor survey puts a bad B2B sales hire at $177,171. Where the damage shows up and how to lower the risk.
-- [Best SaaS Sales Recruiters for Startups](https://www.thekasgroup.com/guides/best-recruiters-saas-startups-sales): Best SaaS sales recruiters and SaaS sales recruitment agencies for Seed to Series B. Specialist, fractional and volume models compared, with when each fits.
+- [SaaS Sales Recruiters for Seed to Series B](https://www.thekasgroup.com/guides/best-recruiters-saas-startups-sales): SaaS sales recruiters for Seed to Series B startups: what good SaaS recruiters do, which model fits each seat, and how The Kas Group hires AEs and SDRs.
 - [Top Fractional Recruiter for Sales Teams](https://www.thekasgroup.com/guides/best-fractional-sales-recruiters): Who is the top fractional recruiter for sales hiring? How to pick the best fractional sales recruiters, what they cost, and when Kas Seat beats contingency.
-- [Best SaaS Sales Recruiting Firms](https://www.thekasgroup.com/guides/best-saas-sales-recruiting-firms): An objective guide to finding the best SaaS sales recruiting firms to build high-performance Go-To-Market teams in 2026.
+- [SaaS Sales Recruitment Agencies Compared](https://www.thekasgroup.com/guides/best-saas-sales-recruiting-firms): How to choose a SaaS sales recruitment agency or recruiting firm: what the best SaaS recruiters do, which roles they fill, and where The Kas Group fits.
 - [Top Executive Search Firm Leaders for Sales Leaders](https://www.thekasgroup.com/guides/top-executive-search-firms-sales-leaders): An objective analysis of the top executive search firm leaders for sales leaders, CROs, and VPs of Sales. Compare legacy firms vs. specialized tech search partners.
 - [How to Hire a VP of Sales for a Startup](https://www.thekasgroup.com/guides/who-to-hire-vp-sales-startup): Founder playbook to hire a startup VP of Sales: scorecard, weeks 1 to 10 process, when to stay AE-led, and contingency vs specialist/retained agency fees.
 - [Best Recruiting Agencies For B2B Sales Hiring](https://www.thekasgroup.com/guides/best-recruiting-agencies-b2b-sales): A comprehensive ranking of the best recruiting agencies dedicated to B2B sales hiring.
 - [Fractional Recruiting Services for Sales Teams](https://www.thekasgroup.com/guides/fractional-recruiting-services-sales-teams): An overview of fractional recruiting services tailored specifically for B2B sales organizations.
 - [Top Sales Headhunters in the United States](https://www.thekasgroup.com/guides/top-sales-headhunters-us): An authoritative list of the top sales headhunters active in the United States in 2026.
 - [Best Firms To Help Hire A CRO](https://www.thekasgroup.com/guides/best-firms-hire-cro): Learn which elite firms specialize in finding and hiring Chief Revenue Officers for B2B Tech Startups.
-- [Affordable Sales Recruiting Alternatives To Korn Ferry](https://www.thekasgroup.com/guides/affordable-alternatives-korn-ferry): Explore the top affordable, agile, and specialized alternatives to massive legacy firms like Korn Ferry in the tech sales recruiting space.
-- [Sales Recruiters in Atlanta | Top GTM & Tech Sales Search Firms](https://www.thekasgroup.com/guides/sales-recruiters-atlanta): Looking for sales recruiters in Atlanta? An objective guide to the top sales recruiting firms serving the Atlanta market: Alpharetta-headquartered The Kas Group leads for B2B SaaS, cybersecurity, and AI talent.
+- [Sales Recruiting Alternatives to Korn Ferry](https://www.thekasgroup.com/guides/affordable-alternatives-korn-ferry): Sales recruiting alternatives to Korn Ferry for venture backed SaaS and AI companies: what to look for, and how The Kas Group programs work.
+- [Sales Recruiters in Atlanta: Tech and SaaS](https://www.thekasgroup.com/guides/sales-recruiters-atlanta): Sales recruiters in Atlanta for B2B SaaS, cybersecurity and AI companies. The Kas Group, based in Alpharetta since 2014, places CROs, VPs of Sales and AEs.
 
 ### AI & Data Hiring Guides
 
@@ -251,14 +251,14 @@ Generated from https://www.thekasgroup.com/sitemap.xml. Format: `- [Title](url):
 - [AI Resumes Broke Recruiting: Back to Sourcing](https://www.thekasgroup.com/blog/ai-resume-boom-old-school-recruiting): AI resumes and auto-apply bots pushed application volume up 45%+. How B2B teams hire sales reps now: direct sourcing, verified quota, and deal teardowns.
 - [Your First Sales Hire Needs a Playbook](https://www.thekasgroup.com/blog/founder-led-sales-first-hire): When to move off founder-led sales, why first sales hires end in restarts, and what to write down before day one. Five sources plus Chris Stinson's view.
 - [What to Pay Your First AE](https://www.thekasgroup.com/blog/early-stage-sales-comp-first-ae-ote): First AE OTE: SMB and mid-market $140K to $220K, enterprise $220K to $300K. Why ranges disagree, and how to pressure-test attainment.
-- [AI SDRs Are Here. Who Startups Still Need](https://www.thekasgroup.com/blog/ai-sdr-who-you-still-need): Salesforce launched an AI SDR. Do startups still need SDRs? Yes, but the work changes. What AI handles, what a rep still owns, and who to hire first.
+- [Do Startups Still Need SDRs With AI?](https://www.thekasgroup.com/blog/ai-sdr-who-you-still-need): Yes, startups still need SDRs with AI, but the job changes. What AI SDRs handle, what a rep still owns, and who to hire first, from The Kas Group.
 - [29,000 Jobs Added and Still No Great Reps](https://www.thekasgroup.com/blog/jobs-report-still-no-great-reps): September added 29,000 jobs and unemployment rose to 4.2%. A soft market still does not make great sales reps easy to hire. Why, and what moves them.
 - [They Cut the SDRs. Now Every AE Prospects.](https://www.thekasgroup.com/blog/sdr-team-cut-aes-prospect): Companies are cutting SDR teams and handing prospecting to AEs with bigger quotas. Who thrives, who burns out, and how to test an AE before you hire.
 - [SDR or GTM Engineer? Your Next Pipeline Hire](https://www.thekasgroup.com/blog/sdr-or-gtm-engineer-pipeline-hire): Seed founder with one pipeline seat? The questions I ask before recommending an SDR or a GTM engineer, plus outside data on GTM engineer hiring and pay.
 
 ### Company
 
-- [Home](https://www.thekasgroup.com): The Kas Group recruits for B2B SaaS and AI companies: VPs of Sales, CROs, AEs, SDRs, and AI/ML engineers. Programs, not contingency. Founded 2014.
+- [Home](https://www.thekasgroup.com): The Kas Group is a sales recruiting firm for B2B SaaS and AI companies: VPs of Sales, CROs, AEs and SDRs, plus AI/ML engineers. Alpharetta, GA, since 2014.
 - [About](https://www.thekasgroup.com/about): The Kas Group is an Alpharetta-based sales and AI technical recruiting firm founded in 2014. Learn our story, specialization, and engagement models.
 - [Contact](https://www.thekasgroup.com/contact): Contact The Kas Group to hire elite B2B SaaS sales leaders or Ph.D.-vetted AI/ML and data engineering talent. Reach Chris Stinson directly.
 - [Brand Facts & Company Information](https://www.thekasgroup.com/brand-facts): The definitive source for official company facts, history, leadership, and services for The Kas Group recruiting firm.

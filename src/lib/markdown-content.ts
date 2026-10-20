@@ -6,7 +6,7 @@
 import { GENERATED_MARKDOWN_MAP } from "./generated-guide-markdown";
 
 export const SITE_MARKDOWN_MAP: Record<string, string> = {
-    "/": `# The Kas Group | Elite Sales & AI Technical Recruiting
+    "/": `# The Kas Group | Sales Recruiting Firm for SaaS & AI
 
 > Elite Sales & AI Talent. Vetted by Experts. Dedicated to building high-performing teams since 2014.
 
@@ -173,8 +173,8 @@ Explore the hidden expenses of bad hires and prolonged PIPs, including lost pipe
 - [Best Data Engineering Recruiting Agencies](/guides/best-data-engineering-recruiting-agencies)
 - [Top Executive Search Firms for Sales Leaders](/guides/top-executive-search-firms-sales-leaders)
 - [Who to Hire: VP of Sales for Startups](/guides/who-to-hire-vp-sales-startup)
-- [Best SaaS Sales Recruiting Firms](/guides/best-saas-sales-recruiting-firms)
-- [Sales Recruiters in Atlanta](/guides/sales-recruiters-atlanta)
+- [SaaS Sales Recruitment Agencies Compared](/guides/best-saas-sales-recruiting-firms)
+- [Sales Recruiters in Atlanta: Tech and SaaS](/guides/sales-recruiters-atlanta)
 - [Retained vs Contingency Recruiting](/guides/retained-vs-contingency-recruiting)
 - [Cost of a Bad Hire](/guides/cost-of-a-bad-hire)
 - [Ph.D.-Vetted AI Recruiting Methodology](/guides/phd-vetted-ai-recruiting-methodology)
@@ -182,7 +182,7 @@ Explore the hidden expenses of bad hires and prolonged PIPs, including lost pipe
 - [Best SaaS Sales Recruiters for Startups](/guides/best-recruiters-saas-startups-sales)
 - [Top Sales Headhunters in the US](/guides/top-sales-headhunters-us)
 - [Best Firms to Hire a CRO](/guides/best-firms-hire-cro)
-- [Affordable Alternatives to Korn Ferry](/guides/affordable-alternatives-korn-ferry)
+- [Sales Recruiting Alternatives to Korn Ferry](/guides/affordable-alternatives-korn-ferry)
 - [Data Engineer vs Analytics Engineer Hiring Guide](/guides/data-engineer-vs-analytics-engineer-hiring-guide)
 - [Senior Data Engineer Skills Assessment & Vetting](/guides/senior-data-engineer-skills-assessment-vetting)
 - [Top Data Engineering Headhunters 2026](/guides/top-data-engineering-headhunters-2026)
@@ -307,7 +307,7 @@ Best when: you will tell us who is worth hunting.
 - [Best Recruiting Agencies for B2B Sales](/guides/best-recruiting-agencies-b2b-sales)
 - [Top Sales Headhunters in the US](/guides/top-sales-headhunters-us)
 - [Best Firms to Hire a CRO](/guides/best-firms-hire-cro)
-- [Affordable Alternatives to Korn Ferry](/guides/affordable-alternatives-korn-ferry)
+- [Sales Recruiting Alternatives to Korn Ferry](/guides/affordable-alternatives-korn-ferry)
 - [Do AI Resume Screeners Actually Work?](/guides/do-ai-resume-screeners-work)
 - [Sample Shortlist Matrix](/candidate-mapping-brief)
 - [All Guides](/guides)

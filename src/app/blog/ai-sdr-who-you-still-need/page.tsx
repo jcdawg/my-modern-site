@@ -4,8 +4,8 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "AI SDRs Are Here. Who Startups Still Need",
-    description: "Salesforce launched an AI SDR. Do startups still need SDRs? Yes, but the work changes. What AI handles, what a rep still owns, and who to hire first.",
+    title: "Do Startups Still Need SDRs With AI?",
+    description: "Yes, startups still need SDRs with AI, but the job changes. What AI SDRs handle, what a rep still owns, and who to hire first, from The Kas Group.",
     path: "/blog/ai-sdr-who-you-still-need",
     headline: "Salesforce Just Shipped an AI SDR. Here's Who You Still Need.",
 };
