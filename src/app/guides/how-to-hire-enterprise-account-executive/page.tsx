@@ -295,6 +295,8 @@ export default function HowToHireEnterpriseAccountExecutive() {
                         <strong>Further reading:</strong>{" "}
                         <Link href="/guides/account-executive-interview-questions" className={link}>Account Executive Interview Questions</Link>
                         {" · "}
+                        <Link href="/guides/how-to-hire-senior-account-executive" className={link}>How to Hire a Senior Account Executive</Link>
+                        {" · "}
                         <Link href="/guides/how-to-hire-saas-sdrs-fast-ramp" className={link}>Hire SDRs and AEs with Zero Ramp-Up Time</Link>
                         {" · "}
                         <Link href="/blog/early-stage-sales-comp-first-ae-ote" className={link}>What to Pay Your First AE</Link>

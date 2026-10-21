@@ -193,6 +193,7 @@ Explore the hidden expenses of bad hires and prolonged PIPs, including lost pipe
 - [Fractional Recruiting vs In-House Recruiter](/guides/fractional-recruiting-vs-in-house-recruiter)
 - [How to Hire SaaS SDRs and AEs Fast](/guides/how-to-hire-saas-sdrs-fast-ramp)
 - [How to Hire an Enterprise Account Executive](/guides/how-to-hire-enterprise-account-executive)
+- [How to Hire a Senior Account Executive](/guides/how-to-hire-senior-account-executive)
 - [Account Executive Interview Questions: How to Spot a Real Closer](/guides/account-executive-interview-questions)
 - [Top Fractional Recruiter for Sales Teams](/guides/best-fractional-sales-recruiters)
 - [Fractional Recruiting Services for Sales Teams](/guides/fractional-recruiting-services-sales-teams)
