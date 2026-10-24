@@ -50,6 +50,7 @@ export default function Sitemap() {
                                 <li><Link href="/guides/account-executive-interview-questions" className="text-grey-600 hover:text-blue-accent transition-colors">AE Interview Questions</Link></li>
                                 <li><Link href="/guides/how-to-hire-saas-sdrs-fast-ramp" className="text-grey-600 hover:text-blue-accent transition-colors">Hire SDRs &amp; AEs Fast</Link></li>
                                 <li><Link href="/guides/fractional-recruiting-guide" className="text-grey-600 hover:text-blue-accent transition-colors">What Is Fractional Recruiting?</Link></li>
+                                <li><Link href="/guides/how-to-choose-a-fractional-recruiter" className="text-grey-600 hover:text-blue-accent transition-colors">How to Choose a Fractional Recruiter</Link></li>
                                 <li><Link href="/guides/fractional-recruiting-for-startups" className="text-grey-600 hover:text-blue-accent transition-colors">Fractional Recruiting for Startups</Link></li>
                                 <li><Link href="/guides/fractional-sales-recruiting-cost" className="text-grey-600 hover:text-blue-accent transition-colors">Fractional Sales Recruiting Cost</Link></li>
                                 <li><Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-grey-600 hover:text-blue-accent transition-colors">Fractional vs Contingency</Link></li>

@@ -184,6 +184,7 @@ Explore the hidden expenses of bad hires and prolonged PIPs, including lost pipe
 - [Cost of a Bad Hire](/guides/cost-of-a-bad-hire)
 - [Ph.D.-Vetted AI Recruiting Methodology](/guides/phd-vetted-ai-recruiting-methodology)
 - [What Is Fractional Recruiting? How It Works](/guides/fractional-recruiting-guide)
+- [How to Choose a Fractional Recruiter](/guides/how-to-choose-a-fractional-recruiter)
 - [Best SaaS Sales Recruiters for Startups](/guides/best-recruiters-saas-startups-sales)
 - [Top Sales Headhunters in the US](/guides/top-sales-headhunters-us)
 - [Best Firms to Hire a CRO](/guides/best-firms-hire-cro)
