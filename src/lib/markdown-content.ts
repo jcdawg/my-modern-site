@@ -112,6 +112,12 @@ Email chris@thekasgroup.com
 - **Agile Hiring**: Scale recruiting efforts up or down based on your funding rounds and hiring sprints.
 - **Embedded Expertise**: Act as an extension of your leadership team to define comp bands and pitch candidates directly.
 
+## Kas Seat Pricing
+- $5,000 a month for up to two open sales roles
+- $8,000 a month for three to five open sales roles
+- Up to $10,000 a month when the seat covers senior AE and above
+- Zero success fees
+
 ## Contact
 Email chris@thekasgroup.com to discuss fractional search engagements.
 `,
@@ -232,9 +238,9 @@ Most firms rent you a recruiter and keep the database. The Kas Group runs a sear
 
 ## Kas Seat
 
-For teams with more than one open sales role.
+Monthly sales-fractional capacity. Tech roles are never monthly.
 
-Monthly retainer based on how many roles are open. Hire as many people as the search produces that month. The monthly price does not jump per hire. The Kas Group works inside your process. You own every name.
+$5,000 a month for up to two open sales roles and $8,000 a month for three to five; up to $10,000 for senior AE and above. Hire as many people as the search produces that month. The monthly price does not jump per hire. The Kas Group works inside your process. You own every name.
 
 Best when: you need capacity, not a one-off req.
 

@@ -45,16 +45,31 @@ const programsJsonLd = {
             offers: [
                 {
                     "@type": "Offer",
-                    "@id": `${PROGRAMS_URL}#offer-kas-seat`,
-                    name: "Kas Seat monthly retainer",
+                    "@id": `${PROGRAMS_URL}#offer-kas-seat-up-to-two`,
+                    name: "Kas Seat monthly retainer: up to two open sales roles",
                     description:
-                        "Normally $5,000 to $8,000 per month based on how many sales roles are open. Up to $10,000 per month when the seat covers senior AE and above. Zero success fees.",
+                        "$5,000 per month for up to two open sales roles. Zero success fees.",
                     url: PROGRAMS_URL,
                     priceSpecification: {
                         "@type": "UnitPriceSpecification",
                         priceCurrency: "USD",
-                        minPrice: 5000,
-                        maxPrice: 8000,
+                        price: 5000,
+                        unitCode: "MON",
+                        unitText: "MONTH",
+                        referenceQuantity: { "@type": "QuantitativeValue", value: 1, unitCode: "MON" },
+                    },
+                },
+                {
+                    "@type": "Offer",
+                    "@id": `${PROGRAMS_URL}#offer-kas-seat-three-to-five`,
+                    name: "Kas Seat monthly retainer: three to five open sales roles",
+                    description:
+                        "$8,000 per month for three to five open sales roles. Zero success fees.",
+                    url: PROGRAMS_URL,
+                    priceSpecification: {
+                        "@type": "UnitPriceSpecification",
+                        priceCurrency: "USD",
+                        price: 8000,
                         unitCode: "MON",
                         unitText: "MONTH",
                         referenceQuantity: { "@type": "QuantitativeValue", value: 1, unitCode: "MON" },
@@ -127,7 +142,7 @@ export default function Programs() {
             title: "Kas Seat",
             blurb: "Monthly sales-fractional capacity. Tech roles are never monthly.",
             desc: [
-                "Normally $5,000 to $8,000 a month based on how many sales roles are open; up to $10,000 for senior AE and above.",
+                "$5,000 a month for up to two open sales roles and $8,000 a month for three to five; up to $10,000 for senior AE and above.",
                 "Hire as many people as the search produces that month. The monthly price does not jump per hire. Zero success fees on Seat.",
                 "The Kas Group works inside your process. You own every name.",
             ],
@@ -305,7 +320,7 @@ export default function Programs() {
                     <ul className="space-y-3 text-grey-600 leading-relaxed">
                         <li>
                             <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting cost</Link>
-                            {": "}Kas Seat $5k to $8k a month and Milestone example fees
+                            {": "}Kas Seat $5k a month for up to two open sales roles and $8k a month for three to five and Milestone example fees
                         </li>
                         <li>
                             <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting vs contingency</Link>

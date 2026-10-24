@@ -29,7 +29,7 @@ const FAQS = [
     },
     {
         q: "How much does fractional recruiting cost for a startup?",
-        a: "At The Kas Group, Kas Seat is $5,000 to $8,000 per month, up to $10,000 per month for senior AE and above, with zero success fees. For a single hire, Kas Milestone Search is quoted per role. Example fees are $5,000 for SDR/BDR, $7,500 for AE and $10,000 for Senior AE or Sales Manager.",
+        a: "At The Kas Group, Kas Seat is $5,000 per month for up to two open sales roles and $8,000 per month for three to five, up to $10,000 per month for senior AE and above, with zero success fees. For a single hire, Kas Milestone Search is quoted per role. Example fees are $5,000 for SDR/BDR, $7,500 for AE and $10,000 for Senior AE or Sales Manager.",
     },
     {
         q: "Is fractional recruiting better than contingency for a startup?",
@@ -129,7 +129,7 @@ export default function FractionalRecruitingForStartups() {
                             Short answer
                         </h2>
                         <p className="text-lg text-grey-700 leading-relaxed">
-                            Fractional recruiting for startups is a monthly retainer for an embedded sales recruiter who runs your first hires inside your own process, with no percentage-of-salary fee on each hire. It fits seed through Series B founders who need 2 to 5 sales hires in the next two quarters, such as the first AE to take deals off the founder and the first SDR to feed them. At The Kas Group, Kas Seat is $5,000 to $8,000 per month (up to $10,000 for senior AE and above) with zero success fees, and a single hire can run as a Kas Milestone Search quoted per role.
+                            Fractional recruiting for startups is a monthly retainer for an embedded sales recruiter who runs your first hires inside your own process, with no percentage-of-salary fee on each hire. It fits seed through Series B founders who need 2 to 5 sales hires in the next two quarters, such as the first AE to take deals off the founder and the first SDR to feed them. At The Kas Group, Kas Seat is $5,000 per month for up to two open sales roles and $8,000 per month for three to five (up to $10,000 for senior AE and above) with zero success fees, and a single hire can run as a Kas Milestone Search quoted per role.
                         </p>
                     </div>
 
@@ -245,7 +245,7 @@ export default function FractionalRecruitingForStartups() {
                             Typical cost for startup sales hiring
                         </h2>
                         <ul className="space-y-3 text-lg text-grey-600 leading-relaxed">
-                            <li><strong className="text-navy-900">Kas Seat:</strong> $5,000 to $8,000 per month, based on how many sales roles are open. Up to $10,000 per month when the seat covers senior AE and above. Zero success fees. Month-to-month.</li>
+                            <li><strong className="text-navy-900">Kas Seat:</strong> $5,000 per month for up to two open sales roles and $8,000 per month for three to five. Up to $10,000 per month when the seat covers senior AE and above. Zero success fees. Month-to-month.</li>
                             <li><strong className="text-navy-900">Kas Milestone Search:</strong> one seat, quoted per role. Example fees: SDR/BDR $5,000, AE $7,500, Senior AE / Sales Manager $10,000.</li>
                             <li><strong className="text-navy-900">Director, VP of Sales, CRO:</strong> specialist or retained search, quoted per role.</li>
                             <li><strong className="text-navy-900">Kas Directed Pursuit:</strong> list-driven outbound search. No published price.</li>

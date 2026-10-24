@@ -30,7 +30,7 @@ const FAQS = [
     },
     {
         q: "How much do SaaS sales recruiters charge?",
-        a: "The Kas Group publishes Kas Seat at $5,000 to $8,000 a month, up to $10,000 for senior AE and above, with zero success fees, plus Milestone Search example fees for single seats through Sales Manager. Leadership and CRO are quote only.",
+        a: "The Kas Group publishes Kas Seat at $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees, plus Milestone Search example fees for single seats through Sales Manager. Leadership and CRO are quote only.",
     },
 ];
 
@@ -108,7 +108,7 @@ export default function BestSaasStartupSalesRecruiters() {
                                 <p className="text-grey-600 leading-relaxed">
                                     Ideal when you need several sales hires in a quarter and want one partner on a monthly plan. A{" "}
                                     <Link href="/guides/best-fractional-sales-recruiters" className={link}>top fractional recruiter</Link>
-                                    {" "}embeds in Slack and ATS and runs as your in-house TA. Kas Seat is $5,000 to $8,000 a month, up to $10,000 for senior AE and above, with zero success fees. See{" "}
+                                    {" "}embeds in Slack and ATS and runs as your in-house TA. Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees. See{" "}
                                     <Link href="/guides/fractional-recruiting-for-startups" className={link}>fractional recruiting for startups</Link>.
                                 </p>
                             </div>

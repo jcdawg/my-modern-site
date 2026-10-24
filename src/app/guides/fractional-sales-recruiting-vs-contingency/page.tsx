@@ -21,7 +21,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                 name: "Is fractional sales recruiting cheaper than contingency?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Usually yes once you hire more than one GTM seat, or any senior seat with a large OTE. A $150k AE at 25% contingency is $37,500. Kas Milestone AE example fee is $7,500. Kas Seat is $5,000 to $8,000 a month, up to $10,000 for senior AE and above, with zero success fees.",
+                    text: "Usually yes once you hire more than one GTM seat, or any senior seat with a large OTE. A $150k AE at 25% contingency is $37,500. Kas Milestone AE example fee is $7,500. Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees.",
                 },
             },
             {
@@ -100,7 +100,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                             TL;DR
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium relative z-10">
-                            Contingency sales recruiting usually bills <strong>20 to 30%</strong> of first-year cash (or OTE). On a $150k AE that is <strong>$30k to $45k</strong>. On a $350k VP Sales that is <strong>$70k to $105k</strong>. Kas Seat is a month-to-month retainer (<strong>$5,000 to $8,000 a month, up to $10,000 for senior AE and above</strong>) with <strong>zero success fees</strong>. Prefer per-hire? Kas Milestone Search example fees: SDR <strong>$5,000</strong>, AE <strong>$7,500</strong>, Sr AE/SM <strong>$10,000</strong>. Director/VP/CRO: specialist/retained <strong>quote only</strong>. Choose contingency for a one-off backfill. Choose Kas Seat when you are filling multiple GTM seats and want dedicated bandwidth without percent-of-OTE sticker shock.
+                            Contingency sales recruiting usually bills <strong>20 to 30%</strong> of first-year cash (or OTE). On a $150k AE that is <strong>$30k to $45k</strong>. On a $350k VP Sales that is <strong>$70k to $105k</strong>. Kas Seat is a month-to-month retainer (<strong>$5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above</strong>) with <strong>zero success fees</strong>. Prefer per-hire? Kas Milestone Search example fees: SDR <strong>$5,000</strong>, AE <strong>$7,500</strong>, Sr AE/SM <strong>$10,000</strong>. Director/VP/CRO: specialist/retained <strong>quote only</strong>. Choose contingency for a one-off backfill. Choose Kas Seat when you are filling multiple GTM seats and want dedicated bandwidth without percent-of-OTE sticker shock.
                         </p>
                         <p className="text-grey-300 leading-relaxed mt-4 relative z-10">
                             List prices: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales recruiting cost</Link>.
@@ -159,7 +159,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">Kas Seat</td>
                                             <td className="py-4 px-6 text-grey-600">Month-to-month retainer</td>
-                                            <td className="py-4 px-6 text-grey-600">$5,000 to $8,000 a month, up to $10,000 for senior AE and above</td>
+                                            <td className="py-4 px-6 text-grey-600">$5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above</td>
                                             <td className="py-4 px-6 text-grey-600">Zero</td>
                                             <td className="py-4 px-6 text-grey-600">Multiple GTM seats, from first AE/SDR hires to scaling pods</td>
                                         </tr>
@@ -224,14 +224,9 @@ export default function FractionalSalesRecruitingVsContingency() {
                                             <td className="py-4 px-6 text-grey-600">$7,500</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $5,000/mo (2 months to fill)</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $5,000/mo (one open role, 2 months to fill)</td>
                                             <td className="py-4 px-6 text-grey-600">$5,000 x 2</td>
                                             <td className="py-4 px-6 text-grey-600">$10,000</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $8,000/mo (2 months)</td>
-                                            <td className="py-4 px-6 text-grey-600">$8,000 x 2</td>
-                                            <td className="py-4 px-6 text-grey-600">$16,000</td>
                                         </tr>
                                 </tbody>
                             </table>
@@ -334,7 +329,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                                             <td className="py-4 px-6 text-grey-600">$32,500</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $8,000/mo x 4 months ($8k x4)</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $8,000/mo x 4 months (five open roles)</td>
                                             <td className="py-4 px-6 text-grey-600">$32,000</td>
                                         </tr>
                                 </tbody>
@@ -394,7 +389,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">2 to 5 GTM seats, Seed through Series B</td>
-                                            <td className="py-4 px-6 text-grey-600">Kas Seat ($5,000 to $8,000 a month, up to $10,000 for senior AE and above)</td>
+                                            <td className="py-4 px-6 text-grey-600">Kas Seat ($5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above)</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">First VP Sales / sales leader</td>
@@ -418,7 +413,7 @@ export default function FractionalSalesRecruitingVsContingency() {
                         <div className="space-y-8">
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">Is fractional sales recruiting cheaper than contingency?</h3>
-                            <p className="text-grey-600 leading-relaxed">Usually yes once you hire more than one GTM seat, or any senior seat with a large OTE. A $150k AE at 25% contingency is $37,500. Kas Milestone AE example fee is $7,500. Kas Seat is $5,000 to $8,000 a month, up to $10,000 for senior AE and above, with zero success fees.</p>
+                            <p className="text-grey-600 leading-relaxed">Usually yes once you hire more than one GTM seat, or any senior seat with a large OTE. A $150k AE at 25% contingency is $37,500. Kas Milestone AE example fee is $7,500. Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees.</p>
                         </div>
 
                         <div className="space-y-3">

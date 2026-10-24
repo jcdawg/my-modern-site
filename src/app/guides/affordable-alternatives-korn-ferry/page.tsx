@@ -18,7 +18,7 @@ const FAQS = [
     },
     {
         q: "How does The Kas Group price sales searches?",
-        a: "The Kas Group publishes Kas Seat at $5,000 to $8,000 a month for sales roles and example fees for Kas Milestone Search on sales individual contributor and sales manager seats. Leadership searches are quoted. Technical searches are never monthly.",
+        a: "The Kas Group publishes Kas Seat at $5,000 a month for up to two open sales roles and $8,000 a month for three to five and example fees for Kas Milestone Search on sales individual contributor and sales manager seats. Leadership searches are quoted. Technical searches are never monthly.",
     },
     {
         q: "When is a large firm like Korn Ferry the right choice?",
@@ -108,7 +108,7 @@ export default function AffordableAlternativesKornFerry() {
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-navy-900 text-lg">Transparent, Flexible Pricing</h4>
-                                    <p className="text-grey-600 mt-2">Look for pricing that scales with stage: Kas Seat ($5,000 to $8,000 a month for sales roles), Kas Milestone Search example fees for sales individual contributor and manager seats, or a quote for leadership searches.</p>
+                                    <p className="text-grey-600 mt-2">Look for pricing that scales with stage: Kas Seat ($5,000 a month for up to two open sales roles and $8,000 a month for three to five), Kas Milestone Search example fees for sales individual contributor and manager seats, or a quote for leadership searches.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">

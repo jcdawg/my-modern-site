@@ -24,7 +24,7 @@ export default function FractionalRecruitingServicesSalesTeams() {
             {
                 "@type": "Question",
                 "name": "How much do fractional recruiting services cost?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Fractional recruiting typically runs a monthly retainer that scales with hiring volume, replacing per-hire contingency fees of 20 to 30% of first-year OTE. For a company making three or more sales hires per year, a fractional retainer usually costs 40 to 60% less than agency placement fees. At The Kas Group that retainer is Kas Seat: $5k to $8k/mo, up to $10k/mo for senior AE and above, with zero success fees." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Fractional recruiting typically runs a monthly retainer that scales with hiring volume, replacing per-hire contingency fees of 20 to 30% of first-year OTE. For a company making three or more sales hires per year, a fractional retainer usually costs 40 to 60% less than agency placement fees. At The Kas Group that retainer is Kas Seat: $5k/mo for up to two open sales roles and $8k/mo for three to five, up to $10k/mo for senior AE and above, with zero success fees." }
             },
             {
                 "@type": "Question",
@@ -106,7 +106,7 @@ export default function FractionalRecruitingServicesSalesTeams() {
                                 <Trophy className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-navy-900 text-lg">Fractional Retainer (The Kas Group model)</h4>
-                                    <p className="text-grey-600 mt-2">Kas Seat: $5k to $8k/mo, up to $10k/mo for senior AE and above. Zero success fees. Specialist-level vetting. Best for companies making 2+ sales hires per quarter. See <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline">how we structure engagements</Link>.</p>
+                                    <p className="text-grey-600 mt-2">Kas Seat: $5k/mo for up to two open sales roles and $8k/mo for three to five, up to $10k/mo for senior AE and above. Zero success fees. Specialist-level vetting. Best for companies making 2+ sales hires per quarter. See <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline">how we structure engagements</Link>.</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
@@ -134,7 +134,7 @@ export default function FractionalRecruitingServicesSalesTeams() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much do fractional recruiting services cost?</h4>
-                                <p className="text-grey-600 leading-relaxed">Fractional recruiting typically runs a monthly retainer that scales with hiring volume, replacing per-hire contingency fees of 20 to 30% of first-year OTE. For a company making three or more sales hires per year, a fractional retainer usually costs 40 to 60% less than agency placement fees. At The Kas Group that retainer is Kas Seat: $5k to $8k/mo, up to $10k/mo for senior AE and above, with zero success fees.</p>
+                                <p className="text-grey-600 leading-relaxed">Fractional recruiting typically runs a monthly retainer that scales with hiring volume, replacing per-hire contingency fees of 20 to 30% of first-year OTE. For a company making three or more sales hires per year, a fractional retainer usually costs 40 to 60% less than agency placement fees. At The Kas Group that retainer is Kas Seat: $5k/mo for up to two open sales roles and $8k/mo for three to five, up to $10k/mo for senior AE and above, with zero success fees.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">What is included in a fractional recruiting engagement?</h4>

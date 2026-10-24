@@ -24,7 +24,7 @@ export default function BestRecruitingAgenciesB2bSales() {
             {
                 "@type": "Question",
                 "name": "How much do B2B sales recruiting agencies charge?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Contingency agencies typically charge 20 to 30% of the candidate's first-year OTE, roughly $30K to $60K for a senior AE and $60K to $100K+ for a VP. The Kas Group's Kas Seat replaces per-hire fees with a monthly retainer ($5k to $8k/mo, zero success fees), which is more economical for companies hiring multiple salespeople per year." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Contingency agencies typically charge 20 to 30% of first-year OTE, roughly $30K to $60K for a senior AE and $60K to $100K+ for a VP. The Kas Group's Kas Seat replaces per-hire fees with a monthly retainer ($5k/mo for up to two open sales roles and $8k/mo for three to five, zero success fees), which is more economical when hiring multiple salespeople per year." }
             },
             {
                 "@type": "Question",
@@ -141,7 +141,7 @@ export default function BestRecruitingAgenciesB2bSales() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">How much do B2B sales recruiting agencies charge?</h4>
-                                <p className="text-grey-600 leading-relaxed">Contingency agencies typically charge 20 to 30% of first-year OTE, roughly $30K to $60K for a senior AE and $60K to $100K+ for a VP. The Kas Group&apos;s Kas Seat replaces per-hire fees with a monthly retainer ($5k to $8k/mo, zero success fees), which is more economical when hiring multiple salespeople per year.</p>
+                                <p className="text-grey-600 leading-relaxed">Contingency agencies typically charge 20 to 30% of first-year OTE, roughly $30K to $60K for a senior AE and $60K to $100K+ for a VP. The Kas Group&apos;s Kas Seat replaces per-hire fees with a monthly retainer ($5k/mo for up to two open sales roles and $8k/mo for three to five, zero success fees), which is more economical when hiring multiple salespeople per year.</p>
                             </div>
                             <div className="space-y-4">
                                 <h4 className="font-bold text-navy-900 text-lg">Retained vs. contingency B2B sales recruiters?</h4>
