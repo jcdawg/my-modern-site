@@ -78,7 +78,7 @@ export default function Header() {
                                 <Link href="/guides/who-to-hire-vp-sales-startup" className="block px-4 py-2 text-sm text-gray-700 hover:bg-grey-50 hover:text-blue-accent">
                                     Hiring a VP of Sales
                                 </Link>
-                                <Link href="/guides/best-saas-sales-recruiting-firms" className="block px-4 py-2 text-sm text-gray-700 hover:bg-grey-50 hover:text-blue-accent">
+                                <Link href="/guides/best-recruiters-saas-startups-sales" className="block px-4 py-2 text-sm text-gray-700 hover:bg-grey-50 hover:text-blue-accent">
                                     Best SaaS Recruiters
                                 </Link>
                                 <Link href="/guides/top-executive-search-firms-sales-leaders" className="block px-4 py-2 text-sm text-gray-700 hover:bg-grey-50 hover:text-blue-accent">
@@ -172,7 +172,7 @@ export default function Header() {
                                 Hiring a VP of Sales
                             </Link>
                             <Link
-                                href="/guides/best-saas-sales-recruiting-firms"
+                                href="/guides/best-recruiters-saas-startups-sales"
                                 onClick={() => setIsOpen(false)}
                                 className="block rounded-md pl-6 px-3 py-2 text-base font-medium text-navy-600 hover:bg-grey-50 hover:text-blue-accent"
                             >

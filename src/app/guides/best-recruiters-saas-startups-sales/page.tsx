@@ -29,8 +29,16 @@ const FAQS = [
         a: "SaaS sales needs consultants who understand ARR, cycle length and intangible software sales. Recruiters have to check quota history against real deals, not titles. A mismatched ACV band is the most common ramp killer.",
     },
     {
+        q: "Do I need a recruiter that specializes in SaaS sales?",
+        a: "Yes. SaaS selling has its own patterns: buying committees, ARR based deal math and churn economics. A SaaS specialist knows how to check a candidate's quota history against those patterns.",
+    },
+    {
+        q: "What roles should SaaS sales recruitment agencies handle?",
+        a: "SDRs and BDRs, mid-market and enterprise AEs, sales engineers, RevOps leaders, VPs of Sales and CROs, with role specific vetting for each: activity metrics for SDRs, verified quota attainment for AEs, and GTM strategy assessment for leaders.",
+    },
+    {
         q: "How much do SaaS sales recruiters charge?",
-        a: "The Kas Group publishes Kas Seat at $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees, plus Milestone Search example fees for single seats through Sales Manager. Leadership and CRO are quote only.",
+        a: "At The Kas Group, Kas Seat is $5,000/month for up to two open sales roles and $8,000/month for three to five, up to $10,000/month for senior AE and above, with zero success fees. Kas Milestone Search example fees: SDR/BDR $5,000, AE $7,500, Senior AE/Sales Manager $10,000. Kas Directed Pursuit is priced on request.",
     },
 ];
 
@@ -124,6 +132,25 @@ export default function BestSaasStartupSalesRecruiters() {
 
                     <div className="space-y-8">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
+                            <BadgeCheck className="h-8 w-8 text-blue-accent" />
+                            What Good SaaS Sales Recruitment Agencies Do
+                        </h2>
+                        <p className="text-grey-600 leading-relaxed">
+                            Selling SaaS means understanding the product, working with buying committees and managing long sales cycles while showing ROI. A good SaaS sales recruiting partner knows these details well and checks for them in every candidate.
+                        </p>
+                        <ul className="space-y-4">
+                            <li className="bg-grey-50 p-6 rounded-2xl"><strong className="text-navy-900">Domain knowledge.</strong> <span className="text-grey-600">Candidates are judged on how well they understand ARR, churn metrics and modern tech stacks.</span></li>
+                            <li className="bg-grey-50 p-6 rounded-2xl"><strong className="text-navy-900">Thorough vetting.</strong> <span className="text-grey-600">In depth interviews test deal structuring and closing before a resume reaches your desk.</span></li>
+                            <li className="bg-grey-50 p-6 rounded-2xl"><strong className="text-navy-900">Passive talent.</strong> <span className="text-grey-600">Top performers are rarely job hunting. Long standing relationships make it possible to reach them.</span></li>
+                            <li className="bg-grey-50 p-6 rounded-2xl"><strong className="text-navy-900">Role specific checks.</strong> <span className="text-grey-600">Activity metrics for SDRs and BDRs, verified quota attainment for AEs, and GTM strategy for sales leaders. Coverage runs from SDRs and sales engineers to RevOps, VPs of Sales and CROs.</span></li>
+                        </ul>
+                        <p className="text-grey-600 leading-relaxed">
+                            The Kas Group brings more than a decade of B2B SaaS placement experience. When your product is AI enabled, we look for sellers who can explain the technology.
+                        </p>
+                    </div>
+
+                    <div className="space-y-8">
+                        <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
                             SaaS Sales Recruitment Agencies: When They Fit
                         </h2>
                         <p className="text-grey-600 leading-relaxed">
@@ -174,6 +201,16 @@ export default function BestSaasStartupSalesRecruiters() {
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+
+                    <div className="space-y-6">
+                        <h2 className="text-3xl font-bold text-navy-900">The Kas Group Pricing</h2>
+                        <ul className="list-disc pl-6 space-y-2 text-grey-600 leading-relaxed">
+                            <li><strong className="text-navy-900">Kas Seat:</strong> $5,000/month for up to two open sales roles, $8,000/month for three to five. Up to $10,000/month when the seat covers senior AE and above. Zero success fees.</li>
+                            <li><strong className="text-navy-900">Kas Milestone Search:</strong> SDR/BDR $5,000, AE $7,500, Senior AE/Sales Manager $10,000.</li>
+                            <li><strong className="text-navy-900">Kas Directed Pursuit:</strong> on request.</li>
+                        </ul>
+                        <p className="text-grey-600 leading-relaxed">Full details are on the <Link href="/programs" className={link}>programs page</Link>.</p>
                     </div>
 
                     <div className="space-y-8">

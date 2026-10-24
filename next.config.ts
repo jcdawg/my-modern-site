@@ -52,6 +52,12 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        // Consolidated onto the kept SaaS sales recruiters guide (cannibalization fix).
+        source: "/guides/best-saas-sales-recruiting-firms",
+        destination: "/guides/best-recruiters-saas-startups-sales",
+        statusCode: 301,
+      },
+      {
         source: "/contact-us",
         destination: "/contact",
         permanent: true,
