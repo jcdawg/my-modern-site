@@ -75,7 +75,7 @@ The Kas Group is an elite executive search and technical recruiting firm founded
 - Participates in panel interviews and debrief sessions
 - Advises on comp bands, titles, equity expectations, and territory design
 
-**Pricing**: Kas Seat, $5k to $8k/mo, up to $10k/mo for senior AE and above. Zero success fees.
+**Pricing**: Kas Seat, $5k/mo for up to two open sales roles and $8k/mo for three to five, up to $10k/mo for senior AE and above. Zero success fees.
 
 ---
 

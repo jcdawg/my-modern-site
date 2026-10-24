@@ -5,7 +5,7 @@ import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
     title: "Fractional Sales Recruiting Cost: Kas Pricing for Startups",
-    description: "Kas Seat sales recruiting cost: $5,000 to $8,000 a month (up to $10,000 for senior AE and above), zero success fees. Milestone Search examples: SDR $5k, AE $7.5k, Sr AE/SM $10k. Compare to contingency and in-house.",
+    description: "Kas Seat sales recruiting cost: $5,000 a month for up to two open sales roles and $8,000 a month for three to five (up to $10,000 for senior AE and above), zero success fees. Milestone Search examples: SDR $5k, AE $7.5k, Sr AE/SM $10k. Compare to contingency and in-house.",
     path: "/guides/fractional-sales-recruiting-cost",
 };
 
@@ -21,7 +21,7 @@ export default function FractionalSalesRecruitingCost() {
                 name: "How much does fractional sales recruiting cost at Kas?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Kas Seat is $5,000 to $8,000 a month, up to $10,000 for senior AE and above. Seat has zero success fees. Tech roles are never monthly.",
+                    text: "Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above. Seat has zero success fees. Tech roles are never monthly.",
                 },
             },
             {
@@ -37,7 +37,7 @@ export default function FractionalSalesRecruitingCost() {
                 name: "Is there a success fee on the fractional retainer?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "No. Kas Seat ($5,000 to $8,000 a month, up to $10,000 for senior AE and above) carries zero success fees.",
+                    text: "No. Kas Seat ($5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above) carries zero success fees.",
                 },
             },
             {
@@ -45,7 +45,7 @@ export default function FractionalSalesRecruitingCost() {
                 name: "How does Kas pricing compare to in-house?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "A mid fully loaded in-house recruiter often runs about $100k to $160k per year. Kas Seat is $5,000 to $8,000 a month, up to $10,000 for senior AE and above, and can pause. Full headcount decision guide: vs in-house.",
+                    text: "A mid fully loaded in-house recruiter often runs about $100k to $160k per year. Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, and can pause. Full headcount decision guide: vs in-house.",
                 },
             },
             {
@@ -116,7 +116,7 @@ export default function FractionalSalesRecruitingCost() {
                             TL;DR
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium relative z-10">
-                            Kas Seat list price: <strong>$5,000 to $8,000 a month, up to $10,000 for senior AE and above</strong>. Seat carries <strong>zero success fees</strong>. Prefer per-hire? Kas Milestone Search example fees (not % of OTE): SDR/BDR <strong>$5,000</strong>, AE <strong>$7,500</strong>, Senior AE / Sales Manager <strong>$10,000</strong>. Director / VP / CRO is <strong>specialist/retained quote only</strong>. Kas Directed Pursuit is list-driven outbound with no published price. Seat is month-to-month. Contingency remains available if you want it.
+                            Kas Seat list price: <strong>$5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above</strong>. Seat carries <strong>zero success fees</strong>. Prefer per-hire? Kas Milestone Search example fees (not % of OTE): SDR/BDR <strong>$5,000</strong>, AE <strong>$7,500</strong>, Senior AE / Sales Manager <strong>$10,000</strong>. Director / VP / CRO is <strong>specialist/retained quote only</strong>. Kas Directed Pursuit is list-driven outbound with no published price. Seat is month-to-month. Contingency remains available if you want it.
                         </p>
                         <p className="text-grey-300 leading-relaxed mt-4 relative z-10">
                             For what fractional is and when it fits, read the <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional recruiting guide</Link>. For agency fee wars, see <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent underline underline-offset-2 hover:text-white">vs contingency</Link>. For headcount math, see <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent underline underline-offset-2 hover:text-white">vs in-house</Link>.
@@ -145,7 +145,7 @@ export default function FractionalSalesRecruitingCost() {
                                 <tbody>
                                     <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">Kas Seat</td>
-                                            <td className="py-4 px-6 text-grey-600 font-semibold">$5,000 to $8,000 a month, up to $10,000 for senior AE and above</td>
+                                            <td className="py-4 px-6 text-grey-600 font-semibold">$5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above</td>
                                             <td className="py-4 px-6 text-grey-600">The sales roles you have open, month to month</td>
                                             <td className="py-4 px-6 text-grey-600">Zero</td>
                                             <td className="py-4 px-6 text-grey-600">First AE/SDR seats through AE pods, SDR teams, and first Sales Manager seats</td>
@@ -219,12 +219,12 @@ export default function FractionalSalesRecruitingCost() {
                                 </thead>
                                 <tbody>
                                     <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat (up to two open sales roles)</td>
                                             <td className="py-4 px-6 text-grey-600">$5,000</td>
                                             <td className="py-4 px-6 text-grey-600">Pause month-to-month</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat (three to five open sales roles)</td>
                                             <td className="py-4 px-6 text-grey-600">$8,000</td>
                                             <td className="py-4 px-6 text-grey-600">Pause month-to-month</td>
                                         </tr>
@@ -297,7 +297,7 @@ export default function FractionalSalesRecruitingCost() {
                                 <tbody>
                                     <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">Multiple GTM seats, Seed through Series B</td>
-                                            <td className="py-4 px-6 text-grey-600">Kas Seat ($5,000 to $8,000 a month, up to $10,000 for senior AE and above)</td>
+                                            <td className="py-4 px-6 text-grey-600">Kas Seat ($5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above)</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">One clear SDR / AE / Sr AE / SM seat</td>
@@ -339,7 +339,7 @@ export default function FractionalSalesRecruitingCost() {
                         <div className="space-y-8">
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">How much does fractional sales recruiting cost at Kas?</h3>
-                            <p className="text-grey-600 leading-relaxed">Kas Seat is <strong>$5,000 to $8,000 a month, up to $10,000 for senior AE and above</strong>. Seat has <strong>zero success fees</strong>. Tech roles are never monthly.</p>
+                            <p className="text-grey-600 leading-relaxed">Kas Seat is <strong>$5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above</strong>. Seat has <strong>zero success fees</strong>. Tech roles are never monthly.</p>
                         </div>
 
                         <div className="space-y-3">
@@ -349,12 +349,12 @@ export default function FractionalSalesRecruitingCost() {
 
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">Is there a success fee on the fractional retainer?</h3>
-                            <p className="text-grey-600 leading-relaxed">No. Kas Seat ($5,000 to $8,000 a month, up to $10,000 for senior AE and above) carries zero success fees.</p>
+                            <p className="text-grey-600 leading-relaxed">No. Kas Seat ($5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above) carries zero success fees.</p>
                         </div>
 
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">How does Kas pricing compare to in-house?</h3>
-                            <p className="text-grey-600 leading-relaxed">A mid fully loaded in-house recruiter often runs about <strong>$100k to $160k</strong> per year. Kas Seat is <strong>$5,000 to $8,000 a month, up to $10,000 for senior AE and above</strong>, and can pause. Full headcount decision guide: <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline">vs in-house</Link>.</p>
+                            <p className="text-grey-600 leading-relaxed">A mid fully loaded in-house recruiter often runs about <strong>$100k to $160k</strong> per year. Kas Seat is <strong>$5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above</strong>, and can pause. Full headcount decision guide: <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline">vs in-house</Link>.</p>
                         </div>
 
                         <div className="space-y-3">
@@ -408,7 +408,7 @@ export default function FractionalSalesRecruitingCost() {
 
                     <div className="p-10 rounded-[2rem] bg-navy-900 text-white text-center space-y-6 shadow-2xl">
                         <h2 className="text-3xl font-bold">Ready to price your open seats?</h2>
-                        <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">Email chris@thekasgroup.com with stage, open GTM roles, and target packages. You get a clear recommend: Kas Seat ($5k to $8k a month, up to $10k for senior AE and above), Kas Milestone Search, Kas Directed Pursuit, or quote for leadership. For AE/SDR/SM under fractional, market scan lands in 48 to 72 hours.</p>
+                        <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">Email chris@thekasgroup.com with stage, open GTM roles, and target packages. You get a clear recommend: Kas Seat ($5k a month for up to two open sales roles and $8k a month for three to five, up to $10k for senior AE and above), Kas Milestone Search, Kas Directed Pursuit, or quote for leadership. For AE/SDR/SM under fractional, market scan lands in 48 to 72 hours.</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/contact" className="inline-flex items-center justify-center rounded-full bg-blue-accent px-8 py-4 font-bold text-white hover:bg-blue-hover transition-all">
                                 Email chris@thekasgroup.com

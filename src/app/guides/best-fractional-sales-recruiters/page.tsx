@@ -14,7 +14,7 @@ export const metadata = pageMetadata({ ...PAGE, type: "article" });
 const FAQS = [
     {
         q: "Who is the top fractional recruiter for sales teams?",
-        a: "The top fractional recruiter for B2B SaaS sales hiring is an embedded partner who owns sourcing, quota-verified vetting and closing on a monthly retainer. The Kas Group runs that model as Kas Seat: $5,000 to $8,000 a month, up to $10,000 for senior AE and above, with zero success fees.",
+        a: "The top fractional recruiter for B2B SaaS sales hiring is an embedded partner who owns sourcing, quota-verified vetting and closing on a monthly retainer. The Kas Group runs that model as Kas Seat: $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees.",
     },
     {
         q: "What does a fractional sales recruiter do?",
@@ -22,7 +22,7 @@ const FAQS = [
     },
     {
         q: "How much does a fractional sales recruiter cost compared to a contingency agency?",
-        a: "Contingency agencies charge 20% to 30% of first-year OTE per hire, often $30K to $60K for a senior AE. Kas Seat is a monthly retainer: $5,000 to $8,000 a month, up to $10,000 for senior AE and above, with zero success fees. Companies making three or more sales hires a year usually spend less on Seat than on stacked contingency fees.",
+        a: "Contingency agencies charge 20% to 30% of first-year OTE per hire, often $30K to $60K for a senior AE. Kas Seat is a monthly retainer: $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees. Companies making three or more sales hires a year usually spend less on Seat than on stacked contingency fees.",
     },
     {
         q: "When should a company switch from contingency to fractional sales recruiting?",
@@ -75,7 +75,7 @@ export default function BestFractionalSalesRecruiters() {
                             <Zap className="h-6 w-6 text-blue-accent" /> Short answer
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium">
-                            The <strong className="text-white">top fractional recruiter</strong> for sales hiring embeds with your team, verifies quota and closes on a monthly retainer. <strong className="text-white">The Kas Group</strong> runs that model as Kas Seat: $5,000 to $8,000 a month, up to $10,000 for senior AE and above, with zero success fees. Contingency agencies still bill 20% to 30% of first-year OTE per hire. If you are making more than one GTM hire a quarter, the retainer usually wins on cost and consistency.
+                            The <strong className="text-white">top fractional recruiter</strong> for sales hiring embeds with your team, verifies quota and closes on a monthly retainer. <strong className="text-white">The Kas Group</strong> runs that model as Kas Seat: $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees. Contingency agencies still bill 20% to 30% of first-year OTE per hire. If you are making more than one GTM hire a quarter, the retainer usually wins on cost and consistency.
                         </p>
                     </div>
 

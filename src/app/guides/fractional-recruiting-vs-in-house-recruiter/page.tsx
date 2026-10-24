@@ -21,7 +21,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                 name: "Is fractional recruiting cheaper than hiring an in-house recruiter?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Usually yes for Seed to Series B GTM sprints. Kas Seat is $5,000 to $8,000 a month, up to $10,000 for senior AE and above, with zero success fees. A mid fully loaded in-house seat often lands around $100k to $160k per year (~$8k to $13k+/mo). Fractional also pauses. Payroll does not.",
+                    text: "Usually yes for Seed to Series B GTM sprints. Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees. A mid fully loaded in-house seat often lands around $100k to $160k per year (~$8k to $13k+/mo). Fractional also pauses. Payroll does not.",
                 },
             },
             {
@@ -53,7 +53,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                 name: "Does Kas fractional include success fees?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "No. Kas Seat ($5,000 to $8,000 a month, up to $10,000 for senior AE and above) has zero success fees. Milestone Search example fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) are a separate per-hire option. Director/VP/CRO is quote only.",
+                    text: "No. Kas Seat ($5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above) has zero success fees. Milestone Search example fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) are a separate per-hire option. Director/VP/CRO is quote only.",
                 },
             },
             {
@@ -100,7 +100,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                             TL;DR
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium relative z-10">
-                            An in-house recruiter is a full-time employee on payroll. Fractional recruiting is an embedded external TA partner on a month-to-month retainer. For Seed through Series B GTM hiring, Kas fractional (Kas Seat) is <strong>$5,000 to $8,000 a month, up to $10,000 for senior AE and above</strong>, with <strong>zero success fees</strong>. A solid in-house TA seat often runs <strong>$100k to $160k+</strong> fully loaded once you add salary, benefits, LinkedIn Recruiter, and tools. Fractional wins when hiring is bursty and sales-specialist quality matters. In-house wins when you need sustained, cross-function volume (roughly 10+ hires per quarter) and full internal ownership.
+                            An in-house recruiter is a full-time employee on payroll. Fractional recruiting is an embedded external TA partner on a month-to-month retainer. For Seed through Series B GTM hiring, Kas fractional (Kas Seat) is <strong>$5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above</strong>, with <strong>zero success fees</strong>. A solid in-house TA seat often runs <strong>$100k to $160k+</strong> fully loaded once you add salary, benefits, LinkedIn Recruiter, and tools. Fractional wins when hiring is bursty and sales-specialist quality matters. In-house wins when you need sustained, cross-function volume (roughly 10+ hires per quarter) and full internal ownership.
                         </p>
                         <p className="text-grey-300 leading-relaxed mt-4 relative z-10">
                             List prices: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales recruiting cost</Link>. Product: <Link href="/recruit/fractional-sales" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales</Link>.
@@ -225,7 +225,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                                 <tbody>
                                     <tr className="border-b border-grey-100 last:border-0">
                                             <td className="py-4 px-6 font-bold text-navy-900">Kas Seat</td>
-                                            <td className="py-4 px-6 text-grey-600 font-semibold">$5,000 to $8,000 a month, up to $10,000 for senior AE and above</td>
+                                            <td className="py-4 px-6 text-grey-600 font-semibold">$5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above</td>
                                             <td className="py-4 px-6 text-grey-600">The sales roles you have open, month to month</td>
                                             <td className="py-4 px-6 text-grey-600">Zero</td>
                                         </tr>
@@ -257,12 +257,12 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                                             <td className="py-4 px-6 text-grey-600">~$159,000 / year</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $5,000/mo x 6 months</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $5,000/mo x 6 months (up to two open roles)</td>
                                             <td className="py-4 px-6 text-grey-600">$5,000 x 6</td>
                                             <td className="py-4 px-6 text-grey-600">$30,000</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $8,000/mo x 6 months</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $8,000/mo x 6 months (three to five open roles)</td>
                                             <td className="py-4 px-6 text-grey-600">$8,000 x 6</td>
                                             <td className="py-4 px-6 text-grey-600">$48,000</td>
                                         </tr>
@@ -288,12 +288,12 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                                             <td className="py-4 px-6 text-grey-600">~$159,000</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $5,000/mo x 12</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $5,000/mo x 12 (up to two open roles)</td>
                                             <td className="py-4 px-6 text-grey-600">$5,000 x 12</td>
                                             <td className="py-4 px-6 text-grey-600">$60,000</td>
                                         </tr>
                                         <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $8,000/mo x 12</td>
+                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $8,000/mo x 12 (three to five open roles)</td>
                                             <td className="py-4 px-6 text-grey-600">$8,000 x 12</td>
                                             <td className="py-4 px-6 text-grey-600">$96,000</td>
                                         </tr>
@@ -410,7 +410,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
                         <div className="space-y-8">
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">Is fractional recruiting cheaper than hiring an in-house recruiter?</h3>
-                            <p className="text-grey-600 leading-relaxed">Usually yes for Seed to Series B GTM sprints. Kas Seat is $5,000 to $8,000 a month, up to $10,000 for senior AE and above, with zero success fees. A mid fully loaded in-house seat often lands around $100k to $160k per year (~$8k to $13k+/mo). Fractional also pauses. Payroll does not.</p>
+                            <p className="text-grey-600 leading-relaxed">Usually yes for Seed to Series B GTM sprints. Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees. A mid fully loaded in-house seat often lands around $100k to $160k per year (~$8k to $13k+/mo). Fractional also pauses. Payroll does not.</p>
                         </div>
 
                         <div className="space-y-3">
@@ -430,7 +430,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
 
                         <div className="space-y-3">
                             <h3 className="text-xl font-bold text-navy-900">Does Kas fractional include success fees?</h3>
-                            <p className="text-grey-600 leading-relaxed">No. Kas Seat ($5,000 to $8,000 a month, up to $10,000 for senior AE and above) has zero success fees. Milestone Search example fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) are a separate per-hire option. Director/VP/CRO is quote only.</p>
+                            <p className="text-grey-600 leading-relaxed">No. Kas Seat ($5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above) has zero success fees. Milestone Search example fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) are a separate per-hire option. Director/VP/CRO is quote only.</p>
                         </div>
 
                         <div className="space-y-3">
@@ -466,7 +466,7 @@ export default function FractionalRecruitingVsInHouseRecruiter() {
 
                     <div className="p-10 rounded-[2rem] bg-navy-900 text-white text-center space-y-6 shadow-2xl">
                         <h2 className="text-3xl font-bold">Ready to pick fractional, in-house, or hybrid?</h2>
-                        <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">Email chris@thekasgroup.com with stage, open GTM roles, and target packages. You get a clear recommend: Kas Seat ($5,000 to $8,000 a month, up to $10,000 for senior AE and above), Milestone Search example fee, or wait-and-hire-in-house.</p>
+                        <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">Email chris@thekasgroup.com with stage, open GTM roles, and target packages. You get a clear recommend: Kas Seat ($5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above), Milestone Search example fee, or wait-and-hire-in-house.</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/contact" className="inline-flex items-center justify-center rounded-full bg-blue-accent px-8 py-4 font-bold text-white hover:bg-blue-hover transition-all">
                                 Email chris@thekasgroup.com

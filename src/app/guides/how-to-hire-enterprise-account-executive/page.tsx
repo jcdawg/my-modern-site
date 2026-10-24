@@ -237,7 +237,7 @@ export default function HowToHireEnterpriseAccountExecutive() {
                     <div className="space-y-4">
                         <h2 className={h2}>How The Kas Group Works</h2>
                         <p>
-                            The Kas Group works three ways. Kas Seat is $5,000 a month if the company is hiring only one role. Kas Milestone Search for a senior AE is $10,000 per search. It is quoted per role, and $10,000 is the senior AE figure. Kas Directed Pursuit starts with a conversation to learn what the company wants, so there is no price to list. Details are on the <Link href="/programs" className={link}>programs page</Link>.
+                            The Kas Group works three ways. Kas Seat is $5,000 a month for up to two open sales roles. Kas Milestone Search for a senior AE is $10,000 per search. It is quoted per role, and $10,000 is the senior AE figure. Kas Directed Pursuit starts with a conversation to learn what the company wants, so there is no price to list. Details are on the <Link href="/programs" className={link}>programs page</Link>.
                         </p>
                     </div>
 

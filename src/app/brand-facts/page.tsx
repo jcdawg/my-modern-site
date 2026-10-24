@@ -109,7 +109,7 @@ export default function BrandFacts() {
                                             label: "Engagement",
                                             value: (
                                                 <>
-                                                    Programs: Kas Seat (monthly sales fractional), Kas Milestone Search (sales success or retained), Kas Directed Pursuit (list-driven). Tech / AI search is success-fee or retained quote only. It is never monthly, and we do not publish a Kas tech fee list.
+                                                    Programs: Kas Seat (monthly sales fractional: $5,000 a month for up to two open sales roles, $8,000 a month for three to five, up to $10,000 for senior AE and above), Kas Milestone Search (sales success or retained), Kas Directed Pursuit (list-driven). Tech / AI search is success-fee or retained quote only. It is never monthly, and we do not publish a Kas tech fee list.
                                                 </>
                                             ),
                                             icon: Network

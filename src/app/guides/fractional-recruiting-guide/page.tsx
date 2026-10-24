@@ -33,7 +33,7 @@ const FAQS = [
     },
     {
         q: "How much does fractional recruiting cost at The Kas Group?",
-        a: "Kas Seat is $5,000 to $8,000 a month, up to $10,000 for senior AE and above, with zero success fees. For one seat, Kas Milestone Search is quoted per role, for example SDR/BDR $5k, AE $7.5k, Senior AE or Sales Manager $10k. Kas Directed Pursuit is quoted. Leadership, VP and CRO searches are specialist quote only.",
+        a: "Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees. For one seat, Kas Milestone Search is quoted per role, for example SDR/BDR $5k, AE $7.5k, Senior AE or Sales Manager $10k. Kas Directed Pursuit is quoted. Leadership, VP and CRO searches are specialist quote only.",
     },
     {
         q: "Is there a long contract?",
@@ -114,7 +114,7 @@ export default function FractionalRecruitingGuide() {
                             <li>They work inside your process, with your hiring managers, on your seats.</li>
                             <li>No percentage of salary. No per-hire invoice on Kas Seat.</li>
                             <li>Best for 2 or more sales seats in a quarter with no full-time recruiter.</li>
-                            <li>Kas Seat is <strong>$5,000 to $8,000 a month, up to $10,000 for senior AE and above</strong>, with <strong>zero success fees</strong>.</li>
+                            <li>Kas Seat is <strong>$5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above</strong>, with <strong>zero success fees</strong>.</li>
                         </ul>
                     </div>
 
@@ -210,7 +210,7 @@ export default function FractionalRecruitingGuide() {
                             What fractional recruiting costs at The Kas Group
                         </h2>
                         <ul className="space-y-3 text-grey-600 leading-relaxed list-disc pl-6">
-                            <li><strong className="text-navy-900">Kas Seat:</strong> $5,000 to $8,000 a month, up to $10,000 for senior AE and above. Zero success fees. Hire as many people as the search produces that month.</li>
+                            <li><strong className="text-navy-900">Kas Seat:</strong> $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above. Zero success fees. Hire as many people as the search produces that month.</li>
                             <li><strong className="text-navy-900">Kas Milestone Search:</strong> one seat, quoted per role. Example: SDR/BDR $5k, AE $7.5k, Senior AE or Sales Manager $10k. Three payments tied to milestones, not a monthly retainer.</li>
                             <li><strong className="text-navy-900">Kas Directed Pursuit:</strong> list-driven outbound search. You mark who we hunt. Quoted.</li>
                             <li><strong className="text-navy-900">Leadership, VP and CRO:</strong> specialist quote only.</li>

@@ -70,7 +70,7 @@ export default function HowToHireSaasSdrsFastRamp() {
                 name: "Should a Seed-Series B team use fractional hiring to fill SDR/AE seats?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "For bursty, quota-driven SDR/AE volume, fractional sales hiring covers it without paying for a full-time desk. The Kas Group fractional retainers have zero success fees (Kas Seat at $5,000 to $8,000 a month, up to $10,000 for senior AE and above), with Milestone Search example fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) as a separate per-hire option.",
+                    text: "For bursty, quota-driven SDR/AE volume, fractional sales hiring covers it without paying for a full-time desk. The Kas Group fractional retainers have zero success fees (Kas Seat at $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above), with Milestone Search example fees (SDR $5k, AE $7.5k, Sr AE/SM $10k) as a separate per-hire option.",
                 },
             },
         ],
@@ -374,7 +374,7 @@ export default function HowToHireSaasSdrsFastRamp() {
                         </h2>
                         <p className="text-grey-600 leading-relaxed">
                             For Seed through Series B with bursty, quota-driven SDR/AE volume, fractional sales hiring covers the seats without a full-time headcount. The Kas Group fractional retainers are{" "}
-                            <strong>$5,000 to $8,000 a month, up to $10,000 for senior AE and above</strong> (Kas Seat) with{" "}
+                            <strong>$5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above</strong> (Kas Seat) with{" "}
                             <strong>zero success fees</strong>, and pause month to month. Separate per-hire Milestone Search example fees are SDR $5k, AE $7.5k, Sr AE/SM $10k. For the full model, see the{" "}
                             <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline">
                                 fractional recruiting guide

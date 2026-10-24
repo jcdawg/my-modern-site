@@ -38,7 +38,7 @@ export default function SalesRecruiting() {
         },
         {
             q: "What does sales recruiting cost?",
-            a: "Sales hiring runs on Kas programs: Seat (monthly fractional, normally $5,000 to $8,000 a month, up to $10,000 for senior AE and above), Milestone Search (example fees SDR $5k / AE $7.5k / Sr AE or Sales Manager $10k; leadership quote), or Directed Pursuit. Contingency remains an option. Industry retained search often starts around $25k, which is market context, not a Kas list price.",
+            a: "Sales hiring runs on Kas programs: Seat (monthly fractional, $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above), Milestone Search (example fees SDR $5k / AE $7.5k / Sr AE or Sales Manager $10k; leadership quote), or Directed Pursuit. Contingency remains an option. Industry retained search often starts around $25k, which is market context, not a Kas list price.",
         },
     ];
 

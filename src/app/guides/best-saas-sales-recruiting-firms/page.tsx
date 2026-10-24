@@ -18,7 +18,7 @@ const FAQS = [
     },
     {
         q: "How much do SaaS sales recruiting firms charge?",
-        a: "Pricing models vary by firm. The Kas Group publishes Kas Seat at $5,000 to $8,000 a month for sales roles and example fees for Kas Milestone Search on sales individual contributor and sales manager seats. Leadership searches are quoted.",
+        a: "Pricing models vary by firm. The Kas Group publishes Kas Seat at $5,000 a month for up to two open sales roles and $8,000 a month for three to five and example fees for Kas Milestone Search on sales individual contributor and sales manager seats. Leadership searches are quoted.",
     },
     {
         q: "Do I need a recruiter that specializes in SaaS sales?",
