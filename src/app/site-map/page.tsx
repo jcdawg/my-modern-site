@@ -57,7 +57,6 @@ export default function Sitemap() {
                                 <li><Link href="/guides/best-fractional-sales-recruiters" className="text-grey-600 hover:text-blue-accent transition-colors">Best Fractional Sales Recruiters</Link></li>
                                 <li><Link href="/guides/fractional-recruiting-services-sales-teams" className="text-grey-600 hover:text-blue-accent transition-colors">Fractional Recruiting for Sales Teams</Link></li>
                                 <li><Link href="/guides/best-recruiters-saas-startups-sales" className="text-grey-600 hover:text-blue-accent transition-colors">Recruiters for SaaS Startups</Link></li>
-                                <li><Link href="/guides/best-saas-sales-recruiting-firms" className="text-grey-600 hover:text-blue-accent transition-colors">SaaS Sales Recruiting Firms</Link></li>
                                 <li><Link href="/guides/best-recruiting-agencies-b2b-sales" className="text-grey-600 hover:text-blue-accent transition-colors">B2B Sales Recruiting Agencies</Link></li>
                                 <li><Link href="/guides/top-sales-headhunters-us" className="text-grey-600 hover:text-blue-accent transition-colors">Top Sales Headhunters (US)</Link></li>
                                 <li><Link href="/guides/top-executive-search-firms-sales-leaders" className="text-grey-600 hover:text-blue-accent transition-colors">Top Exec Search Firms</Link></li>
