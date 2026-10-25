@@ -4,11 +4,11 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "AE Interview Questions: Spot a Real Closer",
+    title: "10 AE Interview Questions to Spot a Real Closer",
     description:
-        "Account executive interview questions by stage: the deal walkthrough red flags, the hiccups question, how to run a role play, and what research says works.",
+        "10 account executive interview questions by stage, a hiring manager scorecard, deal walkthrough red flags, the hiccups question, how to run a role play, and what research says works.",
     path: "/guides/account-executive-interview-questions",
-    headline: "Account Executive Interview Questions: How to Spot a Real Closer",
+    headline: "Account Executive Interview Questions: 10 to Ask and How to Spot a Real Closer",
 };
 
 export const metadata = pageMetadata({ title: PAGE.title, description: PAGE.description, path: PAGE.path, type: "article" });
@@ -30,6 +30,10 @@ const FAQS = [
     {
         q: "What are the best interview questions for an account executive?",
         a: "The best ones make the candidate prove they won the deals on their resume. Ask for one deal from start to finish, then ask where the lead came from, who on their team helped close it, what hiccups came up and how they resolved them. Ask every candidate the same questions and score the answers the same way.",
+    },
+    {
+        q: "What should be on an account executive interview scorecard?",
+        a: "Score deal ownership, hiccups, team collaboration, attainment in context, pipeline sourcing, motion match, role play preparation and how they talk about a loss. For each one, write down what good sounds like and the red flag before the first interview, and score every candidate against the same list.",
     },
     {
         q: "What are the red flags in an account executive interview?",
@@ -80,6 +84,30 @@ export default function AccountExecutiveInterviewQuestions() {
         { area: "Next step", strong: "Ends with a dated next step, not a vague follow up." },
     ];
 
+    const questions = [
+        { q: "What share of your pipeline did you source yourself?", stage: "Phone screen" },
+        { q: "Did you mostly win new customers or grow existing ones?", stage: "Phone screen" },
+        { q: "What quota did you carry, and what did you close against it in dollars?", stage: "Phone screen" },
+        { q: "Tell me about a deal you closed where you started it and finished it. What steps did you take, what challenges did you run into, and what did you do to build the relationship with the customer?", stage: "Deal walkthrough" },
+        { q: "Where did the lead come from?", stage: "Deal walkthrough" },
+        { q: "Who on your team did you work with to close it, and what did each person do?", stage: "Deal walkthrough" },
+        { q: "Were there any hiccups, and how did you resolve them?", stage: "Deal walkthrough" },
+        { q: "Was this a new customer or an existing one?", stage: "Deal walkthrough" },
+        { q: "Tell me about a deal you should have won. What would you change?", stage: "Deal walkthrough" },
+        { q: "Run a first call with our buyer, using the scenario we built around our product.", stage: "Role play" },
+    ];
+
+    const scorecard = [
+        { c: "Deal ownership", good: "Knows where the lead came from and what they did at each step.", flag: "Goes vague on the lead source or their own part in the deal." },
+        { c: "Hiccups", good: "Names specific problems in the deal and how they resolved each one.", flag: "Says a large committee deal went pretty straightforward." },
+        { c: "Team collaboration", good: "Names who helped close it and what each person did.", flag: "Cannot say who else worked on the deal." },
+        { c: "Attainment in context", good: "Gives quota and results in dollars, plus how the team did.", flag: "Offers percentages only, with no dollar figure behind them." },
+        { c: "Pipeline sourcing", good: "States what share of pipeline they sourced themselves.", flag: "Cannot separate their own pipeline from leads they were handed." },
+        { c: "Motion match", good: "Clear on whether they won new customers or grew existing ones.", flag: "Their experience is the opposite of the job you are hiring for." },
+        { c: "Role play preparation", good: "Did the research on the buyer and asks before pitching.", flag: "Pitches before asking a single question." },
+        { c: "Losses", good: "Owns a lost deal and says what they would change.", flag: "Has no loss to talk about or nothing they would change." },
+    ];
+
     return (
         <div className="bg-white">
             <ArticleJsonLd title={PAGE.title} description={PAGE.description} path={PAGE.path} headline={PAGE.headline} />
@@ -95,7 +123,7 @@ export default function AccountExecutiveInterviewQuestions() {
                         <span className="text-grey-600">AE Interview Questions</span>
                     </nav>
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-5xl mb-6 leading-tight">
-                        Account Executive Interview Questions: How to Spot a Real Closer
+                        Account Executive Interview Questions: 10 to Ask and How to Spot a Real Closer
                     </h1>
                     <p className="text-sm text-grey-500">October 19, 2026 &middot; Chris Stinson, The Kas Group</p>
                 </div>
@@ -107,6 +135,41 @@ export default function AccountExecutiveInterviewQuestions() {
                     <blockquote className="border-l-4 border-blue-accent pl-4 text-navy-900 font-medium">
                         <strong>Short answer:</strong> Have the AE walk you through one deal they closed. Listen for where the lead came from and who on their team they worked with to close it. Then ask what hiccups came up and how they resolved them. If a big committee deal went pretty straightforward, that is a red flag. Real deals have hiccups.
                     </blockquote>
+
+                    <div className="space-y-4">
+                        <h2 className={h2}>10 Account Executive Interview Questions to Ask</h2>
+                        <p>Ask every candidate these in the same order. The stage is listed after each one.</p>
+                        <ol className="list-decimal pl-6 space-y-2">
+                            {questions.map((x) => (
+                                <li key={x.q}>{x.q} <span className="text-grey-500 text-base">({x.stage})</span></li>
+                            ))}
+                        </ol>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h2 className={h2}>Hiring Manager Scorecard for AE Interviews</h2>
+                        <p>Agree on this before the first interview. Score each row in writing before you compare notes.</p>
+                        <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
+                            <table className="w-full text-left border-collapse text-base">
+                                <thead className="bg-grey-50">
+                                    <tr className="border-b border-grey-200">
+                                        <th className="py-3 px-5 font-bold text-navy-900">Criteria</th>
+                                        <th className="py-3 px-5 font-bold text-navy-900">What good sounds like</th>
+                                        <th className="py-3 px-5 font-bold text-navy-900">Red flag</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {scorecard.map((r) => (
+                                        <tr key={r.c} className="border-b border-grey-100 last:border-0">
+                                            <td className="py-3 px-5 font-bold text-navy-900">{r.c}</td>
+                                            <td className="py-3 px-5 text-grey-600">{r.good}</td>
+                                            <td className="py-3 px-5 text-grey-600">{r.flag}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
                     <p className="text-sm text-grey-500">
                         How to read this guide: sections labeled &quot;My view&quot; come from my own work placing sales people at The Kas Group. Everything else comes from a named outside source, linked in the text and listed at the end. I label vendor figures as such.
@@ -256,7 +319,7 @@ export default function AccountExecutiveInterviewQuestions() {
                     <div className="space-y-4">
                         <h2 className={h2}>How The Kas Group Works</h2>
                         <p>
-                            The Kas Group works three ways. Kas Seat is $5,000 a month for up to two open sales roles. Kas Milestone Search for a senior AE is $10,000 per search. It is quoted per role, and $10,000 is the senior AE figure. Kas Directed Pursuit starts with a conversation to learn what the company wants, so there is no price to list. Details are on the <Link href="/programs" className={link}>programs page</Link>.
+                            The Kas Group works three ways. Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five. Kas Milestone Search is $5,000 for an SDR or BDR, $7,500 for an AE and $10,000 for a senior AE or sales manager. Kas Directed Pursuit starts with a conversation to learn what the company wants, so there is no price to list. Details are on the <Link href="/programs" className={link}>programs page</Link>.
                         </p>
                     </div>
 
@@ -312,8 +375,6 @@ export default function AccountExecutiveInterviewQuestions() {
                         <Link href="/guides/cost-of-a-bad-hire" className={link}>The Cost of a Bad Hire</Link>
                         {" · "}
                         <Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS Sales Recruiters for Startups</Link>
-                        {" · "}
-                        <Link href="/guides/best-saas-sales-recruiting-firms" className={link}>SaaS Sales Recruitment Agencies</Link>
                         {" · "}
                         <Link href="/programs" className={link}>Programs</Link>
                     </p>
