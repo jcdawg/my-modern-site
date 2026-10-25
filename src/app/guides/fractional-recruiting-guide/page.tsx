@@ -13,35 +13,44 @@ export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 const link = "text-blue-accent hover:underline";
 
+const SRC = {
+    shrm: "https://www.shrm.org/topics-tools/news/talent-acquisition/how-to-work-effectively-executive-search-firm",
+    blsHr: "https://www.bls.gov/ooh/business-and-financial/human-resources-specialists.htm",
+    blsEcec: "https://www.bls.gov/news.release/ecec.nr0.htm",
+};
+
+const DEFINITION =
+    "Fractional recruiting is a monthly retainer for a part time recruiting partner who works inside your hiring process. The partner writes the scorecard with you, sources candidates, screens them, runs the interview loop and helps close offers. You pay by the month for dedicated time, not a percentage of each new hire's salary.";
+
 // One array drives both the visible FAQ and the FAQPage schema, so the text matches word for word.
 const FAQS = [
     {
         q: "What is fractional recruiting?",
-        a: "Fractional recruiting is a monthly retainer for a part-time, embedded recruiting partner. They run your searches like an in-house recruiter would, from calibration to close. You pay by the month, not a percentage of salary per hire.",
+        a: DEFINITION,
+    },
+    {
+        q: "How much does fractional recruiting cost?",
+        a: "At The Kas Group, Kas Seat is $5,000/mo for up to two open sales roles and $8,000/mo for three to five, up to $10,000/mo for senior AE and above, with zero success fees. Kas Milestone Search example fees are $5,000 for SDR/BDR, $7,500 for AE and $10,000 for Senior AE or Sales Manager. Kas Directed Pursuit is priced on request. AI, ML and data searches are quote only, on a success fee only basis.",
+    },
+    {
+        q: "How to choose a fractional recruiter",
+        a: "Look for a partner who specializes in the roles you are hiring, works inside your tools and process, publishes pricing, works month to month, and leaves you owning every candidate name. Ask who does the sourcing and screening, how fast you see a first shortlist, and how they check sales candidates' quota history.",
     },
     {
         q: "How is fractional recruiting different from contingency recruiting?",
-        a: "A contingency agency gets paid only when you hire, often 20% to 30% of first-year pay, and may work your role alongside other firms. Fractional recruiting is a monthly retainer for dedicated time. The recruiter is paid to run a good process, not to send the most resumes.",
+        a: "A contingency recruiter is paid only when you hire. SHRM puts the usual fee at 20% to 25% of the role's first year cash compensation. Fractional recruiting is a monthly retainer for dedicated time, so the partner is paid to run your whole process across your open seats.",
     },
     {
         q: "How is fractional recruiting different from retained search?",
-        a: "Retained search is a project fee for one search, usually a senior seat. Fractional recruiting covers ongoing hiring across several seats for a monthly fee. Many teams use fractional for SDRs and AEs and a retained or specialist search for a VP.",
+        a: "Retained search is a fee for one search, usually a senior seat, paid whether or not the role is filled. SHRM cites a typical fee of about 33% of salary, bonus and signing bonus. Fractional recruiting covers ongoing hiring across several seats for a monthly fee.",
     },
     {
         q: "Who is fractional recruiting a good fit for?",
-        a: "Seed to Series B companies with two or more sales seats to fill in the next quarter and no full-time recruiter. It also fits teams that hire in bursts and want to pause between them.",
-    },
-    {
-        q: "How much does fractional recruiting cost at The Kas Group?",
-        a: "Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees. For one seat, Kas Milestone Search is quoted per role, for example SDR/BDR $5k, AE $7.5k, Senior AE or Sales Manager $10k. Kas Directed Pursuit is quoted. Leadership, VP and CRO searches are specialist quote only.",
+        a: "Seed to Series B companies with sales seats to fill in the next quarter and no full time recruiter. It also fits teams that hire in bursts and want to pause between them.",
     },
     {
         q: "Is there a long contract?",
         a: "No. Kas Seat is month to month. Add capacity when you open seats. Pause it when the team is full.",
-    },
-    {
-        q: "When should I hire an in-house recruiter instead?",
-        a: "When recruiting is a permanent department with steady volume across functions, roughly 10 or more hires a quarter. Until then, fractional recruiting usually costs less than a full-time recruiter.",
     },
 ];
 
@@ -56,22 +65,22 @@ const faqSchema = {
 };
 
 const MODELS = [
-    { model: "Fractional recruiting", what: "Part-time recruiting partner embedded with your team. Owns pipeline, interviews and close.", pay: "Monthly retainer", term: "Month to month" },
-    { model: "Contingency agency", what: "Firms send candidates, often several firms on the same role.", pay: "20% to 30% of first-year pay per hire", term: "Per hire" },
-    { model: "Retained search", what: "Exclusive search for one seat, usually senior.", pay: "Project fee, paid in stages", term: "Per search" },
-    { model: "In-house recruiter", what: "Full-time recruiter on payroll.", pay: "Salary, benefits and tools (about $100k to $160k fully loaded)", term: "Ongoing headcount" },
+    { model: "Fractional recruiting", what: "Part time recruiting partner embedded with your team. Owns pipeline, interviews and close.", pay: "Monthly retainer", term: "Month to month" },
+    { model: "Contingency recruiting", what: "Recruiter is paid when a candidate they introduce is hired.", pay: "Usually 20% to 25% of first year cash compensation (SHRM)", term: "Per hire" },
+    { model: "Retained search", what: "Exclusive search for one seat, usually senior.", pay: "About 33% of salary, bonus and signing bonus (SHRM)", term: "Per search" },
+    { model: "In-house recruiter", what: "Full time recruiter on payroll.", pay: "Salary plus benefits (see BLS figures below)", term: "Ongoing headcount" },
 ];
 
 const STAGES = [
-    { stage: "Seed", pattern: "First AE, maybe an SDR. Founder still closes.", fit: "Strong. A month of Kas Seat costs less than a 25% fee on one AE." },
+    { stage: "Seed", pattern: "First AE, maybe an SDR. Founder still closes.", fit: "Strong. Kas Seat covers the first sales seats on one monthly plan." },
     { stage: "Series A", pattern: "AE team plus SDRs. First Sales Manager question.", fit: "Strong. Kas Seat covers several seats at once." },
     { stage: "Series B", pattern: "Many GTM seats. Maybe a first VP Sales.", fit: "Strong for ongoing seats. Run the VP as a specialist search." },
-    { stage: "Later, high volume", pattern: "10 or more hires a quarter across functions.", fit: "Consider an in-house team. Keep a specialist for hard sales seats." },
+    { stage: "Later, high volume", pattern: "Steady hiring across many functions.", fit: "Consider an in-house team. Keep a specialist for hard sales seats." },
 ];
 
 const STEPS = [
-    { title: "Week 1: Calibration", body: "Scorecard, comp bands, ICP, must-haves. For SDR, AE and Sales Manager seats, a free market scan lands in 48 to 72 hours." },
-    { title: "Weeks 1 to 3: Pipeline", body: "Direct outreach to people who are not job hunting. Target: 3 or more qualified candidates in 3 weeks for SDR, AE and Sales Manager seats." },
+    { title: "Week 1: Calibration", body: "Scorecard, comp bands, ICP, must-haves. For SDR through Sales Manager seats only, a free market scan lands in 48 to 72 hours." },
+    { title: "Weeks 1 to 3: Pipeline", body: "Direct outreach to people who are not job hunting. Target for SDR through Sales Manager seats: 3 or more qualified candidates in 3 weeks." },
     { title: "Ongoing: Interviews and close", body: "Interview design, debriefs, offer strategy and counteroffer defense." },
     { title: "Each month: Keep or pause", body: "Month to month. Add capacity when you open seats. Pause when the team is full." },
 ];
@@ -95,8 +104,9 @@ export default function FractionalRecruitingGuide() {
                         What Is Fractional Recruiting?{" "}
                         <span className="text-blue-accent">How a Kas Engagement Runs</span>
                     </h1>
-                    <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
-                        Fractional recruiting is a monthly retainer for a part-time, embedded recruiting partner. They run your searches like an in-house recruiter would, from calibration to close. You pay by the month, not a percentage of salary per hire. At The Kas Group, we do it for B2B sales teams.
+                    <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">{DEFINITION}</p>
+                    <p className="mt-6 text-sm text-grey-500">
+                        <strong className="text-navy-900">Updated Oct 2026, Chris Stinson.</strong> Chris is Managing Partner of The Kas Group and has recruited sales and GTM talent since 2014.
                     </p>
                 </div>
             </section>
@@ -109,22 +119,24 @@ export default function FractionalRecruitingGuide() {
                             <Zap className="h-6 w-6 text-blue-accent" />
                             The short answer
                         </h2>
+                        {/* TODO(Chris): add ONE first party Kas proof stat here (for example average time to first shortlist or hires made on Kas Seat). Chris will supply the number. Do not invent it. Nothing renders until it is filled in. */}
                         <ul className="space-y-3 text-lg text-grey-300 leading-relaxed relative z-10 list-disc pl-6">
                             <li>Fractional recruiting means you rent a senior recruiter&apos;s time by the month.</li>
                             <li>They work inside your process, with your hiring managers, on your seats.</li>
                             <li>No percentage of salary. No per-hire invoice on Kas Seat.</li>
-                            <li>Best for 2 or more sales seats in a quarter with no full-time recruiter.</li>
-                            <li>Kas Seat is <strong>$5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above</strong>, with <strong>zero success fees</strong>.</li>
+                            <li>Best for sales seats you need filled this quarter with no full time recruiter.</li>
+                            <li>Kas Seat is <strong>$5,000/mo for up to two open sales roles and $8,000/mo for three to five, up to $10,000/mo for senior AE and above</strong>, with <strong>zero success fees</strong>.</li>
                         </ul>
                     </div>
 
                     <div className="space-y-6">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
                             <Scale className="h-8 w-8 text-blue-accent" />
-                            What fractional recruiting is
+                            What is fractional recruiting?
                         </h2>
+                        <p className="text-grey-600 leading-relaxed">{DEFINITION}</p>
                         <p className="text-grey-600 leading-relaxed">A fractional recruiter acts as your recruiting lead for part of the week. They write the scorecard with you. They source. They screen. They run the interview loop and help close the offer.</p>
-                        <p className="text-grey-600 leading-relaxed">It is not a job board. It is not software. It is not an agency sending resumes. You get a person who learns your ICP, your pitch and your bar, then uses that on every seat.</p>
+                        <p className="text-grey-600 leading-relaxed">You get a person who learns your ICP, your pitch and your bar, then uses that on every seat.</p>
                         <p className="text-grey-600 leading-relaxed">You own every candidate name. The work stays in your process and your tools.</p>
                     </div>
 
@@ -156,9 +168,10 @@ export default function FractionalRecruitingGuide() {
                             </table>
                         </div>
                         <ul className="space-y-3 text-grey-600 leading-relaxed list-disc pl-6">
-                            <li><strong className="text-navy-900">Contingency</strong> pays per hire. The fee grows with the salary. Several firms may chase the same role, so speed beats fit.</li>
-                            <li><strong className="text-navy-900">Retained</strong> pays for one search, often up front in stages. Good for a single senior seat. Costly if you have five seats.</li>
-                            <li><strong className="text-navy-900">Fractional</strong> pays for time. One partner works all your seats. The cost stays the same whether you make one hire or three.</li>
+                            <li><strong className="text-navy-900">Contingency</strong> pays per hire. <a href={SRC.shrm} className={link}>SHRM</a> puts the usual fee at 20% to 25% of the role&apos;s first year cash compensation, paid only if the role is filled.</li>
+                            <li><strong className="text-navy-900">Retained</strong> pays for one search, whether or not it is filled. SHRM cites a typical fee of about 33% of salary, bonus and signing bonus. It suits a single senior seat.</li>
+                            <li><strong className="text-navy-900">Fractional</strong> pays for time. One partner works all your open seats on one monthly plan.</li>
+                            <li><strong className="text-navy-900">In-house</strong> pays salary plus benefits. The <a href={SRC.blsHr} className={link}>BLS</a> puts the median annual wage for human resources specialists, the group that includes recruiters, at $75,940 in May 2025, with the top 10% above $128,720. <a href={SRC.blsEcec} className={link}>Benefits made up 31.5%</a> of employer costs for full time private industry workers in June 2026.</li>
                         </ul>
                         <p className="text-grey-600 leading-relaxed">Fee math by seat: <Link href="/guides/fractional-sales-recruiting-vs-contingency" className={link}>fractional sales recruiting vs contingency</Link>. Headcount math: <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className={link}>fractional recruiting vs in-house recruiter</Link>.</p>
                     </div>
@@ -190,16 +203,15 @@ export default function FractionalRecruitingGuide() {
                         </div>
                         <h3 className="text-xl font-bold text-navy-900">Good fit</h3>
                         <ul className="space-y-2 text-grey-600 leading-relaxed list-disc pl-6">
-                            <li>You will open 2 or more sales seats in a quarter.</li>
+                            <li>You will open sales seats this quarter.</li>
                             <li>The seats are sales and GTM, not easy backfills.</li>
                             <li>You want one partner who learns your ICP and your bar.</li>
-                            <li>You do not want a percentage invoice on a $150k to $350k OTE.</li>
                         </ul>
                         <h3 className="text-xl font-bold text-navy-900">Not a fit</h3>
                         <ul className="space-y-2 text-grey-600 leading-relaxed list-disc pl-6">
                             <li>One clear seat and nothing behind it. Use Kas Milestone Search.</li>
                             <li>A VP or CRO search. Use a specialist search.</li>
-                            <li>10 or more hires a quarter across functions. Build an in-house team.</li>
+                            <li>Steady hiring across many functions. Build an in-house team.</li>
                         </ul>
                         <p className="text-grey-600 leading-relaxed">Hiring your first 1 to 5 reps? Read <Link href="/guides/fractional-recruiting-for-startups" className={link}>fractional recruiting for startups</Link>.</p>
                     </div>
@@ -207,12 +219,14 @@ export default function FractionalRecruitingGuide() {
                     <div className="space-y-6">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
                             <DollarSign className="h-8 w-8 text-blue-accent" />
-                            What fractional recruiting costs at The Kas Group
+                            How much does fractional recruiting cost?
                         </h2>
+                        <p className="text-grey-600 leading-relaxed">Pricing at The Kas Group:</p>
                         <ul className="space-y-3 text-grey-600 leading-relaxed list-disc pl-6">
-                            <li><strong className="text-navy-900">Kas Seat:</strong> $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above. Zero success fees. Hire as many people as the search produces that month.</li>
-                            <li><strong className="text-navy-900">Kas Milestone Search:</strong> one seat, quoted per role. Example: SDR/BDR $5k, AE $7.5k, Senior AE or Sales Manager $10k. Three payments tied to milestones, not a monthly retainer.</li>
-                            <li><strong className="text-navy-900">Kas Directed Pursuit:</strong> list-driven outbound search. You mark who we hunt. Quoted.</li>
+                            <li><strong className="text-navy-900">Kas Seat:</strong> $5,000/mo for up to two open sales roles, $8,000/mo for three to five. Up to $10,000/mo for senior AE and above. Zero success fees. Hire as many people as the search produces that month.</li>
+                            <li><strong className="text-navy-900">Kas Milestone Search:</strong> one seat. Example fees: SDR/BDR $5,000, AE $7,500, Senior AE or Sales Manager $10,000. Three payments tied to milestones, not a monthly retainer.</li>
+                            <li><strong className="text-navy-900">Kas Directed Pursuit:</strong> list driven outbound search. You mark who we hunt. Pricing on request.</li>
+                            <li><strong className="text-navy-900">AI, ML and data roles:</strong> quote only, success fee only. Never monthly.</li>
                             <li><strong className="text-navy-900">Leadership, VP and CRO:</strong> specialist quote only.</li>
                         </ul>
                         <p className="text-grey-600 leading-relaxed">Full breakdown: <Link href="/guides/fractional-sales-recruiting-cost" className={link}>fractional sales recruiting cost</Link>. All three products: <Link href="/programs" className={link}>Programs</Link>.</p>
@@ -234,7 +248,21 @@ export default function FractionalRecruitingGuide() {
                                 </li>
                             ))}
                         </ol>
-                        <p className="text-grey-600 leading-relaxed">You get dedicated time from one partner. You do not get resumes from five firms. How the embedded month works for sales teams: <Link href="/recruit/fractional-sales" className={link}>Kas Seat for sales</Link>.</p>
+                        <p className="text-grey-600 leading-relaxed">You get dedicated time from one partner. How the embedded month works for sales teams: <Link href="/recruit/fractional-sales" className={link}>Kas Seat for sales</Link>.</p>
+                    </div>
+
+                    <div className="space-y-6">
+                        <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
+                            <Users className="h-8 w-8 text-blue-accent" />
+                            How to choose a fractional recruiter
+                        </h2>
+                        <ul className="space-y-3 text-grey-600 leading-relaxed list-disc pl-6">
+                            <li><strong className="text-navy-900">Specialization.</strong> Pick a partner who recruits the roles you are hiring. For sales seats, ask how they check quota history.</li>
+                            <li><strong className="text-navy-900">Who does the work.</strong> Ask who sources, who screens and who joins your debriefs.</li>
+                            <li><strong className="text-navy-900">Speed to a first look.</strong> Ask how fast you see a first market scan or shortlist.</li>
+                            <li><strong className="text-navy-900">Terms.</strong> Look for published pricing and month to month terms.</li>
+                            <li><strong className="text-navy-900">Ownership.</strong> You should own every candidate name and keep the work in your own tools.</li>
+                        </ul>
                     </div>
 
                     <div className="space-y-8">
@@ -250,6 +278,15 @@ export default function FractionalRecruitingGuide() {
                                 </div>
                             ))}
                         </div>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h2 className="text-2xl font-bold text-navy-900">Sources</h2>
+                        <ul className="list-disc pl-6 space-y-2 text-base text-grey-600">
+                            <li>How to Work Effectively with an Executive Search Firm, SHRM, July 2016. Contingency and retained fee ranges. <a href={SRC.shrm} className={link}>{SRC.shrm}</a></li>
+                            <li>Human Resources Specialists, Occupational Outlook Handbook, U.S. Bureau of Labor Statistics. May 2025 wage data. <a href={SRC.blsHr} className={link}>{SRC.blsHr}</a></li>
+                            <li>Employer Costs for Employee Compensation, June 2026, U.S. Bureau of Labor Statistics, released September 9, 2026. <a href={SRC.blsEcec} className={link}>{SRC.blsEcec}</a></li>
+                        </ul>
                     </div>
 
                     <div className="space-y-4">

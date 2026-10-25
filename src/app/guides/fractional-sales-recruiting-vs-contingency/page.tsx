@@ -1,72 +1,90 @@
-import { BarChart3, CheckCircle2, ChevronRight, DollarSign, HelpCircle, Layers, Scale, Shield, Zap } from "lucide-react";
+import { ChevronRight, HelpCircle, Layers, Scale, Shield, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "Fractional Sales Recruiting vs Contingency: Fee Math for Founders",
-    description: "Side-by-side fee math for Kas fractional sales recruiting vs 20 to 30% contingency on AE and VP packages. When each model wins.",
+    title: "Fractional vs Contingency vs Retained Recruiting",
+    description: "Fractional vs contingency vs retained recruiting for sales hiring: how you pay, best fit, speed, involvement and role level, with sourced fees and Kas pricing.",
     path: "/guides/fractional-sales-recruiting-vs-contingency",
 };
 
 export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
-export default function FractionalSalesRecruitingVsContingency() {
-    const faqSchema = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: [
-            {
-                "@type": "Question",
-                name: "Is fractional sales recruiting cheaper than contingency?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Usually yes once you hire more than one GTM seat, or any senior seat with a large OTE. A $150k AE at 25% contingency is $37,500. Kas Milestone AE example fee is $7,500. Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees.",
-                },
-            },
-            {
-                "@type": "Question",
-                name: "What is the industry-standard contingency fee for sales roles?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Most contingency firms charge about 20 to 30% of first-year cash (some use OTE). Always confirm whether the base is cash or OTE before you sign. OTE-based fees on AEs and VPs cost more.",
-                },
-            },
-            {
-                "@type": "Question",
-                name: "Can I pause a fractional sales recruiting retainer?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes. Kas Seat is month-to-month. Pause when hiring stops. Resume when the next GTM seat opens.",
-                },
-            },
-            {
-                "@type": "Question",
-                name: "When should I use a Milestone Search example fee instead of fractional?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Use Milestone Search example fees (SDR $5,000 / AE $7,500 / Senior AE or Sales Manager $10,000) when you have a single clear seat through Sales Manager. Director, VP, and CRO are quote only. Use fractional when you are staffing a motion, not a req.",
-                },
-            },
-            {
-                "@type": "Question",
-                name: "Does contingency include a guarantee?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Varies by firm. Kas placement guarantee is a 60-day re-hunt, not a refund. For AE/SDR/Sales Manager under fractional: 3+ qualified candidates in 3 weeks or we keep hunting free. Free market scan in 48 to 72 hours. Those IC/manager guarantees are not promised for Director, VP, or CRO.",
-                },
-            },
-            {
-                "@type": "Question",
-                name: "Is fractional the same as retained executive search?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Related but not identical. Retained search is usually a project fee for one senior seat. Fractional is a rolling monthly partnership that can cover multiple GTM roles.",
-                },
-            },
-        ],
-    };
+const link = "text-blue-accent hover:underline";
 
+const SRC = {
+    shrm: "https://www.shrm.org/topics-tools/news/talent-acquisition/how-to-work-effectively-executive-search-firm",
+};
+
+// One array drives both the visible FAQ and the FAQPage schema, so the text matches word for word.
+const FAQS = [
+    {
+        q: "What is the difference between fractional vs contingency recruiting?",
+        a: "Contingency recruiting is paid only when a hire is made. SHRM puts the usual fee at 20% to 25% of the role's first year cash compensation. Fractional recruiting is a monthly retainer for a partner who works inside your process across your open seats. At The Kas Group, Kas Seat is $5k/mo for up to two open sales roles and $8k/mo for three to five.",
+    },
+    {
+        q: "What is the difference between retained vs contingency recruiting?",
+        a: "Retained search is an exclusive search, usually for an executive seat, paid whether or not the role is filled. SHRM cites a typical fee of about 33% of salary, bonus and signing bonus. Contingency recruiting is paid only on a hire, usually 20% to 25% of first year cash compensation, and is often used for roles up to senior manager.",
+    },
+    {
+        q: "Which recruiting model fits my situation?",
+        a: "Several sales seats this quarter fit a fractional retainer such as Kas Seat. One clear sales seat through Sales Manager fits a per role search such as Kas Milestone Search. A leadership seat above manager fits an exclusive search, which The Kas Group runs as Kas Directed Pursuit, priced on request.",
+    },
+    {
+        q: "How much does The Kas Group charge?",
+        a: "Kas Seat is $5k/mo for up to two open sales roles and $8k/mo for three to five, up to $10k/mo for senior AE and above, with zero success fees. Kas Milestone Search example fees are $5,000 for SDR/BDR, $7,500 for AE and $10,000 for Senior AE or Sales Manager. Kas Directed Pursuit is priced on request. AI, ML and data searches are quote only.",
+    },
+    {
+        q: "Can I pause a fractional sales recruiting retainer?",
+        a: "Yes. Kas Seat is month to month. Pause when hiring stops. Resume when the next sales seat opens.",
+    },
+    {
+        q: "What does The Kas Group commit to on sales searches?",
+        a: "For SDR through Sales Manager seats only: a free market scan in 48 to 72 hours, and 3 or more qualified candidates in 3 weeks or we keep hunting at no charge. Placements carry a 60 day re hunt, not a refund.",
+    },
+];
+
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQS.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+};
+
+const MODELS = [
+    {
+        model: "Fractional",
+        pay: "Monthly retainer for dedicated time",
+        fit: "Several open seats in a quarter, or hiring in bursts",
+        speed: "At The Kas Group, a free market scan in 48 to 72 hours for SDR through Sales Manager",
+        involvement: "Partner works inside your tools and joins your debriefs",
+        level: "SDR through Sales Manager, across several seats",
+    },
+    {
+        model: "Contingency",
+        pay: "Paid only on a hire, usually 20% to 25% of first year cash compensation (SHRM)",
+        fit: "One well defined role you want filled",
+        speed: "Starts right away; several recruiters can work the role in parallel (SHRM)",
+        involvement: "You review candidates as they are introduced",
+        level: "Roles up to senior manager (SHRM)",
+    },
+    {
+        model: "Retained",
+        pay: "About 33% of salary, bonus and signing bonus, paid whether or not the role is filled (SHRM)",
+        fit: "One high impact leadership seat",
+        speed: "Exclusive, focused search for one person",
+        involvement: "Close partnership with one firm on one search",
+        level: "Executive and leadership seats (SHRM)",
+    },
+];
+
+export default function FractionalVsContingencyVsRetained() {
+    const th = "py-4 px-6 font-bold text-navy-900";
+    const td = "py-4 px-6 text-grey-600";
     return (
         <div className="flex flex-col min-h-screen bg-white">
             <ArticleJsonLd {...PAGE} />
@@ -79,419 +97,194 @@ export default function FractionalSalesRecruitingVsContingency() {
                         <ChevronRight className="h-4 w-4" />
                         <Link href="/guides" className="hover:text-blue-accent">Guides</Link>
                         <ChevronRight className="h-4 w-4" />
-                        <span className="text-grey-600">Fractional vs Contingency</span>
+                        <span className="text-grey-600">Fractional vs Contingency vs Retained</span>
                     </nav>
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-6xl mb-6 leading-tight">
-                        Fractional Sales Recruiting vs Contingency:{" "}
-                        <span className="text-blue-accent">Fee Math for Founders</span>
+                        Fractional vs Contingency vs Retained Recruiting:{" "}
+                        <span className="text-blue-accent">Which Model Fits</span>
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
-                        Side-by-side fee math for fractional sales recruiting vs 20 to 30% contingency. When each model wins for AE and VP hires.
+                        Each recruiting model fits a different hiring situation. This guide compares how you pay, best fit, speed, involvement and role level, then shows where The Kas Group fits for sales hiring.
                     </p>
                 </div>
             </section>
 
             <section className="py-20 px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl space-y-20">
-                    <div className="p-8 rounded-3xl bg-navy-900 text-white shadow-2xl border border-white/10 relative overflow-hidden group">
-                        <div className="absolute -top-12 -right-12 w-48 h-48 bg-blue-accent/20 rounded-full blur-3xl group-hover:bg-blue-accent/30 transition-all" />
-                        <h2 className="text-2xl font-bold mb-6 flex items-center gap-2 relative z-10">
+                    <div className="p-8 rounded-3xl bg-navy-900 text-white shadow-2xl relative overflow-hidden">
+                        <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
                             <Zap className="h-6 w-6 text-blue-accent" />
-                            TL;DR
+                            The short answer
                         </h2>
-                        <p className="text-lg text-grey-300 leading-relaxed font-medium relative z-10">
-                            Contingency sales recruiting usually bills <strong>20 to 30%</strong> of first-year cash (or OTE). On a $150k AE that is <strong>$30k to $45k</strong>. On a $350k VP Sales that is <strong>$70k to $105k</strong>. Kas Seat is a month-to-month retainer (<strong>$5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above</strong>) with <strong>zero success fees</strong>. Prefer per-hire? Kas Milestone Search example fees: SDR <strong>$5,000</strong>, AE <strong>$7,500</strong>, Sr AE/SM <strong>$10,000</strong>. Director/VP/CRO: specialist/retained <strong>quote only</strong>. Choose contingency for a one-off backfill. Choose Kas Seat when you are filling multiple GTM seats and want dedicated bandwidth without percent-of-OTE sticker shock.
-                        </p>
-                        <p className="text-grey-300 leading-relaxed mt-4 relative z-10">
-                            List prices: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent underline underline-offset-2 hover:text-white">fractional sales recruiting cost</Link>.
-                        </p>
+                        <ul className="space-y-3 text-lg text-grey-300 leading-relaxed list-disc pl-6">
+                            <li><strong className="text-white">Several sales seats this quarter:</strong> a fractional retainer. At The Kas Group that is Kas Seat.</li>
+                            <li><strong className="text-white">One clear seat:</strong> contingency, or a per role search such as Kas Milestone Search through Sales Manager.</li>
+                            <li><strong className="text-white">One leadership seat:</strong> retained search. At The Kas Group, roles above manager run as Kas Directed Pursuit, priced on request.</li>
+                        </ul>
                     </div>
 
                     <div className="space-y-8">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
                             <Scale className="h-8 w-8 text-blue-accent" />
-                            What is contingency vs fractional (sales)
-                        </h2>
-                        <div className="grid md:grid-cols-2 gap-6">
-                            <div className="p-6 rounded-2xl border border-grey-200 bg-grey-50">
-                                <h3 className="text-lg font-bold text-navy-900 mb-3">Contingency recruiting</h3>
-                                <p className="text-grey-600 leading-relaxed">You pay only if a hire is made. The fee is typically 20 to 30% of first-year cash compensation (some firms use OTE). Multiple firms can work the same role. Speed and submission volume often beat depth.</p>
-                            </div>
-                            <div className="p-6 rounded-2xl border border-grey-200 bg-grey-50">
-                                <h3 className="text-lg font-bold text-navy-900 mb-3">Fractional sales recruiting</h3>
-                                <p className="text-grey-600 leading-relaxed">You pay a fixed monthly retainer. A sales-specialist recruiter embeds with your GTM team, runs the pipeline, and fills open seats. No percent-of-comp success fee on the Kas fractional model. Turn on or off month to month. Model primer: <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline">fractional recruiting guide</Link>.</p>
-                            </div>
-                        </div>
-                        <p className="text-grey-600 leading-relaxed">Kas also offers <strong>Milestone Search example fees</strong> (not contingency %): SDR/BDR $5,000 / AE $7,500 / Senior AE / Sales Manager $10,000. Director, VP, and CRO: quote only.</p>
-                    </div>
-
-                    <div className="space-y-8">
-                        <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
-                            <DollarSign className="h-8 w-8 text-blue-accent" />
-                            Fee model comparison
+                            Fractional vs contingency vs retained: comparison table
                         </h2>
                         <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
                             <table className="w-full text-left border-collapse">
                                 <thead className="bg-grey-50">
                                     <tr className="border-b border-grey-200">
-                                        <th className="py-4 px-6 font-bold text-navy-900">Model</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">How you pay</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">Typical cost</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">Success fee?</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">Best for</th>
+                                        <th className={th}>Model</th>
+                                        <th className={th}>How you pay</th>
+                                        <th className={th}>Best fit</th>
+                                        <th className={th}>Speed</th>
+                                        <th className={th}>Involvement</th>
+                                        <th className={th}>Role level</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Contingency (industry norm)</td>
-                                            <td className="py-4 px-6 text-grey-600">% of first-year cash or OTE</td>
-                                            <td className="py-4 px-6 text-grey-600">20 to 30% per hire</td>
-                                            <td className="py-4 px-6 text-grey-600">Yes (the whole fee)</td>
-                                            <td className="py-4 px-6 text-grey-600">One-off, lower-urgency backfill</td>
+                                    {MODELS.map((m) => (
+                                        <tr key={m.model} className="border-b border-grey-100 last:border-0 align-top">
+                                            <td className="py-4 px-6 font-bold text-navy-900">{m.model}</td>
+                                            <td className={td}>{m.pay}</td>
+                                            <td className={td}>{m.fit}</td>
+                                            <td className={td}>{m.speed}</td>
+                                            <td className={td}>{m.involvement}</td>
+                                            <td className={td}>{m.level}</td>
                                         </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Milestone Search</td>
-                                            <td className="py-4 px-6 text-grey-600">Success fee quoted per role</td>
-                                            <td className="py-4 px-6 text-grey-600">SDR $5k / AE $7.5k / Sr AE/SM $10k</td>
-                                            <td className="py-4 px-6 text-grey-600">Milestone example fee only (through Sales Manager)</td>
-                                            <td className="py-4 px-6 text-grey-600">Single GTM IC/manager seat</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat</td>
-                                            <td className="py-4 px-6 text-grey-600">Month-to-month retainer</td>
-                                            <td className="py-4 px-6 text-grey-600">$5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above</td>
-                                            <td className="py-4 px-6 text-grey-600">Zero</td>
-                                            <td className="py-4 px-6 text-grey-600">Multiple GTM seats, from first AE/SDR hires to scaling pods</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Director / VP / CRO search</td>
-                                            <td className="py-4 px-6 text-grey-600">Specialist / retained quote</td>
-                                            <td className="py-4 px-6 text-grey-600">Project or retainer quote (not Milestone example fee)</td>
-                                            <td className="py-4 px-6 text-grey-600">Quote-based</td>
-                                            <td className="py-4 px-6 text-grey-600">Leadership seats</td>
-                                        </tr>
+                                    ))}
                                 </tbody>
                             </table>
                         </div>
+                        <p className="text-sm text-grey-500">Fee ranges and role levels for contingency and retained search come from <a href={SRC.shrm} className={link}>SHRM</a>. Always confirm in the contract what the fee is calculated on.</p>
+                    </div>
+
+                    <div className="space-y-6">
+                        <h2 className="text-3xl font-bold text-navy-900">Fractional vs contingency recruiting</h2>
+                        <p className="text-grey-600 leading-relaxed">Contingency recruiting is paid only when a hire is made. <a href={SRC.shrm} className={link}>SHRM</a> puts the usual fee at 20% to 25% of the role&apos;s first year cash compensation: salary, bonus and signing bonus. It works well for one well defined role.</p>
+                        <p className="text-grey-600 leading-relaxed">Fractional recruiting is a monthly retainer. A recruiting partner works inside your process on all your open seats, from scorecard to offer. It works well when you have several sales seats to fill. Model primer: <Link href="/guides/fractional-recruiting-guide" className={link}>what is fractional recruiting</Link>.</p>
+                    </div>
+
+                    <div className="space-y-6">
+                        <h2 className="text-3xl font-bold text-navy-900">Retained vs contingency recruiting</h2>
+                        <p className="text-grey-600 leading-relaxed">SHRM describes retained search as usually exclusive and focused on executive seats, with the firm paid whether or not it finds the hire, at a typical fee of about 33% of salary, bonus and signing bonus. Contingency recruiting covers a wide range of roles up to senior manager and is paid only on a hire.</p>
+                        <p className="text-grey-600 leading-relaxed">Retained search fits a seat where one leadership hire shapes the company. Contingency fits a defined role where you want candidates introduced as they are found.</p>
+                    </div>
+
+                    <div className="space-y-6">
+                        <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
+                            <Layers className="h-8 w-8 text-blue-accent" />
+                            Where The Kas Group fits
+                        </h2>
+                        <ul className="space-y-3 text-grey-600 leading-relaxed list-disc pl-6">
+                            <li><strong className="text-navy-900">Kas Seat (fractional):</strong> $5k/mo for up to two open sales roles, $8k/mo for three to five. Up to $10k/mo for senior AE and above. Zero success fees. Month to month.</li>
+                            <li><strong className="text-navy-900">Kas Milestone Search (one seat):</strong> example fees SDR/BDR $5,000, AE $7,500, Senior AE or Sales Manager $10,000. Three payments tied to milestones.</li>
+                            <li><strong className="text-navy-900">Kas Directed Pursuit (above manager):</strong> Director, VP and CRO searches. Pricing on request.</li>
+                            <li><strong className="text-navy-900">AI, ML and data roles:</strong> quote only. Never monthly.</li>
+                        </ul>
                         <div className="p-6 rounded-2xl border border-grey-200 bg-grey-50">
                             <h3 className="text-lg font-bold text-navy-900 mb-3 flex items-center gap-2">
                                 <Shield className="h-5 w-5 text-blue-accent" />
-                                Guarantees on Kas AE/SDR/Sales Manager searches
+                                Commitments on SDR through Sales Manager searches
                             </h3>
-                            <ul className="space-y-2 text-grey-600 leading-relaxed">
+                            <ul className="space-y-2 text-grey-600 leading-relaxed list-disc pl-6">
                                 <li>Free market scan in 48 to 72 hours</li>
-                                <li>3+ qualified candidates in 3 weeks or we keep hunting free</li>
-                                <li>60-day re-hunt on placement (not a refund)</li>
-                                <li>These IC/manager guarantees are <strong>not</strong> promised for Director, VP, or CRO searches</li>
+                                <li>3 or more qualified candidates in 3 weeks, or we keep hunting at no charge</li>
+                                <li>60 day re hunt on placement, not a refund</li>
                             </ul>
                         </div>
+                        <p className="text-grey-600 leading-relaxed">Full price list: <Link href="/guides/fractional-sales-recruiting-cost" className={link}>fractional sales recruiting cost</Link> and <Link href="/programs" className={link}>Programs</Link>.</p>
                     </div>
 
                     <div className="space-y-8">
-                        <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
-                            <BarChart3 className="h-8 w-8 text-blue-accent" />
-                            Worked examples: AE $150k OTE and VP Sales $350k OTE
-                        </h2>
-                        <h3 className="text-xl font-bold text-navy-900">Example A: Account Executive, $150,000 OTE</h3>
+                        <h2 className="text-3xl font-bold text-navy-900">Worked examples</h2>
+                        <p className="text-grey-600 leading-relaxed">These use example packages and the SHRM contingency range of 20% to 25% of first year cash compensation. The math is ours.</p>
+                        <h3 className="text-xl font-bold text-navy-900">Example A: one AE, $150,000 first year cash</h3>
                         <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
                             <table className="w-full text-left border-collapse">
                                 <thead className="bg-grey-50">
                                     <tr className="border-b border-grey-200">
-                                        <th className="py-4 px-6 font-bold text-navy-900">Fee model</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">Math</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">You pay</th>
+                                        <th className={th}>Model</th>
+                                        <th className={th}>Math</th>
+                                        <th className={th}>You pay</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Contingency @ 20%</td>
-                                            <td className="py-4 px-6 text-grey-600">0.20 x $150,000</td>
-                                            <td className="py-4 px-6 text-grey-600">$30,000</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Contingency @ 25%</td>
-                                            <td className="py-4 px-6 text-grey-600">0.25 x $150,000</td>
-                                            <td className="py-4 px-6 text-grey-600">$37,500</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Contingency @ 30%</td>
-                                            <td className="py-4 px-6 text-grey-600">0.30 x $150,000</td>
-                                            <td className="py-4 px-6 text-grey-600">$45,000</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Milestone AE example fee</td>
-                                            <td className="py-4 px-6 text-grey-600">Milestone Search example</td>
-                                            <td className="py-4 px-6 text-grey-600">$7,500</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $5,000/mo (one open role, 2 months to fill)</td>
-                                            <td className="py-4 px-6 text-grey-600">$5,000 x 2</td>
-                                            <td className="py-4 px-6 text-grey-600">$10,000</td>
-                                        </tr>
+                                    <tr className="border-b border-grey-100"><td className="py-4 px-6 font-bold text-navy-900">Contingency at 20%</td><td className={td}>0.20 x $150,000</td><td className={td}>$30,000</td></tr>
+                                    <tr className="border-b border-grey-100"><td className="py-4 px-6 font-bold text-navy-900">Contingency at 25%</td><td className={td}>0.25 x $150,000</td><td className={td}>$37,500</td></tr>
+                                    <tr className="border-b border-grey-100"><td className="py-4 px-6 font-bold text-navy-900">Kas Milestone Search, AE</td><td className={td}>Example fee</td><td className={td}>$7,500</td></tr>
+                                    <tr><td className="py-4 px-6 font-bold text-navy-900">Kas Seat, one open role, 2 months</td><td className={td}>$5,000 x 2</td><td className={td}>$10,000</td></tr>
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-grey-600 leading-relaxed">On a single AE, Kas Milestone Search example fee is about 5x cheaper than mid-range contingency. Fractional wins harder when that same retainer also fills an SDR and a second AE in the same window.</p>
-
-                        <h3 className="text-xl font-bold text-navy-900">Example B: VP of Sales, $350,000 OTE</h3>
+                        <h3 className="text-xl font-bold text-navy-900">Example B: five sales seats over 4 months</h3>
+                        <p className="text-grey-600 leading-relaxed">Three AEs at $150,000 and two SDRs at $80,000 first year cash.</p>
                         <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
                             <table className="w-full text-left border-collapse">
                                 <thead className="bg-grey-50">
                                     <tr className="border-b border-grey-200">
-                                        <th className="py-4 px-6 font-bold text-navy-900">Fee model</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">Math</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">You pay</th>
+                                        <th className={th}>Model</th>
+                                        <th className={th}>Math</th>
+                                        <th className={th}>You pay</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Contingency @ 20%</td>
-                                            <td className="py-4 px-6 text-grey-600">0.20 x $350,000</td>
-                                            <td className="py-4 px-6 text-grey-600">$70,000</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Contingency @ 25%</td>
-                                            <td className="py-4 px-6 text-grey-600">0.25 x $350,000</td>
-                                            <td className="py-4 px-6 text-grey-600">$87,500</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Contingency @ 30%</td>
-                                            <td className="py-4 px-6 text-grey-600">0.30 x $350,000</td>
-                                            <td className="py-4 px-6 text-grey-600">$105,000</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $8,000/mo (3 months GTM bandwidth)</td>
-                                            <td className="py-4 px-6 text-grey-600">$8,000 x 3</td>
-                                            <td className="py-4 px-6 text-grey-600">$24,000 (bandwidth; leadership still calibrated as specialist work)</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Director/VP/CRO search</td>
-                                            <td className="py-4 px-6 text-grey-600">Specialist / retained quote</td>
-                                            <td className="py-4 px-6 text-grey-600">Quote only (no Milestone Search example fee)</td>
-                                        </tr>
+                                    <tr className="border-b border-grey-100"><td className="py-4 px-6 font-bold text-navy-900">Contingency at 20%</td><td className={td}>0.20 x $610,000</td><td className={td}>$122,000</td></tr>
+                                    <tr className="border-b border-grey-100"><td className="py-4 px-6 font-bold text-navy-900">Contingency at 25%</td><td className={td}>0.25 x $610,000</td><td className={td}>$152,500</td></tr>
+                                    <tr className="border-b border-grey-100"><td className="py-4 px-6 font-bold text-navy-900">Kas Milestone Search</td><td className={td}>$7,500 x 3 + $5,000 x 2</td><td className={td}>$32,500</td></tr>
+                                    <tr><td className="py-4 px-6 font-bold text-navy-900">Kas Seat, five open roles</td><td className={td}>$8,000 x 4</td><td className={td}>$32,000</td></tr>
                                 </tbody>
                             </table>
                         </div>
-                        <p className="text-grey-600 leading-relaxed">VP / CRO searches are specialist/retained bandwidth, not a commodity contingency race and not a Milestone Search example fee.</p>
-                        <p className="text-grey-600 leading-relaxed">Takeaway: Contingency on leadership OTE is where founders get surprised. A $350k VP at 25% is an $87.5k invoice. Three months of Kas Seat at $8,000/mo is $24k with zero success fee, and that bandwidth can keep an AE/SDR pipeline warm while leadership runs on a specialist quote.</p>
-                    </div>
-
-                    <div className="space-y-8">
-                        <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
-                            <Layers className="h-8 w-8 text-blue-accent" />
-                            Multiple hires: where the gap widens
-                        </h2>
-                        <p className="text-grey-600 leading-relaxed">Seed/Series A plan: 1 AE + 1 SDR over ~3 months. How to sequence those first hires: <Link href="/guides/fractional-recruiting-for-startups" className="text-blue-accent hover:underline">fractional recruiting for startups</Link>.</p>
-                        <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
-                            <table className="w-full text-left border-collapse">
-                                <thead className="bg-grey-50">
-                                    <tr className="border-b border-grey-200">
-                                        <th className="py-4 px-6 font-bold text-navy-900">Path</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">Cost math</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Contingency @ 25%</td>
-                                            <td className="py-4 px-6 text-grey-600">AE $150k -&gt; $37,500 + SDR $80k OTE -&gt; $20,000</td>
-                                            <td className="py-4 px-6 text-grey-600">$57,500</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Milestone example fees</td>
-                                            <td className="py-4 px-6 text-grey-600">AE $7,500 + SDR $5,000</td>
-                                            <td className="py-4 px-6 text-grey-600">$12,500</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $5,000/mo x 3 months</td>
-                                            <td className="py-4 px-6 text-grey-600">$5,000 x 3</td>
-                                            <td className="py-4 px-6 text-grey-600">$15,000</td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <p className="text-grey-600 leading-relaxed">Scaling plan (Series A to B): 3 AEs + 2 SDRs over 4 months.</p>
-                        <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
-                            <table className="w-full text-left border-collapse">
-                                <thead className="bg-grey-50">
-                                    <tr className="border-b border-grey-200">
-                                        <th className="py-4 px-6 font-bold text-navy-900">Path</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">Approximate total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Contingency @ 25% on $150k AE x3 + $80k SDR x2</td>
-                                            <td className="py-4 px-6 text-grey-600">$152,500</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Milestone example fees ($7.5k x3 + $5k x2)</td>
-                                            <td className="py-4 px-6 text-grey-600">$32,500</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">Kas Seat at $8,000/mo x 4 months (five open roles)</td>
-                                            <td className="py-4 px-6 text-grey-600">$32,000</td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <p className="text-grey-600 leading-relaxed">This is where fractional stops being a nice option and becomes the default for GTM builders. Sticker home: <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">cost</Link>.</p>
-                    </div>
-
-                    <div className="space-y-8">
-                        <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
-                            <CheckCircle2 className="h-8 w-8 text-blue-accent" />
-                            When fractional wins vs contingency
-                        </h2>
-                        <div className="grid md:grid-cols-2 gap-6">
-                            <div className="p-6 rounded-2xl border border-grey-200">
-                                <h3 className="text-lg font-bold text-navy-900 mb-3">Fractional wins when</h3>
-                                <ul className="space-y-2 text-grey-600 leading-relaxed list-disc pl-5">
-                                    <li>You are hiring 2+ GTM seats in a quarter</li>
-                                    <li>Role quality matters more than resume spray</li>
-                                    <li>You want predictable monthly spend you can pause</li>
-                                    <li>You need a partner who already knows SaaS sales motions</li>
-                                </ul>
-                            </div>
-                            <div className="p-6 rounded-2xl border border-grey-200">
-                                <h3 className="text-lg font-bold text-navy-900 mb-3">Contingency still wins when</h3>
-                                <ul className="space-y-2 text-grey-600 leading-relaxed list-disc pl-5">
-                                    <li>One backfill AE and no other GTM hiring for 6+ months</li>
-                                    <li>Role is well-defined, market is liquid, and speed-to-slate is the only KPI</li>
-                                    <li>Budget politics require &quot;$0 until hire,&quot; even if the eventual invoice is larger</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p className="text-grey-600 leading-relaxed">A contingency firm can fill a mid-market AE from LinkedIn volume. They are a weaker fit when you need an AE who has closed your ACV band in your cycle length, or a VP who has built founder-led to manager-led. That needs embedded calibration (fractional for GTM seats, specialist/retained for VP), not a 25% race.</p>
-                    </div>
-
-                    <div className="space-y-8">
-                        <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
-                            <Layers className="h-8 w-8 text-blue-accent" />
-                            Decision tree by stage and seniority
-                        </h2>
-                        <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
-                            <table className="w-full text-left border-collapse">
-                                <thead className="bg-grey-50">
-                                    <tr className="border-b border-grey-200">
-                                        <th className="py-4 px-6 font-bold text-navy-900">Signal</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">Prefer</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">1 seat, low urgency, clear JD</td>
-                                            <td className="py-4 px-6 text-grey-600">Contingency or Kas Milestone Search example fee ($5k to $10k through Sales Manager)</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">1 senior IC/manager seat (Sr AE, SM), high urgency</td>
-                                            <td className="py-4 px-6 text-grey-600">Kas fractional or Milestone Search example fee</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">2 to 5 GTM seats, Seed through Series B</td>
-                                            <td className="py-4 px-6 text-grey-600">Kas Seat ($5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above)</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">First VP Sales / sales leader</td>
-                                            <td className="py-4 px-6 text-grey-600">Specialist / retained quote</td>
-                                        </tr>
-                                        <tr className="border-b border-grey-100 last:border-0">
-                                            <td className="py-4 px-6 font-bold text-navy-900">One-off AE backfill only</td>
-                                            <td className="py-4 px-6 text-grey-600">Contingency or Kas AE fee $7,500</td>
-                                        </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <p className="text-grey-600 leading-relaxed">Need headcount math instead? <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline">vs in-house</Link>.</p>
+                        <h3 className="text-xl font-bold text-navy-900">Example C: VP of Sales</h3>
+                        <p className="text-grey-600 leading-relaxed">SHRM puts retained search at about 33% of salary, bonus and signing bonus. At The Kas Group, VP and other roles above manager run as Kas Directed Pursuit. We scope the search in a conversation and quote it, so there is no list price.</p>
                     </div>
 
                     <div className="space-y-8">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
                             <HelpCircle className="h-8 w-8 text-blue-accent" />
-                            FAQ: fractional sales recruiting vs contingency
+                            FAQ: fractional vs contingency vs retained recruiting
                         </h2>
                         <div className="space-y-8">
-                        <div className="space-y-3">
-                            <h3 className="text-xl font-bold text-navy-900">Is fractional sales recruiting cheaper than contingency?</h3>
-                            <p className="text-grey-600 leading-relaxed">Usually yes once you hire more than one GTM seat, or any senior seat with a large OTE. A $150k AE at 25% contingency is $37,500. Kas Milestone AE example fee is $7,500. Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees.</p>
+                            {FAQS.map((f) => (
+                                <div key={f.q} className="space-y-3">
+                                    <h3 className="text-xl font-bold text-navy-900">{f.q}</h3>
+                                    <p className="text-grey-600 leading-relaxed">{f.a}</p>
+                                </div>
+                            ))}
                         </div>
+                    </div>
 
-                        <div className="space-y-3">
-                            <h3 className="text-xl font-bold text-navy-900">What is the industry-standard contingency fee for sales roles?</h3>
-                            <p className="text-grey-600 leading-relaxed">Most contingency firms charge about 20 to 30% of first-year cash (some use OTE). Always confirm whether the base is cash or OTE before you sign. OTE-based fees on AEs and VPs cost more.</p>
-                        </div>
-
-                        <div className="space-y-3">
-                            <h3 className="text-xl font-bold text-navy-900">Can I pause a fractional sales recruiting retainer?</h3>
-                            <p className="text-grey-600 leading-relaxed">Yes. Kas Seat is month-to-month. Pause when hiring stops. Resume when the next GTM seat opens.</p>
-                        </div>
-
-                        <div className="space-y-3">
-                            <h3 className="text-xl font-bold text-navy-900">When should I use a Milestone Search example fee instead of fractional?</h3>
-                            <p className="text-grey-600 leading-relaxed">Use Milestone Search example fees (SDR $5,000 / AE $7,500 / Senior AE or Sales Manager $10,000) when you have a single clear seat through Sales Manager. Director, VP, and CRO are quote only. Use fractional when you are staffing a motion, not a req.</p>
-                        </div>
-
-                        <div className="space-y-3">
-                            <h3 className="text-xl font-bold text-navy-900">Does contingency include a guarantee?</h3>
-                            <p className="text-grey-600 leading-relaxed">Varies by firm. Kas placement guarantee is a 60-day re-hunt, not a refund. For AE/SDR/Sales Manager under fractional: 3+ qualified candidates in 3 weeks or we keep hunting free. Free market scan in 48 to 72 hours. Those IC/manager guarantees are not promised for Director, VP, or CRO.</p>
-                        </div>
-
-                        <div className="space-y-3">
-                            <h3 className="text-xl font-bold text-navy-900">Is fractional the same as retained executive search?</h3>
-                            <p className="text-grey-600 leading-relaxed">Related but not identical. Retained search is usually a project fee for one senior seat. Fractional is a rolling monthly partnership that can cover multiple GTM roles. Primer: <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline">fractional recruiting guide</Link>.</p>
-                        </div>
-                        </div>
+                    <div className="space-y-4">
+                        <h2 className="text-2xl font-bold text-navy-900">Sources</h2>
+                        <ul className="list-disc pl-6 space-y-2 text-base text-grey-600">
+                            <li>How to Work Effectively with an Executive Search Firm, SHRM, July 2016. Contingency and retained fee ranges and how each model works. <a href={SRC.shrm} className={link}>{SRC.shrm}</a></li>
+                        </ul>
                     </div>
 
                     <div className="space-y-4">
                         <h2 className="text-2xl font-bold text-navy-900">Related guides</h2>
                         <ul className="space-y-2 text-grey-600">
-                            <li>
-                                <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting cost</Link>
-                            </li>
-                            <li>
-                                <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">What is fractional recruiting</Link>
-                            </li>
-                            <li>
-                                <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline font-semibold">Fractional recruiting vs in-house recruiter</Link>
-                            </li>
-                            <li>
-                                <Link href="/recruit/fractional-sales" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting</Link>
-                            </li>
-                            <li>
-                                <Link href="/blog/founder-led-sales-first-hire" className="text-blue-accent hover:underline font-semibold">Your first sales hire needs a playbook</Link>
-                            </li>
-                            <li>
-                                <Link href="/blog/early-stage-sales-comp-first-ae-ote" className="text-blue-accent hover:underline font-semibold">What to pay your first AE</Link>
-                            </li>
-                            <li>
-                                <Link href="/programs" className="text-blue-accent hover:underline font-semibold">Programs</Link>
-                            </li>
+                            <li><Link href="/guides/fractional-sales-recruiting-cost" className={`${link} font-semibold`}>Fractional sales recruiting cost</Link></li>
+                            <li><Link href="/guides/fractional-recruiting-guide" className={`${link} font-semibold`}>What is fractional recruiting</Link></li>
+                            <li><Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className={`${link} font-semibold`}>Fractional recruiting vs in-house recruiter</Link></li>
+                            <li><Link href="/guides/fractional-recruiting-for-startups" className={`${link} font-semibold`}>Fractional recruiting for startups</Link></li>
+                            <li><Link href="/recruit/fractional-sales" className={`${link} font-semibold`}>Fractional sales recruiting</Link></li>
+                            <li><Link href="/programs" className={`${link} font-semibold`}>Programs</Link></li>
                         </ul>
                     </div>
 
                     <div className="p-10 rounded-[2rem] bg-navy-900 text-white text-center space-y-6 shadow-2xl">
-                        <h2 className="text-3xl font-bold">Want the fee math on your actual packages?</h2>
-                        <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">Email chris@thekasgroup.com. Bring open AE/SDR/VP seats and target OTEs. For AE/SDR/SM under fractional, market scan lands in 48 to 72 hours. We run the fee math on your package, not a generic table.</p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href="/contact" className="inline-flex items-center justify-center rounded-full bg-blue-accent px-8 py-4 font-bold text-white hover:bg-blue-hover transition-all">
+                        <h2 className="text-3xl font-bold">Not sure which model fits?</h2>
+                        <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">Email Chris with your open seats and target pay. You get a straight answer: Kas Seat, Kas Milestone Search or Kas Directed Pursuit.</p>
+                        <div className="flex justify-center">
+                            <a href="mailto:chris@thekasgroup.com" className="inline-flex items-center justify-center rounded-full bg-blue-accent px-8 py-4 font-bold text-white hover:bg-blue-hover transition-all">
                                 Email chris@thekasgroup.com
-                            </Link>
-                            <Link href="/recruit/fractional-sales" className="inline-flex items-center justify-center rounded-full border border-white/20 px-8 py-4 font-bold text-white hover:bg-white/10 transition-all">
-                                Explore fractional sales
-                            </Link>
+                            </a>
                         </div>
                     </div>
 
                     <div className="pt-12 border-t border-grey-200 space-y-4">
                         <h2 className="text-2xl font-bold text-navy-900">About The Kas Group</h2>
-                        <p className="text-grey-600 leading-relaxed">The Kas Group is an elite B2B SaaS sales recruiting firm founded in 2014. We place sales talent from SDR through VP Sales and CRO for high-growth technology companies.</p>
-                        <ul className="text-grey-600 space-y-1 text-sm">
-                            <li>Website: <Link href="/" className="text-blue-accent hover:underline">https://www.thekasgroup.com</Link></li>
-                            <li>Email: <a href="mailto:chris@thekasgroup.com" className="text-blue-accent hover:underline">chris@thekasgroup.com</a></li>
-                            <li>All Guides: <Link href="/guides" className="text-blue-accent hover:underline">/guides</Link></li>
-                            <li>Brand Facts: <Link href="/brand-facts" className="text-blue-accent hover:underline">/brand-facts</Link></li>
-                        </ul>
+                        <p className="text-grey-600 leading-relaxed">The Kas Group is a B2B SaaS sales recruiting firm founded in 2014. We place sales talent from SDR through VP Sales and CRO for high growth technology companies.</p>
                     </div>
                 </div>
             </section>
