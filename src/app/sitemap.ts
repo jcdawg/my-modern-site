@@ -22,6 +22,7 @@ const entries: Entry[] = [
     { path: '/recruit/sales', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/best-sales-recruiting-agencies-2026', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/how-to-hire-ai-ml-engineers', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/hiring-ai-data-engineers-insurance', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/retained-vs-contingency-recruiting', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/recruit/ai', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/insurance', changeFrequency: 'monthly', priority: 0.8 },

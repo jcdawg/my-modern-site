@@ -176,6 +176,7 @@ Explore the hidden expenses of bad hires and prolonged PIPs, including lost pipe
 ## Featured Guides
 - [Best Sales Recruiting Agencies 2026](/guides/best-sales-recruiting-agencies-2026)
 - [How to Hire AI & ML Engineers](/guides/how-to-hire-ai-ml-engineers)
+- [How to Hire AI, ML and Data Engineers for Insurance](/guides/hiring-ai-data-engineers-insurance)
 - [Best Data Engineering Recruiting Agencies](/guides/best-data-engineering-recruiting-agencies)
 - [Top Executive Search Firms for Sales Leaders](/guides/top-executive-search-firms-sales-leaders)
 - [Who to Hire: VP of Sales for Startups](/guides/who-to-hire-vp-sales-startup)

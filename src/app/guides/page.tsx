@@ -43,6 +43,7 @@ export default function GuidesIndex() {
     const dataGuides = [
         { title: "DE Recruiting Agencies", href: "/guides/best-data-engineering-recruiting-agencies", desc: "Top firms for the modern data stack and pipeline talent." },
         { title: "Hiring for AI Startups", href: "/guides/how-to-hire-senior-data-engineers-ai-startups", desc: "Tactical roadmap for founding data engineering teams." },
+        { title: "AI and Data Hiring for Insurance", href: "/guides/hiring-ai-data-engineers-insurance", desc: "Which AI, ML and data roles carriers, MGAs and insurtechs hire first, and what to screen for." },
         { title: "Top DE Headhunters", href: "/guides/top-data-engineering-headhunters-2026", desc: "Finding elite, passive data engineering talent." },
         { title: "DE Skills Assessment", href: "/guides/senior-data-engineer-skills-assessment-vetting", desc: "Technical vetting framework and interview questions." },
         { title: "Engineer vs. Analytics", href: "/guides/data-engineer-vs-analytics-engineer-hiring-guide", desc: "Which role to hire first and how to sequence them." },
