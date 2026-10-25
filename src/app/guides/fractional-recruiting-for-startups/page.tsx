@@ -14,14 +14,19 @@ export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
 // Visible FAQ and FAQPage JSON-LD are rendered from this one list, so the
 // text always matches.
+const SRC = {
+    shrm: "https://www.shrm.org/topics-tools/news/talent-acquisition/how-to-work-effectively-executive-search-firm",
+    bridge: "https://www.bridgegroupinc.com/research/2026-ae-models-motions-metrics",
+};
+
 const FAQS = [
     {
         q: "What is fractional recruiting for startups?",
-        a: "A monthly retainer for an embedded recruiter who runs your searches inside your own process. You pay for recruiting capacity instead of a percentage of each hire's salary. At The Kas Group this is Kas Seat, built for sales roles.",
+        a: "Fractional recruiting for startups is a monthly retainer for an embedded recruiter who runs your first sales searches inside your own process. You pay for recruiting capacity instead of a percentage of each hire's salary. At The Kas Group this is Kas Seat: $5k/mo for up to two open sales roles and $8k/mo for three to five.",
     },
     {
-        q: "When should a startup make its first sales hire?",
-        a: "When the founder has closed repeatable deals with a clear buyer and a clear price, and founder time is now the limit on revenue. If deals only close because the founder is in the room, keep selling yourself and hire later.",
+        q: "When should a startup hire its first AE?",
+        a: "When the founder has closed repeatable deals with a clear buyer and a clear price, and founder time is now the limit on revenue. If deals only close because the founder is in the room, keep selling yourself and hire later. Plan for ramp: The Bridge Group's 2026 survey puts average AE ramp at 6.2 months.",
     },
     {
         q: "Should the first sales hire be an AE or an SDR?",
@@ -29,19 +34,19 @@ const FAQS = [
     },
     {
         q: "How much does fractional recruiting cost for a startup?",
-        a: "At The Kas Group, Kas Seat is $5,000 per month for up to two open sales roles and $8,000 per month for three to five, up to $10,000 per month for senior AE and above, with zero success fees. For a single hire, Kas Milestone Search is quoted per role. Example fees are $5,000 for SDR/BDR, $7,500 for AE and $10,000 for Senior AE or Sales Manager.",
+        a: "At The Kas Group, Kas Seat is $5k/mo for up to two open sales roles and $8k/mo for three to five, up to $10k/mo for senior AE and above, with zero success fees. For a single hire, Kas Milestone Search example fees are $5,000 for SDR/BDR, $7,500 for AE and $10,000 for Senior AE or Sales Manager. Kas Directed Pursuit is priced on request.",
     },
     {
-        q: "Is fractional recruiting better than contingency for a startup?",
-        a: "For two or more sales hires in the same quarter, usually yes. One partner learns your buyer and pitch once, and you pay a monthly retainer instead of a fee on every hire. For one well-defined backfill, contingency or a single Kas Milestone Search can make more sense. Contingency is priced as a percentage of first-year OTE.",
+        q: "How does fractional recruiting compare with contingency for a startup?",
+        a: "Contingency is paid only when a hire is made, usually 20% to 25% of first year cash compensation according to SHRM, and fits one well defined role. Fractional recruiting is a monthly retainer, and fits two or more sales hires in the same quarter because one partner learns your buyer and pitch once.",
     },
     {
         q: "Can fractional recruiting fill a VP of Sales role?",
-        a: "The Kas Group runs Director, VP of Sales and CRO searches as a separate specialist or retained search, quoted per role. Most seed teams should hire AEs before a VP. Kas Seat can keep AE and SDR hiring moving while a leadership search runs.",
+        a: "The Kas Group runs Director, VP of Sales and CRO searches as Kas Directed Pursuit, priced on request. Most seed teams hire AEs before a VP. Kas Seat can keep AE and SDR hiring moving while a leadership search runs.",
     },
     {
         q: "Can we pause a fractional recruiting retainer?",
-        a: "Yes. Kas Seat is month-to-month. Pause it when the seats are filled and restart when the next sales role opens.",
+        a: "Yes. Kas Seat is month to month. Pause it when the seats are filled and restart when the next sales role opens.",
     },
     {
         q: "Who owns the candidates from a fractional search?",
@@ -76,21 +81,21 @@ const fits = [
 const doesNotFit = [
     "No product-market fit yet. If the founder cannot close, a first AE will not fix it. Keep selling yourself.",
     "One sales hire every 12 months. A monthly retainer sits idle. Use a single Kas Milestone Search or a contingency search for that one seat.",
-    "You want a VP of Sales before any AEs. That is a specialist or retained search with its own process.",
+    "You want a VP of Sales before any AEs. At The Kas Group that runs as Kas Directed Pursuit, with its own process.",
     "Nobody on your side can interview and decide within a week. Every model stalls when feedback takes three weeks.",
-    "You are hiring 10 or more people a quarter across functions. At that volume, an in-house recruiter usually makes sense.",
+    "You are hiring steadily across many functions. At that point, an in-house recruiter usually makes sense.",
 ];
 
 const compare = [
-    { row: "How you pay", fractional: "Monthly retainer. Zero success fees on Kas Seat.", contingency: "A percentage of first-year OTE, paid when someone is hired.", inhouse: "Salary, benefits and tools, every month." },
-    { row: "Best for", fractional: "2 to 5 sales hires over one or two quarters.", contingency: "One well-defined backfill with no follow-on hires.", inhouse: "Steady volume across many functions." },
-    { row: "Exclusivity", fractional: "Exclusive and embedded in your process.", contingency: "Often several firms on the same role.", inhouse: "Full-time employee." },
-    { row: "Main startup risk", fractional: "Paying for a month with no open seats. Pause it.", contingency: "A large invoice on every hire. Speed can win over fit.", inhouse: "Fixed cost and ramp time before the first hire lands." },
+    { row: "How you pay", fractional: "Monthly retainer. Zero success fees on Kas Seat.", contingency: "Paid when someone is hired, usually 20% to 25% of first year cash compensation (SHRM).", inhouse: "Salary, benefits and tools, every month." },
+    { row: "Best for", fractional: "2 to 5 sales hires over one or two quarters.", contingency: "One well defined role with no follow on hires.", inhouse: "Steady volume across many functions." },
+    { row: "Exclusivity", fractional: "Exclusive and embedded in your process.", contingency: "Often non exclusive, so several recruiters can work the role (SHRM).", inhouse: "Full-time employee." },
+    { row: "What to plan for", fractional: "Pause the retainer in months with no open seats.", contingency: "A fee on each hire, so budget per seat.", inhouse: "Ongoing salary and ramp time before the first hire lands." },
 ];
 
 const ninetyDays = [
     { when: "Week 1: Calibration", body: "Write the scorecard for the first seat: ACV band, sales cycle, who they sell to, and which deals the founder hands over. Set the base and OTE split. Agree the interview loop and who makes the call." },
-    { when: "Weeks 2 to 4: Map and outreach", body: "Direct outreach to sellers who have sold at your stage and price point, most of whom are not applying to jobs. You review the list and mark who to pursue. First screens start." },
+    { when: "Weeks 2 to 4: Map and outreach", body: "For SDR through Sales Manager seats, a free market scan lands in 48 to 72 hours. Direct outreach to sellers who have sold at your stage and price point, most of whom are not applying to jobs. You review the list and mark who to pursue. First screens start." },
     { when: "Weeks 4 to 8: Interview and close", body: "A structured loop: a deal teardown, a role play on your real product, and reference checks on quota. Make the offer and handle the counteroffer. If a second seat is planned, that search opens while the first one closes." },
     { when: "Weeks 8 to 12: Start and next seat", body: "The first hire starts with a defined set of accounts or leads. Check what their first weeks show about the scorecard and adjust it before hire two or three. Keep the Seat running for the next role, or pause it." },
 ];
@@ -129,14 +134,14 @@ export default function FractionalRecruitingForStartups() {
                             Short answer
                         </h2>
                         <p className="text-lg text-grey-700 leading-relaxed">
-                            Fractional recruiting for startups is a monthly retainer for an embedded sales recruiter who runs your first hires inside your own process, with no percentage-of-salary fee on each hire. It fits seed through Series B founders who need 2 to 5 sales hires in the next two quarters, such as the first AE to take deals off the founder and the first SDR to feed them. At The Kas Group, Kas Seat is $5,000 per month for up to two open sales roles and $8,000 per month for three to five (up to $10,000 for senior AE and above) with zero success fees, and a single hire can run as a Kas Milestone Search quoted per role.
+                            Fractional recruiting for startups is a monthly retainer for an embedded sales recruiter who runs your first hires inside your own process, with no percentage of salary fee on each hire. It fits seed through Series B founders who need 2 to 5 sales hires in the next two quarters, such as the first AE to take deals off the founder and the first SDR to feed them. At The Kas Group, Kas Seat is $5k/mo for up to two open sales roles and $8k/mo for three to five (up to $10k/mo for senior AE and above) with zero success fees. A single hire can run as a Kas Milestone Search: $5,000 for SDR/BDR, $7,500 for AE, $10,000 for Senior AE or Sales Manager.
                         </p>
                     </div>
 
                     <div className="space-y-6">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
                             <Users className="h-8 w-8 text-blue-accent" />
-                            The first 1 to 5 sales hires
+                            Fractional recruiting for startups: the first 1 to 5 sales hires
                         </h2>
                         <p className="text-lg text-grey-600 leading-relaxed">
                             The first sales hires are the hardest ones a startup makes. There is no playbook yet, no sales manager to ramp them, and the founder is the whole interview panel. The comp plan is brand new. A miss costs pipeline and founder time you do not get back.
@@ -165,6 +170,16 @@ export default function FractionalRecruitingForStartups() {
                             For the traits that predict fast ramp in SDRs and AEs, see{" "}
                             <Link href="/guides/how-to-hire-saas-sdrs-fast-ramp" className="text-blue-accent hover:underline">how to hire SDRs and AEs fast</Link>. If you are weighing a VP instead, read{" "}
                             <Link href="/guides/who-to-hire-vp-sales-startup" className="text-blue-accent hover:underline">how to hire a VP of Sales for a startup</Link> first.
+                        </p>
+                    </div>
+
+                    <div className="space-y-6">
+                        <h2 className="text-3xl font-bold text-navy-900">When should a startup hire its first AE?</h2>
+                        <p className="text-lg text-grey-600 leading-relaxed">
+                            Hire the first AE when the founder has closed repeatable deals with a clear buyer and a clear price, and founder time is now the limit on revenue. If deals only close because the founder is in the room, keep selling and hire later. <Link href="/blog/founder-led-sales-first-hire" className="text-blue-accent hover:underline">Your first sales hire needs a playbook</Link> covers what founder led sales has to prove first.
+                        </p>
+                        <p className="text-lg text-grey-600 leading-relaxed">
+                            Plan for ramp and experience. <a href={SRC.bridge} className="text-blue-accent hover:underline">The Bridge Group&apos;s 2026 survey</a> of 158 B2B companies puts average AE ramp at 6.2 months and average experience at hire at 3.7 years. For pay, read <Link href="/blog/early-stage-sales-comp-first-ae-ote" className="text-blue-accent hover:underline">what to pay your first AE</Link>. If the seat needs a seasoned closer, see <Link href="/guides/how-to-hire-senior-account-executive" className="text-blue-accent hover:underline">how to hire a senior account executive</Link>.
                         </p>
                     </div>
 
@@ -230,10 +245,10 @@ export default function FractionalRecruitingForStartups() {
                             </table>
                         </div>
                         <p className="text-lg text-grey-600 leading-relaxed">
-                            For the first few sales hires, the main difference is who learns your buyer. A fractional recruiter learns your pitch, your price and your bar once, then uses it on every seat. A contingency search starts that work over for each role, and the fee comes due on each hire. An in-house recruiter learns it too, but you pay for the seat before you have the hiring volume to justify it.
+                            For the first few sales hires, the main question is how many seats you will open. A fractional recruiter learns your pitch, your price and your bar once, then uses it on every seat. Contingency is priced per hire, which suits a single role. An in-house recruiter fits once hiring volume is steady.
                         </p>
                         <p className="text-lg text-grey-600 leading-relaxed">
-                            Industry context, not Kas pricing: contingency fees for sales roles commonly run 20 to 30 percent of first-year OTE. The Kas Group still offers contingency, priced as a percentage of first-year OTE. The full fee math on AE and VP packages is in{" "}
+                            Industry context, not Kas pricing: <a href={SRC.shrm} className="text-blue-accent hover:underline">SHRM</a> puts contingency fees at 20% to 25% of the role&apos;s first year cash compensation. The full fee math on AE and VP packages is in{" "}
                             <Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-blue-accent hover:underline">fractional sales recruiting vs contingency</Link>. The salary build for a first recruiter is in{" "}
                             <Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-blue-accent hover:underline">fractional recruiting vs in-house recruiter</Link>.
                         </p>
@@ -245,11 +260,9 @@ export default function FractionalRecruitingForStartups() {
                             Typical cost for startup sales hiring
                         </h2>
                         <ul className="space-y-3 text-lg text-grey-600 leading-relaxed">
-                            <li><strong className="text-navy-900">Kas Seat:</strong> $5,000 per month for up to two open sales roles and $8,000 per month for three to five. Up to $10,000 per month when the seat covers senior AE and above. Zero success fees. Month-to-month.</li>
-                            <li><strong className="text-navy-900">Kas Milestone Search:</strong> one seat, quoted per role. Example fees: SDR/BDR $5,000, AE $7,500, Senior AE / Sales Manager $10,000.</li>
-                            <li><strong className="text-navy-900">Director, VP of Sales, CRO:</strong> specialist or retained search, quoted per role.</li>
-                            <li><strong className="text-navy-900">Kas Directed Pursuit:</strong> list-driven outbound search. No published price.</li>
-                            <li><strong className="text-navy-900">Contingency:</strong> available, priced as a percentage of first-year OTE.</li>
+                            <li><strong className="text-navy-900">Kas Seat:</strong> $5k/mo for up to two open sales roles, $8k/mo for three to five. Up to $10k/mo when the seat covers senior AE and above. Zero success fees. Month to month.</li>
+                            <li><strong className="text-navy-900">Kas Milestone Search:</strong> one seat. Example fees: SDR/BDR $5,000, AE $7,500, Senior AE or Sales Manager $10,000.</li>
+                            <li><strong className="text-navy-900">Kas Directed Pursuit:</strong> list driven search, used for Director, VP of Sales and CRO. Pricing on request.</li>
                         </ul>
                         <p className="text-lg text-grey-600 leading-relaxed">
                             A seed company hiring a first AE and a first SDR in the same quarter is the typical Seat case. One AE and nothing else for a year is the typical Milestone case. Worked examples and the full price list live on the{" "}
@@ -308,6 +321,14 @@ export default function FractionalRecruitingForStartups() {
                     </div>
 
                     <div className="space-y-4">
+                        <h2 className="text-2xl font-bold text-navy-900">Sources</h2>
+                        <ul className="list-disc pl-6 space-y-2 text-base text-grey-600">
+                            <li>How to Work Effectively with an Executive Search Firm, SHRM, July 2016. Contingency fee range. <a href={SRC.shrm} className="text-blue-accent hover:underline">{SRC.shrm}</a></li>
+                            <li>AE Models, Motions &amp; Metrics: 2026 Research Report, The Bridge Group, June 22, 2026. Survey of 158 B2B companies. <a href={SRC.bridge} className="text-blue-accent hover:underline">{SRC.bridge}</a></li>
+                        </ul>
+                    </div>
+
+                    <div className="space-y-4">
                         <h2 className="text-2xl font-bold text-navy-900">Related guides</h2>
                         <ul className="space-y-2 text-grey-600">
                             <li><Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline font-semibold">Fractional sales recruiting cost</Link>: the full Kas price list</li>
@@ -316,7 +337,8 @@ export default function FractionalRecruitingForStartups() {
                             <li><Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">What is fractional recruiting</Link>: definition, cost and how an engagement runs</li>
                             <li><Link href="/guides/best-fractional-sales-recruiters" className="text-blue-accent hover:underline font-semibold">Top fractional recruiter for sales teams</Link>: how to pick the best fractional sales recruiters</li>
                             <li><Link href="/blog/founder-led-sales-first-hire" className="text-blue-accent hover:underline font-semibold">Your first sales hire needs a playbook</Link>: what founder-led sales has to prove first</li>
-                            <li><Link href="/blog/early-stage-sales-comp-first-ae-ote" className="text-blue-accent hover:underline font-semibold">What to pay your first AE</Link>: OTE ranges by segment and how to pressure-test attainment</li>
+                            <li><Link href="/blog/early-stage-sales-comp-first-ae-ote" className="text-blue-accent hover:underline font-semibold">What to pay your first AE</Link>: OTE ranges by segment and how to pressure test attainment</li>
+                            <li><Link href="/guides/how-to-hire-senior-account-executive" className="text-blue-accent hover:underline font-semibold">How to hire a senior account executive</Link>: what makes an AE senior, pay and timeline</li>
                             <li><Link href="/programs" className="text-blue-accent hover:underline font-semibold">Programs</Link>: Kas Seat, Kas Milestone Search, Kas Directed Pursuit</li>
                         </ul>
                     </div>
@@ -326,19 +348,16 @@ export default function FractionalRecruitingForStartups() {
                         <p className="text-grey-300 text-lg leading-relaxed max-w-2xl mx-auto">
                             Email chris@thekasgroup.com with your stage, the sales seats you plan to hire in the next two quarters, and target OTE. You get a straight answer: Kas Seat, a single Kas Milestone Search, or wait.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div className="flex justify-center">
                             <a href="mailto:chris@thekasgroup.com" className="inline-flex items-center justify-center rounded-full bg-blue-accent px-8 py-4 font-bold text-white hover:bg-blue-hover transition-all">
                                 Email chris@thekasgroup.com
                             </a>
-                            <Link href="/programs" className="inline-flex items-center justify-center rounded-full border border-white/20 px-8 py-4 font-bold text-white hover:bg-white/10 transition-all">
-                                See Programs
-                            </Link>
                         </div>
                     </div>
 
                     <div className="pt-12 border-t border-grey-200 space-y-4">
                         <h2 className="text-2xl font-bold text-navy-900">About The Kas Group</h2>
-                        <p className="text-grey-600 leading-relaxed">The Kas Group is an elite B2B SaaS sales recruiting firm founded in 2014. We place sales talent from SDR through VP Sales and CRO for high-growth technology companies.</p>
+                        <p className="text-grey-600 leading-relaxed">The Kas Group is a B2B SaaS sales recruiting firm founded in 2014. We place sales talent from SDR through VP Sales and CRO for high-growth technology companies.</p>
                         <ul className="text-grey-600 space-y-1 text-sm">
                             <li>Website: <Link href="/" className="text-blue-accent hover:underline">https://www.thekasgroup.com</Link></li>
                             <li>Email: <a href="mailto:chris@thekasgroup.com" className="text-blue-accent hover:underline">chris@thekasgroup.com</a></li>
