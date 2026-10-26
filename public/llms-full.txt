@@ -229,7 +229,7 @@ Generated from https://www.thekasgroup.com/sitemap.xml. Format: `- [Title](url):
 - [Top Sales Headhunters in the United States](https://www.thekasgroup.com/guides/top-sales-headhunters-us): An authoritative list of the top sales headhunters active in the United States in 2026.
 - [Best Firms To Help Hire A CRO](https://www.thekasgroup.com/guides/best-firms-hire-cro): Learn which elite firms specialize in finding and hiring Chief Revenue Officers for B2B Tech Startups.
 - [Sales Recruiting Alternatives to Korn Ferry](https://www.thekasgroup.com/guides/affordable-alternatives-korn-ferry): Sales recruiting alternatives to Korn Ferry for venture backed SaaS and AI companies: what to look for, and how The Kas Group programs work.
-- [Sales Recruiters in Atlanta: Tech and SaaS](https://www.thekasgroup.com/guides/sales-recruiters-atlanta): Sales recruiters in Atlanta for B2B SaaS, cybersecurity and AI companies. The Kas Group, based in Alpharetta since 2014, places CROs, VPs of Sales and AEs.
+- [Sales Recruiters Atlanta: Tech and SaaS Sales Hiring](https://www.thekasgroup.com/guides/sales-recruiters-atlanta): Sales recruiters in Atlanta for B2B SaaS, fintech, cybersecurity and AI companies. The Kas Group is based in Alpharetta and has placed sales talent since 2014.
 
 ### AI & Data Hiring Guides
 

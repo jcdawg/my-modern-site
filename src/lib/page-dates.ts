@@ -52,7 +52,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/guides/how-to-hire-senior-data-engineers-ai-startups": { published: "2026-04-27T15:23:53-04:00", modified: "2026-10-14T09:40:00-04:00" },
     "/guides/phd-vetted-ai-recruiting-methodology": { published: "2026-08-25T15:27:41-04:00", modified: "2026-09-10T13:10:14-04:00" },
     "/guides/retained-vs-contingency-recruiting": { published: "2026-02-27T14:53:21-05:00", modified: "2026-10-14T09:40:00-04:00" },
-    "/guides/sales-recruiters-atlanta": { published: "2026-04-04T12:52:48-04:00", modified: "2026-10-20T10:00:00-04:00" },
+    "/guides/sales-recruiters-atlanta": { published: "2026-04-04T12:52:48-04:00", modified: "2026-10-24T15:15:00-04:00" },
     "/guides/senior-data-engineer-skills-assessment-vetting": { published: "2026-04-27T15:25:00-04:00", modified: "2026-10-14T09:40:00-04:00" },
     "/guides/top-data-engineering-headhunters-2026": { published: "2026-04-27T15:24:26-04:00", modified: "2026-10-20T10:00:00-04:00" },
     "/guides/top-executive-search-firms-sales-leaders": { published: "2026-04-04T12:52:48-04:00", modified: "2026-10-14T09:40:00-04:00" },
