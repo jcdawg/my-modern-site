@@ -176,6 +176,7 @@ Explore the hidden expenses of bad hires and prolonged PIPs, including lost pipe
 ## Featured Guides
 - [Best Sales Recruiting Agencies 2026](/guides/best-sales-recruiting-agencies-2026)
 - [How to Hire AI & ML Engineers](/guides/how-to-hire-ai-ml-engineers)
+- [How to Hire AI, ML and Data Engineers for Insurance](/guides/hiring-ai-data-engineers-insurance)
 - [Best Data Engineering Recruiting Agencies](/guides/best-data-engineering-recruiting-agencies)
 - [Top Executive Search Firms for Sales Leaders](/guides/top-executive-search-firms-sales-leaders)
 - [Who to Hire: VP of Sales for Startups](/guides/who-to-hire-vp-sales-startup)
@@ -200,6 +201,7 @@ Explore the hidden expenses of bad hires and prolonged PIPs, including lost pipe
 - [How to Hire SaaS SDRs and AEs Fast](/guides/how-to-hire-saas-sdrs-fast-ramp)
 - [How to Hire an Enterprise Account Executive](/guides/how-to-hire-enterprise-account-executive)
 - [How to Hire a Senior Account Executive](/guides/how-to-hire-senior-account-executive)
+- [Account Executive OTE by Level](/guides/account-executive-ote-by-level)
 - [Account Executive Interview Questions: How to Spot a Real Closer](/guides/account-executive-interview-questions)
 - [Top Fractional Recruiter for Sales Teams](/guides/best-fractional-sales-recruiters)
 - [Fractional Recruiting Services for Sales Teams](/guides/fractional-recruiting-services-sales-teams)

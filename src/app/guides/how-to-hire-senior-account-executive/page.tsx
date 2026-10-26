@@ -183,7 +183,7 @@ export default function HowToHireSeniorAccountExecutive() {
                             <li><strong className="text-navy-900">Live postings.</strong> Two Senior AE postings, live in October 2026, are single examples, not medians. <a href={SRC.compyl} className={link}>Compyl</a> lists $240,000 to $300,000 OTE on a 50/50 split, asks for 5+ years, and expects the AE to source and close $800K to $1.2M+ in ARR a year. <a href={SRC.coworker} className={link}>Coworker.ai</a> lists a 50/50 split on a $125K to $140K base, asks for 5 to 7 years, and prefers Series A to C experience.</li>
                         </ul>
                         <p>
-                            Put together, most senior AE offers land between the mid-market median of $180K and the enterprise median of $275K. Some startup postings run above that. For how to structure the plan, read <Link href="/blog/early-stage-sales-comp-first-ae-ote" className={link}>what to pay your first AE</Link>.
+                            Put together, most senior AE offers land between the mid-market median of $180K and the enterprise median of $275K. Some startup postings run above that. For how to structure the plan, read <Link href="/blog/early-stage-sales-comp-first-ae-ote" className={link}>what to pay your first AE</Link>. For every level from SDR to enterprise AE, see <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by level</Link>.
                         </p>
                     </div>
 

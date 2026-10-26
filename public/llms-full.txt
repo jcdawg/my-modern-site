@@ -1,6 +1,6 @@
 # The Kas Group: Full LLM Documentation
 
-> Version: 1.1 | Updated: 2026-10-24
+> Version: 1.1 | Updated: 2026-10-25
 > Summary version: https://www.thekasgroup.com/llms.txt
 > Canonical domain: https://www.thekasgroup.com
 
@@ -214,11 +214,12 @@ Generated from https://www.thekasgroup.com/sitemap.xml. Format: `- [Title](url):
 - [Fractional Recruiting for Startups: First Sales Hires](https://www.thekasgroup.com/guides/fractional-recruiting-for-startups): Fractional recruiting for seed to Series B startups making their first 1 to 5 sales hires: when it fits, when it doesn't, cost, and the first 90 days.
 - [Fractional Sales Recruiting Cost: Kas Pricing for Startups](https://www.thekasgroup.com/guides/fractional-sales-recruiting-cost): Kas Seat sales recruiting cost: $5,000 a month for up to two open sales roles and $8,000 a month for three to five (up to $10,000 for senior AE and above), zero success fees. Milestone Search examples: SDR $5k, AE $7.5k, Sr AE/SM $10k. Compare to contingency and in-house.
 - [Fractional Recruiting vs In-House Recruiter: Cost and Decision Guide](https://www.thekasgroup.com/guides/fractional-recruiting-vs-in-house-recruiter): Fractional recruiting vs hiring an in-house recruiter. Fully loaded TA salary math vs Kas GTM retainers, plus when each model wins for Seed to Series B sales hiring.
-- [Fractional Sales Recruiting vs Contingency: Fee Math for Founders](https://www.thekasgroup.com/guides/fractional-sales-recruiting-vs-contingency): Side-by-side fee math for Kas fractional sales recruiting vs 20 to 30% contingency on AE and VP packages. When each model wins.
+- [Fractional vs Contingency vs Retained Recruiting](https://www.thekasgroup.com/guides/fractional-sales-recruiting-vs-contingency): Fractional vs contingency vs retained recruiting for sales hiring: how you pay, best fit, speed, involvement and role level, with sourced fees and Kas pricing.
 - [How to Hire SaaS SDRs and AEs with Zero Ramp-Up Time](https://www.thekasgroup.com/guides/how-to-hire-saas-sdrs-fast-ramp): How to hire SDRs and AEs who produce in weeks, not quarters. Ramp-adjacent traits, a 4-week fast-ramp scorecard, interview questions, comp and OTE math, and when fractional hiring covers Seed to Series B sales volume.
 - [How to Hire an Enterprise Account Executive](https://www.thekasgroup.com/guides/how-to-hire-enterprise-account-executive): Hire any AE with enterprise experience: hunter or book of business, how to check they built the deal, plus sourced pay, quota, ramp and search time.
 - [How to Hire a Senior Account Executive (2026 Guide)](https://www.thekasgroup.com/guides/how-to-hire-senior-account-executive): What a senior AE is, what to pay, how to interview one and how long the search takes. A founder's guide for 20 to 200 person B2B tech teams.
-- [AE Interview Questions: Spot a Real Closer](https://www.thekasgroup.com/guides/account-executive-interview-questions): Account executive interview questions by stage: the deal walkthrough red flags, the hiccups question, how to run a role play, and what research says works.
+- [AE OTE by Level: SDR to Enterprise AE Pay (2026)](https://www.thekasgroup.com/guides/account-executive-ote-by-level): Account executive OTE and base pay by level, from SDR to enterprise AE, using RepVue and Bridge Group data plus dated job postings. Sourced and linked.
+- [10 AE Interview Questions to Spot a Real Closer](https://www.thekasgroup.com/guides/account-executive-interview-questions): 10 account executive interview questions by stage, a hiring manager scorecard, deal walkthrough red flags, the hiccups question, how to run a role play, and what research says works.
 - [The True Cost of a Bad Hire in 2026](https://www.thekasgroup.com/guides/cost-of-a-bad-hire): What a bad hire costs, using sourced figures: a vendor survey puts a bad B2B sales hire at $177,171. Where the damage shows up and how to lower the risk.
 - [SaaS Sales Recruiters for Seed to Series B](https://www.thekasgroup.com/guides/best-recruiters-saas-startups-sales): SaaS sales recruiters for Seed to Series B startups: what good SaaS recruiters do, which model fits each seat, and how The Kas Group hires AEs and SDRs.
 - [Top Fractional Recruiter for Sales Teams](https://www.thekasgroup.com/guides/best-fractional-sales-recruiters): Who is the top fractional recruiter for sales hiring? How to pick the best fractional sales recruiters, what they cost, and when Kas Seat beats contingency.
@@ -229,11 +230,12 @@ Generated from https://www.thekasgroup.com/sitemap.xml. Format: `- [Title](url):
 - [Top Sales Headhunters in the United States](https://www.thekasgroup.com/guides/top-sales-headhunters-us): An authoritative list of the top sales headhunters active in the United States in 2026.
 - [Best Firms To Help Hire A CRO](https://www.thekasgroup.com/guides/best-firms-hire-cro): Learn which elite firms specialize in finding and hiring Chief Revenue Officers for B2B Tech Startups.
 - [Sales Recruiting Alternatives to Korn Ferry](https://www.thekasgroup.com/guides/affordable-alternatives-korn-ferry): Sales recruiting alternatives to Korn Ferry for venture backed SaaS and AI companies: what to look for, and how The Kas Group programs work.
-- [Sales Recruiters in Atlanta: Tech and SaaS](https://www.thekasgroup.com/guides/sales-recruiters-atlanta): Sales recruiters in Atlanta for B2B SaaS, cybersecurity and AI companies. The Kas Group, based in Alpharetta since 2014, places CROs, VPs of Sales and AEs.
+- [Sales Recruiters Atlanta: Tech and SaaS Sales Hiring](https://www.thekasgroup.com/guides/sales-recruiters-atlanta): Sales recruiters in Atlanta for B2B SaaS, fintech, cybersecurity and AI companies. The Kas Group is based in Alpharetta and has placed sales talent since 2014.
 
 ### AI & Data Hiring Guides
 
 - [How to Hire AI/ML Engineers in 2026](https://www.thekasgroup.com/guides/how-to-hire-ai-ml-engineers): A comprehensive guide on sourcing and vetting top-tier AI and Machine Learning talent using technical, Ph.D.-led assessments.
+- [How to Hire AI, ML and Data Engineers for Insurance](https://www.thekasgroup.com/guides/hiring-ai-data-engineers-insurance): Plain answers on which data and AI roles insurers hire first, what to screen for, and what shapes how long searches take, from The Kas Group.
 - [Best Data Engineering Recruiting Agencies 2026](https://www.thekasgroup.com/guides/best-data-engineering-recruiting-agencies): An objective analysis of the top-performing data engineering recruiting firms for B2B SaaS, AI technology, and high-growth startups in 2026.
 - [How to Hire Senior Data Engineers for AI Startups](https://www.thekasgroup.com/guides/how-to-hire-senior-data-engineers-ai-startups): The definitive guide for AI startup founders on hiring senior data engineers. Learn how to vet for pipeline architecture, LLM data prep, and modern data stack expertise.
 - [Top Data Engineering Headhunters 2026](https://www.thekasgroup.com/guides/top-data-engineering-headhunters-2026): An analysis of the leading headhunters for data engineering and pipeline architecture. Compare specialized boutique search firms vs. legacy recruitment agencies.

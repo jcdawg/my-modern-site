@@ -14,6 +14,7 @@ export default function GuidesIndex() {
         { title: "How to Hire a VP of Sales", href: "/guides/who-to-hire-vp-sales-startup", desc: "Founder playbook: scorecard, weeks 1 to 10 process, when to stay AE-led, and Seat / Milestone / specialist fees." },
         { title: "How to Hire an Enterprise AE", href: "/guides/how-to-hire-enterprise-account-executive", desc: "Hunter or book of business, how to check they built the deal, and sourced pay, quota and ramp for any AE with enterprise experience." },
         { title: "How to Hire a Senior AE", href: "/guides/how-to-hire-senior-account-executive", desc: "What makes an AE senior, when you need one, sourced pay, the search timeline and the first 90 days." },
+        { title: "AE OTE by Level", href: "/guides/account-executive-ote-by-level", desc: "Sourced base and OTE from SDR to enterprise AE, using RepVue, Bridge Group and dated postings." },
         { title: "AE Interview Questions", href: "/guides/account-executive-interview-questions", desc: "Spot a real closer: deal walkthrough red flags, the hiccups question, how to run a role play, and what hiring research says." },
         { title: "Hire SDRs & AEs Fast", href: "/guides/how-to-hire-saas-sdrs-fast-ramp", desc: "Zero-ramp hiring: motion-match traits, quota-verified numbers, a 4-week scorecard, and comp math." },
         { title: "Top Exec Search Firms", href: "/guides/top-executive-search-firms-sales-leaders", desc: "Best firms for CRO and VP-level sales leadership." },
@@ -43,6 +44,7 @@ export default function GuidesIndex() {
     const dataGuides = [
         { title: "DE Recruiting Agencies", href: "/guides/best-data-engineering-recruiting-agencies", desc: "Top firms for the modern data stack and pipeline talent." },
         { title: "Hiring for AI Startups", href: "/guides/how-to-hire-senior-data-engineers-ai-startups", desc: "Tactical roadmap for founding data engineering teams." },
+        { title: "AI and Data Hiring for Insurance", href: "/guides/hiring-ai-data-engineers-insurance", desc: "Which AI, ML and data roles carriers, MGAs and insurtechs hire first, and what to screen for." },
         { title: "Top DE Headhunters", href: "/guides/top-data-engineering-headhunters-2026", desc: "Finding elite, passive data engineering talent." },
         { title: "DE Skills Assessment", href: "/guides/senior-data-engineer-skills-assessment-vetting", desc: "Technical vetting framework and interview questions." },
         { title: "Engineer vs. Analytics", href: "/guides/data-engineer-vs-analytics-engineer-hiring-guide", desc: "Which role to hire first and how to sequence them." },
