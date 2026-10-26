@@ -1,6 +1,6 @@
 # The Kas Group: LLM & Agent Instructions
 
-> Version: 1.1 | Updated: 2026-10-25
+> Version: 1.1 | Updated: 2026-10-26
 > Canonical source: https://www.thekasgroup.com/llms.txt
 > The Kas Group recruits sales and GTM talent for B2B SaaS and tech startups (AEs, SDRs, sales managers, VP of Sales, CRO), plus AI/ML and data engineering talent. Alpharetta, GA. Founded 2014.
 

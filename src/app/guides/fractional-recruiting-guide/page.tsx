@@ -34,7 +34,7 @@ const FAQS = [
     },
     {
         q: "How to choose a fractional recruiter",
-        a: "Look for a partner who specializes in the roles you are hiring, works inside your tools and process, publishes pricing, works month to month, and leaves you owning every candidate name. Ask who does the sourcing and screening, how fast you see a first shortlist, and how they check sales candidates' quota history.",
+        a: "Pick a partner who specializes in your roles, publishes pricing, works month to month and leaves you owning every candidate name; the full checklist is in our guide on how to choose a fractional recruiter.",
     },
     {
         q: "How is fractional recruiting different from contingency recruiting?",
@@ -256,13 +256,7 @@ export default function FractionalRecruitingGuide() {
                             <Users className="h-8 w-8 text-blue-accent" />
                             How to choose a fractional recruiter
                         </h2>
-                        <ul className="space-y-3 text-grey-600 leading-relaxed list-disc pl-6">
-                            <li><strong className="text-navy-900">Specialization.</strong> Pick a partner who recruits the roles you are hiring. For sales seats, ask how they check quota history.</li>
-                            <li><strong className="text-navy-900">Who does the work.</strong> Ask who sources, who screens and who joins your debriefs.</li>
-                            <li><strong className="text-navy-900">Speed to a first look.</strong> Ask how fast you see a first market scan or shortlist.</li>
-                            <li><strong className="text-navy-900">Terms.</strong> Look for published pricing and month to month terms.</li>
-                            <li><strong className="text-navy-900">Ownership.</strong> You should own every candidate name and keep the work in your own tools.</li>
-                        </ul>
+                        <p className="text-grey-600 leading-relaxed">Pick a partner who recruits the roles you are hiring, publishes pricing, works month to month and leaves you owning every candidate name. The full checklist and the questions to ask on the first call are in <Link href="/guides/how-to-choose-a-fractional-recruiter" className={link}>how to choose a fractional recruiter</Link>.</p>
                     </div>
 
                     <div className="space-y-8">
