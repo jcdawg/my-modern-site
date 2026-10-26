@@ -13,6 +13,7 @@ export default function ArticleJsonLd({
   path,
   headline,
   about,
+  author,
 }: {
   title: string;
   description: string;
@@ -20,6 +21,8 @@ export default function ArticleJsonLd({
   /** Optional longer headline; defaults to the page title. */
   headline?: string;
   about?: string[];
+  /** Optional author overrides; defaults to Chris Stinson, Founder. */
+  author?: { jobTitle?: string; description?: string };
 }) {
   const url = `${SITE_URL}${path}`;
   const dates = getPageDates(path);
@@ -39,7 +42,9 @@ export default function ArticleJsonLd({
     author: {
       "@type": "Person",
       name: "Chris Stinson",
-      jobTitle: "Founder",
+      jobTitle: author?.jobTitle ?? "Founder",
+      ...(author ? { worksFor: { "@id": ORGANIZATION_ID } } : {}),
+      ...(author?.description ? { description: author.description } : {}),
       url: `${SITE_URL}/about`,
       sameAs: ["https://www.linkedin.com/in/cybersecuritysalesrecruiterchris-stinson/"],
     },

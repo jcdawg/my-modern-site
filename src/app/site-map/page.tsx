@@ -47,6 +47,7 @@ export default function Sitemap() {
                                 <li><Link href="/guides/who-to-hire-vp-sales-startup" className="text-grey-600 hover:text-blue-accent transition-colors">How to Hire a VP of Sales</Link></li>
                                 <li><Link href="/guides/how-to-hire-enterprise-account-executive" className="text-grey-600 hover:text-blue-accent transition-colors">How to Hire an Enterprise AE</Link></li>
                                 <li><Link href="/guides/how-to-hire-senior-account-executive" className="text-grey-600 hover:text-blue-accent transition-colors">How to Hire a Senior AE</Link></li>
+                                <li><Link href="/guides/account-executive-ote-by-level" className="text-grey-600 hover:text-blue-accent transition-colors">AE OTE by Level</Link></li>
                                 <li><Link href="/guides/account-executive-interview-questions" className="text-grey-600 hover:text-blue-accent transition-colors">AE Interview Questions</Link></li>
                                 <li><Link href="/guides/how-to-hire-saas-sdrs-fast-ramp" className="text-grey-600 hover:text-blue-accent transition-colors">Hire SDRs &amp; AEs Fast</Link></li>
                                 <li><Link href="/guides/fractional-recruiting-guide" className="text-grey-600 hover:text-blue-accent transition-colors">What Is Fractional Recruiting?</Link></li>
@@ -77,6 +78,7 @@ export default function Sitemap() {
                                 <li><Link href="/guides/top-data-engineering-headhunters-2026" className="text-grey-600 hover:text-blue-accent transition-colors">DE Headhunters 2026</Link></li>
                                 <li><Link href="/guides/senior-data-engineer-skills-assessment-vetting" className="text-grey-600 hover:text-blue-accent transition-colors">DE Vetting Guide</Link></li>
                                 <li><Link href="/guides/data-engineer-vs-analytics-engineer-hiring-guide" className="text-grey-600 hover:text-blue-accent transition-colors">Engineer vs Analytics</Link></li>
+                                <li><Link href="/guides/hiring-ai-data-engineers-insurance" className="text-grey-600 hover:text-blue-accent transition-colors">AI and Data Hiring for Insurance</Link></li>
                                 <li><Link href="/guides/active-vs-passive-candidates" className="text-grey-600 hover:text-blue-accent transition-colors">Active vs. Passive Candidates</Link></li>
                                 <li><Link href="/guides/do-ai-resume-screeners-work" className="text-grey-600 hover:text-blue-accent transition-colors">Do AI Resume Screeners Work?</Link></li>
                             </ul>
