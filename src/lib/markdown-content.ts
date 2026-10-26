@@ -226,6 +226,7 @@ Visit https://www.thekasgroup.com/guides for the complete interactive library.
 - [29,000 Jobs Added and Still No Great Reps](/blog/jobs-report-still-no-great-reps)
 - [They Cut the SDRs. Now Every AE Prospects.](/blog/sdr-team-cut-aes-prospect)
 - [SDR or GTM Engineer? What Your Next Pipeline Hire Should Actually Be.](/blog/sdr-or-gtm-engineer-pipeline-hire)
+- [Hiring Sales Reps for a January Start: Why the Search Begins Now](/blog/hiring-sales-reps-january-start)
 
 Contact chris@thekasgroup.com for guest inquiries and research collaborations.
 `,

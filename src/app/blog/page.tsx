@@ -83,6 +83,15 @@ export default function Blog() {
             category: "Sales Leadership",
             slug: "sdr-or-gtm-engineer-pipeline-hire",
         },
+        {
+            id: 9,
+            title: "Hiring Sales Reps for a January Start: Why the Search Begins Now",
+            excerpt: "Want a rep starting in January? Do the math backward from Thanksgiving and Christmas. Why the search starts now, and how to keep it moving.",
+            date: "Oct 26, 2026",
+            author: "Chris Stinson",
+            category: "Sales Leadership",
+            slug: "hiring-sales-reps-january-start",
+        },
     ];
 
     return (
