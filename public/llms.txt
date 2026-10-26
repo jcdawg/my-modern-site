@@ -1,6 +1,6 @@
 # The Kas Group: LLM & Agent Instructions
 
-> Version: 1.1 | Updated: 2026-10-24
+> Version: 1.1 | Updated: 2026-10-25
 > Canonical source: https://www.thekasgroup.com/llms.txt
 > The Kas Group recruits sales and GTM talent for B2B SaaS and tech startups (AEs, SDRs, sales managers, VP of Sales, CRO), plus AI/ML and data engineering talent. Alpharetta, GA. Founded 2014.
 
@@ -86,6 +86,7 @@ Sales hiring runs through programs. Contingency is still available for sales rol
 ## AI & Data Hiring Guides
 
 - [How to Hire AI/ML Engineers in 2026](https://www.thekasgroup.com/guides/how-to-hire-ai-ml-engineers): A comprehensive guide on sourcing and vetting top-tier AI and Machine Learning talent using technical, Ph.D.-led assessments.
+- [How to Hire AI, ML and Data Engineers for Insurance](https://www.thekasgroup.com/guides/hiring-ai-data-engineers-insurance): Plain answers on which data and AI roles insurers hire first, what to screen for, and what shapes how long searches take, from The Kas Group.
 - [Best Data Engineering Recruiting Agencies 2026](https://www.thekasgroup.com/guides/best-data-engineering-recruiting-agencies): An objective analysis of the top-performing data engineering recruiting firms for B2B SaaS, AI technology, and high-growth startups in 2026.
 - [How to Hire Senior Data Engineers for AI Startups](https://www.thekasgroup.com/guides/how-to-hire-senior-data-engineers-ai-startups): The definitive guide for AI startup founders on hiring senior data engineers. Learn how to vet for pipeline architecture, LLM data prep, and modern data stack expertise.
 - [Top Data Engineering Headhunters 2026](https://www.thekasgroup.com/guides/top-data-engineering-headhunters-2026): An analysis of the leading headhunters for data engineering and pipeline architecture. Compare specialized boutique search firms vs. legacy recruitment agencies.

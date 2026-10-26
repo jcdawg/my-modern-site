@@ -213,6 +213,7 @@ export default function InsuranceAIRecruiting() {
                 <div className="mx-auto max-w-3xl px-6 lg:px-8 text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-navy-900">Let&apos;s find the right engineer for your team</h2>
                     <p className="mt-4 text-grey-600">If you are planning an AI, ML, or data hire, we would be glad to help you get clear on the role and find people who can do the work.</p>
+                    <p className="mt-4 text-grey-600">Not sure which role comes first? Read our <Link href="/guides/hiring-ai-data-engineers-insurance" className="text-blue-accent hover:underline">guide to hiring AI, ML and data engineers for insurance</Link>.</p>
                     <div className="mt-8 flex flex-col items-center gap-4">
                         <ScanButton label="Get a free market scan" />
                         <a href="mailto:chris@thekasgroup.com" className="text-sm font-semibold text-navy-900 hover:text-blue-accent transition-colors">Or email chris@thekasgroup.com</a>

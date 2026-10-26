@@ -33,6 +33,7 @@ const DATA_AI_GUIDES = new Set([
     "/guides/data-engineer-vs-analytics-engineer-hiring-guide",
     "/guides/cost-of-hiring-wrong-data-engineer",
     "/guides/how-to-hire-ai-ml-engineers",
+    "/guides/hiring-ai-data-engineers-insurance",
     "/guides/phd-vetted-ai-recruiting-methodology",
     "/guides/active-vs-passive-candidates",
     "/guides/do-ai-resume-screeners-work",
