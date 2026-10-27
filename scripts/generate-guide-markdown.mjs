@@ -49,6 +49,7 @@ const extraPages = [
     { path: "/blog/jobs-report-still-no-great-reps", page: "src/app/blog/jobs-report-still-no-great-reps/page.tsx" },
     { path: "/blog/sdr-team-cut-aes-prospect", page: "src/app/blog/sdr-team-cut-aes-prospect/page.tsx" },
     { path: "/blog/sdr-or-gtm-engineer-pipeline-hire", page: "src/app/blog/sdr-or-gtm-engineer-pipeline-hire/page.tsx" },
+    { path: "/blog/hiring-sales-reps-january-start", page: "src/app/blog/hiring-sales-reps-january-start/page.tsx" },
     { path: "/candidate-mapping-brief", page: "src/app/candidate-mapping-brief/page.tsx" },
 ];
 for (const extra of extraPages) {
