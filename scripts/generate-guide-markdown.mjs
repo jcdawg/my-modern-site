@@ -115,7 +115,7 @@ ${body}
 
 ## About The Kas Group
 
-The Kas Group is an elite sales and AI technical recruiting firm founded in 2014, placing B2B SaaS sales leaders (VP of Sales, CRO, AEs) and AI/ML engineers for high-growth technology companies.
+The Kas Group is an elite sales and AI technical recruiting firm founded in 2014, placing B2B SaaS sales talent (SDRs, AEs and Sales Managers, with senior searches quoted on request) and AI/ML engineers for high-growth technology companies.
 
 - **Website**: ${SITE_URL}
 - **Email**: chris@thekasgroup.com

@@ -25,13 +25,12 @@ export const metadata: Metadata = {
     template: "%s | The Kas Group",
   },
   description:
-    "The Kas Group recruits for B2B SaaS and AI companies: VPs of Sales, CROs, AEs, SDRs, and AI/ML engineers. Programs, not contingency. Founded 2014.",
+    "The Kas Group recruits for B2B SaaS and AI companies: AEs, SDRs, Sales Managers, and AI/ML engineers. Programs, not contingency. Founded 2014.",
   keywords: [
     "The Kas Group",
     "sales recruiting firm",
     "AI technical recruiting",
     "B2B SaaS recruiting",
-    "VP of Sales recruiter",
     "ML engineer recruiting",
     "executive search firm",
     "fractional sales recruiting",

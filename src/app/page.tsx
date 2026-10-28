@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   ...pageMetadata({
     title: "The Kas Group | Sales Recruiting Firm for SaaS & AI",
     description:
-      "The Kas Group is a sales recruiting firm for B2B SaaS and AI companies: VPs of Sales, CROs, AEs and SDRs, plus AI/ML engineers. Alpharetta, GA, since 2014.",
+      "The Kas Group is a sales recruiting firm for B2B SaaS and AI companies: AEs, SDRs and Sales Managers, plus AI/ML engineers. Alpharetta, GA, since 2014.",
     path: "/",
   }),
   title: {
@@ -32,7 +32,7 @@ const homepageJsonLd = {
         "height": 60,
       },
       "foundingDate": "2014",
-      "description": "The Kas Group is a sales and AI technical recruiting firm specializing in placing B2B SaaS sales leaders (VP of Sales, CRO, AEs) and AI/ML engineers for high-growth tech companies.",
+      "description": "The Kas Group is a sales and AI technical recruiting firm specializing in placing B2B SaaS sales talent (SDRs, AEs and Sales Managers) and AI/ML engineers for high-growth tech companies.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Alpharetta",
@@ -53,12 +53,10 @@ const homepageJsonLd = {
       },
       "knowsAbout": [
         "B2B SaaS Sales Recruiting",
-        "VP of Sales Executive Search",
         "AI Technical Recruiting",
         "Machine Learning Engineer Recruiting",
         "Data Engineering Recruiting",
         "Fractional Sales Recruiting",
-        "CRO Search",
         "Account Executive Recruiting",
       ],
       "hasOfferCatalog": {
@@ -68,7 +66,7 @@ const homepageJsonLd = {
           {
             "@type": "Offer",
             "name": "Sales Leadership Recruiting",
-            "description": "Placement of VP of Sales, CRO, and enterprise Account Executives for B2B SaaS companies.",
+            "description": "Placement of SDRs, enterprise Account Executives and Sales Managers for B2B SaaS companies.",
             "url": "https://www.thekasgroup.com/recruit/sales",
           },
           {
@@ -251,7 +249,7 @@ export default function Home() {
             {[
               {
                 title: "B2B SaaS Companies",
-                desc: "Strategic placement of VP of Sales and recurring revenue leadership.",
+                desc: "Strategic placement of AEs, SDRs and Sales Managers.",
                 icon: Target
               },
               {

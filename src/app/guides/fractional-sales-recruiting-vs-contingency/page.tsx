@@ -284,7 +284,7 @@ export default function FractionalVsContingencyVsRetained() {
 
                     <div className="pt-12 border-t border-grey-200 space-y-4">
                         <h2 className="text-2xl font-bold text-navy-900">About The Kas Group</h2>
-                        <p className="text-grey-600 leading-relaxed">The Kas Group is a B2B SaaS sales recruiting firm founded in 2014. We place sales talent from SDR through VP Sales and CRO for high growth technology companies.</p>
+                        <p className="text-grey-600 leading-relaxed">The Kas Group is a B2B SaaS sales recruiting firm founded in 2014. We place sales talent from SDR through Sales Manager, with senior searches quoted on request, for high growth technology companies.</p>
                     </div>
                 </div>
             </section>

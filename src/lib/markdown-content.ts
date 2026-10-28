@@ -12,7 +12,7 @@ export const SITE_MARKDOWN_MAP: Record<string, string> = {
 
 ## Overview
 The Kas Group specializes in two distinct recruiting pillars:
-1. **Elite Sales Talent**: Proven revenue drivers, VPs of Sales, Account Executives (AEs), and SDRs for B2B SaaS companies.
+1. **Elite Sales Talent**: Proven revenue drivers, Account Executives (AEs), SDRs and Sales Managers for B2B SaaS companies.
 2. **AI Technical Recruiting**: At The Kas Group, Derek Norton personally vets our AI, ML and data candidates. Derek holds a PhD in Statistics, founded the Atlanta R Users Group, was a Global Lead Data Scientist at Microsoft, and is currently CTO at Life2.
 
 ## Why The Kas Group
@@ -21,7 +21,7 @@ The Kas Group specializes in two distinct recruiting pillars:
 - **Zero Onboarding Friction**: Pre-vetted candidates equipped for immediate high-impact productivity.
 
 ## Core Services
-- [Sales Recruiting](/recruit/sales): VP of Sales, Strategic AEs, RevOps, and SDR leadership.
+- [Sales Recruiting](/recruit/sales): Strategic AEs, RevOps, and SDR leadership.
 - [Fractional Sales Recruiting](/recruit/fractional-sales): Scalable, high-impact hiring for early-stage and growth startups.
 - [AI Technical Recruiting](/recruit/ai): ML Engineers, AI Architects, and Senior Data Engineers.
 
@@ -69,7 +69,7 @@ For over a decade, The Kas Group has specialized in building high-performing sal
 - **Placement Range**: Industry retained search often runs ~$25k to $150k+; Kas sales list prices are Seat / Milestone. Tech fees are quote-only.
 
 ## Primary Specializations
-1. **B2B SaaS Sales Recruitment**: VP of Sales, CRO, Enterprise AEs, SDRs, RevOps.
+1. **B2B SaaS Sales Recruitment**: Enterprise AEs, SDRs, Sales Managers, RevOps. Senior searches are quoted on request.
 2. **AI & ML Technical Recruitment**: Machine Learning Engineers, AI Architects, Senior Data Engineers, LLM/NLP Specialists.
 3. **Fractional Talent Acquisition**: Embedded recruiting partnership for early-stage tech teams.
 
@@ -82,10 +82,10 @@ For over a decade, The Kas Group has specialized in building high-performing sal
 
     "/recruit/sales": `# Sales Recruiter for B2B SaaS Teams | The Kas Group
 
-> Sales recruiter for B2B SaaS: VP of Sales, CRO, AE and SDR leaders. Quota-verified shortlists from The Kas Group.
+> Sales recruiter for B2B SaaS: AE, SDR and Sales Manager hires. Quota-verified shortlists from The Kas Group.
 
 ## Roles We Place
-- **Sales Leadership**: Chief Revenue Officer (CRO), VP of Sales, Head of Sales, Director of Sales.
+- **Sales Leadership**: Sales Managers. Senior searches are quoted on request.
 - **Individual Contributors**: Enterprise Account Executives (AEs), Mid-Market AEs, Strategic SDRs/BDRs.
 - **Go-To-Market Operations**: RevOps Directors, Sales Enablement Leads, Customer Success Leaders.
 

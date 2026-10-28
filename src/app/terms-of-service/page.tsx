@@ -18,7 +18,7 @@ const sections = [
     {
         heading: "2. Description of Services",
         paragraphs: [
-            "The Kas Group provides executive search and recruiting services for B2B SaaS sales leadership (including CRO, VP of Sales, and enterprise Account Executives) and AI/ML and data engineering talent. Our engagement models may include retained search, fractional sales recruiting, and other arrangements as agreed in a separate written agreement.",
+            "The Kas Group provides executive search and recruiting services for B2B SaaS sales leadership (including SDRs, enterprise Account Executives and Sales Managers) and AI/ML and data engineering talent. Our engagement models may include retained search, fractional sales recruiting, and other arrangements as agreed in a separate written agreement.",
             "Any specific recruiting engagement is governed by a separate written agreement between you and The Kas Group. In the event of a conflict between these Terms and such an agreement, the specific agreement will control with respect to that engagement.",
         ],
     },
