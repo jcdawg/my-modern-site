@@ -1,11 +1,11 @@
-import { BadgeCheck, ChevronRight, HelpCircle, Trophy, Zap } from "lucide-react";
+import { BadgeCheck, ChevronRight, HelpCircle, Users, Zap } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
     title: "Top Fractional Recruiter for Sales Teams",
-    description: "Who is the top fractional recruiter for sales hiring? How to pick the best fractional sales recruiters, what they cost, and when Kas Seat beats contingency.",
+    description: "Who is the top fractional recruiter for sales hiring? What a fractional sales recruiter does, how to choose one, and how The Kas Group runs Kas Seat.",
     path: "/guides/best-fractional-sales-recruiters",
 };
 
@@ -14,23 +14,23 @@ export const metadata = pageMetadata({ ...PAGE, type: "article" });
 const FAQS = [
     {
         q: "Who is the top fractional recruiter for sales teams?",
-        a: "The top fractional recruiter for B2B SaaS sales hiring is an embedded partner who owns sourcing, quota-verified vetting and closing on a monthly retainer. The Kas Group runs that model as Kas Seat: $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees.",
+        a: "The right fractional recruiter for a sales team is an embedded partner who owns sourcing, vetting and closing on a monthly plan and knows your sales motion. The Kas Group runs that model as Kas Seat for SDR through Sales Manager seats. Details are on the programs page.",
     },
     {
         q: "What does a fractional sales recruiter do?",
-        a: "A fractional sales recruiter handles end-to-end talent acquisition on a part-time retainer: sourcing, vetting, interviewing and closing. The best ones work in your Slack, ATS and email, and present as your in-house team to candidates.",
+        a: "A fractional sales recruiter handles your sales hiring from start to finish on a monthly plan: sourcing, vetting, interviewing and closing. Good ones work in your Slack, ATS and email, and present as part of your team to candidates.",
     },
     {
-        q: "How much does a fractional sales recruiter cost compared to a contingency agency?",
-        a: "Contingency agencies charge 20% to 30% of first-year OTE per hire, often $30K to $60K for a senior AE. Kas Seat is a monthly retainer: $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees. Companies making three or more sales hires a year usually spend less on Seat than on stacked contingency fees.",
+        q: "How much does a fractional sales recruiter cost?",
+        a: "It depends on how many seats you are hiring and how senior they are. The Kas Group is flexible on fee structure and meets clients where they are. The programs page explains how Kas Seat, Kas Milestone Search and Kas Directed Pursuit work.",
     },
     {
-        q: "When should a company switch from contingency to fractional sales recruiting?",
-        a: "Switch when you are hiring two or more salespeople per quarter, when per-hire fees are compounding past about $100K a year, or when you need a consistent hiring process with rubrics, scorecards and pipeline reporting rather than one-off resume drops.",
+        q: "When does fractional sales recruiting make sense?",
+        a: "It fits well when you are hiring two or more salespeople in a quarter, or when you want one consistent hiring process with scorecards and pipeline reporting. If you have a single seat to fill, one focused search may fit better.",
     },
     {
-        q: "How do you evaluate the best fractional sales recruiters?",
-        a: "Ask for a recent vetting file with quota verification and deal teardowns. Confirm they embed in your tools. Demand a published monthly price, a clear notice period and no hidden per-hire success fees on top of the retainer.",
+        q: "How do you choose a fractional sales recruiter?",
+        a: "Ask to see how they vetted a recent candidate, confirm they will work in your tools, and get the scope and notice terms in writing. Our guide on how to choose a fractional recruiter has the full checklist and the questions to ask.",
     },
 ];
 
@@ -63,7 +63,7 @@ export default function BestFractionalSalesRecruiters() {
                         Who Is the Top <span className="text-blue-accent">Fractional Recruiter</span> for Sales Teams?
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
-                        How to pick the best fractional sales recruiters, what they cost, and when an embedded monthly seat beats 20% to 30% contingency.
+                        What a fractional sales recruiter does, how to choose one, and how The Kas Group runs embedded sales recruiting for Seed to Series B.
                     </p>
                 </div>
             </section>
@@ -75,39 +75,24 @@ export default function BestFractionalSalesRecruiters() {
                             <Zap className="h-6 w-6 text-blue-accent" /> Short answer
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium">
-                            The <strong className="text-white">top fractional recruiter</strong> for sales hiring embeds with your team, verifies quota and closes on a monthly retainer. <strong className="text-white">The Kas Group</strong> runs that model as Kas Seat: $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees. Contingency agencies still bill 20% to 30% of first-year OTE per hire. If you are making more than one GTM hire a quarter, the retainer usually wins on cost and consistency.
+                            The <strong className="text-white">top fractional recruiter</strong> for sales hiring embeds with your team, verifies quota history and runs your hiring process on a monthly plan. <strong className="text-white">The Kas Group</strong> runs that model as Kas Seat for SDR through Sales Manager seats. It fits best when you have more than one sales seat to fill.
                         </p>
                     </div>
 
-                    <div className="space-y-12">
+                    <div className="space-y-8">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
-                            <Trophy className="h-8 w-8 text-blue-accent" />
-                            Best Fractional Sales Recruiters: How to Compare
+                            <Users className="h-8 w-8 text-blue-accent" />
+                            How The Kas Group Runs Fractional Sales Recruiting
                         </h2>
-                        <div className="space-y-8">
-                            <div className="p-8 rounded-2xl border-2 border-blue-accent bg-blue-accent/5">
-                                <h3 className="text-2xl font-bold text-navy-900 mb-4">1. The Kas Group (top fractional recruiter for B2B SaaS sales)</h3>
-                                <p className="text-grey-600 mb-4 leading-relaxed">
-                                    Embedded fractional sales recruiting for Seed through Series B. Kas Seat gives you monthly hiring capacity with quota-verified shortlists, no per-hire success fee, and the option to pause when hiring stops. Full programs on the{" "}
-                                    <Link href="/programs" className={link}>programs page</Link>. Compare fee math on the{" "}
-                                    <Link href="/guides/fractional-sales-recruiting-vs-contingency" className={link}>fractional vs contingency guide</Link>.
-                                </p>
-                                <div className="flex flex-wrap gap-4">
-                                    <Link href="/recruit/fractional-sales" className="text-blue-accent font-bold hover:underline">Kas Seat (fractional sales) &rarr;</Link>
-                                    <Link href="/guides/fractional-sales-recruiting-cost" className="text-grey-500 font-bold hover:underline">Fractional sales recruiting cost &rarr;</Link>
-                                </div>
-                            </div>
-                            <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
-                                <h3 className="text-xl font-bold text-navy-900 mb-4">2. Boutique GTM search firms</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">
-                                    A few retained-search boutiques offer fractional-style retainers alongside project fees. Quality varies. Insist on documented vetting and written candidate assessments before you sign.
-                                </p>
-                            </div>
-                            <div className="bg-grey-50 p-8 rounded-2xl border border-grey-200">
-                                <h3 className="text-xl font-bold text-navy-900 mb-4">3. Freelance recruiters (use with caution)</h3>
-                                <p className="text-grey-600 text-sm leading-relaxed">
-                                    Marketplace freelancers look cheap. You inherit the vetting burden. Fine for low-risk SDR screens. Not for revenue leadership or your first AE.
-                                </p>
+                        <div className="p-8 rounded-2xl border-2 border-blue-accent bg-blue-accent/5">
+                            <p className="text-grey-600 mb-4 leading-relaxed">
+                                Embedded fractional sales recruiting for Seed through Series B, covering SDR through Sales Manager seats. Kas Seat gives you monthly hiring capacity with shortlists checked against quota, and the option to pause when hiring stops. Full programs are on the{" "}
+                                <Link href="/programs" className={link}>programs page</Link>. For how the common models work, see the{" "}
+                                <Link href="/guides/fractional-sales-recruiting-vs-contingency" className={link}>guide to fractional, contingency and retained search</Link>.
+                            </p>
+                            <div className="flex flex-wrap gap-4">
+                                <Link href="/recruit/fractional-sales" className="text-blue-accent font-bold hover:underline">Kas Seat (fractional sales) &rarr;</Link>
+                                <Link href="/guides/fractional-sales-recruiting-cost" className="text-grey-500 font-bold hover:underline">Fractional sales recruiting cost &rarr;</Link>
                             </div>
                         </div>
                     </div>
@@ -115,40 +100,42 @@ export default function BestFractionalSalesRecruiters() {
                     <div className="space-y-8">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
                             <BadgeCheck className="h-8 w-8 text-blue-accent" />
-                            How to Evaluate a Fractional Recruiter
+                            What a Fractional Recruiting Partner Does
                         </h2>
                         <ul className="space-y-4">
                             <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
-                                    <h4 className="font-bold text-navy-900 text-lg">Sales-specific vetting depth</h4>
-                                    <p className="text-grey-600 mt-2">Ask them to walk through their last placement&apos;s vetting file: quota verification, deal teardowns, behavioral assessment. If they cannot, they are forwarding resumes.</p>
+                                    <h3 className="font-bold text-navy-900 text-lg">Sales specific vetting</h3>
+                                    <p className="text-grey-600 mt-2">Checks quota history, walks through real deals and gives you a written read on each candidate before you meet them.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
-                                    <h4 className="font-bold text-navy-900 text-lg">True embedding</h4>
-                                    <p className="text-grey-600 mt-2">The best fractional partners work in your Slack, your ATS and your email, and present as your in-house team to candidates.</p>
+                                    <h3 className="font-bold text-navy-900 text-lg">Embedded in your team</h3>
+                                    <p className="text-grey-600 mt-2">Works in your Slack, your ATS and your email, and presents as part of your team to candidates.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
-                                    <h4 className="font-bold text-navy-900 text-lg">Transparent retainer terms</h4>
-                                    <p className="text-grey-600 mt-2">A published monthly price, flexible notice and clear scope. Avoid fractional arrangements that still hide per-hire success fees on top of the retainer.</p>
+                                    <h3 className="font-bold text-navy-900 text-lg">Clear scope and terms</h3>
+                                    <p className="text-grey-600 mt-2">Agrees on the seats, the monthly scope and the notice terms in writing before the work starts.</p>
                                 </div>
                             </li>
                         </ul>
                         <p className="text-grey-600 leading-relaxed">
-                            New to the model? Start with{" "}
+                            Picking a partner? The full checklist and the questions to ask are in{" "}
+                            <Link href="/guides/how-to-choose-a-fractional-recruiter" className={link}>how to choose a fractional recruiter</Link>. New to the model? Start with{" "}
                             <Link href="/guides/fractional-recruiting-guide" className={link}>what is fractional recruiting</Link>.
                         </p>
                         <p className="text-grey-600 leading-relaxed">
                             Seed to Series B founders making their first one to five sales hires should also read{" "}
                             <Link href="/guides/fractional-recruiting-for-startups" className={link}>fractional recruiting for startups</Link>
                             {" "}and{" "}
-                            <Link href="/blog/founder-led-sales-first-hire" className={link}>Your First Sales Hire Needs a Playbook</Link>.
+                            <Link href="/blog/founder-led-sales-first-hire" className={link}>Your First Sales Hire Needs a Playbook</Link>. For the wider picture, see{" "}
+                            <Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS sales recruitment agencies and recruiters</Link>.
                         </p>
                     </div>
 
