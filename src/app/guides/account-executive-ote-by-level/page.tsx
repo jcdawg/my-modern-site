@@ -161,7 +161,7 @@ export default function AccountExecutiveOteByLevel() {
                     <div className="space-y-4">
                         <h2 className={h2}>How The Kas Group Works</h2>
                         <p>
-                            Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five. Kas Milestone Search is $5,000 for an SDR or BDR, $7,500 for an AE and $10,000 for a senior AE or sales manager. Details are on the <Link href="/programs" className={link}>programs page</Link>.
+                            Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five. Kas Milestone Search is $5,000 for an SDR or BDR, $7,500 for an AE and $10,000 for a senior AE or sales manager. Details are on the <Link href="/programs" className={link}>programs page</Link>. Choosing a partner for the search? See our guide to <Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS sales recruiters</Link>.
                         </p>
                     </div>
 

@@ -229,7 +229,7 @@ export default function FractionalRecruitingGuide() {
                             <li><strong className="text-navy-900">AI, ML and data roles:</strong> quote only, success fee only. Never monthly.</li>
                             <li><strong className="text-navy-900">Leadership, VP and CRO:</strong> specialist quote only.</li>
                         </ul>
-                        <p className="text-grey-600 leading-relaxed">Full breakdown: <Link href="/guides/fractional-sales-recruiting-cost" className={link}>fractional sales recruiting cost</Link>. All three products: <Link href="/programs" className={link}>Programs</Link>.</p>
+                        <p className="text-grey-600 leading-relaxed">Full breakdown: <Link href="/guides/fractional-sales-recruiting-cost" className={link}>fractional sales recruiting cost</Link>. All three products: <Link href="/programs" className={link}>Programs</Link>. Weighing other models too? Our guide to <Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS sales recruitment agencies</Link> covers which one fits each sales seat.</p>
                     </div>
 
                     <div className="space-y-8">
