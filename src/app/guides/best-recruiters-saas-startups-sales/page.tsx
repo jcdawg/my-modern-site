@@ -13,8 +13,8 @@ const PAGE = {
 export const metadata = pageMetadata({ title: PAGE.title, description: PAGE.description, path: PAGE.path, type: "article" });
 const FAQS = [
     {
-        q: "Who are the best SaaS sales recruiters for startups?",
-        a: "The best SaaS sales recruiters know B2B software sales and check quota, deal size and sales motion for every candidate. The Kas Group works with Seed to Series B companies on SDR through Sales Manager seats through Kas Seat, Kas Milestone Search and Kas Directed Pursuit.",
+        q: "What do good SaaS sales recruiters do?",
+        a: "Good SaaS sales recruiters learn your product, buyer and deal size, then check every candidate's quota history and sales motion against the seat. The Kas Group does this for Seed to Series B companies hiring SDRs through Sales Managers, through Kas Seat, Kas Milestone Search and Kas Directed Pursuit.",
     },
     {
         q: "What are SaaS sales recruitment agencies?",
