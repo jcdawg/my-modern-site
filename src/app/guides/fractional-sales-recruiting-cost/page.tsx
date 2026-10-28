@@ -77,7 +77,7 @@ export default function FractionalSalesRecruitingCost() {
                 name: "Where do I see the full program menu?",
                 acceptedAnswer: {
                     "@type": "Answer",
-                    text: "See Programs (/programs) for Kas Seat, Kas Milestone Search, and Kas Directed Pursuit. Product detail: /recruit/fractional-sales. Fee math vs agencies: /guides/fractional-sales-recruiting-vs-contingency.",
+                    text: "/programs and fractional sales recruiting.",
                 },
             },
         ],
