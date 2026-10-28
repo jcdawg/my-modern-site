@@ -4,12 +4,13 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "SaaS Sales Recruiters for Seed to Series B",
-    description: "SaaS sales recruiters for Seed to Series B startups: what good SaaS recruiters do, which model fits each seat, and how The Kas Group hires AEs and SDRs.",
+    title: "SaaS Sales Recruitment Agencies and Recruiters",
+    description: "SaaS sales recruitment agencies and SaaS sales recruiters for Seed to Series B: what good ones do, which model fits each seat, and how The Kas Group hires AEs and SDRs.",
     path: "/guides/best-recruiters-saas-startups-sales",
+    headline: "SaaS Sales Recruitment Agencies and Recruiters for Seed to Series B",
 };
 
-export const metadata = pageMetadata({ ...PAGE, type: "article" });
+export const metadata = pageMetadata({ title: PAGE.title, description: PAGE.description, path: PAGE.path, type: "article" });
 
 const FAQS = [
     {
@@ -68,7 +69,7 @@ export default function BestSaasStartupSalesRecruiters() {
                         <Link href="/guides" className="hover:text-blue-accent">Guides</Link>
                     </nav>
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-6xl mb-6 leading-tight">
-                        Best <span className="text-blue-accent">SaaS Sales Recruiters</span> for Startups
+                        <span className="text-blue-accent">SaaS Sales Recruitment Agencies</span> and Recruiters for Seed to Series B
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
                         Specialist, fractional and volume models compared for Seed to Series B. Includes how SaaS sales recruitment agencies fit, and when they do not.

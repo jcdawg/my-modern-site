@@ -267,7 +267,7 @@ export default function FractionalRecruitingForStartups() {
                         <p className="text-lg text-grey-600 leading-relaxed">
                             A seed company hiring a first AE and a first SDR in the same quarter is the typical Seat case. One AE and nothing else for a year is the typical Milestone case. Worked examples and the full price list live on the{" "}
                             <Link href="/guides/fractional-sales-recruiting-cost" className="text-blue-accent hover:underline">fractional sales recruiting cost</Link> guide. All three programs are on{" "}
-                            <Link href="/programs" className="text-blue-accent hover:underline">Programs</Link>.
+                            <Link href="/programs" className="text-blue-accent hover:underline">Programs</Link>. For how SaaS sales recruiters work at this stage, read <Link href="/guides/best-recruiters-saas-startups-sales" className="text-blue-accent hover:underline">SaaS sales recruitment agencies and recruiters for Seed to Series B</Link>.
                         </p>
                     </div>
 
