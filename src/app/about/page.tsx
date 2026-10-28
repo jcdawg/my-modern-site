@@ -21,7 +21,7 @@ export default function About() {
             {
                 "@type": "Question",
                 "name": "What does The Kas Group specialize in?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Two pillars: B2B SaaS sales leadership (CRO, VP of Sales, Enterprise AEs) and AI, ML and data engineering talent. At The Kas Group, Derek Norton personally vets our AI, ML and data candidates. Derek holds a PhD in Statistics, founded the Atlanta R Users Group, was a Global Lead Data Scientist at Microsoft, and is currently CTO at Life2." }
+                "acceptedAnswer": { "@type": "Answer", "text": "Two pillars: B2B SaaS sales talent (SDRs, Enterprise AEs and Sales Managers) and AI, ML and data engineering talent. At The Kas Group, Derek Norton personally vets our AI, ML and data candidates. Derek holds a PhD in Statistics, founded the Atlanta R Users Group, was a Global Lead Data Scientist at Microsoft, and is currently CTO at Life2." }
             },
             {
                 "@type": "Question",
@@ -101,7 +101,7 @@ export default function About() {
                         <div>
                             <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl mb-6">Leadership</h2>
                             <p className="text-base leading-7 text-grey-600">
-                                <strong>Chris Stinson</strong> is the Founder and Lead Sales Recruiter of The Kas Group. Since 2014, he has specialized in placing elite B2B SaaS sales leaders (CROs, VPs of Sales, and enterprise Account Executives) and partners with Derek Norton for AI and data engineering searches. Chris is based in Alpharetta, Georgia (Atlanta metro) and recruits nationally.
+                                <strong>Chris Stinson</strong> is the Founder and Lead Sales Recruiter of The Kas Group. Since 2014, he has specialized in placing elite B2B SaaS sales talent (SDRs, enterprise Account Executives and Sales Managers) and partners with Derek Norton for AI and data engineering searches. Chris is based in Alpharetta, Georgia (Atlanta metro) and recruits nationally.
                             </p>
                             <div className="mt-6">
                                 <Link
@@ -132,7 +132,7 @@ export default function About() {
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">What does The Kas Group specialize in?</h4>
-                            <p className="text-grey-600 leading-relaxed text-sm">Two pillars: B2B SaaS sales leadership (CRO, VP of Sales, Enterprise AEs) and AI, ML and data engineering talent. At The Kas Group, Derek Norton personally vets our AI, ML and data candidates. Derek holds a PhD in Statistics, founded the Atlanta R Users Group, was a Global Lead Data Scientist at Microsoft, and is currently CTO at Life2.</p>
+                            <p className="text-grey-600 leading-relaxed text-sm">Two pillars: B2B SaaS sales talent (SDRs, Enterprise AEs and Sales Managers) and AI, ML and data engineering talent. At The Kas Group, Derek Norton personally vets our AI, ML and data candidates. Derek holds a PhD in Statistics, founded the Atlanta R Users Group, was a Global Lead Data Scientist at Microsoft, and is currently CTO at Life2.</p>
                         </div>
                         <div className="space-y-4 bg-white p-8 rounded-2xl border border-grey-200">
                             <h4 className="font-bold text-navy-900 text-lg">What engagement models are available?</h4>

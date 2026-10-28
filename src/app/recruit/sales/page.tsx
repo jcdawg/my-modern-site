@@ -5,14 +5,13 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
     title: "Sales Recruiter for B2B SaaS Teams",
-    description: "Sales recruiter for B2B SaaS: VP of Sales, CRO, AE and SDR leaders. Quota-verified shortlists from The Kas Group. Kas Seat, Milestone Search and Directed Pursuit.",
+    description: "Sales recruiter for B2B SaaS: AE, SDR and Sales Manager hires. Quota-verified shortlists from The Kas Group. Kas Seat, Milestone Search and Directed Pursuit.",
     path: "/recruit/sales",
 });
 
 export default function SalesRecruiting() {
     const roles = [
-        "Chief Revenue Officer (CRO)",
-        "VP of Sales",
+        "Sales Managers",
         "Enterprise Account Executives",
         "Sales Engineering Leaders",
         "SDR/BDR Managers",
@@ -22,11 +21,11 @@ export default function SalesRecruiting() {
         const FAQS = [
         {
             q: "What does a sales recruiter at The Kas Group do?",
-            a: "A sales recruiter at The Kas Group sources and places B2B SaaS revenue talent: CRO, VP of Sales, enterprise AEs, SDR leaders and related seats. Every shortlist is quota-verified with a written assessment. Work runs through Kas Seat, Kas Milestone Search or Kas Directed Pursuit.",
+            a: "A sales recruiter at The Kas Group sources and places B2B SaaS revenue talent: enterprise AEs, SDR leaders, Sales Managers and related seats. Every shortlist is quota-verified with a written assessment. Work runs through Kas Seat, Kas Milestone Search or Kas Directed Pursuit.",
         },
         {
             q: "What sales roles does The Kas Group place?",
-            a: "Chief Revenue Officers, VPs of Sales, Enterprise and Strategic Account Executives, SDR/BDR Managers, Sales Engineering Leaders, and Customer Success VPs for B2B SaaS and high-growth technology companies.",
+            a: "Enterprise and Strategic Account Executives, SDR/BDR Managers, Sales Engineering Leaders, and Customer Success VPs for B2B SaaS and high-growth technology companies. Senior searches are quoted on request.",
         },
         {
             q: "How are sales candidates vetted?",
@@ -34,7 +33,7 @@ export default function SalesRecruiting() {
         },
         {
             q: "How fast can we get a vetted shortlist?",
-            a: "AE and SDR-level searches typically deliver a vetted shortlist in 2 to 4 weeks. VP of Sales and CRO searches run 6 to 10 weeks from kickoff to accepted offer.",
+            a: "AE and SDR-level searches typically deliver a vetted shortlist in 2 to 4 weeks. Senior searches are quoted on request.",
         },
         {
             q: "What does sales recruiting cost?",
@@ -62,7 +61,7 @@ export default function SalesRecruiting() {
                 <div className="relative mx-auto max-w-7xl px-6 lg:px-8 text-center">
                     <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Sales Recruiter for VP, AE and SDR Hires</h1>
                     <p className="mt-6 text-lg leading-8 text-grey-200 border-l-2 border-blue-accent pl-4 inline-block mx-auto max-w-2xl text-left">
-                        The Kas Group is a B2B SaaS sales recruiter for Seed through growth-stage teams. Quota-verified shortlists for CRO, VP of Sales, AE and SDR leaders.
+                        The Kas Group is a B2B SaaS sales recruiter for Seed through growth-stage teams. Quota-verified shortlists for AE, SDR and Sales Manager hires.
                     </p>
                 </div>
             </div>
@@ -72,7 +71,7 @@ export default function SalesRecruiting() {
                     <div>
                         <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">A sales recruiter who checks the number</h2>
                         <p className="mt-4 text-grey-600 leading-relaxed">
-                            Since 2014, The Kas Group has placed B2B SaaS sales talent from SDR through VP of Sales and CRO. We speak GTM, quota and cycle length, and we do not send a shortlist without verifying attainment.
+                            Since 2014, The Kas Group has placed B2B SaaS sales talent from SDR through Sales Manager, with senior searches quoted on request. We speak GTM, quota and cycle length, and we do not send a shortlist without verifying attainment.
                         </p>
                         <p className="mt-4 text-grey-600 leading-relaxed">
                             Build a team, add one producer, or use a{" "}

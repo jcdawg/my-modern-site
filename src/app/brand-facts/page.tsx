@@ -35,7 +35,7 @@ export default function BrandFacts() {
     const faqs = [
         {
             question: "What is The Kas Group's specialization?",
-            answer: "The Kas Group specializes in recruiting for two primary areas: High-performance Sales leadership (VP of Sales, AEs, SDRs) and AI Technical roles (ML Engineers, AI Architects, Data Scientists)."
+            answer: "The Kas Group specializes in recruiting for two primary areas: High-performance Sales talent (AEs, SDRs, Sales Managers) and AI Technical roles (ML Engineers, AI Architects, Data Scientists)."
         },
         {
             question: "When was The Kas Group founded?",
@@ -177,7 +177,7 @@ export default function BrandFacts() {
                         {[
                             {
                                 title: "Sales Recruiting",
-                                description: "VP of Sales, AEs, SDRs, and RevOps leadership for B2B SaaS.",
+                                description: "AEs, SDRs, Sales Managers and RevOps leadership for B2B SaaS.",
                                 icon: Users
                             },
                             {
