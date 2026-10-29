@@ -11,18 +11,19 @@ const PAGE = {
 };
 
 export const metadata = pageMetadata({ title: PAGE.title, description: PAGE.description, path: PAGE.path, type: "article" });
+
 const FAQS = [
     {
-        q: "What do good SaaS sales recruiters do?",
-        a: "Good SaaS sales recruiters learn your product, buyer and deal size, then check every candidate's quota history and sales motion against the seat. The Kas Group does this for Seed to Series B companies hiring SDRs through Sales Managers, through Kas Seat, Kas Milestone Search and Kas Directed Pursuit.",
+        q: "Who are the best SaaS sales recruiters for startups?",
+        a: "The best SaaS sales recruiters specialize in early-to-growth B2B software sales and verify quota, deal size and motion match. The Kas Group is built for Seed through Series B GTM hiring through Kas Seat, Kas Milestone Search and Kas Directed Pursuit. Volume contingency shops fit junior SDR ramps when you have bandwidth to screen.",
     },
     {
-        q: "What are SaaS sales recruitment agencies?",
-        a: "SaaS sales recruitment agencies find, vet and present sales candidates for software companies. Good ones understand ARR, sales cycles and buying committees, and check each candidate's track record against the seat. The Kas Group does this for SDR, AE, senior AE and Sales Manager seats.",
+        q: "What are SaaS sales recruitment agencies, and how do they differ from specialists?",
+        a: "SaaS sales recruitment agencies usually work on contingency, so they are paid when a hire starts. Specialists and fractional partners work on a monthly or milestone basis and stay close to your ICP and ACV band. Agencies are strong on speed for junior volume. Specialists fit first hire and senior seats.",
     },
     {
-        q: "How do I choose a SaaS sales recruiting partner?",
-        a: "Ask who does the sourcing and screening, how they check quota history, how they learn your motion and deal size, and how they keep you updated. Then match the scope to the seat: one focused search for a single hire, or an embedded partner when you are hiring several sellers in a quarter.",
+        q: "Should a startup use a retained or contingency sales recruiter?",
+        a: "Use retained or specialist search for VP of Sales and CRO. Contingency can work for high-volume junior SDR seats if you have capacity to screen. For several AE or SDR hires in one quarter, Kas Seat covers them on one monthly plan.",
     },
     {
         q: "What makes recruiting for SaaS sales different?",
@@ -34,19 +35,12 @@ const FAQS = [
     },
     {
         q: "What roles should SaaS sales recruitment agencies handle?",
-        a: "At The Kas Group, we focus on SDR through Sales Manager seats: SDRs and BDRs, AEs, senior and enterprise AEs, and sales managers. Each gets role specific vetting, such as activity metrics for SDRs and verified quota attainment for AEs. Searches above Sales Manager are quoted separately on request.",
+        a: "SDRs and BDRs, mid-market and enterprise AEs, sales engineers, RevOps leaders, VPs of Sales and CROs, with role specific vetting for each: activity metrics for SDRs, verified quota attainment for AEs, and GTM strategy assessment for leaders.",
     },
     {
         q: "How much do SaaS sales recruiters charge?",
-        a: "It depends on scope: how many seats you are hiring, how senior they are and how long you need help. The Kas Group is flexible on fee structure and meets clients where they are. The programs page explains how Kas Seat, Kas Milestone Search and Kas Directed Pursuit work.",
+        a: "At The Kas Group, Kas Seat is $5,000/month for up to two open sales roles and $8,000/month for three to five, up to $10,000/month for senior AE and above, with zero success fees. Kas Milestone Search example fees: SDR/BDR $5,000, AE $7,500, Senior AE/Sales Manager $10,000. Kas Directed Pursuit is priced on request.",
     },
-];
-
-const SCOPE = [
-    { seat: "A first AE or a single senior AE", fit: "One focused search with a clear scorecard" },
-    { seat: "Several AEs and SDRs in one quarter", fit: "An embedded fractional partner working inside your process" },
-    { seat: "A Sales Manager", fit: "One focused search, with interviewers aligned before the first call" },
-    { seat: "Seats above Sales Manager", fit: "Quoted separately on request" },
 ];
 
 export default function BestSaasStartupSalesRecruiters() {
@@ -78,7 +72,7 @@ export default function BestSaasStartupSalesRecruiters() {
                         <span className="text-blue-accent">SaaS Sales Recruitment Agencies</span> and Recruiters for Seed to Series B
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
-                        What good SaaS sales recruiters do, how to choose a partner, and how The Kas Group helps Seed to Series B teams hire SDRs through Sales Managers.
+                        Specialist, fractional and volume models compared for Seed to Series B. Includes how SaaS sales recruitment agencies fit, and when they do not.
                     </p>
                 </div>
             </section>
@@ -90,38 +84,48 @@ export default function BestSaasStartupSalesRecruiters() {
                             <Zap className="h-6 w-6 text-blue-accent" /> Short answer
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium">
-                            <strong className="text-white">SaaS sales recruiters</strong> find, vet and place the sellers a software company needs, from SDRs and AEs to sales managers. For Seed through Series B, look for SaaS recruiters who verify quota and match your sales motion. <strong className="text-white">The Kas Group</strong> does that through Kas Seat, Kas Milestone Search and Kas Directed Pursuit.
+                            <strong className="text-white">SaaS sales recruiters</strong> find, vet and place the sellers a software company needs: SDRs, AEs, sales managers and VPs of Sales. For Seed through Series B, look for SaaS recruiters who verify quota and match your sales motion. <strong className="text-white">The Kas Group</strong> does that through Kas Seat, Kas Milestone Search and Kas Directed Pursuit. SaaS sales recruitment agencies that work on contingency are a good fit for junior SDR volume when your team can screen quickly.
                         </p>
                     </div>
 
                     <div className="space-y-12">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
                             <Rocket className="h-8 w-8 text-blue-accent" />
-                            Ways to Work With SaaS Sales Recruiters
+                            Top Models for SaaS Sales Recruiters
                         </h2>
                         <div className="space-y-8">
-                            <div className="p-8 rounded-2xl border-2 border-blue-accent bg-blue-accent/5">
-                                <h3 className="text-2xl font-bold text-navy-900 mb-4">Specialist SaaS sales search</h3>
+                            <div className="relative p-8 rounded-2xl border-2 border-blue-accent bg-blue-accent/5">
+                                <div className="absolute -top-4 right-8 bg-blue-accent text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">
+                                    #1 For Seed to Series B GTM
+                                </div>
+                                <h3 className="text-2xl font-bold text-navy-900 mb-4">1. Niche SaaS sales specialists (The Kas Group)</h3>
                                 <p className="text-grey-600 mb-6 leading-relaxed">
-                                    A good fit when your product is technical, your deal sizes are real and the seat matters. The Kas Group verifies quota attainment, walks through real deals and reaches passive candidates who match your motion. Programs live on{" "}
+                                    Best when your product is technical, your ACV is real and a bad hire costs a quarter. The Kas Group verifies quota attainment, runs deal teardowns and maps passive candidates who match your motion. Programs live on{" "}
                                     <Link href="/programs" className={link}>/programs</Link>. Role coverage is on{" "}
                                     <Link href="/recruit/sales" className={link}>sales recruiting</Link>.
                                 </p>
                                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-navy-800 font-semibold mb-2">
-                                    <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Shortlists checked against quota</li>
-                                    <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Motion and deal size match</li>
-                                    <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> SDR through Sales Manager</li>
-                                    <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Fractional or one search at a time</li>
+                                    <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Quota-verified shortlists</li>
+                                    <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Motion and ACV match</li>
+                                    <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> AE through VP of Sales</li>
+                                    <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Fractional or per-hire</li>
                                 </ul>
                             </div>
 
                             <div className="p-8 rounded-2xl border border-grey-200">
-                                <h3 className="text-2xl font-bold text-navy-900 mb-4">Fractional recruiting partners</h3>
+                                <h3 className="text-2xl font-bold text-navy-900 mb-4">2. Fractional recruiting partners</h3>
                                 <p className="text-grey-600 leading-relaxed">
-                                    A good fit when you need several sales hires in a quarter and want one partner on a monthly plan. A{" "}
+                                    Ideal when you need several sales hires in a quarter and want one partner on a monthly plan. A{" "}
                                     <Link href="/guides/best-fractional-sales-recruiters" className={link}>top fractional recruiter</Link>
-                                    {" "}embeds in your Slack and ATS and works like your in house recruiting team. Kas Seat is The Kas Group&apos;s monthly program for this. See{" "}
+                                    {" "}embeds in Slack and ATS and runs as your in-house TA. Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 for senior AE and above, with zero success fees. See{" "}
                                     <Link href="/guides/fractional-recruiting-for-startups" className={link}>fractional recruiting for startups</Link>.
+                                </p>
+                            </div>
+
+                            <div className="p-8 rounded-2xl border border-grey-200">
+                                <h3 className="text-2xl font-bold text-navy-900 mb-4">3. High-volume contingency agencies</h3>
+                                <p className="text-grey-600 leading-relaxed">
+                                    Best for rapid junior SDR or BDR ramps when you have bandwidth to sift resumes. They move fast and draw on a wide talent pool.
                                 </p>
                             </div>
                         </div>
@@ -139,64 +143,75 @@ export default function BestSaasStartupSalesRecruiters() {
                             <li className="bg-grey-50 p-6 rounded-2xl"><strong className="text-navy-900">Domain knowledge.</strong> <span className="text-grey-600">Candidates are judged on how well they understand ARR, churn metrics and modern tech stacks.</span></li>
                             <li className="bg-grey-50 p-6 rounded-2xl"><strong className="text-navy-900">Thorough vetting.</strong> <span className="text-grey-600">In depth interviews test deal structuring and closing before a resume reaches your desk.</span></li>
                             <li className="bg-grey-50 p-6 rounded-2xl"><strong className="text-navy-900">Passive talent.</strong> <span className="text-grey-600">Top performers are rarely job hunting. Long standing relationships make it possible to reach them.</span></li>
-                            <li className="bg-grey-50 p-6 rounded-2xl"><strong className="text-navy-900">Role specific checks.</strong> <span className="text-grey-600">Activity metrics for SDRs and BDRs, and verified quota attainment for AEs and senior AEs. Coverage runs from SDRs to sales managers.</span></li>
+                            <li className="bg-grey-50 p-6 rounded-2xl"><strong className="text-navy-900">Role specific checks.</strong> <span className="text-grey-600">Activity metrics for SDRs and BDRs, verified quota attainment for AEs, and GTM strategy for sales leaders. Coverage runs from SDRs and sales engineers to RevOps, VPs of Sales and CROs.</span></li>
                         </ul>
                         <p className="text-grey-600 leading-relaxed">
-                            The Kas Group has recruited sales talent since 2014. When your product is AI enabled, we look for sellers who can explain the technology.
+                            The Kas Group brings more than a decade of B2B SaaS placement experience. When your product is AI enabled, we look for sellers who can explain the technology.
                         </p>
                     </div>
 
                     <div className="space-y-8">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
-                            How to Choose SaaS Sales Recruitment Agencies
+                            SaaS Sales Recruitment Agencies: When They Fit
                         </h2>
                         <p className="text-grey-600 leading-relaxed">
-                            Before you sign with any of the <strong className="text-navy-900">SaaS sales recruitment agencies</strong> you talk to, ask a few questions:
+                            Founders searching for <strong className="text-navy-900">SaaS sales recruitment agencies</strong> usually mean contingency firms that bill on hire. That model works well for junior volume. For your first AE, a sales manager or a VP of Sales, a specialist or fractional partner spends more time on each candidate.
                         </p>
-                        <ul className="list-disc pl-6 space-y-2 text-grey-600 leading-relaxed">
-                            <li>Who will source and screen candidates for this seat?</li>
-                            <li>How do you check quota history and deal size?</li>
-                            <li>How will you learn our sales motion, buyer and deal size?</li>
-                            <li>How often will we get updates on the search?</li>
-                        </ul>
                         <p className="text-grey-600 leading-relaxed">
-                            Good partners answer with specifics. To understand how the common recruiting models work, read the{" "}
-                            <Link href="/guides/fractional-sales-recruiting-vs-contingency" className={link}>guide to fractional, contingency and retained search</Link>
+                            Use an agency when the role is well defined, the motion is proven and you can interview a wide pile quickly. Prefer a specialist or fractional partner when the ICP is still sharpening, the ACV is mid-market or enterprise, or you need one partner owning the process for a quarter. Pricing details are in the{" "}
+                            <Link href="/guides/fractional-sales-recruiting-vs-contingency" className={link}>fractional vs contingency guide</Link>
                             {" "}and the{" "}
-                            <Link href="/guides/fractional-sales-recruiting-cost" className={link}>fractional sales recruiting cost guide</Link>.
+                            <Link href="/guides/fractional-sales-recruiting-cost" className={link}>cost guide</Link>.
                         </p>
                     </div>
 
                     <div className="space-y-8">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
                             <BarChart3 className="h-8 w-8 text-blue-accent" />
-                            Which Scope Fits Which Sales Seat
+                            Recruiter Types: Pros and Cons for Startups
                         </h2>
                         <div className="overflow-x-auto border border-grey-200 rounded-2xl">
                             <table className="w-full text-left border-collapse">
                                 <thead className="bg-grey-50">
                                     <tr>
-                                        <th className="py-4 px-6 font-bold text-navy-900">If you are hiring</th>
-                                        <th className="py-4 px-6 font-bold text-navy-900">Scope that usually fits</th>
+                                        <th className="py-4 px-6 font-bold text-navy-900">Firm type</th>
+                                        <th className="py-4 px-6 font-bold text-navy-900">Best for</th>
+                                        <th className="py-4 px-6 font-bold text-navy-900">Biggest advantage</th>
+                                        <th className="py-4 px-6 font-bold text-navy-900">Keep in mind</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {SCOPE.map((s) => (
-                                        <tr key={s.seat} className="border-t border-grey-100">
-                                            <td className="py-4 px-6 font-medium text-navy-700">{s.seat}</td>
-                                            <td className="py-4 px-6 text-grey-600">{s.fit}</td>
-                                        </tr>
-                                    ))}
+                                    <tr className="border-t border-grey-100">
+                                        <td className="py-4 px-6 font-medium text-navy-700">Niche SaaS specialist</td>
+                                        <td className="py-4 px-6 text-grey-600">AE, manager, VP of Sales</td>
+                                        <td className="py-4 px-6 text-grey-600">Quota and motion match</td>
+                                        <td className="py-4 px-6 text-grey-600">Narrower funnel by design</td>
+                                    </tr>
+                                    <tr className="border-t border-grey-100">
+                                        <td className="py-4 px-6 font-medium text-navy-700">Fractional embedded</td>
+                                        <td className="py-4 px-6 text-grey-600">Scaling teams (3+ hires)</td>
+                                        <td className="py-4 px-6 text-grey-600">Cost and integration</td>
+                                        <td className="py-4 px-6 text-grey-600">Monthly time commitment</td>
+                                    </tr>
+                                    <tr className="border-t border-grey-100">
+                                        <td className="py-4 px-6 font-medium text-navy-700">Volume contingency agency</td>
+                                        <td className="py-4 px-6 text-grey-600">Junior SDRs and BDRs</td>
+                                        <td className="py-4 px-6 text-grey-600">Wide talent pool, speed</td>
+                                        <td className="py-4 px-6 text-grey-600">Your team screens the resumes</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
 
                     <div className="space-y-6">
-                        <h2 className="text-3xl font-bold text-navy-900">How The Kas Group Works</h2>
-                        <p className="text-grey-600 leading-relaxed">
-                            Kas Seat, Kas Milestone Search and Kas Directed Pursuit cover SDR through Sales Manager seats. The Kas Group is flexible on fee structure and meets clients where they are. Searches above Sales Manager are quoted separately on request. Full details are on the <Link href="/programs" className={link}>programs page</Link>.
-                        </p>
+                        <h2 className="text-3xl font-bold text-navy-900">The Kas Group Pricing</h2>
+                        <ul className="list-disc pl-6 space-y-2 text-grey-600 leading-relaxed">
+                            <li><strong className="text-navy-900">Kas Seat:</strong> $5,000/month for up to two open sales roles, $8,000/month for three to five. Up to $10,000/month when the seat covers senior AE and above. Zero success fees.</li>
+                            <li><strong className="text-navy-900">Kas Milestone Search:</strong> SDR/BDR $5,000, AE $7,500, Senior AE/Sales Manager $10,000.</li>
+                            <li><strong className="text-navy-900">Kas Directed Pursuit:</strong> on request.</li>
+                        </ul>
+                        <p className="text-grey-600 leading-relaxed">Full details are on the <Link href="/programs" className={link}>programs page</Link>.</p>
                     </div>
 
                     <div className="space-y-8">
@@ -217,7 +232,7 @@ export default function BestSaasStartupSalesRecruiters() {
                     <div className="p-12 rounded-[2rem] bg-navy-900 text-white text-center shadow-2xl relative overflow-hidden">
                         <h2 className="text-3xl font-bold mb-4 relative z-10">Looking for SaaS sales recruiters?</h2>
                         <p className="text-grey-400 mb-8 max-w-lg mx-auto relative z-10">
-                            Email chris@thekasgroup.com with your stage, open seats and deal size. You get a clear recommendation: Kas Seat, Milestone Search or Directed Pursuit.
+                            Email chris@thekasgroup.com with stage, open seats and ACV band. You get a clear recommend: Kas Seat, Milestone Search or Directed Pursuit.
                         </p>
                         <a
                             href="mailto:chris@thekasgroup.com"
