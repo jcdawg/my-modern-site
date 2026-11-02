@@ -43,7 +43,7 @@ const FAQS = [
     },
     {
         q: "How long does it take to hire an account executive?",
-        a: `${P("median days to fill for an AE, n=__")}. Days to fill runs from search kickoff to accepted offer across The Kas Group's AE searches from 2024 to 2026. Each level is broken out in the benchmark table on this page.`,
+        a: `${P("median days to fill for an AE, n=__")}. Days to fill runs from search kickoff to accepted offer across The Kas Group's AE searches from 2024 to 2026. Each level is broken out in the benchmark table on this page. In Chris Stinson's recruiting view, a lot of it depends: many variables can make a search quicker or longer.`,
     },
     {
         q: "How long does it take to hire an enterprise AE?",
@@ -150,7 +150,6 @@ export default function AeOteTimeToFillBenchmark2026() {
                     <p className="text-sm text-grey-500">
                         By Chris Stinson, Managing Partner, The Kas Group &middot; Published [DATE] &middot; Updated [DATE]
                     </p>
-                    {/* TODO(Derek): statistical review credit for Derek Norton goes here only after Derek confirms. */}
                 </div>
             </section>
 
@@ -229,6 +228,10 @@ export default function AeOteTimeToFillBenchmark2026() {
                     <div className="space-y-4">
                         <h2 className={h2}>Time to Fill by Level and Stage</h2>
                         <p>Days to fill by level and company stage: <span className={ph}>{P("chart and values by level and stage, n=__")}</span>.</p>
+                        <blockquote className="border-l-4 border-blue-accent pl-4 text-navy-900">
+                            &quot;A lot of it depends. There are a lot of variables that go into that, and they could either make it quicker or longer.&quot; <span className="text-grey-500 text-base">Chris Stinson, Managing Partner, The Kas Group, on his recruiting view. This is his perspective, not benchmark data.</span>
+                        </blockquote>
+                        <p>Many factors beyond company urgency and how fast the interview process runs can shorten or lengthen time to fill.</p>
                         <p>Three things that help a search move faster:</p>
                         <ul className="list-disc pl-6 space-y-2">
                             <li>Agree on the scorecard and the interview panel before the first candidate call.</li>
