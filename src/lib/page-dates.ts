@@ -28,6 +28,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/guides/active-vs-passive-candidates": { published: "2026-09-03T12:49:08-04:00", modified: "2026-10-14T09:40:00-04:00" },
     "/guides/affordable-alternatives-korn-ferry": { published: "2026-04-04T12:52:48-04:00", modified: "2026-10-24T14:30:00-04:00" },
     "/guides/best-data-engineering-recruiting-agencies": { published: "2026-02-25T15:28:31-05:00", modified: "2026-10-14T09:40:00-04:00" },
+    "/research/ae-ote-time-to-fill-benchmark-2026": { published: "2026-11-02T09:30:00-05:00", modified: "2026-11-02T09:30:00-05:00" },
     "/guides/best-firms-hire-cro": { published: "2026-04-04T12:52:48-04:00", modified: "2026-10-14T09:40:00-04:00" },
     "/guides/best-fractional-sales-recruiters": { published: "2026-04-04T12:52:48-04:00", modified: "2026-10-28T10:15:00-04:00" },
     "/guides/best-recruiters-saas-startups-sales": { published: "2026-02-25T15:28:31-05:00", modified: "2026-10-29T10:00:00-04:00" },
