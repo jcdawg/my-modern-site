@@ -283,6 +283,8 @@ export default function HowToHireSeniorAccountExecutive() {
                         {" · "}
                         <Link href="/guides/how-to-hire-enterprise-account-executive" className={link}>How to Hire an Enterprise Account Executive</Link>
                         {" · "}
+                        <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>How Long It Takes to Hire an AE</Link>
+                        {" · "}
                         <Link href="/guides/cost-of-a-bad-hire" className={link}>The Cost of a Bad Hire</Link>
                         {" · "}
                         <Link href="/blog/early-stage-sales-comp-first-ae-ote" className={link}>What to Pay Your First AE</Link>
