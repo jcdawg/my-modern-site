@@ -14,7 +14,6 @@ const PAGE = {
 export const metadata = pageMetadata({ title: PAGE.title, description: PAGE.description, path: PAGE.path, type: "article" });
 
 const SRC = {
-    repvueAe: "https://www.repvue.com/salaries/account-executive",
     repvue: "https://www.repvue.com/blog/sales-salary-guide",
     bridge: "https://www.bridgegroupinc.com/research/2026-ae-models-motions-metrics",
     blossom: "https://www.blossomstreetventures.com/post/the-best-annual-saas-ae-data-weve-seen",
@@ -36,7 +35,7 @@ const FAQS = [
     },
     {
         q: "How much does a senior account executive make?",
-        a: "Expect an OTE between the RepVue mid-market median of $180K and the enterprise median of $275K. RepVue's median for all AEs is $200K OTE on a $105K base. Two live Senior AE postings in October 2026 showed a 50/50 split, one at $240K to $300K OTE and one with a $125K to $140K base.",
+        a: "Expect an OTE between the RepVue mid-market median of $180K and the enterprise median of $275K. RepVue's median for all AEs is $200K OTE on a $100K base. Two live Senior AE postings in October 2026 showed a 50/50 split, one at $240K to $300K OTE and one with a $125K to $140K base.",
     },
     {
         q: "How many years of experience should a senior AE have?",
@@ -178,7 +177,7 @@ export default function HowToHireSeniorAccountExecutive() {
                             </table>
                         </div>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li><strong className="text-navy-900">All AEs.</strong> <a href={SRC.repvueAe} className={link}>RepVue&apos;s account executive salary data</a>, from 35,676 verified submissions as of October 2026, shows a median base of $105,000 and a median OTE of $200,000.</li>
+                            <li><strong className="text-navy-900">All AEs.</strong> <a href={SRC.repvue} className={link}>RepVue&apos;s sales salary guide</a> shows a median base of $100,000 and a median OTE of $200,000.</li>
                             <li><strong className="text-navy-900">Quota.</strong> The Bridge Group found a median AE quota of $960K, which is 4.6x the $200K median OTE. Bridge also has 48% of AEs at quota.</li>
                             <li><strong className="text-navy-900">Live postings.</strong> Two Senior AE postings, live in October 2026, are single examples, not medians. <a href={SRC.compyl} className={link}>Compyl</a> lists $240,000 to $300,000 OTE on a 50/50 split, asks for 5+ years, and expects the AE to source and close $800K to $1.2M+ in ARR a year. <a href={SRC.coworker} className={link}>Coworker.ai</a> lists a 50/50 split on a $125K to $140K base, asks for 5 to 7 years, and prefers Series A to C experience.</li>
                         </ul>
@@ -265,7 +264,6 @@ export default function HowToHireSeniorAccountExecutive() {
                         <h2 className={h2}>Sources</h2>
                         <p className="text-sm text-grey-500">All are outside sources. None is Kas placement data. Vendor figures are labeled as such.</p>
                         <ul className="list-disc pl-6 space-y-2 text-base">
-                            <li>Account Executive Salary, RepVue, as of October 2026. Self-reported data, 35,676 verified submissions. <a href={SRC.repvueAe} className={link}>{SRC.repvueAe}</a></li>
                             <li>Sales Salary Guide: What Sales Reps are Earning in 2026, RepVue, January 2026. Self-reported data. <a href={SRC.repvue} className={link}>{SRC.repvue}</a></li>
                             <li>AE Models, Motions &amp; Metrics: 2026 Research Report, The Bridge Group, June 22, 2026. Survey of 158 B2B companies. <a href={SRC.bridge} className={link}>{SRC.bridge}</a></li>
                             <li>The Best Annual SaaS AE Data We&apos;ve Seen, Blossom Street Ventures. A secondary summary of the Bridge Group AE survey. <a href={SRC.blossom} className={link}>{SRC.blossom}</a></li>
@@ -282,6 +280,8 @@ export default function HowToHireSeniorAccountExecutive() {
                         <Link href="/guides/account-executive-interview-questions" className={link}>Account Executive Interview Questions</Link>
                         {" · "}
                         <Link href="/guides/how-to-hire-enterprise-account-executive" className={link}>How to Hire an Enterprise Account Executive</Link>
+                        {" · "}
+                        <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>How Long It Takes to Hire an AE</Link>
                         {" · "}
                         <Link href="/guides/cost-of-a-bad-hire" className={link}>The Cost of a Bad Hire</Link>
                         {" · "}

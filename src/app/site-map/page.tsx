@@ -48,6 +48,7 @@ export default function Sitemap() {
                                 <li><Link href="/guides/how-to-hire-enterprise-account-executive" className="text-grey-600 hover:text-blue-accent transition-colors">How to Hire an Enterprise AE</Link></li>
                                 <li><Link href="/guides/how-to-hire-senior-account-executive" className="text-grey-600 hover:text-blue-accent transition-colors">How to Hire a Senior AE</Link></li>
                                 <li><Link href="/guides/account-executive-ote-by-level" className="text-grey-600 hover:text-blue-accent transition-colors">AE OTE by Level</Link></li>
+                                <li><Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className="text-grey-600 hover:text-blue-accent transition-colors">How Long to Hire an AE</Link></li>
                                 <li><Link href="/guides/account-executive-interview-questions" className="text-grey-600 hover:text-blue-accent transition-colors">AE Interview Questions</Link></li>
                                 <li><Link href="/guides/how-to-hire-saas-sdrs-fast-ramp" className="text-grey-600 hover:text-blue-accent transition-colors">Hire SDRs &amp; AEs Fast</Link></li>
                                 <li><Link href="/guides/fractional-recruiting-guide" className="text-grey-600 hover:text-blue-accent transition-colors">What Is Fractional Recruiting?</Link></li>
