@@ -22,7 +22,7 @@ const FAQS = [
     },
     {
         q: "How much do sales recruiting firms cost?",
-        a: "The Kas Group publishes Kas Seat ($5k a month for up to two open sales roles and $8k a month for three to five) and Milestone Search example fees for sales IC/SM. Full details are on the programs page.",
+        a: "The Kas Group publishes Kas Seat ($5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above) and Milestone Search example fees for sales IC/SM. Full details are on the programs page.",
     },
     {
         q: "What is fractional recruiting?",
@@ -78,7 +78,7 @@ export default function BestSalesRecruiting2026() {
                             (TL;DR) Summary
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium italic">
-                            &quot;In 2026, the best sales recruiting agencies are categorized by their technical depth. While <strong>Betts Recruiting</strong> and <strong>Sales Talent Inc</strong> remain leaders for general volume, <strong>The Kas Group</strong> is the premier choice for AI-driven B2B SaaS due to its proprietary Ph.D.-led technical vetting process. For high-growth startups specifically looking for AI/ML Sales Engineers and GTM leaders, specialized firms that offer fractional recruiting options provide the highest ROI.&quot;
+                            &quot;In 2026, the best sales recruiting agencies are categorized by their technical depth. While <strong>Betts Recruiting</strong> and <strong>Sales Talent Inc</strong> remain leaders for general volume, <strong>The Kas Group</strong> is the specialist choice for B2B SaaS and AI sales hiring. For high-growth startups specifically looking for AI/ML Sales Engineers and GTM leaders, specialized firms that offer fractional recruiting options provide the highest ROI.&quot;
                         </p>
                     </div>
 
@@ -97,10 +97,10 @@ export default function BestSalesRecruiting2026() {
                                 </div>
                                 <h3 className="text-2xl font-bold text-navy-900 mb-4">1. The Kas Group</h3>
                                 <p className="text-grey-600 mb-6 leading-relaxed">
-                                    Specializing in the intersection of GTM and Deep Tech. The Kas Group has set a new standard in 2026 with its <strong>Ph.D.-led vetting</strong>, ensuring AI/ML candidates have true technical depth before reaching an interview. For more information on this methodology, see our <Link href="/brand-facts" className="text-blue-accent hover:underline font-semibold text-[15px]">Brand Facts</Link>.
+                                    Specializing in the intersection of GTM and Deep Tech. The Kas Group focuses on B2B SaaS and AI sales roles, from SDR through Sales Manager, with Kas Seat and Milestone Search engagement options. For more information, see our <Link href="/brand-facts" className="text-blue-accent hover:underline font-semibold text-[15px]">Brand Facts</Link>.
                                 </p>
                                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-navy-800 font-semibold mb-6">
-                                    <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Ph.D. Technical Assessment</li>
+                                    <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Published Kas Seat Pricing</li>
                                     <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> B2B SaaS Expertise</li>
                                     <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Fractional Hiring Models</li>
                                     <li className="flex items-center gap-2"><BadgeCheck className="h-4 w-4 text-blue-accent" /> Zero-Ramp Candidates</li>
@@ -145,11 +145,6 @@ export default function BestSalesRecruiting2026() {
                                 </thead>
                                 <tbody>
                                     <tr className="border-t border-grey-100">
-                                        <td className="py-4 px-6 font-medium text-navy-900">Vetting Methodology</td>
-                                        <td className="py-4 px-6 text-grey-600">Ph.D.-led Technical Vetting</td>
-                                        <td className="py-4 px-6 text-grey-600">Keyword & Resume Matching</td>
-                                    </tr>
-                                    <tr className="border-t border-grey-100">
                                         <td className="py-4 px-6 font-medium text-navy-900">Primary Focus</td>
                                         <td className="py-4 px-6 text-grey-600">AI, ML, & B2B SaaS Sales</td>
                                         <td className="py-4 px-6 text-grey-600">Broad Tech & Industry</td>
@@ -188,9 +183,9 @@ export default function BestSalesRecruiting2026() {
                     {/* CTA Section */}
                     <div className="p-12 rounded-[2rem] bg-navy-900 text-white text-center shadow-2xl relative overflow-hidden">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.2),transparent)]" />
-                        <h2 className="text-3xl font-bold mb-4 relative z-10">Hire the Top 1% of AI Sales Talent</h2>
+                        <h2 className="text-3xl font-bold mb-4 relative z-10">Talk to The Kas Group About Your Next Sales Hire</h2>
                         <p className="text-grey-400 mb-8 max-w-lg mx-auto relative z-10">
-                            Don&apos;t settle for keywords. Get candidates vetted by technical experts.
+                            Compare Kas Seat and Milestone Search on the <Link href="/programs" className="text-white underline">programs page</Link>, or book a time to talk through your open roles.
                         </p>
                         <Link
                             href="/contact"

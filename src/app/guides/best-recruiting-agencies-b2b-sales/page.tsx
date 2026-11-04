@@ -18,7 +18,7 @@ const FAQS = [
     },
     {
         q: "How much do B2B sales recruiting agencies charge?",
-        a: "Contingency agencies charge a fee per hire. The Kas Group's Kas Seat replaces per-hire fees with a monthly retainer ($5k/mo for up to two open sales roles and $8k/mo for three to five, zero success fees), which is more economical when hiring multiple salespeople per year.",
+        a: "Contingency agencies charge a fee per hire. The Kas Group's Kas Seat replaces per-hire fees with a monthly retainer ($5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above, zero success fees), which is more economical when hiring multiple salespeople per year.",
     },
     {
         q: "What is the difference between retained and contingency B2B sales recruiters?",
@@ -26,7 +26,7 @@ const FAQS = [
     },
     {
         q: "How long does it take an agency to fill a B2B sales role?",
-        a: "Well-run agencies deliver a vetted shortlist in 2 to 4 weeks for AE and SDR roles. Beware of agencies promising 48-hour shortlists, speed at that level usually means recycled candidate databases rather than fresh sourcing.",
+        a: "For AE and SDR roles, a vetted shortlist typically takes a few weeks. Ask any agency how it sources candidates for your search, so you know whether a shortlist comes from fresh outreach or an existing database.",
     },
 ];
 
