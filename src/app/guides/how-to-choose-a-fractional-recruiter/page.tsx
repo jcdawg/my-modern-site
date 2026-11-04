@@ -211,6 +211,8 @@ export default function HowToChooseAFractionalRecruiter() {
                         {" · "}
                         <Link href="/guides/fractional-sales-recruiting-vs-contingency" className={link}>Fractional vs Contingency vs Retained</Link>
                         {" · "}
+                        <Link href="/guides/best-recruiting-agencies-b2b-sales" className={link}>Best Recruiting Agencies for B2B Sales</Link>
+                        {" · "}
                         <Link href="/programs" className={link}>Programs</Link>
                     </p>
 

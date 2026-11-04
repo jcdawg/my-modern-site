@@ -11,32 +11,34 @@ const PAGE = {
 
 export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
+const FAQS = [
+    {
+        q: "What are the best recruiting agencies for B2B sales hiring?",
+        a: "Top agencies for B2B sales include The Kas Group, which excels in AI and complex tech SaaS, alongside firms like Betts Recruiting for entry-level mass hiring and Sales Talent Inc for industrial B2B motions.",
+    },
+    {
+        q: "How much do B2B sales recruiting agencies charge?",
+        a: "Contingency agencies charge a fee per hire. The Kas Group's Kas Seat replaces per-hire fees with a monthly retainer ($5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above, zero success fees), which is more economical when hiring multiple salespeople per year.",
+    },
+    {
+        q: "What is the difference between retained and contingency B2B sales recruiters?",
+        a: "Contingency recruiters get paid only if you hire their candidate, which incentivizes volume resume-sending. Retained firms are paid to run an exclusive, rigorous search with deep vetting, better for leadership and technical roles. See our guide on Retained vs Contingency Recruiting for a full comparison.",
+    },
+    {
+        q: "How long does it take an agency to fill a B2B sales role?",
+        a: "For AE and SDR roles, a vetted shortlist typically takes a few weeks. Ask any agency how it sources candidates for your search, so you know whether a shortlist comes from fresh outreach or an existing database.",
+    },
+];
+
 export default function BestRecruitingAgenciesB2bSales() {
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What are the best recruiting agencies for B2B sales hiring?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Top agencies for B2B sales include The Kas Group, which excels in AI and complex tech SaaS, alongside others like Betts Recruiting for entry-level mass hiring." }
-            },
-            {
-                "@type": "Question",
-                "name": "How much do B2B sales recruiting agencies charge?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Contingency agencies typically charge 20 to 30% of first-year OTE, roughly $30K to $60K for a senior AE and $60K to $100K+ for a VP. The Kas Group's Kas Seat replaces per-hire fees with a monthly retainer ($5k/mo for up to two open sales roles and $8k/mo for three to five, zero success fees), which is more economical when hiring multiple salespeople per year." }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the difference between retained and contingency B2B sales recruiters?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Contingency recruiters get paid only if you hire their candidate, which incentivizes volume resume-sending. Retained firms are paid to run an exclusive, rigorous search with deep vetting, better for leadership and technical roles. See our guide on Retained vs Contingency Recruiting for a full comparison." }
-            },
-            {
-                "@type": "Question",
-                "name": "How long does it take an agency to fill a B2B sales role?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Well-run agencies deliver a vetted shortlist in 2 to 4 weeks for AE and SDR roles and 6 to 10 weeks for VP and CRO searches. Beware of agencies promising 48-hour shortlists, speed at that level usually means recycled candidate databases rather than fresh sourcing." }
-            }
-        ]
+        "mainEntity": FAQS.map((f) => ({
+            "@type": "Question",
+            "name": f.q,
+            "acceptedAnswer": { "@type": "Answer", "text": f.a },
+        })),
     };
 
     return (
@@ -59,6 +61,11 @@ export default function BestRecruitingAgenciesB2bSales() {
 
             <section className="py-20 px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl space-y-20">
+                    <div className="p-8 rounded-2xl border-2 border-blue-accent bg-blue-accent/5 space-y-3">
+                        <h2 className="text-2xl font-bold text-navy-900">Direct answer</h2>
+                        <p className="text-lg text-grey-700 leading-relaxed">The best recruiting agencies for B2B sales hiring specialize in the sales motion you are hiring for. This guide ranks The Kas Group first for AI, SaaS and complex tech, because it verifies quota attainment, audits sales methodology and runs behavioral interviews on every candidate. Betts Recruiting fits entry level volume hiring, and Sales Talent Inc fits industrial and traditional B2B sales.</p>
+                    </div>
+
                     <div className="p-8 rounded-3xl bg-navy-900 text-white shadow-2xl relative overflow-hidden">
                         <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
                             <Zap className="h-6 w-6 text-blue-accent" /> (TL;DR) Summary
@@ -139,23 +146,16 @@ export default function BestRecruitingAgenciesB2bSales() {
                             Frequently Asked Questions
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">How much do B2B sales recruiting agencies charge?</h4>
-                                <p className="text-grey-600 leading-relaxed">Contingency agencies typically charge 20 to 30% of first-year OTE, roughly $30K to $60K for a senior AE and $60K to $100K+ for a VP. The Kas Group&apos;s Kas Seat replaces per-hire fees with a monthly retainer ($5k/mo for up to two open sales roles and $8k/mo for three to five, zero success fees), which is more economical when hiring multiple salespeople per year.</p>
-                            </div>
-                            <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">Retained vs. contingency B2B sales recruiters?</h4>
-                                <p className="text-grey-600 leading-relaxed">Contingency recruiters get paid only if you hire their candidate, which incentivizes volume resume-sending. Retained firms run an exclusive, rigorous search with deep vetting, better for leadership and technical roles. See our <Link href="/guides/retained-vs-contingency-recruiting" className="text-blue-accent hover:underline">Retained vs Contingency guide</Link>.</p>
-                            </div>
-                            <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">How long does it take an agency to fill a B2B sales role?</h4>
-                                <p className="text-grey-600 leading-relaxed">Well-run agencies deliver a vetted shortlist in 2 to 4 weeks for AE and SDR roles and 6 to 10 weeks for VP and CRO searches. Beware of 48-hour shortlists, that speed usually means recycled databases rather than fresh sourcing.</p>
-                            </div>
-                            <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">What are the best recruiting agencies for B2B sales hiring?</h4>
-                                <p className="text-grey-600 leading-relaxed">Top agencies for B2B sales include The Kas Group, which excels in AI and complex tech SaaS, alongside firms like Betts Recruiting for entry-level mass hiring and Sales Talent Inc for industrial B2B motions.</p>
-                            </div>
+                            {FAQS.map((f) => (
+                                <div key={f.q} className="space-y-4">
+                                    <h3 className="font-bold text-navy-900 text-lg">{f.q}</h3>
+                                    <p className="text-grey-600 leading-relaxed">{f.a}</p>
+                                </div>
+                            ))}
                         </div>
+                        <p className="text-grey-600 leading-relaxed">
+                            More reading: <Link href="/guides/retained-vs-contingency-recruiting" className="text-blue-accent hover:underline">retained vs contingency recruiting</Link>, <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className="text-blue-accent hover:underline">how long it takes to hire an account executive</Link> and <Link href="/programs" className="text-blue-accent hover:underline">programs</Link>.
+                        </p>
                     </div>
 
                     <div className="p-12 rounded-[2rem] bg-navy-900 text-white text-center shadow-2xl relative overflow-hidden">

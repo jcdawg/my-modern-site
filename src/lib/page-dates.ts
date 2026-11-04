@@ -8,7 +8,7 @@
 export type PageDates = { published: string; modified: string };
 
 export const PAGE_DATES: Record<string, PageDates> = {
-    "/": { published: "2026-02-04T15:40:33-05:00", modified: "2026-10-28T10:30:00-04:00" },
+    "/": { published: "2026-02-04T15:40:33-05:00", modified: "2026-11-04T09:15:00-05:00" },
     "/about": { published: "2026-02-04T16:43:23-05:00", modified: "2026-10-28T10:30:00-04:00" },
     "/blog": { published: "2026-02-04T16:43:23-05:00", modified: "2026-10-16T10:00:00-04:00" },
     "/blog/ai-resume-boom-old-school-recruiting": { published: "2026-09-02T15:16:23-04:00", modified: "2026-09-26T10:14:11-04:00" },
@@ -32,8 +32,8 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/guides/best-firms-hire-cro": { published: "2026-04-04T12:52:48-04:00", modified: "2026-10-14T09:40:00-04:00" },
     "/guides/best-fractional-sales-recruiters": { published: "2026-04-04T12:52:48-04:00", modified: "2026-10-28T10:15:00-04:00" },
     "/guides/best-recruiters-saas-startups-sales": { published: "2026-02-25T15:28:31-05:00", modified: "2026-10-29T10:00:00-04:00" },
-    "/guides/best-recruiting-agencies-b2b-sales": { published: "2026-04-04T12:52:48-04:00", modified: "2026-10-24T14:30:00-04:00" },
-    "/guides/best-sales-recruiting-agencies-2026": { published: "2026-02-25T15:28:31-05:00", modified: "2026-10-24T14:30:00-04:00" },
+    "/guides/best-recruiting-agencies-b2b-sales": { published: "2026-04-04T12:52:48-04:00", modified: "2026-11-04T10:00:00-05:00" },
+    "/guides/best-sales-recruiting-agencies-2026": { published: "2026-02-25T15:28:31-05:00", modified: "2026-11-04T10:00:00-05:00" },
     "/guides/account-executive-interview-questions": { published: "2026-10-19T10:00:00-04:00", modified: "2026-10-24T14:45:00-04:00" },
     "/guides/cost-of-a-bad-hire": { published: "2026-03-06T14:56:13-05:00", modified: "2026-10-19T10:30:00-04:00" },
     "/guides/cost-of-hiring-wrong-data-engineer": { published: "2026-09-01T14:58:37-04:00", modified: "2026-11-04T09:40:00-05:00" },
@@ -41,7 +41,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/guides/do-ai-resume-screeners-work": { published: "2026-09-04T15:41:05-04:00", modified: "2026-10-14T09:40:00-04:00" },
     "/guides/fractional-recruiting-for-startups": { published: "2026-09-26T14:53:14-04:00", modified: "2026-11-04T09:00:00-05:00" },
     "/guides/fractional-recruiting-guide": { published: "2026-03-06T14:56:13-05:00", modified: "2026-11-04T09:30:00-05:00" },
-    "/guides/how-to-choose-a-fractional-recruiter": { published: "2026-10-24T15:30:00-04:00", modified: "2026-10-24T15:30:00-04:00" },
+    "/guides/how-to-choose-a-fractional-recruiter": { published: "2026-10-24T15:30:00-04:00", modified: "2026-11-04T09:15:00-05:00" },
     "/guides/fractional-recruiting-services-sales-teams": { published: "2026-04-04T12:52:48-04:00", modified: "2026-10-24T14:30:00-04:00" },
     "/guides/fractional-recruiting-vs-in-house-recruiter": { published: "2026-09-10T07:40:44-07:00", modified: "2026-10-28T10:30:00-04:00" },
     "/guides/fractional-sales-recruiting-cost": { published: "2026-09-16T08:10:27-07:00", modified: "2026-10-28T10:30:00-04:00" },
@@ -59,7 +59,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/guides/senior-data-engineer-skills-assessment-vetting": { published: "2026-04-27T15:25:00-04:00", modified: "2026-10-14T09:40:00-04:00" },
     "/guides/top-data-engineering-headhunters-2026": { published: "2026-04-27T15:24:26-04:00", modified: "2026-10-20T10:00:00-04:00" },
     "/guides/top-executive-search-firms-sales-leaders": { published: "2026-04-04T12:52:48-04:00", modified: "2026-10-14T09:40:00-04:00" },
-    "/guides/top-sales-headhunters-us": { published: "2026-04-04T12:52:48-04:00", modified: "2026-10-14T09:40:00-04:00" },
+    "/guides/top-sales-headhunters-us": { published: "2026-04-04T12:52:48-04:00", modified: "2026-11-04T10:05:00-05:00" },
     "/guides/who-to-hire-vp-sales-startup": { published: "2026-04-04T12:52:48-04:00", modified: "2026-10-24T14:30:00-04:00" },
     "/methodology": { published: "2026-02-27T15:52:13-05:00", modified: "2026-10-14T09:40:00-04:00" },
     "/pip-calculator": { published: "2026-04-20T13:36:28-04:00", modified: "2026-04-20T13:36:28-04:00" },
