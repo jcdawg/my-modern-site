@@ -154,14 +154,10 @@ export default function AccountExecutiveInterviewQuestions() {
             <section className="py-16 px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl space-y-12 text-grey-700 leading-relaxed text-lg">
 
-                    <blockquote className="border-l-4 border-blue-accent pl-4 text-navy-900 font-medium">
-                        <strong>Short answer:</strong> Have the AE walk you through one deal they closed. Listen for where the lead came from and who on their team they worked with to close it. Then ask what hiccups came up and how they resolved them. If a big committee deal went pretty straightforward, that is a red flag. Real deals have hiccups.
-                    </blockquote>
-
                     <div className="p-6 rounded-2xl bg-blue-accent/5 border-2 border-blue-accent">
                         <h2 className="text-xl font-bold text-navy-900 mb-3">Direct answer</h2>
                         <p className="text-base text-grey-700 leading-relaxed">
-                            Hiring an AE or a senior AE? Have them walk you through one closed deal, get quota and results in dollars, and run a role play built on your product. Know your comp before the first call. <a href={SRC.repvue} className={link}>RepVue&apos;s 2026 data</a> puts the median at $200K OTE on a $100K base across all AE segments. More on pay in <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by level</Link> and on timing in <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>how long it takes to hire an AE</Link>.
+                            Hiring an AE or a senior AE? Have them walk you through one deal they closed. Listen for where the lead came from and who on their team helped close it, then ask what hiccups came up and how they resolved them. If a big committee deal went pretty straightforward, that is a red flag. Real deals have hiccups. Get quota and results in dollars, and run a role play built on your product. Know your comp before the first call. <a href={SRC.repvue} className={link}>RepVue&apos;s 2026 data</a> puts the median at $200K OTE on a $100K base across all AE segments. More on pay in <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by level</Link> and on timing in <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>how long it takes to hire an AE</Link>.
                         </p>
                     </div>
 
@@ -348,7 +344,7 @@ export default function AccountExecutiveInterviewQuestions() {
                     <div className="space-y-4">
                         <h2 className={h2}>How The Kas Group Works</h2>
                         <p>
-                            The Kas Group works three ways. Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five. Kas Milestone Search is $5,000 for an SDR or BDR, $7,500 for an AE and $10,000 for a senior AE or sales manager. Kas Directed Pursuit starts with a conversation to learn what the company wants, so there is no price to list. Details are on the <Link href="/programs" className={link}>programs page</Link>.
+                            The Kas Group works three ways. Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above. Kas Milestone Search is $5,000 for an SDR or BDR, $7,500 for an AE and $10,000 for a senior AE or sales manager. Kas Directed Pursuit starts with a conversation to learn what the company wants, so there is no price to list. Details are on the <Link href="/programs" className={link}>programs page</Link>.
                         </p>
                     </div>
 
