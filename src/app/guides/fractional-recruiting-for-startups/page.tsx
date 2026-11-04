@@ -122,6 +122,9 @@ export default function FractionalRecruitingForStartups() {
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
                         For seed through Series B founders moving from founder-led sales to a first AE, a first SDR, and the few hires after that.
                     </p>
+                    <p className="mt-4 text-base text-grey-600 max-w-2xl leading-relaxed">
+                        Fractional recruiting is a part time recruiting partner who joins your team on a monthly basis and runs your hiring from inside your own process. You get an experienced recruiter focused on your open seats, writing the scorecard with you, sourcing and screening candidates and helping close offers. <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">How fractional recruiting works</Link>.
+                    </p>
                 </div>
             </section>
 
