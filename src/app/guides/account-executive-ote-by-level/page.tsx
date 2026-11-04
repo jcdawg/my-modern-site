@@ -4,9 +4,9 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "AE OTE by Level: SDR to Enterprise AE Pay (2026)",
+    title: "AE OTE by Level 2026: SDR to Enterprise Pay",
     description:
-        "Account executive OTE and base pay by level, from SDR to enterprise AE, using RepVue and Bridge Group data plus dated job postings. Sourced and linked.",
+        "See 2026 AE OTE and base pay by level, SDR to strategic AE, from RepVue and Bridge Group medians plus dated job postings. Every figure is sourced.",
     path: "/guides/account-executive-ote-by-level",
     headline: "Account Executive OTE by Level: SDR to Enterprise AE Pay in 2026",
 };
