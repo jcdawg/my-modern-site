@@ -24,6 +24,8 @@ const SRC = {
     checkr: "https://checkr.com/resources/articles/hiring-hoax-manager-survey-2025",
     gartner: "https://www.gartner.com/en/newsroom/press-releases/2025-07-31-gartner-survey-shows-just-26-percent-of-job-applicants-trust-ai-will-fairly-evaluate-them",
     resumebuilder: "https://www.resumebuilder.com/1-4-americans-have-lied-on-their-resume/",
+    repvue: "https://www.repvue.com/blog/sales-salary-guide",
+    shrm: "https://www.shrm.org/executive-network/insights/people-strategy/state-of-recruiting-2025-insights-to-maximize-recruitment",
 };
 
 const FAQS = [
@@ -61,11 +63,31 @@ const FAQS = [
     },
 ];
 
+// Short AE and senior AE hiring FAQ. Rendered visibly and added to the same FAQPage schema.
+const AE_HIRING_FAQS = [
+    {
+        q: "What should I sort out before the first AE interview?",
+        a: "The comp and the motion. Know the OTE and base you can pay, whether the job is winning new customers or growing existing ones, and who the buyer is. Then ask for quota and results in dollars on the phone screen.",
+    },
+    {
+        q: "Should I interview a senior AE differently from an AE?",
+        a: "Use the same questions and scorecard so you can compare people fairly. With a senior AE, go deeper on the deal walkthrough. Pick their biggest deal with several people involved and expect real detail on the hiccups and who else helped close it.",
+    },
+    {
+        q: "What does an AE get paid?",
+        a: "RepVue's 2026 data puts the median at $200K OTE on a $100K base across all AE segments. Pay moves a lot by segment, so check our AE OTE by level guide before you post the role.",
+    },
+    {
+        q: "How long does it take to hire an AE?",
+        a: "SHRM's State of Recruiting 2025 puts median time to fill at roughly a month and a half, across all roles, not sales specifically. Our guide on how long it takes to hire an account executive covers what moves that number.",
+    },
+];
+
 export default function AccountExecutiveInterviewQuestions() {
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": FAQS.map((f) => ({
+        "mainEntity": [...FAQS, ...AE_HIRING_FAQS].map((f) => ({
             "@type": "Question",
             "name": f.q,
             "acceptedAnswer": { "@type": "Answer", "text": f.a },
@@ -135,6 +157,13 @@ export default function AccountExecutiveInterviewQuestions() {
                     <blockquote className="border-l-4 border-blue-accent pl-4 text-navy-900 font-medium">
                         <strong>Short answer:</strong> Have the AE walk you through one deal they closed. Listen for where the lead came from and who on their team they worked with to close it. Then ask what hiccups came up and how they resolved them. If a big committee deal went pretty straightforward, that is a red flag. Real deals have hiccups.
                     </blockquote>
+
+                    <div className="p-6 rounded-2xl bg-blue-accent/5 border-2 border-blue-accent">
+                        <h2 className="text-xl font-bold text-navy-900 mb-3">Direct answer</h2>
+                        <p className="text-base text-grey-700 leading-relaxed">
+                            Hiring an AE or a senior AE? Have them walk you through one closed deal, get quota and results in dollars, and run a role play built on your product. Know your comp before the first call. <a href={SRC.repvue} className={link}>RepVue&apos;s 2026 data</a> puts the median at $200K OTE on a $100K base across all AE segments. More on pay in <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by level</Link> and on timing in <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>how long it takes to hire an AE</Link>.
+                        </p>
+                    </div>
 
                     <div className="space-y-4">
                         <h2 className={h2}>10 Account Executive Interview Questions to Ask</h2>
@@ -348,6 +377,19 @@ export default function AccountExecutiveInterviewQuestions() {
                         ))}
                     </div>
 
+                    <div className="space-y-6">
+                        <h2 className={h2}>Hiring an AE or Senior AE: Quick FAQ</h2>
+                        {AE_HIRING_FAQS.map((f) => (
+                            <div key={f.q} className="space-y-2">
+                                <h3 className="font-bold text-navy-900 text-xl">{f.q}</h3>
+                                <p className="text-grey-600 leading-relaxed">{f.a}</p>
+                            </div>
+                        ))}
+                        <p className="text-grey-600 text-base">
+                            Read next: <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by level</Link>{" · "}<Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>How long it takes to hire an account executive</Link>
+                        </p>
+                    </div>
+
                     <div className="space-y-4">
                         <h2 className={h2}>Sources</h2>
                         <p className="text-sm text-grey-500">All are outside sources. None is Kas placement data. Vendor figures are labeled as such.</p>
@@ -361,6 +403,8 @@ export default function AccountExecutiveInterviewQuestions() {
                             <li>1 in 4 Americans have lied on their resume, ResumeBuilder, January 2025. Vendor survey of 2,000 US job applicants. <a href={SRC.resumebuilder} className={link}>{SRC.resumebuilder}</a></li>
                             <li>New SalesFuel research shows a bad sales hire costs sales managers more than a luxury car, SalesFuel, June 3, 2026. Vendor survey. <a href={SRC.salesfuel} className={link}>{SRC.salesfuel}</a></li>
                             <li>That Bad Sales Hire Probably Costs More Than You Think, Radio Ink, June 4, 2026. Reports the SalesFuel survey method. <a href={SRC.radioink} className={link}>{SRC.radioink}</a></li>
+                            <li>Sales Salary Guide: What Sales Reps are Earning in 2026, RepVue, January 2, 2026, July 2026 update. Self-reported data. <a href={SRC.repvue} className={link}>{SRC.repvue}</a></li>
+                            <li>The State of Recruiting 2025, SHRM. Median time to fill is roughly a month and a half, all roles, not sales specific. <a href={SRC.shrm} className={link}>{SRC.shrm}</a></li>
                         </ul>
                     </div>
 
