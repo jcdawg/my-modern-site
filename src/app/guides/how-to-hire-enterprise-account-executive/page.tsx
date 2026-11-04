@@ -43,7 +43,7 @@ const FAQS = [
     },
     {
         q: "How long does it take to hire an enterprise account executive?",
-        a: "No independent dataset exists. Salesfolks, a sales recruiter, reports 45 to 70 days on average for enterprise AEs across 3,500+ hiring cycles. Nobel Recruitment, a Europe-based recruiter, says 6 to 10 weeks for AE roles. Both are vendor figures. Plan about 6 to 10 weeks to an accepted offer, plus notice.",
+        a: "No independent dataset exists. Salesfolks, a sales recruiter, reports 45 to 70 days on average for enterprise AEs across 3,500+ hiring cycles. Nobel Recruitment, a Europe-based recruiter, says 6 to 10 weeks for AE roles. Both are vendor figures. Getting to an accepted offer is typically a few weeks to a couple of months, plus notice.",
     },
     {
         q: "How long does an enterprise AE take to ramp?",
@@ -131,7 +131,7 @@ export default function HowToHireEnterpriseAccountExecutive() {
                     </p>
 
                     <p>
-                        Most guides treat this as an enterprise-only role. I look at a wider group. Plenty of strong candidates have enterprise experience from a mid-market or strategic seat. The same tests apply to all of them. This guide covers the question I ask first, what the data says about pay, quota and ramp, and how I check that a candidate built the deal.
+                        I look at a wider group than enterprise titles. Plenty of strong candidates have enterprise experience from a mid-market or strategic seat. The same tests apply to all of them. This guide covers the question I ask first, what the data says about pay, quota and ramp, and how I check that a candidate built the deal.
                     </p>
 
                     <div className="space-y-4">
@@ -210,7 +210,7 @@ export default function HowToHireEnterpriseAccountExecutive() {
                             No one publishes audited data on this. What exists comes from recruiters. <a href={SRC.salesfolks} className={link}>Salesfolks</a> reports 45 to 70 days on average for enterprise AEs, from 3,500+ hiring cycles, with 90+ days at the slow end. <a href={SRC.nobel} className={link}>Nobel Recruitment</a>, a Europe-based recruiter, says 6 to 10 weeks for AE roles and advises starting 10 to 12 weeks before you need the person selling. Sloane reports that 42% of candidates drop out over scheduling delays.
                         </p>
                         <p>
-                            These are vendor figures. I plan on 6 to 10 weeks to an accepted offer, then notice, then the ramp above. Start earlier than feels necessary.
+                            These are vendor figures. In my view, getting to an accepted offer is typically a few weeks to a couple of months, then notice, then the ramp above. Start earlier than feels necessary.
                         </p>
                     </div>
 
@@ -250,7 +250,7 @@ export default function HowToHireEnterpriseAccountExecutive() {
                     <div className="space-y-4">
                         <h2 className={h2}>My Experience</h2>
                         <p>
-                            I have placed several enterprise account executives. In one search I helped a company build the majority of its American sales team while it was based in Europe. I have also placed hunters at smaller companies to bring on new accounts.
+                            I have placed several enterprise account executives. I helped a Europe-based company build its US sales team, placing 4 enterprise AEs in 3 months. I have also placed hunters at smaller companies to bring on new accounts.
                         </p>
                     </div>
 
