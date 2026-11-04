@@ -311,7 +311,10 @@ export default function Home() {
               <div className="flex items-center gap-2 text-sm font-bold text-blue-accent">View All Guides <ArrowRight className="h-4 w-4" /></div>
             </Link>
           </div>
-          <div className="text-center mt-12">
+          <p className="text-center mt-12 text-grey-600">
+            Comparing firms? See the <Link href="/guides/best-sales-recruiting-agencies-2026" className="text-blue-accent font-semibold hover:underline">best sales recruiting agencies for 2026</Link> and the <Link href="/guides/best-recruiting-agencies-b2b-sales" className="text-blue-accent font-semibold hover:underline">best recruiting agencies for B2B sales hiring</Link>.
+          </p>
+          <div className="text-center mt-6">
             <Link href="/blog" className="inline-flex items-center gap-2 text-navy-700 font-bold hover:text-blue-accent transition-colors">
               View latest blog insights <ArrowRight className="h-5 w-5" />
             </Link>

@@ -112,6 +112,9 @@ export default function TopSalesHeadhuntersUs() {
                                 <p className="text-grey-600 text-sm leading-relaxed">Broad coverage across industries and geographies for mid-level sales roles. Less specialized for technical SaaS and AI motions.</p>
                             </div>
                         </div>
+                        <p className="text-grey-600 leading-relaxed">
+                            For agency rankings, see the <Link href="/guides/best-sales-recruiting-agencies-2026" className="text-blue-accent hover:underline font-semibold">best sales recruiting agencies for 2026</Link> and the <Link href="/guides/best-recruiting-agencies-b2b-sales" className="text-blue-accent hover:underline font-semibold">best recruiting agencies for B2B sales hiring</Link>.
+                        </p>
                     </div>
 
                     <div className="space-y-8">
