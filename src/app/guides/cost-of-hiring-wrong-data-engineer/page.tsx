@@ -4,9 +4,9 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "Cost of a Bad Data Engineer Hire: Up to $300K",
+    title: "Cost of a Bad Data Engineer Hire in 2026",
     description:
-        "A bad engineering hire can cost $150,000 to $300,000, per INOP, a vendor. See the warning signs, how recovery runs and how to vet the next one.",
+        "A bad engineering hire can cost $150,000 to $300,000, per INOP, a vendor. See the warning signs, how recovery runs and how to vet your next data engineer.",
     path: "/guides/cost-of-hiring-wrong-data-engineer",
 };
 
