@@ -86,6 +86,9 @@ export default function HowToChooseAFractionalRecruiter() {
                         How to Choose a Fractional Recruiter: A Practical Checklist
                     </h1>
                     <p className="text-sm text-grey-500">October 24, 2026 &middot; Chris Stinson, The Kas Group</p>
+                    <p className="mt-4 text-base text-grey-600 max-w-2xl leading-relaxed">
+                        Fractional recruiting is a part time recruiting partner who joins your team on a monthly basis and runs your hiring from inside your own process. You get an experienced recruiter focused on your open seats, writing the scorecard with you, sourcing and screening candidates and helping close offers. <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">How fractional recruiting works</Link>.
+                    </p>
                 </div>
             </section>
 
