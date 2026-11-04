@@ -59,7 +59,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/guides/senior-data-engineer-skills-assessment-vetting": { published: "2026-04-27T15:25:00-04:00", modified: "2026-10-14T09:40:00-04:00" },
     "/guides/top-data-engineering-headhunters-2026": { published: "2026-04-27T15:24:26-04:00", modified: "2026-10-20T10:00:00-04:00" },
     "/guides/top-executive-search-firms-sales-leaders": { published: "2026-04-04T12:52:48-04:00", modified: "2026-10-14T09:40:00-04:00" },
-    "/guides/top-sales-headhunters-us": { published: "2026-04-04T12:52:48-04:00", modified: "2026-11-04T09:15:00-05:00" },
+    "/guides/top-sales-headhunters-us": { published: "2026-04-04T12:52:48-04:00", modified: "2026-11-04T10:05:00-05:00" },
     "/guides/who-to-hire-vp-sales-startup": { published: "2026-04-04T12:52:48-04:00", modified: "2026-10-24T14:30:00-04:00" },
     "/methodology": { published: "2026-02-27T15:52:13-05:00", modified: "2026-10-14T09:40:00-04:00" },
     "/pip-calculator": { published: "2026-04-20T13:36:28-04:00", modified: "2026-04-20T13:36:28-04:00" },

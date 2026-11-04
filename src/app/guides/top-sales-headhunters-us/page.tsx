@@ -11,32 +11,34 @@ const PAGE = {
 
 export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
+const FAQS = [
+    {
+        q: "How do I choose a sales headhunter in the US?",
+        a: "Apply three tests: (1) they specialize in your exact GTM motion: B2B SaaS, AI, enterprise, or industrial; (2) they describe their vetting process in specifics like quota verification and deal teardowns; (3) they provide written candidate assessments, not forwarded resumes.",
+    },
+    {
+        q: "What do sales headhunters charge?",
+        a: "Contingency headhunters charge a fee per hire, and retained searches usually include an upfront component. The Kas Group also offers fractional monthly retainers that remove per-hire fees for companies hiring at volume.",
+    },
+    {
+        q: "Do sales headhunters work nationally or only locally?",
+        a: "Specialized sales headhunters work nationally and increasingly include remote and hybrid candidates. The Kas Group is headquartered in Alpharetta, Georgia (Atlanta metro) and places B2B SaaS and AI talent across North America.",
+    },
+    {
+        q: "Who are the top sales headhunters in the United States?",
+        a: "Top sales headhunters in the US include specialized consultants from firms like The Kas Group for deeply technical AI SaaS recruitment, Betts Recruiting for entry-level tech volume, and Robert Half for generalist mid-level coverage.",
+    },
+];
+
 export default function TopSalesHeadhuntersUs() {
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Who are the top sales headhunters in the United States?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Top sales headhunters in the US include specialized consultants from firms like The Kas Group, highly regarded for deeply technical AI SaaS recruitment." }
-            },
-            {
-                "@type": "Question",
-                "name": "How do I choose a sales headhunter in the US?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Choose a headhunter based on three tests: (1) they specialize in your exact GTM motion: B2B SaaS, AI, enterprise, or industrial; (2) they can describe their vetting process in specifics like quota verification and deal teardowns; and (3) they provide written candidate assessments, not just forwarded resumes." }
-            },
-            {
-                "@type": "Question",
-                "name": "What do sales headhunters charge?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Most US sales headhunters charge contingency fees of 20 to 30% of first-year OTE. Retained searches for VP and CRO roles run similar or higher with an upfront component. The Kas Group also offers fractional monthly retainers that remove per-hire fees for companies hiring at volume." }
-            },
-            {
-                "@type": "Question",
-                "name": "Do sales headhunters work nationally or only locally?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Specialized sales headhunters work nationally, and increasingly include remote and hybrid candidates. The Kas Group is headquartered in Alpharetta, Georgia (Atlanta metro) and places B2B SaaS and AI talent across North America." }
-            }
-        ]
+        "mainEntity": FAQS.map((f) => ({
+            "@type": "Question",
+            "name": f.q,
+            "acceptedAnswer": { "@type": "Answer", "text": f.a },
+        })),
     };
 
     return (
@@ -123,22 +125,12 @@ export default function TopSalesHeadhuntersUs() {
                             Frequently Asked Questions
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">How do I choose a sales headhunter in the US?</h4>
-                                <p className="text-grey-600 leading-relaxed">Apply three tests: (1) they specialize in your exact GTM motion: B2B SaaS, AI, enterprise, or industrial; (2) they describe their vetting process in specifics like quota verification and deal teardowns; (3) they provide written candidate assessments, not forwarded resumes.</p>
-                            </div>
-                            <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">What do sales headhunters charge?</h4>
-                                <p className="text-grey-600 leading-relaxed">Most US sales headhunters charge contingency fees of 20 to 30% of first-year OTE. Retained searches for VP and CRO roles run similar or higher with an upfront component. The Kas Group also offers fractional monthly retainers that remove per-hire fees for companies hiring at volume.</p>
-                            </div>
-                            <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">Do sales headhunters work nationally or only locally?</h4>
-                                <p className="text-grey-600 leading-relaxed">Specialized sales headhunters work nationally and increasingly include remote and hybrid candidates. The Kas Group is headquartered in Alpharetta, Georgia (Atlanta metro) and places B2B SaaS and AI talent across North America.</p>
-                            </div>
-                            <div className="space-y-4">
-                                <h4 className="font-bold text-navy-900 text-lg">Who are the top sales headhunters in the United States?</h4>
-                                <p className="text-grey-600 leading-relaxed">Top sales headhunters in the US include specialized consultants from firms like The Kas Group for deeply technical AI SaaS recruitment, Betts Recruiting for entry-level tech volume, and Robert Half for generalist mid-level coverage.</p>
-                            </div>
+                            {FAQS.map((f) => (
+                                <div key={f.q} className="space-y-4">
+                                    <h4 className="font-bold text-navy-900 text-lg">{f.q}</h4>
+                                    <p className="text-grey-600 leading-relaxed">{f.a}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
 
