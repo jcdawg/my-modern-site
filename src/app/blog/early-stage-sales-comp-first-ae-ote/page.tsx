@@ -4,8 +4,9 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "What to Pay Your First AE",
-    description: "First AE OTE: SMB and mid-market $140K to $220K, enterprise $220K to $300K. Why ranges disagree, and how to pressure-test attainment.",
+    title: "What to Pay Your First AE: 2026 OTE Ranges",
+    description:
+        "First AE OTE: SMB and mid-market $140K to $220K, enterprise $220K to $300K. Why the ranges disagree, how to pressure test attainment, and what I ask first.",
     path: "/blog/early-stage-sales-comp-first-ae-ote",
     headline: "What to Pay Your First AE: OTE Ranges That Hold Up",
 };

@@ -4,8 +4,9 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: 'The Real Cost of a Bad Technical Hire: Time and Revenue',
-    description: 'What hiring the wrong data or AI engineer costs: INOP, a vendor, estimates $150,000 to $300,000. Recovery, warning signs and how to vet the replacement.',
+    title: "Cost of a Bad Data Engineer Hire in 2026",
+    description:
+        "A bad engineering hire can cost $150,000 to $300,000, per INOP, a vendor. See the warning signs, how recovery runs and how to vet your next data engineer.",
     path: "/guides/cost-of-hiring-wrong-data-engineer",
 };
 

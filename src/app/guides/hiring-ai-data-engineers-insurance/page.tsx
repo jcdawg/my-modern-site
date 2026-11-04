@@ -4,9 +4,9 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "How to Hire AI, ML and Data Engineers for Insurance",
+    title: "Hiring AI and Data Engineers for Insurance",
     description:
-        "Plain answers on which data and AI roles insurers hire first, what to screen for, and what shapes how long searches take, from The Kas Group.",
+        "Which AI, ML and data engineering roles insurers hire first, what to screen for, and what shapes the search timeline. Plain answers for carriers and MGAs.",
     path: "/guides/hiring-ai-data-engineers-insurance",
     headline: "How to Hire AI, ML and Data Engineers for Insurance: Answers for Carriers, MGAs and Insurtechs",
 };

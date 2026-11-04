@@ -4,9 +4,9 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "Fractional Recruiting for Startups: First Sales Hires",
+    title: "Fractional Recruiting for Startups: First Hires",
     description:
-        "Fractional recruiting for seed to Series B startups making their first 1 to 5 sales hires: when it fits, when it doesn't, cost, and the first 90 days.",
+        "Making your first 1 to 5 sales hires at seed to Series B? See when fractional recruiting fits, when it does not, the cost and how the first 90 days go.",
     path: "/guides/fractional-recruiting-for-startups",
 };
 

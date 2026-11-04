@@ -22,6 +22,9 @@ const SRC = {
 const DEFINITION =
     "Fractional recruiting is a monthly retainer for a part time recruiting partner who works inside your hiring process. The partner writes the scorecard with you, sources candidates, screens them, runs the interview loop and helps close offers. You pay by the month for dedicated time, not a percentage of each new hire's salary.";
 
+const LEAD_DEFINITION =
+    "Fractional recruiting is a part time recruiting partner who joins your team on a monthly basis and runs your hiring from inside your own process. You get an experienced recruiter focused on your open seats, writing the scorecard with you, sourcing and screening candidates and helping close offers.";
+
 // One array drives both the visible FAQ and the FAQPage schema, so the text matches word for word.
 const FAQS = [
     {
@@ -51,6 +54,18 @@ const FAQS = [
     {
         q: "Is there a long contract?",
         a: "No. Kas Seat is month to month. Add capacity when you open seats. Pause it when the team is full.",
+    },
+    {
+        q: "What does a fractional recruiter do?",
+        a: "A fractional recruiter writes the scorecard with you, sources and screens candidates, runs the interview loop and helps close offers. The work happens inside your own tools and process, alongside your hiring managers.",
+    },
+    {
+        q: "Which roles does The Kas Group cover with fractional recruiting?",
+        a: "Kas Seat covers sales seats from SDR through Sales Manager. Searches above Sales Manager are quoted on request.",
+    },
+    {
+        q: "Who owns the candidates a fractional recruiter finds?",
+        a: "You do. The Kas Group works inside your process, and you own every name and the candidate data from day one.",
     },
 ];
 
@@ -104,7 +119,7 @@ export default function FractionalRecruitingGuide() {
                         What Is Fractional Recruiting?{" "}
                         <span className="text-blue-accent">How a Kas Engagement Runs</span>
                     </h1>
-                    <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">{DEFINITION}</p>
+                    <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">{LEAD_DEFINITION}</p>
                     <p className="mt-6 text-sm text-grey-500">
                         <strong className="text-navy-900">Updated Oct 2026, Chris Stinson.</strong> Chris is Managing Partner of The Kas Group and has recruited sales and GTM talent since 2014.
                     </p>
