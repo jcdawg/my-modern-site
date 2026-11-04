@@ -50,7 +50,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/guides/hiring-ai-data-engineers-insurance": { published: "2026-10-25T18:30:00-04:00", modified: "2026-11-04T09:00:00-05:00" },
     "/guides/how-to-hire-senior-account-executive": { published: "2026-10-21T10:00:00-04:00", modified: "2026-11-02T10:00:00-05:00" },
     "/guides/account-executive-ote-by-level": { published: "2026-10-24T15:00:00-04:00", modified: "2026-11-04T09:00:00-05:00" },
-    "/guides/how-to-hire-enterprise-account-executive": { published: "2026-10-16T10:45:00-04:00", modified: "2026-10-28T09:45:00-04:00" },
+    "/guides/how-to-hire-enterprise-account-executive": { published: "2026-10-16T10:45:00-04:00", modified: "2026-11-04T16:20:00-05:00" },
     "/guides/how-to-hire-saas-sdrs-fast-ramp": { published: "2026-09-11T09:01:23-04:00", modified: "2026-10-24T14:30:00-04:00" },
     "/guides/how-to-hire-senior-data-engineers-ai-startups": { published: "2026-04-27T15:23:53-04:00", modified: "2026-10-14T09:40:00-04:00" },
     "/guides/phd-vetted-ai-recruiting-methodology": { published: "2026-08-25T15:27:41-04:00", modified: "2026-09-10T13:10:14-04:00" },

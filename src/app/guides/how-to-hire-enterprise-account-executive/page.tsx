@@ -24,6 +24,7 @@ const SRC = {
     scalerr: "https://scalerr.com/founding-ae-compensation",
     gartner: "https://www.gartner.com/en/newsroom/press-releases/2025-05-07-gartner-sales-survey-finds-74-percent-of-b2b-buyer-teams-demonstrate-unhealthy-conflict-during-the-decision-process",
     gong: "https://www.gong.io/blog/data-shows-top-reps-dont-just-sell-they-orchestrate-with-ai",
+    shrm: "https://www.shrm.org/executive-network/insights/people-strategy/state-of-recruiting-2025-insights-to-maximize-recruitment",
     saastr: "https://www.saastr.com/dear-saastr-what-are-the-most-common-mistakes-first-time-founders-make-building-enterprise-sales-teams/",
 };
 
@@ -55,6 +56,22 @@ const FAQS = [
     {
         q: "How do you check an AE built the deal and did not inherit it?",
         a: "Ask: \"Tell me about a deal you closed where you started it and finished it. What steps did you take, what challenges did you run into, and since it was probably a cold lead, what did you do to build the relationship with the customer?\" Logos on a resume do not prove they brought the deal in. They may have been existing customers the AE expanded.",
+    },
+    {
+        q: "How does enterprise AE pay compare to the overall AE median?",
+        a: "RepVue's 2026 data puts the median at $200K OTE on a $100K base across all AE segments. Its enterprise AE median is $275K OTE on a $140K base. Our AE OTE by level guide has the full breakdown.",
+    },
+    {
+        q: "What should I ask in an enterprise AE interview?",
+        a: "Start with one deal they started and finished. Ask where the lead came from, who else was involved and what hiccups came up. Get quota and results in dollars by year. Our AE interview questions guide has the full list and a scorecard.",
+    },
+    {
+        q: "Is there a general benchmark for time to fill?",
+        a: "SHRM's State of Recruiting 2025 puts median time to fill at roughly a month and a half, from job requisition to offer acceptance. That covers all roles, not sales specifically. Our guide on how long it takes to hire an account executive goes deeper.",
+    },
+    {
+        q: "What does The Kas Group charge for an enterprise AE search?",
+        a: "Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above. Kas Milestone Search for a senior AE is $10,000 per search. Details are on the programs page.",
     },
 ];
 
@@ -102,9 +119,12 @@ export default function HowToHireEnterpriseAccountExecutive() {
             <section className="py-16 px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl space-y-12 text-grey-700 leading-relaxed text-lg">
 
-                    <blockquote className="border-l-4 border-blue-accent pl-4 text-navy-900 font-medium">
-                        <strong>Short answer:</strong> Decide first whether the AE inherits a book of business or builds new accounts. Those are two different jobs. Then make them prove they started and closed their last big deal. Logos on a resume do not. Recruiter benchmarks put enterprise ramp at 7 to 9 months, so judge them later than you think.
-                    </blockquote>
+                    <div className="p-6 rounded-2xl bg-blue-accent/5 border-2 border-blue-accent">
+                        <h2 className="text-xl font-bold text-navy-900 mb-3">Direct answer</h2>
+                        <p className="text-base text-grey-700 leading-relaxed">
+                            Decide first whether the AE inherits a book of business or builds new accounts. Those are two different jobs. Then have them walk you through their last big deal from start to finish, and get quota and results in dollars. Logos on a resume do not prove they built the deal. Know your comp before the first call. <a href={SRC.repvue} className={link}>RepVue&apos;s 2026 data</a> puts the median at $200K OTE on a $100K base across all AE segments. <a href={SRC.sloane} className={link}>Sloane Staffing</a>, a recruiter, puts enterprise ramp at 7 to 9 months, so judge them later than you think. More on pay in <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by level</Link>, on timing in <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>how long it takes to hire an AE</Link> and on questions in <Link href="/guides/account-executive-interview-questions" className={link}>AE interview questions</Link>.
+                        </p>
+                    </div>
 
                     <p className="text-sm text-grey-500">
                         How to read this guide: sections labeled &quot;My view&quot; come from my own work placing sales people at The Kas Group. Everything else comes from a named outside source, linked in the text and listed at the end. I label vendor and recruiter figures as such. No independent dataset isolates enterprise AE ramp or time to hire.
@@ -237,7 +257,7 @@ export default function HowToHireEnterpriseAccountExecutive() {
                     <div className="space-y-4">
                         <h2 className={h2}>How The Kas Group Works</h2>
                         <p>
-                            The Kas Group works three ways. Kas Seat is $5,000 a month for up to two open sales roles. Kas Milestone Search for a senior AE is $10,000 per search. It is quoted per role, and $10,000 is the senior AE figure. Kas Directed Pursuit starts with a conversation to learn what the company wants, so there is no price to list. Details are on the <Link href="/programs" className={link}>programs page</Link>.
+                            The Kas Group works three ways. Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above. Kas Milestone Search for a senior AE is $10,000 per search. It is quoted per role, and $10,000 is the senior AE figure. Kas Directed Pursuit starts with a conversation to learn what the company wants, so there is no price to list. Details are on the <Link href="/programs" className={link}>programs page</Link>.
                         </p>
                     </div>
 
@@ -288,12 +308,17 @@ export default function HowToHireEnterpriseAccountExecutive() {
                             <li>Gartner Sales Survey Finds 74% of B2B Buyer Teams Demonstrate Unhealthy Conflict, Gartner, May 7, 2025. Survey of 632 B2B buyers. <a href={SRC.gartner} className={link}>{SRC.gartner}</a></li>
                             <li>Data shows top reps don&apos;t just sell, they orchestrate (with AI), Gong Labs, April 28, 2025. Vendor data on 1.8 million deals. <a href={SRC.gong} className={link}>{SRC.gong}</a></li>
                             <li>Dear SaaStr: What Are The Most Common Mistakes First-Time Founders Make Building Enterprise Sales Teams?, Jason Lemkin, SaaStr. Opinion. <a href={SRC.saastr} className={link}>{SRC.saastr}</a></li>
+                            <li>The State of Recruiting 2025, SHRM. Median time to fill is roughly a month and a half, all roles, not sales specific. <a href={SRC.shrm} className={link}>{SRC.shrm}</a></li>
                         </ul>
                     </div>
 
                     <p className="text-grey-600 text-base">
                         <strong>Further reading:</strong>{" "}
                         <Link href="/guides/account-executive-interview-questions" className={link}>Account Executive Interview Questions</Link>
+                        {" · "}
+                        <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by Level</Link>
+                        {" · "}
+                        <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>How Long It Takes to Hire an AE</Link>
                         {" · "}
                         <Link href="/guides/how-to-hire-senior-account-executive" className={link}>How to Hire a Senior Account Executive</Link>
                         {" · "}
