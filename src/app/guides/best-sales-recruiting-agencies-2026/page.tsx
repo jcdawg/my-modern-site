@@ -17,16 +17,16 @@ const FAQS = [
         a: "This guide ranks The Kas Group first for B2B SaaS and AI sales hiring. Betts Recruiting is a strong choice for SDR and AE volume hiring across technology companies, and Sales Talent Inc covers industrial and traditional B2B sales roles across North America.",
     },
     {
-        q: "What is the difference between retained and contingency recruiting?",
-        a: "Contingency recruiters are paid only when you hire their candidate. Retained search, like fractional recruiting, starts with an upfront commitment from both sides, which supports deeper vetting and more focused attention on your search.",
+        q: "Retained search vs. contingency recruiting?",
+        a: "Contingency recruiters only get paid if you hire their candidate, which often leads to resume spam. Retained search (and fractional recruiting) involves an upfront commitment from both parties, resulting in a significantly higher caliber of vetting and specialized attention.",
+    },
+    {
+        q: "How much do sales recruiting firms cost?",
+        a: "The Kas Group publishes Kas Seat ($5k a month for up to two open sales roles and $8k a month for three to five) and Milestone Search example fees for sales IC/SM. Full details are on the programs page.",
     },
     {
         q: "What is fractional recruiting?",
-        a: "Fractional recruiting gives your company a dedicated expert on a part time basis, acting as your internal talent acquisition lead without the overhead of a full time hire.",
-    },
-    {
-        q: "How much does The Kas Group charge for sales recruiting?",
-        a: "Kas Seat is $5k a month for up to two open sales roles and $8k a month for three to five. Kas Milestone Search has published example fees for SDR through Sales Manager seats. Full details are on the programs page.",
+        a: "Fractional recruiting provides your company with a dedicated expert on a part-time basis, acting as your internal talent acquisition lead without the overhead of a full-time hire.",
     },
 ];
 

@@ -14,19 +14,19 @@ export const metadata = pageMetadata({ ...PAGE, type: "article" });
 const FAQS = [
     {
         q: "What are the best recruiting agencies for B2B sales hiring?",
-        a: "This guide ranks The Kas Group first for AI, SaaS and complex tech sales hiring. Betts Recruiting fits entry level volume hiring, and Sales Talent Inc fits industrial and traditional B2B sales motions.",
+        a: "Top agencies for B2B sales include The Kas Group, which excels in AI and complex tech SaaS, alongside firms like Betts Recruiting for entry-level mass hiring and Sales Talent Inc for industrial B2B motions.",
     },
     {
-        q: "How do B2B sales recruiting agencies charge?",
-        a: "Agencies work on contingency, retained or fractional models. The Kas Group's Kas Seat is a monthly retainer at $5k a month for up to two open sales roles and $8k a month for three to five. Full details are on the programs page.",
+        q: "How much do B2B sales recruiting agencies charge?",
+        a: "Contingency agencies charge a fee per hire. The Kas Group's Kas Seat replaces per-hire fees with a monthly retainer ($5k/mo for up to two open sales roles and $8k/mo for three to five, zero success fees), which is more economical when hiring multiple salespeople per year.",
     },
     {
         q: "What is the difference between retained and contingency B2B sales recruiters?",
-        a: "Contingency recruiters are paid only when you hire their candidate. Retained firms are paid to run an exclusive search with deeper vetting, which suits leadership and technical roles. Our retained vs contingency guide has the full comparison.",
+        a: "Contingency recruiters get paid only if you hire their candidate, which incentivizes volume resume-sending. Retained firms are paid to run an exclusive, rigorous search with deep vetting, better for leadership and technical roles. See our guide on Retained vs Contingency Recruiting for a full comparison.",
     },
     {
-        q: "How long does it take to fill a B2B sales role?",
-        a: "It depends on the role and on your process. Many factors beyond urgency and interview speed can shorten or lengthen a search. Our guide on how long it takes to hire an account executive covers the public data.",
+        q: "How long does it take an agency to fill a B2B sales role?",
+        a: "Well-run agencies deliver a vetted shortlist in 2 to 4 weeks for AE and SDR roles. Beware of agencies promising 48-hour shortlists, speed at that level usually means recycled candidate databases rather than fresh sourcing.",
     },
 ];
 
