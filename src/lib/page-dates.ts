@@ -63,7 +63,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/guides/who-to-hire-vp-sales-startup": { published: "2026-04-04T12:52:48-04:00", modified: "2026-10-24T14:30:00-04:00" },
     "/methodology": { published: "2026-02-27T15:52:13-05:00", modified: "2026-10-14T09:40:00-04:00" },
     "/pip-calculator": { published: "2026-04-20T13:36:28-04:00", modified: "2026-11-05T10:45:00-05:00" },
-    "/hiring-scorecard": { published: "2026-11-05T10:45:00-05:00", modified: "2026-11-05T13:40:00-05:00" },
+    "/hiring-scorecard": { published: "2026-11-05T10:45:00-05:00", modified: "2026-11-05T14:00:00-05:00" },
     "/privacy-policy": { published: "2026-09-10T12:52:29-04:00", modified: "2026-09-16T13:53:41-07:00" },
     "/programs": { published: "2026-09-14T09:28:02-04:00", modified: "2026-10-24T14:30:00-04:00" },
     "/recruit/ai": { published: "2026-02-04T16:43:23-05:00", modified: "2026-10-25T18:30:00-04:00" },
