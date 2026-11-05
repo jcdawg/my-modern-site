@@ -290,7 +290,10 @@ export default function HowToHireSeniorAccountExecutive() {
                         <Link href="/blog/founder-led-sales-first-hire" className={link}>Your First Sales Hire Needs a Playbook</Link>
                         {" · "}
                         <Link href="/programs" className={link}>Programs</Link>
-                    </p>
+                    
+                        {" · "}
+                        <Link href="/pip-calculator" className={link}>Sales territory PIP calculator</Link>
+                        </p>
 
                 </div>
             </section>

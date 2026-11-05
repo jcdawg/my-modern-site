@@ -201,6 +201,12 @@ export default function CostOfBadHireGuide() {
                         </div>
                     </div>
 
+                    <p className="text-grey-600 text-base">
+                        Running a PIP on an underperforming AE? Try the free{" "}
+                        <Link href="/pip-calculator" className={link}>sales territory PIP calculator</Link>
+                        {" "}to estimate quota lost during the PIP, empty chair, and ramp.
+                    </p>
+
                     {/* Sources */}
                     <div className="space-y-4">
                         <h2 className="text-2xl font-bold text-navy-900">Sources</h2>
