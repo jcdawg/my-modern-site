@@ -297,7 +297,7 @@ export default function PipCalculatorClient() {
                 "Pipeline momentum continues without disruption",
                 "Leadership retains total control over the timing of change",
                 "Headcount approvals remain protected and secure",
-                "Upgrade conducted in as little as 30 days*"
+                "Upgrade conducted in typically a few weeks"
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3">
                   <div className="mt-1 h-6 w-6 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-400 shrink-0">
@@ -307,9 +307,6 @@ export default function PipCalculatorClient() {
                 </li>
               ))}
             </ul>
-            <p className="text-slate-500 text-sm italic">
-              * if all stakeholders in the interviewing process conduct interviews in a timely manner
-            </p>
           </div>
 
           {/* Right Side: Visual Card */}
@@ -327,7 +324,7 @@ export default function PipCalculatorClient() {
                 <div>
                   <div className="flex justify-between items-end mb-3">
                     <span className="text-slate-400 font-medium">Traditional Replacement</span>
-                    <span className="bg-red-500/20 text-red-400 text-xs font-bold px-3 py-1 rounded-full">3-6 Months Vacant</span>
+                    <span className="bg-red-500/20 text-red-400 text-xs font-bold px-3 py-1 rounded-full">3 to 6 Months Vacant</span>
                   </div>
                   <div className="w-full h-3 bg-slate-900 rounded-full overflow-hidden shadow-inner">
                     <div className="w-1/4 h-full bg-red-500 rounded-full" />
