@@ -169,6 +169,8 @@ export default function PipCalculatorPage() {
                             <Link href="/guides/how-to-hire-enterprise-account-executive" className={link}>How to hire an enterprise AE</Link>
                             {" · "}
                             <Link href="/guides/how-to-hire-senior-account-executive" className={link}>How to hire a senior AE</Link>
+                            {" · "}
+                            <Link href="/hiring-scorecard" className={link}>Hiring scorecard builder</Link>
                         </p>
                     </div>
 
