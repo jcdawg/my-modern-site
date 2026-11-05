@@ -44,7 +44,7 @@ export default function ExampleLightbox() {
                     src="/images/hiring-scorecard-example-teaser.png"
                     alt="Example hiring scorecard teaser for an Operations Manager role, Built with The Kas Group"
                     width={600}
-                    height={353}
+                    height={429}
                     className="w-full h-auto"
                     priority
                 />
@@ -82,7 +82,7 @@ export default function ExampleLightbox() {
                             src="/images/hiring-scorecard-example.png"
                             alt="Full example hiring scorecard for an Operations Manager role with mission, outcomes, competencies and Built with The Kas Group footer"
                             width={1200}
-                            height={1859}
+                            height={2259}
                             className="w-full h-auto"
                         />
                     </div>

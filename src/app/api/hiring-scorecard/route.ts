@@ -36,7 +36,7 @@ async function callOpenRouter(
             model,
             models: fallbacks,
             temperature: 0.2,
-            max_tokens: 3500,
+            max_tokens: 5000,
             response_format: { type: "json_object" },
             messages: [
                 { role: "system", content: SYSTEM_PROMPT },

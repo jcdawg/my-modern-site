@@ -5,11 +5,11 @@ import ExampleLightbox from "./ExampleLightbox";
 const FAQS = [
     {
         q: "What is a hiring scorecard?",
-        a: "A hiring scorecard defines the mission, outcomes, competencies and interview questions for a role before you interview anyone. Every candidate is rated on the same 1 to 5 scale so the team can compare people fairly.",
+        a: "A hiring scorecard defines the mission, outcomes, competencies and interview questions for a role before you interview anyone. Each competency has questions that test it, a clear picture of what a 5 looks like, and red flags, so every candidate is rated on the same 1 to 5 scale.",
     },
     {
         q: "How do you build a hiring scorecard for a sales role?",
-        a: "Start with the mission and the outcomes at 90 days, 6 months and 12 months. Add competencies that cover quota ownership, ramp, deal motion and discovery. Map interview and reference questions to each competency. This tool adds those sales focused sections when the role looks like GTM or sales.",
+        a: "Start with the mission and the outcomes at 90 days, 6 months and 12 months. Add competencies that cover quota ownership, ramp, deal motion and discovery. Put 1 to 2 questions under each competency, write what a 5 looks like in concrete behaviors, and keep a short list of additional cross-cutting questions.",
     },
     {
         q: "How many competencies should a scorecard have?",
@@ -17,15 +17,15 @@ const FAQS = [
     },
     {
         q: "How do you rate candidates fairly?",
-        a: "Write what a 5 looks like and the red flags before the first interview. Ask every candidate the same mapped questions. Score each competency 1 to 5 with notes, then compare the cards, not the vibes.",
+        a: "Write what a 5 looks like and the red flags before the first interview. Ask the competency questions of every candidate. Score each competency 1 to 5 with notes, then compare the cards, not the vibes.",
     },
     {
         q: "Does this tool store my job description?",
-        a: "No. Pasted text is sent to an AI provider to build the scorecard and is not stored by us. Optional email capture is separate and only used if you choose to leave an address.",
+        a: "No. Pasted text is sent to an AI provider to build the scorecard and is not stored by us. An optional email goes to The Kas Group and is used to follow up.",
     },
     {
         q: "Can I use this for AI or data roles?",
-        a: "Yes. When the role looks like AI, data or ML, the scorecard adds sections for technical depth, evaluation approach and tooling, on top of the standard mission, outcomes and competencies.",
+        a: "Yes. When the role looks like AI, data or ML, the scorecard adds sections for technical depth, evaluation approach and tooling, on top of the standard mission, outcomes and per-competency questions.",
     },
 ];
 
@@ -74,7 +74,7 @@ export default function HiringScorecardPage() {
                         <div className="lg:col-span-3 p-6 rounded-2xl bg-blue-accent/5 border-2 border-blue-accent">
                             <h2 className="text-xl font-bold text-navy-900 mb-3">Direct answer</h2>
                             <p className="text-base text-grey-700 leading-relaxed">
-                                A hiring scorecard defines the outcomes, skills and interview questions for a role before you interview anyone. Paste a job description below to build one with a 1 to 5 rating scale, must-haves and reference checks. Pair it with{" "}
+                                A hiring scorecard defines the outcomes, skills and interview questions for a role before you interview anyone. Paste a job description below to build one with per-competency questions, a clear &ldquo;what a 5 looks like&rdquo; anchor, must-haves and reference checks. Pair it with{" "}
                                 <Link href="/guides/account-executive-interview-questions" className={link}>AE interview questions</Link>
                                 {" "}and{" "}
                                 <Link href="/guides/cost-of-a-bad-hire" className={link}>the cost of a bad hire</Link>
@@ -101,9 +101,9 @@ export default function HiringScorecardPage() {
                         <ol className="list-decimal pl-6 space-y-2">
                             <li>Mission: one sentence on why the seat exists.</li>
                             <li>Outcomes at 90 days, 6 months and 12 months.</li>
-                            <li>Competencies rated 1 to 5, with what a 5 looks like and the red flags.</li>
+                            <li>Competencies rated 1 to 5, each with questions that test it, what a 5 looks like, an optional 3 bar, and red flags.</li>
+                            <li>A short list of additional interview questions for motivation, culture and logistics.</li>
                             <li>Must-haves versus nice-to-haves.</li>
-                            <li>Interview questions mapped to each competency.</li>
                             <li>Reference-check questions for the same competencies.</li>
                         </ol>
                     </div>
@@ -120,8 +120,14 @@ export default function HiringScorecardPage() {
                                 <li>Publish a weekly KPI pack the leadership team actually uses.</li>
                             </ul>
                             <p className="font-semibold text-navy-900">Sample competency: Process ownership</p>
-                            <p>What a 5 looks like: writes clear SOPs, trains the team, and catches drift before it becomes a miss.</p>
-                            <p>Red flags: blames other teams, cannot show a process they personally improved.</p>
+                            <p><span className="font-semibold">What a 5 looks like:</span> Writes clear SOPs, trains the team, and catches drift before it becomes a miss.</p>
+                            <p><span className="font-semibold">What a 3 looks like:</span> Follows existing SOPs and flags problems, but rarely owns a rewrite end to end.</p>
+                            <p><span className="font-semibold">Red flags:</span> Blames other teams, cannot show a process they personally improved.</p>
+                            <p><span className="font-semibold">Questions for this competency:</span></p>
+                            <ul className="list-disc pl-6">
+                                <li>Walk me through a process you rebuilt end to end. What changed?</li>
+                                <li>How do you know an SOP is actually being followed?</li>
+                            </ul>
                             <p className="text-sm text-grey-500">Built with The Kas Group · example only</p>
                         </div>
                     </div>
