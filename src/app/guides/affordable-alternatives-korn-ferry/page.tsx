@@ -4,8 +4,8 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: 'Sales Recruiting Alternatives to Korn Ferry',
-    description: 'Sales recruiting alternatives to Korn Ferry for venture backed SaaS and AI companies: what to look for, and how The Kas Group programs work.',
+    title: 'Korn Ferry Alternatives for B2B AE Searches',
+    description: 'Korn Ferry alternatives for AE and senior AE hiring at venture backed SaaS and AI companies: what to look for, and how The Kas Group programs work.',
     path: "/guides/affordable-alternatives-korn-ferry",
 };
 
