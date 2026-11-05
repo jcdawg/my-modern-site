@@ -112,8 +112,10 @@ export async function POST(req: NextRequest) {
         // for our schema, retry once starting at the paid model.
         let lastError = "unknown";
         const attempts: { model: string; fallbacks: string[] }[] = [
-            { model: MODEL_ORDER[0], fallbacks: [...MODEL_ORDER.slice(1)] },
-            { model: MODEL_ORDER[MODEL_ORDER.length - 1], fallbacks: [] },
+            { model: MODEL_ORDER[0], fallbacks: MODEL_ORDER.length > 1 ? [MODEL_ORDER[1]] : [] },
+            ...(MODEL_ORDER.length > 1
+                ? [{ model: MODEL_ORDER[1], fallbacks: [] as string[] }]
+                : []),
         ];
 
         for (const attempt of attempts) {

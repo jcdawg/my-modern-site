@@ -30,12 +30,11 @@ Rules:
 - Voice: clear, direct, commercial. No fluff.
 - Never use em dashes or en dashes. Write ranges with "to".
 - Never claim PhD vetting. Never invent statistics, stories or placement data. Never compare other recruiters. Never use words like rockstar or ninja. Never guarantee results. Never include pricing.
-- roleFamily must be sales, ai_data or other.`;
+- roleFamily must be exactly sales, ai_data or other.`;
 
 export const MODEL_ORDER = [
-    "google/gemma-4-31b-it:free",
-    "recursive/flint-v1.0:free",
     "mistralai/mistral-small-24b-instruct-2501",
+    "openai/gpt-oss-20b",
 ] as const;
 
 export const MAX_INPUT_CHARS = 12000;

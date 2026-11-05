@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ScorecardBuilder from "./ScorecardBuilder";
+import ExampleLightbox from "./ExampleLightbox";
 
 const FAQS = [
     {
@@ -69,15 +70,20 @@ export default function HiringScorecardPage() {
                     <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-navy-900 leading-tight">
                         Build a hiring scorecard before the first interview
                     </h1>
-                    <div className="p-6 rounded-2xl bg-blue-accent/5 border-2 border-blue-accent">
-                        <h2 className="text-xl font-bold text-navy-900 mb-3">Direct answer</h2>
-                        <p className="text-base text-grey-700 leading-relaxed">
-                            A hiring scorecard defines the outcomes, skills and interview questions for a role before you interview anyone. Paste a job description below to build one with a 1 to 5 rating scale, must-haves and reference checks. Pair it with{" "}
-                            <Link href="/guides/account-executive-interview-questions" className={link}>AE interview questions</Link>
-                            {" "}and{" "}
-                            <Link href="/guides/cost-of-a-bad-hire" className={link}>the cost of a bad hire</Link>
-                            {" "}when the seat is sales or GTM.
-                        </p>
+                    <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+                        <div className="lg:col-span-3 p-6 rounded-2xl bg-blue-accent/5 border-2 border-blue-accent">
+                            <h2 className="text-xl font-bold text-navy-900 mb-3">Direct answer</h2>
+                            <p className="text-base text-grey-700 leading-relaxed">
+                                A hiring scorecard defines the outcomes, skills and interview questions for a role before you interview anyone. Paste a job description below to build one with a 1 to 5 rating scale, must-haves and reference checks. Pair it with{" "}
+                                <Link href="/guides/account-executive-interview-questions" className={link}>AE interview questions</Link>
+                                {" "}and{" "}
+                                <Link href="/guides/cost-of-a-bad-hire" className={link}>the cost of a bad hire</Link>
+                                {" "}when the seat is sales or GTM.
+                            </p>
+                        </div>
+                        <div className="lg:col-span-2">
+                            <ExampleLightbox />
+                        </div>
                     </div>
                 </div>
             </section>

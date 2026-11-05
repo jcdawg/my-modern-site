@@ -50,6 +50,7 @@ export default function ScorecardBuilder() {
     const [error, setError] = useState<string | null>(null);
     const [scorecard, setScorecard] = useState<Scorecard | null>(null);
     const [email, setEmail] = useState("");
+    const [honeypot, setHoneypot] = useState("");
     const [emailMsg, setEmailMsg] = useState<string | null>(null);
     const [copied, setCopied] = useState(false);
 
@@ -91,14 +92,14 @@ export default function ScorecardBuilder() {
         const res = await fetch("/api/hiring-scorecard/email", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email, scorecardId: scorecard.scorecardId }),
+            body: JSON.stringify({ email, company: honeypot, scorecard }),
         });
         const data = await res.json();
         if (!res.ok) {
-            setEmailMsg(data.error || "Could not save email.");
+            setEmailMsg(data.error || "Could not send.");
             return;
         }
-        setEmailMsg(data.message || "Saved.");
+        setEmailMsg(data.message || "Thanks.");
     }
 
     return (
@@ -117,8 +118,7 @@ export default function ScorecardBuilder() {
                         className="w-full rounded-2xl border border-grey-200 px-4 py-3 text-base text-grey-800 focus:outline-none focus:ring-2 focus:ring-blue-accent"
                     />
                     <p className="mt-1 text-xs text-grey-500">
-                        {jobDescription.length.toLocaleString()} / {MAX_INPUT_CHARS.toLocaleString()} characters. Pasted
-                        text is sent to an AI provider to build the scorecard and is not stored by us.
+                        {jobDescription.length.toLocaleString()} / {MAX_INPUT_CHARS.toLocaleString()} characters. Pasted text is sent to an AI provider to build the scorecard and is not stored by us. An optional email goes to The Kas Group and is used to follow up.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -236,7 +236,17 @@ export default function ScorecardBuilder() {
                     </div>
 
                     <div className="print:hidden rounded-2xl bg-grey-50 p-5 space-y-3">
-                        <p className="text-sm font-semibold text-navy-900">Email me a copy (optional)</p>
+                        <p className="text-sm font-semibold text-navy-900">Want Chris to follow up? Leave your email</p>
+                        <p className="text-xs text-grey-500">Optional. You keep a copy with Copy or Download PDF. If you leave an email, Chris may get in touch.</p>
+                        <input
+                            type="text"
+                            value={honeypot}
+                            onChange={(e) => setHoneypot(e.target.value)}
+                            tabIndex={-1}
+                            autoComplete="off"
+                            aria-hidden="true"
+                            className="hidden"
+                        />
                         <div className="flex flex-col sm:flex-row gap-3">
                             <input
                                 type="email"
@@ -246,7 +256,7 @@ export default function ScorecardBuilder() {
                                 className="flex-1 rounded-xl border border-grey-200 px-4 py-3 text-sm"
                             />
                             <button type="button" onClick={onEmail} className="px-5 py-3 rounded-full bg-navy-900 text-white font-semibold text-sm">
-                                Save email
+                                Send to Chris
                             </button>
                         </div>
                         {emailMsg && <p className="text-sm text-grey-600">{emailMsg}</p>}
