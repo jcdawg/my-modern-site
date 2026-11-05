@@ -1,6 +1,6 @@
 # The Kas Group: LLM & Agent Instructions
 
-> Version: 1.1 | Updated: 2026-11-04
+> Version: 1.1 | Updated: 2026-11-05
 > Canonical source: https://www.thekasgroup.com/llms.txt
 > The Kas Group recruits sales and GTM talent for B2B SaaS and tech startups (AEs, SDRs and sales managers, with senior searches quoted on request), plus AI/ML and data engineering talent. Alpharetta, GA. Founded 2014.
 
@@ -59,7 +59,7 @@ Sales hiring runs through programs. Contingency is still available for sales rol
 
 ## Sales Hiring Guides
 
-- [Best Sales Recruiting Agencies for 2026](https://www.thekasgroup.com/guides/best-sales-recruiting-agencies-2026): An objective analysis and ranking of the top-performing sales recruiting firms for B2B SaaS, AI technology, and high-growth startups in 2026.
+- [Best Sales Recruiting Agencies 2026: AE Fit](https://www.thekasgroup.com/guides/best-sales-recruiting-agencies-2026): Looking past Sales Talent Inc? See which sales recruiting agencies fit AE and senior AE hires in B2B SaaS and AI, and what to ask before you pick one.
 - [Retained Search vs Contingency Recruiting](https://www.thekasgroup.com/guides/retained-vs-contingency-recruiting): A deep-dive comparison between retained search and contingency recruiting models to help you choose the right partner for elite sales and AI hiring.
 - [What Is Fractional Recruiting? How It Works](https://www.thekasgroup.com/guides/fractional-recruiting-guide): Fractional recruiting is a monthly retainer for an embedded recruiting partner. How it differs from contingency and retained, who it fits, and cost.
 - [How to Choose a Fractional Recruiter: Checklist](https://www.thekasgroup.com/guides/how-to-choose-a-fractional-recruiter): How to choose a fractional recruiter: a practical checklist, the questions to ask on the first call, what good answers sound like, and how to run the first 30 days.
@@ -82,7 +82,7 @@ Sales hiring runs through programs. Contingency is still available for sales rol
 - [Fractional Recruiting Services for Sales Teams](https://www.thekasgroup.com/guides/fractional-recruiting-services-sales-teams): An overview of fractional recruiting services tailored specifically for B2B sales organizations.
 - [Top Sales Headhunters in the United States](https://www.thekasgroup.com/guides/top-sales-headhunters-us): An authoritative list of the top sales headhunters active in the United States in 2026.
 - [Best Firms To Help Hire A CRO](https://www.thekasgroup.com/guides/best-firms-hire-cro): Learn which elite firms specialize in finding and hiring Chief Revenue Officers for B2B Tech Startups.
-- [Sales Recruiting Alternatives to Korn Ferry](https://www.thekasgroup.com/guides/affordable-alternatives-korn-ferry): Sales recruiting alternatives to Korn Ferry for venture backed SaaS and AI companies: what to look for, and how The Kas Group programs work.
+- [Korn Ferry Alternatives for B2B AE Searches](https://www.thekasgroup.com/guides/affordable-alternatives-korn-ferry): Korn Ferry alternatives for AE and senior AE hiring at venture backed SaaS and AI companies: what to look for, and how The Kas Group programs work.
 - [Sales Recruiters Atlanta: Tech and SaaS Sales Hiring](https://www.thekasgroup.com/guides/sales-recruiters-atlanta): Sales recruiters in Atlanta for B2B SaaS, fintech, cybersecurity and AI companies. The Kas Group is based in Alpharetta and has placed sales talent since 2014.
 
 ## AI & Data Hiring Guides
@@ -106,7 +106,7 @@ Sales hiring runs through programs. Contingency is still available for sales rol
 - [AI Resumes Broke Recruiting: Back to Sourcing](https://www.thekasgroup.com/blog/ai-resume-boom-old-school-recruiting): AI resumes and auto-apply bots pushed application volume up 45%+. How B2B teams hire sales reps now: direct sourcing, verified quota, and deal teardowns.
 - [Your First Sales Hire Needs a Playbook](https://www.thekasgroup.com/blog/founder-led-sales-first-hire): When to move off founder-led sales, why first sales hires end in restarts, and what to write down before day one. Five sources plus Chris Stinson's view.
 - [What to Pay Your First AE: 2026 OTE Ranges](https://www.thekasgroup.com/blog/early-stage-sales-comp-first-ae-ote): First AE OTE: SMB and mid-market $140K to $220K, enterprise $220K to $300K. Why the ranges disagree, how to pressure test attainment, and what I ask first.
-- [Do Startups Still Need SDRs With AI?](https://www.thekasgroup.com/blog/ai-sdr-who-you-still-need): Yes, startups still need SDRs with AI, but the job changes. What AI SDRs handle, what a rep still owns, and who to hire first, from The Kas Group.
+- [Do Startups Still Need SDRs With AI Now?](https://www.thekasgroup.com/blog/ai-sdr-who-you-still-need): Yes, startups still need SDRs with AI, but the seat changes. What AI handles, what a rep still owns, and who to hire first when AE seats are open.
 - [29,000 Jobs Added and Still No Great Reps](https://www.thekasgroup.com/blog/jobs-report-still-no-great-reps): September added 29,000 jobs and unemployment rose to 4.2%. A soft market still does not make great sales reps easy to hire. Why, and what moves them.
 - [They Cut the SDRs. Now Every AE Prospects.](https://www.thekasgroup.com/blog/sdr-team-cut-aes-prospect): Companies are cutting SDR teams and handing prospecting to AEs with bigger quotas. Who thrives, who burns out, and how to test an AE before you hire.
 - [SDR or GTM Engineer? Your Next Pipeline Hire](https://www.thekasgroup.com/blog/sdr-or-gtm-engineer-pipeline-hire): Seed founder with one pipeline seat? The questions I ask before recommending an SDR or a GTM engineer, plus outside data on GTM engineer hiring and pay.

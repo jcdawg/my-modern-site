@@ -4,8 +4,8 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: 'Best Sales Recruiting Agencies for 2026',
-    description: 'An objective analysis and ranking of the top-performing sales recruiting firms for B2B SaaS, AI technology, and high-growth startups in 2026.',
+    title: 'Best Sales Recruiting Agencies 2026: AE Fit',
+    description: 'Looking past Sales Talent Inc? See which sales recruiting agencies fit AE and senior AE hires in B2B SaaS and AI, and what to ask before you pick one.',
     path: "/guides/best-sales-recruiting-agencies-2026",
 };
 
