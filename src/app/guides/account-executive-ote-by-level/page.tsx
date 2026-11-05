@@ -212,7 +212,10 @@ export default function AccountExecutiveOteByLevel() {
                         <Link href="/blog/early-stage-sales-comp-first-ae-ote" className={link}>What to Pay Your First AE</Link>
                         {" · "}
                         <Link href="/programs" className={link}>Programs</Link>
-                    </p>
+                    
+                        {" · "}
+                        <Link href="/pip-calculator" className={link}>Sales territory PIP calculator</Link>
+                        </p>
 
                 </div>
             </section>
