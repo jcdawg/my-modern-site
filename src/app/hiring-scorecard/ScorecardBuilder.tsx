@@ -25,16 +25,20 @@ function scorecardPlainText(s: Scorecard): string {
     ];
     s.competencies.forEach((c, i) => {
         lines.push(`${i + 1}. ${c.name}`);
-        lines.push(`   What a 5 looks like: ${c.whatFiveLooksLike}`);
+        lines.push(`   What a 5 looks like:`);
+        c.fiveLooksLike.forEach((x) => lines.push(`     - ${x}`));
+        if (c.threeLooksLike) lines.push(`   What a 3 looks like: ${c.threeLooksLike}`);
         lines.push(`   Red flags: ${c.redFlags}`);
-        lines.push(`   Interview questions:`);
-        c.interviewQuestions.forEach((q) => lines.push(`     - ${q}`));
+        lines.push(`   Questions for this competency:`);
+        c.questions.forEach((q) => lines.push(`     - ${q}`));
         lines.push(`   Reference-check questions:`);
         c.referenceQuestions.forEach((q) => lines.push(`     - ${q}`));
     });
-    lines.push("", `4. Must-haves`);
+    lines.push("", `4. Additional interview questions`);
+    s.additionalInterviewQuestions.forEach((x) => lines.push(`  - ${x}`));
+    lines.push("", `5. Must-haves`);
     s.mustHaves.forEach((x) => lines.push(`  - ${x}`));
-    lines.push("", `5. Nice-to-haves`);
+    lines.push("", `6. Nice-to-haves`);
     s.niceToHaves.forEach((x) => lines.push(`  - ${x}`));
     lines.push("", `Built with The Kas Group`, `https://www.thekasgroup.com/hiring-scorecard`);
     return lines.join("\n");
@@ -192,11 +196,17 @@ export default function ScorecardBuilder() {
                         {scorecard.competencies.map((c) => (
                             <div key={c.name} className="rounded-2xl bg-grey-50 p-5 space-y-2">
                                 <p className="font-bold text-navy-900">{c.name}</p>
-                                <p className="text-grey-700"><span className="font-semibold">What a 5 looks like:</span> {c.whatFiveLooksLike}</p>
+                                <div>
+                                    <p className="font-semibold text-navy-900">What a 5 looks like</p>
+                                    <ul className="list-disc pl-6 text-grey-700">{c.fiveLooksLike.map((x) => <li key={x}>{x}</li>)}</ul>
+                                </div>
+                                {c.threeLooksLike && (
+                                    <p className="text-grey-700"><span className="font-semibold">What a 3 looks like:</span> {c.threeLooksLike}</p>
+                                )}
                                 <p className="text-grey-700"><span className="font-semibold">Red flags:</span> {c.redFlags}</p>
                                 <div>
-                                    <p className="font-semibold text-navy-900">Interview questions</p>
-                                    <ul className="list-disc pl-6 text-grey-700">{c.interviewQuestions.map((q) => <li key={q}>{q}</li>)}</ul>
+                                    <p className="font-semibold text-navy-900">Questions for this competency</p>
+                                    <ul className="list-disc pl-6 text-grey-700">{c.questions.map((q) => <li key={q}>{q}</li>)}</ul>
                                 </div>
                                 <div>
                                     <p className="font-semibold text-navy-900">Reference-check questions</p>
@@ -207,11 +217,15 @@ export default function ScorecardBuilder() {
                     </section>
 
                     <section>
-                        <h3 className="text-xl font-bold text-navy-900 mb-2">4. Must-haves</h3>
+                        <h3 className="text-xl font-bold text-navy-900 mb-2">4. Additional interview questions</h3>
+                        <ul className="list-disc pl-6 text-grey-700">{scorecard.additionalInterviewQuestions.map((x) => <li key={x}>{x}</li>)}</ul>
+                    </section>
+                    <section>
+                        <h3 className="text-xl font-bold text-navy-900 mb-2">5. Must-haves</h3>
                         <ul className="list-disc pl-6 text-grey-700">{scorecard.mustHaves.map((x) => <li key={x}>{x}</li>)}</ul>
                     </section>
                     <section>
-                        <h3 className="text-xl font-bold text-navy-900 mb-2">5. Nice-to-haves</h3>
+                        <h3 className="text-xl font-bold text-navy-900 mb-2">6. Nice-to-haves</h3>
                         <ul className="list-disc pl-6 text-grey-700">{scorecard.niceToHaves.map((x) => <li key={x}>{x}</li>)}</ul>
                     </section>
 

@@ -12,12 +12,14 @@ Return ONLY valid JSON with this exact shape:
   "competencies": [
     {
       "name": "string",
-      "whatFiveLooksLike": "string",
+      "questions": ["interview question that tests this competency", "optional second question"],
+      "fiveLooksLike": ["concrete behavior of a top candidate", "optional second line"],
+      "threeLooksLike": "one line for the acceptable bar",
       "redFlags": "string",
-      "interviewQuestions": ["string", "string"],
       "referenceQuestions": ["string"]
     }
   ],
+  "additionalInterviewQuestions": ["cross-cutting question 1", "question 2", "question 3"],
   "mustHaves": ["string"],
   "niceToHaves": ["string"],
   "roleFamily": "sales" | "ai_data" | "other"
@@ -25,8 +27,9 @@ Return ONLY valid JSON with this exact shape:
 
 Rules:
 - Include 4 to 6 competencies.
+- For EACH competency: 1 to 2 questions that directly test it; 1 to 2 concrete "what a 5 looks like" behavioral lines; optionally one "what a 3 looks like" line; keep red flags.
+- additionalInterviewQuestions: exactly 3 or 4 cross-cutting questions (motivation, culture fit, logistics, work style). Do NOT repeat the per-competency questions there.
 - Neutral across roles. For sales or GTM roles, cover quota ownership, ramp, deal motion, discovery and coaching where relevant. For AI, data or ML roles, cover technical depth, evaluation approach and tooling. Other roles use the standard format.
-- Rate scale context: each competency is scored 1 to 5. Describe what a 5 looks like and the red flags. Do not invent statistics.
 - Voice: clear, direct, commercial. No fluff.
 - Never use em dashes or en dashes. Write ranges with "to".
 - Never claim PhD vetting. Never invent statistics, stories or placement data. Never compare other recruiters. Never use words like rockstar or ninja. Never guarantee results. Never include pricing.

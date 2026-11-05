@@ -32,16 +32,20 @@ function scorecardPlainText(s: Scorecard): string {
     ];
     s.competencies.forEach((c, i) => {
         lines.push(`${i + 1}. ${c.name}`);
-        lines.push(`   What a 5 looks like: ${c.whatFiveLooksLike}`);
+        lines.push("   What a 5 looks like:");
+        c.fiveLooksLike.forEach((x) => lines.push(`     - ${x}`));
+        if (c.threeLooksLike) lines.push(`   What a 3 looks like: ${c.threeLooksLike}`);
         lines.push(`   Red flags: ${c.redFlags}`);
-        lines.push("   Interview questions:");
-        c.interviewQuestions.forEach((q) => lines.push(`     - ${q}`));
+        lines.push("   Questions for this competency:");
+        c.questions.forEach((q) => lines.push(`     - ${q}`));
         lines.push("   Reference-check questions:");
         c.referenceQuestions.forEach((q) => lines.push(`     - ${q}`));
     });
-    lines.push("", "4. Must-haves");
+    lines.push("", "4. Additional interview questions");
+    s.additionalInterviewQuestions.forEach((x) => lines.push(`  - ${x}`));
+    lines.push("", "5. Must-haves");
     s.mustHaves.forEach((x) => lines.push(`  - ${x}`));
-    lines.push("", "5. Nice-to-haves");
+    lines.push("", "6. Nice-to-haves");
     s.niceToHaves.forEach((x) => lines.push(`  - ${x}`));
     lines.push("", "Built with The Kas Group");
     return sanitizeScorecardText(lines.join("\n"));
