@@ -42,7 +42,7 @@ export default function ExampleLightbox() {
             >
                 <Image
                     src="/images/hiring-scorecard-example-teaser.png"
-                    alt="Example hiring scorecard teaser for an Operations Manager role, Built with The Kas Group"
+                    alt="Example hiring scorecard teaser for an Account Executive role, Built with The Kas Group"
                     width={600}
                     height={429}
                     className="w-full h-auto"
@@ -80,9 +80,9 @@ export default function ExampleLightbox() {
                         </div>
                         <Image
                             src="/images/hiring-scorecard-example.png"
-                            alt="Full example hiring scorecard for an Operations Manager role with mission, outcomes, competencies and Built with The Kas Group footer"
+                            alt="Full example hiring scorecard for an Account Executive role with mission, outcomes, competencies and Built with The Kas Group footer"
                             width={1200}
-                            height={2259}
+                            height={2465}
                             className="w-full h-auto"
                         />
                     </div>
