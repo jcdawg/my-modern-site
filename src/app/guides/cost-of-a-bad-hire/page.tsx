@@ -204,6 +204,8 @@ export default function CostOfBadHireGuide() {
                     <p className="text-grey-600 text-base">
                         Running a PIP on an underperforming AE? Try the free{" "}
                         <Link href="/pip-calculator" className={link}>sales territory PIP calculator</Link>
+                        {" · "}
+                        <Link href="/hiring-scorecard" className={link}>hiring scorecard builder</Link>
                         {" "}to estimate quota lost during the PIP, empty chair, and ramp.
                     </p>
 

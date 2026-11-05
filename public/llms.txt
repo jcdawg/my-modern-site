@@ -122,6 +122,7 @@ Sales hiring runs through programs. Contingency is still available for sales rol
 - [AI, ML & Data Engineer Recruiting for Insurance](https://www.thekasgroup.com/insurance): Hiring AI, ML, or data engineers? The Kas Group helps insurance carriers, MGAs, and insurtechs define the role, then find production-ready talent.
 - [Our Methodology](https://www.thekasgroup.com/methodology): Learn about The Kas Group's elite hiring methodology, including our Ph.D.-led technical vetting for AI/ML and Data roles.
 - [Sales Territory Optimization Calculator](https://www.thekasgroup.com/pip-calculator): Measure the true financial cost of an underperforming sales rep on PIP, empty-chair downtime, and ramp. Plan confidential replacements with The Kas Group.
+- [Hiring Scorecard Builder](https://www.thekasgroup.com/hiring-scorecard): Build a free hiring scorecard from a job description: outcomes, competencies rated 1 to 5, interview questions and reference checks. From The Kas Group.
 - [Confidential Shortlist Matrix](https://www.thekasgroup.com/candidate-mapping-brief): Active cohort mapping and confidential shortlist matrix for GTM and technical talent from The Kas Group.
 
 ## Machine-Readable Resources

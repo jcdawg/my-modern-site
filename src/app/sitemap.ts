@@ -71,6 +71,7 @@ const entries: Entry[] = [
     { path: '/guides/active-vs-passive-candidates', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/do-ai-resume-screeners-work', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/pip-calculator', changeFrequency: 'monthly', priority: 0.8 },
+    { path: '/hiring-scorecard', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/candidate-mapping-brief', changeFrequency: 'monthly', priority: 0.7 },
     { path: '/programs', changeFrequency: 'weekly', priority: 0.9 },
 ]
