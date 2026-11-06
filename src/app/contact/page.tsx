@@ -24,7 +24,7 @@ const contactMethods = [
         title: "Schedule a Call",
         value: "Free discovery call",
         detail: "Tell us about your hiring need",
-        href: "mailto:chris@thekasgroup.com?subject=Discovery%20Call%20Request",
+        href: "/contact#contact-form",
         cta: "Request a call",
     },
     {
@@ -94,12 +94,21 @@ export default function ContactPage() {
                             <p className="mt-2 text-lg font-semibold text-navy-900">{method.value}</p>
                             <p className="mt-1 text-sm text-grey-500">{method.detail}</p>
                             {method.href ? (
-                                <Link
-                                    href={method.href}
-                                    className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-accent hover:text-blue-hover hover:underline"
-                                >
-                                    {method.cta} <ChevronRight className="h-4 w-4" />
-                                </Link>
+                                method.href.startsWith("mailto:") ? (
+                                    <a
+                                        href={method.href}
+                                        className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-accent hover:text-blue-hover hover:underline"
+                                    >
+                                        {method.cta} <ChevronRight className="h-4 w-4" />
+                                    </a>
+                                ) : (
+                                    <Link
+                                        href={method.href}
+                                        className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-accent hover:text-blue-hover hover:underline"
+                                    >
+                                        {method.cta} <ChevronRight className="h-4 w-4" />
+                                    </Link>
+                                )
                             ) : null}
                         </div>
                     ))}
@@ -117,7 +126,7 @@ export default function ContactPage() {
                             <p className="text-grey-500 mb-8">
                                 Share a few details and we&apos;ll take it from there.
                             </p>
-                            <div className="rounded-3xl border border-grey-200 bg-white p-6 sm:p-10 shadow-sm">
+                            <div id="contact-form" className="scroll-mt-24 rounded-3xl border border-grey-200 bg-white p-6 sm:p-10 shadow-sm">
                                 <ContactForm />
                             </div>
                         </div>
@@ -151,12 +160,12 @@ export default function ContactPage() {
 
                             <div className="rounded-3xl bg-navy-900 p-8 text-white shadow-sm">
                                 <h3 className="text-lg font-bold mb-3">Prefer to just call?</h3>
-                                <p className="text-grey-300 text-sm mb-5">
+                                <p className="text-grey-200 text-sm mb-5">
                                     Email is the fastest way to reach us, but we&rsquo;re happy to
                                     schedule a free discovery call to talk through your hiring needs.
                                 </p>
                                 <Link
-                                    href="mailto:chris@thekasgroup.com?subject=Discovery%20Call%20Request"
+                                    href="/contact#contact-form"
                                     className="inline-flex items-center gap-2 rounded-full bg-blue-accent px-5 py-3 text-sm font-semibold text-white hover:bg-blue-hover transition-colors"
                                 >
                                     Request a call <ChevronRight className="h-4 w-4" />
