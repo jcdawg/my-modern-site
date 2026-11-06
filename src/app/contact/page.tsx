@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, MapPin, Clock, ChevronRight, CalendarClock } from "lucide-react";
+import { MapPin, Clock, ChevronRight, CalendarClock } from "lucide-react";
 import ContactForm from "./ContactForm";
 import { pageMetadata } from "@/lib/seo";
 
@@ -11,14 +11,6 @@ export const metadata = pageMetadata({
 });
 
 const contactMethods = [
-    {
-        icon: Mail,
-        title: "Email Us",
-        value: "chris@thekasgroup.com",
-        detail: "Best for detailed inquiries",
-        href: "mailto:chris@thekasgroup.com",
-        cta: "Send an email",
-    },
     {
         icon: CalendarClock,
         title: "Schedule a Call",
@@ -81,7 +73,7 @@ export default function ContactPage() {
 
             {/* Contact Methods Grid */}
             <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {contactMethods.map((method) => (
                         <div
                             key={method.title}
