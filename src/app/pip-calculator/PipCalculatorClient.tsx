@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, AlertTriangle, Clock, TrendingDown, MoveRight, Calculator, Users, Shield, Target } from "lucide-react";
 
-export default function PipCalculatorClient() {
+export default function PipCalculatorClient({ children }: { children?: React.ReactNode }) {
   // --- State for Calculator Inputs ---
   const [targetQuota, setTargetQuota] = useState(100000); // Monthly Rep Quota ($)
   const [attainment, setAttainment] = useState(40); // Current Quota Attainment (%)
@@ -243,6 +243,8 @@ export default function PipCalculatorClient() {
           </div>
         </div>
       </section>
+
+      {children}
 
       {/* Content Sections */}
       <section className="py-24 bg-white border-y border-slate-100">

@@ -151,17 +151,10 @@ export default function ContactPage() {
                             </div>
 
                             <div className="rounded-3xl bg-navy-900 p-8 text-white shadow-sm">
-                                <h3 className="text-lg font-bold mb-3">Prefer to just call?</h3>
-                                <p className="text-grey-200 text-sm mb-5">
-                                    Email is the fastest way to reach us, but we&rsquo;re happy to
-                                    schedule a free discovery call to talk through your hiring needs.
+                                <h3 className="text-lg font-bold mb-3">How fast will I hear back?</h3>
+                                <p className="text-grey-200 text-sm">
+                                    We typically respond to inquiries within one business day. For time-sensitive searches, mention urgency in your message and we&apos;ll prioritize it.
                                 </p>
-                                <Link
-                                    href="/contact#contact-form"
-                                    className="inline-flex items-center gap-2 rounded-full bg-blue-accent px-5 py-3 text-sm font-semibold text-white hover:bg-blue-hover transition-colors"
-                                >
-                                    Request a call <ChevronRight className="h-4 w-4" />
-                                </Link>
                             </div>
                         </aside>
                     </div>
