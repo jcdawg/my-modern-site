@@ -72,25 +72,25 @@ export default function PipCalculatorPage() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
 
-            <section className="bg-white border-b border-grey-200 px-6 py-10 lg:px-8">
-                <div className="mx-auto max-w-4xl space-y-6">
-                    <div className="p-6 rounded-2xl bg-blue-accent/5 border-2 border-blue-accent">
-                        <h2 className="text-xl font-bold text-navy-900 mb-3">Direct answer</h2>
-                        <p className="text-base text-grey-700 leading-relaxed">
-                            This free calculator estimates how much quota an underperforming AE or senior AE seat can leak during a PIP, while the chair is empty, and while a replacement ramps. Adjust monthly quota, attainment, PIP days, time to hire, and ramp months. The default run totals $470,000. Pair it with{" "}
-                            <Link href="/guides/cost-of-a-bad-hire" className={link}>the cost of a bad hire guide</Link>
-                            {" "}and the{" "}
-                            <Link href="/guides/account-executive-interview-questions" className={link}>AE interview questions</Link>
-                            {" "}guide when you decide whether to coach or replace.
+            <PipCalculatorClient>
+                <section className="bg-white px-6 py-8 lg:px-8">
+                    <div className="mx-auto max-w-4xl space-y-3">
+                        <div className="p-5 rounded-2xl bg-blue-accent/5 border border-blue-accent/40">
+                            <h2 className="text-base font-bold text-navy-900 mb-2">Direct answer</h2>
+                            <p className="text-sm text-grey-700 leading-relaxed">
+                                This free calculator estimates how much quota an underperforming AE or senior AE seat can leak during a PIP, while the chair is empty, and while a replacement ramps. Adjust monthly quota, attainment, PIP days, time to hire, and ramp months. The default run totals $470,000. Pair it with{" "}
+                                <Link href="/guides/cost-of-a-bad-hire" className={link}>the cost of a bad hire guide</Link>
+                                {" "}and the{" "}
+                                <Link href="/guides/account-executive-interview-questions" className={link}>AE interview questions</Link>
+                                {" "}guide when you decide whether to coach or replace.
+                            </p>
+                        </div>
+                        <p className="text-sm text-grey-500">
+                            Updated Nov 2026, Chris Stinson. Chris is Managing Partner of The Kas Group and has recruited sales and GTM talent since 2014.
                         </p>
                     </div>
-                    <p className="text-sm text-grey-500">
-                        Updated Nov 2026, Chris Stinson. Chris is Managing Partner of The Kas Group and has recruited sales and GTM talent since 2014.
-                    </p>
-                </div>
-            </section>
-
-            <PipCalculatorClient />
+                </section>
+            </PipCalculatorClient>
 
             <section className="bg-white px-6 py-20 lg:px-8 border-t border-grey-200">
                 <div className="mx-auto max-w-4xl space-y-16 text-grey-700 leading-relaxed text-lg">
