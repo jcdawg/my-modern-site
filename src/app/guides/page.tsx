@@ -63,7 +63,7 @@ export default function GuidesIndex() {
                     <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-6">
                         Resource <span className="text-blue-accent">Hub</span>
                     </h1>
-                    <p className="text-xl text-grey-300 leading-relaxed max-w-2xl mx-auto">
+                    <p className="text-xl text-grey-200 leading-relaxed max-w-2xl mx-auto">
                         Actionable intelligence for building elite Sales and Data teams. Vetted by experts, powered by data.
                     </p>
                 </div>
