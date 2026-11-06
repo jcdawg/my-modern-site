@@ -104,12 +104,14 @@ export default function About() {
                                 <strong>Chris Stinson</strong> is the Founder and Lead Sales Recruiter of The Kas Group. Since 2014, he has specialized in placing elite B2B SaaS sales talent (SDRs, enterprise Account Executives and Sales Managers) and partners with Derek Norton for AI and data engineering searches. Chris is based in Alpharetta, Georgia (Atlanta metro) and recruits nationally.
                             </p>
                             <div className="mt-6">
-                                <Link
+                                <a
                                     href="https://www.linkedin.com/in/cybersecuritysalesrecruiterchris-stinson/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="text-blue-accent font-bold hover:underline"
                                 >
                                     Connect with Chris on LinkedIn &rarr;
-                                </Link>
+                                </a>
                             </div>
                         </div>
                         <div className="bg-white p-8 rounded-2xl border border-grey-200">
