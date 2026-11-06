@@ -51,6 +51,7 @@ const entries: Entry[] = [
     { path: '/blog/sdr-team-cut-aes-prospect', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/blog/sdr-or-gtm-engineer-pipeline-hire', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/blog/hiring-sales-reps-january-start', changeFrequency: 'monthly', priority: 0.8 },
+    { path: '/blog/october-2026-jobs-report-sales-hiring', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/guides/best-recruiters-saas-startups-sales', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/best-fractional-sales-recruiters', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/top-executive-search-firms-sales-leaders', changeFrequency: 'weekly', priority: 0.9 },

@@ -92,6 +92,15 @@ export default function Blog() {
             category: "Sales Leadership",
             slug: "hiring-sales-reps-january-start",
         },
+        {
+            id: 10,
+            title: "What the October 2026 Jobs Report Means for Sales Hiring",
+            excerpt: "October added 165,000 jobs and unemployment held at 4.1%. What the BLS numbers mean for AE and GTM hiring, and what I am seeing in live sales searches.",
+            date: "Nov 6, 2026",
+            author: "Chris Stinson",
+            category: "Sales Leadership",
+            slug: "october-2026-jobs-report-sales-hiring",
+        },
     ];
 
     return (

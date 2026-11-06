@@ -10,7 +10,7 @@ export type PageDates = { published: string; modified: string };
 export const PAGE_DATES: Record<string, PageDates> = {
     "/": { published: "2026-02-04T15:40:33-05:00", modified: "2026-11-04T09:15:00-05:00" },
     "/about": { published: "2026-02-04T16:43:23-05:00", modified: "2026-10-28T10:30:00-04:00" },
-    "/blog": { published: "2026-02-04T16:43:23-05:00", modified: "2026-10-16T10:00:00-04:00" },
+    "/blog": { published: "2026-02-04T16:43:23-05:00", modified: "2026-11-06T09:05:00-05:00" },
     "/blog/ai-resume-boom-old-school-recruiting": { published: "2026-09-02T15:16:23-04:00", modified: "2026-09-26T10:14:11-04:00" },
     "/blog/fractional-saas-sales-recruiting": { published: "2026-03-22T14:11:52-04:00", modified: "2026-09-26T10:14:11-04:00" },
     "/blog/founder-led-sales-first-hire": { published: "2026-10-03T14:26:57-04:00", modified: "2026-10-05T09:55:00-04:00" },
@@ -20,6 +20,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/blog/sdr-team-cut-aes-prospect": { published: "2026-10-13T10:00:00-04:00", modified: "2026-10-16T10:00:00-04:00" },
     "/blog/sdr-or-gtm-engineer-pipeline-hire": { published: "2026-10-16T10:00:00-04:00", modified: "2026-10-16T10:00:00-04:00" },
     "/blog/hiring-sales-reps-january-start": { published: "2026-10-26T17:30:00-04:00", modified: "2026-10-26T17:30:00-04:00" },
+    "/blog/october-2026-jobs-report-sales-hiring": { published: "2026-11-06T09:05:00-05:00", modified: "2026-11-06T09:05:00-05:00" },
     "/brand-facts": { published: "2026-02-25T15:07:09-05:00", modified: "2026-10-28T10:30:00-04:00" },
     "/candidate-mapping-brief": { published: "2026-08-25T15:27:41-04:00", modified: "2026-10-14T09:40:00-04:00" },
     "/contact": { published: "2026-09-10T12:52:29-04:00", modified: "2026-10-14T09:40:00-04:00" },
