@@ -43,7 +43,7 @@ const FAQS = [
     },
     {
         q: "How does The Kas Group recruit GTM engineers?",
-        a: "We clarify whether you need an internal builder or a customer facing seat, then screen for tool stack fit, shipping proof and how the person partners with sales. Searches run through Kas Seat, Kas Milestone Search or Kas Directed Pursuit, depending on how many seats you have open.",
+        a: "We lock the archetype first, then screen for shipping proof on builder seats or deal support on classic sales engineer seats. These searches run on Kas Seat or Kas Directed Pursuit, not Milestone Search, because Milestone is priced for SDR, AE, and sales manager seats.",
     },
 ];
 
@@ -149,11 +149,16 @@ export default function GtmEngineerRecruiting() {
                     <div className="space-y-4">
                         <h2 className={h2}>How The Kas Group Recruits Them</h2>
                         <p>
-                            We start by locking the archetype: internal builder, customer facing GTM engineer, or classic sales engineer. Then we screen for shipping proof or deal support skills, depending on the seat. Pricing matches our other sales searches:
+                            We start by locking the archetype: internal builder, customer facing GTM engineer, or classic sales engineer. Then we screen for shipping proof or deal support skills, depending on the seat.
+                        </p>
+                        <p>
+                            For builder and GTM engineer seats, candidates show work: workflows they shipped, tools they actually run, and how those tools tied to pipeline. For classic sales engineer seats, we look at deal support: discovery, demos, and how they partnered with an AE to close.
+                        </p>
+                        <p>
+                            These searches run on Kas Seat or Kas Directed Pursuit, not Milestone Search, because Milestone is priced for SDR, AE, and sales manager seats.
                         </p>
                         <ul className="list-disc pl-6 space-y-2">
                             <li><strong className="text-navy-900">Kas Seat:</strong> $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above.</li>
-                            <li><strong className="text-navy-900">Kas Milestone Search:</strong> SDR $5,000, AE $7,500, Senior AE or Sales Manager $10,000.</li>
                             <li><strong className="text-navy-900">Kas Directed Pursuit:</strong> on request.</li>
                         </ul>
                         <p>
