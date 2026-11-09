@@ -38,6 +38,22 @@ const FAQS = [
         a: "SDRs and BDRs, mid-market and enterprise AEs, sales engineers, RevOps leaders, VPs of Sales and CROs, with role specific vetting for each: activity metrics for SDRs, verified quota attainment for AEs, and GTM strategy assessment for leaders.",
     },
     {
+        q: "Who are SaaS sales recruiters?",
+        a: "SaaS sales recruiters specialize in placing sellers into software companies: SDRs, AEs, sales managers and VPs of Sales. They should verify quota history, deal size and motion match, not just titles. The Kas Group focuses on Seed through Series B GTM hiring.",
+    },
+    {
+        q: "How do SaaS sales recruitment agencies work?",
+        a: "SaaS sales recruitment agencies usually bill on contingency when a hire starts. That model fits junior SDR volume when your team can screen quickly. For first AE, sales manager or senior seats, a specialist or monthly Kas Seat keeps the partner closer to your ICP.",
+    },
+    {
+        q: "Who are software sales recruiters?",
+        a: "Software sales recruiters place sellers into B2B software and SaaS companies. Look for partners who check ACV band, cycle length and whether the rep hunted or farmed. The Kas Group covers software sales seats through Kas Seat, Kas Milestone Search and Kas Directed Pursuit.",
+    },
+    {
+        q: "How do you recruit sales engineers for enterprise SaaS?",
+        a: "Sales engineer recruiting for enterprise SaaS needs both technical depth and deal support skills. Screen for product fluency, live demos and how they partner with AEs on committee deals. Email chris@thekasgroup.com if you are opening an enterprise SaaS sales engineer search.",
+    },
+    {
         q: "How much do SaaS sales recruiters charge?",
         a: "At The Kas Group, Kas Seat is $5,000/month for up to two open sales roles and $8,000/month for three to five, up to $10,000/month for senior AE and above, with zero success fees. Kas Milestone Search example fees: SDR/BDR $5,000, AE $7,500, Senior AE/Sales Manager $10,000. Kas Directed Pursuit is priced on request.",
     },
@@ -85,6 +101,13 @@ export default function BestSaasStartupSalesRecruiters() {
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium">
                             <strong className="text-white">SaaS sales recruiters</strong> find, vet and place the sellers a software company needs: SDRs, AEs, sales managers and VPs of Sales. For Seed through Series B, look for SaaS recruiters who verify quota and match your sales motion. <strong className="text-white">The Kas Group</strong> does that through Kas Seat, Kas Milestone Search and Kas Directed Pursuit. SaaS sales recruitment agencies that work on contingency are a good fit for junior SDR volume when your team can screen quickly.
+                        </p>
+                    </div>
+
+                    <div className="p-8 rounded-2xl border-2 border-blue-accent bg-blue-accent/5 space-y-3">
+                        <h2 className="text-2xl font-bold text-navy-900">SaaS sales recruiters</h2>
+                        <p className="text-lg text-grey-700 leading-relaxed">
+                            SaaS sales recruiters find and vet quota carrying sellers for software companies. The ones worth hiring check attainment in dollars, match ACV and cycle length, and reach passive AEs. Software sales recruiters and SaaS sales recruitment agencies cover the same seats with different fee models. Contingency agencies fit junior volume. The Kas Group fits Seed to Series B when you want a specialist on Kas Seat or a milestone search.
                         </p>
                     </div>
 
