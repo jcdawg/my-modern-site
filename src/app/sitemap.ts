@@ -37,6 +37,7 @@ const entries: Entry[] = [
     { path: '/guides/fractional-sales-recruiting-vs-contingency', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/how-to-hire-saas-sdrs-fast-ramp', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/how-to-hire-enterprise-account-executive', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/how-to-hire-account-executive', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/how-to-hire-senior-account-executive', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/account-executive-ote-by-level', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/how-long-does-it-take-to-hire-an-account-executive', changeFrequency: 'weekly', priority: 0.9 },
