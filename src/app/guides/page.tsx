@@ -12,6 +12,7 @@ export default function GuidesIndex() {
     const salesGuides = [
         { title: "Top Sales Agencies 2026", href: "/guides/best-sales-recruiting-agencies-2026", desc: "Our annual review of the top firms for B2B sales talent." },
         { title: "How to Hire a VP of Sales", href: "/guides/who-to-hire-vp-sales-startup", desc: "Founder playbook: scorecard, weeks 1 to 10 process, when to stay AE-led, and Seat / Milestone / specialist fees." },
+        { title: "How to Hire an Account Executive", href: "/guides/how-to-hire-account-executive", desc: "Mid-level AE hiring: motion match, public-source pay, interview scorecard, time to hire and ramp." },
         { title: "How to Hire an Enterprise AE", href: "/guides/how-to-hire-enterprise-account-executive", desc: "Hunter or book of business, how to check they built the deal, and sourced pay, quota and ramp for any AE with enterprise experience." },
         { title: "How to Hire a Senior AE", href: "/guides/how-to-hire-senior-account-executive", desc: "What makes an AE senior, when you need one, sourced pay, the search timeline and the first 90 days." },
         { title: "AE OTE by Level", href: "/guides/account-executive-ote-by-level", desc: "Sourced base and OTE from SDR to enterprise AE, using RepVue, Bridge Group and dated postings." },
