@@ -99,7 +99,7 @@ export default function BestRecruitingAgenciesB2bSales() {
                         </div>
                         <div className="p-8 rounded-2xl border border-grey-200 bg-grey-50 space-y-3">
                             <h2 className="text-xl font-bold text-navy-900">B2B search agency</h2>
-                            <p className="text-grey-700 leading-relaxed">A B2B search agency runs a focused commercial search instead of general staffing. Contingency shops move volume for junior seats. A specialist or monthly seat, including Kas Seat at $5,000 a month for up to two open sales roles, fits when the ACV is real and a bad hire costs a quarter.</p>
+                            <p className="text-grey-700 leading-relaxed">A B2B search agency runs a focused commercial search instead of general staffing. Contingency shops move volume for junior seats. A specialist or monthly seat, including Kas Seat at $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above, fits when the ACV is real and a bad hire costs a quarter.</p>
                         </div>
                     </div>
 
@@ -187,7 +187,7 @@ export default function BestRecruitingAgenciesB2bSales() {
                         </p>
                         <ul className="list-disc pl-6 space-y-2 text-lg text-grey-600">
                             <li>Coverage for AE, senior AE and sales manager seats in software and related tech.</li>
-                            <li>Kas Seat at $5,000 a month for up to two open sales roles, or Kas Milestone Search priced by role.</li>
+                            <li>Kas Seat at $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above. Kas Milestone Search: SDR $5,000, AE $7,500, Senior AE or Sales Manager $10,000.</li>
                             <li>For Atlanta specific hiring, see <Link href="/guides/sales-recruiters-atlanta" className={link}>sales recruiters Atlanta</Link>. For SaaS startups, see <Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS sales recruiters</Link>.</li>
                         </ul>
                     </div>
