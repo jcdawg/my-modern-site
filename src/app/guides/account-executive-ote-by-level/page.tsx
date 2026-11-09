@@ -207,6 +207,10 @@ export default function AccountExecutiveOteByLevel() {
                         {" · "}
                         <Link href="/guides/how-to-hire-enterprise-account-executive" className={link}>How to Hire an Enterprise Account Executive</Link>
                         {" · "}
+                        <Link href="/guides/account-executive-interview-questions" className={link}>AE Interview Questions</Link>
+                        {" · "}
+                        <Link href="/hiring-scorecard" className={link}>Hiring Scorecard</Link>
+                        {" · "}
                         <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>How Long It Takes to Hire an AE</Link>
                         {" · "}
                         <Link href="/blog/early-stage-sales-comp-first-ae-ote" className={link}>What to Pay Your First AE</Link>
