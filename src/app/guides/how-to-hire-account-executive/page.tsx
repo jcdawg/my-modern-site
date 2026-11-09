@@ -139,7 +139,7 @@ export default function HowToHireAccountExecutive() {
                     <div className="space-y-4">
                         <h2 className={h2}>How The Kas Group Runs Mid-Level AE Searches</h2>
                         <ul className="list-disc pl-6 space-y-2">
-                            <li><strong className="text-navy-900">Kas Seat:</strong> $5,000 a month for up to two open sales roles and $8,000 a month for three to five.</li>
+                            <li><strong className="text-navy-900">Kas Seat:</strong> $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above.</li>
                             <li><strong className="text-navy-900">Kas Milestone Search:</strong> AE $7,500.</li>
                             <li><strong className="text-navy-900">Kas Directed Pursuit:</strong> on request.</li>
                         </ul>
