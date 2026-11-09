@@ -206,7 +206,7 @@ export default function BestRecruitingAgenciesB2bSales() {
                             ))}
                         </div>
                         <p className="text-grey-600 leading-relaxed">
-                            More reading: <Link href="/guides/retained-vs-contingency-recruiting" className="text-blue-accent hover:underline">retained vs contingency recruiting</Link>, <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className="text-blue-accent hover:underline">how long it takes to hire an account executive</Link> and <Link href="/programs" className="text-blue-accent hover:underline">programs</Link>.
+                            More reading: <Link href="/guides/retained-vs-contingency-recruiting" className="text-blue-accent hover:underline">retained vs contingency recruiting</Link>, <Link href="/guides/gtm-engineer-recruiting" className="text-blue-accent hover:underline">GTM engineer recruiting</Link>, <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className="text-blue-accent hover:underline">how long it takes to hire an account executive</Link> and <Link href="/programs" className="text-blue-accent hover:underline">programs</Link>.
                         </p>
                     </div>
 

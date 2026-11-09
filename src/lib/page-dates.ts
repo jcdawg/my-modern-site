@@ -47,6 +47,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/guides/fractional-recruiting-vs-in-house-recruiter": { published: "2026-09-10T07:40:44-07:00", modified: "2026-10-28T10:30:00-04:00" },
     "/guides/fractional-sales-recruiting-cost": { published: "2026-09-16T08:10:27-07:00", modified: "2026-11-04T09:45:00-05:00" },
     "/guides/fractional-sales-recruiting-vs-contingency": { published: "2026-09-07T06:48:37-07:00", modified: "2026-11-04T09:45:00-05:00" },
+    "/guides/gtm-engineer-recruiting": { published: "2026-11-09T10:50:00-05:00", modified: "2026-11-09T10:50:00-05:00" },
     "/guides/how-to-hire-ai-ml-engineers": { published: "2026-02-27T14:53:21-05:00", modified: "2026-10-14T09:40:00-04:00" },
     "/guides/hiring-ai-data-engineers-insurance": { published: "2026-10-25T18:30:00-04:00", modified: "2026-11-04T09:00:00-05:00" },
     "/guides/how-to-hire-senior-account-executive": { published: "2026-10-21T10:00:00-04:00", modified: "2026-11-09T10:45:00-05:00" },

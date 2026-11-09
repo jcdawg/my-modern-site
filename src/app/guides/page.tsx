@@ -17,6 +17,7 @@ export default function GuidesIndex() {
         { title: "AE OTE by Level", href: "/guides/account-executive-ote-by-level", desc: "Sourced base and OTE from SDR to enterprise AE, using RepVue, Bridge Group and dated postings." },
         { title: "How Long to Hire an AE", href: "/guides/how-long-does-it-take-to-hire-an-account-executive", desc: "How long AE and enterprise AE searches take, what changes the timeline, and a short sourced OTE summary." },
         { title: "AE Interview Questions", href: "/guides/account-executive-interview-questions", desc: "Spot a real closer: deal walkthrough red flags, the hiccups question, how to run a role play, and what hiring research says." },
+        { title: "GTM Engineer Recruiting", href: "/guides/gtm-engineer-recruiting", desc: "GTM engineer vs sales engineer, what to screen for, public-source pay, and how The Kas Group runs these searches." },
         { title: "Hire SDRs & AEs Fast", href: "/guides/how-to-hire-saas-sdrs-fast-ramp", desc: "Zero-ramp hiring: motion-match traits, quota-verified numbers, a 4-week scorecard, and comp math." },
         { title: "Top Exec Search Firms", href: "/guides/top-executive-search-firms-sales-leaders", desc: "Best firms for CRO and VP-level sales leadership." },
         { title: "What Is Fractional Recruiting?", href: "/guides/fractional-recruiting-guide", desc: "What fractional recruiting is, how it differs from contingency and retained, who it fits, cost, and how a Kas engagement runs." },
