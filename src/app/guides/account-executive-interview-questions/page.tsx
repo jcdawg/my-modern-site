@@ -154,10 +154,13 @@ export default function AccountExecutiveInterviewQuestions() {
             <section className="py-16 px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl space-y-12 text-grey-700 leading-relaxed text-lg">
 
-                    <div className="p-6 rounded-2xl bg-blue-accent/5 border-2 border-blue-accent">
-                        <h2 className="text-xl font-bold text-navy-900 mb-3">Direct answer</h2>
+                    <div className="p-6 rounded-2xl bg-blue-accent/5 border-2 border-blue-accent space-y-3">
+                        <h2 className="text-xl font-bold text-navy-900">Direct answer</h2>
                         <p className="text-base text-grey-700 leading-relaxed">
-                            Hiring an AE or a senior AE? Have them walk you through one deal they closed. Listen for where the lead came from and who on their team helped close it, then ask what hiccups came up and how they resolved them. If a big committee deal went pretty straightforward, that is a red flag. Real deals have hiccups. Get quota and results in dollars, and run a role play built on your product. Know your comp before the first call. <a href={SRC.repvue} className={link}>RepVue&apos;s 2026 data</a> puts the median at $200K OTE on a $100K base across all AE segments. More on pay in <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by level</Link> and on timing in <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>how long it takes to hire an AE</Link>.
+                            The best account executive interview questions make the candidate prove they won the deals on their resume. Ask the same ten questions in order: three on the phone screen, six in the deal walkthrough, and one role play. Listen for where the lead came from, who on their team helped close it, and what hiccups came up. If a big committee deal went pretty straightforward, that is a red flag. Real deals have hiccups. Get quota and results in dollars. Score every candidate on the same hiring manager scorecard, or generate a role specific one with the <Link href="/hiring-scorecard" className={link}>hiring scorecard</Link>.
+                        </p>
+                        <p className="text-base text-grey-700 leading-relaxed">
+                            Know your comp before the first call. <a href={SRC.repvue} className={link}>RepVue&apos;s 2026 data</a> puts the median at $200K OTE on a $100K base across all AE segments. More on pay in <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by level</Link>, on senior seats in <Link href="/guides/how-to-hire-senior-account-executive" className={link}>how to hire a senior AE</Link>, on enterprise seats in <Link href="/guides/how-to-hire-enterprise-account-executive" className={link}>how to hire an enterprise AE</Link>, and on timing in <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>how long it takes to hire an AE</Link>.
                         </p>
                     </div>
 
@@ -173,7 +176,7 @@ export default function AccountExecutiveInterviewQuestions() {
 
                     <div className="space-y-4">
                         <h2 className={h2}>Hiring Manager Scorecard for AE Interviews</h2>
-                        <p>Agree on this before the first interview. Score each row in writing before you compare notes.</p>
+                        <p>Agree on this before the first interview. Score each row in writing before you compare notes. For a role specific scorecard with interview questions and what a 5 looks like, use the free <Link href="/hiring-scorecard" className={link}>hiring scorecard</Link>.</p>
                         <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
                             <table className="w-full text-left border-collapse text-base">
                                 <thead className="bg-grey-50">
@@ -409,6 +412,10 @@ export default function AccountExecutiveInterviewQuestions() {
                         <Link href="/guides/how-to-hire-enterprise-account-executive" className={link}>How to Hire an Enterprise Account Executive</Link>
                         {" · "}
                         <Link href="/guides/how-to-hire-senior-account-executive" className={link}>How to Hire a Senior Account Executive</Link>
+                        {" · "}
+                        <Link href="/hiring-scorecard" className={link}>Hiring Scorecard</Link>
+                        {" · "}
+                        <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by Level</Link>
                         {" · "}
                         <Link href="/guides/how-to-hire-saas-sdrs-fast-ramp" className={link}>Hire SDRs and AEs with Zero Ramp-Up Time</Link>
                         {" · "}

@@ -113,7 +113,7 @@ export default function HowToHireSeniorAccountExecutive() {
                     </p>
 
                     <p>
-                        This guide is for founders and sales leaders at B2B tech and SaaS companies with 20 to 200 people. It covers what makes an AE senior, when you need one, what to pay, how long the search takes and what to get right in the first 90 days. For the full interview loop, use the <Link href="/guides/account-executive-interview-questions" className={link}>AE interview questions guide</Link>. For the step above senior, use the <Link href="/guides/how-to-hire-enterprise-account-executive" className={link}>enterprise AE guide</Link>.
+                        This guide is for founders and sales leaders at B2B tech and SaaS companies with 20 to 200 people. It covers what makes an AE senior, when you need one, what to pay, how long the search takes and what to get right in the first 90 days. For the full interview loop, use the <Link href="/guides/account-executive-interview-questions" className={link}>AE interview questions guide</Link>. For a role specific scorecard, use the <Link href="/hiring-scorecard" className={link}>hiring scorecard</Link>. For the step above senior, use the <Link href="/guides/how-to-hire-enterprise-account-executive" className={link}>enterprise AE guide</Link>.
                     </p>
 
                     <div className="space-y-4">

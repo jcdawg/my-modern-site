@@ -14,6 +14,10 @@ export const metadata = pageMetadata({ title: PAGE.title, description: PAGE.desc
 
 const FAQS = [
     {
+        q: "How do you make a first sales hire at a startup?",
+        a: "Write the playbook first: ICP, messaging and qualification rules. Hire someone who has sold this kind of product before, usually an AE rather than a VP of Sales. Co-sell in the early months and set a lower early quota so the hire can win. Details are in this post and on the programs page if you want help with the search.",
+    },
+    {
         q: "When should a founder hire their first salesperson?",
         a: "When the founder can explain, step by step, why customers buy and how deals move, and someone else could repeat it. Dave Rubinstein suggests a simple test: if you stepped away for 30 days, would active deals keep moving? If they stall, the motion is not ready to hand off.",
     },
@@ -79,9 +83,12 @@ export default function FounderLedSalesFirstHirePost() {
                 {/* Body */}
                 <div className="prose prose-lg max-w-none text-grey-700 leading-relaxed space-y-6">
 
-                    <blockquote className="border-l-4 border-blue-accent pl-4 text-navy-900 font-medium not-prose">
-                        <strong>Short answer:</strong> Hire your first salesperson after you can explain, step by step, how you sell, and after someone other than you could repeat it. If the motion only exists in your head, the new rep inherits a guess. Hire someone who has sold this kind of product before, and make the owner responsible for writing the playbook.
-                    </blockquote>
+                    <div className="p-6 rounded-2xl bg-blue-accent/5 border-2 border-blue-accent space-y-3 not-prose">
+                        <h2 className="text-xl font-bold text-navy-900">Direct answer</h2>
+                        <p className="text-base text-grey-700 leading-relaxed">
+                            A first sales hire at a startup works when you can explain, step by step, how you sell, and someone other than you could repeat it. If the motion only exists in your head, the new rep inherits a guess. Hire someone who has sold this kind of product before, usually an AE, and make the owner responsible for writing the playbook before day one.
+                        </p>
+                    </div>
 
                     <p className="text-sm text-grey-500 not-prose">
                         How to read this post: paragraphs under a &quot;My view&quot; label are what I see in live sales searches at The Kas Group. Everything else comes from a named source, linked in the text and listed at the end.
@@ -211,6 +218,10 @@ export default function FounderLedSalesFirstHirePost() {
                         <Link href="/guides/fractional-recruiting-for-startups" className={link}>Fractional Recruiting for Startups</Link>
                         {" · "}
                         <Link href="/guides/best-fractional-sales-recruiters" className={link}>Top Fractional Recruiter</Link>
+                        {" · "}
+                        <Link href="/guides/account-executive-interview-questions" className={link}>AE Interview Questions</Link>
+                        {" · "}
+                        <Link href="/hiring-scorecard" className={link}>Hiring Scorecard</Link>
                         {" · "}
                         <Link href="/blog/early-stage-sales-comp-first-ae-ote" className={link}>What to Pay Your First AE</Link>
                         {" · "}
