@@ -41,6 +41,7 @@ const entries: Entry[] = [
     { path: '/guides/account-executive-ote-by-level', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/how-long-does-it-take-to-hire-an-account-executive', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/account-executive-interview-questions', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/gtm-engineer-recruiting', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/cost-of-a-bad-hire', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/blog/fractional-saas-sales-recruiting', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/blog/ai-resume-boom-old-school-recruiting', changeFrequency: 'monthly', priority: 0.8 },

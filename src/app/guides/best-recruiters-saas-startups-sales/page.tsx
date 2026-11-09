@@ -234,7 +234,7 @@ export default function BestSaasStartupSalesRecruiters() {
                             <li><strong className="text-navy-900">Kas Milestone Search:</strong> SDR/BDR $5,000, AE $7,500, Senior AE/Sales Manager $10,000.</li>
                             <li><strong className="text-navy-900">Kas Directed Pursuit:</strong> on request.</li>
                         </ul>
-                        <p className="text-grey-600 leading-relaxed">Full details are on the <Link href="/programs" className={link}>programs page</Link>.</p>
+                        <p className="text-grey-600 leading-relaxed">Full details are on the <Link href="/programs" className={link}>programs page</Link>. For sales engineer and GTM engineer seats, see <Link href="/guides/gtm-engineer-recruiting" className={link}>GTM engineer recruiting</Link>.</p>
                     </div>
 
                     <div className="space-y-8">
