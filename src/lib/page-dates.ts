@@ -33,7 +33,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/guides/best-firms-hire-cro": { published: "2026-04-04T12:52:48-04:00", modified: "2026-11-09T10:30:00-05:00" },
     "/guides/best-fractional-sales-recruiters": { published: "2026-04-04T12:52:48-04:00", modified: "2026-11-04T09:45:00-05:00" },
     "/guides/best-recruiters-saas-startups-sales": { published: "2026-02-25T15:28:31-05:00", modified: "2026-10-29T10:00:00-04:00" },
-    "/guides/best-recruiting-agencies-b2b-sales": { published: "2026-04-04T12:52:48-04:00", modified: "2026-11-04T10:00:00-05:00" },
+    "/guides/best-recruiting-agencies-b2b-sales": { published: "2026-04-04T12:52:48-04:00", modified: "2026-11-09T10:40:00-05:00" },
     "/guides/best-sales-recruiting-agencies-2026": { published: "2026-02-25T15:28:31-05:00", modified: "2026-11-05T10:00:00-05:00" },
     "/guides/account-executive-interview-questions": { published: "2026-10-19T10:00:00-04:00", modified: "2026-11-05T10:15:00-05:00" },
     "/guides/cost-of-a-bad-hire": { published: "2026-03-06T14:56:13-05:00", modified: "2026-11-05T10:45:00-05:00" },
