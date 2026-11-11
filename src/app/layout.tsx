@@ -119,6 +119,12 @@ export default function RootLayout({
         </main>
         <Footer />
         <Analytics />
+        {/* Official HubSpot tracking code for portal 47035388. Loads on every page. */}
+        <Script
+          id="hs-script-loader"
+          src="https://js.hs-scripts.com/47035388.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
