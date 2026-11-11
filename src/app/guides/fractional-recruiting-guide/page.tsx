@@ -20,10 +20,10 @@ const SRC = {
 };
 
 const DEFINITION =
-    "Fractional recruiting is a monthly retainer for a part time recruiting partner who works inside your hiring process. The partner writes the scorecard with you, sources candidates, screens them, runs the interview loop and helps close offers. You pay by the month for dedicated time, not a percentage of each new hire's salary.";
+    "Fractional recruiting is a monthly retainer for a part time recruiting partner who works inside your hiring process. The partner writes the scorecard with you, sources candidates, screens them, runs the interview loop and helps close offers. You pay by the month for dedicated time, not a percentage of each new hire's salary. The Kas Group runs this model for sales and GTM seats: account executives, senior and enterprise AEs, and sales managers.";
 
 const LEAD_DEFINITION =
-    "Fractional recruiting is a part time recruiting partner who joins your team on a monthly basis and runs your hiring from inside your own process. You get an experienced recruiter focused on your open seats, writing the scorecard with you, sourcing and screening candidates and helping close offers.";
+    "Fractional recruiting is a part time recruiting partner who joins your team on a monthly basis and runs your hiring from inside your own process. You get an experienced recruiter focused on your open seats, writing the scorecard with you, sourcing and screening candidates and helping close offers. The Kas Group runs fractional recruiting for account executives, senior and enterprise AEs, and sales managers.";
 
 // One array drives both the visible FAQ and the FAQPage schema, so the text matches word for word.
 const FAQS = [
@@ -121,7 +121,7 @@ export default function FractionalRecruitingGuide() {
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">{LEAD_DEFINITION}</p>
                     <p className="mt-6 text-sm text-grey-500">
-                        <strong className="text-navy-900">Updated Oct 2026, Chris Stinson.</strong> Chris is Managing Partner of The Kas Group and has recruited sales and GTM talent since 2014.
+                        <strong className="text-navy-900">Updated Nov 2026, Chris Stinson.</strong> Chris is Managing Partner of The Kas Group and has recruited sales and GTM talent since 2014.
                     </p>
                 </div>
             </section>
@@ -140,6 +140,7 @@ export default function FractionalRecruitingGuide() {
                             <li>They work inside your process, with your hiring managers, on your seats.</li>
                             <li>No percentage of salary. No per-hire invoice on Kas Seat.</li>
                             <li>Best for sales seats you need filled this quarter with no full time recruiter.</li>
+                            <li>The Kas Group runs fractional recruiting for account executives, senior and enterprise AEs, and sales managers.</li>
                             <li>Kas Seat is <strong>$5,000/mo for up to two open sales roles and $8,000/mo for three to five, up to $10,000/mo for senior AE and above</strong>, with <strong>zero success fees</strong>.</li>
                         </ul>
                     </div>
