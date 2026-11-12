@@ -159,7 +159,7 @@ Direct outreach to high-performing passive candidates, avoiding recycled applica
 High closing rate achieved through clear expectations and compensation alignment from Day 1.
 `,
 
-    "/pip-calculator": `# PIP Cost Calculator | The Kas Group
+    "/pip-calculator": `# Sales Territory Optimization Calculator | The Kas Group
 
 > Calculate the true organizational cost of a Performance Improvement Plan vs. Proactive Replacement.
 

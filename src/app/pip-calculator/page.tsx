@@ -86,7 +86,7 @@ export default function PipCalculatorPage() {
                             </p>
                         </div>
                         <p className="text-sm text-grey-500">
-                            Updated Nov 2026, Chris Stinson. Chris is Managing Partner of The Kas Group and has recruited sales and GTM talent since 2014.
+                            Updated Nov 2026, Chris Stinson. Chris is Managing Director of The Kas Group and has recruited sales and GTM talent since 2014.
                         </p>
                     </div>
                 </section>
