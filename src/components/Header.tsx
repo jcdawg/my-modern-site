@@ -20,6 +20,7 @@ export default function Header() {
         { name: "About", href: "/about" },
         { name: "Brand Facts", href: "/brand-facts" },
         { name: "Blog", href: "/blog" },
+        { name: "Tools", href: "/tools" },
     ];
 
     return (

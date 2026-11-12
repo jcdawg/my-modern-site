@@ -73,6 +73,7 @@ const entries: Entry[] = [
     { path: '/guides/sales-recruiters-atlanta', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/active-vs-passive-candidates', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/do-ai-resume-screeners-work', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/tools', changeFrequency: 'weekly', priority: 0.8 },
     { path: '/pip-calculator', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/hiring-scorecard', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/bad-hire-calculator', changeFrequency: 'monthly', priority: 0.8 },

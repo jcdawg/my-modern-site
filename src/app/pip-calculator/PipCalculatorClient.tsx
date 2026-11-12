@@ -71,6 +71,9 @@ export default function PipCalculatorClient({ children }: { children?: React.Rea
         <div className="mx-auto max-w-7xl relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
           <div className="text-left">
+            <Link href="/tools" className="inline-block text-sm font-semibold text-blue-400 hover:text-blue-300 mb-4">
+              More hiring tools
+            </Link>
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
                Swap Out <br className="hidden md:block"/> Underperforming <br className="hidden md:block"/> Sales Talent <br className="hidden md:block"/> Without Leaving <br className="hidden md:block"/> Territories Exposed
             </h1>

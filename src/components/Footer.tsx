@@ -58,6 +58,11 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
+                                <Link href="/tools" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    Tools
+                                </Link>
+                            </li>
+                            <li>
                                 <Link href="/pip-calculator" className="text-base text-grey-200 hover:text-white transition-colors">
                                     Sales Territory Optimization Calculator
                                 </Link>

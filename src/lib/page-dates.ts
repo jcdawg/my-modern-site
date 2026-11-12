@@ -75,6 +75,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/recruit/sales": { published: "2026-02-04T16:43:23-05:00", modified: "2026-10-28T10:30:00-04:00" },
     "/site-map": { published: "2026-02-15T14:55:13-05:00", modified: "2026-11-02T09:45:00-05:00" },
     "/terms-of-service": { published: "2026-09-10T12:52:29-04:00", modified: "2026-10-28T10:30:00-04:00" },
+    "/tools": { published: "2026-11-12T15:42:44-05:00", modified: "2026-11-12T15:42:44-05:00" },
 };
 
 export function getPageDates(path: string): PageDates | undefined {

@@ -67,6 +67,9 @@ export default function HiringScorecardPage() {
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl space-y-6">
                     <p className="text-sm font-semibold text-blue-accent">Hiring Scorecard Builder, by The Kas Group</p>
+                    <p className="text-sm">
+                        <Link href="/tools" className={link}>More hiring tools</Link>
+                    </p>
                     <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-navy-900 leading-tight">
                         Build a hiring scorecard before the first interview
                     </h1>
@@ -145,6 +148,8 @@ export default function HiringScorecardPage() {
                     <div className="space-y-4">
                         <h2 className="text-3xl font-bold text-navy-900">Related</h2>
                         <p>
+                            <Link href="/tools" className={link}>More hiring tools</Link>
+                            {" · "}
                             <Link href="/programs" className={link}>Programs</Link>
                             {" · "}
                             <Link href="/guides/cost-of-a-bad-hire" className={link}>Cost of a bad hire</Link>
