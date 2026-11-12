@@ -75,7 +75,7 @@ export default function HowLongToHireAnAccountExecutive() {
                 description={PAGE.description}
                 path={PAGE.path}
                 headline={PAGE.headline}
-                author={{ jobTitle: "Managing Partner", description: "Sales recruiter with 12 years of recruiting experience." }}
+                author={{ jobTitle: "Managing Director", description: "Sales recruiter with 12 years of recruiting experience." }}
             />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -89,7 +89,7 @@ export default function HowLongToHireAnAccountExecutive() {
                         <span className="text-grey-600">How Long to Hire an AE</span>
                     </nav>
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-5xl mb-6 leading-tight">{PAGE.headline}</h1>
-                    <p className="text-sm text-grey-500">Chris Stinson, Managing Partner, The Kas Group</p>
+                    <p className="text-sm text-grey-500">Chris Stinson, Managing Director, The Kas Group</p>
                 </div>
             </section>
 
@@ -110,7 +110,7 @@ export default function HowLongToHireAnAccountExecutive() {
                             SHRM measures time to fill from job requisition to offer acceptance. In its <a href={SRC.shrm} className={link}>State of Recruiting 2025</a>, the median is roughly a month and a half for both executive and nonexecutive roles. That is an all roles figure, not a sales figure, and it stops at the accepted offer, before the new AE starts or ramps.
                         </p>
                         <blockquote className="border-l-4 border-blue-accent pl-4 text-navy-900">
-                            &quot;A lot of it depends. There are a lot of variables that go into that, and they could either make it quicker or longer.&quot; <span className="text-grey-500 text-base">Chris Stinson, Managing Partner, The Kas Group, 12 years recruiting. This is his recruiting view, not data.</span>
+                            &quot;A lot of it depends. There are a lot of variables that go into that, and they could either make it quicker or longer.&quot; <span className="text-grey-500 text-base">Chris Stinson, Managing Director, The Kas Group, 12 years recruiting. This is his recruiting view, not data.</span>
                         </blockquote>
                         <p>Many factors beyond company urgency and how fast the interview process runs can shorten or lengthen time to fill.</p>
                     </div>

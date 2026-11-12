@@ -65,7 +65,7 @@ export default function October2026JobsReportSalesHiringPost() {
                 description={PAGE.description}
                 path={PAGE.path}
                 headline={PAGE.headline}
-                author={{ jobTitle: "Managing Partner, The Kas Group", description: "12 years in recruiting." }}
+                author={{ jobTitle: "Managing Director, The Kas Group", description: "12 years in recruiting." }}
                 about={["October 2026 jobs report", "sales hiring", "account executive hiring", "GTM hiring"]}
             />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -92,7 +92,7 @@ export default function October2026JobsReportSalesHiringPost() {
                             <Calendar className="h-4 w-4" /> November 6, 2026
                         </span>
                         <span className="flex items-center gap-1.5">
-                            <User className="h-4 w-4" /> Chris Stinson, Managing Partner, The Kas Group
+                            <User className="h-4 w-4" /> Chris Stinson, Managing Director, The Kas Group
                         </span>
                     </div>
                     <p className="mt-3 text-sm text-grey-500">

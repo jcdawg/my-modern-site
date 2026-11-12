@@ -64,7 +64,7 @@ export default function HiringSalesRepsJanuaryStartPost() {
                 description={PAGE.description}
                 path={PAGE.path}
                 headline={PAGE.headline}
-                author={{ jobTitle: "Managing Partner, The Kas Group", description: "12 years in recruiting." }}
+                author={{ jobTitle: "Managing Director, The Kas Group", description: "12 years in recruiting." }}
             />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <div className="mx-auto max-w-3xl px-6 lg:px-8">
@@ -83,7 +83,7 @@ export default function HiringSalesRepsJanuaryStartPost() {
                     </h1>
                     <div className="flex flex-wrap items-center gap-6 text-sm text-grey-500">
                         <span className="flex items-center gap-1.5"><Calendar className="h-4 w-4" /> October 26, 2026</span>
-                        <span className="flex items-center gap-1.5"><User className="h-4 w-4" /> Chris Stinson, Managing Partner, The Kas Group</span>
+                        <span className="flex items-center gap-1.5"><User className="h-4 w-4" /> Chris Stinson, Managing Director, The Kas Group</span>
                     </div>
                     <p className="mt-3 text-sm text-grey-500">Last reviewed: October 26, 2026. I refresh this post each October.</p>
                 </div>
