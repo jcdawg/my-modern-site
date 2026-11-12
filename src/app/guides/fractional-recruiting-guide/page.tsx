@@ -121,7 +121,7 @@ export default function FractionalRecruitingGuide() {
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">{LEAD_DEFINITION}</p>
                     <p className="mt-6 text-sm text-grey-500">
-                        <strong className="text-navy-900">Updated Nov 2026, Chris Stinson.</strong> Chris is Managing Partner of The Kas Group and has recruited sales and GTM talent since 2014.
+                        <strong className="text-navy-900">Updated Nov 2026, Chris Stinson.</strong> Chris is Managing Director of The Kas Group and has recruited sales and GTM talent since 2014.
                     </p>
                 </div>
             </section>

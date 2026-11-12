@@ -96,7 +96,7 @@ export default function HiringAiDataEngineersInsurance() {
                 description={PAGE.description}
                 path={PAGE.path}
                 headline={PAGE.headline}
-                author={{ jobTitle: "Managing Partner, The Kas Group", description: "12 years in recruiting." }}
+                author={{ jobTitle: "Managing Director, The Kas Group", description: "12 years in recruiting." }}
             />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
@@ -112,7 +112,7 @@ export default function HiringAiDataEngineersInsurance() {
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-5xl mb-6 leading-tight">
                         How to Hire AI, ML and Data Engineers for Insurance: Answers for Carriers, MGAs and Insurtechs
                     </h1>
-                    <p className="text-sm text-grey-500">October 25, 2026 &middot; Chris Stinson, Managing Partner, The Kas Group</p>
+                    <p className="text-sm text-grey-500">October 25, 2026 &middot; Chris Stinson, Managing Director, The Kas Group</p>
                 </div>
             </section>
 
@@ -205,7 +205,7 @@ export default function HiringAiDataEngineersInsurance() {
                     <div className="space-y-4">
                         <h2 className={h2}>How The Kas Group Helps Insurers Hire AI, ML and Data Engineers</h2>
                         <p>
-                            The Kas Group helps insurance carriers, MGAs and insurtechs hire AI engineers, machine learning engineers, data engineers and analytics engineers. Chris Stinson, Managing Partner, brings 12 years in recruiting and works with your team to define the hire before the search starts. Every AI, ML and data candidate is personally vetted by Derek Norton, PhD in Statistics, so you meet people ready for production insurance work. Searches are quoted per role. See how <Link href="/recruit/ai" className={link}>AI and data recruiting</Link> and our <Link href="/programs" className={link}>programs</Link> work.
+                            The Kas Group helps insurance carriers, MGAs and insurtechs hire AI engineers, machine learning engineers, data engineers and analytics engineers. Chris Stinson, Managing Director, brings 12 years in recruiting and works with your team to define the hire before the search starts. Every AI, ML and data candidate is personally vetted by Derek Norton, PhD in Statistics, so you meet people ready for production insurance work. Searches are quoted per role. See how <Link href="/recruit/ai" className={link}>AI and data recruiting</Link> and our <Link href="/programs" className={link}>programs</Link> work.
                         </p>
                     </div>
 
