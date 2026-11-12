@@ -271,6 +271,7 @@ Generated from https://www.thekasgroup.com/sitemap.xml. Format: `- [Title](url):
 - [Our Methodology](https://www.thekasgroup.com/methodology): Learn about The Kas Group's elite hiring methodology, including our Ph.D.-led technical vetting for AI/ML and Data roles.
 - [Sales Territory Optimization Calculator](https://www.thekasgroup.com/pip-calculator): Measure the true financial cost of an underperforming sales rep on PIP, empty-chair downtime, and ramp. Plan confidential replacements with The Kas Group.
 - [Hiring Scorecard Builder](https://www.thekasgroup.com/hiring-scorecard): Build a free hiring scorecard from a job description: outcomes, competencies rated 1 to 5, interview questions and reference checks. From The Kas Group.
+- [Cost of a Bad Sales Hire Calculator](https://www.thekasgroup.com/bad-hire-calculator): Add up the cost of a bad sales hire with your own numbers: ramp time, lost revenue, manager hours and any other costs. Free calculator from The Kas Group.
 - [Confidential Shortlist Matrix](https://www.thekasgroup.com/candidate-mapping-brief): Active cohort mapping and confidential shortlist matrix for GTM and technical talent from The Kas Group.
 
 ### Legal

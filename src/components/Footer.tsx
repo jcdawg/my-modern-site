@@ -59,7 +59,12 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link href="/pip-calculator" className="text-base text-grey-200 hover:text-white transition-colors">
-                                    PIP Cost Calculator
+                                    Sales Territory Optimization Calculator
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/bad-hire-calculator" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    Cost of a Bad Sales Hire Calculator
                                 </Link>
                             </li>
                             <li>
