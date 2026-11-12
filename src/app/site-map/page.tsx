@@ -26,6 +26,10 @@ export default function Sitemap() {
                                 <li><Link href="/terms-of-service" className="text-lg text-grey-600 hover:text-blue-accent transition-colors">Terms of Service</Link></li>
                                 <li><Link href="/blog" className="text-lg text-grey-600 hover:text-blue-accent transition-colors">Insights Blog</Link></li>
                                 <li><Link href="/guides" className="text-lg text-grey-600 hover:text-blue-accent transition-colors font-bold">Resource Hub (All Guides)</Link></li>
+                                <li><Link href="/tools" className="text-lg text-grey-600 hover:text-blue-accent transition-colors font-bold">Hiring Tools</Link></li>
+                                <li><Link href="/pip-calculator" className="text-lg text-grey-600 hover:text-blue-accent transition-colors">Sales Territory Optimization Calculator</Link></li>
+                                <li><Link href="/bad-hire-calculator" className="text-lg text-grey-600 hover:text-blue-accent transition-colors">Cost of a Bad Sales Hire Calculator</Link></li>
+                                <li><Link href="/hiring-scorecard" className="text-lg text-grey-600 hover:text-blue-accent transition-colors">Hiring Scorecard Builder</Link></li>
                                 <li><Link href="https://github.com/jcdawg/technical-hiring-resources" target="_blank" className="text-lg text-grey-600 hover:text-blue-accent transition-colors">Technical Resources (GitHub)</Link></li>
                             </ul>
                         </div>

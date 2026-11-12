@@ -169,6 +169,15 @@ Explore the hidden expenses of bad hires and prolonged PIPs, including lost pipe
 - **Contact**: chris@thekasgroup.com
 `,
 
+    "/tools": `# Hiring Tools | The Kas Group
+
+> Free calculators and scorecards for sales hiring
+
+- [Sales Territory Optimization Calculator](/pip-calculator): Measure the true financial cost of an underperforming sales rep on PIP, empty-chair downtime, and ramp. Plan confidential replacements with The Kas Group.
+- [Cost of a Bad Sales Hire Calculator](/bad-hire-calculator): Add up the cost of a bad sales hire with your own numbers: ramp time, lost revenue, manager hours and any other costs. Free calculator from The Kas Group.
+- [Hiring Scorecard Builder](/hiring-scorecard): Build a free hiring scorecard from a job description: outcomes, competencies rated 1 to 5, interview questions and reference checks. From The Kas Group.
+`,
+
     "/guides": `# The Kas Group Resource Hub & Hiring Guides
 
 > Comprehensive, practitioner-grade guides for hiring sales leaders and AI/data engineers.

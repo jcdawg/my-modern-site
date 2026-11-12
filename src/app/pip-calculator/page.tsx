@@ -160,6 +160,8 @@ export default function PipCalculatorPage() {
                     <div className="space-y-4">
                         <h2 className="text-3xl font-bold text-navy-900">Related guides</h2>
                         <p>
+                            <Link href="/tools" className={link}>More hiring tools</Link>
+                            {" · "}
                             <Link href="/guides/cost-of-a-bad-hire" className={link}>Cost of a bad hire</Link>
                             {" · "}
                             <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by level</Link>
