@@ -162,6 +162,167 @@ const nextConfig: NextConfig = {
         destination: "/blog",
         permanent: true,
       },
+      // Wix legacy 301s (permanent: true emits 308 on this host). Specific sources first.
+      {
+        source: "/about-us",
+        destination: "/about",
+        permanent: true,
+      },
+      {
+        source: "/kontakt",
+        destination: "/contact",
+        permanent: true,
+      },
+      {
+        source: "/post/are-you-missing-out-on-70-of-the-talent-market",
+        destination: "/guides/active-vs-passive-candidates",
+        permanent: true,
+      },
+      {
+        source: "/post/is-it-possible-to-hire-passive-a-player-sales-talent-in-an-unstable-market",
+        destination: "/guides/active-vs-passive-candidates",
+        permanent: true,
+      },
+      {
+        source: "/post/recruiting-passive-candidates",
+        destination: "/guides/active-vs-passive-candidates",
+        permanent: true,
+      },
+      {
+        source: "/post/how-hiring-the-wrong-salesperson-can-impact-your-team",
+        destination: "/guides/cost-of-a-bad-hire",
+        permanent: true,
+      },
+      {
+        source: "/post/the-true-cost-of-a-bad-hire-what-every-employer-needs-to-know",
+        destination: "/guides/cost-of-a-bad-hire",
+        permanent: true,
+      },
+      {
+        source: "/atlanta",
+        destination: "/guides/sales-recruiters-atlanta",
+        permanent: true,
+      },
+      {
+        source: "/atlanta-sales-recruiting",
+        destination: "/guides/sales-recruiters-atlanta",
+        permanent: true,
+      },
+      {
+        source: "/post/sales-headhunter",
+        destination: "/guides/sales-recruiters-atlanta",
+        permanent: true,
+      },
+      {
+        source: "/post/sales-headhunting",
+        destination: "/guides/sales-recruiters-atlanta",
+        permanent: true,
+      },
+      {
+        source: "/post/sales-recruiter",
+        destination: "/guides/sales-recruiters-atlanta",
+        permanent: true,
+      },
+      {
+        source: "/post/sales-recruiting-atlanta",
+        destination: "/guides/sales-recruiters-atlanta",
+        permanent: true,
+      },
+      {
+        source: "/sales-recruiter-atlanta",
+        destination: "/guides/sales-recruiters-atlanta",
+        permanent: true,
+      },
+      {
+        source: "/post/advantages-interview-scorecard",
+        destination: "/hiring-scorecard",
+        permanent: true,
+      },
+      {
+        source: "/post/interview-scorecard",
+        destination: "/hiring-scorecard",
+        permanent: true,
+      },
+      {
+        source: "/privacy",
+        destination: "/privacy-policy",
+        permanent: true,
+      },
+      {
+        source: "/post/ai-recruiting-bias-and-how-it-can-impact-hiring",
+        destination: "/recruit/ai",
+        permanent: true,
+      },
+      {
+        source: "/post/advantages-of-outsourcing-your-recruiting-and-hiring-needs",
+        destination: "/recruit/fractional-sales",
+        permanent: true,
+      },
+      {
+        source: "/post/on-demand-recruiting",
+        destination: "/recruit/fractional-sales",
+        permanent: true,
+      },
+      {
+        source: "/post/outsourced-recruiting-solutions",
+        destination: "/recruit/fractional-sales",
+        permanent: true,
+      },
+      {
+        source: "/post/the-benefits-of-utilizing-unbundled-recruiting-services-in-2023",
+        destination: "/recruit/fractional-sales",
+        permanent: true,
+      },
+      {
+        source: "/post/unbundled-recruiting-services",
+        destination: "/recruit/fractional-sales",
+        permanent: true,
+      },
+      {
+        source: "/hiring",
+        destination: "/recruit/sales",
+        permanent: true,
+      },
+      {
+        source: "/services-3",
+        destination: "/recruit/sales",
+        permanent: true,
+      },
+      {
+        source: "/terms",
+        destination: "/terms-of-service",
+        permanent: true,
+      },
+      {
+        source: "/terms-of-use",
+        destination: "/terms-of-service",
+        permanent: true,
+      },
+      {
+        source: "/post/:slug",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/blog/categories/:path*",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/blog/tags/:path*",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/blog/hashtags/:path*",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/blog/page/:path*",
+        destination: "/blog",
+        permanent: true,
+      },
     ];
   },
 };
