@@ -7,6 +7,12 @@ import {
     isFormspreeConfigured,
     CONTACT_EMAIL,
 } from "@/lib/contact-config";
+import {
+    fireContactFormConversion,
+    formatLeadSource,
+    getFirstTouch,
+    leadSourceFormFields,
+} from "@/lib/lead-source";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -43,6 +49,9 @@ export default function ContactForm() {
                 "",
                 "Message:",
                 form.message,
+                "",
+                "Lead source:",
+                formatLeadSource(getFirstTouch()),
             ]
                 .filter(Boolean)
                 .join("\n")
@@ -75,9 +84,11 @@ export default function ContactForm() {
                     message: form.message,
                     _subject: `[Website] ${form.topic} - ${form.name}`,
                     _replyto: form.email,
+                    ...leadSourceFormFields(getFirstTouch()),
                 }),
             });
             if (res.ok) {
+                fireContactFormConversion(getFirstTouch());
                 setStatus("success");
             } else {
                 setStatus("error");
