@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactClickTracker from "@/components/ContactClickTracker";
+import FirstTouchCapture from "@/components/FirstTouchCapture";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { DEFAULT_OG_IMAGE, ORGANIZATION_ID, SITE_NAME, SITE_URL } from "@/lib/seo";
@@ -113,6 +114,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
         <ContactClickTracker />
+        <FirstTouchCapture />
         <Header />
         <main className="flex-grow">
           {children}
