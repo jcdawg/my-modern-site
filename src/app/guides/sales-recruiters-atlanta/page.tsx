@@ -28,7 +28,7 @@ const FAQS = [
     },
     {
         q: "How much do sales recruiters in Atlanta charge?",
-        a: "The Kas Group prices sales hiring three ways. Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five. Kas Milestone Search is $5,000 for an SDR or BDR, $7,500 for an AE and $10,000 for a senior AE or sales manager. Kas Directed Pursuit is priced on request.",
+        a: "The Kas Group prices sales hiring three ways. Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above. Kas Milestone Search is $5,000 for an SDR or BDR, $7,500 for an AE and $10,000 for a senior AE or sales manager. Kas Directed Pursuit is priced on request.",
     },
     {
         q: "Does The Kas Group place sales talent outside Atlanta?",
@@ -89,7 +89,7 @@ export default function SalesRecruitersAtlanta() {
                             <Zap className="h-6 w-6 text-blue-accent" /> Short Answer
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium">
-                            Sales recruiters Atlanta help tech companies hire AEs, senior AEs and sales leaders, and cover tech sales talent acquisition across B2B SaaS, fintech, cybersecurity and AI. Sales headhunters in Atlanta who know the Alpharetta and metro pool can reach passive reps you will not find on a job board. The Kas Group has been based in Alpharetta since 2014. Kas Seat is $5,000 a month for up to two open sales roles. Kas Milestone Search starts at $5,000 for an SDR or BDR.
+                            Sales recruiters Atlanta help tech companies hire AEs, senior AEs and sales leaders, and cover tech sales talent acquisition across B2B SaaS, fintech, cybersecurity and AI. Sales headhunters in Atlanta who know the Alpharetta and metro pool can reach passive reps you will not find on a job board. The Kas Group has been based in Alpharetta since 2014. Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above. Kas Milestone Search starts at $5,000 for an SDR or BDR.
                         </p>
                     </div>
 
@@ -161,7 +161,7 @@ export default function SalesRecruitersAtlanta() {
                             The Kas Group has been headquartered in Alpharetta since 2014. We place SDRs, AEs and sales leaders for B2B SaaS, fintech, cybersecurity and AI companies, and AI/ML engineers for technical teams.
                         </p>
                         <ul className="list-disc pl-6 space-y-2 text-lg text-grey-600">
-                            <li><strong className="text-navy-900">Kas Seat:</strong> $5,000 a month for up to two open sales roles, $8,000 a month for three to five.</li>
+                            <li><strong className="text-navy-900">Kas Seat:</strong> $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above.</li>
                             <li><strong className="text-navy-900">Kas Milestone Search:</strong> $5,000 for an SDR or BDR, $7,500 for an AE, $10,000 for a senior AE or sales manager.</li>
                             <li><strong className="text-navy-900">Kas Directed Pursuit:</strong> pricing on request.</li>
                         </ul>
