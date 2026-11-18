@@ -22,7 +22,9 @@ Return ONLY valid JSON with this exact shape:
   "additionalInterviewQuestions": ["cross-cutting question 1", "question 2", "question 3"],
   "mustHaves": ["string"],
   "niceToHaves": ["string"],
-  "roleFamily": "sales" | "ai_data" | "other"
+  "roleFamily": "sales" | "ai_data" | "other",
+  "industry": "short industry label, or Unknown",
+  "product_type": "what the company sells, or Unknown"
 }
 
 Rules:
@@ -33,7 +35,8 @@ Rules:
 - Voice: clear, direct, commercial. No fluff.
 - Never use em dashes or en dashes. Write ranges with "to".
 - Never claim PhD vetting. Never invent statistics, stories or placement data. Never compare other recruiters. Never use words like rockstar or ninja. Never guarantee results. Never include pricing.
-- roleFamily must be exactly sales, ai_data or other.`;
+- roleFamily must be exactly sales, ai_data or other.
+- industry and product_type: each at most 60 characters. Infer a short category from the role details (for example "Cybersecurity SaaS" and "Endpoint security software"). Use "Unknown" when the industry or product is unclear. Never include company names, people's names, email addresses, phone numbers, or other contact information in these two fields.`;
 
 export const MODEL_ORDER = [
     "mistralai/mistral-small-24b-instruct-2501",

@@ -3,6 +3,8 @@ import { randomUUID } from "crypto";
 import { SYSTEM_PROMPT, MODEL_ORDER, MAX_INPUT_CHARS } from "@/lib/hiring-scorecard/prompt";
 import { validateScorecardPayload } from "@/lib/hiring-scorecard/validate";
 import { checkRateLimit } from "@/lib/hiring-scorecard/rate-limit";
+import { notifyScorecardBuilt } from "@/lib/hiring-scorecard/usage-email";
+import { parseLeadSourceInput } from "@/lib/lead-source";
 import type { Scorecard } from "@/lib/hiring-scorecard/types";
 
 export const runtime = "nodejs";
@@ -75,6 +77,7 @@ export async function POST(req: NextRequest) {
         mustHaves?: string;
         dealBreakers?: string;
         teamSize?: string;
+        leadSource?: unknown;
     };
     try {
         body = await req.json();
@@ -140,6 +143,15 @@ export async function POST(req: NextRequest) {
                     scorecardId: randomUUID(),
                     builtAt: new Date().toISOString(),
                 };
+                // Email failure must never fail generation. Preview/dev is skipped inside notify.
+                await notifyScorecardBuilt({
+                    roleTitle: scorecard.roleTitle,
+                    seniority: typeof body.seniority === "string" ? body.seniority : "",
+                    industry: scorecard.industry,
+                    productType: scorecard.product_type,
+                    scorecardId: scorecard.scorecardId,
+                    leadSource: parseLeadSourceInput(body.leadSource),
+                });
                 return NextResponse.json({ scorecard, modelUsed });
             } catch (e) {
                 lastError = e instanceof Error ? e.message.slice(0, 80) : "error";

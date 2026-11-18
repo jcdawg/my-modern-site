@@ -27,6 +27,10 @@ export type Scorecard = {
     mustHaves: string[];
     niceToHaves: string[];
     roleFamily: RoleFamily;
+    /** Short industry label inferred from the JD, or "Unknown". Not shown in the UI. */
+    industry: string;
+    /** Short description of what the company sells, or "Unknown". Not shown in the UI. */
+    product_type: string;
     builtAt: string;
 };
 

@@ -101,6 +101,27 @@ export function getFirstTouch(): FirstTouch {
     return parseTouch(readStore()) ?? captureFirstTouch();
 }
 
+const LEAD_FIELD_MAX = 500;
+
+/** Accept a first-touch object from the client, keeping only known short string fields. */
+export function parseLeadSourceInput(raw: unknown): FirstTouch {
+    if (!raw || typeof raw !== "object") return emptyTouch();
+    const o = raw as Record<string, unknown>;
+    const pick = (key: keyof FirstTouch) =>
+        typeof o[key] === "string" ? o[key].slice(0, LEAD_FIELD_MAX) : "";
+    return {
+        utm_source: pick("utm_source"),
+        utm_medium: pick("utm_medium"),
+        utm_campaign: pick("utm_campaign"),
+        utm_term: pick("utm_term"),
+        utm_content: pick("utm_content"),
+        gclid: pick("gclid"),
+        referrer: pick("referrer"),
+        landing_page: pick("landing_page"),
+        timestamp: pick("timestamp"),
+    };
+}
+
 /** Human-readable block for the Formspree email / mailto body. */
 export function formatLeadSource(touch: FirstTouch): string {
     const hasCampaign = Boolean(

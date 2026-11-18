@@ -3,6 +3,8 @@
 import { useState } from "react";
 import type { Scorecard } from "@/lib/hiring-scorecard/types";
 import { MAX_INPUT_CHARS } from "@/lib/hiring-scorecard/prompt";
+import { fireScorecardGenerate } from "@/lib/hiring-scorecard/track";
+import { getFirstTouch } from "@/lib/lead-source";
 
 function scorecardPlainText(s: Scorecard): string {
     const lines: string[] = [
@@ -67,11 +69,24 @@ export default function ScorecardBuilder() {
             const res = await fetch("/api/hiring-scorecard", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ jobDescription, seniority, mustHaves, dealBreakers, teamSize }),
+                body: JSON.stringify({
+                    jobDescription,
+                    seniority,
+                    mustHaves,
+                    dealBreakers,
+                    teamSize,
+                    leadSource: getFirstTouch(),
+                }),
             });
             const data = await res.json();
             if (!res.ok) throw new Error(data.error || "Request failed");
             setScorecard(data.scorecard);
+            fireScorecardGenerate({
+                role_title: data.scorecard?.roleTitle || "",
+                seniority,
+                industry: data.scorecard?.industry || "Unknown",
+                product_type: data.scorecard?.product_type || "Unknown",
+            });
         } catch (e) {
             setError(e instanceof Error ? e.message : "Something went wrong.");
         } finally {

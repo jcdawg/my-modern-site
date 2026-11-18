@@ -18,6 +18,17 @@ function asOptionalString(v: unknown): string | undefined {
     return v.trim();
 }
 
+const LABEL_MAX = 60;
+
+/** Short inferred label. Falls back to "Unknown"; never fails the scorecard. */
+function asShortLabel(v: unknown): string {
+    if (typeof v !== "string" || !v.trim()) return "Unknown";
+    const s = v.trim().replace(/\s+/g, " ");
+    // Drop values that look like contact info rather than a category.
+    if (s.includes("@") || /\+?\d[\d\s().-]{8,}\d/.test(s)) return "Unknown";
+    return s.slice(0, LABEL_MAX).trim() || "Unknown";
+}
+
 function asCompetency(v: unknown, i: number): Competency {
     if (!v || typeof v !== "object") throw new Error(`Invalid competencies[${i}]`);
     const c = v as Record<string, unknown>;
@@ -77,6 +88,8 @@ export function validateScorecardPayload(raw: unknown): ScorecardPayload {
         mustHaves: asStringArray(o.mustHaves, "mustHaves"),
         niceToHaves: asStringArray(o.niceToHaves, "niceToHaves", 0),
         roleFamily: family as RoleFamily,
+        industry: asShortLabel(o.industry),
+        product_type: asShortLabel(o.product_type),
     };
     return sanitizeDeep(payload);
 }
