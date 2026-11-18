@@ -11,27 +11,38 @@ const PAGE = {
 
 export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
+const FAQS = [
+    {
+        q: "How do you evaluate a senior data engineer?",
+        a: "Evaluate a senior data engineer on architecture and shipping, not keywords. 1. Ask them to design a system and defend modeling, storage and orchestration choices. 2. Use a work sample from your stack and watch how they debug. 3. Have a senior peer probe late arriving data, schema evolution and failures. 4. Make them defend a past decision that went wrong.",
+    },
+    {
+        q: "What should a senior data engineer skills assessment include?",
+        a: "A senior data engineer skills assessment should cover system design, a work sample from your actual stack, and a peer review of reliability issues such as late arriving data and schema evolution. Syntax tests alone are not enough.",
+    },
+    {
+        q: "How do you assess a senior data engineer's architectural depth?",
+        a: "Seniority in data engineering is defined by architectural thinking. We assess this by asking candidates to design a system from scratch, evaluating their choices in data modeling, storage (Parquet vs. Avro), orchestration (Airflow vs. Dagster), and how they handle late-arriving data and schema evolution.",
+    },
+    {
+        q: "What are the most critical technical skills for senior data engineers in 2026?",
+        a: "Beyond SQL and Python, critical skills include experience with distributed computing (Spark), modern data warehouses (Snowflake, Databricks), stream processing (Kafka, Flink), and increasingly, vector database management for AI applications.",
+    },
+    {
+        q: "How long should a technical interview for a data engineer take?",
+        a: "An effective technical vetting session should last 60 to 90 minutes, ideally led by a peer-level expert. This time should be split between a coding challenge (SQL/Python) and a deep-dive architectural discussion.",
+    },
+];
+
 export default function DataEngineerAssessment() {
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "How do you assess a senior data engineer's architectural depth?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Seniority in data engineering is defined by architectural thinking. We assess this by asking candidates to design a system from scratch, evaluating their choices in data modeling, storage (Parquet vs. Avro), orchestration (Airflow vs. Dagster), and how they handle late-arriving data and schema evolution." }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the most critical technical skills for senior data engineers in 2026?",
-                "acceptedAnswer": { "@type": "Answer", "text": "Beyond SQL and Python, critical skills include experience with distributed computing (Spark), modern data warehouses (Snowflake, Databricks), stream processing (Kafka, Flink), and increasingly, vector database management for AI applications." }
-            },
-            {
-                "@type": "Question",
-                "name": "How long should a technical interview for a data engineer take?",
-                "acceptedAnswer": { "@type": "Answer", "text": "An effective technical vetting session should last 60 to 90 minutes, ideally led by a peer-level expert. This time should be split between a coding challenge (SQL/Python) and a deep-dive architectural discussion." }
-            }
-        ]
+        "mainEntity": FAQS.map((f) => ({
+            "@type": "Question",
+            "name": f.q,
+            "acceptedAnswer": { "@type": "Answer", "text": f.a },
+        })),
     };
 
     return (
@@ -58,6 +69,18 @@ export default function DataEngineerAssessment() {
 
             <section className="py-20 px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl space-y-20">
+
+                    <div className="space-y-4">
+                        <h2 className="text-xl font-bold text-navy-900">Direct answer</h2>
+                        <p className="text-grey-600 leading-relaxed">How do you evaluate a senior data engineer?</p>
+                        <p className="text-grey-600 leading-relaxed">Evaluate a senior data engineer on architecture and shipping, not keywords.</p>
+                        <ol className="list-decimal pl-6 space-y-2 text-grey-600 leading-relaxed">
+                            <li>Ask them to design a system and defend modeling, storage and orchestration choices.</li>
+                            <li>Use a work sample from your stack and watch how they debug.</li>
+                            <li>Have a senior peer probe late arriving data, schema evolution and failures.</li>
+                            <li>Make them defend a past decision that went wrong.</li>
+                        </ol>
+                    </div>
                     
                     {/* (TL;DR) Summary */}
                     <div className="p-8 rounded-3xl bg-navy-900 text-white shadow-2xl border border-white/10 relative overflow-hidden group">
@@ -149,6 +172,21 @@ export default function DataEngineerAssessment() {
                                     We don't leave technical hiring to chance. Our search process includes a deep-dive interview with our <strong>Technical Advisor (Ph.D. Statistics, former Microsoft Global Lead Data Scientist)</strong>. We vet for true architectural capability, ensuring your data team is built on a foundation of elite engineering talent.
                                 </p>
                             </div>
+                        </div>
+                    </div>
+
+                    <div className="space-y-8">
+                        <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
+                            <HelpCircle className="h-8 w-8 text-blue-accent" />
+                            Frequently Asked Questions
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            {FAQS.map((f) => (
+                                <div key={f.q} className="space-y-4">
+                                    <h3 className="font-bold text-navy-900 text-lg">{f.q}</h3>
+                                    <p className="text-grey-600 leading-relaxed">{f.a}</p>
+                                </div>
+                            ))}
                         </div>
                     </div>
 
