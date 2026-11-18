@@ -210,7 +210,7 @@ export default function AIRecruiting() {
                                 Explore our technical guides to help you architect your data team and vet for elite engineering capability.
                             </p>
                             <p className="mt-4 text-grey-600">
-                                Hiring for an insurance carrier, MGA or insurtech? Read <Link href="/guides/hiring-ai-data-engineers-insurance" className="text-blue-accent hover:underline">how to hire AI, ML and data engineers for insurance</Link>.
+                                Hiring for an insurance carrier, MGA or insurtech? Read <Link href="/guides/hiring-ai-data-engineers-insurance" className="text-blue-accent hover:underline">how to hire AI, ML and data engineers for insurance</Link>. Hiring AEs or GTM engineers for an AI company? See the <Link href="/guides/sales-recruiters-for-ai-companies" className="text-blue-accent hover:underline">best sales recruiters for AI companies</Link>.
                             </p>
                         </div>
                         <Link href="/guides" className="text-blue-accent font-bold hover:underline inline-flex items-center gap-2">
