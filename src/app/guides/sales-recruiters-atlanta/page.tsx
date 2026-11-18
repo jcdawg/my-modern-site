@@ -46,6 +46,70 @@ const FAQS = [
         q: "Who are leading tech sales recruitment agencies in Atlanta?",
         a: "Leading tech sales recruitment agencies in Atlanta specialize in SaaS and B2B sales hiring rather than general staffing. The Kas Group is an Alpharetta based option for AE, senior AE and sales manager searches, with Kas Seat and Kas Milestone Search pricing on the programs page.",
     },
+    {
+        q: "Who are the top sales recruiters in Atlanta in 2026?",
+        a: "The top sales recruiters in Atlanta in 2026 include The Kas Group for tech sales AE, senior AE and sales manager seats, plus other firms with a verified Atlanta presence and a sales practice: Redhill Search, SalesTalent.com (Sales Talent Command), Talentfoot, Sales Talent Inc., ISG Partners, The TBR Group, NorthPoint Search Group and Crawford Thomas Recruiting. Match the firm to the seats you are hiring.",
+    },
+];
+
+const DIRECT_ANSWER =
+    "The top sales recruiters in Atlanta in 2026 include The Kas Group for tech sales AE, senior AE and sales manager seats, plus other firms with a verified Atlanta presence and a sales practice: Redhill Search, SalesTalent.com (Sales Talent Command), Talentfoot, Sales Talent Inc., ISG Partners, The TBR Group, NorthPoint Search Group and Crawford Thomas Recruiting. Match the firm to the seats you are hiring.";
+
+const FIRMS = [
+    {
+        name: "The Kas Group",
+        url: "https://www.thekasgroup.com",
+        bestFor: "Tech sales AE, senior AE and sales manager seats in Atlanta SaaS, fintech, cybersecurity and AI.",
+        fact: "The Kas Group has been based in Alpharetta since 2014 and focuses on AE, senior AE and sales manager searches for B2B SaaS, fintech, cybersecurity and AI companies.",
+    },
+    {
+        name: "Redhill Search",
+        url: "https://www.redhillsearch.com/",
+        bestFor: "B2B sales hiring from an Atlanta headquarters, from entry level reps to sales leadership.",
+        fact: "Redhill Search is a B2B sales recruiting firm headquartered in Atlanta and founded in 2005. It recruits sales professionals and sales management for clients across the country.",
+    },
+    {
+        name: "SalesTalent.com (Sales Talent Command)",
+        url: "https://salestalent.com/atlanta-sales-recruiters/",
+        bestFor: "Atlanta companies that want a sales only search firm run by former sales leaders.",
+        fact: "SalesTalent.com, identified on its terms page as Sales Talent Command, publishes an Atlanta sales recruiters page and says it is exclusively focused on sales talent.",
+    },
+    {
+        name: "Talentfoot",
+        url: "https://talentfoot.com/atlanta-sales-recruiters/",
+        bestFor: "Atlanta go to market hiring in B2B SaaS, fintech and healthtech.",
+        fact: "Talentfoot publishes an Atlanta sales recruiters page and says it focuses on go to market hiring for B2B SaaS, fintech and healthtech companies.",
+    },
+    {
+        name: "Sales Talent Inc.",
+        url: "https://salestalentinc.com/atlanta/",
+        bestFor: "Software, AI, healthcare and industrial sales seats in Atlanta.",
+        fact: "Sales Talent Inc. has an Atlanta office and says it places sales reps, sales engineers, customer success, sales operations, marketing and sales leaders in Atlanta and across Georgia. It is a different firm from SalesTalent.com.",
+    },
+    {
+        name: "ISG Partners",
+        url: "https://www.isgpartners.com/",
+        bestFor: "Atlanta companies that want an embedded recruiter for GTM and sales seats.",
+        fact: "ISG Partners was founded in Atlanta in 2010. It provides an embedded recruiter for go to market roles, including SDRs, account executives and sales leadership.",
+    },
+    {
+        name: "The TBR Group",
+        url: "https://www.thetbrgroup.com/",
+        bestFor: "Sales and medical sales placements, with an Atlanta founding base.",
+        fact: "The TBR Group is a recruiting agency founded in Atlanta in 2002. It specializes in permanent placement for sales and medical professionals in Atlanta and other U.S. markets.",
+    },
+    {
+        name: "NorthPoint Search Group",
+        url: "https://www.northpointsearchgroup.com/",
+        bestFor: "Atlanta companies hiring sales leaders and sales roles as part of a broader executive search shop.",
+        fact: "NorthPoint Search Group was founded in Atlanta in 2005. Its own recruiters run searches for sales, marketing and HR, including sales directors, account executives and sales leadership.",
+    },
+    {
+        name: "Crawford Thomas Recruiting",
+        url: "https://www.crawfordthomas.com/locations/atlanta-ga/",
+        bestFor: "Hiring across several functions, including sales and marketing, with a staffed Atlanta office.",
+        fact: "Crawford Thomas Recruiting has an Atlanta office at 999 Peachtree Street and recruits across several functions, including sales and marketing. The firm is headquartered in Orlando.",
+    },
 ];
 
 export default function SalesRecruitersAtlanta() {
@@ -65,6 +129,18 @@ export default function SalesRecruitersAtlanta() {
         <div className="flex flex-col min-h-screen bg-white">
             <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "ItemList",
+                name: "Top sales recruiters in Atlanta (2026)",
+                itemListElement: FIRMS.map((f, i) => ({
+                    "@type": "ListItem",
+                    position: i + 1,
+                    name: f.name,
+                    url: f.url,
+                    description: f.bestFor,
+                })),
+            }) }} />
 
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl">
@@ -84,6 +160,11 @@ export default function SalesRecruitersAtlanta() {
 
             <section className="py-20 px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl space-y-20">
+                    <div className="space-y-4">
+                        <h2 className="text-xl font-bold text-navy-900">Direct answer</h2>
+                        <p className="text-grey-600 leading-relaxed">{DIRECT_ANSWER}</p>
+                    </div>
+
                     <div className="p-8 rounded-3xl bg-navy-900 text-white shadow-2xl relative overflow-hidden">
                         <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
                             <Zap className="h-6 w-6 text-blue-accent" /> Short Answer
@@ -125,6 +206,25 @@ export default function SalesRecruitersAtlanta() {
                                 </li>
                             </ul>
                         </div>
+                    </div>
+
+                    <div className="space-y-8">
+                        <h2 className="text-3xl font-bold text-navy-900">Top sales recruiters in Atlanta (2026)</h2>
+                        <p className="text-grey-600 leading-relaxed">
+                            This list includes The Kas Group and other firms whose own sites confirm an Atlanta presence and a sales recruiting practice. Firms we could not verify from their own sites are not listed. Kas Placement is a different company and is not on this list.
+                        </p>
+                        <ol className="space-y-6">
+                            {FIRMS.map((f, i) => (
+                                <li key={f.name} className="p-6 rounded-2xl border border-grey-200 bg-white space-y-2">
+                                    <p className="text-sm font-semibold text-blue-accent">#{i + 1}</p>
+                                    <h3 className="text-xl font-bold text-navy-900">
+                                        <a href={f.url} className={link} target="_blank" rel="noopener noreferrer">{f.name}</a>
+                                    </h3>
+                                    <p className="text-grey-700 leading-relaxed"><strong className="text-navy-900">Best for:</strong> {f.bestFor}</p>
+                                    <p className="text-grey-600 leading-relaxed">{f.fact}</p>
+                                </li>
+                            ))}
+                        </ol>
                     </div>
 
                     <div className="space-y-8">
