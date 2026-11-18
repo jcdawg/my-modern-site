@@ -34,6 +34,14 @@ const FAQS = [
         q: "How do you avoid hiring the wrong AI or data engineer?",
         a: "Vet capability rather than keywords: have a senior technical evaluator review real architecture decisions, use work sample problems from your actual stack, and require candidates to defend past trade offs. Expect AI assistance in interviews too. SHRM reports that Fabric found signs of AI cheating in 38.5% of nearly 20,000 interviews, and 48% for technical roles.",
     },
+    {
+        q: "What does a wrong hire cost?",
+        a: "SHRM research puts the total replacement cost of a bad hire at 50% to 200% of the employee's salary, depending on seniority. That covers more than a second search fee. You also pay for the time the failed hire spent in the seat and the work the rest of the team picked up.",
+    },
+    {
+        q: "How long does it take to replace a bad hire?",
+        a: "There is no single published timeline that fits every role. Replacement usually has three phases: deciding the hire is not working and managing the exit, running a new search, and ramping the new hire while they repair what was left behind. A SHRM Labs article notes that a formal performance discussion typically takes place 60 to 90 days into the role, and the search and ramp still come after that.",
+    },
 ];
 
 export default function CostOfHiringWrongDataEngineer() {
@@ -87,6 +95,25 @@ export default function CostOfHiringWrongDataEngineer() {
                             <li>Buzzword-matching can&apos;t tell an AI architect from a hobbyist. <strong className="text-white">Capability-based vetting</strong> is the only reliable filter.</li>
                             <li>Leadership IQ tracking, cited by SHRM, finds <strong className="text-white">46% of new hires fail within 18 months</strong>. Vet harder, not faster.</li>
                         </ul>
+                    </div>
+
+                    <div className="space-y-8">
+                        <div className="space-y-4">
+                            <h2 className="text-xl font-bold text-navy-900">What does a wrong hire cost?</h2>
+                            <div className="bg-blue-accent/5 border-l-4 border-blue-accent p-6 rounded-r-2xl">
+                                <p className="text-grey-700 leading-relaxed">
+                                    <strong>Direct answer:</strong> SHRM research puts the total replacement cost of a bad hire at 50% to 200% of the employee&apos;s salary, depending on seniority. That covers more than a second search fee. You also pay for the time the failed hire spent in the seat and the work the rest of the team picked up. Source: <a href={SRC.shrm} className="text-blue-accent hover:underline font-semibold">When Candidates Can Fake Skills in Real Time, SHRM Labs</a>.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="space-y-4">
+                            <h2 className="text-xl font-bold text-navy-900">How long does it take to replace a bad hire?</h2>
+                            <div className="bg-blue-accent/5 border-l-4 border-blue-accent p-6 rounded-r-2xl">
+                                <p className="text-grey-700 leading-relaxed">
+                                    <strong>Direct answer:</strong> There is no single published timeline that fits every role. Replacement usually has three phases: deciding the hire is not working and managing the exit, running a new search, and ramping the new hire while they repair what was left behind. A <a href={SRC.shrm} className="text-blue-accent hover:underline font-semibold">SHRM Labs article</a> notes that a formal performance discussion typically takes place 60 to 90 days into the role, and the search and ramp still come after that.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Intro */}
