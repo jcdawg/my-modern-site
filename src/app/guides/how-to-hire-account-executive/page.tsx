@@ -91,7 +91,7 @@ export default function HowToHireAccountExecutive() {
                     </div>
 
                     <p className="text-sm text-grey-500">
-                        How to read this guide: sections labeled &quot;My view&quot; come from live sales searches at The Kas Group. Comp, time to fill and ramp figures come from named outside sources. This page is for mid-level AE seats. For senior seats see <Link href="/guides/how-to-hire-senior-account-executive" className={link}>how to hire a senior account executive</Link>. For enterprise seats see <Link href="/guides/how-to-hire-enterprise-account-executive" className={link}>how to hire an enterprise account executive</Link>.
+                        How to read this guide: sections labeled &quot;My view&quot; come from live sales searches at The Kas Group. Comp, time to fill and ramp figures come from named outside sources. This page is for mid-level AE seats. For senior seats see <Link href="/guides/how-to-hire-senior-account-executive" className={link}>how to hire a senior account executive</Link>. For enterprise seats see <Link href="/guides/how-to-hire-enterprise-account-executive" className={link}>how to hire an enterprise account executive</Link>. Comparing recruiters for the search? See the <Link href="/guides/sales-recruiters-for-account-executives" className={link}>best sales recruiters for account executives</Link>.
                     </p>
 
                     <div className="space-y-4">
@@ -191,6 +191,8 @@ export default function HowToHireAccountExecutive() {
                         <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by Level</Link>
                         {" · "}
                         <Link href="/guides/account-executive-interview-questions" className={link}>AE Interview Questions</Link>
+                        {" · "}
+                        <Link href="/guides/sales-recruiters-for-account-executives" className={link}>Best Sales Recruiters for AEs</Link>
                         {" · "}
                         <Link href="/hiring-scorecard" className={link}>Hiring Scorecard</Link>
                         {" · "}

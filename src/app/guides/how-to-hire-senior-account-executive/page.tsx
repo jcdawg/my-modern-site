@@ -113,7 +113,7 @@ export default function HowToHireSeniorAccountExecutive() {
                     </p>
 
                     <p>
-                        This guide is for founders and sales leaders at B2B tech and SaaS companies with 20 to 200 people. It covers what makes an AE senior, when you need one, what to pay, how long the search takes and what to get right in the first 90 days. For the full interview loop, use the <Link href="/guides/account-executive-interview-questions" className={link}>AE interview questions guide</Link>. For a role specific scorecard, use the <Link href="/hiring-scorecard" className={link}>hiring scorecard</Link>. For the step above senior, use the <Link href="/guides/how-to-hire-enterprise-account-executive" className={link}>enterprise AE guide</Link>.
+                        This guide is for founders and sales leaders at B2B tech and SaaS companies with 20 to 200 people. It covers what makes an AE senior, when you need one, what to pay, how long the search takes and what to get right in the first 90 days. For the full interview loop, use the <Link href="/guides/account-executive-interview-questions" className={link}>AE interview questions guide</Link>. For a role specific scorecard, use the <Link href="/hiring-scorecard" className={link}>hiring scorecard</Link>. For the step above senior, use the <Link href="/guides/how-to-hire-enterprise-account-executive" className={link}>enterprise AE guide</Link>. If you plan to use a recruiter, compare the <Link href="/guides/sales-recruiters-for-account-executives" className={link}>best sales recruiters for account executives</Link>.
                     </p>
 
                     <div className="space-y-4">
@@ -284,6 +284,8 @@ export default function HowToHireSeniorAccountExecutive() {
                         <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>How Long It Takes to Hire an AE</Link>
                         {" · "}
                         <Link href="/guides/cost-of-a-bad-hire" className={link}>The Cost of a Bad Hire</Link>
+                        {" · "}
+                        <Link href="/guides/sales-recruiters-for-account-executives" className={link}>Best Sales Recruiters for AEs</Link>
                         {" · "}
                         <Link href="/blog/early-stage-sales-comp-first-ae-ote" className={link}>What to Pay Your First AE</Link>
                         {" · "}
