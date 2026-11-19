@@ -205,6 +205,10 @@ export default function HireAIMLGuide() {
                         </div>
                     </div>
 
+                    <p className="text-grey-600 leading-relaxed">
+                        Hiring for a carrier or insurtech? See our page on <Link href="/insurance" className="text-blue-accent hover:underline font-semibold">AI and ML recruiting for insurance carriers and insurtechs</Link>.
+                    </p>
+
                     {/* CTA Section */}
                     <div className="p-12 rounded-[2rem] bg-navy-900 text-white text-center shadow-2xl relative overflow-hidden">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.2),transparent)]" />

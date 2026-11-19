@@ -120,6 +120,10 @@ export default function PhDVettedAIMethodology() {
                         </div>
                     </div>
 
+                    <p className="text-grey-600 leading-relaxed">
+                        We use the same process with <Link href="/insurance" className="text-blue-accent hover:underline font-semibold">insurance carriers, MGAs and insurtechs</Link> hiring AI and data engineers.
+                    </p>
+
                     {/* FAQ */}
                     <div className="space-y-8 bg-grey-50 p-8 rounded-3xl border border-grey-100">
                         <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
