@@ -1,4 +1,4 @@
-import { ArrowRight, Calculator, ClipboardCheck, TrendingDown } from "lucide-react";
+import { ArrowRight, Calculator, ClipboardCheck, Scale, TrendingDown } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 
@@ -33,6 +33,14 @@ const tools = [
         cta: "Open the scorecard",
         icon: ClipboardCheck,
     },
+    {
+        title: "GTM Role Mismatch Diagnostic",
+        description:
+            "Paste a sales job description next to your company text. Twelve separate questions score your GTM stage and the seat. Free diagnostic from The Kas Group.",
+        href: "/gtm-role-mismatch",
+        cta: "Run the diagnostic",
+        icon: Scale,
+    },
 ];
 
 export default function HiringToolsPage() {
@@ -52,7 +60,7 @@ export default function HiringToolsPage() {
 
             <section className="py-24 px-6 lg:px-8">
                 <div className="mx-auto max-w-7xl">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                         {tools.map((tool) => {
                             const Icon = tool.icon;
                             return (

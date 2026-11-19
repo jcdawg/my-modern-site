@@ -69,6 +69,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/methodology": { published: "2026-02-27T15:52:13-05:00", modified: "2026-10-14T09:40:00-04:00" },
     "/pip-calculator": { published: "2026-04-20T13:36:28-04:00", modified: "2026-11-05T10:45:00-05:00" },
     "/bad-hire-calculator": { published: "2026-11-12T13:30:00-05:00", modified: "2026-11-12T13:30:00-05:00" },
+    "/gtm-role-mismatch": { published: "2026-11-19T11:30:00-05:00", modified: "2026-11-19T11:30:00-05:00" },
     "/hiring-scorecard": { published: "2026-11-05T10:45:00-05:00", modified: "2026-11-05T14:00:00-05:00" },
     "/privacy-policy": { published: "2026-09-10T12:52:29-04:00", modified: "2026-09-16T13:53:41-07:00" },
     "/programs": { published: "2026-09-14T09:28:02-04:00", modified: "2026-10-24T14:30:00-04:00" },
@@ -77,7 +78,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/recruit/sales": { published: "2026-02-04T16:43:23-05:00", modified: "2026-10-28T10:30:00-04:00" },
     "/site-map": { published: "2026-02-15T14:55:13-05:00", modified: "2026-11-02T09:45:00-05:00" },
     "/terms-of-service": { published: "2026-09-10T12:52:29-04:00", modified: "2026-10-28T10:30:00-04:00" },
-    "/tools": { published: "2026-11-12T15:42:44-05:00", modified: "2026-11-12T15:42:44-05:00" },
+    "/tools": { published: "2026-11-12T15:42:44-05:00", modified: "2026-11-19T11:30:00-05:00" },
 };
 
 export function getPageDates(path: string): PageDates | undefined {

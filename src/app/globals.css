@@ -70,3 +70,24 @@ h6 {
   letter-spacing: -0.02em;
   font-weight: 600;
 }
+/* GTM Role Mismatch diagnostic: result reveal */
+@keyframes gtm-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gtm-rise {
+  animation: gtm-rise 420ms ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gtm-rise {
+    animation: none;
+  }
+}
