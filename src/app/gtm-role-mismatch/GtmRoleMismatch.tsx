@@ -3,7 +3,7 @@
 import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { ArrowRight, Building2, Check, Copy, Loader2, RotateCcw, TriangleAlert, UserRound } from "lucide-react";
-import { resolveCompanyInput } from "@/lib/gtm-role-mismatch/company-input";
+import { SALES_CONTEXT_MAX, resolveCompanyInput, withSalesContext, type SalesContext } from "@/lib/gtm-role-mismatch/company-input";
 import {
     SCAN_LABELS,
     SAMPLE_ALIGNED,
@@ -23,6 +23,9 @@ export default function GtmRoleMismatch() {
     const [jd, setJd] = useState("");
     const [company, setCompany] = useState("");
     const [companyUrl, setCompanyUrl] = useState("");
+    const [whoSellsToday, setWhoSellsToday] = useState("");
+    const [dealSize, setDealSize] = useState("");
+    const [salesProcess, setSalesProcess] = useState("");
     const [phase, setPhase] = useState<Phase>("form");
     const [visibleChecks, setVisibleChecks] = useState(0);
     const [result, setResult] = useState<Diagnosis | null>(null);
@@ -40,11 +43,13 @@ export default function GtmRoleMismatch() {
         const resolved = resolveCompanyInput(company, companyUrl);
         const companyText = resolved.companyText;
         const url = resolved.companyUrl;
+        const context: SalesContext = { whoSellsToday, dealSize, salesProcess };
+        const combinedText = withSalesContext(companyText, context);
         if (url && !/^https:\/\//i.test(url)) {
             setError("That link is not a public https page. Paste the company text instead.");
             return;
         }
-        if (jobDescription.length < 40 || (companyText.length < 40 && !/^https:\/\//i.test(url))) {
+        if (jobDescription.length < 40 || (combinedText.length < 40 && !/^https:\/\//i.test(url))) {
             setError("Paste the job description, and either the company text or an https link to the site.");
             return;
         }
@@ -56,7 +61,7 @@ export default function GtmRoleMismatch() {
             const res = await fetch("/api/gtm-role-mismatch", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ jobDescription, companyText, companyUrl: url }),
+                body: JSON.stringify({ jobDescription, companyText, companyUrl: url, whoSellsToday, dealSize, salesProcess }),
             });
             const body = (await res.json().catch(() => ({}))) as Partial<Diagnosis> & { error?: string };
             if (!res.ok) {
@@ -69,7 +74,7 @@ export default function GtmRoleMismatch() {
             }
             diagnosis = body as Diagnosis;
         } catch {
-            diagnosis = diagnoseFromSignals(jobDescription, companyText);
+            diagnosis = diagnoseFromSignals(jobDescription, combinedText);
         }
         const wait = Math.max(0, 2100 - (Date.now() - started));
         window.setTimeout(() => {
@@ -80,10 +85,17 @@ export default function GtmRoleMismatch() {
         }, wait);
     }
 
+    function clearContext() {
+        setWhoSellsToday("");
+        setDealSize("");
+        setSalesProcess("");
+    }
+
     function reset() {
         setPhase("form");
         setResult(null);
         setVisibleChecks(0);
+        clearContext();
     }
 
     return (
@@ -97,12 +109,19 @@ export default function GtmRoleMismatch() {
                     onJd={setJd}
                     onCompany={setCompany}
                     onUrl={setCompanyUrl}
+                    context={{ whoSellsToday, dealSize, salesProcess }}
+                    onContext={(key, value) => {
+                        if (key === "whoSellsToday") setWhoSellsToday(value);
+                        else if (key === "dealSize") setDealSize(value);
+                        else setSalesProcess(value);
+                    }}
                     onRun={onRun}
                     onSample={(kind) => {
                         const sample = kind === "mismatch" ? SAMPLE_MISMATCH : SAMPLE_ALIGNED;
                         setJd(sample.jobDescription);
                         setCompany(sample.companyText);
                         setCompanyUrl("");
+                        clearContext();
                         setError("");
                     }}
                 />
@@ -113,6 +132,12 @@ export default function GtmRoleMismatch() {
     );
 }
 
+const CONTEXT_FIELDS: { key: keyof SalesContext; label: string; placeholder: string }[] = [
+    { key: "whoSellsToday", label: "Who sells today", placeholder: "e.g., Founder closes all deals, or 2 AEs" },
+    { key: "dealSize", label: "Deal size", placeholder: "e.g., $20k ACV, or $150k enterprise" },
+    { key: "salesProcess", label: "Sales process", placeholder: "e.g., None yet, or a playbook" },
+];
+
 function Form({
     jd,
     company,
@@ -121,6 +146,8 @@ function Form({
     onJd,
     onCompany,
     onUrl,
+    context,
+    onContext,
     onRun,
     onSample,
 }: {
@@ -131,6 +158,8 @@ function Form({
     onJd: (v: string) => void;
     onCompany: (v: string) => void;
     onUrl: (v: string) => void;
+    context: Required<SalesContext>;
+    onContext: (key: keyof SalesContext, v: string) => void;
     onRun: () => void;
     onSample: (kind: "mismatch" | "aligned") => void;
 }) {
@@ -168,6 +197,32 @@ function Form({
                             className="mt-3 w-full rounded-2xl border border-grey-200 bg-white px-4 py-3 text-sm text-navy-900 outline-none transition placeholder:text-grey-400 focus:border-blue-accent"
                         />
                     </label>
+                    <div role="group" aria-labelledby="gtm-context-title" className="rounded-2xl border border-grey-200 bg-grey-50 p-4 sm:p-5">
+                        <p id="gtm-context-title" className="text-sm font-bold text-navy-900">
+                            Sales context <span className="font-medium text-grey-500">(optional)</span>
+                        </p>
+                        <p id="gtm-context-note" className="mt-1 text-sm text-grey-500">
+                            Not required. Adding any of these sharpens the stage read and the score.
+                        </p>
+                        <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                            {CONTEXT_FIELDS.map((field, i) => (
+                                <label key={field.key} className={cn("block min-w-0", i === 0 && "sm:col-span-2")} htmlFor={`gtm-${field.key}`}>
+                                    <span className="text-sm font-bold text-navy-900">{field.label}</span>
+                                    <input
+                                        id={`gtm-${field.key}`}
+                                        type="text"
+                                        autoComplete="off"
+                                        maxLength={SALES_CONTEXT_MAX}
+                                        aria-describedby="gtm-context-note"
+                                        value={context[field.key]}
+                                        onChange={(e) => onContext(field.key, e.target.value)}
+                                        placeholder={field.placeholder}
+                                        className="mt-2 w-full rounded-2xl border border-grey-200 bg-white px-4 py-3 text-sm text-navy-900 outline-none transition placeholder:text-grey-400 focus:border-blue-accent"
+                                    />
+                                </label>
+                            ))}
+                        </div>
+                    </div>
                     {error ? (
                         <p role="alert" className="rounded-2xl border border-blue-accent/30 bg-blue-accent/5 px-4 py-3 text-sm font-medium text-navy-900">
                             {error}
@@ -297,6 +352,7 @@ function copyText(result: Diagnosis) {
     const lines = [
         `GTM Role Mismatch: ${result.verdict}`,
         `Computed mismatch: ${result.mismatch}% (evidence strength ${result.confidence}%)`,
+        `GTM stage fit: ${100 - result.mismatch}%`,
         `Company stage: ${result.stageLabel}`,
         `Who the JD attracts: ${result.personaLabel}`,
         "",
@@ -340,7 +396,7 @@ function Report({ result, onReset }: { result: Diagnosis; onReset: () => void })
                         <p className="text-sm font-bold uppercase tracking-wider text-blue-accent">{result.verdict}</p>
                         <h2 className="mt-3 max-w-xl text-3xl font-bold leading-tight text-white sm:text-4xl">{result.summary}</h2>
                         <p className="mt-4 inline-flex max-w-xl items-center gap-2 text-sm leading-relaxed text-grey-400">
-                            <EngineBadge engine={result.engine} />
+                            {result.engine === "signals" ? <EngineBadge /> : null}
                             <span>{engineLine(result.engine, result.pageStatus)}</span>
                         </p>
                     </div>
@@ -352,10 +408,18 @@ function Report({ result, onReset }: { result: Diagnosis; onReset: () => void })
                 </div>
                 <div className="relative mt-8">
                     <div className="mb-2 flex justify-between text-xs font-medium text-grey-400">
-                        <span>Stage match</span>
+                        <span>GTM stage fit</span>
                         <span>{match}%</span>
                     </div>
-                    <div className="h-2 overflow-hidden rounded-full bg-white/10">
+                    <div
+                        role="meter"
+                        aria-label="GTM stage fit"
+                        aria-valuemin={0}
+                        aria-valuemax={100}
+                        aria-valuenow={match}
+                        title="GTM stage fit: how well the job description fits the company's actual GTM stage (100% minus the computed mismatch)."
+                        className="h-2 overflow-hidden rounded-full bg-white/10"
+                    >
                         <div className="h-full rounded-full bg-blue-accent transition-all duration-700" style={{ width: `${match}%` }} />
                     </div>
                 </div>
@@ -501,11 +565,10 @@ function InfoCard({
     );
 }
 
-function EngineBadge({ engine }: { engine: Diagnosis["engine"] }) {
-    const label = engine === "jev" ? "Jev" : "Keywords";
+function EngineBadge() {
     return (
         <span className="shrink-0 rounded-full border border-white/15 bg-white/5 px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wider text-grey-200">
-            {label}
+            Keywords
         </span>
     );
 }
@@ -513,7 +576,7 @@ function EngineBadge({ engine }: { engine: Diagnosis["engine"] }) {
 function engineLine(engine: Diagnosis["engine"], pageStatus: Diagnosis["pageStatus"]) {
     const page =
         pageStatus === "fetched" ? " The page link was read." : pageStatus === "failed" ? " The page link could not be read." : "";
-    if (engine === "jev") return `Jev answered twelve questions in one pass. This number is the distance between those answers.${page}`;
+    if (engine === "jev") return `Twelve questions were answered in one pass. This number is the distance between those answers.${page}`;
     return `Keyword stand-in. Same formula, weaker inputs.${page}`;
 }
 

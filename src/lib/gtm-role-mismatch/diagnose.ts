@@ -257,11 +257,30 @@ export function answersFromSignals(jobDescription: string, companyText: string):
     const hit = (text: string, phrases: string[]) => phrases.some((phrase) => text.includes(phrase));
 
     const early = hit(co, ["seed", "pre-seed", "preseed", "first hire", "first sales", "founding", "14 month"]);
-    const founderSells = hit(co, ["founder is still", "founder still", "still closing", "still closes", "founder-led"]);
-    const noTeam = hit(co, ["no team", "first sales", "first hire", "first sales person", "founding ae"]);
-    const noProcess = hit(co, ["no sales process", "no process", "no enablement", "no playbook", "no formal process"]);
-    const modest = /\$\s?1[0-9]\s?k|\$\s?2[0-5]\s?k|18k|15k|20k|25k|short/.test(co);
-    const scaled = hit(co, ["series b", "series c", "enablement team", "sales ops", "playbook is", "ae team"]);
+    const founderSells = hit(co, [
+        "founder is still",
+        "founder still",
+        "still closing",
+        "still closes",
+        "founder-led",
+        "founder closes",
+        "founders close",
+        "founder sells",
+        "founders sell",
+        "founder does all",
+        "founder handles",
+        "ceo closes",
+        "ceo sells",
+    ]);
+    const noTeam = hit(co, ["no team", "no sales team", "no sellers", "no salespeople", "no reps", "first sales", "first hire", "first sales person", "founding ae"]);
+    const noProcess =
+        hit(co, ["no sales process", "no process", "no enablement", "no playbook", "no formal process", "no documented"]) ||
+        /sales process: (none|no\b|nothing|n\/a|ad hoc|not yet)/.test(co);
+    const modest = /\$\s?1[0-9]\s?k|\$\s?2[0-5]\s?k|18k|15k|20k|25k|short/.test(co) || dollarsInK(co).some((k) => k <= 50);
+    const fewSellers = /\b(2|3|4|two|three|four|a few|a couple of|couple of) (aes|account executives|sellers|reps|salespeople)\b/.test(co);
+    const scaled =
+        hit(co, ["series b", "series c", "enablement team", "sales ops", "playbook is", "ae team", "sales team of", "sales managers"]) ||
+        (!noProcess && hit(co, ["documented playbook", "documented sales process", "repeatable playbook"]));
 
     const vp = hit(jd, ["vp of sales", "vp, sales", "chief revenue", "cro", "head of sales"]);
     const team = hit(jd, ["team of", "hire and coach", "build and scale", "sdr team", "led teams"]);
@@ -271,7 +290,13 @@ export function answersFromSignals(jobDescription: string, companyText: string):
     const tenure = hit(jd, ["10+ years", "15+ years", "10 years", "15 to 25"]);
     const founding = hit(jd, ["founding ae", "founding account", "first sales hire", "not a management"]);
 
-    const stage: Stage = early || founderSells || noTeam ? "founder_led" : scaled ? "scaled" : "unclear";
+    const stage: Stage = early || founderSells || noTeam
+        ? "founder_led"
+        : fewSellers && !scaled
+            ? "first_repeatable"
+            : scaled
+                ? "scaled"
+                : "unclear";
     const persona: Persona = founding && !vp ? "founding_seller" : vp ? "vp_cro" : hands ? "player_coach" : "unclear";
 
     const nouls: Answers["nouls"] = {
@@ -296,6 +321,16 @@ export function answersFromSignals(jobDescription: string, companyText: string):
         jobDescription,
         companyText,
     );
+}
+
+/** Dollar amounts written as $NNk (or $N.Nm) in the text, in thousands. */
+function dollarsInK(text: string): number[] {
+    const out: number[] = [];
+    for (const m of text.matchAll(/\$\s?(\d+(?:\.\d+)?)\s?(k|m)\b/g)) {
+        const n = Number(m[1]);
+        if (Number.isFinite(n)) out.push(m[2] === "m" ? n * 1000 : n);
+    }
+    return out;
 }
 
 export function scoreAnswers(
@@ -580,15 +615,15 @@ function readNoul(value: unknown) {
 
 /**
  * Cues that point at the sentence supporting each Noul. Used when the engine
- * (Jev, or the keyword stand-in) returns a probability without an excerpt.
+ * (the question engine, or the keyword stand-in) returns a probability without an excerpt.
  * Whatever is returned is cut from the pasted text and re-checked by quoteFrom,
  * so it is always verbatim.
  */
 const EVIDENCE_CUES: Record<NoulKey, RegExp[]> = {
-    founder_still_sells: [/founder (is )?still|still clos|founder-led/i, /alongside the founder|next to the founder/i],
-    no_sales_team: [/no (sales )?team|first sales|first hire|founding ae|no one (else )?sells/i],
-    no_process: [/no (sales )?process|no enablement|no playbook|no formal process/i],
-    modest_deal: [/\bacv\b|contract value|deal size|cycles? (are|is) short|short (sales )?cycle/i],
+    founder_still_sells: [/founder (is )?still|still clos|founder-led|founders? (closes?|sells?|does all|handles)|ceo (closes|sells)/i, /alongside the founder|next to the founder/i],
+    no_sales_team: [/no (sales )?team|no (sellers|salespeople|reps)|first sales|first hire|founding ae|no one (else )?sells/i],
+    no_process: [/no (sales )?process|no enablement|no playbook|no formal process|no documented|sales process: (none|no\b|nothing|ad hoc|not yet)/i],
+    modest_deal: [/\bacv\b|contract value|deal size|typical deal size|cycles? (are|is) short|short (sales )?cycle/i],
     jd_is_org_leader: [/\bvp\b|vice president|chief revenue|\bcro\b|head of sales/i],
     jd_expects_team: [/hire and coach|sdr team|teams? of \d|led teams|manage (a|the) team/i, /build (a|the) team|build and scale/i],
     jd_expects_systems: [/enablement|forecast|board/i],
