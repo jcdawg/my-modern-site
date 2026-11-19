@@ -267,6 +267,9 @@ export default function SalesRecruitersForAccountExecutives() {
                         <p>
                             The level of the seat changes what the recruiter has to prove. Mid level AEs need a clean track record in a similar motion. Senior AEs need bigger deals and more of them. Enterprise AEs need proof they ran long, multi stakeholder cycles themselves. Four things matter at every level.
                         </p>
+                        <p>
+                            Before you brief a recruiter, set the offer against current <Link href="/guides/account-executive-ote-by-level" className={link}>account executive OTE by level</Link> so the search is aimed at the right market.
+                        </p>
                         <h3 className="text-xl font-bold text-navy-900">Quota verification</h3>
                         <p>
                             Ask how the recruiter checks attainment. Quota in dollars, attainment by year, and how the number was set beat a percentage on a resume. A good recruiter asks for the deal list before you ever see the candidate.
@@ -322,6 +325,7 @@ export default function SalesRecruitersForAccountExecutives() {
                             <li><Link href="/guides/how-to-hire-account-executive" className={link}>How to hire an account executive</Link></li>
                             <li><Link href="/guides/how-to-hire-senior-account-executive" className={link}>How to hire a senior account executive</Link></li>
                             <li><Link href="/guides/how-to-hire-enterprise-account-executive" className={link}>How to hire an enterprise account executive</Link></li>
+                            <li><Link href="/guides/account-executive-ote-by-level" className={link}>Account executive OTE by level</Link></li>
                             <li><Link href="/guides/best-sales-recruiting-agencies-2026" className={link}>Best sales recruiting agencies for 2026</Link></li>
                             <li><Link href="/guides/sales-recruiters-for-ai-companies" className={link}>Best sales recruiters for AI companies</Link></li>
                         </ul>
