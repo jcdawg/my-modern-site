@@ -5,6 +5,7 @@
  */
 import assert from "node:assert/strict";
 import test from "node:test";
+import { resolveCompanyInput } from "../src/lib/gtm-role-mismatch/company-input.ts";
 import {
     SAMPLE_ALIGNED,
     SAMPLE_MISMATCH,
@@ -64,4 +65,43 @@ test("private, loopback and link-local addresses are refused", async () => {
     for (const url of ["http://127.0.0.1", "http://localhost", "http://169.254.169.254", "https://127.0.0.1", "https://localhost", "https://169.254.169.254/latest/meta-data", "https://[::1]/", "https://user:pw@example.com", "https://example.com:8443/", "ftp://example.com"]) {
         assert.equal(await publicHttps(url), null, url);
     }
+});
+
+test("an https URL pasted in company text is moved to companyUrl", () => {
+    const result = resolveCompanyInput("https://omnilex.law/", "");
+    assert.equal(result.companyUrl, "https://omnilex.law/");
+    assert.equal(result.companyText, "");
+});
+
+test("a bare domain pasted in company text becomes an https URL", () => {
+    const result = resolveCompanyInput("omnilex.law", "");
+    assert.equal(result.companyUrl, "https://omnilex.law");
+    assert.equal(result.companyText, "");
+});
+
+test("an https URL on its own line is extracted and remaining notes are kept", () => {
+    const result = resolveCompanyInput("https://omnilex.law/\nFounder still closes deals", "");
+    assert.equal(result.companyUrl, "https://omnilex.law/");
+    assert.equal(result.companyText, "Founder still closes deals");
+});
+
+test("a loopback URL pasted in company text is still refused by publicHttps", async () => {
+    const result = resolveCompanyInput("http://127.0.0.1", "");
+    assert.equal(result.companyUrl, "http://127.0.0.1");
+    assert.equal(result.companyText, "");
+    assert.equal(await publicHttps(result.companyUrl), null);
+});
+
+test("normal prose without a URL stays in companyText", () => {
+    const prose = "We're a seed-stage company. The founder still closes most deals.";
+    const result = resolveCompanyInput(prose, "");
+    assert.equal(result.companyText, prose);
+    assert.equal(result.companyUrl, "");
+});
+
+test("a bare domain or http link in companyUrl is upgraded to https", () => {
+    assert.equal(resolveCompanyInput("", "omnilex.law").companyUrl, "https://omnilex.law");
+    assert.equal(resolveCompanyInput("Pitch notes", "www.omnilex.law/about").companyUrl, "https://www.omnilex.law/about");
+    assert.equal(resolveCompanyInput("", "http://omnilex.law").companyUrl, "https://omnilex.law");
+    assert.equal(resolveCompanyInput("Pitch notes", "http://omnilex.law").companyText, "Pitch notes");
 });

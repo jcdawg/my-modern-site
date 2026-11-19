@@ -3,6 +3,7 @@
 import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { ArrowRight, Building2, Check, Copy, Loader2, RotateCcw, TriangleAlert, UserRound } from "lucide-react";
+import { resolveCompanyInput } from "@/lib/gtm-role-mismatch/company-input";
 import {
     SCAN_LABELS,
     SAMPLE_ALIGNED,
@@ -36,14 +37,15 @@ export default function GtmRoleMismatch() {
     async function onRun() {
         setError("");
         const jobDescription = jd.trim();
-        const companyText = company.trim();
-        const url = companyUrl.trim();
-        if (jobDescription.length < 40 || (companyText.length < 40 && !/^https:\/\//i.test(url))) {
-            setError("Paste the job description, and either the company text or an https link to the site.");
-            return;
-        }
+        const resolved = resolveCompanyInput(company, companyUrl);
+        const companyText = resolved.companyText;
+        const url = resolved.companyUrl;
         if (url && !/^https:\/\//i.test(url)) {
             setError("That link is not a public https page. Paste the company text instead.");
+            return;
+        }
+        if (jobDescription.length < 40 || (companyText.length < 40 && !/^https:\/\//i.test(url))) {
+            setError("Paste the job description, and either the company text or an https link to the site.");
             return;
         }
         setVisibleChecks(0);
@@ -147,10 +149,10 @@ function Form({
                     <Field
                         id="gtm-company"
                         label="Website or pitch"
-                        hint="Homepage, about, deck, or a short note on stage, ACV, and who sells today."
+                        hint="A site link, homepage or about copy, a deck, or a short note on stage, ACV, and who sells today."
                         value={company}
                         onChange={onCompany}
-                        placeholder="Paste the company language..."
+                        placeholder="Paste a site link or the company language..."
                     />
                     <label className="block" htmlFor="gtm-url">
                         <span className="text-sm font-bold text-navy-900">Or a public https link</span>

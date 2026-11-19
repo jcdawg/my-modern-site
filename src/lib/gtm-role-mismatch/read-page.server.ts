@@ -31,9 +31,9 @@ export async function fetchPublicPage(raw: string) {
             if (!res.ok) return null;
             const type = res.headers.get("content-type") ?? "";
             if (!/text\/html|text\/plain/.test(type)) return null;
-            const bytes = await res.arrayBuffer();
-            if (bytes.byteLength > 250_000) return null;
-            const text = htmlToText(new TextDecoder().decode(bytes)).slice(0, 8000);
+            const bytes = new Uint8Array(await res.arrayBuffer());
+            const html = bytes.byteLength > 1_500_000 ? bytes.subarray(0, 1_500_000) : bytes;
+            const text = htmlToText(new TextDecoder().decode(html)).slice(0, 8000);
             return text.length >= 40 ? text : null;
         }
         return null;
@@ -121,6 +121,7 @@ function htmlToText(html: string) {
         .replace(/<script[\s\S]*?<\/script>/gi, " ")
         .replace(/<style[\s\S]*?<\/style>/gi, " ")
         .replace(/<noscript[\s\S]*?<\/noscript>/gi, " ")
+        .replace(/<svg[\s\S]*?<\/svg>/gi, " ")
         .replace(/<[^>]+>/g, " ")
         .replace(/&nbsp;/gi, " ")
         .replace(/&lt;/gi, "<")
