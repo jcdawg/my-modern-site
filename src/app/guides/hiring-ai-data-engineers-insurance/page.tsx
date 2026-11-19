@@ -150,7 +150,7 @@ export default function HiringAiDataEngineersInsurance() {
                             ))}
                         </div>
                         <p>
-                            For the general version of these roles, read <Link href="/guides/how-to-hire-ai-ml-engineers" className={link}>how to hire AI and ML engineers</Link> and <Link href="/guides/data-engineer-vs-analytics-engineer-hiring-guide" className={link}>data engineer vs analytics engineer</Link>.
+                            For the general version of these roles, read <Link href="/guides/how-to-hire-ai-ml-engineers" className={link}>how to hire AI and ML engineers</Link> and <Link href="/guides/data-engineer-vs-analytics-engineer-hiring-guide" className={link}>data engineer vs analytics engineer</Link>. To compare firms that recruit this talent, see our list of <Link href="/guides/best-data-engineering-recruiting-agencies" className={link}>best data engineering recruiting agencies</Link>.
                         </p>
                     </div>
 

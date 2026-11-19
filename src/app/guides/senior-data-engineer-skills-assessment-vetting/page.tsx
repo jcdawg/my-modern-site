@@ -80,6 +80,9 @@ export default function DataEngineerAssessment() {
                             <li>Have a senior peer probe late arriving data, schema evolution and failures.</li>
                             <li>Make them defend a past decision that went wrong.</li>
                         </ol>
+                        <p className="text-grey-600 leading-relaxed">
+                            If the seat is in insurance, use the same screen. See our guide to <Link href="/guides/hiring-ai-data-engineers-insurance" className="text-blue-accent hover:underline font-semibold">hiring AI and data engineers for insurance</Link>.
+                        </p>
                     </div>
                     
                     {/* (TL;DR) Summary */}

@@ -336,7 +336,7 @@ export default function CostOfHiringWrongDataEngineer() {
                             </li>
                         </ul>
                         <p className="text-grey-600 leading-relaxed">
-                            Recovering from one bad hire is painful. Repeating the process that caused it is the actual failure. For the full interview framework and technical assessment checklist, see our <Link href="/guides/senior-data-engineer-skills-assessment-vetting" className="text-blue-accent hover:underline font-semibold">senior data engineer skills assessment guide</Link>, and for the AI-specific version, <Link href="/guides/how-to-hire-ai-ml-engineers" className="text-blue-accent hover:underline font-semibold">how to hire AI and ML engineers</Link>.
+                            Recovering from one bad hire is painful. Repeating the process that caused it is the actual failure. For the full interview framework and technical assessment checklist, see our <Link href="/guides/senior-data-engineer-skills-assessment-vetting" className="text-blue-accent hover:underline font-semibold">senior data engineer skills assessment guide</Link>, and for the AI-specific version, <Link href="/guides/how-to-hire-ai-ml-engineers" className="text-blue-accent hover:underline font-semibold">how to hire AI and ML engineers</Link>. If you are hiring data engineers for regulated insurance teams, see our guide to <Link href="/guides/hiring-ai-data-engineers-insurance" className="text-blue-accent hover:underline font-semibold">hiring data engineers for regulated insurance teams</Link>.
                         </p>
                     </div>
 
@@ -367,6 +367,7 @@ export default function CostOfHiringWrongDataEngineer() {
                                 { title: "Hiring Senior Data Engineers for AI Startups", href: "/guides/how-to-hire-senior-data-engineers-ai-startups", desc: "The tactical roadmap for getting the first technical hire right." },
                                 { title: "Senior Data Engineer Skills Assessment", href: "/guides/senior-data-engineer-skills-assessment-vetting", desc: "The full technical vetting framework and interview questions." },
                                 { title: "Best Data Engineering Recruiting Agencies", href: "/guides/best-data-engineering-recruiting-agencies", desc: "Our objective analysis of the top firms for the modern data stack." },
+                                { title: "Hiring AI and Data Engineers for Insurance", href: "/guides/hiring-ai-data-engineers-insurance", desc: "How carriers, MGAs and insurtechs should screen AI, ML and data engineering hires." },
                                 { title: "Do AI Resume Screeners Work?", href: "/guides/do-ai-resume-screeners-work", desc: "What keyword and AI screening misses, and why capability checks catch it." },
                             ].map((guide) => (
                                 <Link key={guide.href} href={guide.href} className="group p-6 rounded-2xl border border-grey-100 hover:border-blue-accent/20 hover:bg-grey-50 transition-all shadow-sm">

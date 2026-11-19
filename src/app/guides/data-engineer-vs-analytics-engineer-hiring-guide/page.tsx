@@ -137,6 +137,9 @@ export default function DataVsAnalyticsEngineer() {
                                 </p>
                             </div>
                         </div>
+                        <p className="text-grey-600 leading-relaxed">
+                            In insurance, that same split often shows up as policy and claims data pipelines versus actuarial and analytics work. See our guide to <Link href="/guides/hiring-ai-data-engineers-insurance" className="text-blue-accent hover:underline font-semibold">hiring AI and data engineers for insurance</Link>.
+                        </p>
                     </div>
 
                     {/* Vetting Spotlight */}
