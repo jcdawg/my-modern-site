@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { resolveCompanyInput } from "@/lib/gtm-role-mismatch/company-input";
 import { answersFromSignals, blankAnswers, scoreAnswers, type Diagnosis } from "@/lib/gtm-role-mismatch/diagnose";
 import { askJev } from "@/lib/gtm-role-mismatch/engines.server";
 import { fetchPublicPage, publicHttps } from "@/lib/gtm-role-mismatch/read-page.server";
@@ -46,8 +47,9 @@ export async function POST(req: NextRequest) {
     }
     const body = (raw ?? {}) as Record<string, unknown>;
     const jobDescription = str(body.jobDescription);
-    let companyText = str(body.companyText);
-    const companyUrl = str(body.companyUrl);
+    const resolved = resolveCompanyInput(str(body.companyText), str(body.companyUrl));
+    let companyText = resolved.companyText;
+    const companyUrl = resolved.companyUrl;
 
     if (jobDescription.length > MAX_CHARS || companyText.length > MAX_CHARS || companyUrl.length > 300) {
         return bad("That is longer than this tool reads. Trim each box to 12,000 characters.");
