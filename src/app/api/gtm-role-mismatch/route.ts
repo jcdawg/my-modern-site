@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { resolveCompanyInput } from "@/lib/gtm-role-mismatch/company-input";
+import { resolveCompanyInput, withSalesContext } from "@/lib/gtm-role-mismatch/company-input";
 import { answersFromSignals, blankAnswers, scoreAnswers, type Diagnosis } from "@/lib/gtm-role-mismatch/diagnose";
 import { askJev } from "@/lib/gtm-role-mismatch/engines.server";
 import { fetchPublicPage, publicHttps } from "@/lib/gtm-role-mismatch/read-page.server";
@@ -9,8 +9,9 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 export const maxDuration = 30;
 
-// Privacy: the pasted job description, company text and URL are used for this
-// one request only. They are never logged, stored, emailed or sent to analytics.
+// Privacy: the pasted job description, company text, URL and the optional
+// sales context fields (who sells today, deal size, sales process) are used for
+// this one request only. They are never logged, stored, emailed or sent to analytics.
 
 const MAX_CHARS = 12000;
 
@@ -43,7 +44,7 @@ export async function POST(req: NextRequest) {
     try {
         raw = await req.json();
     } catch {
-        return bad("Send JSON with jobDescription, companyText and an optional companyUrl.");
+        return bad("Send JSON with jobDescription, companyText, an optional companyUrl and optional sales context.");
     }
     const body = (raw ?? {}) as Record<string, unknown>;
     const jobDescription = str(body.jobDescription);
@@ -54,6 +55,12 @@ export async function POST(req: NextRequest) {
     if (jobDescription.length > MAX_CHARS || companyText.length > MAX_CHARS || companyUrl.length > 300) {
         return bad("That is longer than this tool reads. Trim each box to 12,000 characters.");
     }
+    // Optional sales context (trimmed, capped at 200 chars each). A no-op when all three are blank.
+    companyText = withSalesContext(companyText, {
+        whoSellsToday: body.whoSellsToday,
+        dealSize: body.dealSize,
+        salesProcess: body.salesProcess,
+    });
     if (companyUrl && !(await publicHttps(companyUrl))) {
         return bad("That link is not a public https page. Paste the company text instead.");
     }

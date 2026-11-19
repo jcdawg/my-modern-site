@@ -5,7 +5,7 @@
  */
 import assert from "node:assert/strict";
 import test from "node:test";
-import { resolveCompanyInput } from "../src/lib/gtm-role-mismatch/company-input.ts";
+import { resolveCompanyInput, salesContextLines, withSalesContext } from "../src/lib/gtm-role-mismatch/company-input.ts";
 import {
     SAMPLE_ALIGNED,
     SAMPLE_MISMATCH,
@@ -104,4 +104,80 @@ test("a bare domain or http link in companyUrl is upgraded to https", () => {
     assert.equal(resolveCompanyInput("Pitch notes", "www.omnilex.law/about").companyUrl, "https://www.omnilex.law/about");
     assert.equal(resolveCompanyInput("", "http://omnilex.law").companyUrl, "https://omnilex.law");
     assert.equal(resolveCompanyInput("Pitch notes", "http://omnilex.law").companyText, "Pitch notes");
+});
+
+const THIN_COMPANY = "Acme builds workflow software for legal teams. We help firms move faster with AI-assisted review.";
+const FILLED_CONTEXT = {
+    whoSellsToday: "Founder closes all deals, no sales team yet",
+    dealSize: "$18k ACV",
+    salesProcess: "No formal process or enablement yet",
+};
+
+test("blank optional sales context leaves the company text and score identical", () => {
+    for (const blank of [{}, { whoSellsToday: "", dealSize: "  ", salesProcess: "" }, undefined, null]) {
+        assert.equal(withSalesContext(THIN_COMPANY, blank), THIN_COMPANY);
+        assert.equal(salesContextLines(blank), "");
+    }
+    for (const sample of [SAMPLE_MISMATCH, SAMPLE_ALIGNED, { jobDescription: SAMPLE_MISMATCH.jobDescription, companyText: THIN_COMPANY }]) {
+        const before = scoreAnswers(answersFromSignals(sample.jobDescription, sample.companyText), "signals", "none");
+        const after = scoreAnswers(
+            answersFromSignals(sample.jobDescription, withSalesContext(sample.companyText, { whoSellsToday: "", dealSize: "", salesProcess: "" })),
+            "signals",
+            "none",
+        );
+        assert.deepEqual(after, before);
+    }
+});
+
+test("sales context lines are natural language, trimmed and capped", () => {
+    const lines = salesContextLines({ whoSellsToday: "  Founder closes all deals.  ", dealSize: "$18k ACV", salesProcess: "x".repeat(500) });
+    const rows = lines.split("\n");
+    assert.equal(rows[0], "Who sells today: Founder closes all deals.");
+    assert.equal(rows[1], "Typical deal size: $18k ACV.");
+    assert.ok(rows[2].startsWith("Sales process: x") && rows[2].length <= "Sales process: ".length + 201);
+    assert.equal(salesContextLines({ dealSize: "$40k" }), "Typical deal size: $40k.");
+});
+
+test("filled sales context pins the stage and moves mismatch and GTM stage fit", () => {
+    const jd = SAMPLE_MISMATCH.jobDescription;
+    const thin = scoreAnswers(answersFromSignals(jd, THIN_COMPANY), "signals", "none");
+    assert.equal(thin.verdict, "Not enough to call");
+    assert.equal(thin.stageLabel, "Stage is not pinned");
+
+    const combined = withSalesContext(THIN_COMPANY, FILLED_CONTEXT);
+    const answers = answersFromSignals(jd, combined);
+    assert.equal(answers.company_stage.choice, "founder_led");
+    assert.ok(answers.nouls.founder_still_sells.noul >= 0.8);
+    assert.ok(answers.nouls.no_sales_team.noul >= 0.8);
+    assert.ok(answers.nouls.no_process.noul >= 0.8);
+    assert.ok(answers.nouls.modest_deal.noul >= 0.8);
+    const filled = scoreAnswers(answers, "signals", "none");
+    assert.equal(filled.verdict, "Mismatch");
+    assert.ok(filled.mismatch >= 75, `expected a high mismatch, got ${filled.mismatch}`);
+    assert.ok(100 - filled.mismatch <= 25, "GTM stage fit should drop");
+    assert.ok(filled.mismatch - thin.mismatch >= 25, `mismatch should shift: ${thin.mismatch} -> ${filled.mismatch}`);
+    for (const check of filled.checks) {
+        if (check.evidence) assert.ok(`${jd}\n${combined}`.includes(check.evidence), `quote not verbatim: ${check.evidence}`);
+    }
+
+    const aligned = scoreAnswers(answersFromSignals(SAMPLE_ALIGNED.jobDescription, combined), "signals", "none");
+    assert.equal(aligned.verdict, "Aligned");
+    assert.ok(100 - aligned.mismatch >= 70, `founding AE should fit, got fit ${100 - aligned.mismatch}`);
+});
+
+test("other sales context phrasings shift the deterministic read", () => {
+    const a = answersFromSignals(SAMPLE_MISMATCH.jobDescription, withSalesContext(THIN_COMPANY, { whoSellsToday: "Founder closes all deals", dealSize: "$15k ACV", salesProcess: "No sales process yet" }));
+    assert.equal(a.company_stage.choice, "founder_led");
+    assert.ok(a.nouls.founder_still_sells.noul > 0.8 && a.nouls.modest_deal.noul > 0.8 && a.nouls.no_process.noul > 0.8);
+    const b = answersFromSignals(SAMPLE_MISMATCH.jobDescription, withSalesContext(THIN_COMPANY, { whoSellsToday: "2 AEs" }));
+    assert.equal(b.company_stage.choice, "first_repeatable");
+    const c = answersFromSignals(SAMPLE_MISMATCH.jobDescription, withSalesContext(THIN_COMPANY, { dealSize: "$150k enterprise", salesProcess: "Documented playbook" }));
+    assert.equal(c.company_stage.choice, "scaled");
+    assert.ok(c.nouls.modest_deal.noul < 0.5);
+});
+
+test("a URL plus optional context counts toward the 40-character minimum", () => {
+    const resolved = resolveCompanyInput("Seed", "");
+    assert.ok(resolved.companyText.length < 40);
+    assert.ok(withSalesContext(resolved.companyText, { whoSellsToday: "Founder closes all deals" }).length >= 40);
 });

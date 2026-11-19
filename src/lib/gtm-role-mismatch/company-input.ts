@@ -202,3 +202,48 @@ function isPrivateV6(ip: string): boolean {
     if (/^::(\d|[0-9a-f]{1,4}:)/.test(ip)) return true;
     return false;
 }
+
+/**
+ * Optional sales context the founder can add next to the company text: who
+ * sells today, typical deal size, and whether a sales process exists. Each
+ * value is trimmed and capped. When all three are blank, the company text is
+ * returned unchanged so scoring behaves exactly as it did without them.
+ */
+export type SalesContext = {
+    whoSellsToday?: string;
+    dealSize?: string;
+    salesProcess?: string;
+};
+
+export const SALES_CONTEXT_MAX = 200;
+
+function contextValue(value: unknown): string {
+    if (typeof value !== "string") return "";
+    return value.replace(/\s+/g, " ").trim().slice(0, SALES_CONTEXT_MAX).trim().replace(/[.\s]+$/, "");
+}
+
+export function normalizeSalesContext(input: SalesContext | Record<string, unknown> | null | undefined): Required<SalesContext> {
+    const source = (input ?? {}) as Record<string, unknown>;
+    return {
+        whoSellsToday: contextValue(source.whoSellsToday),
+        dealSize: contextValue(source.dealSize),
+        salesProcess: contextValue(source.salesProcess),
+    };
+}
+
+/** Natural-language lines for the provided fields only. Empty string when all three are blank. */
+export function salesContextLines(input: SalesContext | Record<string, unknown> | null | undefined): string {
+    const ctx = normalizeSalesContext(input);
+    const lines: string[] = [];
+    if (ctx.whoSellsToday) lines.push(`Who sells today: ${ctx.whoSellsToday}.`);
+    if (ctx.dealSize) lines.push(`Typical deal size: ${ctx.dealSize}.`);
+    if (ctx.salesProcess) lines.push(`Sales process: ${ctx.salesProcess}.`);
+    return lines.join("\n");
+}
+
+/** Append the optional sales context to the company text. Identity when no field is filled in. */
+export function withSalesContext(companyText: string, input: SalesContext | Record<string, unknown> | null | undefined): string {
+    const lines = salesContextLines(input);
+    if (!lines) return companyText;
+    return [companyText.trim(), lines].filter(Boolean).join("\n\n");
+}
