@@ -70,6 +70,8 @@ export default function Sitemap() {
                                 <li><Link href="/guides/top-executive-search-firms-sales-leaders" className="text-grey-600 hover:text-blue-accent transition-colors">Top Exec Search Firms</Link></li>
                                 <li><Link href="/guides/best-firms-hire-cro" className="text-grey-600 hover:text-blue-accent transition-colors">Best Firms to Hire a CRO</Link></li>
                                 <li><Link href="/guides/affordable-alternatives-korn-ferry" className="text-grey-600 hover:text-blue-accent transition-colors">Korn Ferry Alternatives</Link></li>
+                                <li><Link href="/guides/sales-talent-inc-alternatives" className="text-grey-600 hover:text-blue-accent transition-colors">Sales Talent Inc. Alternatives</Link></li>
+                                <li><Link href="/guides/betts-recruiting-alternatives" className="text-grey-600 hover:text-blue-accent transition-colors">Betts Recruiting Alternatives</Link></li>
                                 <li><Link href="/guides/retained-vs-contingency-recruiting" className="text-grey-600 hover:text-blue-accent transition-colors">Retained vs Contingency</Link></li>
                                 <li><Link href="/guides/cost-of-a-bad-hire" className="text-grey-600 hover:text-blue-accent transition-colors">Cost of a Bad Hire</Link></li>
                                 <li><Link href="/guides/sales-recruiters-atlanta" className="text-grey-600 hover:text-blue-accent transition-colors">Atlanta Sales Recruiters</Link></li>

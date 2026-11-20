@@ -119,6 +119,9 @@ export default function AffordableAlternativesKornFerry() {
                                 </div>
                             </li>
                         </ul>
+                        <p className="text-grey-600 leading-relaxed">
+                            Comparing sales recruiting firms for AE seats instead? See these <Link href="/guides/sales-talent-inc-alternatives" className="text-blue-accent hover:underline font-semibold">Sales Talent Inc. alternatives</Link> and <Link href="/guides/betts-recruiting-alternatives" className="text-blue-accent hover:underline font-semibold">Betts Recruiting alternatives</Link>.
+                        </p>
                     </div>
 
                     <div className="space-y-8">
