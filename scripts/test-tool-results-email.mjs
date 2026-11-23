@@ -24,6 +24,7 @@ registerHooks({
 
 const {
     buildNotifyEmail,
+    buildReviewLeadEmail,
     buildVisitorEmail,
     isValidEmail,
     validateToolResultsEmail,
@@ -82,6 +83,56 @@ check("notify email includes only tool name and visitor email", () => {
     assert.match(email.text, /Tool: Hiring Scorecard Builder/);
     assert.match(email.text, /Visitor email: visitor@example.com/);
     assert.doesNotMatch(email.text, /Mission|job description|https?:\/\//i);
+});
+check("omitted reviewRequested is false and lead source is sanitized", () => {
+    const result = validateToolResultsEmail({
+        email: "a@b.co",
+        tool: "hiring-scorecard",
+        summary: "Role: AE",
+        leadSource: { utm_source: "linkedin", extra: "drop me", landing_page: "/guides/cost-of-a-bad-hire" },
+    });
+    assert.equal(result.ok, true);
+    assert.equal(result.honeypot, false);
+    assert.equal(result.value.reviewRequested, false);
+    assert.equal(result.value.leadSource.utm_source, "linkedin");
+    assert.equal(result.value.leadSource.landing_page, "/guides/cost-of-a-bad-hire");
+    assert.equal("extra" in result.value.leadSource, false);
+});
+check("reviewRequested true is parsed from a boolean", () => {
+    const result = validateToolResultsEmail({
+        email: "a@b.co",
+        tool: "gtm-role-mismatch",
+        summary: "GTM Role Mismatch: High mismatch",
+        reviewRequested: true,
+    });
+    assert.equal(result.ok, true);
+    assert.equal(result.value.reviewRequested, true);
+});
+check("review lead email includes tool, visitor email, summary, and lead source only", () => {
+    const email = buildReviewLeadEmail(
+        "hiring-scorecard",
+        "visitor@example.com",
+        "Hiring Scorecard Builder, by The Kas Group\nRole: AE\n1. Mission\nSell the product",
+        {
+            utm_source: "linkedin",
+            utm_medium: "paid",
+            utm_campaign: "",
+            utm_term: "",
+            utm_content: "",
+            gclid: "",
+            referrer: "https://www.linkedin.com/",
+            landing_page: "/hiring-scorecard",
+            timestamp: "",
+        },
+    );
+    assert.equal(email.subject, "Review requested: Hiring Scorecard Builder");
+    assert.match(email.text, /Tool: Hiring Scorecard Builder/);
+    assert.match(email.text, /Visitor email: visitor@example.com/);
+    assert.match(email.text, /Role: AE/);
+    assert.match(email.text, /Sell the product/);
+    assert.match(email.text, /Source: linkedin \/ paid/);
+    assert.match(email.text, /Landing page: \/hiring-scorecard/);
+    assert.doesNotMatch(email.text, /job description/i);
 });
 
 console.log(`\n${passed} checks passed`);

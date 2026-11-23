@@ -1,4 +1,5 @@
 import { HIRING_TOOLS, isHiringToolId, type HiringToolId } from "@/lib/hiring-tools";
+import { formatLeadSource, parseLeadSourceInput, type FirstTouch } from "@/lib/lead-source";
 
 export const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 export const MAX_SUMMARY_CHARS = 20_000;
@@ -12,17 +13,25 @@ export function isValidEmail(value: string): boolean {
     return EMAIL_REGEX.test(value);
 }
 
+export function parseReviewRequested(value: unknown): boolean {
+    return value === true || value === "true";
+}
+
 export type ToolResultsEmailInput = {
     email?: unknown;
     company?: unknown; // honeypot
     tool?: unknown;
     summary?: unknown;
+    reviewRequested?: unknown;
+    leadSource?: unknown;
 };
 
 export type ValidToolResultsEmail = {
     email: string;
     tool: HiringToolId;
     summary: string;
+    reviewRequested: boolean;
+    leadSource: FirstTouch;
 };
 
 export function validateToolResultsEmail(
@@ -53,7 +62,17 @@ export function validateToolResultsEmail(
         return { ok: false, error: "Result summary is too long.", status: 400 };
     }
 
-    return { ok: true, honeypot: false, value: { email, tool: input.tool, summary } };
+    return {
+        ok: true,
+        honeypot: false,
+        value: {
+            email,
+            tool: input.tool,
+            summary,
+            reviewRequested: parseReviewRequested(input.reviewRequested),
+            leadSource: parseLeadSourceInput(input.leadSource),
+        },
+    };
 }
 
 export function buildVisitorEmail(tool: HiringToolId, summary: string) {
@@ -64,6 +83,7 @@ export function buildVisitorEmail(tool: HiringToolId, summary: string) {
     };
 }
 
+/** Production notify when the visitor did not request a review: tool name + email only. */
 export function buildNotifyEmail(tool: HiringToolId, visitorEmail: string) {
     const title = HIRING_TOOLS[tool].title;
     return {
@@ -73,6 +93,31 @@ export function buildNotifyEmail(tool: HiringToolId, visitorEmail: string) {
             "",
             `Tool: ${title}`,
             `Visitor email: ${visitorEmail}`,
+        ].join("\n"),
+    };
+}
+
+/** Production lead when the visitor asked Chris to review and follow up. Generated summary only. */
+export function buildReviewLeadEmail(
+    tool: HiringToolId,
+    visitorEmail: string,
+    summary: string,
+    leadSource: FirstTouch,
+) {
+    const title = HIRING_TOOLS[tool].title;
+    return {
+        subject: `Review requested: ${title}`,
+        text: [
+            "A visitor asked Chris to review their results and follow up.",
+            "",
+            `Tool: ${title}`,
+            `Visitor email: ${visitorEmail}`,
+            "",
+            "Lead source:",
+            formatLeadSource(leadSource),
+            "",
+            "Result summary:",
+            summary,
         ].join("\n"),
     };
 }

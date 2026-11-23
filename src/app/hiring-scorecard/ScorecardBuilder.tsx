@@ -56,14 +56,10 @@ export default function ScorecardBuilder() {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
     const [scorecard, setScorecard] = useState<Scorecard | null>(null);
-    const [email, setEmail] = useState("");
-    const [honeypot, setHoneypot] = useState("");
-    const [emailMsg, setEmailMsg] = useState<string | null>(null);
     const [copied, setCopied] = useState(false);
 
     async function onBuild() {
         setError(null);
-        setEmailMsg(null);
         setLoading(true);
         setScorecard(null);
         try {
@@ -104,22 +100,6 @@ export default function ScorecardBuilder() {
 
     function onPrint() {
         window.print();
-    }
-
-    async function onEmail() {
-        if (!scorecard) return;
-        setEmailMsg(null);
-        const res = await fetch("/api/hiring-scorecard/email", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email, company: honeypot, scorecard }),
-        });
-        const data = await res.json();
-        if (!res.ok) {
-            setEmailMsg(data.error || "Could not send.");
-            return;
-        }
-        setEmailMsg(data.message || "Thanks.");
     }
 
     return (
@@ -269,32 +249,6 @@ export default function ScorecardBuilder() {
                         <EmailResultsForm tool="hiring-scorecard" getSummary={() => scorecardPlainText(scorecard)} />
                     </div>
 
-                    <div className="print:hidden rounded-2xl bg-grey-50 p-5 space-y-3">
-                        <p className="text-sm font-semibold text-navy-900">Want Chris to follow up? Leave your email</p>
-                        <p className="text-xs text-grey-500">Optional. You keep a copy with Copy or Download PDF. If you leave an email, Chris may get in touch.</p>
-                        <input
-                            type="text"
-                            value={honeypot}
-                            onChange={(e) => setHoneypot(e.target.value)}
-                            tabIndex={-1}
-                            autoComplete="off"
-                            aria-hidden="true"
-                            className="hidden"
-                        />
-                        <div className="flex flex-col sm:flex-row gap-3">
-                            <input
-                                type="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                placeholder="you@company.com"
-                                className="flex-1 rounded-xl border border-grey-200 px-4 py-3 text-sm"
-                            />
-                            <button type="button" onClick={onEmail} className="px-5 py-3 rounded-full bg-navy-900 text-white font-semibold text-sm">
-                                Send to Chris
-                            </button>
-                        </div>
-                        {emailMsg && <p className="text-sm text-grey-600">{emailMsg}</p>}
-                    </div>
                 </div>
             )}
 

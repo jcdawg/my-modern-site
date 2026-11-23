@@ -2,13 +2,15 @@
 
 import { useId, useState } from "react";
 import type { HiringToolId } from "@/lib/hiring-tools";
-import { fireResultsEmailed } from "@/lib/tool-results-email-track";
+import { getFirstTouch } from "@/lib/lead-source";
+import { fireResultsEmailed, fireReviewRequestedLead } from "@/lib/tool-results-email-track";
 
 export const EMAIL_RESULTS_COPY = {
     label: "Email me my results",
     emailLabel: "Email",
     placeholder: "you@company.com",
     button: "Email me my results",
+    reviewLabel: "Also have Chris review this and follow up",
     sending: "Sending...",
     sent: "Sent. Check your inbox.",
     invalid: "Enter a valid email address.",
@@ -24,8 +26,10 @@ type Props = {
 
 export default function EmailResultsForm({ tool, getSummary, className = "" }: Props) {
     const emailId = useId();
+    const reviewId = useId();
     const [email, setEmail] = useState("");
     const [honeypot, setHoneypot] = useState("");
+    const [reviewRequested, setReviewRequested] = useState(true);
     const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
     const [message, setMessage] = useState<string | null>(null);
 
@@ -43,7 +47,14 @@ export default function EmailResultsForm({ tool, getSummary, className = "" }: P
             const res = await fetch("/api/tool-results-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ email, company: honeypot, tool, summary }),
+                body: JSON.stringify({
+                    email,
+                    company: honeypot,
+                    tool,
+                    summary,
+                    reviewRequested,
+                    leadSource: getFirstTouch(),
+                }),
             });
             const data = (await res.json().catch(() => ({}))) as { error?: string; message?: string; sent?: boolean; ok?: boolean };
             if (res.status === 400) {
@@ -59,7 +70,8 @@ export default function EmailResultsForm({ tool, getSummary, className = "" }: P
             if (data.sent) {
                 setStatus("sent");
                 setMessage(data.message || EMAIL_RESULTS_COPY.sent);
-                fireResultsEmailed(tool);
+                fireResultsEmailed(tool, reviewRequested);
+                if (reviewRequested) fireReviewRequestedLead(tool);
                 return;
             }
             setStatus("error");
@@ -109,6 +121,16 @@ export default function EmailResultsForm({ tool, getSummary, className = "" }: P
                     {status === "sending" ? EMAIL_RESULTS_COPY.sending : EMAIL_RESULTS_COPY.button}
                 </button>
             </div>
+            <label htmlFor={reviewId} className="flex items-start gap-2 text-sm text-navy-900">
+                <input
+                    id={reviewId}
+                    type="checkbox"
+                    checked={reviewRequested}
+                    onChange={(e) => setReviewRequested(e.target.checked)}
+                    className="mt-0.5 h-4 w-4 shrink-0 accent-blue-accent"
+                />
+                <span>{EMAIL_RESULTS_COPY.reviewLabel}</span>
+            </label>
             {message ? (
                 <p className={`text-sm ${status === "sent" ? "text-grey-600" : "text-slate-600"}`} role="status">
                     {message}
