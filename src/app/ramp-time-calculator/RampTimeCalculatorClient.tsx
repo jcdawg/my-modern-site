@@ -1,10 +1,17 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useMemo, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Calculator, Clock, TrendingDown, Users, Target } from "lucide-react";
+import { ArrowRight, Calculator, CheckCircle2, Clock, TrendingDown, Users, Target, XCircle } from "lucide-react";
+import { FORMSPREE_ENDPOINT, isFormspreeConfigured } from "@/lib/contact-config";
+import {
+  fireContactFormConversion,
+  getFirstTouch,
+  leadSourceFormFields,
+} from "@/lib/lead-source";
 
 type Scenario = "new-category" | "experienced-new" | "exact-match";
+type FormStatus = "idle" | "submitting" | "success" | "error";
 
 const SCENARIOS: Record<Scenario, { label: string; startEff: number; rampMonths: number; description: string }> = {
   "new-category": {
@@ -32,6 +39,9 @@ const SCENARIOS: Record<Scenario, { label: string; startEff: number; rampMonths:
 const CURVE_STEEPNESS = 8;
 const CURVE_MIDPOINT = 0.35;
 
+const EMAIL_EMPTY_ERROR = "Please enter your email.";
+const EMAIL_INVALID_ERROR = "Please enter a valid email.";
+
 function logistic(progress: number) {
   return 1 / (1 + Math.exp(-CURVE_STEEPNESS * (progress - CURVE_MIDPOINT)));
 }
@@ -44,6 +54,15 @@ function rampEffectiveness(startEff: number, rampProgress: number) {
   return startEff + (1 - startEff) * t;
 }
 
+function isValidEmail(value: string) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
+
+const primaryButton =
+  "inline-flex items-center justify-center gap-2 rounded-full px-6 text-sm font-medium text-white transition-colors disabled:opacity-60 disabled:pointer-events-none";
+const heroButton = `${primaryButton} bg-blue-accent hover:bg-blue-hover`;
+const formButton = `${primaryButton} bg-navy-900 hover:bg-blue-accent`;
+
 export default function RampTimeCalculatorClient({ children }: { children?: React.ReactNode }) {
   const [scenario, setScenario] = useState<Scenario>("experienced-new");
   const [monthlyQuota, setMonthlyQuota] = useState(100000);
@@ -51,13 +70,10 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
   const [experienceYears, setExperienceYears] = useState(5);
   const [demosToClose, setDemosToClose] = useState(8);
   const [userEmail, setUserEmail] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [formStatus, setFormStatus] = useState<FormStatus>("idle");
 
-  const [weeksToFirstDeal, setWeeksToFirstDeal] = useState(0);
-  const [weeksToFull, setWeeksToFull] = useState(0);
-  const [rampLeak, setRampLeak] = useState(0);
-  const [cumulativeLeak, setCumulativeLeak] = useState(0);
-
-  useEffect(() => {
+  const { weeksToFirstDeal, weeksToFull, rampLeak } = useMemo(() => {
     const preset = SCENARIOS[scenario];
     const expFactor = Math.max(0.7, 1 - (experienceYears * 0.03));
     const demoFactor = Math.max(0.8, 1 + ((demosToClose - 8) * 0.04));
@@ -80,23 +96,66 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
     }
     const leak = Math.max(0, fullProduction - actualProduction);
 
-    setWeeksToFirstDeal(Math.round(firstDealWeeks));
-    setWeeksToFull(roundedWeeks);
-    setRampLeak(leak);
-    setCumulativeLeak(leak);
+    return {
+      weeksToFirstDeal: Math.round(firstDealWeeks),
+      weeksToFull: roundedWeeks,
+      rampLeak: leak,
+    };
   }, [scenario, monthlyQuota, onboardingWeeks, experienceYears, demosToClose]);
 
   const formatCurrency = (val: number) =>
     new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(Math.round(val));
 
-  const handleAuditSubmit = (e: React.FormEvent) => {
+  const handleAuditSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!userEmail) return;
-    const subject = encodeURIComponent("Ramp Time Calculator Follow-up");
-    const body = encodeURIComponent(
-      `Hi Chris,\n\nI ran the Ramp Time Calculator on your site.\n\nScenario: ${SCENARIOS[scenario].label}\nMonthly quota: ${formatCurrency(monthlyQuota)}\nWeeks to first deal: ${weeksToFirstDeal}\nWeeks to full: ${weeksToFull}\nEstimated ramp leak: ${formatCurrency(rampLeak)}\n\nPlease contact me at: ${userEmail}\n\nThanks!`
-    );
-    window.location.href = `mailto:chris@thekasgroup.com?subject=${subject}&body=${body}`;
+    const email = userEmail.trim();
+    if (!email) {
+      setEmailError(EMAIL_EMPTY_ERROR);
+      return;
+    }
+    if (!isValidEmail(email)) {
+      setEmailError(EMAIL_INVALID_ERROR);
+      return;
+    }
+    setEmailError("");
+
+    if (!isFormspreeConfigured()) {
+      setFormStatus("error");
+      return;
+    }
+
+    setFormStatus("submitting");
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          _replyto: email,
+          _subject: "Ramp Time Calculator Follow-up",
+          scenario: SCENARIOS[scenario].label,
+          monthly_quota: formatCurrency(monthlyQuota),
+          onboarding_weeks: String(onboardingWeeks),
+          experience_years: String(experienceYears),
+          demos_to_close: String(demosToClose),
+          weeks_to_first_deal: String(weeksToFirstDeal),
+          weeks_to_full: String(weeksToFull),
+          estimated_ramp_leak: formatCurrency(rampLeak),
+          ...leadSourceFormFields(getFirstTouch()),
+        }),
+      });
+      if (res.ok) {
+        fireContactFormConversion(getFirstTouch(), { form_name: "ramp_time_calculator" });
+        setFormStatus("success");
+      } else {
+        setFormStatus("error");
+      }
+    } catch {
+      setFormStatus("error");
+    }
   };
 
   return (
@@ -117,7 +176,7 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
             <div className="mt-10">
               <a
                 href="#calculator"
-                className="inline-flex flex-row items-center gap-3 px-8 py-5 bg-blue-600 text-white font-bold text-lg rounded-xl hover:bg-blue-500 transition-all shadow-lg shadow-blue-900/50 hover:-translate-y-1"
+                className={`${heroButton} h-14 px-8 text-lg shadow-lg shadow-blue-accent/20`}
               >
                 Run the Ramp Time Calculator
                 <ArrowRight className="h-5 w-5" />
@@ -140,7 +199,7 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
           <div className="bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col lg:flex-row">
             <div className="w-full lg:w-1/2 p-8 lg:p-12 bg-slate-50 border-r border-slate-200">
               <div className="flex items-center gap-3 mb-8">
-                <div className="h-10 w-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
+                <div className="h-10 w-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-accent">
                   <Calculator className="h-5 w-5" />
                 </div>
                 <h2 className="text-2xl font-bold text-slate-900">Configure Scenario</h2>
@@ -157,7 +216,7 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
                         onClick={() => setScenario(key)}
                         className={`w-full text-left p-4 rounded-xl border transition-all ${
                           scenario === key
-                            ? "border-blue-500 bg-blue-50"
+                            ? "border-blue-accent bg-blue-accent/5"
                             : "border-slate-200 hover:border-slate-300"
                         }`}
                       >
@@ -171,7 +230,7 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
                 <div>
                   <div className="flex justify-between mb-2">
                     <label className="font-semibold text-slate-700">Monthly Quota ($)</label>
-                    <span className="font-bold text-blue-600">{formatCurrency(monthlyQuota)}</span>
+                    <span className="font-bold text-blue-accent">{formatCurrency(monthlyQuota)}</span>
                   </div>
                   <input
                     type="range"
@@ -180,14 +239,14 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
                     step="5000"
                     value={monthlyQuota}
                     onChange={(e) => setMonthlyQuota(Number(e.target.value))}
-                    className="w-full h-2 bg-slate-300 rounded-lg appearance-none cursor-pointer accent-blue-600"
+                    className="w-full h-2 bg-slate-300 rounded-lg appearance-none cursor-pointer accent-blue-accent"
                   />
                 </div>
 
                 <div>
                   <div className="flex justify-between mb-2">
                     <label className="font-semibold text-slate-700">Onboarding Length (Weeks)</label>
-                    <span className="font-bold text-blue-600">{onboardingWeeks} weeks</span>
+                    <span className="font-bold text-blue-accent">{onboardingWeeks} weeks</span>
                   </div>
                   <input
                     type="range"
@@ -196,14 +255,14 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
                     step="1"
                     value={onboardingWeeks}
                     onChange={(e) => setOnboardingWeeks(Number(e.target.value))}
-                    className="w-full h-2 bg-slate-300 rounded-lg appearance-none cursor-pointer accent-blue-600"
+                    className="w-full h-2 bg-slate-300 rounded-lg appearance-none cursor-pointer accent-blue-accent"
                   />
                 </div>
 
                 <div>
                   <div className="flex justify-between mb-2">
                     <label className="font-semibold text-slate-700">Prior Sales Experience (Years)</label>
-                    <span className="font-bold text-blue-600">{experienceYears} years</span>
+                    <span className="font-bold text-blue-accent">{experienceYears} years</span>
                   </div>
                   <input
                     type="range"
@@ -212,14 +271,14 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
                     step="1"
                     value={experienceYears}
                     onChange={(e) => setExperienceYears(Number(e.target.value))}
-                    className="w-full h-2 bg-slate-300 rounded-lg appearance-none cursor-pointer accent-blue-600"
+                    className="w-full h-2 bg-slate-300 rounded-lg appearance-none cursor-pointer accent-blue-accent"
                   />
                 </div>
 
                 <div>
                   <div className="flex justify-between mb-2">
                     <label className="font-semibold text-slate-700">Avg Demos / Calls to Close</label>
-                    <span className="font-bold text-blue-600">{demosToClose}</span>
+                    <span className="font-bold text-blue-accent">{demosToClose}</span>
                   </div>
                   <input
                     type="range"
@@ -228,7 +287,7 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
                     step="1"
                     value={demosToClose}
                     onChange={(e) => setDemosToClose(Number(e.target.value))}
-                    className="w-full h-2 bg-slate-300 rounded-lg appearance-none cursor-pointer accent-blue-600"
+                    className="w-full h-2 bg-slate-300 rounded-lg appearance-none cursor-pointer accent-blue-accent"
                   />
                   <p className="text-xs text-slate-500 mt-2">Higher number = longer cycle, slower early production.</p>
                 </div>
@@ -245,10 +304,10 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between items-center p-4 bg-blue-50 rounded-xl border border-blue-100">
                   <div className="flex items-center gap-3">
-                    <Clock className="h-5 w-5 text-blue-500" />
+                    <Clock className="h-5 w-5 text-blue-accent" />
                     <span className="font-semibold text-slate-700">Weeks to first deal</span>
                   </div>
-                  <span className="font-bold text-blue-600">{weeksToFirstDeal}</span>
+                  <span className="font-bold text-blue-accent">{weeksToFirstDeal}</span>
                 </div>
                 <div className="flex justify-between items-center p-4 bg-slate-50 rounded-xl border border-slate-200">
                   <div className="flex items-center gap-3">
@@ -259,28 +318,57 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
                 </div>
               </div>
 
-              <div className="mb-8">
-                <h4 className="text-sm font-bold text-slate-500 mb-3 uppercase tracking-wider">Live cumulative leak</h4>
-                <div className="text-4xl font-bold text-red-600">{formatCurrency(cumulativeLeak)}</div>
-                <p className="text-xs text-slate-500 mt-1">Updates as you change inputs. Longer ramp = bigger gap.</p>
-              </div>
-
-              <form onSubmit={handleAuditSubmit} className="space-y-3">
-                <input
-                  type="email"
-                  placeholder="Your email for a follow-up"
-                  value={userEmail}
-                  onChange={(e) => setUserEmail(e.target.value)}
-                  className="w-full px-4 py-3 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <button
-                  type="submit"
-                  className="w-full px-6 py-3 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-500 transition-colors"
-                >
-                  Get this scenario reviewed
-                </button>
-              </form>
-              <p className="text-xs text-slate-500 mt-2 text-center">100% confidential. We don't share your data.</p>
+              {formStatus === "success" ? (
+                <div className="rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 px-4 py-4 flex items-center gap-3 font-semibold text-sm">
+                  <CheckCircle2 className="h-5 w-5 shrink-0 text-emerald-600" />
+                  Thanks! Your message is on its way. We&apos;ll get back to you within one business day.
+                </div>
+              ) : (
+                <form onSubmit={handleAuditSubmit} noValidate className="space-y-3">
+                  {formStatus === "error" && (
+                    <div className="rounded-2xl bg-red-50 border border-red-200 text-red-800 px-4 py-4 flex items-center gap-3 font-semibold text-sm">
+                      <XCircle className="h-5 w-5 shrink-0 text-red-600" />
+                      Something went wrong sending your message. Please email us directly at chris@thekasgroup.com.
+                    </div>
+                  )}
+                  <div>
+                    <label htmlFor="ramp-follow-up-email" className="sr-only">
+                      Your email for a follow-up
+                    </label>
+                    <input
+                      id="ramp-follow-up-email"
+                      type="email"
+                      name="email"
+                      autoComplete="email"
+                      required
+                      aria-invalid={emailError ? true : undefined}
+                      aria-describedby={emailError ? "ramp-email-error" : undefined}
+                      placeholder="Your email for a follow-up"
+                      value={userEmail}
+                      onChange={(e) => {
+                        setUserEmail(e.target.value);
+                        if (emailError) setEmailError("");
+                      }}
+                      className={`w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-accent ${
+                        emailError ? "border-red-400" : "border-slate-300"
+                      }`}
+                    />
+                    {emailError ? (
+                      <p id="ramp-email-error" role="alert" className="mt-2 text-sm font-medium text-red-700">
+                        {emailError}
+                      </p>
+                    ) : null}
+                  </div>
+                  <button
+                    type="submit"
+                    disabled={formStatus === "submitting"}
+                    className={`${formButton} h-12 w-full`}
+                  >
+                    {formStatus === "submitting" ? "Sending…" : "Get this scenario reviewed"}
+                  </button>
+                  <p className="text-xs text-slate-500 mt-2 text-center">100% confidential. We don&apos;t share your data.</p>
+                </form>
+              )}
             </div>
           </div>
         </div>

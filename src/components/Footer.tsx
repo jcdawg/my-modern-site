@@ -53,7 +53,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-<Link href="/contact" className="text-base text-grey-200 hover:text-white transition-colors">
+                                <Link href="/contact" className="text-base text-grey-200 hover:text-white transition-colors">
                                     Contact
                                 </Link>
                             </li>
@@ -70,6 +70,21 @@ export default function Footer() {
                             <li>
                                 <Link href="/bad-hire-calculator" className="text-base text-grey-200 hover:text-white transition-colors">
                                     Cost of a Bad Sales Hire Calculator
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/ramp-time-calculator" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    Sales Ramp Time Calculator
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/hiring-scorecard" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    Hiring Scorecard Builder
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/gtm-role-mismatch" className="text-base text-grey-200 hover:text-white transition-colors">
+                                    GTM Role Mismatch Diagnostic
                                 </Link>
                             </li>
                             <li>

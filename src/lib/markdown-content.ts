@@ -175,8 +175,19 @@ Explore the hidden expenses of bad hires and prolonged PIPs, including lost pipe
 
 - [Sales Territory Optimization Calculator](/pip-calculator): Measure the true financial cost of an underperforming sales rep on PIP, empty-chair downtime, and ramp. Plan confidential replacements with The Kas Group.
 - [Cost of a Bad Sales Hire Calculator](/bad-hire-calculator): Add up the cost of a bad sales hire with your own numbers: ramp time, lost revenue, manager hours and any other costs. Free calculator from The Kas Group.
+- [Sales Ramp Time Calculator](/ramp-time-calculator): Estimate weeks to first deal and full productivity for a new sales hire. See the revenue leak during ramp. Free tool from The Kas Group.
 - [Hiring Scorecard Builder](/hiring-scorecard): Build a free hiring scorecard from a job description: outcomes, competencies rated 1 to 5, interview questions and reference checks. From The Kas Group.
 - [GTM Role Mismatch Diagnostic](/gtm-role-mismatch): Paste a sales job description next to your company text. Twelve separate questions score your GTM stage and the seat. Free diagnostic from The Kas Group.
+`,
+
+    "/ramp-time-calculator": `# Sales Ramp Time Calculator | The Kas Group
+
+> Estimate weeks to first deal and full productivity for a new sales hire. See the revenue leak during ramp. Free tool from The Kas Group.
+
+Pick a scenario (first-time in category, experienced new to product, or exact category match), then adjust monthly quota, onboarding weeks, years of experience, and demos-to-close. The calculator estimates weeks to first deal, weeks to full productivity, and the revenue gap during ramp. Inputs are not stored.
+
+- **Related**: [/tools](/tools), [/pip-calculator](/pip-calculator), [/bad-hire-calculator](/bad-hire-calculator), [/hiring-scorecard](/hiring-scorecard)
+- **Contact**: chris@thekasgroup.com
 `,
 
     "/gtm-role-mismatch": `# GTM Role Mismatch Diagnostic | The Kas Group

@@ -1,6 +1,6 @@
 # The Kas Group: Full LLM Documentation
 
-> Version: 1.1 | Updated: 2026-11-12
+> Version: 1.1 | Updated: 2026-11-23
 > Summary version: https://www.thekasgroup.com/llms.txt
 > Canonical domain: https://www.thekasgroup.com
 
@@ -223,6 +223,8 @@ Generated from https://www.thekasgroup.com/sitemap.xml. Format: `- [Title](url):
 - [How Long Does It Take to Hire an Account Executive? (2026)](https://www.thekasgroup.com/guides/how-long-does-it-take-to-hire-an-account-executive): How long it takes to hire an account executive or an enterprise AE, what can shorten or lengthen the search, and a short 2026 AE OTE summary from RepVue and Bridge Group.
 - [10 AE Interview Questions to Spot a Real Closer](https://www.thekasgroup.com/guides/account-executive-interview-questions): 10 account executive interview questions by stage, a hiring manager scorecard, deal walkthrough red flags, the hiccups question, how to run a role play, and what research says works.
 - [GTM Engineer Recruiting and Sales Engineer Hiring](https://www.thekasgroup.com/guides/gtm-engineer-recruiting): How to recruit a GTM engineer vs a sales engineer: what to screen for, public-source pay ranges, and how The Kas Group runs these searches.
+- [Best Sales Recruiters for AI Companies (2026)](https://www.thekasgroup.com/guides/sales-recruiters-for-ai-companies): Ranked list of the best sales recruiters for AI companies in 2026, with what each firm is best for and what to look for when you hire AEs and GTM engineers.
+- [Best Sales Recruiters for Account Executives (2026)](https://www.thekasgroup.com/guides/sales-recruiters-for-account-executives): Ranked list of the best sales recruiters for hiring AEs in 2026, what each firm is best for, and how to vet one for mid level, senior and enterprise seats.
 - [The True Cost of a Bad Hire in 2026](https://www.thekasgroup.com/guides/cost-of-a-bad-hire): What a bad hire costs, using sourced figures: a vendor survey puts a bad B2B sales hire at $177,171. Where the damage shows up and how to lower the risk.
 - [SaaS Sales Recruitment Agencies and Recruiters](https://www.thekasgroup.com/guides/best-recruiters-saas-startups-sales): SaaS sales recruitment agencies and SaaS sales recruiters for Seed to Series B: what good ones do, which model fits each seat, and how The Kas Group hires AEs and SDRs.
 - [Top Fractional Recruiter for Sales Teams](https://www.thekasgroup.com/guides/best-fractional-sales-recruiters): Who is the top fractional recruiter for sales hiring? What a fractional sales recruiter does, how to choose one, and how The Kas Group runs Kas Seat.
@@ -233,7 +235,9 @@ Generated from https://www.thekasgroup.com/sitemap.xml. Format: `- [Title](url):
 - [Top Sales Headhunters in the United States](https://www.thekasgroup.com/guides/top-sales-headhunters-us): An authoritative list of the top sales headhunters active in the United States in 2026.
 - [CRO Executive Search Firms 2026: Best Firms to Hire a CRO](https://www.thekasgroup.com/guides/best-firms-hire-cro): CRO executive search firms and CRO headhunters for B2B tech in 2026. Compare GTM specialist boutiques and legacy firms when hiring a Chief Revenue Officer.
 - [Korn Ferry Alternatives for B2B AE Searches](https://www.thekasgroup.com/guides/affordable-alternatives-korn-ferry): Korn Ferry alternatives for AE and senior AE hiring at venture backed SaaS and AI companies: what to look for, and how The Kas Group programs work.
-- [Sales Recruiters Atlanta for Tech Sales Talent Acquisition](https://www.thekasgroup.com/guides/sales-recruiters-atlanta): Sales recruiters Atlanta for tech sales talent acquisition. Headhunters and agencies for B2B SaaS, fintech, cybersecurity and AI. The Kas Group, Alpharetta since 2014.
+- [Sales Talent Inc. Alternatives for AE Hiring (2026)](https://www.thekasgroup.com/guides/sales-talent-inc-alternatives): Sales Talent Inc. alternatives for B2B SaaS and tech AE hiring, compared side by side from each firm's own site, and where The Kas Group fits for AE and senior AE seats.
+- [Betts Recruiting Alternatives for AE Hiring (2026)](https://www.thekasgroup.com/guides/betts-recruiting-alternatives): Betts Recruiting alternatives for B2B SaaS and tech AE hiring, compared on focus, fee model and AE coverage from each firm's own site, plus where The Kas Group fits.
+- [Tech Sales Recruitment Agency in Atlanta (2026)](https://www.thekasgroup.com/guides/sales-recruiters-atlanta): Hire AEs, senior AEs and sales leaders for Atlanta SaaS, fintech, cybersecurity and AI. The Kas Group, Alpharetta since 2014. Kas Seat from $5,000 a month.
 
 ### AI & Data Hiring Guides
 
@@ -276,6 +280,7 @@ Generated from https://www.thekasgroup.com/sitemap.xml. Format: `- [Title](url):
 - [Sales Territory Optimization Calculator](https://www.thekasgroup.com/pip-calculator): Measure the true financial cost of an underperforming sales rep on PIP, empty-chair downtime, and ramp. Plan confidential replacements with The Kas Group.
 - [Hiring Scorecard Builder](https://www.thekasgroup.com/hiring-scorecard): Build a free hiring scorecard from a job description: outcomes, competencies rated 1 to 5, interview questions and reference checks. From The Kas Group.
 - [Cost of a Bad Sales Hire Calculator](https://www.thekasgroup.com/bad-hire-calculator): Add up the cost of a bad sales hire with your own numbers: ramp time, lost revenue, manager hours and any other costs. Free calculator from The Kas Group.
+- [Sales Ramp Time Calculator](https://www.thekasgroup.com/ramp-time-calculator): Estimate weeks to first deal and full productivity for a new sales hire. See the revenue leak during ramp. Free tool from The Kas Group.
 - [GTM Role Mismatch Diagnostic](https://www.thekasgroup.com/gtm-role-mismatch): Paste a sales job description next to your company text. Twelve separate questions score your GTM stage and the seat. Free diagnostic from The Kas Group.
 - [Confidential Shortlist Matrix](https://www.thekasgroup.com/candidate-mapping-brief): Active cohort mapping and confidential shortlist matrix for GTM and technical talent from The Kas Group.
 
