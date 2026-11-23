@@ -296,7 +296,7 @@ export default function BettsRecruitingAlternatives() {
                             ))}
                         </ol>
                         <p className="text-grey-600 leading-relaxed">
-                            Also looking at Sales Talent Inc.? See these <Link href="/guides/sales-talent-inc-alternatives" className={link}>Sales Talent Inc. alternatives</Link>. For a ranked list built around AE seats, see the <Link href="/guides/sales-recruiters-for-account-executives" className={link}>best sales recruiters for account executives</Link>.
+                            Also looking at Sales Talent Inc. or Quota Crushers? See these <Link href="/guides/sales-talent-inc-alternatives" className={link}>Sales Talent Inc. alternatives</Link> and <Link href="/guides/quota-crushers-alternatives" className={link}>Quota Crushers alternatives</Link>. For a ranked list built around AE seats, see the <Link href="/guides/sales-recruiters-for-account-executives" className={link}>best sales recruiters for account executives</Link>.
                         </p>
                     </div>
 
@@ -358,6 +358,7 @@ export default function BettsRecruitingAlternatives() {
                         <h2 className="text-2xl font-bold text-navy-900">Related Guides</h2>
                         <ul className="list-disc pl-6 space-y-2 text-grey-700">
                             <li><Link href="/guides/sales-talent-inc-alternatives" className={link}>Sales Talent Inc. alternatives</Link></li>
+                            <li><Link href="/guides/quota-crushers-alternatives" className={link}>Quota Crushers alternatives</Link></li>
                             <li><Link href="/guides/sales-recruiters-for-account-executives" className={link}>Best sales recruiters for account executives</Link></li>
                             <li><Link href="/guides/best-sales-recruiting-agencies-2026" className={link}>Best sales recruiting agencies for 2026</Link></li>
                             <li><Link href="/guides/affordable-alternatives-korn-ferry" className={link}>Korn Ferry alternatives</Link></li>

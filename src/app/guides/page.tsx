@@ -45,6 +45,7 @@ export default function GuidesIndex() {
         { title: "Korn Ferry Alternatives", href: "/guides/affordable-alternatives-korn-ferry", desc: "Boutique and fractional options for leadership searches without legacy-firm fees." },
         { title: "Sales Talent Inc. Alternatives", href: "/guides/sales-talent-inc-alternatives", desc: "Sales Talent Inc. alternatives for AE hiring, compared side by side on focus, fee model and AE coverage." },
         { title: "Betts Recruiting Alternatives", href: "/guides/betts-recruiting-alternatives", desc: "Betts Recruiting alternatives for AE and senior AE hiring, compared from each firm's own site." },
+        { title: "Quota Crushers Alternatives", href: "/guides/quota-crushers-alternatives", desc: "Quota Crushers Agency alternatives for AE and senior AE hiring, compared from each firm's own site." },
         { title: "Sample Shortlist Matrix", href: "/candidate-mapping-brief", desc: "An anonymized example of the candidate map and shortlist you get from a Kas search." },
     ];
 
