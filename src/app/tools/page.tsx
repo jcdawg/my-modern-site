@@ -1,4 +1,4 @@
-import { ArrowRight, Calculator, ClipboardCheck, Scale, TrendingDown } from "lucide-react";
+import { ArrowRight, Calculator, ClipboardCheck, Scale, TrendingDown, Clock } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 
@@ -24,6 +24,14 @@ const tools = [
         href: "/bad-hire-calculator",
         cta: "Open the calculator",
         icon: TrendingDown,
+    },
+    {
+        title: "Sales Ramp Time Calculator",
+        description:
+            "Estimate weeks to first deal and full productivity for a new sales hire. See the revenue leak during ramp. Free tool from The Kas Group.",
+        href: "/ramp-time-calculator",
+        cta: "Open the calculator",
+        icon: Clock,
     },
     {
         title: "Hiring Scorecard Builder",
