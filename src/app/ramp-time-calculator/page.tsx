@@ -8,7 +8,7 @@ const SRC = {
 const FAQS = [
   {
     q: "How long does it take a new AE to ramp?",
-    a: "Industry benchmarks put average AE ramp around 6 months. This calculator lets you model your own motion: onboarding length, prior experience with the product category, and how many demos it typically takes to close. The default experienced-new-product scenario lands near 5 months.",
+    a: "Industry benchmarks put average AE ramp around 6 months. This calculator lets you model your own motion: onboarding length, prior experience with the product category, and how many demos it typically takes to close. The default experienced-new-product scenario lands at 21 weeks.",
   },
   {
     q: "What does this calculator count as ramp cost?",
@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     q: "How should I use the weeks-to-first-deal number?",
-    a: "It is an estimate of when the first closed deal is likely, based on onboarding plus the early effectiveness curve and your typical demos-to-close. Use it for pipeline planning and for setting realistic ramp quotas.",
+    a: "It is an estimate of when the first closed deal is likely, based on onboarding plus your typical demos-to-close and the starting effectiveness of the scenario. Use it for pipeline planning and for setting realistic ramp quotas. It is separate from the effectiveness curve.",
   },
   {
     q: "What if my ramp runs past four months?",
@@ -92,23 +92,23 @@ export default function RampTimeCalculatorPage() {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold text-navy-900">How the numbers are calculated</h2>
             <p>
-              The calculator uses only the inputs you set. Each line matches the live formulas in the tool.
+              The calculator uses only the inputs you set. Each line matches the live formulas in the tool. These are working assumptions, not a published ramp study.
             </p>
             <ol className="list-decimal pl-6 space-y-3">
               <li>
-                <strong className="text-navy-900">Scenario base.</strong> Three presets set starting effectiveness (20%, 35%, or 55%) and base ramp length (7, 5, or 3.5 months). These are working assumptions grounded in typical AE ramp data.
+                <strong className="text-navy-900">Scenario base.</strong> Three presets set starting effectiveness (20%, 35%, or 55%) and base ramp length (7, 5, or 3.5 months). The starting point does not move when you change the sliders. Only the scenario changes it.
               </li>
               <li>
-                <strong className="text-navy-900">Adjustments.</strong> More years of experience slightly shortens ramp. Higher demos-to-close lengthens the early curve. Onboarding weeks are added at zero production.
+                <strong className="text-navy-900">Adjustments.</strong> Each year of experience shortens the base ramp by 3%, and the shorten stops at 70% of the base. Eight demos to close is neutral. Each demo above or below 8 changes ramp length by 4%, and that adjustment stops at 80% of the base. Onboarding weeks are added on top, at zero production.
               </li>
               <li>
-                <strong className="text-navy-900">Effectiveness curve.</strong> After onboarding, effectiveness starts at the preset base and climbs linearly to 100% over the adjusted ramp weeks.
+                <strong className="text-navy-900">Effectiveness curve.</strong> Onboarding weeks produce nothing. After that, effectiveness starts at the preset and follows an S-curve. It stays close to the start through the first stretch, climbs fastest about a third of the way through the ramp, then takes a long tail to reach 100% on the last ramp week. The curve is a logistic, normalized so the first ramp week equals the starting effectiveness and the last ramp week equals 100%.
               </li>
               <li>
-                <strong className="text-navy-900">Ramp leak.</strong> Sum of (weekly full quota × actual effectiveness) across the whole window, subtracted from what a fully ramped rep would have produced. That difference is the revenue gap.
+                <strong className="text-navy-900">Ramp leak.</strong> Weekly full quota is monthly quota divided by 4.33. Each week books that amount times that week's effectiveness. The leak is the gap versus a rep at 100% for the same number of weeks. Salary, recruiting fees, and manager time are not included.
               </li>
               <li>
-                <strong className="text-navy-900">Weeks to first deal.</strong> Onboarding weeks plus an estimate based on demos-to-close and starting effectiveness.
+                <strong className="text-navy-900">Weeks to first deal.</strong> Onboarding weeks plus demos-to-close divided by 2.5 times starting effectiveness, with a floor of 2 weeks after onboarding. The 2.5 is a working activity rate, not a benchmark. This number is separate from the effectiveness curve.
               </li>
             </ol>
             <p>
@@ -121,16 +121,18 @@ export default function RampTimeCalculatorPage() {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold text-navy-900">Worked example (default inputs)</h2>
             <p>
-              Experienced rep new to your product, $100,000 monthly quota, 3 weeks onboarding, 5 years experience, 8 demos to close.
+              Experienced rep new to your product, $100,000 monthly quota, 3 weeks onboarding, 5 years experience, 8 demos to close. This is an illustration, not a forecast for your team.
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Starting effectiveness: 35%</li>
-              <li>Adjusted ramp: roughly 5 months</li>
-              <li>Weeks to first deal: around 6–8</li>
-              <li>Weeks to full: around 22–24</li>
-              <li>Ramp leak: typically $150k–$250k depending on exact curve</li>
+              <li>Five years of experience shortens the 5 month base by 15%, to 4.25 months. Eight demos to close does not change the length.</li>
+              <li>Onboarding: 3 weeks at 0%</li>
+              <li>Weeks to first deal: 13</li>
+              <li>Weeks to full productivity: 21</li>
+              <li>Shape: about 37% the first week after onboarding, about 49% by week 7, about 83% by week 12, then a tail to 100% by week 21</li>
+              <li>Ramp leak: $165,000</li>
             </ul>
-            <p>Change any slider and the live total updates immediately.</p>
+            <p>Change any input and the live total updates immediately.</p>
           </div>
 
           <div className="space-y-6">
