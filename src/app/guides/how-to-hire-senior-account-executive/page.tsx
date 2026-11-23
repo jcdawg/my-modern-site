@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
+import ToolCallout from "@/components/ToolCallout";
 
 const PAGE = {
     title: "How to Hire a Senior Account Executive (2026 Guide)",
@@ -274,6 +275,9 @@ export default function HowToHireSeniorAccountExecutive() {
                             <li>Senior Account Executive posting, Coworker.ai, live October 2026. Single employer example. <a href={SRC.coworker} className={link}>{SRC.coworker}</a></li>
                         </ul>
                     </div>
+
+
+                    <ToolCallout tool="hiring-scorecard" />
 
                     <p className="text-grey-600 text-base">
                         <strong>Further reading:</strong>{" "}

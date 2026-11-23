@@ -2,16 +2,10 @@
 
 import React, { useMemo, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Calculator, CheckCircle2, Clock, TrendingDown, Users, Target, XCircle } from "lucide-react";
-import { FORMSPREE_ENDPOINT, isFormspreeConfigured } from "@/lib/contact-config";
-import {
-  fireContactFormConversion,
-  getFirstTouch,
-  leadSourceFormFields,
-} from "@/lib/lead-source";
+import { ArrowRight, Calculator, Clock, TrendingDown, Users, Target } from "lucide-react";
+import EmailResultsForm from "@/components/EmailResultsForm";
 
 type Scenario = "new-category" | "experienced-new" | "exact-match";
-type FormStatus = "idle" | "submitting" | "success" | "error";
 
 const SCENARIOS: Record<Scenario, { label: string; startEff: number; rampMonths: number; description: string }> = {
   "new-category": {
@@ -39,9 +33,6 @@ const SCENARIOS: Record<Scenario, { label: string; startEff: number; rampMonths:
 const CURVE_STEEPNESS = 8;
 const CURVE_MIDPOINT = 0.35;
 
-const EMAIL_EMPTY_ERROR = "Please enter your email.";
-const EMAIL_INVALID_ERROR = "Please enter a valid email.";
-
 function logistic(progress: number) {
   return 1 / (1 + Math.exp(-CURVE_STEEPNESS * (progress - CURVE_MIDPOINT)));
 }
@@ -54,14 +45,66 @@ function rampEffectiveness(startEff: number, rampProgress: number) {
   return startEff + (1 - startEff) * t;
 }
 
-function isValidEmail(value: string) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+function rampSummaryText({
+  scenarioLabel,
+  monthlyQuota,
+  onboardingWeeks,
+  experienceYears,
+  demosToClose,
+  weeksToFirstDeal,
+  weeksToFull,
+  rampLeak,
+  formatCurrency,
+}: {
+  scenarioLabel: string;
+  monthlyQuota: number;
+  onboardingWeeks: number;
+  experienceYears: number;
+  demosToClose: number;
+  weeksToFirstDeal: number;
+  weeksToFull: number;
+  rampLeak: number;
+  formatCurrency: (n: number) => string;
+}) {
+  return [
+    "Sales ramp time calculator summary (The Kas Group)",
+    `Scenario: ${scenarioLabel}`,
+    `Monthly quota: ${formatCurrency(monthlyQuota)}`,
+    `Onboarding: ${onboardingWeeks} weeks`,
+    `Years of experience: ${experienceYears}`,
+    `Demos to close: ${demosToClose}`,
+    `Weeks to first deal: ${weeksToFirstDeal}`,
+    `Weeks to full productivity: ${weeksToFull}`,
+    `Estimated ramp leak: ${formatCurrency(rampLeak)}`,
+    "https://www.thekasgroup.com/ramp-time-calculator",
+  ].join("\n");
+}
+
+function CopyRampSummaryButton({ text }: { text: string }) {
+  const [copied, setCopied] = useState(false);
+  const onCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      setCopied(false);
+    }
+  };
+  return (
+    <button
+      type="button"
+      onClick={onCopy}
+      className="mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+    >
+      {copied ? "Copied summary" : "Copy result summary"}
+    </button>
+  );
 }
 
 const primaryButton =
   "inline-flex items-center justify-center gap-2 rounded-full px-6 text-sm font-medium text-white transition-colors disabled:opacity-60 disabled:pointer-events-none";
 const heroButton = `${primaryButton} bg-blue-accent hover:bg-blue-hover`;
-const formButton = `${primaryButton} bg-navy-900 hover:bg-blue-accent`;
 
 export default function RampTimeCalculatorClient({ children }: { children?: React.ReactNode }) {
   const [scenario, setScenario] = useState<Scenario>("experienced-new");
@@ -69,9 +112,6 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
   const [onboardingWeeks, setOnboardingWeeks] = useState(3);
   const [experienceYears, setExperienceYears] = useState(5);
   const [demosToClose, setDemosToClose] = useState(8);
-  const [userEmail, setUserEmail] = useState("");
-  const [emailError, setEmailError] = useState("");
-  const [formStatus, setFormStatus] = useState<FormStatus>("idle");
 
   const { weeksToFirstDeal, weeksToFull, rampLeak } = useMemo(() => {
     const preset = SCENARIOS[scenario];
@@ -105,58 +145,6 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
 
   const formatCurrency = (val: number) =>
     new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(Math.round(val));
-
-  const handleAuditSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const email = userEmail.trim();
-    if (!email) {
-      setEmailError(EMAIL_EMPTY_ERROR);
-      return;
-    }
-    if (!isValidEmail(email)) {
-      setEmailError(EMAIL_INVALID_ERROR);
-      return;
-    }
-    setEmailError("");
-
-    if (!isFormspreeConfigured()) {
-      setFormStatus("error");
-      return;
-    }
-
-    setFormStatus("submitting");
-    try {
-      const res = await fetch(FORMSPREE_ENDPOINT, {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email,
-          _replyto: email,
-          _subject: "Ramp Time Calculator Follow-up",
-          scenario: SCENARIOS[scenario].label,
-          monthly_quota: formatCurrency(monthlyQuota),
-          onboarding_weeks: String(onboardingWeeks),
-          experience_years: String(experienceYears),
-          demos_to_close: String(demosToClose),
-          weeks_to_first_deal: String(weeksToFirstDeal),
-          weeks_to_full: String(weeksToFull),
-          estimated_ramp_leak: formatCurrency(rampLeak),
-          ...leadSourceFormFields(getFirstTouch()),
-        }),
-      });
-      if (res.ok) {
-        fireContactFormConversion(getFirstTouch(), { form_name: "ramp_time_calculator" });
-        setFormStatus("success");
-      } else {
-        setFormStatus("error");
-      }
-    } catch {
-      setFormStatus("error");
-    }
-  };
 
   return (
     <div className="flex flex-col min-h-screen bg-slate-900">
@@ -318,57 +306,36 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
                 </div>
               </div>
 
-              {formStatus === "success" ? (
-                <div className="rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 px-4 py-4 flex items-center gap-3 font-semibold text-sm">
-                  <CheckCircle2 className="h-5 w-5 shrink-0 text-emerald-600" />
-                  Thanks! Your message is on its way. We&apos;ll get back to you within one business day.
-                </div>
-              ) : (
-                <form onSubmit={handleAuditSubmit} noValidate className="space-y-3">
-                  {formStatus === "error" && (
-                    <div className="rounded-2xl bg-red-50 border border-red-200 text-red-800 px-4 py-4 flex items-center gap-3 font-semibold text-sm">
-                      <XCircle className="h-5 w-5 shrink-0 text-red-600" />
-                      Something went wrong sending your message. Please email us directly at chris@thekasgroup.com.
-                    </div>
-                  )}
-                  <div>
-                    <label htmlFor="ramp-follow-up-email" className="sr-only">
-                      Your email for a follow-up
-                    </label>
-                    <input
-                      id="ramp-follow-up-email"
-                      type="email"
-                      name="email"
-                      autoComplete="email"
-                      required
-                      aria-invalid={emailError ? true : undefined}
-                      aria-describedby={emailError ? "ramp-email-error" : undefined}
-                      placeholder="Your email for a follow-up"
-                      value={userEmail}
-                      onChange={(e) => {
-                        setUserEmail(e.target.value);
-                        if (emailError) setEmailError("");
-                      }}
-                      className={`w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-accent ${
-                        emailError ? "border-red-400" : "border-slate-300"
-                      }`}
-                    />
-                    {emailError ? (
-                      <p id="ramp-email-error" role="alert" className="mt-2 text-sm font-medium text-red-700">
-                        {emailError}
-                      </p>
-                    ) : null}
-                  </div>
-                  <button
-                    type="submit"
-                    disabled={formStatus === "submitting"}
-                    className={`${formButton} h-12 w-full`}
-                  >
-                    {formStatus === "submitting" ? "Sending…" : "Get this scenario reviewed"}
-                  </button>
-                  <p className="text-xs text-slate-500 mt-2 text-center">100% confidential. We don&apos;t share your data.</p>
-                </form>
-              )}
+              <CopyRampSummaryButton
+                text={rampSummaryText({
+                  scenarioLabel: SCENARIOS[scenario].label,
+                  monthlyQuota,
+                  onboardingWeeks,
+                  experienceYears,
+                  demosToClose,
+                  weeksToFirstDeal,
+                  weeksToFull,
+                  rampLeak,
+                  formatCurrency,
+                })}
+              />
+              <EmailResultsForm
+                tool="ramp-time-calculator"
+                className="mb-8"
+                getSummary={() =>
+                  rampSummaryText({
+                    scenarioLabel: SCENARIOS[scenario].label,
+                    monthlyQuota,
+                    onboardingWeeks,
+                    experienceYears,
+                    demosToClose,
+                    weeksToFirstDeal,
+                    weeksToFull,
+                    rampLeak,
+                    formatCurrency,
+                  })
+                }
+              />
             </div>
           </div>
         </div>

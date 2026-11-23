@@ -5,6 +5,7 @@ import type { Scorecard } from "@/lib/hiring-scorecard/types";
 import { MAX_INPUT_CHARS } from "@/lib/hiring-scorecard/prompt";
 import { fireScorecardGenerate } from "@/lib/hiring-scorecard/track";
 import { getFirstTouch } from "@/lib/lead-source";
+import EmailResultsForm from "@/components/EmailResultsForm";
 
 function scorecardPlainText(s: Scorecard): string {
     const lines: string[] = [
@@ -262,6 +263,10 @@ export default function ScorecardBuilder() {
                         <button type="button" onClick={onPrint} className="px-5 py-3 rounded-full border border-grey-300 font-semibold text-sm">
                             Download PDF
                         </button>
+                    </div>
+
+                    <div className="print:hidden">
+                        <EmailResultsForm tool="hiring-scorecard" getSummary={() => scorecardPlainText(scorecard)} />
                     </div>
 
                     <div className="print:hidden rounded-2xl bg-grey-50 p-5 space-y-3">

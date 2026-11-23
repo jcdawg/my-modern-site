@@ -23,8 +23,8 @@ export function pageMetadata({
   title: string;
   description: string;
   path: string;
-  /** Site-absolute path like /og/programs.png */
-  image?: string;
+  /** Site-absolute path like /og/programs.png. Pass false to omit images so a route opengraph-image file can supply them. */
+  image?: string | false;
   /**
    * "article" for /guides/* and /blog/* pages. Adds og:type=article plus
    * published/modified times from the git-derived page-dates map.
@@ -34,9 +34,12 @@ export function pageMetadata({
   // Next.js replaces (does not deep-merge) a parent's openGraph/twitter
   // objects, so every page repeats site-wide fields like siteName and the
   // default image here.
-  const images = image
-    ? [{ url: image, width: 1200, height: 630, alt: title }]
-    : [DEFAULT_OG_IMAGE];
+  const images =
+    image === false
+      ? undefined
+      : image
+        ? [{ url: image, width: 1200, height: 630, alt: title }]
+        : [DEFAULT_OG_IMAGE];
 
   const base = {
     title,
@@ -44,7 +47,7 @@ export function pageMetadata({
     url: path,
     siteName: SITE_NAME,
     locale: "en_US",
-    images,
+    ...(images ? { images } : {}),
   };
 
   let openGraph: Metadata["openGraph"];
@@ -69,7 +72,7 @@ export function pageMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [images[0].url],
+      ...(images ? { images: [images[0].url] } : {}),
     },
   };
 }

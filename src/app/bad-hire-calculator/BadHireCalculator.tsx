@@ -3,6 +3,7 @@
 import { useEffect, useId, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Calculator as CalculatorIcon, Clock, Hourglass, Receipt, Route } from "lucide-react";
+import EmailResultsForm from "@/components/EmailResultsForm";
 import {
     PRESETS,
     SALESFUEL_URL,
@@ -374,10 +375,15 @@ export default function BadHireCalculator() {
                 <button
                     type="button"
                     onClick={copySummary}
-                    className="mb-8 inline-flex w-fit items-center gap-2 rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+                    className="mb-4 inline-flex w-fit items-center gap-2 rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
                 >
                     {copied ? "Copied summary" : "Copy result summary"}
                 </button>
+                <EmailResultsForm
+                    tool="bad-hire-calculator"
+                    className="mb-8"
+                    getSummary={() => summaryText(inputs, result)}
+                />
 
                 <div className="mb-10 space-y-4">
                     {rows.map((row) => {

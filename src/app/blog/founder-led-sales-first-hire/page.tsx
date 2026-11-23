@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Calendar, User, ArrowLeft } from "lucide-react";
 import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
+import ToolCallout from "@/components/ToolCallout";
 
 const PAGE = {
     title: "Your First Sales Hire Needs a Playbook",
@@ -210,6 +211,9 @@ export default function FounderLedSalesFirstHirePost() {
                         <li><a href="https://ven.studio/blog/founder-led-sales-to-revops" className={link}>The Exact Moment Founder-Led Sales Breaks</a>, VEN Studio, March 10, 2026. The 60% figure is the vendor&apos;s own claim, with no source given.</li>
                         <li><a href="https://daverubinstein.com/first-sales-hire" className={link}>How to Make Your First Sales Hire</a>, Dave Rubinstein, September 10, 2026. Written by a founding AE recruiter. The 8 month tenure figure is from his own sample of 418 profiles.</li>
                     </ul>
+
+
+                    <ToolCallout tool="gtm-role-mismatch" />
 
                     <p className="text-grey-600">
                         <strong>Further reading:</strong>{" "}

@@ -2,6 +2,7 @@ import { AlertTriangle, BarChart3, ChevronRight, DollarSign, HelpCircle, ShieldC
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
+import ToolCallout from "@/components/ToolCallout";
 
 const PAGE = {
     title: 'The True Cost of a Bad Hire in 2026',
@@ -218,6 +219,9 @@ export default function CostOfBadHireGuide() {
                             <li>AE Models, Motions &amp; Metrics: 2026 Research Report, The Bridge Group, June 22, 2026. Survey of 158 B2B companies. <a href={SRC.bridge} className={link}>{SRC.bridge}</a></li>
                         </ul>
                     </div>
+
+
+                    <ToolCallout tool="bad-hire-calculator" />
 
                     {/* CTA Section */}
                     <div className="p-12 rounded-[2rem] bg-navy-900 text-white text-center shadow-2xl relative overflow-hidden">

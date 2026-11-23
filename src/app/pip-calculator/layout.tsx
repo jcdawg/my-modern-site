@@ -5,6 +5,7 @@ export const metadata = pageMetadata({
   description:
     "Measure the true financial cost of an underperforming sales rep on PIP, empty-chair downtime, and ramp. Plan confidential replacements with The Kas Group.",
   path: "/pip-calculator",
+  image: false,
 });
 
 export default function PipCalculatorLayout({

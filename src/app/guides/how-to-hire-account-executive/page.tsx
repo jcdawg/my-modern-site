@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
+import ToolCallout from "@/components/ToolCallout";
 
 const PAGE = {
     title: "How to Hire an Account Executive (Mid-Level Guide)",
@@ -181,6 +182,9 @@ export default function HowToHireAccountExecutive() {
                             <li>Sales Salary Guide: What Sales Reps are Earning in 2026, RepVue. Self-reported. Mid-market AE median $180K OTE; all AE median $200K OTE. <a href={SRC.repvue} className={link}>{SRC.repvue}</a></li>
                         </ul>
                     </div>
+
+
+                    <ToolCallout tool="hiring-scorecard" />
 
                     <p className="text-grey-600 text-base">
                         <strong>Further reading:</strong>{" "}
