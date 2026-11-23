@@ -43,7 +43,7 @@ export default function AffordableAlternativesKornFerry() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
-            <ArticleJsonLd {...PAGE} headline="Korn Ferry Alternatives for B2B AE Searches" />
+            <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
