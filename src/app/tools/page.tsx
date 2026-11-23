@@ -16,7 +16,7 @@ const tools = [
         href: "/pip-calculator",
         cta: "Open the calculator",
         image: "/images/tools/territory.jpg",
-        imageAlt: "Territory map with one region highlighted",
+        imageAlt: "Sales Territory Optimization Calculator. A $100,000 monthly quota at 40% attainment, with $470,000 in total revenue leak: $120,000 during a PIP, $200,000 from an empty chair, and $150,000 during ramp.",
     },
     {
         title: "Cost of a Bad Sales Hire Calculator",
@@ -25,7 +25,7 @@ const tools = [
         href: "/bad-hire-calculator",
         cta: "Open the calculator",
         image: "/images/tools/bad-hire.jpg",
-        imageAlt: "Descending chart showing the cost of a bad hire",
+        imageAlt: "Cost of a Bad Sales Hire Calculator for an account executive. Seat cost $12,500 a month, six months in the seat, 28% attainment. Total cost of this hire: $176,460.",
     },
     {
         title: "Sales Ramp Time Calculator",
@@ -34,7 +34,7 @@ const tools = [
         href: "/ramp-time-calculator",
         cta: "Open the calculator",
         image: "/images/tools/ramp.jpg",
-        imageAlt: "Ramp curve climbing from a flat start to full productivity",
+        imageAlt: "Sales Ramp Time Calculator for an experienced rep new to the product. $100,000 monthly quota and 3 weeks of onboarding. 13 weeks to first deal, 21 weeks to full productivity, $165,334 of ramp leak.",
     },
     {
         title: "Hiring Scorecard Builder",
@@ -42,8 +42,8 @@ const tools = [
             "Build a free hiring scorecard from a job description: outcomes, competencies rated 1 to 5, interview questions and reference checks. From The Kas Group.",
         href: "/hiring-scorecard",
         cta: "Open the scorecard",
-        image: "/images/tools/scorecard.png",
-        imageAlt: "Example hiring scorecard for a mid-market account executive",
+        image: "/images/tools/scorecard.jpg",
+        imageAlt: "Example hiring scorecard for a mid-market B2B SaaS account executive, with 90-day outcomes, a hunting competency, what a 5 and a 3 look like, red flags, and interview questions.",
     },
     {
         title: "GTM Role Mismatch Diagnostic",
@@ -52,7 +52,7 @@ const tools = [
         href: "/gtm-role-mismatch",
         cta: "Run the diagnostic",
         image: "/images/tools/gtm.jpg",
-        imageAlt: "Two columns of bars that do not line up",
+        imageAlt: "GTM Role Mismatch Diagnostic comparing a VP of Sales job description with a 14-month-old seed company whose founder still closes the deals.",
     },
 ];
 
@@ -82,7 +82,7 @@ export default function HiringToolsPage() {
                                 <img
                                     src={tool.image}
                                     alt={tool.imageAlt}
-                                    className="h-48 w-full object-cover object-top"
+                                    className="aspect-[16/10] w-full object-cover"
                                 />
                                 <div className="flex flex-1 flex-col p-8">
                                     <h2 className="text-xl font-bold text-navy-900 mb-3">{tool.title}</h2>
