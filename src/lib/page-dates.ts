@@ -78,9 +78,10 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/recruit/ai": { published: "2026-02-04T16:43:23-05:00", modified: "2026-11-19T09:50:00-05:00" },
     "/recruit/fractional-sales": { published: "2026-03-22T14:04:14-04:00", modified: "2026-10-24T14:30:00-04:00" },
     "/recruit/sales": { published: "2026-02-04T16:43:23-05:00", modified: "2026-10-28T10:30:00-04:00" },
-    "/site-map": { published: "2026-02-15T14:55:13-05:00", modified: "2026-11-20T08:30:00-05:00" },
+    "/ramp-time-calculator": { published: "2026-11-23T13:48:16-05:00", modified: "2026-11-23T15:45:00-05:00" },
+    "/site-map": { published: "2026-02-15T14:55:13-05:00", modified: "2026-11-23T15:45:00-05:00" },
     "/terms-of-service": { published: "2026-09-10T12:52:29-04:00", modified: "2026-10-28T10:30:00-04:00" },
-    "/tools": { published: "2026-11-12T15:42:44-05:00", modified: "2026-11-19T11:30:00-05:00" },
+    "/tools": { published: "2026-11-12T15:42:44-05:00", modified: "2026-11-23T15:45:00-05:00" },
 };
 
 export function getPageDates(path: string): PageDates | undefined {

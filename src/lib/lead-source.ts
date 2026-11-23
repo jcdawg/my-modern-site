@@ -162,12 +162,16 @@ export function leadSourceFormFields(touch: FirstTouch): Record<string, string> 
     };
 }
 
-/** Fire GA4 + Vercel Analytics only after a confirmed successful contact submit. */
-export function fireContactFormConversion(touch: FirstTouch) {
+/** Fire GA4 + Vercel Analytics only after a confirmed successful form submit. */
+export function fireContactFormConversion(
+    touch: FirstTouch,
+    options?: { form_name?: string }
+) {
     if (typeof window === "undefined") return;
 
+    const formName = options?.form_name ?? "contact";
     const params: Record<string, string> = {
-        form_name: "contact",
+        form_name: formName,
         page_location: window.location.href,
     };
     const optional: Array<[string, string]> = [
@@ -188,9 +192,10 @@ export function fireContactFormConversion(touch: FirstTouch) {
         window.gtag("event", "generate_lead", params);
     }
 
+    const analyticsEvent = formName === "contact" ? "contact_form_submit" : `${formName}_submit`;
     void import("@vercel/analytics")
         .then(({ track }) => {
-            track("contact_form_submit", params);
+            track(analyticsEvent, params);
         })
         .catch(() => {
             // no-op if the package is unavailable

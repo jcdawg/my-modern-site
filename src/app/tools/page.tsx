@@ -52,7 +52,7 @@ const tools = [
         href: "/gtm-role-mismatch",
         cta: "Run the diagnostic",
         image: "/images/tools/gtm.jpg",
-        imageAlt: "GTM Role Mismatch Diagnostic comparing a VP of Sales job description with a 14-month-old seed company whose founder still closes the deals.",
+        imageAlt: "GTM Role Mismatch Diagnostic result. A VP or CRO job description against a founder-led first sales hire: 96% computed mismatch and 4% GTM stage fit.",
     },
 ];
 
@@ -73,11 +73,13 @@ export default function HiringToolsPage() {
 
             <section className="py-24 px-6 lg:px-8">
                 <div className="mx-auto max-w-7xl">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                        {tools.map((tool) => (
+                    <div className="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-8 max-w-5xl xl:max-w-6xl mx-auto">
+                        {tools.map((tool, index) => (
                             <div
                                 key={tool.href}
-                                className="flex flex-col overflow-hidden rounded-2xl border border-grey-100 hover:border-blue-accent/20 hover:bg-grey-50 transition-all shadow-sm"
+                                className={`flex flex-col overflow-hidden rounded-2xl border border-grey-100 hover:border-blue-accent/20 hover:bg-grey-50 transition-all shadow-sm md:col-span-2 ${
+                                    index === 3 ? "xl:col-start-2" : ""
+                                } ${index === 4 ? "md:col-start-2 xl:col-start-4" : ""}`}
                             >
                                 <img
                                     src={tool.image}
@@ -85,7 +87,6 @@ export default function HiringToolsPage() {
                                     className="aspect-[16/10] w-full object-cover"
                                 />
                                 <div className="flex flex-1 flex-col p-8">
-                                    <p aria-hidden="true" className="text-sm leading-relaxed text-grey-500 mb-4">{tool.imageAlt}</p>
                                     <h2 className="text-xl font-bold text-navy-900 mb-3">{tool.title}</h2>
                                     <p className="text-sm text-grey-500 leading-relaxed flex-1 mb-6">{tool.description}</p>
                                     <Link
@@ -100,8 +101,11 @@ export default function HiringToolsPage() {
                         ))}
                     </div>
 
-                    <div className="mt-24 p-12 rounded-[3rem] bg-navy-900 text-white flex items-center justify-center shadow-2xl relative overflow-hidden">
+                    <div className="mt-24 p-12 rounded-[3rem] bg-navy-900 text-white flex flex-col items-center justify-center text-center shadow-2xl relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-blue-accent/10 rounded-full blur-3xl" />
+                        <p className="relative z-10 text-2xl md:text-3xl font-bold mb-6">
+                            Ready to Build Your Elite Team?
+                        </p>
                         <Link
                             href="/contact#contact-form"
                             className="relative z-10 px-8 py-4 bg-blue-accent text-white font-bold rounded-full hover:bg-blue-hover transition-all"
