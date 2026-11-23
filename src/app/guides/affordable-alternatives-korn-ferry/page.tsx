@@ -4,7 +4,7 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: 'Korn Ferry Alternatives for B2B AE Searches',
+    title: 'Korn Ferry Alternatives for Sales Hiring (2026)',
     description: 'Korn Ferry alternatives for AE and senior AE hiring at venture backed SaaS and AI companies: what to look for, and how The Kas Group programs work.',
     path: "/guides/affordable-alternatives-korn-ferry",
 };
@@ -18,7 +18,7 @@ const FAQS = [
     },
     {
         q: "How does The Kas Group price sales searches?",
-        a: "The Kas Group publishes Kas Seat at $5,000 a month for up to two open sales roles and $8,000 a month for three to five and example fees for Kas Milestone Search on sales individual contributor and sales manager seats. Leadership searches are quoted. Technical searches are never monthly.",
+        a: "The Kas Group publishes Kas Seat at $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above and example fees for Kas Milestone Search on sales individual contributor and sales manager seats. Leadership searches are quoted. Technical searches are never monthly.",
     },
     {
         q: "When is a large firm like Korn Ferry the right choice?",
@@ -43,7 +43,7 @@ export default function AffordableAlternativesKornFerry() {
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
-            <ArticleJsonLd {...PAGE} />
+            <ArticleJsonLd {...PAGE} headline="Korn Ferry Alternatives for B2B AE Searches" />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
@@ -108,7 +108,7 @@ export default function AffordableAlternativesKornFerry() {
                                 <BadgeCheck className="h-6 w-6 text-blue-accent shrink-0 mt-1" />
                                 <div>
                                     <h4 className="font-bold text-navy-900 text-lg">Transparent, Flexible Pricing</h4>
-                                    <p className="text-grey-600 mt-2">Look for pricing that scales with stage: Kas Seat ($5,000 a month for up to two open sales roles and $8,000 a month for three to five), Kas Milestone Search example fees for sales individual contributor and manager seats, or a quote for leadership searches.</p>
+                                    <p className="text-grey-600 mt-2">Look for pricing that scales with stage: Kas Seat ($5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above), Kas Milestone Search example fees for sales individual contributor and manager seats, or a quote for leadership searches.</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-4 bg-grey-50 p-6 rounded-2xl">
