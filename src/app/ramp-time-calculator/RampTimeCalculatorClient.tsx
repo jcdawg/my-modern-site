@@ -27,6 +27,23 @@ const SCENARIOS: Record<Scenario, { label: string; startEff: number; rampMonths:
   },
 };
 
+// Logistic S-curve. Steepest around 35% of the way through the ramp,
+// so the first stretch stays near the start, then it jumps, then it tails to 100%.
+const CURVE_STEEPNESS = 8;
+const CURVE_MIDPOINT = 0.35;
+
+function logistic(progress: number) {
+  return 1 / (1 + Math.exp(-CURVE_STEEPNESS * (progress - CURVE_MIDPOINT)));
+}
+
+function rampEffectiveness(startEff: number, rampProgress: number) {
+  const clamped = Math.min(1, Math.max(0, rampProgress));
+  const floor = logistic(0);
+  const ceiling = logistic(1);
+  const t = (logistic(clamped) - floor) / (ceiling - floor);
+  return startEff + (1 - startEff) * t;
+}
+
 export default function RampTimeCalculatorClient({ children }: { children?: React.ReactNode }) {
   const [scenario, setScenario] = useState<Scenario>("experienced-new");
   const [monthlyQuota, setMonthlyQuota] = useState(100000);
@@ -42,35 +59,31 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
 
   useEffect(() => {
     const preset = SCENARIOS[scenario];
-    // Adjust ramp based on experience and demos
     const expFactor = Math.max(0.7, 1 - (experienceYears * 0.03));
     const demoFactor = Math.max(0.8, 1 + ((demosToClose - 8) * 0.04));
     const adjustedRampMonths = preset.rampMonths * expFactor * demoFactor;
     const rampWeeks = adjustedRampMonths * 4.33;
     const totalWeeks = onboardingWeeks + rampWeeks;
+    const roundedWeeks = Math.max(1, Math.round(totalWeeks));
 
-    // Weeks to first deal: onboarding + time based on starting eff and demos
     const firstDealWeeks = onboardingWeeks + Math.max(2, Math.ceil(demosToClose / (2.5 * preset.startEff)));
 
-    // Effectiveness curve: starts at startEff after onboarding, linear to 1.0 over rampWeeks
     let actualProduction = 0;
     let fullProduction = 0;
     const weeklyFull = monthlyQuota / 4.33;
-    for (let w = 1; w <= Math.ceil(totalWeeks); w++) {
-      let eff = 0;
-      if (w > onboardingWeeks) {
-        const rampProgress = Math.min(1, (w - onboardingWeeks) / rampWeeks);
-        eff = preset.startEff + (1 - preset.startEff) * rampProgress;
-      }
+    for (let w = 1; w <= roundedWeeks; w++) {
+      const eff = w > onboardingWeeks
+        ? rampEffectiveness(preset.startEff, (w - onboardingWeeks) / rampWeeks)
+        : 0;
       actualProduction += weeklyFull * eff;
       fullProduction += weeklyFull;
     }
     const leak = Math.max(0, fullProduction - actualProduction);
 
     setWeeksToFirstDeal(Math.round(firstDealWeeks));
-    setWeeksToFull(Math.round(totalWeeks));
+    setWeeksToFull(roundedWeeks);
     setRampLeak(leak);
-    setCumulativeLeak(leak); // For live display; in real would animate but static for now
+    setCumulativeLeak(leak);
   }, [scenario, monthlyQuota, onboardingWeeks, experienceYears, demosToClose]);
 
   const formatCurrency = (val: number) =>
