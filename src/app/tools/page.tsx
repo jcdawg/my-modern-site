@@ -85,6 +85,7 @@ export default function HiringToolsPage() {
                                     className="aspect-[16/10] w-full object-cover"
                                 />
                                 <div className="flex flex-1 flex-col p-8">
+                                    <p aria-hidden="true" className="text-sm leading-relaxed text-grey-500 mb-4">{tool.imageAlt}</p>
                                     <h2 className="text-xl font-bold text-navy-900 mb-3">{tool.title}</h2>
                                     <p className="text-sm text-grey-500 leading-relaxed flex-1 mb-6">{tool.description}</p>
                                     <Link
