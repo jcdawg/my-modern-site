@@ -2,6 +2,7 @@ import { BarChart3, Building2, CheckCircle2, ChevronRight, DollarSign, HelpCircl
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
+import ToolCallout from "@/components/ToolCallout";
 
 const PAGE = {
     title: "How to Hire SaaS SDRs and AEs with Zero Ramp-Up Time",
@@ -462,6 +463,9 @@ export default function HowToHireSaasSdrsFastRamp() {
                             </li>
                         </ul>
                     </div>
+
+
+                    <ToolCallout tool="ramp-time-calculator" />
 
                     <div className="p-10 rounded-3xl bg-navy-900 text-white relative overflow-hidden">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.25),transparent)]" />

@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, AlertTriangle, Clock, TrendingDown, MoveRight, Calculator, Users, Shield, Target } from "lucide-react";
+import EmailResultsForm from "@/components/EmailResultsForm";
 
 export default function PipCalculatorClient({ children }: { children?: React.ReactNode }) {
   // --- State for Calculator Inputs ---
@@ -201,6 +202,24 @@ export default function PipCalculatorClient({ children }: { children?: React.Rea
                 totalLeak={totalLeak}
                 formatCurrency={formatCurrency}
               />
+              <EmailResultsForm
+                tool="pip-calculator"
+                className="mb-8"
+                getSummary={() =>
+                  pipSummaryText({
+                    targetQuota,
+                    attainment,
+                    pipDuration,
+                    timeToHire,
+                    rampUpMonths,
+                    pipLoss,
+                    emptyChairLoss,
+                    rampLoss,
+                    totalLeak,
+                    formatCurrency,
+                  })
+                }
+              />
 
               <div className="space-y-4 mb-10">
                 <div className="flex justify-between items-center p-4 bg-red-50 rounded-xl border border-red-100">
@@ -390,29 +409,35 @@ export default function PipCalculatorClient({ children }: { children?: React.Rea
 }
 
 
-function CopySummaryButton({
-  targetQuota, attainment, pipDuration, timeToHire, rampUpMonths,
-  pipLoss, emptyChairLoss, rampLoss, totalLeak, formatCurrency,
-}: {
+type PipSummaryInput = {
   targetQuota: number; attainment: number; pipDuration: number; timeToHire: number; rampUpMonths: number;
   pipLoss: number; emptyChairLoss: number; rampLoss: number; totalLeak: number;
   formatCurrency: (n: number) => string;
-}) {
+};
+
+function pipSummaryText({
+  targetQuota, attainment, pipDuration, timeToHire, rampUpMonths,
+  pipLoss, emptyChairLoss, rampLoss, totalLeak, formatCurrency,
+}: PipSummaryInput) {
+  return [
+    "Sales territory PIP calculator summary (The Kas Group)",
+    `Monthly target quota: ${formatCurrency(targetQuota)}`,
+    `Current rep attainment: ${attainment}%`,
+    `PIP duration: ${pipDuration} days`,
+    `Time to hire replacement: ${timeToHire} days`,
+    `New hire ramp: ${rampUpMonths} months (50% effectiveness assumption)`,
+    `Loss during PIP: ${formatCurrency(pipLoss)}`,
+    `Empty chair loss: ${formatCurrency(emptyChairLoss)}`,
+    `Ramp gap: ${formatCurrency(rampLoss)}`,
+    `Total revenue leak: ${formatCurrency(totalLeak)}`,
+    "https://www.thekasgroup.com/pip-calculator",
+  ].join("\n");
+}
+
+function CopySummaryButton(props: PipSummaryInput) {
   const [copied, setCopied] = useState(false);
   const onCopy = async () => {
-    const text = [
-      "Sales territory PIP calculator summary (The Kas Group)",
-      `Monthly target quota: ${formatCurrency(targetQuota)}`,
-      `Current rep attainment: ${attainment}%`,
-      `PIP duration: ${pipDuration} days`,
-      `Time to hire replacement: ${timeToHire} days`,
-      `New hire ramp: ${rampUpMonths} months (50% effectiveness assumption)`,
-      `Loss during PIP: ${formatCurrency(pipLoss)}`,
-      `Empty chair loss: ${formatCurrency(emptyChairLoss)}`,
-      `Ramp gap: ${formatCurrency(rampLoss)}`,
-      `Total revenue leak: ${formatCurrency(totalLeak)}`,
-      "https://www.thekasgroup.com/pip-calculator",
-    ].join("\n");
+    const text = pipSummaryText(props);
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);

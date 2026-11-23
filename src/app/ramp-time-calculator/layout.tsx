@@ -5,6 +5,7 @@ export const metadata = pageMetadata({
   description:
     "Estimate weeks to first deal and full productivity for a new sales hire. See the revenue leak during ramp. Free tool from The Kas Group.",
   path: "/ramp-time-calculator",
+  image: false,
 });
 
 export default function RampTimeCalculatorLayout({

@@ -5,6 +5,7 @@ export const metadata = pageMetadata({
     description:
         "Add up the cost of a bad sales hire with your own numbers: ramp time, lost revenue, manager hours and any other costs. Free calculator from The Kas Group.",
     path: "/bad-hire-calculator",
+    image: false,
 });
 
 export default function BadHireCalculatorLayout({ children }: { children: React.ReactNode }) {

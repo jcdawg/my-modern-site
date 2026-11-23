@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
+import ToolCallout from "@/components/ToolCallout";
 
 const PAGE = {
     title: "10 AE Interview Questions to Spot a Real Closer",
@@ -406,6 +407,9 @@ export default function AccountExecutiveInterviewQuestions() {
                             <li>The State of Recruiting 2025, SHRM. Median time to fill is roughly a month and a half, all roles, not sales specific. <a href={SRC.shrm} className={link}>{SRC.shrm}</a></li>
                         </ul>
                     </div>
+
+
+                    <ToolCallout tool="hiring-scorecard" />
 
                     <p className="text-grey-600 text-base">
                         <strong>Further reading:</strong>{" "}

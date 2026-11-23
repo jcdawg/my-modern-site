@@ -5,6 +5,7 @@ export const metadata = pageMetadata({
     description:
         "Paste a sales job description next to your company text. Twelve separate questions score your GTM stage and the seat. Free diagnostic from The Kas Group.",
     path: "/gtm-role-mismatch",
+    image: false,
 });
 
 export default function GtmRoleMismatchLayout({ children }: { children: React.ReactNode }) {

@@ -2,6 +2,7 @@ import { BadgeCheck, BarChart3, ChevronRight, ClipboardList, HelpCircle, Scale, 
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
+import ToolCallout from "@/components/ToolCallout";
 
 const PAGE = {
     title: 'How to Hire a VP of Sales for a Startup',
@@ -500,6 +501,9 @@ export default function WhoToHireVpSalesStartup() {
                             </div>
                         </div>
                     </div>
+
+
+                    <ToolCallout tool="gtm-role-mismatch" />
 
                     <div className="p-12 rounded-[2rem] bg-navy-900 text-white text-center shadow-2xl relative overflow-hidden">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(37,99,235,0.2),transparent)]" />

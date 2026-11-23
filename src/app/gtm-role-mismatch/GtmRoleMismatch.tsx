@@ -12,6 +12,7 @@ import {
     type Diagnosis,
 } from "@/lib/gtm-role-mismatch/diagnose";
 import { fireGtmMismatchRun } from "@/lib/gtm-role-mismatch/track";
+import EmailResultsForm from "@/components/EmailResultsForm";
 
 type Phase = "form" | "scan" | "result";
 
@@ -535,6 +536,7 @@ function Report({ result, onReset }: { result: Diagnosis; onReset: () => void })
                     Run another diagnostic
                 </button>
             </div>
+            <EmailResultsForm tool="gtm-role-mismatch" getSummary={() => copyText(result)} />
         </div>
     );
 }
