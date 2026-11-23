@@ -1,4 +1,4 @@
-import { ArrowRight, Calculator, ClipboardCheck, Scale, TrendingDown, Clock } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 
@@ -15,7 +15,8 @@ const tools = [
             "Measure the true financial cost of an underperforming sales rep on PIP, empty-chair downtime, and ramp. Plan confidential replacements with The Kas Group.",
         href: "/pip-calculator",
         cta: "Open the calculator",
-        icon: Calculator,
+        image: "/images/tools/territory.jpg",
+        imageAlt: "Territory map with one region highlighted",
     },
     {
         title: "Cost of a Bad Sales Hire Calculator",
@@ -23,7 +24,8 @@ const tools = [
             "Add up the cost of a bad sales hire with your own numbers: ramp time, lost revenue, manager hours and any other costs. Free calculator from The Kas Group.",
         href: "/bad-hire-calculator",
         cta: "Open the calculator",
-        icon: TrendingDown,
+        image: "/images/tools/bad-hire.jpg",
+        imageAlt: "Descending chart showing the cost of a bad hire",
     },
     {
         title: "Sales Ramp Time Calculator",
@@ -31,7 +33,8 @@ const tools = [
             "Estimate weeks to first deal and full productivity for a new sales hire. See the revenue leak during ramp. Free tool from The Kas Group.",
         href: "/ramp-time-calculator",
         cta: "Open the calculator",
-        icon: Clock,
+        image: "/images/tools/ramp.jpg",
+        imageAlt: "Ramp curve climbing from a flat start to full productivity",
     },
     {
         title: "Hiring Scorecard Builder",
@@ -39,7 +42,8 @@ const tools = [
             "Build a free hiring scorecard from a job description: outcomes, competencies rated 1 to 5, interview questions and reference checks. From The Kas Group.",
         href: "/hiring-scorecard",
         cta: "Open the scorecard",
-        icon: ClipboardCheck,
+        image: "/images/tools/scorecard.png",
+        imageAlt: "Example hiring scorecard for a mid-market account executive",
     },
     {
         title: "GTM Role Mismatch Diagnostic",
@@ -47,7 +51,8 @@ const tools = [
             "Paste a sales job description next to your company text. Twelve separate questions score your GTM stage and the seat. Free diagnostic from The Kas Group.",
         href: "/gtm-role-mismatch",
         cta: "Run the diagnostic",
-        icon: Scale,
+        image: "/images/tools/gtm.jpg",
+        imageAlt: "Two columns of bars that do not line up",
     },
 ];
 
@@ -69,16 +74,17 @@ export default function HiringToolsPage() {
             <section className="py-24 px-6 lg:px-8">
                 <div className="mx-auto max-w-7xl">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                        {tools.map((tool) => {
-                            const Icon = tool.icon;
-                            return (
-                                <div
-                                    key={tool.href}
-                                    className="flex flex-col p-8 rounded-2xl border border-grey-100 hover:border-blue-accent/20 hover:bg-grey-50 transition-all shadow-sm"
-                                >
-                                    <div className="h-12 w-12 rounded-2xl bg-blue-accent/10 flex items-center justify-center text-blue-accent mb-6">
-                                        <Icon className="h-6 w-6" aria-hidden="true" />
-                                    </div>
+                        {tools.map((tool) => (
+                            <div
+                                key={tool.href}
+                                className="flex flex-col overflow-hidden rounded-2xl border border-grey-100 hover:border-blue-accent/20 hover:bg-grey-50 transition-all shadow-sm"
+                            >
+                                <img
+                                    src={tool.image}
+                                    alt={tool.imageAlt}
+                                    className="h-48 w-full object-cover object-top"
+                                />
+                                <div className="flex flex-1 flex-col p-8">
                                     <h2 className="text-xl font-bold text-navy-900 mb-3">{tool.title}</h2>
                                     <p className="text-sm text-grey-500 leading-relaxed flex-1 mb-6">{tool.description}</p>
                                     <Link
@@ -89,8 +95,8 @@ export default function HiringToolsPage() {
                                         <ArrowRight className="h-4 w-4" aria-hidden="true" />
                                     </Link>
                                 </div>
-                            );
-                        })}
+                            </div>
+                        ))}
                     </div>
 
                     <div className="mt-24 p-12 rounded-[3rem] bg-navy-900 text-white flex items-center justify-center shadow-2xl relative overflow-hidden">
