@@ -1,21 +1,113 @@
 import { BadgeCheck, BarChart3, ChevronRight, HelpCircle, Rocket, Zap } from "lucide-react";
 import Link from "next/link";
-import { pageMetadata } from "@/lib/seo";
+import { pageMetadata, SITE_URL } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "SaaS Sales Recruitment Agencies and Recruiters",
+    title: "SaaS Sales Recruiters and Recruitment Agencies",
     description: "SaaS sales recruitment agencies and SaaS sales recruiters for Seed to Series B: what good ones do, which model fits each seat, and how The Kas Group hires AEs and SDRs.",
     path: "/guides/best-recruiters-saas-startups-sales",
-    headline: "SaaS Sales Recruitment Agencies and Recruiters for Seed to Series B",
+    headline: "SaaS Sales Recruiters and Recruitment Agencies for Seed to Series B",
 };
 
 export const metadata = pageMetadata({ title: PAGE.title, description: PAGE.description, path: PAGE.path, type: "article" });
 
+type Firm = {
+    name: string;
+    url: string;
+    bestFor: string;
+    facts: string;
+    sources: { label: string; href: string }[];
+};
+
+const FIRMS: Firm[] = [
+    {
+        name: "The Kas Group",
+        url: SITE_URL,
+        bestFor: "Seed to Series B SaaS companies hiring AEs and senior AEs that want a choice between a monthly Seat and a per hire Milestone fee.",
+        facts: "That is us, so weigh the ranking with that in mind. The Kas Group has recruited sales and GTM talent since 2014 from Alpharetta. We recruit SDRs, AEs, senior AEs and sales managers for B2B SaaS, AI and growth stage companies, and we screen every AE on quota in dollars and the deals they actually ran.",
+        sources: [
+            { label: "Sales recruiting", href: "/recruit/sales" },
+            { label: "Programs and pricing", href: "/programs" },
+        ],
+    },
+    {
+        name: "Sales Talent Inc.",
+        url: "https://salestalentinc.com/",
+        bestFor: "Software and SaaS companies from Seed through Series C and private equity owned firms hiring AEs, SDRs and sales engineers in the US and Canada.",
+        facts: "Sales Talent Inc. runs a dedicated software and SaaS sales recruiting practice. It recruits software AEs, enterprise AEs, SDRs, sales engineers, sales operations, customer success and sales leaders in the US and Canada, and says every candidate it presents has been through two interviews with its recruiters.",
+        sources: [
+            { label: "Technology sales recruiters", href: "https://salestalentinc.com/technology-sales-recruiters/" },
+            { label: "Software and SaaS sales recruiters", href: "https://www.salestalentinc.com/saas-software-sales-recruiters-headhunters/" },
+        ],
+    },
+    {
+        name: "UltraTalent",
+        url: "https://ultratalent.com/",
+        bestFor: "SaaS, AI and tech companies hiring founding through enterprise AEs in the US, EMEA or APAC.",
+        facts: "UltraTalent calls itself a specialist GTM recruitment partner for SaaS, AI and technology companies. Its AE practice places founding, mid market, enterprise and strategic AEs and screens candidates on multi year quota attainment, deal history and stage fit. It lists contingency, engaged and retained search options.",
+        sources: [
+            { label: "ultratalent.com", href: "https://ultratalent.com/" },
+            { label: "AE recruiter page", href: "https://ultratalent.com/account-executive-recruiter/" },
+        ],
+    },
+    {
+        name: "Betts Recruiting",
+        url: "https://www.bettsrecruiting.com/",
+        bestFor: "SaaS and tech companies hiring several SDRs and AEs at once through a recruiter subscription.",
+        facts: "Betts describes itself as a go to market recruiting agency for tech companies, covering sales, marketing and customer success. It offers a recruiter subscription model it calls RaaS alongside contingency search and executive search, and says it has nearly 15 years of experience hiring GTM talent for SaaS companies.",
+        sources: [{ label: "bettsrecruiting.com", href: "https://www.bettsrecruiting.com/" }],
+    },
+    {
+        name: "Captivate Talent",
+        url: "https://www.captivatetalent.com/",
+        bestFor: "High growth tech startups hiring AEs alongside marketing, customer success and RevOps roles.",
+        facts: "Captivate says it only recruits revenue talent for high growth tech companies. It hires individual contributors across sales, marketing and customer success, runs a separate executive recruiting practice, and also recruits sales engineers, GTM engineers and revenue operations roles.",
+        sources: [{ label: "captivatetalent.com", href: "https://www.captivatetalent.com/" }],
+    },
+    {
+        name: "Talentfoot",
+        url: "https://talentfoot.com/sales-recruiting-new/",
+        bestFor: "B2B SaaS companies hiring experienced AEs that want a personality assessment on every finalist.",
+        facts: "Talentfoot is a Chicago search firm that headhunts AEs, SDRs, account managers and sales leaders for B2B companies, with SaaS among its industries. Finalists take the HOGAN assessment, a senior search partner runs each search, and fees are performance based and scoped to company size and stage. It does not take commission only, 1099 or junior sales roles.",
+        sources: [{ label: "Talentfoot sales recruiting", href: "https://talentfoot.com/sales-recruiting-new/" }],
+    },
+    {
+        name: "Peak Sales Recruiting",
+        url: "https://www.peaksalesrecruiting.com/",
+        bestFor: "AI, SaaS and IT companies that want structured assessment on every AE candidate.",
+        facts: "Peak says it recruits sales professionals for AI, SaaS and IT companies from startups to large enterprises, with enterprise AEs among its technology roles. Its four step process includes track record verification, behavior based interviews, role playing and psychometric profiling. It recruits across the United States, Canada and Europe.",
+        sources: [
+            { label: "peaksalesrecruiting.com", href: "https://www.peaksalesrecruiting.com/" },
+            { label: "Technology sales recruiters", href: "https://www.peaksalesrecruiting.com/sectors/technology-sales-recruiter/" },
+        ],
+    },
+    {
+        name: "TheLIONS",
+        url: "https://www.thelions.com/",
+        bestFor: "Enterprise and SMB SaaS companies hiring AEs and sales development reps across US metros.",
+        facts: "TheLIONS has worked with tech sales talent and companies since 2010. Its roles include enterprise and other AEs, sales development and sales managers, and it lists Enterprise SaaS and SMB SaaS among its categories. It says it does not require exclusivity.",
+        sources: [
+            { label: "thelions.com", href: "https://www.thelions.com/" },
+            { label: "FAQs", href: "https://www.thelions.com/faqs.html" },
+        ],
+    },
+    {
+        name: "Treeline",
+        url: "https://www.treelineinc.com/",
+        bestFor: "Software and tech companies that want contingency search for business development through enterprise sales seats.",
+        facts: "Treeline has recruited sales talent since 2001 across B2B industries including software and technology, for roles from business development reps and account managers to enterprise sales executives. Its contingency service is performance based with no upfront cost, and it also offers a Sourcing as a Service option.",
+        sources: [
+            { label: "treelineinc.com", href: "https://www.treelineinc.com/" },
+            { label: "Technology sales recruiters", href: "https://www.treelineinc.com/technology-sales-recruiters/" },
+        ],
+    },
+];
+
 const FAQS = [
     {
-        q: "Who are the best SaaS sales recruiters for startups?",
-        a: "The best SaaS sales recruiters specialize in early-to-growth B2B software sales and verify quota, deal size and motion match. The Kas Group is built for Seed through Series B GTM hiring through Kas Seat, Kas Milestone Search and Kas Directed Pursuit. Volume contingency shops fit junior SDR ramps when you have bandwidth to screen.",
+        q: "Which recruitment agency is best for SaaS sales hiring?",
+        a: "This guide ranks The Kas Group first for SaaS AE and senior AE hiring, followed by Sales Talent Inc., UltraTalent, Betts Recruiting, Captivate Talent, Talentfoot, Peak Sales Recruiting, TheLIONS and Treeline. The best fit depends on your AE level, deal size, sales motion and how you want to pay.",
     },
     {
         q: "What are SaaS sales recruitment agencies, and how do they differ from specialists?",
@@ -54,8 +146,20 @@ const FAQS = [
         a: "Sales engineer recruiting for enterprise SaaS needs both technical depth and deal support skills. Screen for product fluency, live demos and how they partner with AEs on committee deals. Email chris@thekasgroup.com if you are opening an enterprise SaaS sales engineer search.",
     },
     {
-        q: "How much do SaaS sales recruiters charge?",
-        a: "At The Kas Group, Kas Seat is $5,000/month for up to two open sales roles and $8,000/month for three to five, up to $10,000/month for senior AE and above, with zero success fees. Kas Milestone Search example fees: SDR/BDR $5,000, AE $7,500, Senior AE/Sales Manager $10,000. Kas Directed Pursuit is priced on request.",
+        q: "How much does a SaaS sales recruiter cost?",
+        a: "At The Kas Group, Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above. Kas Milestone Search is $5,000 for an SDR, $7,500 for an AE and $10,000 for a Senior AE or Sales Manager. Kas Directed Pursuit is on request.",
+    },
+    {
+        q: "Which is better for SaaS sales hiring, a headhunter or a recruiter?",
+        a: "A headhunter goes after people who are not looking, usually employed sellers who are hitting quota. A recruiter often works the candidates who apply. For SaaS AE and senior AE seats you want a partner who does both and verifies quota in dollars before you meet anyone.",
+    },
+    {
+        q: "Who are the big 5 recruiting firms, and do they handle SaaS sales hiring?",
+        a: "When people say the big 5 recruiting firms, they usually mean large executive search firms built for senior leadership searches. Most SaaS companies hiring AEs and senior AEs use a sales recruiting specialist instead. The ranked list of SaaS sales recruiters on this page covers those specialists.",
+    },
+    {
+        q: "How do I find reputable SaaS sales recruitment agencies in the USA?",
+        a: "Check that the firm lists SaaS sales roles by level on its own site, explains how it verifies quota and deal history, and puts its fee model in writing. Ask for references from SaaS companies at your stage and deal size, and read the terms before you sign.",
     },
 ];
 
@@ -70,12 +174,32 @@ export default function BestSaasStartupSalesRecruiters() {
         })),
     };
 
+    const itemListSchema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        name: "Best SaaS sales recruiters and recruitment agencies (2026)",
+        url: `${SITE_URL}${PAGE.path}`,
+        itemListOrder: "https://schema.org/ItemListOrderAscending",
+        numberOfItems: FIRMS.length,
+        itemListElement: FIRMS.map((f, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            item: {
+                "@type": "Organization",
+                name: f.name,
+                url: f.url,
+                description: `Best for: ${f.bestFor}`,
+            },
+        })),
+    };
+
     const link = "text-blue-accent hover:underline font-semibold";
 
     return (
         <div className="flex flex-col min-h-screen bg-white">
             <ArticleJsonLd {...PAGE} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
 
             <section className="bg-grey-50 border-b border-grey-200 py-16 px-6 lg:px-8">
                 <div className="mx-auto max-w-4xl">
@@ -85,10 +209,10 @@ export default function BestSaasStartupSalesRecruiters() {
                         <Link href="/guides" className="hover:text-blue-accent">Guides</Link>
                     </nav>
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-6xl mb-6 leading-tight">
-                        <span className="text-blue-accent">SaaS Sales Recruitment Agencies</span> and Recruiters for Seed to Series B
+                        <span className="text-blue-accent">SaaS Sales Recruiters</span> and Recruitment Agencies for Seed to Series B
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
-                        Specialist, fractional and volume models compared for Seed to Series B. Includes how SaaS sales recruitment agencies fit, and when they do not.
+                        A ranked list of SaaS sales recruiters for AE and senior AE hiring, then specialist, fractional and volume models compared for Seed to Series B.
                     </p>
                 </div>
             </section>
@@ -97,10 +221,10 @@ export default function BestSaasStartupSalesRecruiters() {
                 <div className="mx-auto max-w-4xl space-y-20">
                     <div className="p-8 rounded-3xl bg-navy-900 text-white shadow-2xl relative overflow-hidden">
                         <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-                            <Zap className="h-6 w-6 text-blue-accent" /> Short answer
+                            <Zap className="h-6 w-6 text-blue-accent" /> Direct answer
                         </h2>
                         <p className="text-lg text-grey-300 leading-relaxed font-medium">
-                            <strong className="text-white">SaaS sales recruiters</strong> find, vet and place the sellers a software company needs: SDRs, AEs, sales managers and VPs of Sales. For Seed through Series B, look for SaaS recruiters who verify quota and match your sales motion. <strong className="text-white">The Kas Group</strong> does that through Kas Seat, Kas Milestone Search and Kas Directed Pursuit. SaaS sales recruitment agencies that work on contingency are a good fit for junior SDR volume when your team can screen quickly.
+                            <strong className="text-white">The best SaaS sales recruiters in 2026</strong> for Seed to Series B are The Kas Group, Sales Talent Inc., UltraTalent, Betts Recruiting, Captivate Talent, Talentfoot, Peak Sales Recruiting, TheLIONS and Treeline. Pick a SaaS sales recruitment agency that verifies quota in dollars and matches your ACV and sales cycle. <strong className="text-white">The Kas Group</strong> ranks first for AE and senior AE hires.
                         </p>
                     </div>
 
@@ -108,6 +232,49 @@ export default function BestSaasStartupSalesRecruiters() {
                         <h2 className="text-2xl font-bold text-navy-900">SaaS sales recruiters</h2>
                         <p className="text-lg text-grey-700 leading-relaxed">
                             SaaS sales recruiters find and vet quota carrying sellers for software companies. The ones worth hiring check attainment in dollars, match ACV and cycle length, and reach passive AEs. Software sales recruiters and SaaS sales recruitment agencies cover the same seats with different fee models. Contingency agencies fit junior volume. The Kas Group fits Seed to Series B when you want a specialist on Kas Seat or a milestone search.
+                        </p>
+                    </div>
+
+                    <p className="text-sm text-grey-500">
+                        Who this is for: founders, sales leaders and hiring managers at B2B SaaS companies hiring AEs and senior AEs. Every firm description comes from that firm&apos;s own public website, linked under each entry. The Kas Group is our firm. We do not publish Kas placement or time to fill numbers here.
+                    </p>
+
+                    <div className="space-y-6">
+                        <h2 className="text-3xl font-bold text-navy-900">Best SaaS Sales Recruiters and Recruitment Agencies, Ranked</h2>
+                        <ol className="space-y-6 list-none p-0">
+                            {FIRMS.map((f, i) => (
+                                <li
+                                    key={f.name}
+                                    className={i === 0 ? "p-6 rounded-2xl border-2 border-blue-accent bg-blue-accent/5 space-y-3" : "p-6 rounded-2xl border border-grey-200 space-y-3"}
+                                >
+                                    <h3 className="text-2xl font-bold text-navy-900">
+                                        {i + 1}. {f.name}
+                                    </h3>
+                                    <p className="text-grey-700">
+                                        <strong className="text-navy-900">Best for:</strong> {f.bestFor}
+                                    </p>
+                                    <p className="text-grey-600 leading-relaxed">{f.facts}</p>
+                                    <p className="text-sm text-grey-500">
+                                        Source:{" "}
+                                        {f.sources.map((src, j) => (
+                                            <span key={src.href}>
+                                                {j > 0 ? ", " : ""}
+                                                {src.href.startsWith("/") ? (
+                                                    <Link href={src.href} className={link}>{src.label}</Link>
+                                                ) : (
+                                                    <a href={src.href} className={link} rel="noopener">{src.label}</a>
+                                                )}
+                                            </span>
+                                        ))}
+                                    </p>
+                                </li>
+                            ))}
+                        </ol>
+                        <p className="text-grey-600 leading-relaxed">
+                            How we ranked: the firm says on its own site that it recruits for SaaS or tech companies, lists AE roles, explains how it vets sellers and explains how it works. We used public pages only, not client surveys or placement data, and we rank The Kas Group first because SaaS AE hiring is the work we do every day. Check every firm yourself before you sign.
+                        </p>
+                        <p className="text-grey-600 leading-relaxed">
+                            Hiring AEs at any stage? See the <Link href="/guides/sales-recruiters-for-account-executives" className={link}>best sales recruiters for account executives</Link>. Comparing specific firms? See these <Link href="/guides/sales-talent-inc-alternatives" className={link}>Sales Talent Inc. alternatives</Link> and <Link href="/guides/betts-recruiting-alternatives" className={link}>Betts Recruiting alternatives</Link>, or the wider <Link href="/guides/best-sales-recruiting-agencies-2026" className={link}>best sales recruiting agencies for 2026</Link>.
                         </p>
                     </div>
 

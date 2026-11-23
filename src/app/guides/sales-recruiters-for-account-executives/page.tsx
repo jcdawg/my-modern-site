@@ -229,7 +229,7 @@ export default function SalesRecruitersForAccountExecutives() {
                             ))}
                         </ol>
                         <p className="text-base text-grey-600">
-                            Comparing specialists? See these <Link href="/guides/sales-talent-inc-alternatives" className={link}>Sales Talent Inc. alternatives</Link>, <Link href="/guides/betts-recruiting-alternatives" className={link}>Betts Recruiting alternatives</Link> and <Link href="/guides/quota-crushers-alternatives" className={link}>Quota Crushers alternatives</Link>.
+                            Comparing specialists? See these <Link href="/guides/sales-talent-inc-alternatives" className={link}>Sales Talent Inc. alternatives</Link>, <Link href="/guides/betts-recruiting-alternatives" className={link}>Betts Recruiting alternatives</Link> and <Link href="/guides/quota-crushers-alternatives" className={link}>Quota Crushers alternatives</Link>. Hiring for a SaaS startup? See the <Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS sales recruiters</Link> list.
                         </p>
                     </div>
 
@@ -334,6 +334,7 @@ export default function SalesRecruitersForAccountExecutives() {
                             <li><Link href="/guides/sales-talent-inc-alternatives" className={link}>Sales Talent Inc. alternatives</Link></li>
                             <li><Link href="/guides/betts-recruiting-alternatives" className={link}>Betts Recruiting alternatives</Link></li>
                             <li><Link href="/guides/quota-crushers-alternatives" className={link}>Quota Crushers alternatives</Link></li>
+                            <li><Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS sales recruiters and recruitment agencies</Link></li>
                         </ul>
                     </div>
 
