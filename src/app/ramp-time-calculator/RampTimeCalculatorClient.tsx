@@ -59,7 +59,9 @@ function isValidEmail(value: string) {
 }
 
 const primaryButton =
-  "inline-flex items-center justify-center gap-2 rounded-full bg-navy-900 px-6 text-sm font-medium text-white transition-colors hover:bg-blue-accent disabled:opacity-60 disabled:pointer-events-none";
+  "inline-flex items-center justify-center gap-2 rounded-full px-6 text-sm font-medium text-white transition-colors disabled:opacity-60 disabled:pointer-events-none";
+const heroButton = `${primaryButton} bg-blue-accent hover:bg-blue-hover`;
+const formButton = `${primaryButton} bg-navy-900 hover:bg-blue-accent`;
 
 export default function RampTimeCalculatorClient({ children }: { children?: React.ReactNode }) {
   const [scenario, setScenario] = useState<Scenario>("experienced-new");
@@ -174,7 +176,7 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
             <div className="mt-10">
               <a
                 href="#calculator"
-                className={`${primaryButton} h-14 px-8 text-lg shadow-lg shadow-blue-900/50`}
+                className={`${heroButton} h-14 px-8 text-lg shadow-lg shadow-blue-accent/20`}
               >
                 Run the Ramp Time Calculator
                 <ArrowRight className="h-5 w-5" />
@@ -360,7 +362,7 @@ export default function RampTimeCalculatorClient({ children }: { children?: Reac
                   <button
                     type="submit"
                     disabled={formStatus === "submitting"}
-                    className={`${primaryButton} h-12 w-full`}
+                    className={`${formButton} h-12 w-full`}
                   >
                     {formStatus === "submitting" ? "Sending…" : "Get this scenario reviewed"}
                   </button>
