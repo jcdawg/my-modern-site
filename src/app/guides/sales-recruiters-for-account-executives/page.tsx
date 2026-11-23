@@ -228,6 +228,9 @@ export default function SalesRecruitersForAccountExecutives() {
                                 </li>
                             ))}
                         </ol>
+                        <p className="text-base text-grey-600">
+                            Comparing specialists? See these <Link href="/guides/sales-talent-inc-alternatives" className={link}>Sales Talent Inc. alternatives</Link> and <Link href="/guides/betts-recruiting-alternatives" className={link}>Betts Recruiting alternatives</Link>.
+                        </p>
                     </div>
 
                     <div className="p-6 rounded-2xl bg-grey-50 border border-grey-200 space-y-4">
@@ -328,6 +331,8 @@ export default function SalesRecruitersForAccountExecutives() {
                             <li><Link href="/guides/account-executive-ote-by-level" className={link}>Account executive OTE by level</Link></li>
                             <li><Link href="/guides/best-sales-recruiting-agencies-2026" className={link}>Best sales recruiting agencies for 2026</Link></li>
                             <li><Link href="/guides/sales-recruiters-for-ai-companies" className={link}>Best sales recruiters for AI companies</Link></li>
+                            <li><Link href="/guides/sales-talent-inc-alternatives" className={link}>Sales Talent Inc. alternatives</Link></li>
+                            <li><Link href="/guides/betts-recruiting-alternatives" className={link}>Betts Recruiting alternatives</Link></li>
                         </ul>
                     </div>
 
