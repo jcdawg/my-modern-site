@@ -39,7 +39,7 @@ export default function GuidesIndex() {
         { title: "Blog: They Cut the SDRs. Now Every AE Prospects.", href: "/blog/sdr-team-cut-aes-prospect", desc: "When SDR teams get cut and AEs prospect on a bigger quota: who thrives, who burns out, and how to test an AE before you hire." },
         { title: "Blog: SDR or GTM Engineer?", href: "/blog/sdr-or-gtm-engineer-pipeline-hire", desc: "A founder's framework for one pipeline seat: the questions to answer first, plus outside data on GTM engineer hiring and pay." },
         { title: "Best SaaS Sales Recruiters for Startups", href: "/guides/best-recruiters-saas-startups-sales", desc: "SaaS sales recruiters and SaaS sales recruitment agencies compared for Seed to Series B." },
-        { title: "B2B Sales Recruiting Agencies", href: "/guides/best-recruiting-agencies-b2b-sales", desc: "What separates good B2B sales agencies, with typical contingency fees by role." },
+        { title: "B2B Sales Recruiters and Recruiting Agencies", href: "/guides/best-recruiting-agencies-b2b-sales", desc: "Ranked list of B2B sales recruiters and recruiting agencies for AE and senior AE hiring." },
         { title: "Top Sales Headhunters (US)", href: "/guides/top-sales-headhunters-us", desc: "Sales headhunters active across the US, and how to pick one for your market." },
         { title: "Best Firms to Hire a CRO", href: "/guides/best-firms-hire-cro", desc: "Who runs CRO searches well, what they cost, and how to assess a CRO." },
         { title: "Korn Ferry Alternatives", href: "/guides/affordable-alternatives-korn-ferry", desc: "Boutique and fractional options for leadership searches without legacy-firm fees." },
