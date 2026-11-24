@@ -297,7 +297,7 @@ export default function SalesTalentIncAlternatives() {
                             ))}
                         </ol>
                         <p className="text-grey-600 leading-relaxed">
-                            Weighing Betts or Quota Crushers too? See these <Link href="/guides/betts-recruiting-alternatives" className={link}>Betts Recruiting alternatives</Link> and <Link href="/guides/quota-crushers-alternatives" className={link}>Quota Crushers alternatives</Link>. For a ranked list built around AE seats, see the <Link href="/guides/sales-recruiters-for-account-executives" className={link}>best sales recruiters for account executives</Link>.
+                            Weighing Betts or Quota Crushers too? See these <Link href="/guides/betts-recruiting-alternatives" className={link}>Betts Recruiting alternatives</Link> and <Link href="/guides/quota-crushers-alternatives" className={link}>Quota Crushers alternatives</Link>. For a ranked list built around AE seats, see the <Link href="/guides/sales-recruiters-for-account-executives" className={link}>best sales recruiters for account executives</Link>. Hiring for a SaaS startup? See the <Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS sales recruiters</Link> list.
                         </p>
                     </div>
 
@@ -361,6 +361,7 @@ export default function SalesTalentIncAlternatives() {
                             <li><Link href="/guides/betts-recruiting-alternatives" className={link}>Betts Recruiting alternatives</Link></li>
                             <li><Link href="/guides/quota-crushers-alternatives" className={link}>Quota Crushers alternatives</Link></li>
                             <li><Link href="/guides/sales-recruiters-for-account-executives" className={link}>Best sales recruiters for account executives</Link></li>
+                            <li><Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS sales recruiters and recruitment agencies</Link></li>
                             <li><Link href="/guides/best-sales-recruiting-agencies-2026" className={link}>Best sales recruiting agencies for 2026</Link></li>
                             <li><Link href="/guides/affordable-alternatives-korn-ferry" className={link}>Korn Ferry alternatives</Link></li>
                         </ul>
