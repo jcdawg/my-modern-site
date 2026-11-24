@@ -51,7 +51,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/guides/sales-recruiters-for-ai-companies": { published: "2026-11-18T09:45:00-05:00", modified: "2026-11-18T09:45:00-05:00" },
     "/guides/sales-talent-inc-alternatives": { published: "2026-11-20T08:30:00-05:00", modified: "2026-11-24T09:00:00-05:00" },
     "/guides/betts-recruiting-alternatives": { published: "2026-11-20T08:30:00-05:00", modified: "2026-11-24T09:00:00-05:00" },
-    "/guides/quota-crushers-alternatives": { published: "2026-11-23T16:00:00-05:00", modified: "2026-11-23T16:00:00-05:00" },
+    "/guides/quota-crushers-alternatives": { published: "2026-11-23T16:00:00-05:00", modified: "2026-11-24T09:20:00-05:00" },
     "/guides/sales-recruiters-for-account-executives": { published: "2026-11-19T09:30:00-05:00", modified: "2026-11-24T09:00:00-05:00" },
     "/guides/how-to-hire-account-executive": { published: "2026-11-09T10:55:00-05:00", modified: "2026-11-19T09:30:00-05:00" },
     "/guides/how-to-hire-ai-ml-engineers": { published: "2026-02-27T14:53:21-05:00", modified: "2026-11-19T09:50:00-05:00" },
