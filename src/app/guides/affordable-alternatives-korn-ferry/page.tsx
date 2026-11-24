@@ -120,7 +120,7 @@ export default function AffordableAlternativesKornFerry() {
                             </li>
                         </ul>
                         <p className="text-grey-600 leading-relaxed">
-                            Comparing sales recruiting firms for AE seats instead? See these <Link href="/guides/sales-talent-inc-alternatives" className="text-blue-accent hover:underline font-semibold">Sales Talent Inc. alternatives</Link> and <Link href="/guides/betts-recruiting-alternatives" className="text-blue-accent hover:underline font-semibold">Betts Recruiting alternatives</Link>.
+                            Comparing sales recruiting firms for AE seats instead? See these <Link href="/guides/sales-talent-inc-alternatives" className="text-blue-accent hover:underline font-semibold">Sales Talent Inc. alternatives</Link>, <Link href="/guides/betts-recruiting-alternatives" className="text-blue-accent hover:underline font-semibold">Betts Recruiting alternatives</Link> and <Link href="/guides/quota-crushers-alternatives" className="text-blue-accent hover:underline font-semibold">Quota Crushers alternatives</Link>.
                         </p>
                     </div>
 

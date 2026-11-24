@@ -297,7 +297,7 @@ export default function SalesTalentIncAlternatives() {
                             ))}
                         </ol>
                         <p className="text-grey-600 leading-relaxed">
-                            Weighing Betts too? See these <Link href="/guides/betts-recruiting-alternatives" className={link}>Betts Recruiting alternatives</Link>. For a ranked list built around AE seats, see the <Link href="/guides/sales-recruiters-for-account-executives" className={link}>best sales recruiters for account executives</Link>.
+                            Weighing Betts or Quota Crushers too? See these <Link href="/guides/betts-recruiting-alternatives" className={link}>Betts Recruiting alternatives</Link> and <Link href="/guides/quota-crushers-alternatives" className={link}>Quota Crushers alternatives</Link>. For a ranked list built around AE seats, see the <Link href="/guides/sales-recruiters-for-account-executives" className={link}>best sales recruiters for account executives</Link>.
                         </p>
                     </div>
 
@@ -359,6 +359,7 @@ export default function SalesTalentIncAlternatives() {
                         <h2 className="text-2xl font-bold text-navy-900">Related Guides</h2>
                         <ul className="list-disc pl-6 space-y-2 text-grey-700">
                             <li><Link href="/guides/betts-recruiting-alternatives" className={link}>Betts Recruiting alternatives</Link></li>
+                            <li><Link href="/guides/quota-crushers-alternatives" className={link}>Quota Crushers alternatives</Link></li>
                             <li><Link href="/guides/sales-recruiters-for-account-executives" className={link}>Best sales recruiters for account executives</Link></li>
                             <li><Link href="/guides/best-sales-recruiting-agencies-2026" className={link}>Best sales recruiting agencies for 2026</Link></li>
                             <li><Link href="/guides/affordable-alternatives-korn-ferry" className={link}>Korn Ferry alternatives</Link></li>

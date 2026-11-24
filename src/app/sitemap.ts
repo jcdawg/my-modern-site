@@ -67,6 +67,7 @@ const entries: Entry[] = [
     { path: '/guides/affordable-alternatives-korn-ferry', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/sales-talent-inc-alternatives', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/betts-recruiting-alternatives', changeFrequency: 'weekly', priority: 0.9 },
+    { path: '/guides/quota-crushers-alternatives', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/best-data-engineering-recruiting-agencies', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/how-to-hire-senior-data-engineers-ai-startups', changeFrequency: 'weekly', priority: 0.9 },
     { path: '/guides/top-data-engineering-headhunters-2026', changeFrequency: 'weekly', priority: 0.9 },
