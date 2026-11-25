@@ -57,13 +57,13 @@ export default function Sitemap() {
                                 <li><Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className="text-grey-600 hover:text-blue-accent transition-colors">How Long to Hire an AE</Link></li>
                                 <li><Link href="/guides/account-executive-interview-questions" className="text-grey-600 hover:text-blue-accent transition-colors">AE Interview Questions</Link></li>
                                 <li><Link href="/guides/how-to-hire-saas-sdrs-fast-ramp" className="text-grey-600 hover:text-blue-accent transition-colors">Hire SDRs &amp; AEs Fast</Link></li>
-                                <li><Link href="/guides/fractional-recruiting-guide" className="text-grey-600 hover:text-blue-accent transition-colors">What Is Fractional Recruiting?</Link></li>
+                                <li><Link href="/guides/fractional-recruiting-guide" className="text-grey-600 hover:text-blue-accent transition-colors">What Is Fractional Recruiting? (2026 Guide)</Link></li>
                                 <li><Link href="/guides/how-to-choose-a-fractional-recruiter" className="text-grey-600 hover:text-blue-accent transition-colors">How to Choose a Fractional Recruiter</Link></li>
-                                <li><Link href="/guides/fractional-recruiting-for-startups" className="text-grey-600 hover:text-blue-accent transition-colors">Fractional Recruiting for Startups</Link></li>
+                                <li><Link href="/guides/fractional-recruiting-for-startups" className="text-grey-600 hover:text-blue-accent transition-colors">Fractional Recruiting for Startups (2026)</Link></li>
                                 <li><Link href="/guides/fractional-sales-recruiting-cost" className="text-grey-600 hover:text-blue-accent transition-colors">Fractional Sales Recruiting Cost</Link></li>
                                 <li><Link href="/guides/fractional-sales-recruiting-vs-contingency" className="text-grey-600 hover:text-blue-accent transition-colors">Fractional vs Contingency</Link></li>
                                 <li><Link href="/guides/fractional-recruiting-vs-in-house-recruiter" className="text-grey-600 hover:text-blue-accent transition-colors">Fractional vs In-House Recruiter</Link></li>
-                                <li><Link href="/guides/best-fractional-sales-recruiters" className="text-grey-600 hover:text-blue-accent transition-colors">Best Fractional Sales Recruiters</Link></li>
+                                <li><Link href="/guides/best-fractional-sales-recruiters" className="text-grey-600 hover:text-blue-accent transition-colors">Top Fractional Recruiters for Sales Teams (2026)</Link></li>
                                 <li><Link href="/guides/fractional-recruiting-services-sales-teams" className="text-grey-600 hover:text-blue-accent transition-colors">Fractional Recruiting for Sales Teams</Link></li>
                                 <li><Link href="/guides/best-recruiters-saas-startups-sales" className="text-grey-600 hover:text-blue-accent transition-colors">Recruiters for SaaS Startups</Link></li>
                                 <li><Link href="/guides/best-recruiting-agencies-b2b-sales" className="text-grey-600 hover:text-blue-accent transition-colors">B2B Sales Recruiting Agencies</Link></li>

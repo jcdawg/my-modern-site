@@ -21,7 +21,7 @@ export default function ArticleJsonLd({
   /** Optional longer headline; defaults to the page title. */
   headline?: string;
   about?: string[];
-  /** Optional author overrides; defaults to Chris Stinson, Founder. */
+  /** Optional author overrides; defaults to Chris Stinson, Managing Director. */
   author?: { jobTitle?: string; description?: string };
 }) {
   const url = `${SITE_URL}${path}`;
@@ -42,7 +42,7 @@ export default function ArticleJsonLd({
     author: {
       "@type": "Person",
       name: "Chris Stinson",
-      jobTitle: author?.jobTitle ?? "Founder",
+      jobTitle: author?.jobTitle ?? "Managing Director",
       ...(author ? { worksFor: { "@id": ORGANIZATION_ID } } : {}),
       ...(author?.description ? { description: author.description } : {}),
       url: `${SITE_URL}/about`,

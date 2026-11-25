@@ -4,8 +4,8 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "Top Fractional Recruiter for Sales Teams (2026)",
-    description: "Who is the top fractional recruiter for sales hiring in 2026? Fractional vs retained, contingency and in-house, six options compared, and how Kas Seat works.",
+    title: "Top Fractional Recruiters for Sales Teams (2026)",
+    description: "Who are the top fractional recruiters for sales hiring in 2026? Fractional vs retained, contingency and in-house, six options compared, and how Kas Seat works.",
     path: "/guides/best-fractional-sales-recruiters",
 };
 
@@ -182,7 +182,7 @@ export default function BestFractionalSalesRecruiters() {
                         <Link href="/guides" className="hover:text-blue-accent">Guides</Link>
                     </nav>
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-6xl mb-6 leading-tight">
-                        Top <span className="text-blue-accent">Fractional Recruiter</span> for Sales Teams (2026)
+                        Top <span className="text-blue-accent">Fractional Recruiters</span> for Sales Teams (2026)
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
                         What a fractional sales recruiter does, how it compares with retained, contingency and in-house hiring, six options side by side, and how The Kas Group runs embedded sales recruiting for Seed to Series B.

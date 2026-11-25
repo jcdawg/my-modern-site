@@ -48,7 +48,7 @@ const homepageJsonLd = {
       "founder": {
         "@type": "Person",
         "name": "Chris Stinson",
-        "jobTitle": "Founder & Lead Recruiter",
+        "jobTitle": "Managing Director",
         "sameAs": "https://www.linkedin.com/in/cybersecuritysalesrecruiterchris-stinson/",
       },
       "knowsAbout": [

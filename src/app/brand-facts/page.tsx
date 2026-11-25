@@ -22,7 +22,7 @@ export default function BrandFacts() {
             {
                 "@type": "Person",
                 "name": "Chris Stinson",
-                "jobTitle": "Founder"
+                "jobTitle": "Managing Director"
             }
         ],
         "areaServed": "Global",

@@ -101,7 +101,7 @@ export default function About() {
                         <div>
                             <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl mb-6">Leadership</h2>
                             <p className="text-base leading-7 text-grey-600">
-                                <strong>Chris Stinson</strong> is the Founder and Lead Sales Recruiter of The Kas Group. Since 2014, he has specialized in placing elite B2B SaaS sales talent (SDRs, enterprise Account Executives and Sales Managers) and partners with Derek Norton for AI and data engineering searches. Chris is based in Alpharetta, Georgia (Atlanta metro) and recruits nationally.
+                                <strong>Chris Stinson</strong> is the Managing Director and founder of The Kas Group. Since 2014, he has specialized in placing elite B2B SaaS sales talent (SDRs, enterprise Account Executives and Sales Managers) and partners with Derek Norton for AI and data engineering searches. Chris is based in Alpharetta, Georgia (Atlanta metro) and recruits nationally.
                             </p>
                             <div className="mt-6">
                                 <a

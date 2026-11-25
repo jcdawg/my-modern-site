@@ -8,8 +8,8 @@
 export type PageDates = { published: string; modified: string };
 
 export const PAGE_DATES: Record<string, PageDates> = {
-    "/": { published: "2026-02-04T15:40:33-05:00", modified: "2026-11-04T09:15:00-05:00" },
-    "/about": { published: "2026-02-04T16:43:23-05:00", modified: "2026-10-28T10:30:00-04:00" },
+    "/": { published: "2026-02-04T15:40:33-05:00", modified: "2026-11-25T11:00:00-05:00" },
+    "/about": { published: "2026-02-04T16:43:23-05:00", modified: "2026-11-25T11:00:00-05:00" },
     "/blog": { published: "2026-02-04T16:43:23-05:00", modified: "2026-11-06T09:05:00-05:00" },
     "/blog/ai-resume-boom-old-school-recruiting": { published: "2026-09-02T15:16:23-04:00", modified: "2026-09-26T10:14:11-04:00" },
     "/blog/fractional-saas-sales-recruiting": { published: "2026-03-22T14:11:52-04:00", modified: "2026-09-26T10:14:11-04:00" },
@@ -21,11 +21,11 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/blog/sdr-or-gtm-engineer-pipeline-hire": { published: "2026-10-16T10:00:00-04:00", modified: "2026-10-16T10:00:00-04:00" },
     "/blog/hiring-sales-reps-january-start": { published: "2026-10-26T17:30:00-04:00", modified: "2026-10-26T17:30:00-04:00" },
     "/blog/october-2026-jobs-report-sales-hiring": { published: "2026-11-06T09:05:00-05:00", modified: "2026-11-06T09:05:00-05:00" },
-    "/brand-facts": { published: "2026-02-25T15:07:09-05:00", modified: "2026-10-28T10:30:00-04:00" },
+    "/brand-facts": { published: "2026-02-25T15:07:09-05:00", modified: "2026-11-25T11:00:00-05:00" },
     "/candidate-mapping-brief": { published: "2026-08-25T15:27:41-04:00", modified: "2026-10-14T09:40:00-04:00" },
     "/contact": { published: "2026-09-10T12:52:29-04:00", modified: "2026-10-14T09:40:00-04:00" },
-    "/contact-us": { published: "2026-09-06T15:19:20-07:00", modified: "2026-09-06T15:19:20-07:00" },
-    "/guides": { published: "2026-04-27T15:31:08-04:00", modified: "2026-11-24T09:00:00-05:00" },
+    "/contact-us": { published: "2026-09-06T15:19:20-07:00", modified: "2026-11-25T11:00:00-05:00" },
+    "/guides": { published: "2026-04-27T15:31:08-04:00", modified: "2026-11-25T11:00:00-05:00" },
     "/guides/active-vs-passive-candidates": { published: "2026-09-03T12:49:08-04:00", modified: "2026-10-14T09:40:00-04:00" },
     "/guides/affordable-alternatives-korn-ferry": { published: "2026-04-04T12:52:48-04:00", modified: "2026-11-23T16:00:00-05:00" },
     "/guides/best-data-engineering-recruiting-agencies": { published: "2026-02-25T15:28:31-05:00", modified: "2026-11-19T09:50:00-05:00" },
@@ -78,9 +78,9 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/programs": { published: "2026-09-14T09:28:02-04:00", modified: "2026-10-24T14:30:00-04:00" },
     "/recruit/ai": { published: "2026-02-04T16:43:23-05:00", modified: "2026-11-19T09:50:00-05:00" },
     "/recruit/fractional-sales": { published: "2026-03-22T14:04:14-04:00", modified: "2026-10-24T14:30:00-04:00" },
-    "/recruit/sales": { published: "2026-02-04T16:43:23-05:00", modified: "2026-10-28T10:30:00-04:00" },
+    "/recruit/sales": { published: "2026-02-04T16:43:23-05:00", modified: "2026-11-25T11:00:00-05:00" },
     "/ramp-time-calculator": { published: "2026-11-23T13:48:16-05:00", modified: "2026-11-23T15:45:00-05:00" },
-    "/site-map": { published: "2026-02-15T14:55:13-05:00", modified: "2026-11-23T16:00:00-05:00" },
+    "/site-map": { published: "2026-02-15T14:55:13-05:00", modified: "2026-11-25T11:00:00-05:00" },
     "/terms-of-service": { published: "2026-09-10T12:52:29-04:00", modified: "2026-10-28T10:30:00-04:00" },
     "/tools": { published: "2026-11-12T15:42:44-05:00", modified: "2026-11-23T15:45:00-05:00" },
 };

@@ -95,7 +95,7 @@ For over a decade, The Kas Group has specialized in building high-performing sal
 - Deep candidate network built since 2014 across North America.
 
 ## Related
-- [Top Fractional Recruiter for Sales Teams](/guides/best-fractional-sales-recruiters)
+- [Top Fractional Recruiters for Sales Teams (2026)](/guides/best-fractional-sales-recruiters)
 - [Best SaaS Sales Recruiters for Startups](/guides/best-recruiters-saas-startups-sales)
 - [Programs](/programs)
 
@@ -220,7 +220,7 @@ Paste the job description next to the company. Twelve separate questions score t
 - [Retained vs Contingency Recruiting](/guides/retained-vs-contingency-recruiting)
 - [Cost of a Bad Hire](/guides/cost-of-a-bad-hire)
 - [Ph.D.-Vetted AI Recruiting Methodology](/guides/phd-vetted-ai-recruiting-methodology)
-- [What Is Fractional Recruiting? How It Works](/guides/fractional-recruiting-guide)
+- [What Is Fractional Recruiting? (2026 Guide)](/guides/fractional-recruiting-guide)
 - [How to Choose a Fractional Recruiter](/guides/how-to-choose-a-fractional-recruiter)
 - [Best SaaS Sales Recruiters for Startups](/guides/best-recruiters-saas-startups-sales)
 - [Top Sales Headhunters in the US](/guides/top-sales-headhunters-us)
@@ -230,7 +230,7 @@ Paste the job description next to the company. Twelve separate questions score t
 - [Senior Data Engineer Skills Assessment & Vetting](/guides/senior-data-engineer-skills-assessment-vetting)
 - [Top Data Engineering Headhunters 2026](/guides/top-data-engineering-headhunters-2026)
 - [How to Hire Senior Data Engineers for AI Startups](/guides/how-to-hire-senior-data-engineers-ai-startups)
-- [Fractional Recruiting for Startups](/guides/fractional-recruiting-for-startups)
+- [Fractional Recruiting for Startups (2026)](/guides/fractional-recruiting-for-startups)
 - [Fractional Sales Recruiting Cost](/guides/fractional-sales-recruiting-cost)
 - [Fractional Sales Recruiting vs Contingency](/guides/fractional-sales-recruiting-vs-contingency)
 - [Fractional Recruiting vs In-House Recruiter](/guides/fractional-recruiting-vs-in-house-recruiter)
@@ -239,7 +239,7 @@ Paste the job description next to the company. Twelve separate questions score t
 - [How to Hire a Senior Account Executive](/guides/how-to-hire-senior-account-executive)
 - [Account Executive OTE by Level](/guides/account-executive-ote-by-level)
 - [Account Executive Interview Questions: How to Spot a Real Closer](/guides/account-executive-interview-questions)
-- [Top Fractional Recruiter for Sales Teams](/guides/best-fractional-sales-recruiters)
+- [Top Fractional Recruiters for Sales Teams (2026)](/guides/best-fractional-sales-recruiters)
 - [Fractional Recruiting Services for Sales Teams](/guides/fractional-recruiting-services-sales-teams)
 - [Best Recruiting Agencies for B2B Sales](/guides/best-recruiting-agencies-b2b-sales)
 - [Active vs. Passive Candidates](/guides/active-vs-passive-candidates)
@@ -345,9 +345,9 @@ Best when: you will tell us who is worth hunting.
 - [Best Sales Recruiting Agencies 2026](/guides/best-sales-recruiting-agencies-2026)
 - [How to Hire AI & ML Engineers](/guides/how-to-hire-ai-ml-engineers)
 - [Best Data Engineering Recruiting Agencies](/guides/best-data-engineering-recruiting-agencies)
-- [Fractional Recruiting for Startups](/guides/fractional-recruiting-for-startups)
+- [Fractional Recruiting for Startups (2026)](/guides/fractional-recruiting-for-startups)
 - [Fractional Sales Recruiting Cost](/guides/fractional-sales-recruiting-cost)
-- [Top Fractional Recruiter for Sales Teams](/guides/best-fractional-sales-recruiters)
+- [Top Fractional Recruiters for Sales Teams (2026)](/guides/best-fractional-sales-recruiters)
 - [Fractional Recruiting Services for Sales Teams](/guides/fractional-recruiting-services-sales-teams)
 - [Best SaaS Sales Recruiters for Startups](/guides/best-recruiters-saas-startups-sales)
 - [Best Recruiting Agencies for B2B Sales](/guides/best-recruiting-agencies-b2b-sales)
