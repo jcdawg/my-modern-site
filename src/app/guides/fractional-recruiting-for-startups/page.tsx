@@ -4,13 +4,18 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "Fractional Recruiting for Startups: First Hires",
+    title: "Fractional Recruiting for Startups (2026)",
     description:
         "Making your first 1 to 5 sales hires at seed to Series B? See when fractional recruiting fits, when it does not, the cost and how the first 90 days go.",
     path: "/guides/fractional-recruiting-for-startups",
 };
 
 export const metadata = pageMetadata({ ...PAGE, type: "article" });
+
+const UPDATED = { iso: "2026-11-25", label: "Nov 25, 2026" };
+
+const SHORT_ANSWER =
+    "Fractional recruiting for startups is a monthly retainer for an embedded recruiter who runs your first sales hires inside your own process. It fits seed to Series B teams planning two to five sales hires in the next two quarters. Contingency, by comparison, usually costs 20% to 25% of first year cash compensation for each hire, according to SHRM.";
 
 // Visible FAQ and FAQPage JSON-LD are rendered from this one list, so the
 // text always matches.
@@ -116,14 +121,17 @@ export default function FractionalRecruitingForStartups() {
                         <span className="text-grey-600">Fractional Recruiting for Startups</span>
                     </nav>
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-6xl mb-6 leading-tight">
-                        Fractional Recruiting for Startups:{" "}
-                        <span className="text-blue-accent">Your First 1 to 5 Sales Hires</span>
+                        Fractional Recruiting for Startups{" "}
+                        <span className="text-blue-accent">(2026)</span>
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">
-                        For seed through Series B founders moving from founder-led sales to a first AE, a first SDR, and the few hires after that.
+                        Your first 1 to 5 sales hires: for seed through Series B founders moving from founder-led sales to a first AE, a first SDR, and the few hires after that.
                     </p>
                     <p className="mt-4 text-base text-grey-600 max-w-2xl leading-relaxed">
                         Fractional recruiting is a part time recruiting partner who joins your team on a monthly basis and runs your hiring from inside your own process. You get an experienced recruiter focused on your open seats, writing the scorecard with you, sourcing and screening candidates and helping close offers. <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">How fractional recruiting works</Link>.
+                    </p>
+                    <p className="mt-6 text-sm text-grey-500">
+                        <strong className="text-navy-900">Updated <time dateTime={UPDATED.iso}>{UPDATED.label}</time>, Chris Stinson.</strong> Chris is Managing Director of The Kas Group and has recruited sales and GTM talent since 2014.
                     </p>
                 </div>
             </section>
@@ -136,8 +144,9 @@ export default function FractionalRecruitingForStartups() {
                             <Zap className="h-6 w-6 text-blue-accent" />
                             Short answer
                         </h2>
-                        <p className="text-lg text-grey-700 leading-relaxed">
-                            Fractional recruiting for startups is a monthly retainer for an embedded sales recruiter who runs your first hires inside your own process, with no percentage of salary fee on each hire. It fits seed through Series B founders who need 2 to 5 sales hires in the next two quarters, such as the first AE to take deals off the founder and the first SDR to feed them. At The Kas Group, Kas Seat is $5k/mo for up to two open sales roles and $8k/mo for three to five (up to $10k/mo for senior AE and above) with zero success fees. A single hire can run as a Kas Milestone Search: $5,000 for SDR/BDR, $7,500 for AE, $10,000 for Senior AE or Sales Manager.
+                        <p className="text-lg text-grey-700 leading-relaxed font-medium">{SHORT_ANSWER}</p>
+                        <p className="mt-4 text-base text-grey-600 leading-relaxed">
+                            At The Kas Group, Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above, with zero success fees. A single hire can run as a Kas Milestone Search: $5,000 for SDR/BDR, $7,500 for AE, $10,000 for Senior AE or Sales Manager. Fee source: <a href={SRC.shrm} className="text-blue-accent hover:underline">SHRM</a>.
                         </p>
                     </div>
 

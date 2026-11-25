@@ -4,7 +4,7 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "What Is Fractional Recruiting? How It Works",
+    title: "What Is Fractional Recruiting? (2026 Guide)",
     description: "Fractional recruiting is a monthly retainer for an embedded recruiting partner. How it differs from contingency and retained, who it fits, and cost.",
     path: "/guides/fractional-recruiting-guide",
 };
@@ -18,6 +18,17 @@ const SRC = {
     blsHr: "https://www.bls.gov/ooh/business-and-financial/human-resources-specialists.htm",
     blsEcec: "https://www.bls.gov/news.release/ecec.nr0.htm",
 };
+
+const UPDATED = { iso: "2026-11-25", label: "Nov 25, 2026" };
+
+const SHORT_ANSWER =
+    "Fractional recruiting is a monthly retainer for a part time recruiter who works inside your hiring process: writing the scorecard, sourcing, screening, running interviews and helping close offers. You pay for dedicated time, not a percentage of each hire's salary. It fits companies with several seats to fill this quarter and no full time recruiter.";
+
+const FULL_CYCLE =
+    "Full life cycle recruiting means one recruiter owns every stage of a hire: the intake and scorecard, sourcing, screening, the interview loop, the offer and the close. Most fractional recruiting is full life cycle. The partner runs the whole process inside your tools, rather than only sending resumes.";
+
+const HOURS =
+    "It depends on the engagement. Some fractional recruiters bill by the hour, and others work on a monthly retainer sized to your open seats. Kas Seat is priced by the number of open sales roles, not by the hour, so the scope follows your seats.";
 
 const DEFINITION =
     "Fractional recruiting is a monthly retainer for a part time recruiting partner who works inside your hiring process. The partner writes the scorecard with you, sources candidates, screens them, runs the interview loop and helps close offers. You pay by the month for dedicated time, not a percentage of each new hire's salary. The Kas Group runs this model for sales and GTM seats: account executives, senior and enterprise AEs, and sales managers.";
@@ -58,6 +69,14 @@ const FAQS = [
     {
         q: "What does a fractional recruiter do?",
         a: "A fractional recruiter writes the scorecard with you, sources and screens candidates, runs the interview loop and helps close offers. The work happens inside your own tools and process, alongside your hiring managers.",
+    },
+    {
+        q: "What is full life cycle recruiting?",
+        a: FULL_CYCLE,
+    },
+    {
+        q: "How many hours does a fractional recruiter work?",
+        a: HOURS,
     },
     {
         q: "Which roles does The Kas Group cover with fractional recruiting?",
@@ -117,11 +136,11 @@ export default function FractionalRecruitingGuide() {
                     </nav>
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-6xl mb-6 leading-tight">
                         What Is Fractional Recruiting?{" "}
-                        <span className="text-blue-accent">How a Kas Engagement Runs</span>
+                        <span className="text-blue-accent">(2026 Guide)</span>
                     </h1>
                     <p className="text-xl text-grey-500 max-w-2xl leading-relaxed">{LEAD_DEFINITION}</p>
                     <p className="mt-6 text-sm text-grey-500">
-                        <strong className="text-navy-900">Updated Nov 2026, Chris Stinson.</strong> Chris is Managing Director of The Kas Group and has recruited sales and GTM talent since 2014.
+                        <strong className="text-navy-900">Updated <time dateTime={UPDATED.iso}>{UPDATED.label}</time>, Chris Stinson.</strong> Chris is Managing Director of The Kas Group and has recruited sales and GTM talent since 2014.
                     </p>
                 </div>
             </section>
@@ -135,14 +154,10 @@ export default function FractionalRecruitingGuide() {
                             The short answer
                         </h2>
                         {/* TODO(Chris): add ONE first party Kas proof stat here (for example average time to first shortlist or hires made on Kas Seat). Chris will supply the number. Do not invent it. Nothing renders until it is filled in. */}
-                        <ul className="space-y-3 text-lg text-grey-300 leading-relaxed relative z-10 list-disc pl-6">
-                            <li>Fractional recruiting means you rent a senior recruiter&apos;s time by the month.</li>
-                            <li>They work inside your process, with your hiring managers, on your seats.</li>
-                            <li>No percentage of salary. No per-hire invoice on Kas Seat.</li>
-                            <li>Best for sales seats you need filled this quarter with no full time recruiter.</li>
-                            <li>The Kas Group runs fractional recruiting for account executives, senior and enterprise AEs, and sales managers.</li>
-                            <li>Kas Seat is <strong>$5,000/mo for up to two open sales roles and $8,000/mo for three to five, up to $10,000/mo for senior AE and above</strong>, with <strong>zero success fees</strong>.</li>
-                        </ul>
+                        <p className="text-lg text-grey-300 leading-relaxed relative z-10 font-medium">{SHORT_ANSWER}</p>
+                        <p className="mt-4 text-base text-grey-300 leading-relaxed relative z-10">
+                            The Kas Group runs fractional recruiting for account executives, senior and enterprise AEs, and sales managers. Kas Seat is <strong className="text-white">$5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above</strong>, with zero success fees. By comparison, <a href={SRC.shrm} className="text-white underline">SHRM</a> puts the usual contingency fee at 20% to 25% of first year cash compensation per hire.
+                        </p>
                     </div>
 
                     <div className="space-y-6">
@@ -154,6 +169,22 @@ export default function FractionalRecruitingGuide() {
                         <p className="text-grey-600 leading-relaxed">A fractional recruiter acts as your recruiting lead for part of the week. They write the scorecard with you. They source. They screen. They run the interview loop and help close the offer.</p>
                         <p className="text-grey-600 leading-relaxed">You get a person who learns your ICP, your pitch and your bar, then uses that on every seat.</p>
                         <p className="text-grey-600 leading-relaxed">You own every candidate name. The work stays in your process and your tools.</p>
+                    </div>
+
+                    <div className="space-y-6">
+                        <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
+                            <Layers className="h-8 w-8 text-blue-accent" />
+                            What is full life cycle recruiting?
+                        </h2>
+                        <p className="text-grey-600 leading-relaxed">{FULL_CYCLE}</p>
+                    </div>
+
+                    <div className="space-y-6">
+                        <h2 className="text-3xl font-bold text-navy-900 flex items-center gap-3">
+                            <Clock className="h-8 w-8 text-blue-accent" />
+                            How many hours does a fractional recruiter work?
+                        </h2>
+                        <p className="text-grey-600 leading-relaxed">{HOURS}</p>
                     </div>
 
                     <div className="space-y-8">
