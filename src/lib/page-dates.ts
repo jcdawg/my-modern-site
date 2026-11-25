@@ -48,7 +48,7 @@ export const PAGE_DATES: Record<string, PageDates> = {
     "/guides/fractional-sales-recruiting-cost": { published: "2026-09-16T08:10:27-07:00", modified: "2026-11-04T09:45:00-05:00" },
     "/guides/fractional-sales-recruiting-vs-contingency": { published: "2026-09-07T06:48:37-07:00", modified: "2026-11-04T09:45:00-05:00" },
     "/guides/gtm-engineer-recruiting": { published: "2026-11-09T10:50:00-05:00", modified: "2026-11-09T11:05:00-05:00" },
-    "/guides/sales-recruiters-for-ai-companies": { published: "2026-11-18T09:45:00-05:00", modified: "2026-11-18T09:45:00-05:00" },
+    "/guides/sales-recruiters-for-ai-companies": { published: "2026-11-18T09:45:00-05:00", modified: "2026-11-25T11:00:00-05:00" },
     "/guides/sales-talent-inc-alternatives": { published: "2026-11-20T08:30:00-05:00", modified: "2026-11-24T09:00:00-05:00" },
     "/guides/betts-recruiting-alternatives": { published: "2026-11-20T08:30:00-05:00", modified: "2026-11-24T09:00:00-05:00" },
     "/guides/quota-crushers-alternatives": { published: "2026-11-23T16:00:00-05:00", modified: "2026-11-24T09:20:00-05:00" },
