@@ -4,12 +4,14 @@ import { pageMetadata } from "@/lib/seo";
 import ArticleJsonLd from "@/components/ArticleJsonLd";
 
 const PAGE = {
-    title: "AE OTE by Level 2026: SDR to Enterprise Pay",
+    title: "Account Executive OTE 2026: Senior AE OTE by Level",
     description:
-        "See 2026 AE OTE and base pay by level, SDR to strategic AE, from RepVue and Bridge Group medians plus dated job postings. Every figure is sourced.",
+        "Account executive OTE in 2026 by level, SDR to strategic AE, plus senior account executive OTE from dated postings. RepVue and Bridge Group, all sourced.",
     path: "/guides/account-executive-ote-by-level",
-    headline: "Account Executive OTE by Level: SDR to Enterprise AE Pay in 2026",
+    headline: "Account Executive OTE in 2026: Senior Account Executive OTE and Pay by Level",
 };
+
+const UPDATED = { iso: "2026-11-25", label: "Nov 25, 2026" };
 
 export const metadata = pageMetadata({ title: PAGE.title, description: PAGE.description, path: PAGE.path, type: "article" });
 
@@ -25,6 +27,10 @@ const FAQS = [
     {
         q: "What is the OTE for an account executive by level?",
         a: "RepVue's 2026 self-reported medians put SMB AEs at $135K OTE, mid-market AEs at $180K and enterprise AEs at $275K. SDRs sit at $85K. Senior AE has no separate RepVue median, and two dated postings from October 2026 showed $240K to $300K OTE and a $125K to $140K base.",
+    },
+    {
+        q: "What is senior account executive OTE in 2026?",
+        a: "No survey we found reports a separate senior AE median. A Compyl senior AE posting live in October 2026 lists $240K to $300K OTE on a $120K to $150K base, and a Coworker.ai posting from the same month lists a $125K to $140K base. Both use a 50/50 split. For context, RepVue's 2026 enterprise AE median is $275K OTE.",
     },
     {
         q: "What is the median OTE for all account executives?",
@@ -43,6 +49,17 @@ const FAQS = [
         a: "RepVue's 2026 self-reported median for an enterprise AE is $275K OTE on a $140K base, across all company sizes. Strategic AEs, who often carry the largest named accounts, sit at a $300K median OTE.",
     },
 ];
+
+// Summary table for the "Account executive OTE in 2026" section. Every figure
+// repeats a number already cited further down the page; no new data.
+const SUMMARY = [
+    { level: "SMB AE", ote: "$135K", base: "$70K", source: "RepVue 2026 median", href: "repvue" },
+    { level: "Mid-market AE", ote: "$180K", base: "$95K", source: "RepVue 2026 median", href: "repvue" },
+    { level: "Enterprise AE", ote: "$275K", base: "$140K", source: "RepVue 2026 median", href: "repvue" },
+    { level: "Strategic AE", ote: "$300K", base: "$150K", source: "RepVue 2026 median", href: "repvue" },
+    { level: "Senior AE", ote: "$240K to $300K", base: "$120K to $150K", source: "Compyl posting, October 2026 (single example)", href: "compyl" },
+    { level: "All AEs", ote: "$200K", base: "$100K", source: "RepVue 2026 median. Bridge Group 2026 median OTE is also $200K.", href: "repvue" },
+] as const;
 
 const ROWS = [
     { level: "SDR", base: "$60K", ote: "$85K", src: "RepVue 2026. Bridge Group 2025 median OTE is $80K." },
@@ -81,12 +98,14 @@ export default function AccountExecutiveOteByLevel() {
                         <ChevronRight className="h-4 w-4" />
                         <Link href="/guides" className="hover:text-blue-accent">Guides</Link>
                         <ChevronRight className="h-4 w-4" />
-                        <span className="text-grey-600">AE OTE by Level</span>
+                        <span className="text-grey-600">Account Executive OTE 2026</span>
                     </nav>
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-5xl mb-6 leading-tight">
-                        Account Executive OTE by Level: SDR to Enterprise AE Pay in 2026
+                        {PAGE.headline}
                     </h1>
-                    <p className="text-sm text-grey-500">October 24, 2026 &middot; Chris Stinson, The Kas Group</p>
+                    <p className="text-sm text-grey-500">
+                        Updated <time dateTime={UPDATED.iso}>{UPDATED.label}</time> &middot; Published October 24, 2026 &middot; Chris Stinson, Managing Director, The Kas Group
+                    </p>
                 </div>
             </section>
 
@@ -100,6 +119,39 @@ export default function AccountExecutiveOteByLevel() {
                     <p className="text-sm text-grey-500">
                         All figures on this page come from named outside sources, linked in the text and listed at the end. None of it is Kas placement data. RepVue figures are self-reported by reps. Postings are single examples, not medians.
                     </p>
+
+                    <div className="space-y-4">
+                        <h2 className={h2}>Account executive OTE in 2026</h2>
+                        <p className="text-navy-900">
+                            The median account executive OTE in 2026 is $200K on a $100K base, according to <a href={SRC.repvue} className={link}>RepVue&apos;s self-reported 2026 data</a>, and <a href={SRC.bridgeAe} className={link}>the Bridge Group&apos;s 2026 survey</a> of 158 B2B companies also lands at $200K. By segment, RepVue puts SMB AEs at $135K, mid-market AEs at $180K, enterprise AEs at $275K and strategic AEs at $300K. Senior AE has no separate survey median, and a <a href={SRC.compyl} className={link}>Compyl posting from October 2026</a> lists $240K to $300K OTE on a $120K to $150K base.
+                        </p>
+                        <div className="overflow-x-auto border border-grey-200 rounded-2xl shadow-sm bg-white">
+                            <table className="w-full text-left border-collapse text-base">
+                                <caption className="sr-only">Account executive OTE in 2026 by level, with sources</caption>
+                                <thead className="bg-grey-50">
+                                    <tr className="border-b border-grey-200">
+                                        <th className="py-3 px-5 font-bold text-navy-900">Level</th>
+                                        <th className="py-3 px-5 font-bold text-navy-900">OTE</th>
+                                        <th className="py-3 px-5 font-bold text-navy-900">Base</th>
+                                        <th className="py-3 px-5 font-bold text-navy-900">Source</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {SUMMARY.map((r) => (
+                                        <tr key={r.level} className="border-b border-grey-100 last:border-0">
+                                            <td className="py-3 px-5 font-bold text-navy-900">{r.level}</td>
+                                            <td className="py-3 px-5 text-grey-600">{r.ote}</td>
+                                            <td className="py-3 px-5 text-grey-600">{r.base}</td>
+                                            <td className="py-3 px-5 text-grey-600"><a href={SRC[r.href]} className={link}>{r.source}</a></td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                        <p className="text-sm text-grey-500">
+                            RepVue figures are self-reported medians across all company sizes. The senior AE row is one dated employer posting, not a median. SDR pay and a second senior AE posting are in the full table below.
+                        </p>
+                    </div>
 
                     <div className="space-y-4">
                         <h2 className={h2}>AE OTE and Base Pay by Level</h2>
@@ -161,7 +213,7 @@ export default function AccountExecutiveOteByLevel() {
                     <div className="space-y-4">
                         <h2 className={h2}>How The Kas Group Works</h2>
                         <p>
-                            Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five. Kas Milestone Search is $5,000 for an SDR or BDR, $7,500 for an AE and $10,000 for a senior AE or sales manager. Details are on the <Link href="/programs" className={link}>programs page</Link>. If you are comparing AE recruiting firms, start with the <Link href="/guides/sales-recruiters-for-account-executives" className={link}>best sales recruiters for account executives</Link>. Choosing a partner for the search? See our guide to <Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS sales recruiters</Link>.
+                            Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above. Kas Milestone Search is $5,000 for an SDR or BDR, $7,500 for an AE and $10,000 for a senior AE or sales manager. Details are on the <Link href="/programs" className={link}>programs page</Link>. If you are comparing AE recruiting firms, start with the <Link href="/guides/sales-recruiters-for-account-executives" className={link}>best sales recruiters for account executives</Link>. Choosing a partner for the search? See our guide to <Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS sales recruiters</Link>.
                         </p>
                     </div>
 

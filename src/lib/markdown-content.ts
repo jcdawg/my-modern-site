@@ -237,7 +237,7 @@ Paste the job description next to the company. Twelve separate questions score t
 - [How to Hire SaaS SDRs and AEs Fast](/guides/how-to-hire-saas-sdrs-fast-ramp)
 - [How to Hire an Enterprise Account Executive](/guides/how-to-hire-enterprise-account-executive)
 - [How to Hire a Senior Account Executive](/guides/how-to-hire-senior-account-executive)
-- [Account Executive OTE by Level](/guides/account-executive-ote-by-level)
+- [Account Executive OTE 2026: Senior AE OTE by Level](/guides/account-executive-ote-by-level)
 - [Account Executive Interview Questions: How to Spot a Real Closer](/guides/account-executive-interview-questions)
 - [Top Fractional Recruiters for Sales Teams (2026)](/guides/best-fractional-sales-recruiters)
 - [Fractional Recruiting Services for Sales Teams](/guides/fractional-recruiting-services-sales-teams)
