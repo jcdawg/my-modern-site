@@ -11,6 +11,8 @@ const PAGE = {
 
 export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
+const UPDATED = { iso: "2026-11-25T14:30:00-05:00", label: "Nov 25, 2026" };
+
 const link = "text-blue-accent hover:underline";
 
 const SRC = {
@@ -109,6 +111,9 @@ export default function FractionalVsContingencyVsRetained() {
                     <p className="mt-4 text-base text-grey-600 max-w-2xl leading-relaxed">
                         Fractional recruiting is a part time recruiting partner who joins your team on a monthly basis and runs your hiring from inside your own process. You get an experienced recruiter focused on your open seats, writing the scorecard with you, sourcing and screening candidates and helping close offers. <Link href="/guides/fractional-recruiting-guide" className="text-blue-accent hover:underline font-semibold">How fractional recruiting works</Link>.
                     </p>
+                    <p className="mt-6 text-sm text-grey-500">
+                        <strong className="text-navy-900">Updated <time dateTime={UPDATED.iso}>{UPDATED.label}</time>, Chris Stinson.</strong> Chris is Managing Director of The Kas Group and has recruited sales and GTM talent since 2014.
+                    </p>
                 </div>
             </section>
 
@@ -164,6 +169,7 @@ export default function FractionalVsContingencyVsRetained() {
                         <h2 className="text-3xl font-bold text-navy-900">Fractional vs contingency recruiting</h2>
                         <p className="text-grey-600 leading-relaxed">Contingency recruiting is paid only when a hire is made. <a href={SRC.shrm} className={link}>SHRM</a> puts the usual fee at 20% to 25% of the role&apos;s first year cash compensation: salary, bonus and signing bonus. It works well for one well defined role.</p>
                         <p className="text-grey-600 leading-relaxed">Fractional recruiting is a monthly retainer. A recruiting partner works inside your process on all your open seats, from scorecard to offer. It works well when you have several sales seats to fill. Model primer: <Link href="/guides/fractional-recruiting-guide" className={link}>what is fractional recruiting</Link>.</p>
+                        <p className="text-grey-600 leading-relaxed">If you are a seed to Series B team filling your first AE and SDR seats, read <Link href="/guides/fractional-recruiting-for-startups" className={link}>fractional recruiting for startups</Link>.</p>
                     </div>
 
                     <div className="space-y-6">

@@ -12,7 +12,10 @@ const PAGE = {
 
 export const metadata = pageMetadata({ ...PAGE, type: "article" });
 
-const UPDATED = { iso: "2026-11-25", label: "Nov 25, 2026" };
+const UPDATED = { iso: "2026-11-25T14:30:00-05:00", label: "Nov 25, 2026" };
+
+const DEFINITION =
+    "Fractional recruiting for startups is a monthly retainer for a part time recruiter who joins the founding team and runs the first sales hires inside the company's own process. The recruiter writes the scorecard, sources and screens candidates, runs interviews and helps close offers for early AE and SDR seats.";
 
 const SHORT_ANSWER =
     "Fractional recruiting for startups is a monthly retainer for an embedded recruiter who runs your first sales hires inside your own process. It fits seed to Series B teams planning two to five sales hires in the next two quarters. Contingency, by comparison, usually costs 20% to 25% of first year cash compensation for each hire, according to SHRM.";
@@ -144,7 +147,8 @@ export default function FractionalRecruitingForStartups() {
                             <Zap className="h-6 w-6 text-blue-accent" />
                             Short answer
                         </h2>
-                        <p className="text-lg text-grey-700 leading-relaxed font-medium">{SHORT_ANSWER}</p>
+                        <p className="text-lg text-grey-700 leading-relaxed font-medium">{DEFINITION}</p>
+                        <p className="mt-4 text-lg text-grey-700 leading-relaxed font-medium">{SHORT_ANSWER}</p>
                         <p className="mt-4 text-base text-grey-600 leading-relaxed">
                             At The Kas Group, Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above, with zero success fees. A single hire can run as a Kas Milestone Search: $5,000 for SDR/BDR, $7,500 for AE, $10,000 for Senior AE or Sales Manager. Fee source: <a href={SRC.shrm} className="text-blue-accent hover:underline">SHRM</a>.
                         </p>
