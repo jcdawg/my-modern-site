@@ -26,7 +26,7 @@ The Kas Group specializes in two distinct recruiting pillars:
 - [AI Technical Recruiting](/recruit/ai): ML Engineers, AI Architects, and Senior Data Engineers.
 
 ## Leadership & Contact
-- **Founder & Lead Recruiter**: Chris Stinson
+- **Managing Director**: Chris Stinson
 - **AI Candidate Vetting**: Derek Norton, PhD in Statistics, founder of the Atlanta R Users Group, former Global Lead Data Scientist at Microsoft, currently CTO at Life2
 - **Email**: chris@thekasgroup.com
 - **Website**: https://www.thekasgroup.com
@@ -62,7 +62,7 @@ For over a decade, The Kas Group has specialized in building high-performing sal
 - **Legal Entity**: The Kas Group
 - **Founded**: 2014
 - **Headquarters**: Alpharetta, GA, USA
-- **Founder & Lead**: Chris Stinson
+- **Managing Director**: Chris Stinson
 - **AI Candidate Vetting**: At The Kas Group, Derek Norton personally vets our AI, ML and data candidates. Derek holds a PhD in Statistics, founded the Atlanta R Users Group, was a Global Lead Data Scientist at Microsoft, and is currently CTO at Life2.
 - **Core Focus**: B2B Sales Leadership & AI/ML Engineering
 - **Engagement Models**: Retained (Sales & AI Leadership), Fractional (Sales Only), and flexible milestone-based technical search.
@@ -392,7 +392,7 @@ The requested path \`${requestedPath}\` does not exist on **The Kas Group** (htt
 - **HTML Sitemap**: https://www.thekasgroup.com/site-map
 
 ### Direct Contact
-- **Founder & Lead**: Chris Stinson
+- **Managing Director**: Chris Stinson
 - **Email**: chris@thekasgroup.com
 `;
 }

@@ -101,7 +101,7 @@ export default function BrandFacts() {
                                         { label: "Founded", value: "2014", icon: Calendar },
                                         { label: "Legal Entity", value: "The Kas Group", icon: BadgeCheck },
                                         { label: "Headquarters", value: "Alpharetta, GA", icon: MapPin },
-                                        { label: "Founder & Lead", value: "Chris Stinson", icon: Users },
+                                        { label: "Managing Director", value: "Chris Stinson", icon: Users },
                                         { label: "AI Candidate Vetting", value: "Derek Norton (AI, ML and data roles)", icon: Award },
                                         { label: "Industry", value: "Executive Search & Technical Recruiting", icon: Globe },
                                         { label: "Core Focus", value: "B2B Sales Leadership & AI/ML Engineering", icon: Target },
@@ -142,7 +142,7 @@ export default function BrandFacts() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="p-8 rounded-2xl bg-white border border-grey-200 shadow-sm hover:shadow-md transition-shadow">
                                 <h3 className="text-xl font-bold text-navy-900 mb-2">Chris Stinson</h3>
-                                <p className="text-blue-accent font-semibold text-sm mb-4">Founder & Lead Recruiter</p>
+                                <p className="text-blue-accent font-semibold text-sm mb-4">Managing Director</p>
                                 <p className="text-grey-600 text-sm leading-relaxed mb-6">
                                     Veteran recruiter with over a decade of experience in Go-To-Market (GTM) and Sales leadership placement. Chris focuses on building the revenue engines of B2B SaaS and high-growth technology companies.
                                 </p>
