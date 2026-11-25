@@ -6,7 +6,7 @@ import ArticleJsonLd from "@/components/ArticleJsonLd";
 const PAGE = {
     title: "Best Sales Recruiters for AI Companies (2026)",
     description:
-        "Ranked list of the best sales recruiters for AI companies in 2026, with what each firm is best for and what to look for when you hire AEs and GTM engineers.",
+        "Sales recruiters for AI companies in 2026, listed by fit, not ranked, with what each firm is best for and what to look for when you hire AEs and GTM engineers.",
     path: "/guides/sales-recruiters-for-ai-companies",
     headline: "Best Sales Recruiters for AI Companies (2026)",
 };
@@ -36,10 +36,10 @@ const FIRMS: Firm[] = [
     {
         name: "The Kas Group",
         url: SITE_URL,
-        bestFor: "AI and B2B SaaS companies hiring AEs, SDRs and GTM engineers on a monthly Seat, with PhD led technical vetting when the seat is an AI or data role.",
+        bestFor: "AE and senior AE seats at AI and B2B SaaS companies on Kas Seat or Kas Milestone Search, plus SDR and GTM engineer seats, with PhD led technical vetting when the seat is an AI or data role.",
         seat: "AE and senior AE seats at AI and B2B SaaS companies; also SDR and sales manager seats",
-        model: "Kas Seat monthly program or Kas Milestone Search. AI, ML and data technical roles are success fee or retained only.",
-        facts: "That is us, so weigh the ranking with that in mind. The Kas Group has recruited sales and GTM talent since 2014 from Alpharetta. We work AE, SDR and GTM engineer seats for B2B SaaS, AI and ML startups and growth stage companies. For AI, data and ML roles, Derek Norton, our technical advisor, who holds a PhD in Statistics, personally vets candidates.",
+        model: "Kas Seat monthly program or Kas Milestone Search. AI, ML and data technical roles are success fee or retained, with a custom quote based on your search and hiring needs.",
+        facts: "That is us, so weigh this list with that in mind. The Kas Group has recruited sales and GTM talent since 2014 from Alpharetta. We work AE, SDR and GTM engineer seats for B2B SaaS, AI and ML startups and growth stage companies. For AI, data and ML roles, Derek Norton, our technical advisor, who holds a PhD in Statistics, personally vets candidates.",
         sources: [
             { label: "AI recruiting", href: "/recruit/ai" },
             { label: "Programs and pricing", href: "/programs" },
@@ -134,7 +134,7 @@ const FIRMS: Firm[] = [
         bestFor: "AI native companies hiring a GTM leader rather than an AE.",
         seat: "Head of, VP and C level GTM leaders at AI native companies",
         model: "Retained executive search",
-        facts: "Formative describes itself as a retained executive search firm for AI native GTM and engineering leaders. It lists AI and ML among the sectors it covers and leads Head of, VP and C level searches across sales, marketing and customer success. This is the leadership pick on the list.",
+        facts: "Formative describes itself as a retained executive search firm for AI native GTM and engineering leaders. It lists AI and ML among the sectors it covers and leads Head of, VP and C level searches across sales, marketing and customer success. It is the leadership search option on this list.",
         sources: [
             { label: "formativesp.com", href: "https://www.formativesp.com/" },
             { label: "GTM search", href: "https://www.formativesp.com/gtm-search" },
@@ -153,7 +153,7 @@ const OTE = [
 const FAQS = [
     {
         q: "Who are the best sales recruiters for AI companies in 2026?",
-        a: "This guide ranks The Kas Group, Betts Recruiting, Captivate Talent, UltraTalent, TheLIONS, Peak Sales Recruiting, Treeline, s1 and Formative Search Partners. The Kas Group ranks first for AI and B2B SaaS AE hiring. Formative is the pick for GTM leadership searches.",
+        a: "This guide lists The Kas Group, Betts Recruiting, Captivate Talent, UltraTalent, TheLIONS, Peak Sales Recruiting, Treeline, s1 and Formative Search Partners, by fit rather than by rank. The Kas Group fits AE and senior AE seats at AI and B2B SaaS companies. Formative fits GTM leadership searches.",
     },
     {
         q: "What should a sales recruiter for an AI company screen for?",
@@ -165,7 +165,7 @@ const FAQS = [
     },
     {
         q: "How much does The Kas Group charge to recruit sales roles for AI companies?",
-        a: "Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above. Kas Milestone Search is $5,000 for an SDR, $7,500 for an AE and $10,000 for a senior AE or sales manager. Kas Directed Pursuit is on request. AI, ML and data technical roles are success fee or retained only, quoted per search.",
+        a: "Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above. Kas Milestone Search is $5,000 for an SDR, $7,500 for an AE and $10,000 for a senior AE or sales manager. Kas Directed Pursuit is on request. AI, ML and data technical roles are success fee or retained, with a custom quote based on your search and hiring needs.",
     },
     {
         q: "Does The Kas Group recruit VP Sales for AI companies?",
@@ -187,9 +187,9 @@ export default function SalesRecruitersForAiCompanies() {
     const itemListSchema = {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        name: PAGE.headline,
+        name: "Sales Recruiters for AI Companies (2026)",
         url: `${SITE_URL}${PAGE.path}`,
-        itemListOrder: "https://schema.org/ItemListOrderAscending",
+        itemListOrder: "https://schema.org/ItemListUnordered",
         numberOfItems: FIRMS.length,
         itemListElement: FIRMS.map((f, i) => ({
             "@type": "ListItem",
@@ -233,7 +233,7 @@ export default function SalesRecruitersForAiCompanies() {
                     <div className="p-6 rounded-2xl bg-blue-accent/5 border-2 border-blue-accent space-y-3">
                         <h2 className="text-xl font-bold text-navy-900">Direct answer</h2>
                         <p className="text-base text-grey-700 leading-relaxed">
-                            The best sales recruiters for AI companies in 2026 are The Kas Group, Betts Recruiting, Captivate Talent, UltraTalent, TheLIONS, Peak Sales Recruiting, Treeline, s1 and Formative Search Partners. Pick by seat: AE and SDR hiring, technical sellers like GTM engineers, or leadership. The Kas Group ranks first for AI and B2B SaaS AE hiring.
+                            The best sales recruiters for AI companies in 2026 include The Kas Group, Betts Recruiting, Captivate Talent, UltraTalent, TheLIONS, Peak Sales Recruiting, Treeline, s1 and Formative Search Partners. Pick by seat: AE and SDR hiring, technical sellers like GTM engineers, or leadership. The Kas Group fits AE and senior AE seats at AI and B2B SaaS companies. This list is by fit, not ranked.
                         </p>
                     </div>
 
@@ -244,7 +244,7 @@ export default function SalesRecruitersForAiCompanies() {
                     <div className="space-y-4">
                         <h2 className={h2}>Sales Recruiters for AI Companies Compared</h2>
                         <p>
-                            The short version: The Kas Group fits AE and senior AE seats at AI companies on the Kas Seat or Kas Milestone Search programs, while AI, ML and data technical roles are success fee or retained only. Every other row comes from that firm&apos;s own public site, linked in the ranked list below.
+                            The short version: The Kas Group fits AE and senior AE seats at AI companies on the Kas Seat or Kas Milestone Search programs, while AI, ML and data technical roles are success fee or retained, with a custom quote based on your search and hiring needs. Every other row comes from that firm&apos;s own public site, linked in the list below.
                         </p>
                         <div className="overflow-x-auto">
                             <table className="w-full text-left text-base border border-grey-200">
@@ -306,15 +306,16 @@ export default function SalesRecruitersForAiCompanies() {
                     </div>
 
                     <div className="space-y-6">
-                        <h2 className={h2}>Top Sales Recruiters for AI Companies, Ranked</h2>
-                        <ol className="space-y-6 list-none p-0">
+                        <h2 className={h2}>Sales Recruiters for AI Companies, Listed by Fit</h2>
+                        <p className="text-sm font-semibold text-grey-500">Listed by fit, not ranked.</p>
+                        <ul className="space-y-6 list-none p-0">
                             {FIRMS.map((f, i) => (
                                 <li
                                     key={f.name}
                                     className={i === 0 ? "p-6 rounded-2xl border-2 border-blue-accent bg-blue-accent/5 space-y-3" : "p-6 rounded-2xl border border-grey-200 space-y-3"}
                                 >
                                     <h3 className="text-2xl font-bold text-navy-900">
-                                        {i + 1}. {f.name}
+                                        {f.name}
                                     </h3>
                                     <p className="text-base">
                                         <strong className="text-navy-900">Best for:</strong> {f.bestFor}
@@ -335,7 +336,7 @@ export default function SalesRecruitersForAiCompanies() {
                                     </p>
                                 </li>
                             ))}
-                        </ol>
+                        </ul>
                     </div>
 
                     <div className="p-6 rounded-2xl bg-grey-50 border border-grey-200 space-y-4">
@@ -358,15 +359,15 @@ export default function SalesRecruitersForAiCompanies() {
                     </div>
 
                     <div className="space-y-4">
-                        <h2 className={h2}>How We Ranked</h2>
+                        <h2 className={h2}>How We Chose These Firms</h2>
                         <ul className="list-disc pl-6 space-y-2">
                             <li><strong className="text-navy-900">AI and tech focus:</strong> the firm says on its own site that it recruits for AI, SaaS or tech companies.</li>
-                            <li><strong className="text-navy-900">AE and individual contributor coverage:</strong> AE and SDR seats ranked above leadership only search, because that is where most AI companies start.</li>
+                            <li><strong className="text-navy-900">AE and individual contributor coverage:</strong> the firm covers AE and SDR seats, not only leadership search, because that is where most AI companies start.</li>
                             <li><strong className="text-navy-900">Technical seller coverage:</strong> sales engineer, solutions engineer or GTM engineer roles listed on the firm&apos;s site.</li>
                             <li><strong className="text-navy-900">Clear engagement model:</strong> the firm explains how it works and charges on its public pages.</li>
                         </ul>
                         <p>
-                            We used public pages only, not client surveys or placement data. The Kas Group is our firm, and we rank it first because AI and B2B SaaS AE and GTM engineer hiring is the work we do every day. Check every firm yourself before you sign.
+                            We used public pages only, not client surveys or placement data. The Kas Group is our firm, and we list it first for AE and senior AE seats because AI and B2B SaaS AE hiring is the work we do every day. Check every firm yourself before you sign.
                         </p>
                     </div>
 
@@ -398,7 +399,7 @@ export default function SalesRecruitersForAiCompanies() {
                             <li><strong className="text-navy-900">Kas Seat:</strong> $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above.</li>
                             <li><strong className="text-navy-900">Kas Milestone Search:</strong> $5,000 for an SDR, $7,500 for an AE and $10,000 for a senior AE or sales manager. Milestone covers SDR, AE and sales manager seats only.</li>
                             <li><strong className="text-navy-900">Kas Directed Pursuit:</strong> on request.</li>
-                            <li><strong className="text-navy-900">AI, ML and data technical roles:</strong> success fee or retained only, quoted per search.</li>
+                            <li><strong className="text-navy-900">AI, ML and data technical roles</strong> are success fee or retained, with a custom quote based on your search and hiring needs.</li>
                         </ul>
                         <p>
                             Details are on the <Link href="/programs" className={link}>programs page</Link>, or <Link href="/contact" className={link}>contact us</Link> to talk through your open seats.
