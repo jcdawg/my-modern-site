@@ -29,7 +29,52 @@ const SRC = {
     saastr: "https://www.saastr.com/dear-saastr-what-are-the-most-common-mistakes-first-time-founders-make-building-enterprise-sales-teams/",
 };
 
+const UPDATED = { iso: "2026-11-25", label: "Nov 25, 2026" };
+
+const STEPS = [
+    {
+        name: "Name the job",
+        text: "Decide whether the AE inherits a book of business or hunts new accounts with only a few to start. A hunter and an account cultivator are different hires.",
+    },
+    {
+        name: "Define the deal",
+        text: "Write down ACV, sales cycle length, the buyers involved and whether a solutions engineer supports the seat. Gartner puts B2B buying groups at five to 16 people.",
+    },
+    {
+        name: "Set pay and ramp before you post",
+        text: "Use public pay data for base and OTE, write the comp plan, and agree how long ramp will be. Enterprise ramp runs longer than mid-market.",
+    },
+    {
+        name: "Widen the pool past enterprise titles",
+        text: "Look at any AE who has worked long, multi-stakeholder deals, including mid-market and strategic sellers. Most of them are not job hunting, so source them directly.",
+    },
+    {
+        name: "Screen for the numbers",
+        text: "Get quota and attainment in dollars by year, average deal size, cycle length and where their pipeline came from.",
+    },
+    {
+        name: "Walk through one deal they started and finished",
+        text: "Ask who was involved, what slowed it down and how they built the relationship from a cold start. Then ask about one deal they lost.",
+    },
+    {
+        name: "Test the work",
+        text: "Have them run discovery with a briefed executive buyer, or present a short account plan for a named target account. Bring in your solutions engineer if you have one.",
+    },
+    {
+        name: "Check references and score before the debrief",
+        text: "Speak with former managers about attainment and lost deals. Every interviewer submits a written score before the group discusses the candidate.",
+    },
+    {
+        name: "Make the offer with a written ramp plan",
+        text: "Put the comp plan and ramp plan in writing. In the early months, judge pipeline and deal progress, not closed revenue.",
+    },
+];
+
 const FAQS = [
+    {
+        q: "How do you hire an enterprise account executive?",
+        a: "Decide whether the AE inherits a book of business or hunts new accounts. Define the deal size, cycle and buying group, and set pay and ramp from public data. Then screen for quota in dollars, have them walk through one deal they started and finished, test discovery or an account plan, and check references with former managers.",
+    },
     {
         q: "What does an enterprise account executive do?",
         a: "An enterprise account executive wins customers through a long sale with a buying group that can range from five to 16 people, according to Gartner. Some own a book of business and grow existing customers. Others are hunters who build new business with only a few accounts to start. Decide which job you are hiring for before you search.",
@@ -39,8 +84,8 @@ const FAQS = [
         a: "In my view, they are two very different specializations. A hunter brings in new business. An account cultivator grows existing customers. If you hand the AE a book of business, you may want a cultivator. If they will build new business with only a few accounts to work, you need a hunter.",
     },
     {
-        q: "How much does an enterprise account executive cost?",
-        a: "RepVue's 2026 self-reported data shows a median of $275K on target earnings and $140K base for enterprise AEs, across all company sizes. Recruiter estimates run higher at startups: ClosedWon Talent puts an enterprise AE at $240K to $320K OTE, and Scalerr puts Series A enterprise at $260K to $350K. Recruiter estimates are not survey data.",
+        q: "How much should you pay an enterprise account executive?",
+        a: "RepVue's 2026 self-reported data shows a median of $275K on target earnings and $140K base for enterprise AEs, across all company sizes, against $200K OTE on a $100K base for all AEs. Recruiter estimates run higher at startups: ClosedWon Talent puts an enterprise AE at $240K to $320K OTE, and Scalerr puts Series A enterprise at $260K to $350K. Recruiter estimates are not survey data.",
     },
     {
         q: "How long does it take to hire an enterprise account executive?",
@@ -59,16 +104,8 @@ const FAQS = [
         a: "Ask: \"Tell me about a deal you closed where you started it and finished it. What steps did you take, what challenges did you run into, and since it was probably a cold lead, what did you do to build the relationship with the customer?\" Logos on a resume do not prove they brought the deal in. They may have been existing customers the AE expanded.",
     },
     {
-        q: "How does enterprise AE pay compare to the overall AE median?",
-        a: "RepVue's 2026 data puts the median at $200K OTE on a $100K base across all AE segments. Its enterprise AE median is $275K OTE on a $140K base. Our AE OTE by level guide has the full breakdown.",
-    },
-    {
-        q: "What should I ask in an enterprise AE interview?",
-        a: "Start with one deal they started and finished. Ask where the lead came from, who else was involved and what hiccups came up. Get quota and results in dollars by year. Our AE interview questions guide has the full list and a scorecard.",
-    },
-    {
-        q: "Is there a general benchmark for time to fill?",
-        a: "SHRM's State of Recruiting 2025 puts median time to fill at roughly a month and a half, from job requisition to offer acceptance. That covers all roles, not sales specifically. Our guide on how long it takes to hire an account executive goes deeper.",
+        q: "What are red flags when hiring an enterprise account executive?",
+        a: "Quota given as a percentage with no dollar figure, a big deal story where they cannot name the economic buyer or the other people involved, every win coming from inherited accounts when you need a hunter, and blaming product or marketing for every lost deal.",
     },
     {
         q: "What does The Kas Group charge for an enterprise AE search?",
@@ -113,7 +150,7 @@ export default function HowToHireEnterpriseAccountExecutive() {
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-5xl mb-6 leading-tight">
                         How to Hire an Enterprise Account Executive
                     </h1>
-                    <p className="text-sm text-grey-500">October 16, 2026 &middot; Chris Stinson, The Kas Group</p>
+                    <p className="text-sm text-grey-500">Published October 16, 2026 &middot; Updated <time dateTime={UPDATED.iso}>{UPDATED.label}</time> &middot; Chris Stinson, Managing Director, The Kas Group</p>
                 </div>
             </section>
 
@@ -123,7 +160,26 @@ export default function HowToHireEnterpriseAccountExecutive() {
                     <div className="p-6 rounded-2xl bg-blue-accent/5 border-2 border-blue-accent">
                         <h2 className="text-xl font-bold text-navy-900 mb-3">Direct answer</h2>
                         <p className="text-base text-grey-700 leading-relaxed">
-                            Decide first whether the AE inherits a book of business or builds new accounts. Those are two different jobs. Then have them walk you through their last big deal from start to finish, and get quota and results in dollars. Logos on a resume do not prove they built the deal. Know your comp before the first call. <a href={SRC.repvue} className={link}>RepVue&apos;s 2026 data</a> puts the median at $200K OTE on a $100K base across all AE segments. <a href={SRC.sloane} className={link}>Sloane Staffing</a>, a recruiter, puts enterprise ramp at 7 to 9 months, so judge them later than you think. More on pay in <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by level</Link>, on timing in <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>how long it takes to hire an AE</Link> and on questions in <Link href="/guides/account-executive-interview-questions" className={link}>AE interview questions</Link>. Build the scorecard with the <Link href="/hiring-scorecard" className={link}>hiring scorecard</Link>. Comparing recruiters for strategic and enterprise AE seats? See the <Link href="/guides/sales-recruiters-for-account-executives" className={link}>best sales recruiters for account executives</Link>.
+                            To hire an enterprise account executive, first decide whether the seat inherits a book of business or hunts new accounts. Set pay from public data: <a href={SRC.repvue} className={link}>RepVue</a> puts the enterprise AE median at $275K OTE on a $140K base. Then have candidates walk you through one deal they started and finished, get quota in dollars by year, and plan for a long ramp.
+                        </p>
+                    </div>
+
+                    <p>
+                        More on pay in <Link href="/guides/account-executive-ote-by-level" className={link}>account executive OTE in 2026 by level</Link>, on timing in <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>how long it takes to hire an AE</Link> and on questions in <Link href="/guides/account-executive-interview-questions" className={link}>AE interview questions</Link>. Build the scorecard with the <Link href="/hiring-scorecard" className={link}>hiring scorecard</Link>. Comparing recruiters for strategic and enterprise AE seats? See the <Link href="/guides/sales-recruiters-for-account-executives" className={link}>best sales recruiters for account executives</Link>.
+                    </p>
+
+                    <div className="space-y-4">
+                        <h2 className={h2}>The Enterprise AE Hiring Process, Step by Step</h2>
+                        <p>Nine steps, in order. The sections below explain the first question I ask, what the data says and how I check the deal.</p>
+                        <ol className="list-decimal pl-6 space-y-3">
+                            {STEPS.map((step) => (
+                                <li key={step.name}>
+                                    <strong className="text-navy-900">{step.name}.</strong> {step.text}
+                                </li>
+                            ))}
+                        </ol>
+                        <p>
+                            For base and OTE by segment, and how senior and enterprise pay compare with the overall AE median, see <Link href="/guides/account-executive-ote-by-level" className={link}>account executive OTE in 2026 by level</Link>.
                         </p>
                     </div>
 
@@ -251,7 +307,7 @@ export default function HowToHireEnterpriseAccountExecutive() {
                     <div className="space-y-4">
                         <h2 className={h2}>My Experience</h2>
                         <p>
-                            I have placed several enterprise account executives. I helped a Europe-based company build its US sales team, placing 4 enterprise AEs in 3 months. I have also placed hunters at smaller companies to bring on new accounts.
+                            I have placed several enterprise account executives. I helped a Europe-based company build its US sales team with enterprise AE hires. I have also placed hunters at smaller companies to bring on new accounts.
                         </p>
                     </div>
 
@@ -320,7 +376,7 @@ export default function HowToHireEnterpriseAccountExecutive() {
                         <strong>Further reading:</strong>{" "}
                         <Link href="/guides/account-executive-interview-questions" className={link}>Account Executive Interview Questions</Link>
                         {" · "}
-                        <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by Level</Link>
+                        <Link href="/guides/account-executive-ote-by-level" className={link}>Account Executive OTE in 2026 by Level</Link>
                         {" · "}
                         <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>How Long It Takes to Hire an AE</Link>
                         {" · "}
@@ -334,7 +390,7 @@ export default function HowToHireEnterpriseAccountExecutive() {
                         {" · "}
                         <Link href="/blog/sdr-team-cut-aes-prospect" className={link}>They Cut the SDRs. Now Every AE Prospects.</Link>
                         {" · "}
-                        <Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS Sales Recruitment Agencies and Recruiters</Link>
+                        <Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS Sales Recruiters and Recruitment Agencies</Link>
                         {" · "}
                         <Link href="/guides/sales-recruiters-for-account-executives" className={link}>Best Sales Recruiters for AEs</Link>
                         {" · "}
