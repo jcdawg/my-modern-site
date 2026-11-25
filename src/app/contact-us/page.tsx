@@ -71,7 +71,7 @@ export default function ContactUs() {
                                     Contact
                                 </span>
                                 <span className="font-semibold text-white">Chris Stinson</span>
-                                <span className="block text-grey-300">Founder, The Kas Group</span>
+                                <span className="block text-grey-300">Managing Director, The Kas Group</span>
                             </li>
                             <li>
                                 <span className="block text-sm uppercase tracking-wider text-grey-400 mb-1">

@@ -180,7 +180,7 @@ export default function SalesRecruiting() {
                             </span>
                         </Link>
                         <Link href="/guides/best-fractional-sales-recruiters" className="group p-8 rounded-2xl bg-white border border-grey-200 hover:border-blue-accent/30 hover:shadow-lg transition-all">
-                            <h3 className="text-xl font-bold text-navy-900 group-hover:text-blue-accent mb-2">Top Fractional Recruiter for Sales Teams</h3>
+                            <h3 className="text-xl font-bold text-navy-900 group-hover:text-blue-accent mb-2">Top Fractional Recruiters for Sales Teams (2026)</h3>
                             <p className="text-sm text-grey-500 mb-4 leading-relaxed">How to pick the best fractional sales recruiters and when Kas Seat beats contingency.</p>
                             <span className="text-blue-accent text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                                 Read Guide <ArrowRight className="h-3 w-3" />
