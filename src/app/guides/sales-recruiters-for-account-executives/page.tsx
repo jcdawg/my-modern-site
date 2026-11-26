@@ -180,7 +180,7 @@ export default function SalesRecruitersForAccountExecutives() {
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-5xl mb-6 leading-tight">
                         Best Sales Recruiters for Account Executives (2026)
                     </h1>
-                    <p className="text-sm text-grey-500">November 19, 2026 &middot; Chris Stinson, The Kas Group</p>
+                    <p className="text-sm text-grey-500">Published November 19, 2026 &middot; Updated November 26, 2026 &middot; Chris Stinson, The Kas Group</p>
                 </div>
             </section>
 
@@ -271,7 +271,7 @@ export default function SalesRecruitersForAccountExecutives() {
                             The level of the seat changes what the recruiter has to prove. Mid level AEs need a clean track record in a similar motion. Senior AEs need bigger deals and more of them. Enterprise AEs need proof they ran long, multi stakeholder cycles themselves. Four things matter at every level.
                         </p>
                         <p>
-                            Before you brief a recruiter, set the offer against current <Link href="/guides/account-executive-ote-by-level" className={link}>account executive OTE by level</Link> so the search is aimed at the right market.
+                            Before you brief a recruiter, set the offer against current <Link href="/guides/account-executive-ote-by-level" className={link}>account executive OTE by level</Link> so the search is aimed at the right market. If you are hiring at an AI company, the guide to <Link href="/guides/sales-recruiters-for-ai-companies" className={link}>sales recruiters for AI companies</Link> covers firms that recruit sales talent for those teams.
                         </p>
                         <h3 className="text-xl font-bold text-navy-900">Quota verification</h3>
                         <p>

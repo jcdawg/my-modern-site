@@ -161,7 +161,7 @@ export default function AccountExecutiveInterviewQuestions() {
                             The best account executive interview questions make the candidate prove they won the deals on their resume. Ask the same ten questions in order: three on the phone screen, six in the deal walkthrough, and one role play. Listen for where the lead came from, who on their team helped close it, and what hiccups came up. If a big committee deal went pretty straightforward, that is a red flag. Real deals have hiccups. Get quota and results in dollars. Score every candidate on the same hiring manager scorecard, or generate a role specific one with the <Link href="/hiring-scorecard" className={link}>hiring scorecard</Link>.
                         </p>
                         <p className="text-base text-grey-700 leading-relaxed">
-                            Know your comp before the first call. <a href={SRC.repvue} className={link}>RepVue&apos;s 2026 data</a> puts the median at $200K OTE on a $100K base across all AE segments. More on pay in <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by level</Link>, on senior seats in <Link href="/guides/how-to-hire-senior-account-executive" className={link}>how to hire a senior AE</Link>, on enterprise seats in <Link href="/guides/how-to-hire-enterprise-account-executive" className={link}>how to hire an enterprise AE</Link>, and on timing in <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>how long it takes to hire an AE</Link>.
+                            Know your comp before the first call. <a href={SRC.repvue} className={link}>RepVue&apos;s 2026 data</a> puts the median at $200K OTE on a $100K base across all AE segments. More on pay in <Link href="/guides/account-executive-ote-by-level" className={link}>account executive OTE in 2026 by level</Link>, on senior seats in <Link href="/guides/how-to-hire-senior-account-executive" className={link}>how to hire a senior AE</Link>, on enterprise seats in <Link href="/guides/how-to-hire-enterprise-account-executive" className={link}>how to hire an enterprise AE</Link>, and on timing in <Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>how long it takes to hire an AE</Link>.
                         </p>
                     </div>
 
@@ -386,7 +386,7 @@ export default function AccountExecutiveInterviewQuestions() {
                             </div>
                         ))}
                         <p className="text-grey-600 text-base">
-                            Read next: <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by level</Link>{" · "}<Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>How long it takes to hire an account executive</Link>
+                            Read next: <Link href="/guides/account-executive-ote-by-level" className={link}>account executive OTE in 2026 by level</Link>{" · "}<Link href="/guides/how-long-does-it-take-to-hire-an-account-executive" className={link}>How long it takes to hire an account executive</Link>
                         </p>
                     </div>
 
@@ -419,7 +419,7 @@ export default function AccountExecutiveInterviewQuestions() {
                         {" · "}
                         <Link href="/hiring-scorecard" className={link}>Hiring Scorecard</Link>
                         {" · "}
-                        <Link href="/guides/account-executive-ote-by-level" className={link}>AE OTE by Level</Link>
+                        <Link href="/guides/account-executive-ote-by-level" className={link}>Account executive OTE in 2026 by level</Link>
                         {" · "}
                         <Link href="/guides/how-to-hire-saas-sdrs-fast-ramp" className={link}>Hire SDRs and AEs with Zero Ramp-Up Time</Link>
                         {" · "}

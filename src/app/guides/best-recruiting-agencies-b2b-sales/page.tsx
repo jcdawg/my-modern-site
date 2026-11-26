@@ -198,7 +198,7 @@ export default function BestRecruitingAgenciesB2bSales() {
                     <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-5xl mb-6 leading-tight">
                         B2B Sales Recruiters and Recruiting Agencies (2026)
                     </h1>
-                    <p className="text-sm text-grey-500">November 24, 2026 &middot; Chris Stinson, The Kas Group</p>
+                    <p className="text-sm text-grey-500">Updated November 26, 2026 &middot; Chris Stinson, The Kas Group</p>
                 </div>
             </section>
 
@@ -289,7 +289,7 @@ export default function BestRecruitingAgenciesB2bSales() {
                             Start with the seat, not the logo. An SDR search and a senior AE search need different proof. Ask how the firm verifies quota in dollars, whether it can show deals of a similar size and cycle, and how it reaches people who are not posting resumes. Then get the fee model in writing and confirm who actually runs the search.
                         </p>
                         <p>
-                            If you are hiring several AEs or SDRs in one quarter, a monthly seat or a recruiter subscription can keep one partner on the work. If you are hiring one AE, a milestone or contingency search may be enough. Leadership seats are a different engagement. For a wider agency shortlist, see the <Link href="/guides/best-sales-recruiting-agencies-2026" className={link}>best sales recruiting agencies for 2026</Link>.
+                            If you are hiring several AEs or SDRs in one quarter, a monthly seat or a recruiter subscription can keep one partner on the work. If you are hiring one AE, a milestone or contingency search may be enough. Leadership seats are a different engagement. For a wider agency shortlist, see the <Link href="/guides/best-sales-recruiting-agencies-2026" className={link}>best sales recruiting agencies for 2026</Link>. If the hiring company builds or sells AI products, see the <Link href="/guides/sales-recruiters-for-ai-companies" className={link}>best sales recruiters for AI companies</Link> as well.
                         </p>
                     </div>
 
