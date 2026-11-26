@@ -11,7 +11,7 @@ const PAGE = {
     headline: "Account Executive OTE in 2026: Senior Account Executive OTE and Pay by Level",
 };
 
-const UPDATED = { iso: "2026-11-25", label: "Nov 25, 2026" };
+const UPDATED = { iso: "2026-11-26", label: "Nov 26, 2026" };
 
 export const metadata = pageMetadata({ title: PAGE.title, description: PAGE.description, path: PAGE.path, type: "article" });
 
@@ -213,7 +213,7 @@ export default function AccountExecutiveOteByLevel() {
                     <div className="space-y-4">
                         <h2 className={h2}>How The Kas Group Works</h2>
                         <p>
-                            Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above. Kas Milestone Search is $5,000 for an SDR or BDR, $7,500 for an AE and $10,000 for a senior AE or sales manager. Details are on the <Link href="/programs" className={link}>programs page</Link>. If you are comparing AE recruiting firms, start with the <Link href="/guides/sales-recruiters-for-account-executives" className={link}>best sales recruiters for account executives</Link>. Choosing a partner for the search? See our guide to <Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS sales recruiters</Link>.
+                            Kas Seat is $5,000 a month for up to two open sales roles and $8,000 a month for three to five, up to $10,000 a month for senior AE and above. Kas Milestone Search is $5,000 for an SDR or BDR, $7,500 for an AE and $10,000 for a senior AE or sales manager. Details are on the <Link href="/programs" className={link}>programs page</Link>. If you are comparing AE recruiting firms, start with the <Link href="/guides/sales-recruiters-for-account-executives" className={link}>best sales recruiters for account executives</Link>. Choosing a partner for the search? See our guide to <Link href="/guides/best-recruiters-saas-startups-sales" className={link}>SaaS sales recruiters</Link>. If the seat is at an AI company, our guide to <Link href="/guides/sales-recruiters-for-ai-companies" className={link}>sales recruiting firms for AI companies</Link> covers who to talk to.
                         </p>
                     </div>
 
