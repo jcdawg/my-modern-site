@@ -1,0 +1,36 @@
+# Submit the live sitemap to IndexNow after each successful Vercel Production
+# deploy. This workflow is independent of the Vercel build and must never fail
+# a deploy. The existing script reads the key from public/<key>.txt at runtime
+# and POSTs the full sitemap URL list to https://api.indexnow.org/indexnow.
+name: Submit IndexNow URLs
+
+"on":
+  deployment_status:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    name: Submit sitemap to IndexNow
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.deployment_status.state == 'success' &&
+       github.event.deployment.environment == 'Production')
+    steps:
+      - name: Checkout deployed commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha || github.sha }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Submit sitemap URLs to IndexNow
+        continue-on-error: true
+        run: node scripts/submit-indexnow.mjs || exit 0
